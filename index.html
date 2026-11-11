@@ -147,6 +147,26 @@ aside.drawer{position:fixed;top:0;right:0;bottom:0;width:min(640px,100%);backgro
 .maplegend i.na{background:var(--mapna);border:1px solid var(--line)}
 .maptip{position:absolute;pointer-events:none;background:var(--ink);color:var(--surface);font-size:12px;padding:6px 9px;border-radius:6px;white-space:nowrap;transform:translate(-50%,calc(-100% - 10px));z-index:2}
 .maptip b{font-weight:700}
+.cmpsel select{max-width:11rem}
+.cmphead{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:12px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.cmphead .side{display:flex;flex-direction:column;gap:2px;min-width:0}
+.cmphead .side.b{text-align:right;align-items:flex-end}
+.cmphead .nm{font-family:var(--f-display);font-size:30px;font-weight:700;line-height:1;overflow-wrap:anywhere}
+.cmphead .vs{font-family:var(--f-display);font-size:18px;color:var(--muted)}
+.nmb{background:none;border:0;padding:0;cursor:pointer;text-align:inherit}
+.nmb:hover,.nmb:focus-visible{text-decoration:underline}
+.cmpa{color:var(--bar)} .cmpb{color:var(--gold)}
+.cmptable td.win{font-weight:700}
+.cmptable td .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:middle}
+.fly{display:grid;grid-template-columns:3.2rem minmax(0,1fr) minmax(0,9rem) minmax(0,1fr) 3.2rem;gap:6px 8px;align-items:center;font-size:13px}
+.fly .l{display:flex;justify-content:flex-end}
+.fly .l i,.fly .r i{display:block;height:10px;border-radius:3px}
+.fly .l i{background:var(--bar)} .fly .r i{background:var(--gold)}
+.fly .sp{all:unset;cursor:pointer;text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fly .sp:hover,.fly .sp:focus-visible{color:var(--accent)}
+.fly .va{text-align:right;font-variant-numeric:tabular-nums} .fly .vb{font-variant-numeric:tabular-nums}
+.fly .hd{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+@media (max-width:620px){.fly{grid-template-columns:2.6rem minmax(0,1fr) minmax(0,6rem) minmax(0,1fr) 2.6rem}.cmphead .nm{font-size:22px}}
 .sportgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:12px}
 .scard{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:flex;flex-direction:column;gap:8px;min-width:0}
 .scard h4{margin:0;font-family:var(--f-display);font-size:21px;line-height:1.1}
@@ -237,7 +257,7 @@ footer nav a{color:var(--muted);font-weight:600}
   </div>
 </header>
 <nav class="tabs" aria-label="Sections"><div class="wrap">
-  <a href="#performance">Performance réelle</a><a href="#classement">Classement sportif</a><a href="#genre">Femmes · Hommes</a><a href="#efficience">Efficience économique</a><a href="#demographie">Efficience démographique</a><a href="#sports">Par sport</a><a href="#federations">Fédérations</a><a href="#methode">Méthode</a><a href="#sources">Sources</a><a href="#donnees">Données</a>
+  <a href="#performance">Performance réelle</a><a href="#classement">Classement sportif</a><a href="#genre">Femmes · Hommes</a><a href="#efficience">Efficience économique</a><a href="#demographie">Efficience démographique</a><a href="#sports">Par sport</a><a href="#comparer">Comparer</a><a href="#federations">Fédérations</a><a href="#methode">Méthode</a><a href="#sources">Sources</a><a href="#donnees">Données</a>
 </div></nav>
 
 <main><div class="wrap">
@@ -303,6 +323,18 @@ footer nav a{color:var(--muted);font-weight:600}
     <div class="controls"><input type="search" id="q-sp" placeholder="Rechercher un sport ou une nation" aria-label="Rechercher un sport ou une nation"></div>
   </div>
   <div class="sportgrid" id="sportgrid"></div>
+</section>
+
+<section class="view" id="v-comparer" hidden>
+  <div class="view-head">
+    <div><h2>Comparer deux nations</h2><p>Les quatre classements côte à côte, puis sport par sport : où chaque nation prend l'avantage.</p></div>
+    <div class="controls cmpsel">
+      <label class="small muted" for="cmp-a">Nation A</label><select id="cmp-a"></select>
+      <button type="button" class="btn" id="cmp-swap" aria-label="Inverser les deux nations">⇄</button>
+      <label class="small muted" for="cmp-b">Nation B</label><select id="cmp-b"></select>
+    </div>
+  </div>
+  <div id="cmp"></div>
 </section>
 
 <section class="view" id="v-efficience" hidden>
@@ -528,7 +560,7 @@ function openDrawer(html){lastFocus=document.activeElement;const d=$('#drawer');
 function closeDrawer(){$('#drawer').hidden=true;$('#scrim').hidden=true;if(lastFocus)lastFocus.focus()}
 $('#scrim').addEventListener('click',closeDrawer);
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('#drawer').hidden)closeDrawer()});
-$('#drawer').addEventListener('click',e=>{if(e.target.closest('.close'))closeDrawer();const a=e.target.closest('[data-fed],[data-nat]');if(a&&a.closest('#drawer')){a.dataset.fed?showFed(a.dataset.fed):showNat(a.dataset.nat)}});
+$('#drawer').addEventListener('click',e=>{const cb=e.target.closest('[data-cmp]');if(cb){$('#cmp-a').value=cb.dataset.cmp;if($('#cmp-b').value===cb.dataset.cmp)$('#cmp-b').value=cb.dataset.cmp==='France'?'Royaume-Uni':'France';renderCmp();closeDrawer();location.hash='comparer';return}if(e.target.closest('.close'))closeDrawer();const a=e.target.closest('[data-fed],[data-nat]');if(a&&a.closest('#drawer')){a.dataset.fed?showFed(a.dataset.fed):showNat(a.dataset.nat)}});
 document.addEventListener('click',e=>{const t=e.target.closest('tr[data-nat],button[data-nat],g[data-nat],tr[data-fed],button[data-fed]');if(!t||t.closest('#drawer'))return;t.dataset.fed?showFed(t.dataset.fed):showNat(t.dataset.nat)});
 document.addEventListener('keydown',e=>{if(e.key!=='Enter'&&e.key!==' ')return;const t=e.target.closest&&e.target.closest('tr[data-nat],tr[data-fed]');if(!t)return;e.preventDefault();t.dataset.fed?showFed(t.dataset.fed):showNat(t.dataset.nat)});
 function showNat(name){
@@ -537,6 +569,7 @@ function showNat(name){
   openDrawer(`<div class="dhead"><div><div class="eyebrow">Rang ${n.rk} sur ${N.length}</div><h3 id="d-title">${esc(n.n)}</h3></div><button class="close" type="button" aria-label="Fermer">×</button></div>
   <div class="dbody">
    <div class="kpis"><div class="kpi"><b class="num">${fmt(n.s)}</b><span>score pondéré</span></div><div class="kpi"><b class="num">${n.nf}</b><span>fédérations où elle marque</span></div><div class="kpi"><b class="num">${fmt(n.tb)}</b><span>points bruts (sur ${attrib.length*1000})</span></div></div>
+   <div><button type="button" class="btn" data-cmp="${esc(n.n)}">Comparer avec une autre nation</button></div>
    ${(DATA.G&&DATA.G[n.n])?`<p class="small" style="margin:0">Femmes : <b class="num">${fmt(DATA.G[n.n].f)}</b> (rang ${gRank.f[n.n]}) · Hommes : <b class="num">${fmt(DATA.G[n.n].h)}</b> (rang ${gRank.h[n.n]})</p>`:''}
    <div class="dsec"><h4>Contribution au score, par sport</h4><p class="small muted">Contribution = points obtenus dans la fédération × coefficient de la fédération (poids relatif × 100).</p>
    <div class="contrib">${cs.map(c=>`<button type="button" class="lab" data-fed="${esc(c.s)}" style="all:unset;cursor:pointer;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${esc(FED[c.s].n)}">${esc(sportOf(c.s)||c.s)}</button><div class="bar" title="${fmt(c.p,1)} pts × ${fmt(FED[c.s].w,2)}"><i style="width:${(c.c/max*100).toFixed(1)}%"></i></div><div class="v">${fmt(c.c,1)}</div>`).join('')}</div></div>
@@ -659,7 +692,7 @@ $('#dl').addEventListener('click',async e=>{const b=e.target.closest('[data-copy
 // routing
 const LEGAL={"site": "HoloSport Ranking (HSR)", "domaine": "holosportranking.github.io/holosportranking", "hebergeur_nom": "GitHub, Inc. (service GitHub Pages)", "hebergeur_adresse": "88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis", "hebergeur_telephone": "+1 877 448 4820", "date_maj": "11 novembre 2026"};
 document.querySelectorAll('[data-l]').forEach(el=>{const v=(LEGAL[el.dataset.l]||'').trim();if(v){el.textContent=v}else{el.textContent='[à compléter : '+(el.dataset.hint||el.dataset.l)+']';el.classList.add('todo')}});
-const VIEWS=['performance','classement','genre','efficience','demographie','sports','federations','methode','sources','donnees','mentions-legales','confidentialite','conditions'];
+const VIEWS=['performance','classement','genre','efficience','demographie','sports','comparer','federations','methode','sources','donnees','mentions-legales','confidentialite','conditions'];
 function route(){const h=location.hash.slice(1);const v=VIEWS.includes(h)?h:'performance';
   VIEWS.forEach(x=>$('#v-'+x).hidden=x!==v);if(['mentions-legales','confidentialite','conditions'].includes(v))window.scrollTo(0,0);
   document.querySelectorAll('nav.tabs a').forEach(a=>a.setAttribute('aria-current',a.getAttribute('href')==='#'+v?'page':'false'));}
@@ -766,6 +799,37 @@ function renderSports(){
 }
 $('#q-sp').addEventListener('input',renderSports);
 renderGen();renderSports();
+// comparateur de deux nations
+const natNames=N.map(n=>n.n).sort((a,b)=>a.localeCompare(b,'fr'));
+['#cmp-a','#cmp-b'].forEach((s,i)=>{$(s).innerHTML=natNames.map(n=>`<option${n===(i?'Royaume-Uni':'France')?' selected':''}>${esc(n)}</option>`).join('')});
+let cmpAll=false;
+function rankInfo(n){
+  const pr=prRank.find(r=>r.n===n),e=efOk.find(r=>r.n===n),d=peOk.find(r=>r.n===n),s=N.find(x=>x.n===n);
+  return [['Performance réelle',pr&&pr.rk,pr&&('indice '+fmt(pr.v,1))],['Classement sportif',s.rk,fmt(s.s)+' pts'],
+   ['Femmes',G[n]?gRank.f[n]:null,G[n]?fmt(G[n].f)+' pts':''],['Hommes',G[n]?gRank.h[n]:null,G[n]?fmt(G[n].h)+' pts':''],
+   ['Efficience économique',e&&e.erk,e&&('efficience '+fmt(e.eff))],['Efficience démographique',d&&d.erk,d&&('efficience '+fmt(d.eff))]];
+}
+function renderCmp(){
+  const A=$('#cmp-a').value,B=$('#cmp-b').value;const a=N.find(x=>x.n===A),b=N.find(x=>x.n===B);
+  const ia=rankInfo(A),ib=rankInfo(B);let wa=0,wb=0;
+  const rows=ia.map((x,i)=>{const ra=x[1],rb=ib[i][1];const aw=ra&&(!rb||ra<rb),bw=rb&&(!ra||rb<ra);if(aw)wa++;if(bw)wb++;
+    return `<tr><td class="${aw?'win':''}">${ra?`<span class="dot" style="background:var(--bar)"></span>${ra}<sup>e</sup>`:'–'} <span class="small muted hide-sm">${x[2]||''}</span></td><td style="text-align:center">${x[0]}</td><td class="r ${bw?'win':''}"><span class="small muted hide-sm">${ib[i][2]||''}</span> ${rb?`${rb}<sup>e</sup><span class="dot" style="background:var(--gold);margin:0 0 0 6px"></span>`:'–'}</td></tr>`}).join('');
+  const feds=F.filter(f=>(a.p[f.s]||b.p[f.s])).map(f=>({f,pa:a.p[f.s]||0,pb:b.p[f.s]||0})).map(x=>({...x,ca:x.pa*x.f.w,cb:x.pb*x.f.w}))
+    .sort((x,y)=>Math.max(y.ca,y.cb)-Math.max(x.ca,x.cb));
+  const na=feds.filter(x=>x.pa>x.pb).length,nb=feds.filter(x=>x.pb>x.pa).length;
+  const mx=Math.max(1,...feds.map(x=>Math.max(x.ca,x.cb)));const list=cmpAll?feds:feds.slice(0,15);
+  $('#cmp').innerHTML=`<div class="cmphead"><div class="side"><span class="small muted">Nation A</span><button type="button" class="nm cmpa nmb" data-nat="${esc(A)}">${esc(A)}</button><span class="small">${wa} classement${wa>1?'s':''} gagné${wa>1?'s':''} · ${na} sport${na>1?'s':''} devant</span></div><span class="vs">contre</span>
+   <div class="side b"><span class="small muted">Nation B</span><button type="button" class="nm cmpb nmb" data-nat="${esc(B)}">${esc(B)}</button><span class="small">${wb} classement${wb>1?'s':''} gagné${wb>1?'s':''} · ${nb} sport${nb>1?'s':''} devant</span></div></div>
+   <div class="tablebox cmptable"><table><thead><tr><th>${esc(A)}</th><th style="text-align:center">Classement</th><th class="r">${esc(B)}</th></tr></thead><tbody>${rows}</tbody></table></div>
+   <div class="srcgroup"><h4>Sport par sport</h4><p class="small muted" style="margin:0 0 10px">Contribution de chaque sport au score : points obtenus sur 1000 × coefficient de la fédération (survolez une barre pour voir les points bruts). Cliquez sur un sport pour voir le détail.</p>
+   <div class="fly"><span class="hd va">${esc(A)}</span><span></span><span class="hd" style="text-align:center">Sport</span><span></span><span class="hd">${esc(B)}</span>
+   ${list.map(x=>`<span class="va">${fmt(x.ca)}</span><div class="l" title="${fmt(x.pa)} points sur 1000"><i style="width:${(x.ca/mx*100).toFixed(1)}%"></i></div><button type="button" class="sp" data-fed="${esc(x.f.s)}" title="${esc(x.f.n)}">${esc(sportOf(x.f.s)||x.f.s)}</button><div class="r" title="${fmt(x.pb)} points sur 1000"><i style="width:${(x.cb/mx*100).toFixed(1)}%"></i></div><span class="vb">${fmt(x.cb)}</span>`).join('')}</div>
+   ${feds.length>15&&!cmpAll?`<div class="more" style="margin-top:10px"><button class="btn" id="cmp-more" type="button">Afficher les ${feds.length} sports</button></div>`:''}</div>`;
+  const m=$('#cmp-more');if(m)m.addEventListener('click',()=>{cmpAll=true;renderCmp()});
+}
+['#cmp-a','#cmp-b'].forEach(s=>$(s).addEventListener('change',()=>{cmpAll=false;renderCmp()}));
+$('#cmp-swap').addEventListener('click',()=>{const a=$('#cmp-a').value;$('#cmp-a').value=$('#cmp-b').value;$('#cmp-b').value=a;renderCmp()});
+renderCmp();
 // carte du monde
 const MAPMODES={pr:{lab:'selon la performance réelle',get:()=>Object.fromEntries(prRank.map(r=>[r.n,{rk:r.rk,v:'indice '+fmt(r.v,1)}]))},
  s:{lab:'selon le classement sportif',get:()=>Object.fromEntries(N.map(n=>[n.n,{rk:n.rk,v:fmt(n.s)+' pts'}]))},
