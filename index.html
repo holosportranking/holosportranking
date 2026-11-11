@@ -308,6 +308,59 @@ th{background:var(--surface)}
 footer{background:var(--hero);color:var(--hero-muted);border-top:0}
 footer nav a{color:var(--hero-ink)}
 footer a{color:var(--hero-ink)}
+
+/* ===== Animations (désactivées si l'utilisateur réduit les mouvements) et embellissements ===== */
+.spot{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.spotc{font:inherit;text-align:left;cursor:pointer;border:0;border-radius:14px;padding:14px 16px 16px;display:flex;flex-direction:column;gap:2px;min-width:0;color:#0b1a33;position:relative;overflow:hidden;box-shadow:var(--shadow);transition:transform .25s ease,box-shadow .25s ease}
+.spotc::after{content:"";position:absolute;right:-30px;top:-30px;width:110px;height:110px;border-radius:50%;background:rgba(255,255,255,.28)}
+.spotc.gold{background:linear-gradient(135deg,#ffe08a,#f2b630)}
+.spotc.rose{background:linear-gradient(135deg,#ffd0dc,#f58aa6)}
+.spotc.sky{background:linear-gradient(135deg,#cfe0ff,#7aa5ff)}
+.spotc.mint{background:linear-gradient(135deg,#c9f1dc,#5fcf98)}
+.spotc .sk{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.75}
+.spotc .sn{font-family:var(--f-display);font-size:28px;font-weight:800;line-height:1.05;overflow-wrap:anywhere}
+.spotc .sv{font-weight:700;font-variant-numeric:tabular-nums}
+.spotc .ss{font-size:12px;opacity:.8}
+.spotc:hover,.spotc:focus-visible{transform:translateY(-3px);box-shadow:0 10px 28px rgba(15,30,58,.18)}
+.spotc:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+@media (max-width:900px){.spot{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.hero h1 span{background:linear-gradient(100deg,#f2b630 0%,#ffe9a8 45%,#f2b630 60%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent}
+.scard,.prw,.srcgroup,.mapbox{transition:transform .25s ease,box-shadow .25s ease}
+.scard:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(15,30,58,.12)}
+nav.tabs .pills a{transition:background-color .2s ease,color .2s ease,border-color .2s ease,transform .15s ease}
+nav.tabs .pills a:active{transform:scale(.96)}
+#worldmap .ct{transition:fill .5s ease,stroke-width .15s ease}
+.scrim{transition:opacity .25s ease}
+@media (prefers-reduced-motion:no-preference){
+  @keyframes rise{from{transform:scaleY(.15)}to{transform:scaleY(1)}}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+  @keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+  @keyframes shimmer{from{background-position:120% 0}to{background-position:-20% 0}}
+  @keyframes lanes{from{background-position:0 0,0 0,0 0}to{background-position:0 0,0 590px,0 0}}
+  @keyframes slideIn{from{transform:translateX(40px);opacity:.4}to{transform:none;opacity:1}}
+  @keyframes pop{0%{transform:scale(.6)}70%{transform:scale(1.12)}100%{transform:scale(1)}}
+  header.hero{animation:lanes 60s linear infinite}
+  .hero .brand,.hero h1,.hero .tagline,.hero p.lead,.facts div{animation:fadeUp .7s cubic-bezier(.2,.7,.2,1) both}
+  .hero h1{animation-delay:.08s}.hero .tagline{animation-delay:.16s}.hero p.lead{animation-delay:.24s}
+  .facts div:nth-child(1){animation-delay:.3s}.facts div:nth-child(2){animation-delay:.38s}.facts div:nth-child(3){animation-delay:.46s}.facts div:nth-child(4){animation-delay:.54s}
+  .hero h1 span{animation:shimmer 2.4s ease-out .6s both}
+  .block{transform-origin:bottom;animation:rise .9s cubic-bezier(.2,.8,.2,1.15) both}
+  .s2 .block{animation-delay:.35s}.s1 .block{animation-delay:.55s}.s3 .block{animation-delay:.75s}
+  .step .who,.step .pts{animation:fadeUp .6s ease both}
+  .s2 .who,.s2 .pts{animation-delay:.6s}.s1 .who,.s1 .pts{animation-delay:.8s}.s3 .who,.s3 .pts{animation-delay:1s}
+  .view:not([hidden]){animation:fadeUp .45s cubic-bezier(.2,.7,.2,1) both}
+  .spotc{animation:fadeUp .6s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i) * 90ms + .1s)}
+  tbody tr{animation:fadeUp .45s cubic-bezier(.2,.7,.2,1) both}
+  tbody tr:nth-child(1){animation-delay:0ms}tbody tr:nth-child(2){animation-delay:28ms}tbody tr:nth-child(3){animation-delay:56ms}tbody tr:nth-child(4){animation-delay:84ms}tbody tr:nth-child(5){animation-delay:112ms}tbody tr:nth-child(6){animation-delay:140ms}tbody tr:nth-child(7){animation-delay:168ms}tbody tr:nth-child(8){animation-delay:196ms}tbody tr:nth-child(9){animation-delay:224ms}tbody tr:nth-child(10){animation-delay:252ms}tbody tr:nth-child(11){animation-delay:280ms}tbody tr:nth-child(12){animation-delay:308ms}tbody tr:nth-child(13){animation-delay:336ms}tbody tr:nth-child(14){animation-delay:364ms}tbody tr:nth-child(15){animation-delay:392ms}tbody tr:nth-child(16){animation-delay:420ms}tbody tr:nth-child(17){animation-delay:448ms}tbody tr:nth-child(18){animation-delay:476ms}tbody tr:nth-child(19){animation-delay:504ms}tbody tr:nth-child(20){animation-delay:532ms}tbody tr:nth-child(21){animation-delay:560ms}tbody tr:nth-child(22){animation-delay:588ms}tbody tr:nth-child(23){animation-delay:616ms}tbody tr:nth-child(24){animation-delay:644ms}tbody tr:nth-child(25){animation-delay:672ms}
+  .bar i,.effbar i,.seg3,.fly .l i,.fly .r i{transform-origin:left;animation:grow .9s cubic-bezier(.2,.7,.2,1) both;animation-delay:.15s}
+  .fly .l i{transform-origin:right}
+  .scard{animation:fadeUp .5s ease both}
+  .rk.m1,.rk.m2,.rk.m3{animation:pop .6s cubic-bezier(.2,.8,.3,1.3) both;animation-delay:.25s}
+  aside.drawer.open{animation:slideIn .35s cubic-bezier(.2,.7,.2,1) both}
+  .scrim:not([hidden]){animation:fadeIn .25s ease both}
+  #worldmap svg{animation:fadeIn .8s ease both}
+}
 </style>
 
 <header class="hero">
@@ -340,6 +393,7 @@ footer a{color:var(--hero-ink)}
     <div class="prw"><span class="pw e"></span><div><b>25 %</b> Efficience économique<div class="small muted">Résultats au regard du PIB par habitant</div></div></div>
     <div class="prw"><span class="pw d"></span><div><b>25 %</b> Efficience démographique<div class="small muted">Résultats au regard de la population</div></div></div>
   </div>
+  <div class="spot" id="spot"></div>
   <figure class="mapbox" id="mapbox">
     <div class="maphead">
       <figcaption><b>La carte du monde</b> <span class="small muted" id="map-sub">selon la performance réelle</span></figcaption>
@@ -625,7 +679,7 @@ $('#q-fed').addEventListener('input',renderFed);
 document.querySelectorAll('.seg button[data-f]').forEach(b=>b.addEventListener('click',()=>{fedFilter=b.dataset.f;document.querySelectorAll('.seg button[data-f]').forEach(x=>x.setAttribute('aria-pressed',x===b));renderFed()}));
 // drawer
 let lastFocus=null;
-function openDrawer(html){lastFocus=document.activeElement;const d=$('#drawer');d.innerHTML=html;d.hidden=false;$('#scrim').hidden=false;d.scrollTop=0;d.querySelector('.close').focus()}
+function openDrawer(html){lastFocus=document.activeElement;const d=$('#drawer');d.innerHTML=html;d.hidden=false;$('#scrim').hidden=false;d.classList.remove('open');void d.offsetWidth;d.classList.add('open');d.scrollTop=0;d.querySelector('.close').focus()}
 function closeDrawer(){$('#drawer').hidden=true;$('#scrim').hidden=true;if(lastFocus)lastFocus.focus()}
 $('#scrim').addEventListener('click',closeDrawer);
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('#drawer').hidden)closeDrawer()});
@@ -869,6 +923,24 @@ function renderSports(){
 }
 $('#q-sp').addEventListener('input',renderSports);
 renderGen();renderSports();
+// À la une
+(function(){
+  const fTop=Object.entries(G).sort((a,b)=>b[1].f-a[1].f)[0],hTop=Object.entries(G).sort((a,b)=>b[1].h-a[1].h)[0];
+  const C=[
+   {k:'Performance réelle',n:prRank[0].n,v:'indice '+fmt(prRank[0].v,1),c:'gold',sub:'N°1 du résumé des trois classements'},
+   {k:'Sport féminin',n:fTop[0],v:fmt(fTop[1].f)+' pts',c:'rose',sub:'N°1 du classement féminin'},
+   {k:'Sport masculin',n:hTop[0],v:fmt(hTop[1].h)+' pts',c:'sky',sub:'N°1 du classement masculin'},
+   {k:'Efficience démographique',n:peOk[0].n,v:'efficience '+fmt(peOk[0].eff),c:'mint',sub:'Gagne le plus pour sa population'}];
+  $('#spot').innerHTML=C.map((x,i)=>`<button type="button" class="spotc ${x.c}" data-nat="${esc(x.n)}" style="--i:${i}"><span class="sk">${x.k}</span><span class="sn">${esc(x.n)}</span><span class="sv">${x.v}</span><span class="ss">${x.sub}</span></button>`).join('');
+})();
+// compteurs du bandeau
+(function(){
+  if(!matchMedia('(prefers-reduced-motion: no-preference)').matches)return;
+  document.querySelectorAll('#facts b').forEach(el=>{const txt=el.textContent;const m=txt.match(/^([\d\s ,]+)(.*)$/);if(!m)return;
+    const target=parseFloat(m[1].replace(/[\s ]/g,'').replace(',','.'));const dec=(m[1].split(',')[1]||'').length;if(!isFinite(target))return;
+    const t0=performance.now(),D=1100;const step=now=>{const k=Math.min(1,(now-t0)/D),e=1-Math.pow(1-k,3);
+      el.textContent=fmt(target*e,dec)+m[2];if(k<1)requestAnimationFrame(step);else el.textContent=txt};requestAnimationFrame(step)});
+})();
 // comparateur de deux nations
 const natNames=N.map(n=>n.n).sort((a,b)=>a.localeCompare(b,'fr'));
 ['#cmp-a','#cmp-b'].forEach((s,i)=>{$(s).innerHTML=natNames.map(n=>`<option${n===(i?'Royaume-Uni':'France')?' selected':''}>${esc(n)}</option>`).join('')});
