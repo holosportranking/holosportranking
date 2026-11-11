@@ -243,6 +243,72 @@ footer nav a{color:var(--muted);font-weight:600}
 </head>
 <body>
 
+<style>
+/* ===== Habillage HSR : bandeau stade, navigation groupée, cartes en relief ===== */
+:root{--hero:#0b1a33;--hero2:#132a52;--hero-ink:#f4f7fc;--hero-muted:#a9b8d3;--hero-line:rgba(255,255,255,.12);
+  --shadow:0 1px 2px rgba(15,30,58,.06),0 6px 20px rgba(15,30,58,.06);--pill:#1d5bf0;--pill-ink:#ffffff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--hero:#070f20;--hero2:#0f1f3d;--shadow:0 1px 2px rgba(0,0,0,.4),0 6px 20px rgba(0,0,0,.25);--pill:#7fa6ff;--pill-ink:#0b1426}}
+:root[data-theme="dark"]{--hero:#070f20;--hero2:#0f1f3d;--shadow:0 1px 2px rgba(0,0,0,.4),0 6px 20px rgba(0,0,0,.25);--pill:#7fa6ff;--pill-ink:#0b1426}
+body::before{background:var(--hero)}
+header.hero{position:relative;overflow:hidden;color:var(--hero-ink);border-bottom:0;
+  background:
+    radial-gradient(900px 340px at 85% 110%,rgba(224,165,38,.22),transparent 60%),
+    repeating-linear-gradient(176deg,transparent 0 58px,rgba(255,255,255,.06) 58px 59px),
+    linear-gradient(160deg,var(--hero2),var(--hero))}
+.hero .wrap{padding-block:36px 30px}
+.hero h1{color:var(--hero-ink);font-size:clamp(44px,7vw,78px);letter-spacing:.005em}
+.hero h1 span{color:#f2b630}
+.hero .tagline{color:var(--hero-ink)}
+.hero p.lead{color:var(--hero-muted)}
+.hero .eyebrow{color:var(--hero-muted)}
+.mark{background:#f2b630;color:#0b1a33}
+.mark b{color:#0b1a33;opacity:.75}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;max-width:620px}
+.facts div{background:rgba(255,255,255,.06);border:1px solid var(--hero-line);border-radius:10px;padding:10px 12px;min-width:0}
+.facts span{font-size:11.5px;line-height:1.3}
+@media (max-width:620px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.facts b{color:#ffffff;font-size:30px}
+.facts span{color:var(--hero-muted)}
+.step .who{color:#ffffff;font-size:22px}
+.step .pts{color:var(--hero-muted)}
+.block{color:#0b1a33;box-shadow:inset 0 -6px 0 rgba(0,0,0,.12)}
+.s1 .block{background:linear-gradient(180deg,#ffd35c,#e0a526);height:132px}
+.s2 .block{background:linear-gradient(180deg,#eef2f7,#b9c3d0);height:96px}
+.s3 .block{background:linear-gradient(180deg,#f0b48a,#c27a4a);height:70px}
+/* navigation */
+nav.tabs{box-shadow:0 1px 0 var(--line),0 6px 18px rgba(15,30,58,.05)}
+nav.tabs .wrap.navrow{display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center;overflow:visible;padding-block:10px}
+.grp{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.gl{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--muted)}
+.pills{display:flex;flex-wrap:wrap;gap:4px}
+nav.tabs .pills a{padding:6px 12px;border-radius:999px;border:1px solid transparent;border-bottom-width:1px;font-size:13.5px;color:var(--ink);background:var(--soft)}
+nav.tabs .pills a:hover{border-color:var(--line);background:var(--surface)}
+nav.tabs .pills a[aria-current="page"]{background:var(--pill);color:var(--pill-ink);border-color:var(--pill)}
+.navsel{display:none}
+@media (max-width:760px){
+  nav.tabs .grp{display:none}
+  .navsel{display:flex;align-items:center;gap:10px;width:100%}
+  .navsel select{flex:1;font-weight:600;padding:9px 12px;border-radius:999px;background:var(--soft)}
+}
+/* en-têtes de rubrique */
+.vgrp{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pill);margin-bottom:2px}
+.view-head h2{font-size:clamp(30px,4vw,42px);line-height:1}
+/* cartes et tableaux en relief */
+.tablebox,.srcgroup,.prw,.kpi,.chartbox,.mapbox,.scard,.cmphead,.prose{box-shadow:var(--shadow);border-color:transparent}
+tbody tr:nth-child(even){background:color-mix(in srgb,var(--soft) 45%,transparent)}
+tbody tr.click:hover{background:var(--accent-soft)}
+th{background:var(--surface)}
+.rk{text-align:center}
+.rk.m1,.rk.m2,.rk.m3{color:#0b1a33;background-repeat:no-repeat;background-position:center}
+.rk.m1{background-image:radial-gradient(circle,#f2b630 0 14px,transparent 15px)}
+.rk.m2{background-image:radial-gradient(circle,#c9d1dc 0 14px,transparent 15px)}
+.rk.m3{background-image:radial-gradient(circle,#d9915f 0 14px,transparent 15px)}
+.bar{height:9px;border-radius:5px}
+.bar i{background:linear-gradient(90deg,var(--bar),#4f8bff)}
+footer{background:var(--hero);color:var(--hero-muted);border-top:0}
+footer nav a{color:var(--hero-ink)}
+footer a{color:var(--hero-ink)}
+</style>
 
 <header class="hero">
   <div class="wrap">
@@ -256,14 +322,17 @@ footer nav a{color:var(--muted);font-weight:600}
     <div class="podiumwrap"><div class="eyebrow" style="text-align:center;margin-bottom:6px">Podium de la performance réelle</div><div class="podium" id="podium" aria-label="Podium de la performance réelle"></div></div>
   </div>
 </header>
-<nav class="tabs" aria-label="Sections"><div class="wrap">
-  <a href="#performance">Performance réelle</a><a href="#classement">Classement sportif</a><a href="#genre">Femmes · Hommes</a><a href="#efficience">Efficience économique</a><a href="#demographie">Efficience démographique</a><a href="#sports">Par sport</a><a href="#comparer">Comparer</a><a href="#federations">Fédérations</a><a href="#methode">Méthode</a><a href="#sources">Sources</a><a href="#donnees">Données</a>
+<nav class="tabs" aria-label="Sections"><div class="wrap navrow">
+  <div class="grp"><span class="gl">Classements</span><div class="pills"><a href="#performance">Performance réelle</a><a href="#classement">Classement sportif</a><a href="#genre">Femmes · Hommes</a><a href="#efficience">Efficience économique</a><a href="#demographie">Efficience démographique</a></div></div>
+  <div class="grp"><span class="gl">Explorer</span><div class="pills"><a href="#sports">Par sport</a><a href="#comparer">Comparer</a><a href="#federations">Fédérations</a></div></div>
+  <div class="grp"><span class="gl">Comprendre</span><div class="pills"><a href="#methode">Méthode</a><a href="#sources">Sources</a><a href="#donnees">Données</a></div></div>
+  <label class="navsel"><span class="gl">Rubrique</span><select id="navsel" aria-label="Choisir une rubrique"><optgroup label="Classements"><option value="performance">Performance réelle</option><option value="classement">Classement sportif</option><option value="genre">Femmes · Hommes</option><option value="efficience">Efficience économique</option><option value="demographie">Efficience démographique</option></optgroup><optgroup label="Explorer"><option value="sports">Par sport</option><option value="comparer">Comparer</option><option value="federations">Fédérations</option></optgroup><optgroup label="Comprendre"><option value="methode">Méthode</option><option value="sources">Sources</option><option value="donnees">Données</option></optgroup></select></label>
 </div></nav>
 
 <main><div class="wrap">
 <section class="view" id="v-performance">
   <div class="view-head">
-    <div><h2>Performance réelle</h2><p>Le résumé des trois classements : les résultats sportifs bruts, l'efficience au regard du niveau de vie et l'efficience au regard de la population. Une nation en tête ici gagne beaucoup, et gagne plus que ses moyens ne le laissent attendre.</p></div>
+    <div><div class="vgrp">Classements</div><h2>Performance réelle</h2><p>Le résumé des trois classements : les résultats sportifs bruts, l'efficience au regard du niveau de vie et l'efficience au regard de la population. Une nation en tête ici gagne beaucoup, et gagne plus que ses moyens ne le laissent attendre.</p></div>
     <div class="controls"><input type="search" id="q-pr" placeholder="Rechercher une nation" aria-label="Rechercher une nation"></div>
   </div>
   <div class="prgrid">
@@ -291,7 +360,7 @@ footer nav a{color:var(--muted);font-weight:600}
 
 <section class="view" id="v-classement" hidden>
   <div class="view-head">
-    <div><h2>Classement sportif</h2><p>Cliquez sur une nation pour voir d'où viennent ses points, sport par sport.</p></div>
+    <div><div class="vgrp">Classements</div><h2>Classement sportif</h2><p>Cliquez sur une nation pour voir d'où viennent ses points, sport par sport.</p></div>
     <div class="controls"><input type="search" id="q-nat" placeholder="Rechercher une nation" aria-label="Rechercher une nation"></div>
   </div>
   <div class="tablebox"><table>
@@ -302,7 +371,7 @@ footer nav a{color:var(--muted);font-weight:600}
 
 <section class="view" id="v-genre" hidden>
   <div class="view-head">
-    <div><h2>Femmes · Hommes</h2><p>Le classement sportif séparé en deux : ce que chaque nation gagne chez les femmes et chez les hommes. Les deux scores s'additionnent pour donner le score du classement sportif.</p></div>
+    <div><div class="vgrp">Classements</div><h2>Femmes · Hommes</h2><p>Le classement sportif séparé en deux : ce que chaque nation gagne chez les femmes et chez les hommes. Les deux scores s'additionnent pour donner le score du classement sportif.</p></div>
     <div class="controls">
       <div class="seg" role="group" aria-label="Choisir le classement">
         <button type="button" data-g="f" aria-pressed="true">Femmes</button><button type="button" data-g="h" aria-pressed="false">Hommes</button>
@@ -319,7 +388,7 @@ footer nav a{color:var(--muted);font-weight:600}
 
 <section class="view" id="v-sports" hidden>
   <div class="view-head">
-    <div><h2>Qui domine chaque sport ?</h2><p>Pour chaque fédération, les cinq nations qui se partagent le plus de ses 1000 points. Cliquez sur un sport pour voir le détail du calcul, ou sur une nation pour ouvrir sa fiche.</p></div>
+    <div><div class="vgrp">Explorer</div><h2>Qui domine chaque sport ?</h2><p>Pour chaque fédération, les cinq nations qui se partagent le plus de ses 1000 points. Cliquez sur un sport pour voir le détail du calcul, ou sur une nation pour ouvrir sa fiche.</p></div>
     <div class="controls"><input type="search" id="q-sp" placeholder="Rechercher un sport ou une nation" aria-label="Rechercher un sport ou une nation"></div>
   </div>
   <div class="sportgrid" id="sportgrid"></div>
@@ -327,7 +396,7 @@ footer nav a{color:var(--muted);font-weight:600}
 
 <section class="view" id="v-comparer" hidden>
   <div class="view-head">
-    <div><h2>Comparer deux nations</h2><p>Les quatre classements côte à côte, puis sport par sport : où chaque nation prend l'avantage.</p></div>
+    <div><div class="vgrp">Explorer</div><h2>Comparer deux nations</h2><p>Les quatre classements côte à côte, puis sport par sport : où chaque nation prend l'avantage.</p></div>
     <div class="controls cmpsel">
       <label class="small muted" for="cmp-a">Nation A</label><select id="cmp-a"></select>
       <button type="button" class="btn" id="cmp-swap" aria-label="Inverser les deux nations">⇄</button>
@@ -339,7 +408,7 @@ footer nav a{color:var(--muted);font-weight:600}
 
 <section class="view" id="v-efficience" hidden>
   <div class="view-head">
-    <div><h2>Efficience économique</h2><p>Les nations qui obtiennent le plus de résultats sportifs au regard de leur niveau de vie (PIB en parité de pouvoir d'achat par habitant). 100 = score conforme à ce qu'on attend d'un pays de ce niveau de vie ; 300 = trois fois plus.</p></div>
+    <div><div class="vgrp">Classements</div><h2>Efficience économique</h2><p>Les nations qui obtiennent le plus de résultats sportifs au regard de leur niveau de vie (PIB en parité de pouvoir d'achat par habitant). 100 = score conforme à ce qu'on attend d'un pays de ce niveau de vie ; 300 = trois fois plus.</p></div>
     <div class="controls"><input type="search" id="q-eff" placeholder="Rechercher une nation" aria-label="Rechercher une nation"></div>
   </div>
   <div class="effgrid">
@@ -354,7 +423,7 @@ footer nav a{color:var(--muted);font-weight:600}
 
 <section class="view" id="v-demographie" hidden>
   <div class="view-head">
-    <div><h2>Efficience démographique</h2><p>Les nations de plus de 100 000 habitants qui obtiennent le plus de résultats sportifs au regard de leur population. 100 = score conforme à ce qu'on attend d'un pays de cette taille ; 300 = trois fois plus.</p></div>
+    <div><div class="vgrp">Classements</div><h2>Efficience démographique</h2><p>Les nations de plus de 100 000 habitants qui obtiennent le plus de résultats sportifs au regard de leur population. 100 = score conforme à ce qu'on attend d'un pays de cette taille ; 300 = trois fois plus.</p></div>
     <div class="controls"><input type="search" id="q-pop" placeholder="Rechercher une nation" aria-label="Rechercher une nation"></div>
   </div>
   <div class="effgrid">
@@ -370,7 +439,7 @@ footer nav a{color:var(--muted);font-weight:600}
 
 <section class="view" id="v-federations" hidden>
   <div class="view-head">
-    <div><h2>Fédérations</h2><p>Les 123 fédérations internationales retenues, triées par poids dans le classement. Cliquez pour voir la cotation, les compétitions prises en compte et la répartition des 1000 points.</p></div>
+    <div><div class="vgrp">Explorer</div><h2>Fédérations</h2><p>Les 123 fédérations internationales retenues, triées par poids dans le classement. Cliquez pour voir la cotation, les compétitions prises en compte et la répartition des 1000 points.</p></div>
     <div class="controls">
       <input type="search" id="q-fed" placeholder="Rechercher un sport ou un sigle" aria-label="Rechercher une fédération">
       <div class="seg" role="group" aria-label="Filtrer par statut">
@@ -384,20 +453,20 @@ footer nav a{color:var(--muted);font-weight:600}
 </section>
 
 <section class="view" id="v-methode" hidden>
-  <div class="view-head"><div><h2>Méthode</h2><p>Le calcul en trois étages : coter chaque sport, répartir 1000 points par fédération, puis additionner les points pondérés.</p></div></div>
+  <div class="view-head"><div><div class="vgrp">Comprendre</div><h2>Méthode</h2><p>Le calcul en trois étages : coter chaque sport, répartir 1000 points par fédération, puis additionner les points pondérés.</p></div></div>
   <div class="prose" id="methode"></div>
 </section>
 
 <section class="view" id="v-sources" hidden>
   <div class="view-head">
-    <div><h2>Sources</h2><p>Chaque compétition et chaque classement mondial utilisé, avec son lien. Tous les résultats sont sourcés ; une mention « à vérifier » apparaîtrait ici si un résultat était saisi sans source.</p></div>
+    <div><div class="vgrp">Comprendre</div><h2>Sources</h2><p>Chaque compétition et chaque classement mondial utilisé, avec son lien. Tous les résultats sont sourcés ; une mention « à vérifier » apparaîtrait ici si un résultat était saisi sans source.</p></div>
     <div class="controls"><input type="search" id="q-src" placeholder="Filtrer les sources" aria-label="Filtrer les sources"></div>
   </div>
   <div class="srcgrid" id="srcs"></div>
 </section>
 
 <section class="view" id="v-donnees" hidden>
-  <div class="view-head"><div><h2>Données</h2><p>Les tableaux complets du calcul, à copier au format CSV pour les ouvrir dans un tableur. Le classeur Excel de calcul (formules actives) accompagne chaque édition.</p></div></div>
+  <div class="view-head"><div><div class="vgrp">Comprendre</div><h2>Données</h2><p>Les tableaux complets du calcul, à copier au format CSV pour les ouvrir dans un tableur. Le classeur Excel de calcul (formules actives) accompagne chaque édition.</p></div></div>
   <div class="srcgrid" id="dl"></div>
 </section>
 <section class="view" id="v-mentions-legales" hidden>
@@ -695,7 +764,8 @@ document.querySelectorAll('[data-l]').forEach(el=>{const v=(LEGAL[el.dataset.l]|
 const VIEWS=['performance','classement','genre','efficience','demographie','sports','comparer','federations','methode','sources','donnees','mentions-legales','confidentialite','conditions'];
 function route(){const h=location.hash.slice(1);const v=VIEWS.includes(h)?h:'performance';
   VIEWS.forEach(x=>$('#v-'+x).hidden=x!==v);if(['mentions-legales','confidentialite','conditions'].includes(v))window.scrollTo(0,0);
-  document.querySelectorAll('nav.tabs a').forEach(a=>a.setAttribute('aria-current',a.getAttribute('href')==='#'+v?'page':'false'));}
+  document.querySelectorAll('nav.tabs a').forEach(a=>a.setAttribute('aria-current',a.getAttribute('href')==='#'+v?'page':'false'));const ns=$('#navsel');if(ns&&VIEWS.indexOf(v)<11)ns.value=v;}
+$('#navsel').addEventListener('change',e=>{location.hash=e.target.value});
 window.addEventListener('hashchange',()=>{route();if(!$('#drawer').hidden)closeDrawer()});
 // classements d'efficience (économique et démographique)
 const EF=DATA.EF, PE=DATA.PE;
