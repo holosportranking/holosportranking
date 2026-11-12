@@ -13,6 +13,11 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#060a14">
+<link rel="canonical" href="https://holosportranking.github.io/holosportranking/">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="HoloSport Ranking">
+<link rel="alternate" type="application/rss+xml" title="HoloSport Ranking – éditions" href="https://holosportranking.github.io/holosportranking/flux.xml">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "name": "HoloSport Ranking", "alternateName": "HSR", "url": "https://holosportranking.github.io/holosportranking/", "inLanguage": "fr"}, {"@type": "Dataset", "name": "HoloSport Ranking – classement mondial multisport des nations", "description": "Classement mensuel des nations tous sports confondus : 1000 points par fédération internationale, pondérés par une cotation des fédérations ; performance réelle, efficience économique et démographique.", "url": "https://holosportranking.github.io/holosportranking/", "license": "https://creativecommons.org/licenses/by-nc/4.0/deed.fr", "version": "1.0", "dateModified": "2026-11-12", "inLanguage": "fr", "isAccessibleForFree": true, "creator": {"@type": "Organization", "name": "HoloSport Ranking", "url": "https://holosportranking.github.io/holosportranking/"}, "temporalCoverage": "2023/..", "spatialCoverage": "Monde", "distribution": [{"@type": "DataDownload", "encodingFormat": "application/pdf", "contentUrl": "https://holosportranking.github.io/holosportranking/methode-hsr.pdf"}]}]}</script>
 <title>HoloSport Ranking – classement mondial multisport des nations</title>
 <title>HoloSport Ranking</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -793,6 +798,15 @@ footer{border-top:1px solid var(--line)}
 .jrd{display:flex;flex-direction:column;gap:4px}.jrd b{font-family:var(--f-display);font-size:20px}.jrd span{font-size:12px;color:var(--muted)}
 .jrb h3{margin:0 0 8px;font-size:22px}.jrb ul{margin:0;padding-left:1.1em;display:flex;flex-direction:column;gap:6px;font-size:14.5px;line-height:1.5}
 @media (max-width:620px){.jr{grid-template-columns:1fr;gap:6px}.fiablegend div{flex-direction:column;gap:6px}}
+
+/* ===== Partage ===== */
+.sharebtn{display:inline-flex;align-items:center;gap:6px;margin-left:auto;margin-right:8px;padding:7px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:600 13px var(--f-body);cursor:pointer;align-self:flex-start}
+.sharebtn:hover{border-color:var(--accent);color:var(--accent)}
+.dhead{position:relative}
+#sharepop{position:absolute;right:56px;top:56px;z-index:30;display:flex;flex-direction:column;min-width:190px;background:var(--surface-2,var(--surface));border:1px solid var(--line);border-radius:12px;padding:6px;box-shadow:0 12px 40px rgba(0,0,0,.35)}
+#sharepop a,#sharepop button{all:unset;cursor:pointer;padding:9px 12px;border-radius:8px;font-size:14px;color:var(--ink)}
+#sharepop a:hover,#sharepop button:hover{background:color-mix(in srgb,var(--accent) 14%,transparent)}
+@media (max-width:620px){.sharebtn span{display:none}.sharebtn{padding:8px}}
 </style>
 
 <header class="hero">
@@ -978,6 +992,11 @@ footer{border-top:1px solid var(--line)}
 <section class="view" id="v-donnees" hidden>
   <div class="view-head"><div><div class="vgrp">Comprendre</div><h2>Données</h2><p>Les tableaux complets du calcul, à copier au format CSV pour les ouvrir dans un tableur. Le classeur Excel de calcul (formules actives) accompagne chaque édition.</p></div></div>
   <div class="srcgrid" id="dl"></div>
+  <h3 style="margin-top:28px">Intégrer le classement sur votre site</h3>
+  <p class="small muted">Le top 10 de la performance réelle, mis à jour automatiquement chaque mois. Copiez ce code dans votre page (blog, média, club).</p>
+  <div class="citebox"><p><code id="embedcode"></code></p><button type="button" class="btn" id="embedcopy">Copier le code</button></div>
+  <h3 style="margin-top:28px">Suivre les éditions</h3>
+  <p class="small">Flux RSS des éditions et des corrections : <a id="rsslink" href="#" target="_blank" rel="noopener">flux.xml</a> · Annuaire de toutes les nations et de tous les sports : <a id="annlink" href="#" target="_blank" rel="noopener">annuaire</a>. Chaque nation et chaque sport a sa propre page à partager, avec une image de partage dédiée.</p>
 </section>
 <section class="view" id="v-mentions-legales" hidden>
   <div class="view-head"><div><h2>Mentions légales</h2><p>Informations prévues par l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique (LCEN).</p></div></div>
@@ -1244,6 +1263,11 @@ const FIAB={"FIBA": {"g": "A", "lab": "élevée", "why": ["méthode complète", 
   ]
  }
 ], VER={"methode": "1.0", "date": "12 novembre 2026", "licence": "CC BY-NC 4.0", "licence_url": "https://creativecommons.org/licenses/by-nc/4.0/deed.fr", "site": "https://holosportranking.github.io/holosportranking/", "pdf": "https://holosportranking.github.io/holosportranking/methode-hsr.pdf"};
+const SLUG=s=>String(s).normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+const SITE=VER.site;
+let _sps=null;function SPS(s){if(!_sps){_sps={};const c={};F.forEach(f=>{const k=SLUG(sportOf(f.s)||f.s);c[k]=(c[k]||0)+1});F.forEach(f=>{const k=SLUG(sportOf(f.s)||f.s);_sps[f.s]=c[k]>1?SLUG(f.s):k})}return _sps[s]||SLUG(s)}
+function deepSet(h){try{history.pushState(null,'','#'+h)}catch(e){}}
+function shareBtn(kind,id,title){return `<button type="button" class="sharebtn" data-share="${kind}/${kind==='sport'?id:SLUG(id)}" data-title="${esc(title)}" aria-label="Partager">${'<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M18 16a3 3 0 0 0-2.4 1.2l-6.7-3.4a3 3 0 0 0 0-1.6l6.7-3.4A3 3 0 1 0 15 7l-6.7 3.4a3 3 0 1 0 0 3.2L15 17a3 3 0 1 0 3-1z"/></svg>'}<span>Partager</span></button>`}
 const fb=(s,big)=>{const x=FIAB[s];if(!x||x.g==='–')return '';return `<span class="fiab f${x.g}${big?' big':''}" title="Fiabilité ${x.lab} : ${esc(x.why.join(' · '))}">${big?'Fiabilité '+x.lab:x.g}</span>`};
 const fl=(n,c)=>'<i class="fl '+(ISO[n]?'fl-'+ISO[n]:'fl-none')+(c?' '+c:'')+'" aria-hidden="true"></i>';
 const short=n=>n.replace(/ \(.*\)$/,'');
@@ -1341,21 +1365,21 @@ document.querySelectorAll('.seg button[data-f]').forEach(b=>b.addEventListener('
 // drawer
 let lastFocus=null;
 function openDrawer(html){lastFocus=document.activeElement;const d=$('#drawer');d.innerHTML=html;d.hidden=false;$('#scrim').hidden=false;d.classList.remove('open');void d.offsetWidth;d.classList.add('open');d.scrollTop=0;d.querySelector('.close').focus()}
-function closeDrawer(){$('#drawer').hidden=true;$('#scrim').hidden=true;if(lastFocus)lastFocus.focus()}
+function closeDrawer(){if(/^#(nation|sport)\//.test(location.hash)){try{history.replaceState(null,'','#'+(document.body.dataset.v||'performance'))}catch(e){}}$('#drawer').hidden=true;$('#scrim').hidden=true;if(lastFocus)lastFocus.focus()}
 $('#scrim').addEventListener('click',closeDrawer);
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('#drawer').hidden)closeDrawer()});
 $('#drawer').addEventListener('click',e=>{const cb=e.target.closest('[data-cmp]');if(cb){$('#cmp-a').value=cb.dataset.cmp;if($('#cmp-b').value===cb.dataset.cmp)$('#cmp-b').value=cb.dataset.cmp==='France'?'Royaume-Uni':'France';renderCmp();closeDrawer();location.hash='comparer';return}if(e.target.closest('.close'))closeDrawer();const a=e.target.closest('[data-fed],[data-nat]');if(a&&a.closest('#drawer')){a.dataset.fed?showFed(a.dataset.fed):showNat(a.dataset.nat)}});
 document.addEventListener('click',e=>{const t=e.target.closest('tr[data-nat],button[data-nat],g[data-nat],tr[data-fed],button[data-fed]');if(!t||t.closest('#drawer'))return;t.dataset.fed?showFed(t.dataset.fed):showNat(t.dataset.nat)});
 document.addEventListener('keydown',e=>{if(e.key!=='Enter'&&e.key!==' ')return;const t=e.target.closest&&e.target.closest('tr[data-nat],tr[data-fed]');if(!t)return;e.preventDefault();t.dataset.fed?showFed(t.dataset.fed):showNat(t.dataset.nat)});
 function showNat(name){
-  const n=N.find(x=>x.n===name);if(!n)return;const cs=contribs(n);const max=cs.length?cs[0].c:1;
+  const n=N.find(x=>x.n===name);if(!n)return;deepSet('nation/'+SLUG(n.n));const cs=contribs(n);const max=cs.length?cs[0].c:1;
   const ri=rankInfo(n.n);
   const fam={};cs.forEach(c=>{const k=famOf(c.s);(fam[k]=fam[k]||{k,t:0,l:[]}).l.push(c);fam[k].t+=c.c});
   const fams=Object.values(fam).sort((a,b)=>b.t-a.t);
   const strong=cs[0];
   const weak=F.filter(f=>f.st==='Attribuée').sort((a,b)=>b.w-a.w).slice(0,20).map(f=>({f,p:n.p[f.s]||0})).sort((a,b)=>a.p-b.p||b.f.w-a.f.w)[0];
   const G2=(DATA.G&&DATA.G[n.n])||null;
-  openDrawer(`<div class="dhead card-hero"><div class="dflag">${fl(n.n,'fl-xl')}</div><div><div class="eyebrow">Fiche nation · rang sportif ${n.rk} sur ${N.length}</div><h3 id="d-title">${esc(n.n)}</h3></div><button class="close" type="button" aria-label="Fermer">×</button></div>
+  openDrawer(`<div class="dhead card-hero"><div class="dflag">${fl(n.n,'fl-xl')}</div><div><div class="eyebrow">Fiche nation · rang sportif ${n.rk} sur ${N.length}</div><h3 id="d-title">${esc(n.n)}</h3></div>${shareBtn('nation',n.n,n.n+' au classement HSR')}<button class="close" type="button" aria-label="Fermer">×</button></div>
   <div class="dbody">
    <div class="rkchips">${ri.map(x=>`<div class="rkc${x[1]&&x[1]<=10?' top':''}"><b class="num">${x[1]?x[1]+'<sup>e</sup>':'–'}</b><span>${x[0]}</span></div>`).join('')}</div>
    <div class="kpis"><div class="kpi"><b class="num">${fmt(n.s)}</b><span>score pondéré</span></div><div class="kpi"><b class="num">${n.nf}</b><span>sports où elle marque</span></div><div class="kpi"><b class="num">${G2?fmt(100*G2.f/(G2.f+G2.h))+' %':'–'}</b><span>part féminine</span></div></div>
@@ -1374,7 +1398,7 @@ function placeTxt(r){if(r[8]!=null)return `${fmt(r[8])} pts au tableau des place
 function srcLink(s){if(!s)return '';if(/^https?:\/\/\S+$/.test(s))return `<a href="${esc(s)}" target="_blank" rel="noopener">${esc(s.replace(/^https?:\/\/(www\.)?/,'').slice(0,60))}${s.length>70?'…':''}</a>`;
   return esc(s).replace(/(https?:\/\/[^\s]+)/g,u=>`<a href="${u}" target="_blank" rel="noopener">lien</a>`)}
 function showFed(s){
-  const f=FED[s];if(!f)return;const ds=D.filter(d=>d.f===s);
+  const f=FED[s];if(!f)return;deepSet('sport/'+SPS(s));const ds=D.filter(d=>d.f===s);
   const dist=N.filter(n=>n.p[s]).map(n=>({n:n.n,p:n.p[s]})).sort((a,b)=>b.p-a.p);
   const notes=[['Pratique',f.np,'35 %'],['Audience',f.na,'25 %'],['Diffusion',f.nd,'25 %'],['Olympisme',f.no,'15 %']];
   let body=(FIAB[s]&&FIAB[s].g!=='–')?`<div class="fiabbox f${FIAB[s].g}">${fb(s,true)}<span>${esc(FIAB[s].why.join(' · '))}</span></div>`:'';
@@ -1393,7 +1417,7 @@ function showFed(s){
        <div class="tablebox"><table><thead><tr><th>Nation</th><th>Résultat</th><th class="r">Points</th></tr></thead><tbody>${(resByEv[e.c]||[]).slice().sort((a,b)=>b[7]-a[7]).map(r=>`<tr><td>${fl(r[1])}${esc(r[1])}</td><td class="small num">${placeTxt(r)}</td><td class="r num">${fmt(r[7],1)}</td></tr>`).join('')}</tbody></table></div>`).join('')}
      </div>`}).join('')}`;
   }
-  openDrawer(`<div class="dhead"><div><div class="eyebrow">Rang ${f.rk} · ${esc(f.rec)} · méthode ${f.m.toLowerCase()}</div><h3 id="d-title">${esc(f.s)}</h3><div class="small muted">${esc(f.n)}</div></div><button class="close" type="button" aria-label="Fermer">×</button></div>
+  openDrawer(`<div class="dhead"><div><div class="eyebrow">Rang ${f.rk} · ${esc(f.rec)} · méthode ${f.m.toLowerCase()}</div><h3 id="d-title">${esc(f.s)}</h3><div class="small muted">${esc(f.n)}</div></div>${shareBtn('sport',SPS(f.s),(sportOf(f.s)||f.s)+' · classement des nations HSR')}<button class="close" type="button" aria-label="Fermer">×</button></div>
   <div class="dbody">
    <div class="kpis"><div class="kpi"><b class="num">${fmt(f.w,2)} %</b><span>poids relatif</span></div><div class="kpi"><b class="num">${fmt(f.sc,2)}</b><span>score de cotation /10</span></div><div class="kpi"><b class="num">${fmt(f.w,3)}</b><span>coefficient appliqué</span></div></div>
    <div class="dsec"><h4>Cotation</h4><div class="tablebox"><table><thead><tr><th>Critère</th><th class="r">Poids</th><th class="r">Note /10</th></tr></thead><tbody>
@@ -1498,11 +1522,23 @@ $('#dl').addEventListener('click',async e=>{const b=e.target.closest('[data-copy
 const LEGAL={"site": "HoloSport Ranking (HSR)", "domaine": "holosportranking.github.io/holosportranking", "hebergeur_nom": "GitHub, Inc. (service GitHub Pages)", "hebergeur_adresse": "88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis", "hebergeur_telephone": "+1 877 448 4820", "date_maj": "11 novembre 2026"};
 document.querySelectorAll('[data-l]').forEach(el=>{const v=(LEGAL[el.dataset.l]||'').trim();if(v){el.textContent=v}else{el.textContent='[à compléter : '+(el.dataset.hint||el.dataset.l)+']';el.classList.add('todo')}});
 const VIEWS=['performance','highlights','classement','genre','efficience','demographie','sports','comparer','federations','methode','journal','sources','donnees','mentions-legales','confidentialite','conditions'];
-function route(){const h=location.hash.slice(1);const v=VIEWS.includes(h)?h:'performance';
+function route(){const h=location.hash.slice(1);const v=VIEWS.includes(h)?h:(/^(nation|sport)\//.test(h)?(document.body.dataset.v||(h[0]==='s'?'sports':'performance')):'performance');
   VIEWS.forEach(x=>$('#v-'+x).hidden=x!==v);if(['mentions-legales','confidentialite','conditions'].includes(v))window.scrollTo(0,0);
   document.querySelectorAll('nav.tabs a').forEach(a=>a.setAttribute('aria-current',a.getAttribute('href')==='#'+v?'page':'false'));document.body.dataset.v=v;const mb=$('#morebtn');if(mb)mb.classList.toggle('on',!!document.querySelector('#morepanel > div:not(.mobonly) a[aria-current="page"]'));$('#morepanel').hidden=true;$('#morebtn').setAttribute('aria-expanded','false');}
 
-window.addEventListener('hashchange',()=>{route();if(!$('#drawer').hidden)closeDrawer()});
+function deepOpen(){const m=decodeURIComponent(location.hash.slice(1)).match(/^(nation|sport)\/(.+)$/);if(!m)return false;
+  if(m[1]==='nation'){const n=N.find(x=>SLUG(x.n)===m[2]);if(n){showNat(n.n);return true}}
+  else{const f=F.find(x=>SPS(x.s)===m[2]||SLUG(x.s)===m[2]);if(f){showFed(f.s);return true}}return false}
+window.addEventListener('hashchange',()=>{route();if(!deepOpen()&&!$('#drawer').hidden)closeDrawer()});
+window.addEventListener('popstate',()=>{if(!deepOpen()&&!$('#drawer').hidden){$('#drawer').hidden=true;$('#scrim').hidden=true}});
+// partage
+function shareMenu(btn){const url=SITE+btn.dataset.share+'/',tt=btn.dataset.title,u=encodeURIComponent(url),x=encodeURIComponent(tt);
+  if(navigator.share&&matchMedia('(pointer:coarse)').matches){navigator.share({title:tt,url}).catch(()=>{});return}
+  let m=document.getElementById('sharepop');if(m){m.remove();if(m.dataset.for===btn.dataset.share)return}
+  m=document.createElement('div');m.id='sharepop';m.dataset.for=btn.dataset.share;m.setAttribute('role','menu');
+  m.innerHTML=`<button type="button" data-copy>Copier le lien</button><a target="_blank" rel="noopener" href="https://x.com/intent/post?text=${x}&url=${u}">X (Twitter)</a><a target="_blank" rel="noopener" href="https://www.linkedin.com/sharing/share-offsite/?url=${u}">LinkedIn</a><a target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=${u}">Facebook</a><a target="_blank" rel="noopener" href="https://wa.me/?text=${x}%20${u}">WhatsApp</a><a href="mailto:?subject=${x}&body=${u}">E-mail</a>`;
+  btn.after(m);m.querySelector('[data-copy]').onclick=async e=>{try{await navigator.clipboard.writeText(url);e.target.textContent='Lien copié'}catch(_){prompt('Lien à copier',url)}}}
+document.addEventListener('click',e=>{const b=e.target.closest('.sharebtn');if(b){e.stopPropagation();shareMenu(b);return}const m=document.getElementById('sharepop');if(m&&!m.contains(e.target))m.remove()});
 // classements d'efficience (économique et démographique)
 const EF=DATA.EF, PE=DATA.PE;
 function prep(rows,key){const ok=rows.filter(r=>r[key]).sort((a,b)=>b.eff-a.eff);ok.forEach((r,i)=>r.erk=i+1);return ok}
@@ -1706,6 +1742,7 @@ function pods(){
 }
 
 // journal des modifications
+(function(){const c=`<iframe src="${SITE}widget/" title="Top 10 HoloSport Ranking" width="360" height="460" style="border:0;border-radius:12px;max-width:100%" loading="lazy"></iframe>`;const el=document.getElementById('embedcode');if(el)el.textContent=c;const r=document.getElementById('rsslink');if(r)r.href=SITE+'flux.xml';const an=document.getElementById('annlink');if(an)an.href=SITE+'annuaire/';const b=document.getElementById('embedcopy');if(b)b.onclick=async()=>{try{await navigator.clipboard.writeText(c);b.textContent='Code copié'}catch(e){prompt('Code à copier',c)}}})();
 (function(){const b=document.getElementById('citecopy');if(b)b.addEventListener('click',async()=>{const tx=b.previousElementSibling.textContent;try{await navigator.clipboard.writeText(tx);b.textContent='Citation copiée'}catch(e){const r=document.createRange();r.selectNodeContents(b.previousElementSibling);const s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Sélectionnée : Ctrl+C'}})})();
 $('#journal').innerHTML=JOURNAL.map(j=>{const d=new Date(j.date+'T12:00:00');return `<article class="jr"><div class="jrd"><b>${d.toLocaleDateString('fr-FR',{day:'numeric',month:'long',year:'numeric'})}</b>${j.version?`<span>méthode v${esc(j.version)}</span>`:''}</div><div class="jrb"><h3>${esc(j.titre)}</h3><ul>${j.items.map(i=>`<li>${esc(i)}</li>`).join('')}</ul></div></article>`}).join('');
 // carte du monde
@@ -1759,7 +1796,7 @@ colorMap();
   const go2=()=>{$('#gsearch').value=$('#gsearch2').value;$('#gsearch2').value='';go()};$('#gsearch').addEventListener('change',go);$('#gsearch').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();go()}});$('#gsearch2').addEventListener('change',go2);$('#gsearch2').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();go2()}});
   $('#themebtn').addEventListener('click',()=>{const d=document.documentElement;const nt=d.dataset.theme==='dark'?'light':'dark';d.dataset.theme=nt;try{localStorage.setItem('hsr-theme',nt)}catch(e){};charts()});
 })();
-renderPR();renderNat();renderTable('eco');renderTable('pop');renderFed();renderSrc();pods();route();charts();
+renderPR();renderNat();renderTable('eco');renderTable('pop');renderFed();renderSrc();pods();route();deepOpen();charts();
 </script>
 
 </body>
