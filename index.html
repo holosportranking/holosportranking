@@ -767,6 +767,8 @@ footer{border-top:1px solid var(--line)}
   .hero .podium .fl-lg{width:22px;height:16.5px}
 }
 :root[data-theme="dark"]{--mapna:#26314b}
+
+.sml{display:none}@media (max-width:1320px){.mainlinks .lgl{display:none}.mainlinks .sml{display:inline}}
 </style>
 
 <header class="hero">
@@ -783,11 +785,11 @@ footer{border-top:1px solid var(--line)}
 </header>
 <nav class="tabs" aria-label="Sections"><div class="wrap nav2">
   <a class="navbrand" href="#performance" aria-label="Accueil HoloSport Ranking"><span class="mark" aria-hidden="true">HS<b>R</b></span></a>
-  <div class="mainlinks"><a href="#performance">Performance réelle</a><a href="#highlights">Highlights</a><a href="#classement">Sportif</a><a href="#sports">Par sport</a></div>
+  <div class="mainlinks"><a href="#performance">Performance réelle</a><a href="#demographie">Efficience <span class="lgl">démographique</span><span class="sml">démo.</span></a><a href="#efficience">Efficience <span class="lgl">économique</span><span class="sml">éco.</span></a><a href="#classement">Sportif</a><a href="#highlights">Highlights</a><a href="#sports">Par sport</a></div>
   <div class="morewrap"><button type="button" class="morebtn" id="morebtn" aria-expanded="false" aria-controls="morepanel">Plus <span aria-hidden="true">▾</span></button>
     <div class="morepanel" id="morepanel" hidden>
-      <div class="mobonly"><span class="gl">Rubriques</span><a href="#performance">Performance réelle</a><a href="#highlights">Highlights du mois</a><a href="#classement">Classement sportif</a><a href="#sports">Par sport</a><input type="search" id="gsearch2" list="gslist" placeholder="Une nation ou un sport…" aria-label="Rechercher une nation ou un sport"></div>
-      <div><span class="gl">Classements</span><a href="#genre">Femmes · Hommes</a><a href="#efficience">Efficience économique</a><a href="#demographie">Efficience démographique</a></div>
+      <div class="mobonly"><span class="gl">Rubriques</span><a href="#performance">Performance réelle</a><a href="#demographie">Efficience démographique</a><a href="#efficience">Efficience économique</a><a href="#classement">Classement sportif</a><a href="#highlights">Highlights du mois</a><a href="#sports">Par sport</a><input type="search" id="gsearch2" list="gslist" placeholder="Une nation ou un sport…" aria-label="Rechercher une nation ou un sport"></div>
+      <div><span class="gl">Classements</span><a href="#genre">Femmes · Hommes</a></div>
       <div><span class="gl">Explorer</span><a href="#comparer">Comparer deux nations</a><a href="#federations">Fédérations</a></div>
       <div><span class="gl">Comprendre</span><a href="#methode">Méthode</a><a href="#sources">Sources</a><a href="#donnees">Données</a></div>
     </div></div>
@@ -1428,7 +1430,7 @@ document.querySelectorAll('[data-l]').forEach(el=>{const v=(LEGAL[el.dataset.l]|
 const VIEWS=['performance','highlights','classement','genre','efficience','demographie','sports','comparer','federations','methode','sources','donnees','mentions-legales','confidentialite','conditions'];
 function route(){const h=location.hash.slice(1);const v=VIEWS.includes(h)?h:'performance';
   VIEWS.forEach(x=>$('#v-'+x).hidden=x!==v);if(['mentions-legales','confidentialite','conditions'].includes(v))window.scrollTo(0,0);
-  document.querySelectorAll('nav.tabs a').forEach(a=>a.setAttribute('aria-current',a.getAttribute('href')==='#'+v?'page':'false'));document.body.dataset.v=v;const mb=$('#morebtn');if(mb)mb.classList.toggle('on',!!document.querySelector('#morepanel a[aria-current="page"]'));$('#morepanel').hidden=true;$('#morebtn').setAttribute('aria-expanded','false');}
+  document.querySelectorAll('nav.tabs a').forEach(a=>a.setAttribute('aria-current',a.getAttribute('href')==='#'+v?'page':'false'));document.body.dataset.v=v;const mb=$('#morebtn');if(mb)mb.classList.toggle('on',!!document.querySelector('#morepanel > div:not(.mobonly) a[aria-current="page"]'));$('#morepanel').hidden=true;$('#morebtn').setAttribute('aria-expanded','false');}
 
 window.addEventListener('hashchange',()=>{route();if(!$('#drawer').hidden)closeDrawer()});
 // classements d'efficience (économique et démographique)
