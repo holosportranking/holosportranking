@@ -807,6 +807,21 @@ footer{border-top:1px solid var(--line)}
 #sharepop a,#sharepop button{all:unset;cursor:pointer;padding:9px 12px;border-radius:8px;font-size:14px;color:var(--ink)}
 #sharepop a:hover,#sharepop button:hover{background:color-mix(in srgb,var(--accent) 14%,transparent)}
 @media (max-width:620px){.sharebtn span{display:none}.sharebtn{padding:8px}}
+
+/* ===== Fiche en pleine page ===== */
+.expbtn{display:inline-flex;align-items:center;gap:6px;margin-right:8px;padding:7px 12px;border-radius:999px;border:1px solid var(--accent);background:color-mix(in srgb,var(--accent) 14%,var(--surface));color:var(--ink);font:600 13px var(--f-body);cursor:pointer;align-self:flex-start;flex:none}
+.expbtn:hover{background:var(--accent);color:#fff}
+.dhead .sharebtn{margin-left:auto}
+aside.drawer.full{left:0;width:100%;border-left:0}
+aside.drawer.full .dhead{padding-left:max(20px,calc(50% - 600px));padding-right:max(20px,calc(50% - 600px))}
+aside.drawer.full .dbody{padding-left:max(20px,calc(50% - 600px));padding-right:max(20px,calc(50% - 600px));display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 36px;align-items:start}
+aside.drawer.full .dbody>*{grid-column:1/-1}
+aside.drawer.full .dbody>.dsec,aside.drawer.full .dbody>details.dsec{grid-column:auto}
+aside.drawer.full .dbody>details.dsec[open]{grid-column:auto}
+aside.drawer.full .rkchips{grid-template-columns:repeat(6,minmax(0,1fr))}
+aside.drawer.full .dhead h3{font-size:44px}
+@media (max-width:900px){aside.drawer.full .dbody{grid-template-columns:1fr}aside.drawer.full .dbody>.dsec{grid-column:1/-1}aside.drawer.full .rkchips{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:660px){.expbtn{display:none}}
 </style>
 
 <header class="hero">
@@ -1266,7 +1281,7 @@ const FIAB={"FIBA": {"g": "A", "lab": "élevée", "why": ["méthode complète", 
 const SLUG=s=>String(s).normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 const SITE=VER.site;
 let _sps=null;function SPS(s){if(!_sps){_sps={};const c={};F.forEach(f=>{const k=SLUG(sportOf(f.s)||f.s);c[k]=(c[k]||0)+1});F.forEach(f=>{const k=SLUG(sportOf(f.s)||f.s);_sps[f.s]=c[k]>1?SLUG(f.s):k})}return _sps[s]||SLUG(s)}
-function deepSet(h){try{history.pushState(null,'','#'+h)}catch(e){}}
+function deepSet(h){try{history.pushState(null,'','#'+h+(isFull()?'/page':''))}catch(e){}}
 function shareBtn(kind,id,title){return `<button type="button" class="sharebtn" data-share="${kind}/${kind==='sport'?id:SLUG(id)}" data-title="${esc(title)}" aria-label="Partager">${'<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M18 16a3 3 0 0 0-2.4 1.2l-6.7-3.4a3 3 0 0 0 0-1.6l6.7-3.4A3 3 0 1 0 15 7l-6.7 3.4a3 3 0 1 0 0 3.2L15 17a3 3 0 1 0 3-1z"/></svg>'}<span>Partager</span></button>`}
 const fb=(s,big)=>{const x=FIAB[s];if(!x||x.g==='–')return '';return `<span class="fiab f${x.g}${big?' big':''}" title="Fiabilité ${x.lab} : ${esc(x.why.join(' · '))}">${big?'Fiabilité '+x.lab:x.g}</span>`};
 const fl=(n,c)=>'<i class="fl '+(ISO[n]?'fl-'+ISO[n]:'fl-none')+(c?' '+c:'')+'" aria-hidden="true"></i>';
@@ -1364,8 +1379,13 @@ $('#q-fed').addEventListener('input',renderFed);
 document.querySelectorAll('.seg button[data-f]').forEach(b=>b.addEventListener('click',()=>{fedFilter=b.dataset.f;document.querySelectorAll('.seg button[data-f]').forEach(x=>x.setAttribute('aria-pressed',x===b));renderFed()}));
 // drawer
 let lastFocus=null;
-function openDrawer(html){lastFocus=document.activeElement;const d=$('#drawer');d.innerHTML=html;d.hidden=false;$('#scrim').hidden=false;d.classList.remove('open');void d.offsetWidth;d.classList.add('open');d.scrollTop=0;d.querySelector('.close').focus()}
-function closeDrawer(){if(/^#(nation|sport)\//.test(location.hash)){try{history.replaceState(null,'','#'+(document.body.dataset.v||'performance'))}catch(e){}}$('#drawer').hidden=true;$('#scrim').hidden=true;if(lastFocus)lastFocus.focus()}
+function isFull(){const d=$('#drawer');return !d.hidden&&d.classList.contains('full')}
+function setFull(on){const d=$('#drawer');d.classList.toggle('full',on);const b=d.querySelector('.expbtn');if(b){b.innerHTML=on?'<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M9 4H7v3H4v2h5V4zm6 0v5h5V7h-3V4h-2zM4 15v2h3v3h2v-5H4zm11 0v5h2v-3h3v-2h-5z"/></svg><span>Réduire</span>':'<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M4 4h6v2H6v4H4V4zm10 0h6v6h-2V6h-4V4zM4 14h2v4h4v2H4v-6zm14 0h2v6h-6v-2h4v-4z"/></svg><span>Pleine page</span>';b.setAttribute('aria-pressed',on)}
+  if(on)d.querySelectorAll('details.dsec').forEach(x=>x.open=true);
+  const m=location.hash.match(/^#((nation|sport)\/[^/]+)/);if(m){try{history.replaceState(null,'','#'+m[1]+(on?'/page':''))}catch(e){}}d.scrollTop=0}
+function openDrawer(html){lastFocus=document.activeElement;const d=$('#drawer');const wasFull=isFull();d.innerHTML=html;
+  const cl=d.querySelector('.dhead .close');if(cl){const b=document.createElement('button');b.type='button';b.className='expbtn';cl.before(b)}setFull(wasFull);d.hidden=false;$('#scrim').hidden=false;d.classList.remove('open');void d.offsetWidth;d.classList.add('open');d.scrollTop=0;d.querySelector('.close').focus()}
+function closeDrawer(){$('#drawer').classList.remove('full');if(/^#(nation|sport)\//.test(location.hash)){try{history.replaceState(null,'','#'+(document.body.dataset.v||'performance'))}catch(e){}}$('#drawer').hidden=true;$('#scrim').hidden=true;if(lastFocus)lastFocus.focus()}
 $('#scrim').addEventListener('click',closeDrawer);
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('#drawer').hidden)closeDrawer()});
 $('#drawer').addEventListener('click',e=>{const cb=e.target.closest('[data-cmp]');if(cb){$('#cmp-a').value=cb.dataset.cmp;if($('#cmp-b').value===cb.dataset.cmp)$('#cmp-b').value=cb.dataset.cmp==='France'?'Royaume-Uni':'France';renderCmp();closeDrawer();location.hash='comparer';return}if(e.target.closest('.close'))closeDrawer();const a=e.target.closest('[data-fed],[data-nat]');if(a&&a.closest('#drawer')){a.dataset.fed?showFed(a.dataset.fed):showNat(a.dataset.nat)}});
@@ -1526,9 +1546,10 @@ function route(){const h=location.hash.slice(1);const v=VIEWS.includes(h)?h:(/^(
   VIEWS.forEach(x=>$('#v-'+x).hidden=x!==v);if(['mentions-legales','confidentialite','conditions'].includes(v))window.scrollTo(0,0);
   document.querySelectorAll('nav.tabs a').forEach(a=>a.setAttribute('aria-current',a.getAttribute('href')==='#'+v?'page':'false'));document.body.dataset.v=v;const mb=$('#morebtn');if(mb)mb.classList.toggle('on',!!document.querySelector('#morepanel > div:not(.mobonly) a[aria-current="page"]'));$('#morepanel').hidden=true;$('#morebtn').setAttribute('aria-expanded','false');}
 
-function deepOpen(){const m=decodeURIComponent(location.hash.slice(1)).match(/^(nation|sport)\/(.+)$/);if(!m)return false;
-  if(m[1]==='nation'){const n=N.find(x=>SLUG(x.n)===m[2]);if(n){showNat(n.n);return true}}
-  else{const f=F.find(x=>SPS(x.s)===m[2]||SLUG(x.s)===m[2]);if(f){showFed(f.s);return true}}return false}
+function deepOpen(){const m=decodeURIComponent(location.hash.slice(1)).match(/^(nation|sport)\/([^/]+)(\/page)?$/);if(!m)return false;
+  let ok=false;if(m[1]==='nation'){const n=N.find(x=>SLUG(x.n)===m[2]);if(n){showNat(n.n);ok=true}}
+  else{const f=F.find(x=>SPS(x.s)===m[2]||SLUG(x.s)===m[2]);if(f){showFed(f.s);ok=true}}
+  if(ok)setFull(!!m[3]);return ok}
 window.addEventListener('hashchange',()=>{route();if(!deepOpen()&&!$('#drawer').hidden)closeDrawer()});
 window.addEventListener('popstate',()=>{if(!deepOpen()&&!$('#drawer').hidden){$('#drawer').hidden=true;$('#scrim').hidden=true}});
 // partage
@@ -1538,7 +1559,7 @@ function shareMenu(btn){const url=SITE+btn.dataset.share+'/',tt=btn.dataset.titl
   m=document.createElement('div');m.id='sharepop';m.dataset.for=btn.dataset.share;m.setAttribute('role','menu');
   m.innerHTML=`<button type="button" data-copy>Copier le lien</button><a target="_blank" rel="noopener" href="https://x.com/intent/post?text=${x}&url=${u}">X (Twitter)</a><a target="_blank" rel="noopener" href="https://www.linkedin.com/sharing/share-offsite/?url=${u}">LinkedIn</a><a target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=${u}">Facebook</a><a target="_blank" rel="noopener" href="https://wa.me/?text=${x}%20${u}">WhatsApp</a><a href="mailto:?subject=${x}&body=${u}">E-mail</a>`;
   btn.after(m);m.querySelector('[data-copy]').onclick=async e=>{try{await navigator.clipboard.writeText(url);e.target.textContent='Lien copié'}catch(_){prompt('Lien à copier',url)}}}
-document.addEventListener('click',e=>{const b=e.target.closest('.sharebtn');if(b){e.stopPropagation();shareMenu(b);return}const m=document.getElementById('sharepop');if(m&&!m.contains(e.target))m.remove()});
+document.addEventListener('click',e=>{const x=e.target.closest('#drawer .expbtn');if(x){setFull(!isFull());return}const b=e.target.closest('.sharebtn');if(b){e.stopPropagation();shareMenu(b);return}const m=document.getElementById('sharepop');if(m&&!m.contains(e.target))m.remove()});
 // classements d'efficience (économique et démographique)
 const EF=DATA.EF, PE=DATA.PE;
 function prep(rows,key){const ok=rows.filter(r=>r[key]).sort((a,b)=>b.eff-a.eff);ok.forEach((r,i)=>r.erk=i+1);return ok}
