@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /widget/
 Disallow: /en/widget/
-Sitemap: https://holosportranking.github.io/holosportranking/sitemap.xml
+Sitemap: https://holosportranking.com/sitemap.xml
