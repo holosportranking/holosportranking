@@ -989,43 +989,43 @@ HGF,17,Slovaquie,Slovakia,Slovakia,1,1.39
 HGF,18,Corée du Sud,South Korea,South Korea,1,0.78
 HGF,19,Royaume-Uni,United Kingdom,Great Britain,1,0.35
 HGF,20,Pologne,Poland,Poland,1,0.09
-AUTO,1,Royaume-Uni,United Kingdom,Great Britain,1,155.52
-AUTO,2,Pays-Bas,Netherlands,Netherlands,1,140.36
-AUTO,3,Australie,Australia,Australia,1,125.97
-AUTO,4,Royaume-Uni,United Kingdom,Great Britain,1,112.36
-AUTO,5,Monaco,Monaco,Monaco,1,99.53
+AUTO,1,Royaume-Uni,United Kingdom,Great Britain,1,150
+AUTO,2,Pays-Bas,Netherlands,Netherlands,1,141.28
+AUTO,3,Australie,Australia,Australia,1,126.79
+AUTO,4,Royaume-Uni,United Kingdom,Great Britain,1,113.09
+AUTO,5,Monaco,Monaco,Monaco,1,100.18
 AUTO,6,Royaume-Uni,United Kingdom,Great Britain,0,0
-AUTO,7,Italie,Italy,Italy,1,76.21
-AUTO,8,Thaïlande,Thailand,Thailand,1,65.71
-AUTO,9,Espagne,Spain,Spain,1,55.99
-AUTO,10,Espagne,Spain,Spain,1,47.05
-AUTO,11,France,France,France,1,38.88
-AUTO,12,Allemagne,Germany,Germany,1,31.49
+AUTO,7,Italie,Italy,Italy,1,76.71
+AUTO,8,Thaïlande,Thailand,Thailand,1,66.14
+AUTO,9,Espagne,Spain,Spain,1,56.36
+AUTO,10,Espagne,Spain,Spain,1,47.36
+AUTO,11,France,France,France,1,39.13
+AUTO,12,Allemagne,Germany,Germany,1,31.7
 AUTO,13,Royaume-Uni,United Kingdom,Great Britain,0,0
-AUTO,14,Nouvelle-Zélande,New Zealand,New Zealand,1,19.05
-AUTO,15,France,France,France,1,14
-AUTO,16,Canada,Canada,Canada,1,9.72
-AUTO,17,Japon,Japan,Japan,1,6.22
+AUTO,14,Nouvelle-Zélande,New Zealand,New Zealand,1,19.17
+AUTO,15,France,France,France,1,14.09
+AUTO,16,Canada,Canada,Canada,1,9.78
+AUTO,17,Japon,Japan,Japan,1,6.26
 AUTO,18,France,France,France,0,0
-AUTO,19,Brésil,Brazil,Brazil,1,1.56
+AUTO,19,Brésil,Brazil,Brazil,1,1.57
 AUTO,20,Argentine,Argentina,Argentina,1,0.39
-MOTO,1,Espagne,Spain,Spain,1,234.19
-MOTO,2,Espagne,Spain,Spain,1,211.36
-MOTO,3,Italie,Italy,Italy,1,189.7
+MOTO,1,Espagne,Spain,Spain,1,150
+MOTO,2,Espagne,Spain,Spain,1,150
+MOTO,3,Italie,Italy,Italy,1,150
 MOTO,4,Espagne,Spain,Spain,0,0
-MOTO,5,Italie,Italy,Italy,1,149.88
+MOTO,5,Italie,Italy,Italy,1,150
 MOTO,6,Italie,Italy,Italy,0,0
 MOTO,7,Italie,Italy,Italy,0,0
 MOTO,8,Espagne,Spain,Spain,0,0
-MOTO,9,France,France,France,1,84.31
+MOTO,9,France,France,France,1,150
 MOTO,10,Espagne,Spain,Spain,0,0
-MOTO,11,Afrique du Sud,South Africa,South Africa,1,58.55
-MOTO,12,France,France,France,1,47.42
+MOTO,11,Afrique du Sud,South Africa,South Africa,1,112.11
+MOTO,12,France,France,France,1,90.8
 MOTO,13,Italie,Italy,Italy,0,0
 MOTO,14,Italie,Italy,Italy,0,0
 MOTO,15,Espagne,Spain,Spain,0,0
-MOTO,16,Japon,Japan,Japan,1,14.64
-MOTO,17,Australie,Australia,Australia,1,9.37
+MOTO,16,Japon,Japan,Japan,1,28.03
+MOTO,17,Australie,Australia,Australia,1,17.94
 MOTO,18,Espagne,Spain,Spain,0,0
 MOTO,19,Espagne,Spain,Spain,0,0
-MOTO,20,Portugal,Portugal,Portugal,1,0.59
+MOTO,20,Portugal,Portugal,Portugal,1,1.13

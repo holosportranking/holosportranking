@@ -1,4 +1,4 @@
-HoloSport Ranking – données de l'édition de novembre 2026 (méthode v1.0)
+HoloSport Ranking – données de l'édition de novembre 2026 (méthode v1.1)
 Licence : CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/deed.fr) – citer « HoloSport Ranking, https://holosportranking.github.io/holosportranking/ »
 
 Fichiers CSV en UTF-8, séparateur virgule, point décimal. Description de chaque colonne : dictionnaire.csv.

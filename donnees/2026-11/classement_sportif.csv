@@ -1,65 +1,65 @@
 rank,nation,nation_en,iso2,score,raw_points,federations
-1,États-Unis,United States,US,6179.5,5396.85,51
-2,Chine,China,CN,6089.7,4965.74,42
-3,France,France,FR,4734.8,4135.17,49
-4,Royaume-Uni,United Kingdom,GB,4449,4180.74,43
-5,Japon,Japan,JP,4259.2,3742.4,42
-6,Allemagne,Germany,DE,3703.1,3817.8,42
-7,Italie,Italy,IT,3548.6,3308.4,43
-8,Australie,Australia,AU,3199.6,2949.67,35
-9,Espagne,Spain,ES,2682.9,2452.39,35
-10,Corée du Sud,South Korea,KR,2576.7,2368.89,31
-11,Pays-Bas,Netherlands,NL,2456.7,2369.08,29
-12,Canada,Canada,CA,1999.1,1981.76,37
-13,Brésil,Brazil,BR,1650.4,1205.83,21
-14,Inde,India,IN,1434.4,1639.75,17
+1,États-Unis,United States,US,6043.6,5192.35,51
+2,Chine,China,CN,5848,4400.65,42
+3,France,France,FR,4821.5,4254.41,49
+4,Royaume-Uni,United Kingdom,GB,4355.9,4022.56,43
+5,Japon,Japan,JP,4207.3,3591.52,42
+6,Allemagne,Germany,DE,3683.6,3740.82,42
+7,Italie,Italy,IT,3552.9,3338.44,43
+8,Australie,Australia,AU,3106.6,2730.66,35
+9,Corée du Sud,South Korea,KR,2557.3,2359.69,31
+10,Espagne,Spain,ES,2511,2184.47,35
+11,Pays-Bas,Netherlands,NL,2385.4,2217.34,29
+12,Canada,Canada,CA,1972.8,1940.17,37
+13,Brésil,Brazil,BR,1639.6,1163.73,21
+14,Suisse,Switzerland,CH,1390.6,1890.78,25
 15,Russie,Russia,RU,1389.1,1286.42,22
-16,Nouvelle-Zélande,New Zealand,NZ,1379.5,1369.11,20
-17,Suisse,Switzerland,CH,1375,1843.93,25
-18,Suède,Sweden,SE,1359,1809.98,24
+16,Nouvelle-Zélande,New Zealand,NZ,1379,1381.46,20
+17,Suède,Sweden,SE,1349.5,1749.87,24
+18,Inde,India,IN,1337.2,1369.62,17
 19,Hongrie,Hungary,HU,1267.5,1181.84,25
 20,Ukraine,Ukraine,UA,1193.3,1338.7,25
-21,Norvège,Norway,NO,1054.9,1172.83,20
-22,Belgique,Belgium,BE,1046.7,870.42,19
-23,Pologne,Poland,PL,1020.1,815.51,27
-24,Thaïlande,Thailand,TH,1004.8,1248.57,15
-25,Danemark,Denmark,DK,985.2,750.27,22
-26,Taipei chinois,Taiwan,,940.7,1084.05,20
-27,Égypte,Egypt,EG,929,983.87,14
-28,Argentine,Argentina,AR,855.2,778.96,12
+21,Belgique,Belgium,BE,1062.8,915.26,19
+22,Norvège,Norway,NO,1060.3,1198,20
+23,Pologne,Poland,PL,1033.8,842.7,27
+24,Thaïlande,Thailand,TH,984.4,1141.3,15
+25,Danemark,Denmark,DK,981.2,742.38,22
+26,Égypte,Egypt,EG,929,983.87,14
+27,Taipei chinois,Taiwan,,904.9,992.51,20
+28,Argentine,Argentina,AR,809.2,685.84,12
 29,Ouzbékistan,Uzbekistan,UZ,802.4,599.53,13
-30,Tchéquie,Czech Republic (Czechia),CZ,759.5,835.54,19
-31,Turquie,Turkey (Türkiye),TR,758.5,524.99,18
-32,Iran,Iran,IR,757.7,742.34,13
+30,Tchéquie,Czech Republic (Czechia),CZ,778.5,884.31,19
+31,Iran,Iran,IR,764.9,759.99,13
+32,Turquie,Turkey (Türkiye),TR,758.5,524.99,18
 33,Kazakhstan,Kazakhstan,KZ,720.9,559.43,20
-34,Autriche,Austria,AT,690.6,955.4,20
+34,Autriche,Austria,AT,688.6,947.51,20
 35,Slovénie,Slovenia,SI,681.1,499.11,16
-36,Mexique,Mexico,MX,628.1,537.78,17
-37,Afrique du Sud,South Africa,ZA,612,515.04,11
+36,Afrique du Sud,South Africa,ZA,653.1,568.6,11
+37,Mexique,Mexico,MX,628.1,537.78,17
 38,Indonésie,Indonesia,ID,555.4,922.8,9
-39,Viêt Nam,Vietnam,VN,513.4,1744.55,7
-40,Portugal,Portugal,PT,493.7,381.65,17
-41,Serbie,Serbia,RS,463.5,192.86,12
-42,Colombie,Colombia,CO,452.8,368.19,15
-43,Finlande,Finland,FI,437.8,761.28,11
-44,Roumanie,Romania,RO,376.2,274.81,13
-45,Azerbaïdjan,Azerbaijan,AZ,360.9,239.53,12
-46,Irlande,Ireland,IE,355.5,252.01,12
-47,Israël,Israel,IL,331.7,365.25,12
-48,Géorgie,Georgia,GE,320,264.48,12
-49,Malaisie,Malaysia,MY,316.4,503.22,6
-50,Tunisie,Tunisia,TN,315.7,251.86,8
-51,Bulgarie,Bulgaria,BG,314.9,255.6,13
-52,Hong Kong,Hong Kong,HK,303.1,293.92,10
-53,Grèce,Greece,GR,300.6,186.54,14
+39,Portugal,Portugal,PT,517.4,429.25,17
+40,Serbie,Serbia,RS,463.5,192.86,12
+41,Colombie,Colombia,CO,452.8,368.19,15
+42,Finlande,Finland,FI,434.2,764.43,11
+43,Roumanie,Romania,RO,376.2,274.81,13
+44,Azerbaïdjan,Azerbaijan,AZ,360.9,239.53,12
+45,Irlande,Ireland,IE,355.5,252.01,12
+46,Israël,Israel,IL,331.7,365.25,12
+47,Géorgie,Georgia,GE,320,264.48,12
+48,Malaisie,Malaysia,MY,316.4,503.22,6
+49,Tunisie,Tunisia,TN,315.7,251.86,8
+50,Bulgarie,Bulgaria,BG,314.9,255.6,13
+51,Hong Kong,Hong Kong,HK,303.1,293.92,10
+52,Grèce,Greece,GR,300.6,186.54,14
+53,Viêt Nam,Vietnam,VN,299.6,1024.55,7
 54,Croatie,Croatia,HR,292.2,170.67,15
 55,Lettonie,Latvia,LV,285.5,181.86,8
 56,Corée du Nord,North Korea,KP,271.3,175.46,6
 57,Cuba,Cuba,CU,236.7,148.34,8
 58,Porto Rico,Puerto Rico,PR,234.7,137.38,7
-59,Jamaïque,Jamaica,JM,233.3,254.46,3
-60,Arménie,Armenia,AM,225.6,156.61,6
-61,Philippines,Philippines,PH,216.8,154.17,11
+59,Arménie,Armenia,AM,225.6,156.61,6
+60,Philippines,Philippines,PH,216.8,154.17,11
+61,Jamaïque,Jamaica,JM,203.4,198.58,3
 62,Pérou,Peru,PE,191.1,175.91,9
 63,Kenya,Kenya,KE,187.6,148.07,3
 64,Lituanie,Lithuania,LT,185.8,151.53,5
@@ -76,7 +76,7 @@ rank,nation,nation_en,iso2,score,raw_points,federations
 75,Jordanie,Jordan,JO,121.6,84.08,5
 76,Pakistan,Pakistan,PK,117.7,65.18,4
 77,Mongolie,Mongolia,MN,116.8,128.71,5
-78,Monaco,Monaco,MC,113.5,102.72,3
+78,Monaco,Monaco,MC,114.2,103.37,3
 79,Kirghizistan,Kyrgyzstan,KG,107.2,105.1,4
 80,Équateur,Ecuador,EC,104.1,60.24,5
 81,Sri Lanka,Sri Lanka,LK,101.6,90.96,3
@@ -99,14 +99,14 @@ rank,nation,nation_en,iso2,score,raw_points,federations
 98,Cambodge,Cambodia,KH,47.5,255.92,1
 99,Zimbabwe,Zimbabwe,ZW,43.2,22.81,2
 100,Estonie,Estonia,EE,43,30.16,5
-101,Arabie saoudite,Saudi Arabia,SA,40.2,37.92,4
-102,Samoa,Samoa,WS,39.3,136.86,3
+101,Samoa,Samoa,WS,42.6,151.02,3
+102,Arabie saoudite,Saudi Arabia,SA,40.2,37.92,4
 103,Turkménistan,Turkmenistan,TM,39,64.17,1
 104,Népal,Nepal,NP,36,181.41,2
 105,Botswana,Botswana,BW,35.3,14,1
 106,Ouganda,Uganda,UG,35,71.87,4
-107,Panama,Panama,PA,33.6,23.69,4
-108,Papouasie-Nouvelle-Guinée,Papua New Guinea,PG,32.5,97.69,2
+107,Papouasie-Nouvelle-Guinée,Papua New Guinea,PG,34.8,107.52,2
+108,Panama,Panama,PA,33.6,23.69,4
 109,Mali,Mali,ML,29.2,8.08,2
 110,Brunei,Brunei,BN,24.2,26.32,1
 111,Luxembourg,Luxembourg,LU,24.1,20,1

@@ -4,12 +4,12 @@ nation,nation_en,iso2,federation,sport,points_per_1000,weight_pct,contribution
 États-Unis,United States,US,World Aquatics,Sports aquatiques,189.3,2.2159,419.47
 États-Unis,United States,US,IGF,Golf,231.64,1.6783,388.76
 États-Unis,United States,US,ITF,Tennis,163.67,2.2211,363.53
-États-Unis,United States,US,World Lacrosse,Lacrosse,474.52,0.6316,299.71
 États-Unis,United States,US,WFDF,Disque volant,438.6,0.6074,266.41
 États-Unis,United States,US,World Skate,Skateboard et roller,175.07,1.2884,225.56
 États-Unis,United States,US,FIVB,Volleyball,75.38,2.8809,217.16
 États-Unis,United States,US,World Gymnastics,Gymnastique,148.55,1.4568,216.41
 États-Unis,United States,US,WBSC,Baseball,139.35,1.394,194.25
+États-Unis,United States,US,World Lacrosse,Lacrosse,300,0.6316,189.48
 États-Unis,United States,US,IFAF,Football américain / flag,252.94,0.7387,186.85
 États-Unis,United States,US,UCI,Cyclisme,63.33,2.3718,150.21
 États-Unis,United States,US,ISA,Surf,149.65,0.9798,146.63
@@ -17,7 +17,6 @@ nation,nation_en,iso2,federation,sport,points_per_1000,weight_pct,contribution
 États-Unis,United States,US,FIFA,Football,40.47,3.2852,132.95
 États-Unis,United States,US,IIHF,Hockey sur glace,166.81,0.7756,129.38
 États-Unis,United States,US,UWW,Lutte,87.64,1.3365,117.13
-États-Unis,United States,US,WBF,Bridge,219.3,0.507,111.19
 États-Unis,United States,US,FIE,Escrime,104.21,1.0402,108.4
 États-Unis,United States,US,World Archery,Tir à l'arc,87.72,1.2281,107.73
 États-Unis,United States,US,FIS,Ski et snowboard,95.09,1.1308,107.53
@@ -25,18 +24,19 @@ nation,nation_en,iso2,federation,sport,points_per_1000,weight_pct,contribution
 États-Unis,United States,US,World Triathlon,Triathlon,80.13,1.2025,96.36
 États-Unis,United States,US,ISU,Patinage,117.28,0.813,95.35
 États-Unis,United States,US,IWF,Haltérophilie,63.27,1.3233,83.73
+États-Unis,United States,US,WBF,Bridge,150,0.507,76.05
 États-Unis,United States,US,World Rowing,Aviron,62.45,1.1392,71.14
 États-Unis,United States,US,IBSF,Bobsleigh et skeleton,132.83,0.52,69.07
 États-Unis,United States,US,ISSF,Tir sportif,54.39,1.194,64.94
+États-Unis,United States,US,FIK,Kendo,203.48,0.2664,54.21
 États-Unis,United States,US,FEI,Équitation,46.58,1.1017,51.32
-États-Unis,United States,US,FIK,Kendo,183.82,0.2664,48.97
 États-Unis,United States,US,World Curling,Curling,88.72,0.5498,48.78
 États-Unis,United States,US,World Squash,Squash,61,0.7942,48.45
 États-Unis,United States,US,IFMA,Muay-thaï,52.63,0.8624,45.39
 États-Unis,United States,US,World Rugby,Rugby à XV,35.77,1.2538,44.85
 États-Unis,United States,US,IPF,Force athlétique,97.59,0.4558,44.48
+États-Unis,United States,US,FIB,Bandy,203.48,0.2173,44.22
 États-Unis,United States,US,World Taekwondo,Taekwondo,24.64,1.6878,41.59
-États-Unis,United States,US,FIB,Bandy,183.82,0.2173,39.94
 États-Unis,United States,US,WDSF,Danse sportive et breaking,61.4,0.5971,36.66
 États-Unis,United States,US,IWWF,Ski nautique et wakeboard,73.1,0.4589,33.55
 États-Unis,United States,US,ICF,Canoë-kayak,23.06,1.3365,30.82
@@ -57,20 +57,19 @@ Chine,China,CN,WCBS,Snooker,341.83,1.2754,435.97
 Chine,China,CN,World Aquatics,Sports aquatiques,148.18,2.2159,328.35
 Chine,China,CN,World Gymnastics,Gymnastique,206.85,1.4568,301.34
 Chine,China,CN,ISSF,Tir sportif,222.32,1.194,265.45
-Chine,China,CN,IGF (go),Go,438.6,0.5299,232.41
 Chine,China,CN,IWUF,Wushu,209.06,0.9205,192.44
 Chine,China,CN,WPBF,Sports de boules,178.36,1.0362,184.82
 Chine,China,CN,IWF,Haltérophilie,136.88,1.3233,181.13
 Chine,China,CN,IFMA,Muay-thaï,187.13,0.8624,161.38
 Chine,China,CN,World Climbing,Escalade,162.28,0.9323,151.29
 Chine,China,CN,World Taekwondo,Taekwondo,85.39,1.6878,144.12
-Chine,China,CN,WXF,Xiangqi,418.6,0.3156,132.11
 Chine,China,CN,WDSF,Danse sportive et breaking,210.52,0.5971,125.7
 Chine,China,CN,World Boxing,Boxe,85.71,1.3015,111.55
 Chine,China,CN,FIBA,Basketball,29.47,3.6154,106.55
 Chine,China,CN,ITF,Tennis,43.2,2.2211,95.95
-Chine,China,CN,WBF,Bridge,157.89,0.507,80.05
 Chine,China,CN,IGF,Golf,47.47,1.6783,79.67
+Chine,China,CN,IGF (go),Go,150,0.5299,79.48
+Chine,China,CN,WBF,Bridge,150,0.507,76.05
 Chine,China,CN,CMAS,Nage avec palmes,88.55,0.813,71.99
 Chine,China,CN,FIH,Hockey sur gazon,58.2,1.2195,70.97
 Chine,China,CN,ICF,Canoë-kayak,48.81,1.3365,65.23
@@ -81,6 +80,7 @@ Chine,China,CN,IWWF,Ski nautique et wakeboard,125.73,0.4589,57.7
 Chine,China,CN,IDBF,Bateau-dragon,105.26,0.494,52.0
 Chine,China,CN,FIVB,Volleyball,17.17,2.8809,49.47
 Chine,China,CN,World Rowing,Aviron,41.91,1.1392,47.74
+Chine,China,CN,WXF,Xiangqi,150,0.3156,47.34
 Chine,China,CN,FIS,Ski et snowboard,38.66,1.1308,43.72
 Chine,China,CN,WBSC,Baseball,29.79,1.394,41.53
 Chine,China,CN,ISU,Patinage,36.45,0.813,29.63
@@ -101,6 +101,7 @@ France,France,FR,IBU,Biathlon,397.66,0.5431,215.97
 France,France,FR,World Triathlon,Triathlon,179.04,1.2025,215.3
 France,France,FR,BWF,Badminton,93.38,2.2314,208.37
 France,France,FR,FIFA,Football,60.44,3.2852,198.56
+France,France,FR,FIM,Moto,240.8,0.7682,184.98
 France,France,FR,IJF,Judo,113.14,1.6267,184.04
 France,France,FR,FIE,Escrime,168.19,1.0402,174.95
 France,France,FR,FIVB,Volleyball,56.34,2.8809,162.31
@@ -110,7 +111,6 @@ France,France,FR,ISMF,Ski-alpinisme,333.33,0.4526,150.87
 France,France,FR,UIPM,Pentathlon moderne,157.9,0.7756,122.47
 France,France,FR,World Archery,Tir à l'arc,93.86,1.2281,115.27
 France,France,FR,FEI,Équitation,95.98,1.1017,105.74
-France,France,FR,FIM,Moto,131.73,0.7682,101.19
 France,France,FR,World Aquatics,Sports aquatiques,44.63,2.2159,98.9
 France,France,FR,World Squash,Squash,122.5,0.7942,97.29
 France,France,FR,World Sailing,Voile,68.17,1.0894,74.26
@@ -119,7 +119,7 @@ France,France,FR,WDSF,Danse sportive et breaking,118.42,0.5971,70.71
 France,France,FR,World Athletics,Athlétisme,25.43,2.5202,64.09
 France,France,FR,ICF,Canoë-kayak,44.59,1.3365,59.59
 France,France,FR,World Taekwondo,Taekwondo,34.33,1.6878,57.94
-France,France,FR,FIA,Sport automobile,52.88,1.0688,56.52
+France,France,FR,FIA,Sport automobile,53.22,1.0688,56.88
 France,France,FR,WFDF,Disque volant,90.06,0.6074,54.7
 France,France,FR,World Climbing,Escalade,52.63,0.9323,49.07
 France,France,FR,ISSF,Tir sportif,37.23,1.194,44.45
@@ -130,8 +130,8 @@ France,France,FR,WKF,Karaté,30.34,1.1728,35.58
 France,France,FR,IFMA,Muay-thaï,40.94,0.8624,35.31
 France,France,FR,IWWF,Ski nautique et wakeboard,73.1,0.4589,33.55
 France,France,FR,JJIF,Ju-jitsu,52.63,0.5168,27.2
+France,France,FR,FIK,Kendo,101.74,0.2664,27.1
 France,France,FR,IPF,Force athlétique,58.11,0.4558,26.49
-France,France,FR,FIK,Kendo,91.91,0.2664,24.48
 France,France,FR,ISU,Patinage,29.61,0.813,24.07
 France,France,FR,IFAF,Football américain / flag,32,0.7387,23.64
 France,France,FR,ITF,Tennis,10.37,2.2211,23.03
@@ -142,8 +142,8 @@ France,France,FR,IIHF,Hockey sur glace,11.85,0.7756,9.19
 France,France,FR,UWW,Lutte,4.23,1.3365,5.65
 France,France,FR,IWF,Haltérophilie,2.56,1.3233,3.39
 Royaume-Uni,United Kingdom,GB,WCBS,Snooker,490.29,1.2754,625.32
-Royaume-Uni,United Kingdom,GB,WDF,Fléchettes,658.34,0.5332,351.03
-Royaume-Uni,United Kingdom,GB,FIA,Sport automobile,267.88,1.0688,286.31
+Royaume-Uni,United Kingdom,GB,WDF,Fléchettes,600,0.5332,319.92
+Royaume-Uni,United Kingdom,GB,FIA,Sport automobile,263.09,1.0688,281.19
 Royaume-Uni,United Kingdom,GB,FEI,Équitation,245.21,1.1017,270.15
 Royaume-Uni,United Kingdom,GB,IGF,Golf,146.54,1.6783,245.94
 Royaume-Uni,United Kingdom,GB,World Triathlon,Triathlon,189.97,1.2025,228.44
@@ -152,22 +152,22 @@ Royaume-Uni,United Kingdom,GB,World Rugby,Rugby à XV,161.67,1.2538,202.7
 Royaume-Uni,United Kingdom,GB,UCI,Cyclisme,82.32,2.3718,195.25
 Royaume-Uni,United Kingdom,GB,ICC,Cricket,93.81,1.841,172.7
 Royaume-Uni,United Kingdom,GB,World Rowing,Aviron,149.95,1.1392,170.82
-Royaume-Uni,United Kingdom,GB,World Netball,Netball,264.71,0.5365,142.02
 Royaume-Uni,United Kingdom,GB,World Gymnastics,Gymnastique,90.54,1.4568,131.9
 Royaume-Uni,United Kingdom,GB,World Athletics,Athlétisme,47.66,2.5202,120.11
 Royaume-Uni,United Kingdom,GB,World Skate,Skateboard et roller,89.11,1.2884,114.81
 Royaume-Uni,United Kingdom,GB,World Aquatics,Sports aquatiques,42.2,2.2159,93.51
 Royaume-Uni,United Kingdom,GB,World Sailing,Voile,85.59,1.0894,93.24
+Royaume-Uni,United Kingdom,GB,World Netball,Netball,150,0.5365,80.47
 Royaume-Uni,United Kingdom,GB,FIH,Hockey sur gazon,64.8,1.2195,79.02
 Royaume-Uni,United Kingdom,GB,World Squash,Squash,94.42,0.7942,74.99
 Royaume-Uni,United Kingdom,GB,ICF,Canoë-kayak,51.9,1.3365,69.36
 Royaume-Uni,United Kingdom,GB,IBSF,Bobsleigh et skeleton,125.31,0.52,65.16
 Royaume-Uni,United Kingdom,GB,World Curling,Curling,101.69,0.5498,55.91
 Royaume-Uni,United Kingdom,GB,World Climbing,Escalade,54.82,0.9323,51.11
+Royaume-Uni,United Kingdom,GB,IRL,Rugby à XIII,203.48,0.2376,48.35
 Royaume-Uni,United Kingdom,GB,World Taekwondo,Taekwondo,28.17,1.6878,47.55
 Royaume-Uni,United Kingdom,GB,World Boxing,Boxe,35.16,1.3015,45.76
 Royaume-Uni,United Kingdom,GB,ITF,Tennis,19.82,2.2211,44.02
-Royaume-Uni,United Kingdom,GB,IRL,Rugby à XIII,183.82,0.2376,43.68
 Royaume-Uni,United Kingdom,GB,ISSF,Tir sportif,28.34,1.194,33.84
 Royaume-Uni,United Kingdom,GB,WAKO,Kickboxing,36.55,0.8054,29.44
 Royaume-Uni,United Kingdom,GB,IFAF,Football américain / flag,32,0.7387,23.64
@@ -191,7 +191,6 @@ Japon,Japan,JP,BWF,Badminton,114.71,2.2314,255.96
 Japon,Japan,JP,UWW,Lutte,159.86,1.3365,213.65
 Japon,Japan,JP,WBSC,Baseball,147.62,1.394,205.78
 Japon,Japan,JP,World Gymnastics,Gymnastique,115.89,1.4568,168.83
-Japon,Japan,JP,IGF (go),Go,315.79,0.5299,167.34
 Japon,Japan,JP,IGF,Golf,77.72,1.6783,130.44
 Japon,Japan,JP,FIE,Escrime,111.85,1.0402,116.35
 Japon,Japan,JP,World Climbing,Escalade,122.8,0.9323,114.49
@@ -200,13 +199,14 @@ Japon,Japan,JP,WDSF,Danse sportive et breaking,179.83,0.5971,107.38
 Japon,Japan,JP,FIVB,Volleyball,36.35,2.8809,104.72
 Japon,Japan,JP,ISU,Patinage,125.62,0.813,102.13
 Japon,Japan,JP,FIS,Ski et snowboard,88.02,1.1308,99.53
-Japon,Japan,JP,FIK,Kendo,367.64,0.2664,97.94
+Japon,Japan,JP,World Lacrosse,Lacrosse,150,0.6316,94.74
 Japon,Japan,JP,WKF,Karaté,69.17,1.1728,81.12
+Japon,Japan,JP,FIK,Kendo,300,0.2664,79.92
+Japon,Japan,JP,IGF (go),Go,150,0.5299,79.48
 Japon,Japan,JP,UIPM,Pentathlon moderne,78.95,0.7756,61.23
 Japon,Japan,JP,World Sailing,Voile,51.5,1.0894,56.1
 Japon,Japan,JP,FIBA,Basketball,14.84,3.6154,53.65
 Japon,Japan,JP,WFDF,Disque volant,84.21,0.6074,51.15
-Japon,Japan,JP,World Lacrosse,Lacrosse,80.88,0.6316,51.08
 Japon,Japan,JP,World Archery,Tir à l'arc,40.35,1.2281,49.55
 Japon,Japan,JP,World Athletics,Athlétisme,18.91,2.5202,47.66
 Japon,Japan,JP,World Squash,Squash,55.98,0.7942,44.46
@@ -216,6 +216,7 @@ Japon,Japan,JP,World Aquatics,Sports aquatiques,15.97,2.2159,35.39
 Japon,Japan,JP,World Curling,Curling,52,0.5498,28.59
 Japon,Japan,JP,IWWF,Ski nautique et wakeboard,52.63,0.4589,24.15
 Japon,Japan,JP,FEI,Équitation,20.47,1.1017,22.55
+Japon,Japan,JP,FIM,Moto,28.03,0.7682,21.53
 Japon,Japan,JP,IPF,Force athlétique,47.15,0.4558,21.49
 Japon,Japan,JP,World Boxing,Boxe,16.2,1.3015,21.08
 Japon,Japan,JP,World Rugby,Rugby à XV,15.8,1.2538,19.81
@@ -224,8 +225,7 @@ Japon,Japan,JP,ITF,Tennis,7.37,2.2211,16.37
 Japon,Japan,JP,ILSF,Sauvetage sportif,17.27,0.8357,14.43
 Japon,Japan,JP,FIH,Hockey sur gazon,10.28,1.2195,12.54
 Japon,Japan,JP,IWF,Haltérophilie,9.14,1.3233,12.09
-Japon,Japan,JP,FIM,Moto,14.64,0.7682,11.25
-Japon,Japan,JP,FIA,Sport automobile,6.22,1.0688,6.65
+Japon,Japan,JP,FIA,Sport automobile,6.26,1.0688,6.69
 Allemagne,Germany,DE,FEI,Équitation,329.53,1.1017,363.04
 Allemagne,Germany,DE,FIBA,Basketball,95.2,3.6154,344.19
 Allemagne,Germany,DE,IBSF,Bobsleigh et skeleton,644.11,0.52,334.94
@@ -239,10 +239,10 @@ Allemagne,Germany,DE,FIDE,Échecs,49.72,2.2572,112.23
 Allemagne,Germany,DE,ITF,Tennis,47.82,2.2211,106.21
 Allemagne,Germany,DE,FIVB,Volleyball,36.18,2.8809,104.23
 Allemagne,Germany,DE,FIFA,Football,31.66,3.2852,104.01
-Allemagne,Germany,DE,IFA,Balle au poing,377.19,0.2558,96.49
 Allemagne,Germany,DE,ICF,Canoë-kayak,68.72,1.3365,91.84
 Allemagne,Germany,DE,ITTF,Tennis de table,34.5,2.5847,89.17
 Allemagne,Germany,DE,World Athletics,Athlétisme,33.45,2.5202,84.3
+Allemagne,Germany,DE,IFA,Balle au poing,300,0.2558,76.74
 Allemagne,Germany,DE,IWWF,Ski nautique et wakeboard,166.67,0.4589,76.48
 Allemagne,Germany,DE,World Aquatics,Sports aquatiques,30.5,2.2159,67.58
 Allemagne,Germany,DE,IGF,Golf,40.1,1.6783,67.3
@@ -255,7 +255,7 @@ Allemagne,Germany,DE,IBU,Biathlon,73.29,0.5431,39.8
 Allemagne,Germany,DE,JJIF,Ju-jitsu,75.72,0.5168,39.13
 Allemagne,Germany,DE,World Archery,Tir à l'arc,31.58,1.2281,38.78
 Allemagne,Germany,DE,WKF,Karaté,30.34,1.1728,35.58
-Allemagne,Germany,DE,FIA,Sport automobile,31.49,1.0688,33.66
+Allemagne,Germany,DE,FIA,Sport automobile,31.7,1.0688,33.88
 Allemagne,Germany,DE,WDSF,Danse sportive et breaking,54.82,0.5971,32.73
 Allemagne,Germany,DE,World Sailing,Voile,26.94,1.0894,29.35
 Allemagne,Germany,DE,ISSF,Tir sportif,22.82,1.194,27.25
@@ -269,10 +269,10 @@ Allemagne,Germany,DE,World Boxing,Boxe,7.7,1.3015,10.02
 Allemagne,Germany,DE,WBSC,Baseball,2.09,1.394,2.91
 Allemagne,Germany,DE,World Rugby,Rugby à XV,0.08,1.2538,0.1
 Italie,Italy,IT,ITF,Tennis,151.39,2.2211,336.25
-Italie,Italy,IT,FIM,Moto,339.58,0.7682,260.87
 Italie,Italy,IT,FIVB,Volleyball,89.34,2.8809,257.38
 Italie,Italy,IT,ILSF,Sauvetage sportif,297.84,0.8357,248.9
 Italie,Italy,IT,UCI,Cyclisme,102.29,2.3718,242.61
+Italie,Italy,IT,FIM,Moto,300,0.7682,230.46
 Italie,Italy,IT,WPBF,Sports de boules,166.67,1.0362,172.7
 Italie,Italy,IT,FIE,Escrime,136.99,1.0402,142.5
 Italie,Italy,IT,FIL,Luge,273.68,0.4308,117.9
@@ -281,9 +281,10 @@ Italie,Italy,IT,World Sailing,Voile,88.35,1.0894,96.25
 Italie,Italy,IT,UIPM,Pentathlon moderne,122.8,0.7756,95.24
 Italie,Italy,IT,World Athletics,Athlétisme,36.66,2.5202,92.39
 Italie,Italy,IT,ISU,Patinage,108.69,0.813,88.36
-Italie,Italy,IT,FIA,Sport automobile,76.21,1.0688,81.45
+Italie,Italy,IT,FIA,Sport automobile,76.71,1.0688,81.99
 Italie,Italy,IT,WKF,Karaté,69.17,1.1728,81.12
 Italie,Italy,IT,FIBA,Basketball,21.31,3.6154,77.04
+Italie,Italy,IT,FIP,Padel,150,0.494,74.1
 Italie,Italy,IT,FIS,Ski et snowboard,62.87,1.1308,71.09
 Italie,Italy,IT,WAKO,Kickboxing,83.33,0.8054,67.11
 Italie,Italy,IT,WBSC,Baseball,46.29,1.394,64.53
@@ -298,7 +299,6 @@ Italie,Italy,IT,World Triathlon,Triathlon,40,1.2025,48.1
 Italie,Italy,IT,IFAF,Football américain / flag,64,0.7387,47.28
 Italie,Italy,IT,IFMA,Muay-thaï,52.63,0.8624,45.39
 Italie,Italy,IT,JJIF,Ju-jitsu,82.18,0.5168,42.47
-Italie,Italy,IT,FIP,Padel,80.88,0.494,39.95
 Italie,Italy,IT,World Curling,Curling,71.43,0.5498,39.27
 Italie,Italy,IT,World Taekwondo,Taekwondo,20.24,1.6878,34.16
 Italie,Italy,IT,IOF,Course d'orientation,63.16,0.4093,25.85
@@ -315,9 +315,8 @@ Australie,Australia,AU,World Aquatics,Sports aquatiques,135.88,2.2159,301.1
 Australie,Australia,AU,ICC,Cricket,151.12,1.841,278.21
 Australie,Australia,AU,FIBA,Basketball,67.17,3.6154,242.85
 Australie,Australia,AU,ISA,Surf,203.95,0.9798,199.83
-Australie,Australia,AU,World Netball,Netball,367.65,0.5365,197.24
 Australie,Australia,AU,World Skate,Skateboard et roller,109.65,1.2884,141.27
-Australie,Australia,AU,FIA,Sport automobile,125.97,1.0688,134.64
+Australie,Australia,AU,FIA,Sport automobile,126.79,1.0688,135.51
 Australie,Australia,AU,UCI,Cyclisme,54.13,2.3718,128.39
 Australie,Australia,AU,ICF,Canoë-kayak,94.84,1.3365,126.75
 Australie,Australia,AU,WCBS,Snooker,87.64,1.2754,111.78
@@ -325,36 +324,68 @@ Australie,Australia,AU,ILSF,Sauvetage sportif,132.56,0.8357,110.78
 Australie,Australia,AU,ITF,Tennis,48.95,2.2211,108.72
 Australie,Australia,AU,FIH,Hockey sur gazon,85.32,1.2195,104.05
 Australie,Australia,AU,World Rugby,Rugby à XV,79.32,1.2538,99.45
-Australie,Australia,AU,IRL,Rugby à XIII,367.64,0.2376,87.35
+Australie,Australia,AU,World Lacrosse,Lacrosse,150,0.6316,94.74
+Australie,Australia,AU,World Netball,Netball,150,0.5365,80.47
 Australie,Australia,AU,WFDF,Disque volant,130.99,0.6074,79.56
 Australie,Australia,AU,IGF,Golf,47.28,1.6783,79.35
 Australie,Australia,AU,World Sailing,Voile,70.93,1.0894,77.27
 Australie,Australia,AU,World Triathlon,Triathlon,62.5,1.2025,75.16
+Australie,Australia,AU,IRL,Rugby à XIII,300,0.2376,71.28
 Australie,Australia,AU,World Athletics,Athlétisme,26.38,2.5202,66.48
 Australie,Australia,AU,FIFA,Football,20.18,3.2852,66.3
-Australie,Australia,AU,World Lacrosse,Lacrosse,102.94,0.6316,65.02
 Australie,Australia,AU,FEI,Équitation,57.43,1.1017,63.27
 Australie,Australia,AU,World Boxing,Boxe,35.47,1.3015,46.16
 Australie,Australia,AU,WBSC,Baseball,27.96,1.394,38.98
 Australie,Australia,AU,IWWF,Ski nautique et wakeboard,73.1,0.4589,33.55
 Australie,Australia,AU,FIS,Ski et snowboard,27.73,1.1308,31.36
 Australie,Australia,AU,FIVB,Volleyball,10.12,2.8809,29.15
-Australie,Australia,AU,FIK,Kendo,91.91,0.2664,24.48
+Australie,Australia,AU,FIK,Kendo,101.74,0.2664,27.1
+Australie,Australia,AU,FIM,Moto,17.94,0.7682,13.78
 Australie,Australia,AU,World Taekwondo,Taekwondo,6.16,1.6878,10.4
 Australie,Australia,AU,World Rowing,Aviron,8.77,1.1392,9.99
 Australie,Australia,AU,ISSF,Tir sportif,8.19,1.194,9.78
-Australie,Australia,AU,FIM,Moto,9.37,0.7682,7.2
 Australie,Australia,AU,IPF,Force athlétique,15.35,0.4558,7.0
 Australie,Australia,AU,IWF,Haltérophilie,5.12,1.3233,6.78
+Corée du Sud,South Korea,KR,World Archery,Tir à l'arc,384.21,1.2281,471.85
+Corée du Sud,South Korea,KR,BWF,Badminton,148.06,2.2314,330.38
+Corée du Sud,South Korea,KR,ITTF,Tennis de table,75.19,2.5847,194.34
+Corée du Sud,South Korea,KR,World Taekwondo,Taekwondo,106.52,1.6878,179.78
+Corée du Sud,South Korea,KR,ISSF,Tir sportif,140.48,1.194,167.73
+Corée du Sud,South Korea,KR,IGF,Golf,99.71,1.6783,167.34
+Corée du Sud,South Korea,KR,IJF,Judo,76.53,1.6267,124.49
+Corée du Sud,South Korea,KR,FIE,Escrime,79.66,1.0402,82.86
+Corée du Sud,South Korea,KR,IGF (go),Go,150,0.5299,79.48
+Corée du Sud,South Korea,KR,FIK,Kendo,293.02,0.2664,78.06
+Corée du Sud,South Korea,KR,World Climbing,Escalade,77.49,0.9323,72.24
+Corée du Sud,South Korea,KR,CMAS,Nage avec palmes,76.67,0.813,62.33
+Corée du Sud,South Korea,KR,IKF (kabaddi),Kabaddi,150,0.4093,61.39
+Corée du Sud,South Korea,KR,ISU,Patinage,74.86,0.813,60.86
+Corée du Sud,South Korea,KR,IWF,Haltérophilie,37.17,1.3233,49.19
+Corée du Sud,South Korea,KR,WBSC,Baseball,35.17,1.394,49.03
+Corée du Sud,South Korea,KR,UIPM,Pentathlon moderne,61.4,0.7756,47.62
+Corée du Sud,South Korea,KR,FIFA,Football,11.76,3.2852,38.63
+Corée du Sud,South Korea,KR,IWWF,Ski nautique et wakeboard,81.87,0.4589,37.57
+Corée du Sud,South Korea,KR,IWUF,Wushu,36.55,0.9205,33.64
+Corée du Sud,South Korea,KR,FIBA,Basketball,9.23,3.6154,33.37
+Corée du Sud,South Korea,KR,JJIF,Ju-jitsu,59.1,0.5168,30.54
+Corée du Sud,South Korea,KR,World Curling,Curling,46.64,0.5498,25.64
+Corée du Sud,South Korea,KR,FIVB,Volleyball,7.71,2.8809,22.21
+Corée du Sud,South Korea,KR,FIS,Ski et snowboard,15.15,1.1308,17.13
+Corée du Sud,South Korea,KR,World Boxing,Boxe,12.63,1.3015,16.44
+Corée du Sud,South Korea,KR,World Aquatics,Sports aquatiques,3.92,2.2159,8.69
+Corée du Sud,South Korea,KR,World Athletics,Athlétisme,2.56,2.5202,6.45
+Corée du Sud,South Korea,KR,UWW,Lutte,4.23,1.3365,5.65
+Corée du Sud,South Korea,KR,FIH,Hockey sur gazon,1.42,1.2195,1.73
+Corée du Sud,South Korea,KR,IIHF,Hockey sur glace,0.78,0.7756,0.6
 Espagne,Spain,ES,FIFA,Football,120.27,3.2852,395.11
-Espagne,Spain,ES,FIM,Moto,445.55,0.7682,342.27
-Espagne,Spain,ES,FIP,Padel,423.05,0.494,208.99
+Espagne,Spain,ES,FIM,Moto,300,0.7682,230.46
 Espagne,Spain,ES,ITF,Tennis,79.41,2.2211,176.38
 Espagne,Spain,ES,FIBA,Basketball,48.36,3.6154,174.84
+Espagne,Spain,ES,FIP,Padel,300,0.494,148.2
 Espagne,Spain,ES,ISMF,Ski-alpinisme,309.94,0.4526,140.28
 Espagne,Spain,ES,FIH,Hockey sur gazon,98.94,1.2195,120.66
 Espagne,Spain,ES,World Aquatics,Sports aquatiques,50.91,2.2159,112.81
-Espagne,Spain,ES,FIA,Sport automobile,103.04,1.0688,110.13
+Espagne,Spain,ES,FIA,Sport automobile,103.72,1.0688,110.86
 Espagne,Spain,ES,ICF,Canoë-kayak,71.56,1.3365,95.64
 Espagne,Spain,ES,World Skate,Skateboard et roller,58.41,1.2884,75.26
 Espagne,Spain,ES,World Athletics,Athlétisme,27.76,2.5202,69.96
@@ -381,51 +412,20 @@ Espagne,Spain,ES,WBSC,Baseball,6.27,1.394,8.74
 Espagne,Spain,ES,World Rugby,Rugby à XV,4.54,1.2538,5.69
 Espagne,Spain,ES,ILSF,Sauvetage sportif,6.14,0.8357,5.13
 Espagne,Spain,ES,FIVB,Volleyball,1.43,2.8809,4.12
-Corée du Sud,South Korea,KR,World Archery,Tir à l'arc,384.21,1.2281,471.85
-Corée du Sud,South Korea,KR,BWF,Badminton,148.06,2.2314,330.38
-Corée du Sud,South Korea,KR,ITTF,Tennis de table,75.19,2.5847,194.34
-Corée du Sud,South Korea,KR,World Taekwondo,Taekwondo,106.52,1.6878,179.78
-Corée du Sud,South Korea,KR,ISSF,Tir sportif,140.48,1.194,167.73
-Corée du Sud,South Korea,KR,IGF,Golf,99.71,1.6783,167.34
-Corée du Sud,South Korea,KR,IGF (go),Go,245.61,0.5299,130.15
-Corée du Sud,South Korea,KR,IJF,Judo,76.53,1.6267,124.49
-Corée du Sud,South Korea,KR,FIE,Escrime,79.66,1.0402,82.86
-Corée du Sud,South Korea,KR,World Climbing,Escalade,77.49,0.9323,72.24
-Corée du Sud,South Korea,KR,FIK,Kendo,264.7,0.2664,70.52
-Corée du Sud,South Korea,KR,CMAS,Nage avec palmes,76.67,0.813,62.33
-Corée du Sud,South Korea,KR,ISU,Patinage,74.86,0.813,60.86
-Corée du Sud,South Korea,KR,IWF,Haltérophilie,37.17,1.3233,49.19
-Corée du Sud,South Korea,KR,WBSC,Baseball,35.17,1.394,49.03
-Corée du Sud,South Korea,KR,UIPM,Pentathlon moderne,61.4,0.7756,47.62
-Corée du Sud,South Korea,KR,FIFA,Football,11.76,3.2852,38.63
-Corée du Sud,South Korea,KR,IKF (kabaddi),Kabaddi,91.91,0.4093,37.62
-Corée du Sud,South Korea,KR,IWWF,Ski nautique et wakeboard,81.87,0.4589,37.57
-Corée du Sud,South Korea,KR,IWUF,Wushu,36.55,0.9205,33.64
-Corée du Sud,South Korea,KR,FIBA,Basketball,9.23,3.6154,33.37
-Corée du Sud,South Korea,KR,JJIF,Ju-jitsu,59.1,0.5168,30.54
-Corée du Sud,South Korea,KR,World Curling,Curling,46.64,0.5498,25.64
-Corée du Sud,South Korea,KR,FIVB,Volleyball,7.71,2.8809,22.21
-Corée du Sud,South Korea,KR,FIS,Ski et snowboard,15.15,1.1308,17.13
-Corée du Sud,South Korea,KR,World Boxing,Boxe,12.63,1.3015,16.44
-Corée du Sud,South Korea,KR,World Aquatics,Sports aquatiques,3.92,2.2159,8.69
-Corée du Sud,South Korea,KR,World Athletics,Athlétisme,2.56,2.5202,6.45
-Corée du Sud,South Korea,KR,UWW,Lutte,4.23,1.3365,5.65
-Corée du Sud,South Korea,KR,FIH,Hockey sur gazon,1.42,1.2195,1.73
-Corée du Sud,South Korea,KR,IIHF,Hockey sur glace,0.78,0.7756,0.6
 Pays-Bas,Netherlands,NL,UCI,Cyclisme,166.22,2.3718,394.24
 Pays-Bas,Netherlands,NL,World Rowing,Aviron,169.59,1.1392,193.2
 Pays-Bas,Netherlands,NL,FIH,Hockey sur gazon,156.96,1.2195,191.41
 Pays-Bas,Netherlands,NL,ISU,Patinage,232.08,0.813,188.68
-Pays-Bas,Netherlands,NL,WDF,Fléchettes,341.65,0.5332,182.17
-Pays-Bas,Netherlands,NL,FIA,Sport automobile,140.36,1.0688,150.02
-Pays-Bas,Netherlands,NL,IKF,Korfball,341.71,0.3586,122.54
+Pays-Bas,Netherlands,NL,WDF,Fléchettes,300,0.5332,159.96
+Pays-Bas,Netherlands,NL,FIA,Sport automobile,141.28,1.0688,151.0
 Pays-Bas,Netherlands,NL,World Sailing,Voile,111.03,1.0894,120.96
-Pays-Bas,Netherlands,NL,WBF,Bridge,219.3,0.507,111.19
+Pays-Bas,Netherlands,NL,IKF,Korfball,300,0.3586,107.58
 Pays-Bas,Netherlands,NL,FIBA,Basketball,24.78,3.6154,89.59
 Pays-Bas,Netherlands,NL,World Athletics,Athlétisme,34.68,2.5202,87.4
 Pays-Bas,Netherlands,NL,FIFA,Football,25.39,3.2852,83.41
 Pays-Bas,Netherlands,NL,World Aquatics,Sports aquatiques,37.39,2.2159,82.85
 Pays-Bas,Netherlands,NL,IHF,Handball,47.5,1.608,76.38
+Pays-Bas,Netherlands,NL,WBF,Bridge,150,0.507,76.05
 Pays-Bas,Netherlands,NL,WBSC,Baseball,47.91,1.394,66.79
 Pays-Bas,Netherlands,NL,FIVB,Volleyball,19.88,2.8809,57.27
 Pays-Bas,Netherlands,NL,WAKO,Kickboxing,57.02,0.8054,45.92
@@ -441,7 +441,7 @@ Pays-Bas,Netherlands,NL,ITTF,Tennis de table,2.05,2.5847,5.3
 Pays-Bas,Netherlands,NL,FIS,Ski et snowboard,1.7,1.1308,1.92
 Pays-Bas,Netherlands,NL,IIHF,Hockey sur glace,2.18,0.7756,1.69
 Pays-Bas,Netherlands,NL,World Rugby,Rugby à XV,1.25,1.2538,1.57
-Canada,Canada,CA,World Lacrosse,Lacrosse,341.65,0.6316,215.79
+Canada,Canada,CA,World Lacrosse,Lacrosse,300,0.6316,189.48
 Canada,Canada,CA,FIBA,Basketball,41.96,3.6154,151.7
 Canada,Canada,CA,World Rugby,Rugby à XV,90.63,1.2538,113.63
 Canada,Canada,CA,IIHF,Hockey sur glace,144.15,0.7756,111.8
@@ -472,7 +472,7 @@ Canada,Canada,CA,WAKO,Kickboxing,20.47,0.8054,16.49
 Canada,Canada,CA,World Boxing,Boxe,12.63,1.3015,16.44
 Canada,Canada,CA,World Rowing,Aviron,11.28,1.1392,12.85
 Canada,Canada,CA,FIE,Escrime,10.23,1.0402,10.64
-Canada,Canada,CA,FIA,Sport automobile,9.72,1.0688,10.39
+Canada,Canada,CA,FIA,Sport automobile,9.78,1.0688,10.45
 Canada,Canada,CA,World Sailing,Voile,8.77,1.0894,9.55
 Canada,Canada,CA,UCI,Cyclisme,2.08,2.3718,4.93
 Canada,Canada,CA,UWW,Lutte,3.29,1.3365,4.4
@@ -484,9 +484,9 @@ Brésil,Brazil,BR,ISA,Surf,180.35,0.9798,176.71
 Brésil,Brazil,BR,World Skate,Skateboard et roller,103.46,1.2884,133.3
 Brésil,Brazil,BR,FIBA,Basketball,27.33,3.6154,98.81
 Brésil,Brazil,BR,IHF,Handball,60,1.608,96.48
-Brésil,Brazil,BR,IFA,Balle au poing,342.11,0.2558,87.51
 Brésil,Brazil,BR,World Taekwondo,Taekwondo,50.17,1.6878,84.68
 Brésil,Brazil,BR,IJF,Judo,48.35,1.6267,78.65
+Brésil,Brazil,BR,IFA,Balle au poing,300,0.2558,76.74
 Brésil,Brazil,BR,ITTF,Tennis de table,26.53,2.5847,68.57
 Brésil,Brazil,BR,World Triathlon,Triathlon,45,1.2025,54.11
 Brésil,Brazil,BR,World Gymnastics,Gymnastique,36.06,1.4568,52.53
@@ -498,24 +498,32 @@ Brésil,Brazil,BR,FIS,Ski et snowboard,6.86,1.1308,7.76
 Brésil,Brazil,BR,JJIF,Ju-jitsu,12.93,0.5168,6.68
 Brésil,Brazil,BR,WBSC,Baseball,2.79,1.394,3.89
 Brésil,Brazil,BR,ITF,Tennis,1.49,2.2211,3.31
-Brésil,Brazil,BR,FIA,Sport automobile,1.56,1.0688,1.67
-Inde,India,IN,FIDE,Échecs,159.24,2.2572,359.44
-Inde,India,IN,ICC,Cricket,160.12,1.841,294.78
-Inde,India,IN,IKF (kabaddi),Kabaddi,474.52,0.4093,194.22
-Inde,India,IN,BWF,Badminton,50.92,2.2314,113.62
-Inde,India,IN,ISSF,Tir sportif,79.1,1.194,94.45
-Inde,India,IN,FIH,Hockey sur gazon,67.5,1.2195,82.32
-Inde,India,IN,ISTAF,Sepak takraw,245.61,0.2691,66.09
-Inde,India,IN,IKKF,Kho kho,250,0.1856,46.4
-Inde,India,IN,World Archery,Tir à l'arc,37.72,1.2281,46.32
-Inde,India,IN,World Boxing,Boxe,28.87,1.3015,37.57
-Inde,India,IN,World Squash,Squash,32,0.7942,25.41
-Inde,India,IN,IWUF,Wushu,26.32,0.9205,24.23
-Inde,India,IN,IWF,Haltérophilie,9.14,1.3233,12.09
-Inde,India,IN,UWW,Lutte,8.77,1.3365,11.72
-Inde,India,IN,World Athletics,Athlétisme,4.58,2.5202,11.54
-Inde,India,IN,ITTF,Tennis de table,4.1,2.5847,10.6
-Inde,India,IN,FIVB,Volleyball,1.24,2.8809,3.57
+Brésil,Brazil,BR,FIA,Sport automobile,1.57,1.0688,1.68
+Suisse,Switzerland,CH,IOF,Course d'orientation,414.04,0.4093,169.47
+Suisse,Switzerland,CH,UCI,Cyclisme,52.14,2.3718,123.67
+Suisse,Switzerland,CH,FIS,Ski et snowboard,108.32,1.1308,122.49
+Suisse,Switzerland,CH,ISMF,Ski-alpinisme,251.46,0.4526,113.81
+Suisse,Switzerland,CH,IIHF,Hockey sur glace,120.01,0.7756,93.08
+Suisse,Switzerland,CH,IFF,Floorball,203.48,0.437,88.92
+Suisse,Switzerland,CH,World Curling,Curling,160.21,0.5498,88.08
+Suisse,Switzerland,CH,ISSF,Tir sportif,73.24,1.194,87.45
+Suisse,Switzerland,CH,World Triathlon,Triathlon,72.63,1.2025,87.34
+Suisse,Switzerland,CH,FIFA,Football,20.14,3.2852,66.16
+Suisse,Switzerland,CH,FEI,Équitation,44.41,1.1017,48.93
+Suisse,Switzerland,CH,IFAF,Football américain / flag,56,0.7387,41.37
+Suisse,Switzerland,CH,FIVB,Volleyball,13.85,2.8809,39.9
+Suisse,Switzerland,CH,IFA,Balle au poing,150,0.2558,38.37
+Suisse,Switzerland,CH,World Athletics,Athlétisme,10.88,2.5202,27.42
+Suisse,Switzerland,CH,World Rowing,Aviron,22.42,1.1392,25.54
+Suisse,Switzerland,CH,World Sailing,Voile,22.56,1.0894,24.58
+Suisse,Switzerland,CH,World Squash,Squash,25,0.7942,19.86
+Suisse,Switzerland,CH,IBSF,Bobsleigh et skeleton,35.09,0.52,18.25
+Suisse,Switzerland,CH,World Gymnastics,Gymnastique,10.23,1.4568,14.9
+Suisse,Switzerland,CH,FIDE,Échecs,6.09,2.2572,13.75
+Suisse,Switzerland,CH,World Aquatics,Sports aquatiques,5.9,2.2159,13.07
+Suisse,Switzerland,CH,IGF,Golf,7.35,1.6783,12.34
+Suisse,Switzerland,CH,ITF,Tennis,5.31,2.2211,11.79
+Suisse,Switzerland,CH,FIBA,Basketball,0.02,3.6154,0.07
 Russie,Russia,RU,FIAS,Sambo,306.76,0.6074,186.33
 Russie,Russia,RU,ITF,Tennis,72.66,2.2211,161.39
 Russie,Russia,RU,FIDE,Échecs,70.53,2.2572,159.2
@@ -542,57 +550,32 @@ Nouvelle-Zélande,New Zealand,NZ,ICC,Cricket,153.01,1.841,281.69
 Nouvelle-Zélande,New Zealand,NZ,World Rugby,Rugby à XV,154.9,1.2538,194.21
 Nouvelle-Zélande,New Zealand,NZ,ILSF,Sauvetage sportif,164.95,0.8357,137.85
 Nouvelle-Zélande,New Zealand,NZ,IGF,Golf,68.84,1.6783,115.53
-Nouvelle-Zélande,New Zealand,NZ,World Netball,Netball,161.76,0.5365,86.78
 Nouvelle-Zélande,New Zealand,NZ,World Rowing,Aviron,72.82,1.1392,82.96
+Nouvelle-Zélande,New Zealand,NZ,World Netball,Netball,150,0.5365,80.47
 Nouvelle-Zélande,New Zealand,NZ,ICF,Canoë-kayak,55.5,1.3365,74.18
 Nouvelle-Zélande,New Zealand,NZ,World Triathlon,Triathlon,52.63,1.2025,63.29
+Nouvelle-Zélande,New Zealand,NZ,IRL,Rugby à XIII,248.25,0.2376,58.98
 Nouvelle-Zélande,New Zealand,NZ,UCI,Cyclisme,24.17,2.3718,57.33
-Nouvelle-Zélande,New Zealand,NZ,IRL,Rugby à XIII,224.26,0.2376,53.28
 Nouvelle-Zélande,New Zealand,NZ,World Sailing,Voile,36.84,1.0894,40.13
 Nouvelle-Zélande,New Zealand,NZ,World Athletics,Athlétisme,14.28,2.5202,35.99
 Nouvelle-Zélande,New Zealand,NZ,FIBA,Basketball,9.92,3.6154,35.86
 Nouvelle-Zélande,New Zealand,NZ,IPF,Force athlétique,62.5,0.4558,28.49
 Nouvelle-Zélande,New Zealand,NZ,FIH,Hockey sur gazon,19.98,1.2195,24.37
 Nouvelle-Zélande,New Zealand,NZ,FIS,Ski et snowboard,18.93,1.1308,21.41
-Nouvelle-Zélande,New Zealand,NZ,FIA,Sport automobile,19.05,1.0688,20.36
+Nouvelle-Zélande,New Zealand,NZ,FIA,Sport automobile,19.17,1.0688,20.49
 Nouvelle-Zélande,New Zealand,NZ,World Squash,Squash,12.12,0.7942,9.63
 Nouvelle-Zélande,New Zealand,NZ,FIFA,Football,2.65,3.2852,8.71
 Nouvelle-Zélande,New Zealand,NZ,IKKF,Kho kho,40,0.1856,7.42
-Suisse,Switzerland,CH,IOF,Course d'orientation,414.04,0.4093,169.47
-Suisse,Switzerland,CH,UCI,Cyclisme,52.14,2.3718,123.67
-Suisse,Switzerland,CH,FIS,Ski et snowboard,108.32,1.1308,122.49
-Suisse,Switzerland,CH,ISMF,Ski-alpinisme,251.46,0.4526,113.81
-Suisse,Switzerland,CH,IIHF,Hockey sur glace,120.01,0.7756,93.08
-Suisse,Switzerland,CH,World Curling,Curling,160.21,0.5498,88.08
-Suisse,Switzerland,CH,ISSF,Tir sportif,73.24,1.194,87.45
-Suisse,Switzerland,CH,World Triathlon,Triathlon,72.63,1.2025,87.34
-Suisse,Switzerland,CH,IFF,Floorball,183.82,0.437,80.33
-Suisse,Switzerland,CH,FIFA,Football,20.14,3.2852,66.16
-Suisse,Switzerland,CH,FEI,Équitation,44.41,1.1017,48.93
-Suisse,Switzerland,CH,IFAF,Football américain / flag,56,0.7387,41.37
-Suisse,Switzerland,CH,FIVB,Volleyball,13.85,2.8809,39.9
-Suisse,Switzerland,CH,IFA,Balle au poing,122.81,0.2558,31.41
-Suisse,Switzerland,CH,World Athletics,Athlétisme,10.88,2.5202,27.42
-Suisse,Switzerland,CH,World Rowing,Aviron,22.42,1.1392,25.54
-Suisse,Switzerland,CH,World Sailing,Voile,22.56,1.0894,24.58
-Suisse,Switzerland,CH,World Squash,Squash,25,0.7942,19.86
-Suisse,Switzerland,CH,IBSF,Bobsleigh et skeleton,35.09,0.52,18.25
-Suisse,Switzerland,CH,World Gymnastics,Gymnastique,10.23,1.4568,14.9
-Suisse,Switzerland,CH,FIDE,Échecs,6.09,2.2572,13.75
-Suisse,Switzerland,CH,World Aquatics,Sports aquatiques,5.9,2.2159,13.07
-Suisse,Switzerland,CH,IGF,Golf,7.35,1.6783,12.34
-Suisse,Switzerland,CH,ITF,Tennis,5.31,2.2211,11.79
-Suisse,Switzerland,CH,FIBA,Basketball,0.02,3.6154,0.07
 Suède,Sweden,SE,FIVB,Volleyball,64.58,2.8809,186.05
-Suède,Sweden,SE,IFF,Floorball,316.17,0.437,138.17
+Suède,Sweden,SE,IFF,Floorball,296.51,0.437,129.57
 Suède,Sweden,SE,ITTF,Tennis de table,42.16,2.5847,108.97
 Suède,Sweden,SE,World Curling,Curling,190.67,0.5498,104.83
 Suède,Sweden,SE,FIS,Ski et snowboard,71.21,1.1308,80.52
-Suède,Sweden,SE,FIB,Bandy,367.64,0.2173,79.89
 Suède,Sweden,SE,IHF,Handball,47.5,1.608,76.38
+Suède,Sweden,SE,WBF,Bridge,150,0.507,76.05
 Suède,Sweden,SE,IIHF,Hockey sur glace,85.65,0.7756,66.43
 Suède,Sweden,SE,FIFA,Football,20.01,3.2852,65.74
-Suède,Sweden,SE,WBF,Bridge,122.81,0.507,62.26
+Suède,Sweden,SE,FIB,Bandy,300,0.2173,65.19
 Suède,Sweden,SE,World Sailing,Voile,52.51,1.0894,57.2
 Suède,Sweden,SE,IBU,Biathlon,100.27,0.5431,54.46
 Suède,Sweden,SE,IGF,Golf,29.41,1.6783,49.36
@@ -607,6 +590,23 @@ Suède,Sweden,SE,JJIF,Ju-jitsu,23.08,0.5168,11.93
 Suède,Sweden,SE,IJF,Judo,6.57,1.6267,10.69
 Suède,Sweden,SE,FIBA,Basketball,2.72,3.6154,9.83
 Suède,Sweden,SE,UCI,Cyclisme,2.73,2.3718,6.48
+Inde,India,IN,FIDE,Échecs,159.24,2.2572,359.44
+Inde,India,IN,ICC,Cricket,160.12,1.841,294.78
+Inde,India,IN,IKF (kabaddi),Kabaddi,300,0.4093,122.79
+Inde,India,IN,BWF,Badminton,50.92,2.2314,113.62
+Inde,India,IN,ISSF,Tir sportif,79.1,1.194,94.45
+Inde,India,IN,FIH,Hockey sur gazon,67.5,1.2195,82.32
+Inde,India,IN,IKKF,Kho kho,250,0.1856,46.4
+Inde,India,IN,World Archery,Tir à l'arc,37.72,1.2281,46.32
+Inde,India,IN,ISTAF,Sepak takraw,150,0.2691,40.37
+Inde,India,IN,World Boxing,Boxe,28.87,1.3015,37.57
+Inde,India,IN,World Squash,Squash,32,0.7942,25.41
+Inde,India,IN,IWUF,Wushu,26.32,0.9205,24.23
+Inde,India,IN,IWF,Haltérophilie,9.14,1.3233,12.09
+Inde,India,IN,UWW,Lutte,8.77,1.3365,11.72
+Inde,India,IN,World Athletics,Athlétisme,4.58,2.5202,11.54
+Inde,India,IN,ITTF,Tennis de table,4.1,2.5847,10.6
+Inde,India,IN,FIVB,Volleyball,1.24,2.8809,3.57
 Hongrie,Hungary,HU,ICF,Canoë-kayak,142.37,1.3365,190.28
 Hongrie,Hungary,HU,CMAS,Nage avec palmes,208.42,0.813,169.45
 Hongrie,Hungary,HU,UIPM,Pentathlon moderne,188.6,0.7756,146.28
@@ -657,30 +657,10 @@ Ukraine,Ukraine,UA,FIS,Ski et snowboard,4.37,1.1308,4.94
 Ukraine,Ukraine,UA,FIBA,Basketball,1.21,3.6154,4.37
 Ukraine,Ukraine,UA,World Aquatics,Sports aquatiques,1.63,2.2159,3.61
 Ukraine,Ukraine,UA,IIHF,Hockey sur glace,0.35,0.7756,0.27
-Norvège,Norway,NO,IHF,Handball,145,1.608,233.16
-Norvège,Norway,NO,FIS,Ski et snowboard,172.7,1.1308,195.29
-Norvège,Norway,NO,IBU,Biathlon,298.11,0.5431,161.9
-Norvège,Norway,NO,FIFA,Football,21.31,3.2852,70.01
-Norvège,Norway,NO,ISSF,Tir sportif,43.13,1.194,51.5
-Norvège,Norway,NO,FIB,Bandy,235.29,0.2173,51.13
-Norvège,Norway,NO,IWF,Haltérophilie,34.36,1.3233,45.47
-Norvège,Norway,NO,World Athletics,Athlétisme,15.25,2.5202,38.43
-Norvège,Norway,NO,FIVB,Volleyball,10.29,2.8809,29.64
-Norvège,Norway,NO,IGF,Golf,16.45,1.6783,27.61
-Norvège,Norway,NO,ISU,Patinage,33.71,0.813,27.41
-Norvège,Norway,NO,IPF,Force athlétique,58.11,0.4558,26.49
-Norvège,Norway,NO,IIHF,Hockey sur glace,33.27,0.7756,25.8
-Norvège,Norway,NO,ITF,Tennis,8.41,2.2211,18.68
-Norvège,Norway,NO,World Sailing,Voile,12.28,1.0894,13.38
-Norvège,Norway,NO,World Curling,Curling,18.22,0.5498,10.02
-Norvège,Norway,NO,UCI,Cyclisme,4.16,2.3718,9.87
-Norvège,Norway,NO,UWW,Lutte,5.48,1.3365,7.32
-Norvège,Norway,NO,ICF,Canoë-kayak,5.12,1.3365,6.84
-Norvège,Norway,NO,FIDE,Échecs,2.18,2.2572,4.92
 Belgique,Belgium,BE,UCI,Cyclisme,109.57,2.3718,259.88
 Belgique,Belgium,BE,FIH,Hockey sur gazon,112.05,1.2195,136.64
+Belgique,Belgium,BE,IKF,Korfball,300,0.3586,107.58
 Belgique,Belgium,BE,FIBA,Basketball,29.04,3.6154,104.99
-Belgique,Belgium,BE,IKF,Korfball,255.16,0.3586,91.5
 Belgique,Belgium,BE,FIFA,Football,22.86,3.2852,75.1
 Belgique,Belgium,BE,ITF,Tennis,26.56,2.2211,58.99
 Belgique,Belgium,BE,FEI,Équitation,49.2,1.1017,54.2
@@ -696,10 +676,30 @@ Belgique,Belgium,BE,IPF,Force athlétique,19.74,0.4558,9.0
 Belgique,Belgium,BE,World Aquatics,Sports aquatiques,2.89,2.2159,6.4
 Belgique,Belgium,BE,IGF,Golf,2.84,1.6783,4.77
 Belgique,Belgium,BE,WCBS,Snooker,3.58,1.2754,4.57
+Norvège,Norway,NO,IHF,Handball,145,1.608,233.16
+Norvège,Norway,NO,FIS,Ski et snowboard,172.7,1.1308,195.29
+Norvège,Norway,NO,IBU,Biathlon,298.11,0.5431,161.9
+Norvège,Norway,NO,FIFA,Football,21.31,3.2852,70.01
+Norvège,Norway,NO,FIB,Bandy,260.46,0.2173,56.6
+Norvège,Norway,NO,ISSF,Tir sportif,43.13,1.194,51.5
+Norvège,Norway,NO,IWF,Haltérophilie,34.36,1.3233,45.47
+Norvège,Norway,NO,World Athletics,Athlétisme,15.25,2.5202,38.43
+Norvège,Norway,NO,FIVB,Volleyball,10.29,2.8809,29.64
+Norvège,Norway,NO,IGF,Golf,16.45,1.6783,27.61
+Norvège,Norway,NO,ISU,Patinage,33.71,0.813,27.41
+Norvège,Norway,NO,IPF,Force athlétique,58.11,0.4558,26.49
+Norvège,Norway,NO,IIHF,Hockey sur glace,33.27,0.7756,25.8
+Norvège,Norway,NO,ITF,Tennis,8.41,2.2211,18.68
+Norvège,Norway,NO,World Sailing,Voile,12.28,1.0894,13.38
+Norvège,Norway,NO,World Curling,Curling,18.22,0.5498,10.02
+Norvège,Norway,NO,UCI,Cyclisme,4.16,2.3718,9.87
+Norvège,Norway,NO,UWW,Lutte,5.48,1.3365,7.32
+Norvège,Norway,NO,ICF,Canoë-kayak,5.12,1.3365,6.84
+Norvège,Norway,NO,FIDE,Échecs,2.18,2.2572,4.92
 Pologne,Poland,PL,FIVB,Volleyball,68.61,2.8809,197.66
 Pologne,Poland,PL,World Climbing,Escalade,122.08,0.9323,113.82
 Pologne,Poland,PL,UCI,Cyclisme,40.2,2.3718,95.35
-Pologne,Poland,PL,WBF,Bridge,122.81,0.507,62.26
+Pologne,Poland,PL,WBF,Bridge,150,0.507,76.05
 Pologne,Poland,PL,ITF,Tennis,25.24,2.2211,56.06
 Pologne,Poland,PL,ICF,Canoë-kayak,36.55,1.3365,48.85
 Pologne,Poland,PL,IFMA,Muay-thaï,52.63,0.8624,45.39
@@ -727,12 +727,12 @@ Thaïlande,Thailand,TH,BWF,Badminton,79.69,2.2314,177.82
 Thaïlande,Thailand,TH,WPBF,Sports de boules,134.5,1.0362,139.37
 Thaïlande,Thailand,TH,IDBF,Bateau-dragon,207.6,0.494,102.55
 Thaïlande,Thailand,TH,IWF,Haltérophilie,71.82,1.3233,95.04
-Thaïlande,Thailand,TH,ISTAF,Sepak takraw,315.79,0.2691,84.98
 Thaïlande,Thailand,TH,IFMA,Muay-thaï,93.57,0.8624,80.69
-Thaïlande,Thailand,TH,FIA,Sport automobile,65.71,1.0688,70.23
+Thaïlande,Thailand,TH,FIA,Sport automobile,66.14,1.0688,70.69
+Thaïlande,Thailand,TH,IKF (kabaddi),Kabaddi,150,0.4093,61.39
 Thaïlande,Thailand,TH,World Taekwondo,Taekwondo,33.01,1.6878,55.71
 Thaïlande,Thailand,TH,JJIF,Ju-jitsu,82.18,0.5168,42.47
-Thaïlande,Thailand,TH,IKF (kabaddi),Kabaddi,91.91,0.4093,37.62
+Thaïlande,Thailand,TH,ISTAF,Sepak takraw,150,0.2691,40.37
 Thaïlande,Thailand,TH,WCBS,Snooker,28.99,1.2754,36.97
 Thaïlande,Thailand,TH,IGF,Golf,20.86,1.6783,35.01
 Thaïlande,Thailand,TH,FIVB,Volleyball,7.93,2.8809,22.85
@@ -741,7 +741,7 @@ Thaïlande,Thailand,TH,World Boxing,Boxe,7.7,1.3015,10.02
 Danemark,Denmark,DK,IHF,Handball,180,1.608,289.44
 Danemark,Denmark,DK,BWF,Badminton,73.35,2.2314,163.67
 Danemark,Denmark,DK,UCI,Cyclisme,53.15,2.3718,126.06
-Danemark,Denmark,DK,WBF,Bridge,157.89,0.507,80.05
+Danemark,Denmark,DK,WBF,Bridge,150,0.507,76.05
 Danemark,Denmark,DK,FEI,Équitation,62.5,1.1017,68.86
 Danemark,Denmark,DK,FIFA,Football,12.26,3.2852,40.28
 Danemark,Denmark,DK,World Sailing,Voile,24.56,1.0894,26.76
@@ -760,11 +760,25 @@ Danemark,Denmark,DK,UWW,Lutte,5.48,1.3365,7.32
 Danemark,Denmark,DK,World Curling,Curling,9,0.5498,4.95
 Danemark,Denmark,DK,ISU,Patinage,4.51,0.813,3.67
 Danemark,Denmark,DK,World Athletics,Athlétisme,0.28,2.5202,0.71
+Égypte,Egypt,EG,World Squash,Squash,346.96,0.7942,275.56
+Égypte,Egypt,EG,UIPM,Pentathlon moderne,328.95,0.7756,255.13
+Égypte,Egypt,EG,WKF,Karaté,108.01,1.1728,126.67
+Égypte,Egypt,EG,IHF,Handball,40,1.608,64.32
+Égypte,Egypt,EG,IWUF,Wushu,57.02,0.9205,52.49
+Égypte,Egypt,EG,IWF,Haltérophilie,34.06,1.3233,45.07
+Égypte,Egypt,EG,World Taekwondo,Taekwondo,17.17,1.6878,28.98
+Égypte,Egypt,EG,FIFA,Football,6.83,3.2852,22.44
+Égypte,Egypt,EG,FIE,Escrime,19.34,1.0402,20.12
+Égypte,Egypt,EG,CMAS,Nage avec palmes,15.12,0.813,12.29
+Égypte,Egypt,EG,ITTF,Tennis de table,4.09,2.5847,10.57
+Égypte,Egypt,EG,FIVB,Volleyball,2.93,2.8809,8.44
+Égypte,Egypt,EG,FIBA,Basketball,1.17,3.6154,4.23
+Égypte,Egypt,EG,FIH,Hockey sur gazon,2.22,1.2195,2.71
 Taipei chinois,Taiwan,,WBSC,Baseball,122.01,1.394,170.08
 Taipei chinois,Taiwan,,ITTF,Tennis de table,59.54,2.5847,153.89
-Taipei chinois,Taiwan,,IKF,Korfball,322.24,0.3586,115.56
 Taipei chinois,Taiwan,,BWF,Badminton,48.87,2.2314,109.05
-Taipei chinois,Taiwan,,IKF (kabaddi),Kabaddi,209.3,0.4093,85.67
+Taipei chinois,Taiwan,,IKF,Korfball,290,0.3586,103.99
+Taipei chinois,Taiwan,,IKF (kabaddi),Kabaddi,150,0.4093,61.39
 Taipei chinois,Taiwan,,World Boxing,Boxe,42.88,1.3015,55.81
 Taipei chinois,Taiwan,,IWUF,Wushu,40.94,0.9205,37.69
 Taipei chinois,Taiwan,,IPF,Force athlétique,74.56,0.4558,33.98
@@ -780,23 +794,9 @@ Taipei chinois,Taiwan,,ISSF,Tir sportif,8.19,1.194,9.78
 Taipei chinois,Taiwan,,FIBA,Basketball,1.87,3.6154,6.76
 Taipei chinois,Taiwan,,FIVB,Volleyball,1.99,2.8809,5.73
 Taipei chinois,Taiwan,,FIFA,Football,0.81,3.2852,2.66
-Égypte,Egypt,EG,World Squash,Squash,346.96,0.7942,275.56
-Égypte,Egypt,EG,UIPM,Pentathlon moderne,328.95,0.7756,255.13
-Égypte,Egypt,EG,WKF,Karaté,108.01,1.1728,126.67
-Égypte,Egypt,EG,IHF,Handball,40,1.608,64.32
-Égypte,Egypt,EG,IWUF,Wushu,57.02,0.9205,52.49
-Égypte,Egypt,EG,IWF,Haltérophilie,34.06,1.3233,45.07
-Égypte,Egypt,EG,World Taekwondo,Taekwondo,17.17,1.6878,28.98
-Égypte,Egypt,EG,FIFA,Football,6.83,3.2852,22.44
-Égypte,Egypt,EG,FIE,Escrime,19.34,1.0402,20.12
-Égypte,Egypt,EG,CMAS,Nage avec palmes,15.12,0.813,12.29
-Égypte,Egypt,EG,ITTF,Tennis de table,4.09,2.5847,10.57
-Égypte,Egypt,EG,FIVB,Volleyball,2.93,2.8809,8.44
-Égypte,Egypt,EG,FIBA,Basketball,1.17,3.6154,4.23
-Égypte,Egypt,EG,FIH,Hockey sur gazon,2.22,1.2195,2.71
 Argentine,Argentina,AR,FIFA,Football,71.23,3.2852,234.0
-Argentine,Argentina,AR,FIP,Padel,393.12,0.494,194.2
 Argentine,Argentina,AR,FIH,Hockey sur gazon,133.93,1.2195,163.33
+Argentine,Argentina,AR,FIP,Padel,300,0.494,148.2
 Argentine,Argentina,AR,FIBA,Basketball,17.16,3.6154,62.04
 Argentine,Argentina,AR,FIVB,Volleyball,18.38,2.8809,52.95
 Argentine,Argentina,AR,World Rugby,Rugby à XV,35.51,1.2538,44.52
@@ -820,15 +820,15 @@ Ouzbékistan,Uzbekistan,UZ,ICF,Canoë-kayak,9.14,1.3365,12.22
 Ouzbékistan,Uzbekistan,UZ,World Athletics,Athlétisme,0.58,2.5202,1.46
 Ouzbékistan,Uzbekistan,UZ,ITF,Tennis,0.12,2.2211,0.27
 Tchéquie,Czech Republic (Czechia),CZ,ITF,Tennis,79.75,2.2211,177.13
-Tchéquie,Czech Republic (Czechia),CZ,IFF,Floorball,183.82,0.437,80.33
+Tchéquie,Czech Republic (Czechia),CZ,IFF,Floorball,203.48,0.437,88.92
 Tchéquie,Czech Republic (Czechia),CZ,IIHF,Hockey sur glace,91.57,0.7756,71.02
 Tchéquie,Czech Republic (Czechia),CZ,ICF,Canoë-kayak,46.25,1.3365,61.81
 Tchéquie,Czech Republic (Czechia),CZ,FIVB,Volleyball,18.22,2.8809,52.49
 Tchéquie,Czech Republic (Czechia),CZ,UIPM,Pentathlon moderne,61.4,0.7756,47.62
 Tchéquie,Czech Republic (Czechia),CZ,IOF,Course d'orientation,112.28,0.4093,45.96
+Tchéquie,Czech Republic (Czechia),CZ,IKF,Korfball,109.99,0.3586,39.44
 Tchéquie,Czech Republic (Czechia),CZ,FIBA,Basketball,10.4,3.6154,37.6
 Tchéquie,Czech Republic (Czechia),CZ,WBSC,Baseball,23.26,1.394,32.42
-Tchéquie,Czech Republic (Czechia),CZ,IKF,Korfball,80.88,0.3586,29.0
 Tchéquie,Czech Republic (Czechia),CZ,WAKO,Kickboxing,26.32,0.8054,21.2
 Tchéquie,Czech Republic (Czechia),CZ,World Athletics,Athlétisme,7.46,2.5202,18.8
 Tchéquie,Czech Republic (Czechia),CZ,ISSF,Tir sportif,15.52,1.194,18.53
@@ -838,6 +838,19 @@ Tchéquie,Czech Republic (Czechia),CZ,IBU,Biathlon,24.32,0.5431,13.21
 Tchéquie,Czech Republic (Czechia),CZ,FIE,Escrime,10.23,1.0402,10.64
 Tchéquie,Czech Republic (Czechia),CZ,World Curling,Curling,9,0.5498,4.95
 Tchéquie,Czech Republic (Czechia),CZ,FIFA,Football,1.38,3.2852,4.53
+Iran,Iran,IR,UWW,Lutte,127.23,1.3365,170.04
+Iran,Iran,IR,World Taekwondo,Taekwondo,91.11,1.6878,153.78
+Iran,Iran,IR,IWUF,Wushu,119.88,0.9205,110.35
+Iran,Iran,IR,WKF,Karaté,69.17,1.1728,81.12
+Iran,Iran,IR,IKF (kabaddi),Kabaddi,150,0.4093,61.39
+Iran,Iran,IR,WCBS,Snooker,41.28,1.2754,52.65
+Iran,Iran,IR,FIVB,Volleyball,13.63,2.8809,39.27
+Iran,Iran,IR,IWF,Haltérophilie,20.29,1.3233,26.85
+Iran,Iran,IR,FIFA,Football,7.84,3.2852,25.76
+Iran,Iran,IR,IKKF,Kho kho,102.5,0.1856,19.02
+Iran,Iran,IR,FIBA,Basketball,4.56,3.6154,16.49
+Iran,Iran,IR,FIAS,Sambo,12.15,0.6074,7.38
+Iran,Iran,IR,FIDE,Échecs,0.35,2.2572,0.79
 Turquie,Turkey (Türkiye),TR,FIVB,Volleyball,50.78,2.8809,146.29
 Turquie,Turkey (Türkiye),TR,World Taekwondo,Taekwondo,67.34,1.6878,113.66
 Turquie,Turkey (Türkiye),TR,WKF,Karaté,69.17,1.1728,81.12
@@ -856,19 +869,6 @@ Turquie,Turkey (Türkiye),TR,World Curling,Curling,9,0.5498,4.95
 Turquie,Turkey (Türkiye),TR,ISU,Patinage,4.09,0.813,3.33
 Turquie,Turkey (Türkiye),TR,FIDE,Échecs,1.39,2.2572,3.14
 Turquie,Turkey (Türkiye),TR,World Athletics,Athlétisme,1.16,2.5202,2.92
-Iran,Iran,IR,UWW,Lutte,127.23,1.3365,170.04
-Iran,Iran,IR,World Taekwondo,Taekwondo,91.11,1.6878,153.78
-Iran,Iran,IR,IWUF,Wushu,119.88,0.9205,110.35
-Iran,Iran,IR,WKF,Karaté,69.17,1.1728,81.12
-Iran,Iran,IR,IKF (kabaddi),Kabaddi,132.35,0.4093,54.17
-Iran,Iran,IR,WCBS,Snooker,41.28,1.2754,52.65
-Iran,Iran,IR,FIVB,Volleyball,13.63,2.8809,39.27
-Iran,Iran,IR,IWF,Haltérophilie,20.29,1.3233,26.85
-Iran,Iran,IR,FIFA,Football,7.84,3.2852,25.76
-Iran,Iran,IR,IKKF,Kho kho,102.5,0.1856,19.02
-Iran,Iran,IR,FIBA,Basketball,4.56,3.6154,16.49
-Iran,Iran,IR,FIAS,Sambo,12.15,0.6074,7.38
-Iran,Iran,IR,FIDE,Échecs,0.35,2.2572,0.79
 Kazakhstan,Kazakhstan,KZ,FIDE,Échecs,97.59,2.2572,220.28
 Kazakhstan,Kazakhstan,KZ,World Boxing,Boxe,95.42,1.3015,124.19
 Kazakhstan,Kazakhstan,KZ,WKF,Karaté,55.83,1.1728,65.48
@@ -895,7 +895,7 @@ Autriche,Austria,AT,FIS,Ski et snowboard,79.97,1.1308,90.43
 Autriche,Austria,AT,ITTF,Tennis de table,22.93,2.5847,59.27
 Autriche,Austria,AT,World Climbing,Escalade,61.4,0.9323,57.24
 Autriche,Austria,AT,World Sailing,Voile,43.86,1.0894,47.78
-Autriche,Austria,AT,IFA,Balle au poing,157.89,0.2558,40.39
+Autriche,Austria,AT,IFA,Balle au poing,150,0.2558,38.37
 Autriche,Austria,AT,IBSF,Bobsleigh et skeleton,62.66,0.52,32.58
 Autriche,Austria,AT,WAKO,Kickboxing,36.55,0.8054,29.44
 Autriche,Austria,AT,ISSF,Tir sportif,21.91,1.194,26.16
@@ -925,6 +925,17 @@ Slovénie,Slovenia,SI,ICF,Canoë-kayak,6.58,1.3365,8.79
 Slovénie,Slovenia,SI,World Athletics,Athlétisme,3.43,2.5202,8.64
 Slovénie,Slovenia,SI,IIHF,Hockey sur glace,5.57,0.7756,4.32
 Slovénie,Slovenia,SI,FIFA,Football,1.08,3.2852,3.55
+Afrique du Sud,South Africa,ZA,ICC,Cricket,139.88,1.841,257.52
+Afrique du Sud,South Africa,ZA,World Rugby,Rugby à XV,128.02,1.2538,160.51
+Afrique du Sud,South Africa,ZA,FIM,Moto,112.11,0.7682,86.12
+Afrique du Sud,South Africa,ZA,World Athletics,Athlétisme,14.03,2.5202,35.36
+Afrique du Sud,South Africa,ZA,World Aquatics,Sports aquatiques,14.92,2.2159,33.06
+Afrique du Sud,South Africa,ZA,IGF,Golf,17.27,1.6783,28.98
+Afrique du Sud,South Africa,ZA,IKKF,Kho kho,125,0.1856,23.2
+Afrique du Sud,South Africa,ZA,ICF,Canoë-kayak,6.58,1.3365,8.79
+Afrique du Sud,South Africa,ZA,FIH,Hockey sur gazon,6.49,1.2195,7.91
+Afrique du Sud,South Africa,ZA,UCI,Cyclisme,2.73,2.3718,6.48
+Afrique du Sud,South Africa,ZA,FIFA,Football,1.57,3.2852,5.16
 Mexique,Mexico,MX,IFAF,Football américain / flag,189.53,0.7387,140.01
 Mexique,Mexico,MX,World Archery,Tir à l'arc,80.7,1.2281,99.11
 Mexique,Mexico,MX,WBSC,Baseball,53.75,1.394,74.93
@@ -942,17 +953,6 @@ Mexique,Mexico,MX,World Boxing,Boxe,9.9,1.3015,12.88
 Mexique,Mexico,MX,World Rowing,Aviron,6.82,1.1392,7.77
 Mexique,Mexico,MX,JJIF,Ju-jitsu,12.93,0.5168,6.68
 Mexique,Mexico,MX,World Squash,Squash,6.06,0.7942,4.81
-Afrique du Sud,South Africa,ZA,ICC,Cricket,139.88,1.841,257.52
-Afrique du Sud,South Africa,ZA,World Rugby,Rugby à XV,128.02,1.2538,160.51
-Afrique du Sud,South Africa,ZA,FIM,Moto,58.55,0.7682,44.98
-Afrique du Sud,South Africa,ZA,World Athletics,Athlétisme,14.03,2.5202,35.36
-Afrique du Sud,South Africa,ZA,World Aquatics,Sports aquatiques,14.92,2.2159,33.06
-Afrique du Sud,South Africa,ZA,IGF,Golf,17.27,1.6783,28.98
-Afrique du Sud,South Africa,ZA,IKKF,Kho kho,125,0.1856,23.2
-Afrique du Sud,South Africa,ZA,ICF,Canoë-kayak,6.58,1.3365,8.79
-Afrique du Sud,South Africa,ZA,FIH,Hockey sur gazon,6.49,1.2195,7.91
-Afrique du Sud,South Africa,ZA,UCI,Cyclisme,2.73,2.3718,6.48
-Afrique du Sud,South Africa,ZA,FIFA,Football,1.57,3.2852,5.16
 Indonésie,Indonesia,ID,IDBF,Bateau-dragon,324.56,0.494,160.33
 Indonésie,Indonesia,ID,BWF,Badminton,70.07,2.2314,156.35
 Indonésie,Indonesia,ID,IPSF (silat),Pencak silat,397.47,0.2428,96.51
@@ -962,15 +962,8 @@ Indonésie,Indonesia,ID,IWUF,Wushu,26.32,0.9205,24.23
 Indonésie,Indonesia,ID,World Rowing,Aviron,8.77,1.1392,9.99
 Indonésie,Indonesia,ID,FIBA,Basketball,1.2,3.6154,4.34
 Indonésie,Indonesia,ID,FIVB,Volleyball,0.12,2.8809,0.35
-Viêt Nam,Vietnam,VN,WXF,Xiangqi,581.4,0.3156,183.49
-Viêt Nam,Vietnam,VN,ISTAF,Sepak takraw,438.6,0.2691,118.03
-Viêt Nam,Vietnam,VN,IPSF (silat),Pencak silat,291.98,0.2428,70.89
-Viêt Nam,Vietnam,VN,IWUF,Wushu,73.1,0.9205,67.29
-Viêt Nam,Vietnam,VN,WVF,Vovinam,357.02,0.1856,66.26
-Viêt Nam,Vietnam,VN,FIVB,Volleyball,1.51,2.8809,4.35
-Viêt Nam,Vietnam,VN,FIFA,Football,0.94,3.2852,3.09
 Portugal,Portugal,PT,FIFA,Football,48.16,3.2852,158.22
-Portugal,Portugal,PT,FIP,Padel,102.94,0.494,50.85
+Portugal,Portugal,PT,FIP,Padel,150,0.494,74.1
 Portugal,Portugal,PT,IHF,Handball,27.5,1.608,44.22
 Portugal,Portugal,PT,World Triathlon,Triathlon,35,1.2025,42.09
 Portugal,Portugal,PT,ISA,Surf,40,0.9798,39.19
@@ -984,8 +977,8 @@ Portugal,Portugal,PT,JJIF,Ju-jitsu,16.62,0.5168,8.59
 Portugal,Portugal,PT,FIVB,Volleyball,1.8,2.8809,5.19
 Portugal,Portugal,PT,FIBA,Basketball,0.79,3.6154,2.86
 Portugal,Portugal,PT,World Rugby,Rugby à XV,1.28,1.2538,1.6
+Portugal,Portugal,PT,FIM,Moto,1.13,0.7682,0.87
 Portugal,Portugal,PT,ITF,Tennis,0.33,2.2211,0.73
-Portugal,Portugal,PT,FIM,Moto,0.59,0.7682,0.45
 Serbie,Serbia,RS,FIBA,Basketball,60.61,3.6154,219.13
 Serbie,Serbia,RS,FIVB,Volleyball,23.79,2.8809,68.54
 Serbie,Serbia,RS,ITF,Tennis,20.97,2.2211,46.58
@@ -1013,9 +1006,9 @@ Colombie,Colombia,CO,UWW,Lutte,5.48,1.3365,7.32
 Colombie,Colombia,CO,JJIF,Ju-jitsu,12.93,0.5168,6.68
 Colombie,Colombia,CO,World Boxing,Boxe,4.93,1.3015,6.42
 Colombie,Colombia,CO,WBSC,Baseball,4.27,1.394,5.95
-Finlande,Finland,FI,IFF,Floorball,316.17,0.437,138.17
+Finlande,Finland,FI,IFF,Floorball,296.51,0.437,129.57
 Finlande,Finland,FI,IIHF,Hockey sur glace,123.72,0.7756,95.96
-Finlande,Finland,FI,FIB,Bandy,213.23,0.2173,46.33
+Finlande,Finland,FI,FIB,Bandy,236.04,0.2173,51.29
 Finlande,Finland,FI,FIVB,Volleyball,14.91,2.8809,42.95
 Finlande,Finland,FI,FIBA,Basketball,8.02,3.6154,29.0
 Finlande,Finland,FI,FIS,Ski et snowboard,18.64,1.1308,21.08
@@ -1136,6 +1129,13 @@ Grèce,Greece,GR,World Taekwondo,Taekwondo,6.16,1.6878,10.4
 Grèce,Greece,GR,World Gymnastics,Gymnastique,6.73,1.4568,9.8
 Grèce,Greece,GR,ICF,Canoë-kayak,6.58,1.3365,8.79
 Grèce,Greece,GR,FIFA,Football,0.47,3.2852,1.54
+Viêt Nam,Vietnam,VN,IPSF (silat),Pencak silat,291.98,0.2428,70.89
+Viêt Nam,Vietnam,VN,IWUF,Wushu,73.1,0.9205,67.29
+Viêt Nam,Vietnam,VN,WVF,Vovinam,357.02,0.1856,66.26
+Viêt Nam,Vietnam,VN,WXF,Xiangqi,150,0.3156,47.34
+Viêt Nam,Vietnam,VN,ISTAF,Sepak takraw,150,0.2691,40.37
+Viêt Nam,Vietnam,VN,FIVB,Volleyball,1.51,2.8809,4.35
+Viêt Nam,Vietnam,VN,FIFA,Football,0.94,3.2852,3.09
 Croatie,Croatia,HR,IHF,Handball,45,1.608,72.36
 Croatie,Croatia,HR,IJF,Judo,20.19,1.6267,32.84
 Croatie,Croatia,HR,World Taekwondo,Taekwondo,18.48,1.6878,31.19
@@ -1180,9 +1180,6 @@ Porto Rico,Puerto Rico,PR,FIVB,Volleyball,5.59,2.8809,16.1
 Porto Rico,Puerto Rico,PR,World Athletics,Athlétisme,3.72,2.5202,9.38
 Porto Rico,Puerto Rico,PR,UWW,Lutte,5.48,1.3365,7.32
 Porto Rico,Puerto Rico,PR,ITTF,Tennis de table,2.35,2.5847,6.07
-Jamaïque,Jamaica,JM,World Athletics,Athlétisme,48,2.5202,120.97
-Jamaïque,Jamaica,JM,World Netball,Netball,205.88,0.5365,110.45
-Jamaïque,Jamaica,JM,FIFA,Football,0.58,3.2852,1.91
 Arménie,Armenia,AM,FIDE,Échecs,27.45,2.2572,61.96
 Arménie,Armenia,AM,World Gymnastics,Gymnastique,34.97,1.4568,50.94
 Arménie,Armenia,AM,IWF,Haltérophilie,35.34,1.3233,46.77
@@ -1200,6 +1197,9 @@ Philippines,Philippines,PH,JJIF,Ju-jitsu,16.62,0.5168,8.59
 Philippines,Philippines,PH,World Athletics,Athlétisme,1.45,2.5202,3.65
 Philippines,Philippines,PH,IWF,Haltérophilie,2.56,1.3233,3.39
 Philippines,Philippines,PH,FIFA,Football,0.69,3.2852,2.27
+Jamaïque,Jamaica,JM,World Athletics,Athlétisme,48,2.5202,120.97
+Jamaïque,Jamaica,JM,World Netball,Netball,150,0.5365,80.47
+Jamaïque,Jamaica,JM,FIFA,Football,0.58,3.2852,1.91
 Pérou,Peru,PE,ISA,Surf,90,0.9798,88.18
 Pérou,Peru,PE,World Skate,Skateboard et roller,42.06,1.2884,54.19
 Pérou,Peru,PE,World Squash,Squash,18.94,0.7942,15.04
@@ -1289,7 +1289,7 @@ Mongolie,Mongolia,MN,IJF,Judo,21.6,1.6267,35.14
 Mongolie,Mongolia,MN,UWW,Lutte,14.08,1.3365,18.82
 Mongolie,Mongolia,MN,World Boxing,Boxe,11.27,1.3015,14.67
 Mongolie,Mongolia,MN,JJIF,Ju-jitsu,16.62,0.5168,8.59
-Monaco,Monaco,MC,FIA,Sport automobile,99.53,1.0688,106.38
+Monaco,Monaco,MC,FIA,Sport automobile,100.18,1.0688,107.07
 Monaco,Monaco,MC,ITF,Tennis,1.92,2.2211,4.26
 Monaco,Monaco,MC,World Aquatics,Sports aquatiques,1.27,2.2159,2.81
 Kirghizistan,Kyrgyzstan,KG,UWW,Lutte,47.26,1.3365,63.16
@@ -1363,13 +1363,13 @@ Estonie,Estonia,EE,World Athletics,Athlétisme,3.74,2.5202,9.43
 Estonie,Estonia,EE,FIVB,Volleyball,2.05,2.8809,5.91
 Estonie,Estonia,EE,FIS,Ski et snowboard,2.75,1.1308,3.11
 Estonie,Estonia,EE,FIBA,Basketball,0.79,3.6154,2.86
+Samoa,Samoa,WS,IRL,Rugby à XIII,146.51,0.2376,34.81
+Samoa,Samoa,WS,World Athletics,Athlétisme,1.7,2.5202,4.28
+Samoa,Samoa,WS,World Rugby,Rugby à XV,2.81,1.2538,3.52
 Arabie saoudite,Saudi Arabia,SA,WKF,Karaté,16.99,1.1728,19.93
 Arabie saoudite,Saudi Arabia,SA,World Taekwondo,Taekwondo,7.92,1.6878,13.37
 Arabie saoudite,Saudi Arabia,SA,JJIF,Ju-jitsu,12.93,0.5168,6.68
 Arabie saoudite,Saudi Arabia,SA,FIFA,Football,0.08,3.2852,0.26
-Samoa,Samoa,WS,IRL,Rugby à XIII,132.35,0.2376,31.45
-Samoa,Samoa,WS,World Athletics,Athlétisme,1.7,2.5202,4.28
-Samoa,Samoa,WS,World Rugby,Rugby à XV,2.81,1.2538,3.52
 Turkménistan,Turkmenistan,TM,FIAS,Sambo,64.17,0.6074,38.98
 Népal,Nepal,NP,IKKF,Kho kho,180,0.1856,33.41
 Népal,Nepal,NP,ICC,Cricket,1.41,1.841,2.6
@@ -1378,12 +1378,12 @@ Ouganda,Uganda,UG,World Athletics,Athlétisme,7.21,2.5202,18.17
 Ouganda,Uganda,UG,IKKF,Kho kho,62.5,0.1856,11.6
 Ouganda,Uganda,UG,ICC,Cricket,1.44,1.841,2.65
 Ouganda,Uganda,UG,FIBA,Basketball,0.72,3.6154,2.6
+Papouasie-Nouvelle-Guinée,Papua New Guinea,PG,IRL,Rugby à XIII,101.74,0.2376,24.17
+Papouasie-Nouvelle-Guinée,Papua New Guinea,PG,ICC,Cricket,5.78,1.841,10.64
 Panama,Panama,PA,WBSC,Baseball,12.54,1.394,17.48
 Panama,Panama,PA,World Boxing,Boxe,9.9,1.3015,12.88
 Panama,Panama,PA,World Athletics,Athlétisme,1.13,2.5202,2.85
 Panama,Panama,PA,FIFA,Football,0.12,3.2852,0.39
-Papouasie-Nouvelle-Guinée,Papua New Guinea,PG,IRL,Rugby à XIII,91.91,0.2376,21.84
-Papouasie-Nouvelle-Guinée,Papua New Guinea,PG,ICC,Cricket,5.78,1.841,10.64
 Mali,Mali,ML,FIBA,Basketball,8.01,3.6154,28.96
 Mali,Mali,ML,FIFA,Football,0.07,3.2852,0.23
 Brunei,Brunei,BN,IWUF,Wushu,26.32,0.9205,24.23
