@@ -127,6 +127,6 @@ projection_la2028.csv,rank,integer,Rang selon les médailles projetées,Rank by 
 projection_la2028.csv,nation,string,Nation (français),Nation (French)
 projection_la2028.csv,nation_en,string,Nation (anglais),Nation (English)
 projection_la2028.csv,iso2,string,Code ISO alpha-2,ISO alpha-2 code
-projection_la2028.csv,projected_medals,number,Médailles projetées (toutes couleurs),Projected medals (all colours)
-projection_la2028.csv,projected_gold,number,Médailles d'or projetées,Projected gold medals
+projection_la2028.csv,projected_medals,integer,"Médailles projetées (toutes couleurs), arrondies sport par sport par la méthode des plus forts restes","Projected medals (all colours), rounded sport by sport by the largest remainder method"
+projection_la2028.csv,projected_gold,integer,Médailles d'or projetées (même arrondi),Projected gold medals (same rounding)
 projection_la2028.csv,main_sports,string,Fédérations qui apportent le plus de médailles,Federations contributing the most medals

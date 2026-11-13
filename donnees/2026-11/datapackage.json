@@ -994,15 +994,15 @@
      },
      {
       "name": "projected_medals",
-      "type": "number",
-      "description": "Médailles projetées (toutes couleurs)",
-      "description_en": "Projected medals (all colours)"
+      "type": "integer",
+      "description": "Médailles projetées (toutes couleurs), arrondies sport par sport par la méthode des plus forts restes",
+      "description_en": "Projected medals (all colours), rounded sport by sport by the largest remainder method"
      },
      {
       "name": "projected_gold",
-      "type": "number",
-      "description": "Médailles d'or projetées",
-      "description_en": "Projected gold medals"
+      "type": "integer",
+      "description": "Médailles d'or projetées (même arrondi)",
+      "description_en": "Projected gold medals (same rounding)"
      },
      {
       "name": "main_sports",
@@ -1012,7 +1012,7 @@
      }
     ]
    },
-   "rows": 147
+   "rows": 95
   }
  ]
 }
