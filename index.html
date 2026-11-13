@@ -474,7 +474,7 @@ nav.tabs .pills a:active{transform:scale(.96)}
   --glow:radial-gradient(1100px 480px at 10% -10%,rgba(36,83,214,.12),transparent 60%),radial-gradient(800px 420px at 95% 0%,rgba(195,138,18,.1),transparent 60%);
   color-scheme:light}
 body{--sec:var(--accent)}
-body[data-v="efficience"]{--sec:#f5a524} body[data-v="demographie"]{--sec:#22c55e} body[data-v="genre"]{--sec:#f472b6}
+body[data-v="efficience"]{--sec:#f5a524} body[data-v="demographie"]{--sec:#22c55e} body[data-v="genre"]{--sec:#f472b6} body[data-v="genre"][data-g="h"]{--sec:#60a5fa}
 body[data-v="highlights"]{--sec:#f2c14e} body[data-v="sports"],body[data-v="federations"]{--sec:#22c3a6} body[data-v="comparer"]{--sec:#c084fc}
 body{background:var(--glow),var(--bg);background-attachment:fixed}
 /* en-tête fondu dans la page */
@@ -1529,7 +1529,8 @@ function renderGen(){
     <td class="r num hide-sm">${tot?fmt(100*v.f/tot)+' %':'–'}</td><td class="r num hide-sm">${spRank[n]||'–'}</td></tr>`}).join('')||`<tr><td colspan="7" class="muted">Aucune nation ne correspond.</td></tr>`;
   $('#more-gen').parentElement.hidden=genAll||!!q||rows.length<=30;
 }
-document.querySelectorAll('[data-g]').forEach(b=>b.addEventListener('click',()=>{gKey=b.dataset.g;document.querySelectorAll('[data-g]').forEach(x=>x.setAttribute('aria-pressed',x===b));renderGen();pods();if(document.body.dataset.v==='genre')placeMap('genre')}));
+document.querySelectorAll('[data-g]').forEach(b=>b.addEventListener('click',()=>{gKey=b.dataset.g;document.querySelectorAll('[data-g]').forEach(x=>x.setAttribute('aria-pressed',x===b));document.body.dataset.g=gKey;renderGen();pods();if(document.body.dataset.v==='genre')placeMap('genre')}));
+document.body.dataset.g=gKey;
 $('#q-gen').addEventListener('input',renderGen);$('#more-gen').addEventListener('click',()=>{genAll=true;renderGen()});
 // qui domine chaque sport
 function renderSports(){
