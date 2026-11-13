@@ -706,6 +706,21 @@ main:focus{outline:none!important}
 
 .langsw{display:inline-grid;place-items:center;min-width:38px;height:36px;padding:0 9px;border-radius:9px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:700 13px var(--f-body);letter-spacing:.04em;text-decoration:none;margin-right:6px}
 .langsw:hover{border-color:var(--sec);color:var(--sec)}
+
+/* ===== Robustesse ===== */
+.robcards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:6px 0 22px}
+.robcard{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--c,var(--accent));border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:4px}
+.robcard small{font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--c);font-weight:700}
+.robcard b{font-family:var(--f-display);font-size:26px;line-height:1.05}.robcard span{font-size:13px;color:var(--muted)}
+.robcard.gold{--c:#f5a524}.robcard.mint{--c:#22c55e}.robcard.sky{--c:#38bdf8}.robcard.rose{--c:#f472b6}
+:root[data-theme="light"] .robcard.gold{--c:#a16207}:root[data-theme="light"] .robcard.mint{--c:#15803d}:root[data-theme="light"] .robcard.sky{--c:#0369a1}:root[data-theme="light"] .robcard.rose{--c:#be185d}
+.robctl{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:8px 0}
+.robctl select{font:inherit;font-size:13px;padding:6px 8px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);margin-left:6px}
+.robsvg{width:100%;height:auto;display:block}.robsvg .g{stroke:var(--line);stroke-width:1}.robsvg .ax{fill:currentColor;opacity:.7;font-size:11px;text-anchor:middle}
+.robsvg .nm{fill:var(--ink);font-size:12.5px}.robsvg .rg{stroke:var(--accent);stroke-width:6;stroke-linecap:round;opacity:.55}.robsvg .bs{fill:var(--gold,#f5a524);stroke:var(--bg,#070b16);stroke-width:1.5}
+.robul{display:flex;flex-direction:column;gap:8px;line-height:1.55}
+@media (max-width:900px){.robcards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.robcards{grid-template-columns:1fr}}
 </style>
 
 <a class="skip" href="#main" onclick="event.preventDefault();document.getElementById('main').focus()">Aller au contenu</a>
@@ -729,7 +744,7 @@ main:focus{outline:none!important}
       <div class="mobonly"><span class="gl">Rubriques</span><a href="#performance">Performance réelle</a><a href="#demographie">Efficience démographique</a><a href="#efficience">Efficience économique</a><a href="#classement">Classement sportif</a><a href="#highlights">Highlights du mois</a><a href="#sports">Par sport</a><input type="search" id="gsearch2" list="gslist" placeholder="Une nation ou un sport…" aria-label="Rechercher une nation ou un sport"></div>
       <div><span class="gl">Classements</span><a href="#genre">Femmes · Hommes</a></div>
       <div><span class="gl">Explorer</span><a href="#comparer">Comparer deux nations</a><a href="#federations">Fédérations</a></div>
-      <div><span class="gl">Comprendre</span><a href="#methode">Méthode</a><a href="#journal">Journal des modifications</a><a href="#sources">Sources</a><a href="#donnees">Données</a></div>
+      <div><span class="gl">Comprendre</span><a href="#methode">Méthode</a><a href="#robustesse">Robustesse</a><a href="#journal">Journal des modifications</a><a href="#sources">Sources</a><a href="#donnees">Données</a></div>
     </div></div>
   <div class="gsearch"><input type="search" id="gsearch" list="gslist" placeholder="Une nation ou un sport…" aria-label="Rechercher une nation ou un sport"><datalist id="gslist"></datalist></div>
   <a class="langsw" id="langsw" href="en/" hreflang="en" lang="en" data-noi18n aria-label="English version" title="English version">EN</a>
@@ -878,6 +893,11 @@ main:focus{outline:none!important}
 <section class="view" id="v-methode" hidden>
   <div class="view-head"><div><div class="vgrp">Comprendre</div><h2>Méthode</h2><p>Le calcul en trois étages : coter chaque sport, répartir 1000 points par fédération, puis additionner les points pondérés.</p></div></div>
   <div class="prose" id="methode"></div>
+</section>
+
+<section class="view" id="v-robustesse" hidden>
+  <div class="view-head"><div><div class="vgrp">Comprendre</div><h2>Robustesse du classement</h2><p>Un classement multisport repose sur des choix : le poids de chaque sport, la façon de répartir les points, la place des efficiences. Nous avons recalculé le classement des milliers de fois en faisant varier ces choix pour mesurer ce qui tient et ce qui bouge.</p></div></div>
+  <div id="rob"></div>
 </section>
 
 <section class="view" id="v-journal" hidden>
@@ -1157,7 +1177,8 @@ const FIAB={"FIBA": {"g": "A", "lab": "élevée", "why": ["méthode complète", 
    "Licence des données : CC BY-NC 4.0 (réutilisation libre avec citation, hors usage commercial).",
    "Nouveau logo HSR : les lettres HSR en italique, traversées par une orbite en forme de piste et un point or, le leader.",
    "Finitions : chiffres harmonisés (points sur 1000 à une décimale, apport au score sans décimale, poids à deux décimales), page d'erreur 404, icône de site, page d'accueil 3,5 fois plus légère, contrastes conformes WCAG AA et navigation complète au clavier.",
-   "Correction : dans le classeur Excel et le fichier CSV de performance réelle, les nations sans classement d'efficience (Indes occidentales, Monaco) recevaient par erreur la note maximale (Indes occidentales 33e au lieu de 70e). Le site n'était pas concerné ; les fichiers sont corrigés."
+   "Correction : dans le classeur Excel et le fichier CSV de performance réelle, les nations sans classement d'efficience (Indes occidentales, Monaco) recevaient par erreur la note maximale (Indes occidentales 33e au lieu de 70e). Le site n'était pas concerné ; les fichiers sont corrigés.",
+   "Nouvelle rubrique « Robustesse » : tests de sensibilité du classement (variations aléatoires des poids et des résultats, changements de règles de la méthode), refaits à chaque édition."
   ],
   "titre_en": "Overhaul of the individual-sport method and full data check",
   "items_en": [
@@ -1172,7 +1193,8 @@ const FIAB={"FIBA": {"g": "A", "lab": "élevée", "why": ["méthode complète", 
    "Data licence: CC BY-NC 4.0 (free reuse with credit, non-commercial).",
    "New HSR logo: the letters HSR in italics, crossed by a track-shaped orbit and a gold dot, the leader.",
    "Finishing touches: consistent figures (points out of 1,000 to one decimal, contribution to score with no decimals, weights to two decimals), 404 error page, site icon, home page 3.5 times lighter, WCAG AA contrast and full keyboard navigation.",
-   "Correction: in the Excel workbook and the overall performance CSV file, nations without an efficiency ranking (West Indies, Monaco) wrongly received the maximum score (West Indies 33rd instead of 70th). The website was not affected; the files are corrected."
+   "Correction: in the Excel workbook and the overall performance CSV file, nations without an efficiency ranking (West Indies, Monaco) wrongly received the maximum score (West Indies 33rd instead of 70th). The website was not affected; the files are corrected.",
+   "New “Robustness” section: sensitivity tests of the ranking (random variations of weights and results, changes to the method's rules), redone at every edition."
   ]
  },
  {
@@ -1191,7 +1213,9650 @@ const FIAB={"FIBA": {"g": "A", "lab": "élevée", "why": ["méthode complète", 
    "All data linked to a source that can be checked."
   ]
  }
-], VER={"methode": "1.0", "date": "12 novembre 2026", "licence": "CC BY-NC 4.0", "licence_url": "https://creativecommons.org/licenses/by-nc/4.0/deed.fr", "site": "https://holosportranking.github.io/holosportranking/", "pdf": "https://holosportranking.github.io/holosportranking/methode-hsr.pdf", "goatcounter": ""};
+], VER={"methode": "1.0", "date": "12 novembre 2026", "licence": "CC BY-NC 4.0", "licence_url": "https://creativecommons.org/licenses/by-nc/4.0/deed.fr", "site": "https://holosportranking.github.io/holosportranking/", "pdf": "https://holosportranking.github.io/holosportranking/methode-hsr.pdf", "goatcounter": ""}, ROB={
+ "base": {
+  "sport": [
+   "États-Unis",
+   "Chine",
+   "France",
+   "Royaume-Uni",
+   "Japon",
+   "Allemagne",
+   "Italie",
+   "Australie",
+   "Espagne",
+   "Corée du Sud",
+   "Pays-Bas",
+   "Canada",
+   "Brésil",
+   "Inde",
+   "Russie",
+   "Nouvelle-Zélande",
+   "Suisse",
+   "Suède",
+   "Hongrie",
+   "Ukraine"
+  ],
+  "pr": [
+   "France",
+   "Royaume-Uni",
+   "États-Unis",
+   "Japon",
+   "Australie",
+   "Italie",
+   "Allemagne",
+   "Espagne",
+   "Pays-Bas",
+   "Chine",
+   "Corée du Sud",
+   "Nouvelle-Zélande",
+   "Canada",
+   "Hongrie",
+   "Suède",
+   "Suisse",
+   "Ukraine",
+   "Brésil",
+   "Belgique",
+   "Norvège"
+  ]
+ },
+ "montecarlo": {
+  "poids ±5 %": {
+   "sport": {
+    "rows": [
+     {
+      "n": "États-Unis",
+      "base": 1,
+      "med": 1.0,
+      "p5": 1.0,
+      "p95": 2.0,
+      "same": 89.0
+     },
+     {
+      "n": "Chine",
+      "base": 2,
+      "med": 2.0,
+      "p5": 1.0,
+      "p95": 2.0,
+      "same": 89.0
+     },
+     {
+      "n": "France",
+      "base": 3,
+      "med": 3.0,
+      "p5": 3.0,
+      "p95": 3.0,
+      "same": 100.0
+     },
+     {
+      "n": "Royaume-Uni",
+      "base": 4,
+      "med": 4.0,
+      "p5": 4.0,
+      "p95": 4.0,
+      "same": 100.0
+     },
+     {
+      "n": "Japon",
+      "base": 5,
+      "med": 5.0,
+      "p5": 5.0,
+      "p95": 5.0,
+      "same": 100.0
+     },
+     {
+      "n": "Allemagne",
+      "base": 6,
+      "med": 6.0,
+      "p5": 6.0,
+      "p95": 6.0,
+      "same": 100.0
+     },
+     {
+      "n": "Italie",
+      "base": 7,
+      "med": 7.0,
+      "p5": 7.0,
+      "p95": 7.0,
+      "same": 100.0
+     },
+     {
+      "n": "Australie",
+      "base": 8,
+      "med": 8.0,
+      "p5": 8.0,
+      "p95": 8.0,
+      "same": 100.0
+     },
+     {
+      "n": "Espagne",
+      "base": 9,
+      "med": 9.0,
+      "p5": 9.0,
+      "p95": 9.0,
+      "same": 98.4
+     },
+     {
+      "n": "Corée du Sud",
+      "base": 10,
+      "med": 10.0,
+      "p5": 10.0,
+      "p95": 10.0,
+      "same": 98.2
+     },
+     {
+      "n": "Pays-Bas",
+      "base": 11,
+      "med": 11.0,
+      "p5": 11.0,
+      "p95": 11.0,
+      "same": 99.8
+     },
+     {
+      "n": "Canada",
+      "base": 12,
+      "med": 12.0,
+      "p5": 12.0,
+      "p95": 12.0,
+      "same": 100.0
+     },
+     {
+      "n": "Brésil",
+      "base": 13,
+      "med": 13.0,
+      "p5": 13.0,
+      "p95": 13.0,
+      "same": 100.0
+     },
+     {
+      "n": "Inde",
+      "base": 14,
+      "med": 14.0,
+      "p5": 14.0,
+      "p95": 15.0,
+      "same": 91.6
+     },
+     {
+      "n": "Russie",
+      "base": 15,
+      "med": 15.0,
+      "p5": 15.0,
+      "p95": 18.0,
+      "same": 48.2
+     },
+     {
+      "n": "Nouvelle-Zélande",
+      "base": 16,
+      "med": 16.0,
+      "p5": 15.0,
+      "p95": 18.0,
+      "same": 30.2
+     },
+     {
+      "n": "Suisse",
+      "base": 17,
+      "med": 17.0,
+      "p5": 15.0,
+      "p95": 18.0,
+      "same": 39.8
+     },
+     {
+      "n": "Suède",
+      "base": 18,
+      "med": 18.0,
+      "p5": 16.0,
+      "p95": 18.0,
+      "same": 62.0
+     },
+     {
+      "n": "Hongrie",
+      "base": 19,
+      "med": 19.0,
+      "p5": 19.0,
+      "p95": 19.0,
+      "same": 100.0
+     },
+     {
+      "n": "Ukraine",
+      "base": 20,
+      "med": 20.0,
+      "p5": 20.0,
+      "p95": 20.0,
+      "same": 100.0
+     },
+     {
+      "n": "Norvège",
+      "base": 21,
+      "med": 21.0,
+      "p5": 21.0,
+      "p95": 22.049999999999955,
+      "same": 60.4
+     },
+     {
+      "n": "Belgique",
+      "base": 22,
+      "med": 22.0,
+      "p5": 21.0,
+      "p95": 23.0,
+      "same": 54.4
+     },
+     {
+      "n": "Pologne",
+      "base": 23,
+      "med": 23.0,
+      "p5": 22.0,
+      "p95": 24.0,
+      "same": 70.6
+     },
+     {
+      "n": "Thaïlande",
+      "base": 24,
+      "med": 24.0,
+      "p5": 23.0,
+      "p95": 25.0,
+      "same": 63.2
+     },
+     {
+      "n": "Danemark",
+      "base": 25,
+      "med": 25.0,
+      "p5": 24.0,
+      "p95": 25.0,
+      "same": 74.6
+     },
+     {
+      "n": "Taipei chinois",
+      "base": 26,
+      "med": 26.0,
+      "p5": 26.0,
+      "p95": 27.0,
+      "same": 66.4
+     },
+     {
+      "n": "Égypte",
+      "base": 27,
+      "med": 27.0,
+      "p5": 26.0,
+      "p95": 27.0,
+      "same": 68.2
+     },
+     {
+      "n": "Argentine",
+      "base": 28,
+      "med": 28.0,
+      "p5": 28.0,
+      "p95": 28.0,
+      "same": 97.8
+     },
+     {
+      "n": "Ouzbékistan",
+      "base": 29,
+      "med": 29.0,
+      "p5": 29.0,
+      "p95": 29.0,
+      "same": 97.6
+     },
+     {
+      "n": "Tchéquie",
+      "base": 30,
+      "med": 31.0,
+      "p5": 30.0,
+      "p95": 32.0,
+      "same": 38.8
+     },
+     {
+      "n": "Turquie",
+      "base": 31,
+      "med": 31.0,
+      "p5": 30.0,
+      "p95": 32.0,
+      "same": 45.2
+     },
+     {
+      "n": "Iran",
+      "base": 32,
+      "med": 31.0,
+      "p5": 30.0,
+      "p95": 32.0,
+      "same": 36.4
+     },
+     {
+      "n": "Kazakhstan",
+      "base": 33,
+      "med": 33.0,
+      "p5": 33.0,
+      "p95": 33.0,
+      "same": 92.2
+     },
+     {
+      "n": "Autriche",
+      "base": 34,
+      "med": 34.0,
+      "p5": 34.0,
+      "p95": 35.0,
+      "same": 72.8
+     },
+     {
+      "n": "Slovénie",
+      "base": 35,
+      "med": 35.0,
+      "p5": 34.0,
+      "p95": 35.0,
+      "same": 75.0
+     },
+     {
+      "n": "Mexique",
+      "base": 36,
+      "med": 36.0,
+      "p5": 36.0,
+      "p95": 37.0,
+      "same": 80.2
+     },
+     {
+      "n": "Afrique du Sud",
+      "base": 37,
+      "med": 37.0,
+      "p5": 36.0,
+      "p95": 37.0,
+      "same": 79.8
+     },
+     {
+      "n": "Indonésie",
+      "base": 38,
+      "med": 38.0,
+      "p5": 38.0,
+      "p95": 38.0,
+      "same": 99.2
+     },
+     {
+      "n": "Viêt Nam",
+      "base": 39,
+      "med": 39.0,
+      "p5": 39.0,
+      "p95": 40.0,
+      "same": 90.4
+     },
+     {
+      "n": "Portugal",
+      "base": 40,
+      "med": 40.0,
+      "p5": 39.0,
+      "p95": 40.0,
+      "same": 88.6
+     },
+     {
+      "n": "Serbie",
+      "base": 41,
+      "med": 41.0,
+      "p5": 41.0,
+      "p95": 42.0,
+      "same": 76.6
+     },
+     {
+      "n": "Colombie",
+      "base": 42,
+      "med": 42.0,
+      "p5": 41.0,
+      "p95": 43.0,
+      "same": 72.6
+     },
+     {
+      "n": "Finlande",
+      "base": 43,
+      "med": 43.0,
+      "p5": 42.0,
+      "p95": 43.0,
+      "same": 91.2
+     },
+     {
+      "n": "Roumanie",
+      "base": 44,
+      "med": 44.0,
+      "p5": 44.0,
+      "p95": 45.0,
+      "same": 89.6
+     },
+     {
+      "n": "Azerbaïdjan",
+      "base": 45,
+      "med": 45.0,
+      "p5": 44.0,
+      "p95": 46.0,
+      "same": 64.2
+     },
+     {
+      "n": "Irlande",
+      "base": 46,
+      "med": 46.0,
+      "p5": 45.0,
+      "p95": 46.0,
+      "same": 73.0
+     },
+     {
+      "n": "Israël",
+      "base": 47,
+      "med": 47.0,
+      "p5": 47.0,
+      "p95": 48.0,
+      "same": 81.6
+     },
+     {
+      "n": "Géorgie",
+      "base": 48,
+      "med": 49.0,
+      "p5": 47.0,
+      "p95": 51.0,
+      "same": 39.6
+     },
+     {
+      "n": "Malaisie",
+      "base": 49,
+      "med": 50.0,
+      "p5": 48.0,
+      "p95": 52.0,
+      "same": 22.4
+     },
+     {
+      "n": "Tunisie",
+      "base": 50,
+      "med": 50.0,
+      "p5": 47.0,
+      "p95": 52.0,
+      "same": 19.8
+     }
+    ],
+    "leader": {
+     "États-Unis": 89.0,
+     "Chine": 11.0
+    },
+    "rho": 0.9998,
+    "top10": 10.0,
+    "top10_min": 9,
+    "moy50": 0.3
+   },
+   "pr": {
+    "rows": [
+     {
+      "n": "France",
+      "base": 1,
+      "med": 1.0,
+      "p5": 1.0,
+      "p95": 1.0,
+      "same": 100.0
+     },
+     {
+      "n": "Royaume-Uni",
+      "base": 2,
+      "med": 2.0,
+      "p5": 2.0,
+      "p95": 2.0,
+      "same": 100.0
+     },
+     {
+      "n": "États-Unis",
+      "base": 3,
+      "med": 3.0,
+      "p5": 3.0,
+      "p95": 4.0,
+      "same": 89.6
+     },
+     {
+      "n": "Japon",
+      "base": 4,
+      "med": 4.0,
+      "p5": 3.0,
+      "p95": 4.0,
+      "same": 89.6
+     },
+     {
+      "n": "Australie",
+      "base": 5,
+      "med": 5.0,
+      "p5": 5.0,
+      "p95": 5.0,
+      "same": 100.0
+     },
+     {
+      "n": "Italie",
+      "base": 6,
+      "med": 6.0,
+      "p5": 6.0,
+      "p95": 6.0,
+      "same": 100.0
+     },
+     {
+      "n": "Allemagne",
+      "base": 7,
+      "med": 7.0,
+      "p5": 7.0,
+      "p95": 7.0,
+      "same": 100.0
+     },
+     {
+      "n": "Espagne",
+      "base": 8,
+      "med": 8.0,
+      "p5": 8.0,
+      "p95": 8.0,
+      "same": 97.8
+     },
+     {
+      "n": "Pays-Bas",
+      "base": 9,
+      "med": 9.0,
+      "p5": 9.0,
+      "p95": 10.0,
+      "same": 82.0
+     },
+     {
+      "n": "Chine",
+      "base": 10,
+      "med": 10.0,
+      "p5": 9.0,
+      "p95": 10.0,
+      "same": 82.0
+     },
+     {
+      "n": "Corée du Sud",
+      "base": 11,
+      "med": 11.0,
+      "p5": 11.0,
+      "p95": 11.0,
+      "same": 100.0
+     },
+     {
+      "n": "Nouvelle-Zélande",
+      "base": 12,
+      "med": 12.0,
+      "p5": 12.0,
+      "p95": 13.0,
+      "same": 75.6
+     },
+     {
+      "n": "Canada",
+      "base": 13,
+      "med": 13.0,
+      "p5": 12.0,
+      "p95": 13.0,
+      "same": 75.6
+     },
+     {
+      "n": "Hongrie",
+      "base": 14,
+      "med": 14.0,
+      "p5": 14.0,
+      "p95": 15.0,
+      "same": 78.8
+     },
+     {
+      "n": "Suède",
+      "base": 15,
+      "med": 15.0,
+      "p5": 14.0,
+      "p95": 16.0,
+      "same": 55.8
+     },
+     {
+      "n": "Suisse",
+      "base": 16,
+      "med": 16.0,
+      "p5": 14.0,
+      "p95": 17.0,
+      "same": 55.0
+     },
+     {
+      "n": "Ukraine",
+      "base": 17,
+      "med": 17.0,
+      "p5": 16.0,
+      "p95": 17.0,
+      "same": 82.8
+     },
+     {
+      "n": "Brésil",
+      "base": 18,
+      "med": 18.0,
+      "p5": 18.0,
+      "p95": 18.0,
+      "same": 100.0
+     },
+     {
+      "n": "Belgique",
+      "base": 19,
+      "med": 19.0,
+      "p5": 19.0,
+      "p95": 20.0,
+      "same": 78.8
+     },
+     {
+      "n": "Norvège",
+      "base": 20,
+      "med": 20.0,
+      "p5": 19.0,
+      "p95": 21.0,
+      "same": 72.4
+     },
+     {
+      "n": "Russie",
+      "base": 21,
+      "med": 22.0,
+      "p5": 21.0,
+      "p95": 23.0,
+      "same": 34.0
+     },
+     {
+      "n": "Danemark",
+      "base": 22,
+      "med": 21.0,
+      "p5": 20.0,
+      "p95": 22.0,
+      "same": 34.4
+     },
+     {
+      "n": "Pologne",
+      "base": 23,
+      "med": 24.0,
+      "p5": 23.0,
+      "p95": 25.0,
+      "same": 44.4
+     },
+     {
+      "n": "Ouzbékistan",
+      "base": 24,
+      "med": 24.0,
+      "p5": 23.0,
+      "p95": 24.0,
+      "same": 51.8
+     },
+     {
+      "n": "Thaïlande",
+      "base": 25,
+      "med": 25.0,
+      "p5": 23.0,
+      "p95": 26.0,
+      "same": 59.2
+     },
+     {
+      "n": "Inde",
+      "base": 26,
+      "med": 26.0,
+      "p5": 25.0,
+      "p95": 26.0,
+      "same": 75.2
+     },
+     {
+      "n": "Slovénie",
+      "base": 27,
+      "med": 27.0,
+      "p5": 27.0,
+      "p95": 27.0,
+      "same": 93.6
+     },
+     {
+      "n": "Tchéquie",
+      "base": 28,
+      "med": 29.0,
+      "p5": 28.0,
+      "p95": 31.0,
+      "same": 33.6
+     },
+     {
+      "n": "Argentine",
+      "base": 29,
+      "med": 29.0,
+      "p5": 28.0,
+      "p95": 30.0,
+      "same": 37.6
+     },
+     {
+      "n": "Taipei chinois",
+      "base": 30,
+      "med": 29.0,
+      "p5": 28.0,
+      "p95": 31.0,
+      "same": 31.4
+     },
+     {
+      "n": "Égypte",
+      "base": 31,
+      "med": 31.0,
+      "p5": 30.0,
+      "p95": 32.0,
+      "same": 76.0
+     },
+     {
+      "n": "Kazakhstan",
+      "base": 32,
+      "med": 32.0,
+      "p5": 31.0,
+      "p95": 32.0,
+      "same": 93.2
+     },
+     {
+      "n": "Autriche",
+      "base": 33,
+      "med": 33.0,
+      "p5": 33.0,
+      "p95": 35.0,
+      "same": 56.2
+     },
+     {
+      "n": "Iran",
+      "base": 34,
+      "med": 34.0,
+      "p5": 33.0,
+      "p95": 35.0,
+      "same": 48.2
+     },
+     {
+      "n": "Serbie",
+      "base": 35,
+      "med": 35.0,
+      "p5": 34.0,
+      "p95": 35.0,
+      "same": 80.8
+     },
+     {
+      "n": "Afrique du Sud",
+      "base": 36,
+      "med": 36.0,
+      "p5": 36.0,
+      "p95": 37.0,
+      "same": 90.4
+     },
+     {
+      "n": "Turquie",
+      "base": 37,
+      "med": 37.0,
+      "p5": 36.0,
+      "p95": 37.0,
+      "same": 92.2
+     },
+     {
+      "n": "Portugal",
+      "base": 38,
+      "med": 38.0,
+      "p5": 38.0,
+      "p95": 38.0,
+      "same": 98.0
+     },
+     {
+      "n": "Géorgie",
+      "base": 39,
+      "med": 39.0,
+      "p5": 39.0,
+      "p95": 42.0,
+      "same": 61.8
+     },
+     {
+      "n": "Mexique",
+      "base": 40,
+      "med": 40.0,
+      "p5": 39.0,
+      "p95": 41.0,
+      "same": 52.2
+     },
+     {
+      "n": "Finlande",
+      "base": 41,
+      "med": 41.0,
+      "p5": 39.0,
+      "p95": 43.0,
+      "same": 40.0
+     },
+     {
+      "n": "Azerbaïdjan",
+      "base": 42,
+      "med": 42.0,
+      "p5": 40.0,
+      "p95": 44.0,
+      "same": 33.2
+     },
+     {
+      "n": "Viêt Nam",
+      "base": 43,
+      "med": 43.0,
+      "p5": 42.0,
+      "p95": 45.0,
+      "same": 49.4
+     },
+     {
+      "n": "Colombie",
+      "base": 44,
+      "med": 45.0,
+      "p5": 43.95,
+      "p95": 47.0,
+      "same": 30.4
+     },
+     {
+      "n": "Jamaïque",
+      "base": 45,
+      "med": 45.0,
+      "p5": 41.0,
+      "p95": 47.0,
+      "same": 15.6
+     },
+     {
+      "n": "Indonésie",
+      "base": 46,
+      "med": 46.0,
+      "p5": 44.0,
+      "p95": 47.0,
+      "same": 38.8
+     },
+     {
+      "n": "Tunisie",
+      "base": 47,
+      "med": 46.0,
+      "p5": 42.0,
+      "p95": 47.0,
+      "same": 39.2
+     },
+     {
+      "n": "Lettonie",
+      "base": 48,
+      "med": 48.0,
+      "p5": 48.0,
+      "p95": 49.0,
+      "same": 88.2
+     },
+     {
+      "n": "Bulgarie",
+      "base": 49,
+      "med": 49.0,
+      "p5": 48.0,
+      "p95": 50.0,
+      "same": 76.0
+     },
+     {
+      "n": "Arménie",
+      "base": 50,
+      "med": 50.0,
+      "p5": 49.0,
+      "p95": 53.0,
+      "same": 48.8
+     }
+    ],
+    "leader": {
+     "France": 100.0
+    },
+    "rho": 0.9996,
+    "top10": 10.0,
+    "top10_min": 10,
+    "moy50": 0.42
+   }
+  },
+  "poids ±10 %": {
+   "sport": {
+    "rows": [
+     {
+      "n": "États-Unis",
+      "base": 1,
+      "med": 1.0,
+      "p5": 1.0,
+      "p95": 2.0,
+      "same": 69.0
+     },
+     {
+      "n": "Chine",
+      "base": 2,
+      "med": 2.0,
+      "p5": 1.0,
+      "p95": 2.0,
+      "same": 69.0
+     },
+     {
+      "n": "France",
+      "base": 3,
+      "med": 3.0,
+      "p5": 3.0,
+      "p95": 3.0,
+      "same": 99.8
+     },
+     {
+      "n": "Royaume-Uni",
+      "base": 4,
+      "med": 4.0,
+      "p5": 4.0,
+      "p95": 5.0,
+      "same": 91.0
+     },
+     {
+      "n": "Japon",
+      "base": 5,
+      "med": 5.0,
+      "p5": 4.0,
+      "p95": 5.0,
+      "same": 91.2
+     },
+     {
+      "n": "Allemagne",
+      "base": 6,
+      "med": 6.0,
+      "p5": 6.0,
+      "p95": 6.0,
+      "same": 97.6
+     },
+     {
+      "n": "Italie",
+      "base": 7,
+      "med": 7.0,
+      "p5": 7.0,
+      "p95": 7.0,
+      "same": 97.6
+     },
+     {
+      "n": "Australie",
+      "base": 8,
+      "med": 8.0,
+      "p5": 8.0,
+      "p95": 8.0,
+      "same": 100.0
+     },
+     {
+      "n": "Espagne",
+      "base": 9,
+      "med": 9.0,
+      "p5": 9.0,
+      "p95": 10.0,
+      "same": 88.2
+     },
+     {
+      "n": "Corée du Sud",
+      "base": 10,
+      "med": 10.0,
+      "p5": 9.0,
+      "p95": 11.0,
+      "same": 79.8
+     },
+     {
+      "n": "Pays-Bas",
+      "base": 11,
+      "med": 11.0,
+      "p5": 10.0,
+      "p95": 11.0,
+      "same": 91.6
+     },
+     {
+      "n": "Canada",
+      "base": 12,
+      "med": 12.0,
+      "p5": 12.0,
+      "p95": 12.0,
+      "same": 100.0
+     },
+     {
+      "n": "Brésil",
+      "base": 13,
+      "med": 13.0,
+      "p5": 13.0,
+      "p95": 13.0,
+      "same": 99.8
+     },
+     {
+      "n": "Inde",
+      "base": 14,
+      "med": 14.0,
+      "p5": 14.0,
+      "p95": 17.0,
+      "same": 63.6
+     },
+     {
+      "n": "Russie",
+      "base": 15,
+      "med": 16.0,
+      "p5": 14.0,
+      "p95": 18.0,
+      "same": 33.6
+     },
+     {
+      "n": "Nouvelle-Zélande",
+      "base": 16,
+      "med": 16.0,
+      "p5": 14.0,
+      "p95": 18.0,
+      "same": 23.8
+     },
+     {
+      "n": "Suisse",
+      "base": 17,
+      "med": 17.0,
+      "p5": 14.0,
+      "p95": 18.0,
+      "same": 30.4
+     },
+     {
+      "n": "Suède",
+      "base": 18,
+      "med": 17.0,
+      "p5": 15.0,
+      "p95": 18.0,
+      "same": 40.6
+     },
+     {
+      "n": "Hongrie",
+      "base": 19,
+      "med": 19.0,
+      "p5": 19.0,
+      "p95": 19.0,
+      "same": 94.8
+     },
+     {
+      "n": "Ukraine",
+      "base": 20,
+      "med": 20.0,
+      "p5": 20.0,
+      "p95": 20.0,
+      "same": 98.2
+     },
+     {
+      "n": "Norvège",
+      "base": 21,
+      "med": 22.0,
+      "p5": 21.0,
+      "p95": 24.0,
+      "same": 49.8
+     },
+     {
+      "n": "Belgique",
+      "base": 22,
+      "med": 22.0,
+      "p5": 21.0,
+      "p95": 24.0,
+      "same": 32.2
+     },
+     {
+      "n": "Pologne",
+      "base": 23,
+      "med": 23.0,
+      "p5": 21.0,
+      "p95": 25.0,
+      "same": 33.6
+     },
+     {
+      "n": "Thaïlande",
+      "base": 24,
+      "med": 24.0,
+      "p5": 21.0,
+      "p95": 26.0,
+      "same": 32.8
+     },
+     {
+      "n": "Danemark",
+      "base": 25,
+      "med": 25.0,
+      "p5": 23.0,
+      "p95": 26.0,
+      "same": 42.6
+     },
+     {
+      "n": "Taipei chinois",
+      "base": 26,
+      "med": 26.0,
+      "p5": 25.0,
+      "p95": 27.0,
+      "same": 46.8
+     },
+     {
+      "n": "Égypte",
+      "base": 27,
+      "med": 27.0,
+      "p5": 24.0,
+      "p95": 28.0,
+      "same": 53.6
+     },
+     {
+      "n": "Argentine",
+      "base": 28,
+      "med": 28.0,
+      "p5": 27.0,
+      "p95": 29.0,
+      "same": 78.4
+     },
+     {
+      "n": "Ouzbékistan",
+      "base": 29,
+      "med": 29.0,
+      "p5": 28.0,
+      "p95": 31.0,
+      "same": 66.0
+     },
+     {
+      "n": "Tchéquie",
+      "base": 30,
+      "med": 31.0,
+      "p5": 29.0,
+      "p95": 33.0,
+      "same": 27.4
+     },
+     {
+      "n": "Turquie",
+      "base": 31,
+      "med": 31.0,
+      "p5": 30.0,
+      "p95": 33.0,
+      "same": 34.8
+     },
+     {
+      "n": "Iran",
+      "base": 32,
+      "med": 31.0,
+      "p5": 29.0,
+      "p95": 33.0,
+      "same": 24.4
+     },
+     {
+      "n": "Kazakhstan",
+      "base": 33,
+      "med": 33.0,
+      "p5": 31.0,
+      "p95": 35.0,
+      "same": 49.8
+     },
+     {
+      "n": "Autriche",
+      "base": 34,
+      "med": 34.0,
+      "p5": 33.0,
+      "p95": 35.0,
+      "same": 53.8
+     },
+     {
+      "n": "Slovénie",
+      "base": 35,
+      "med": 35.0,
+      "p5": 33.0,
+      "p95": 36.0,
+      "same": 56.8
+     },
+     {
+      "n": "Mexique",
+      "base": 36,
+      "med": 36.0,
+      "p5": 36.0,
+      "p95": 37.0,
+      "same": 62.2
+     },
+     {
+      "n": "Afrique du Sud",
+      "base": 37,
+      "med": 37.0,
+      "p5": 36.0,
+      "p95": 38.0,
+      "same": 58.0
+     },
+     {
+      "n": "Indonésie",
+      "base": 38,
+      "med": 38.0,
+      "p5": 37.0,
+      "p95": 39.0,
+      "same": 81.8
+     },
+     {
+      "n": "Viêt Nam",
+      "base": 39,
+      "med": 39.0,
+      "p5": 38.0,
+      "p95": 40.049999999999955,
+      "same": 65.2
+     },
+     {
+      "n": "Portugal",
+      "base": 40,
+      "med": 40.0,
+      "p5": 39.0,
+      "p95": 41.0,
+      "same": 61.2
+     },
+     {
+      "n": "Serbie",
+      "base": 41,
+      "med": 41.0,
+      "p5": 40.0,
+      "p95": 43.0,
+      "same": 40.2
+     },
+     {
+      "n": "Colombie",
+      "base": 42,
+      "med": 42.0,
+      "p5": 41.0,
+      "p95": 43.0,
+      "same": 43.2
+     },
+     {
+      "n": "Finlande",
+      "base": 43,
+      "med": 43.0,
+      "p5": 41.0,
+      "p95": 43.0,
+      "same": 66.8
+     },
+     {
+      "n": "Roumanie",
+      "base": 44,
+      "med": 44.0,
+      "p5": 44.0,
+      "p95": 46.0,
+      "same": 70.6
+     },
+     {
+      "n": "Azerbaïdjan",
+      "base": 45,
+      "med": 45.0,
+      "p5": 44.0,
+      "p95": 47.0,
+      "same": 37.4
+     },
+     {
+      "n": "Irlande",
+      "base": 46,
+      "med": 46.0,
+      "p5": 44.0,
+      "p95": 47.0,
+      "same": 42.2
+     },
+     {
+      "n": "Israël",
+      "base": 47,
+      "med": 47.0,
+      "p5": 46.0,
+      "p95": 50.0,
+      "same": 41.4
+     },
+     {
+      "n": "Géorgie",
+      "base": 48,
+      "med": 49.0,
+      "p5": 47.0,
+      "p95": 53.0,
+      "same": 21.6
+     },
+     {
+      "n": "Malaisie",
+      "base": 49,
+      "med": 50.0,
+      "p5": 47.0,
+      "p95": 54.0,
+      "same": 17.6
+     },
+     {
+      "n": "Tunisie",
+      "base": 50,
+      "med": 50.0,
+      "p5": 47.0,
+      "p95": 54.0,
+      "same": 12.6
+     }
+    ],
+    "leader": {
+     "États-Unis": 69.0,
+     "Chine": 31.0
+    },
+    "rho": 0.9993,
+    "top10": 9.92,
+    "top10_min": 9,
+    "moy50": 0.58
+   },
+   "pr": {
+    "rows": [
+     {
+      "n": "France",
+      "base": 1,
+      "med": 1.0,
+      "p5": 1.0,
+      "p95": 1.0,
+      "same": 99.8
+     },
+     {
+      "n": "Royaume-Uni",
+      "base": 2,
+      "med": 2.0,
+      "p5": 2.0,
+      "p95": 2.0,
+      "same": 99.4
+     },
+     {
+      "n": "États-Unis",
+      "base": 3,
+      "med": 3.0,
+      "p5": 3.0,
+      "p95": 4.0,
+      "same": 69.8
+     },
+     {
+      "n": "Japon",
+      "base": 4,
+      "med": 4.0,
+      "p5": 3.0,
+      "p95": 4.0,
+      "same": 69.6
+     },
+     {
+      "n": "Australie",
+      "base": 5,
+      "med": 5.0,
+      "p5": 5.0,
+      "p95": 5.0,
+      "same": 98.4
+     },
+     {
+      "n": "Italie",
+      "base": 6,
+      "med": 6.0,
+      "p5": 6.0,
+      "p95": 6.0,
+      "same": 98.4
+     },
+     {
+      "n": "Allemagne",
+      "base": 7,
+      "med": 7.0,
+      "p5": 7.0,
+      "p95": 7.0,
+      "same": 100.0
+     },
+     {
+      "n": "Espagne",
+      "base": 8,
+      "med": 8.0,
+      "p5": 8.0,
+      "p95": 10.0,
+      "same": 75.2
+     },
+     {
+      "n": "Pays-Bas",
+      "base": 9,
+      "med": 9.0,
+      "p5": 8.0,
+      "p95": 10.0,
+      "same": 57.0
+     },
+     {
+      "n": "Chine",
+      "base": 10,
+      "med": 10.0,
+      "p5": 8.0,
+      "p95": 10.0,
+      "same": 61.2
+     },
+     {
+      "n": "Corée du Sud",
+      "base": 11,
+      "med": 11.0,
+      "p5": 11.0,
+      "p95": 11.0,
+      "same": 95.0
+     },
+     {
+      "n": "Nouvelle-Zélande",
+      "base": 12,
+      "med": 12.0,
+      "p5": 12.0,
+      "p95": 13.0,
+      "same": 65.8
+     },
+     {
+      "n": "Canada",
+      "base": 13,
+      "med": 13.0,
+      "p5": 12.0,
+      "p95": 13.0,
+      "same": 67.4
+     },
+     {
+      "n": "Hongrie",
+      "base": 14,
+      "med": 14.0,
+      "p5": 14.0,
+      "p95": 16.0,
+      "same": 61.6
+     },
+     {
+      "n": "Suède",
+      "base": 15,
+      "med": 15.0,
+      "p5": 14.0,
+      "p95": 17.0,
+      "same": 45.2
+     },
+     {
+      "n": "Suisse",
+      "base": 16,
+      "med": 16.0,
+      "p5": 14.0,
+      "p95": 17.0,
+      "same": 40.4
+     },
+     {
+      "n": "Ukraine",
+      "base": 17,
+      "med": 17.0,
+      "p5": 16.0,
+      "p95": 17.0,
+      "same": 66.8
+     },
+     {
+      "n": "Brésil",
+      "base": 18,
+      "med": 18.0,
+      "p5": 18.0,
+      "p95": 18.0,
+      "same": 100.0
+     },
+     {
+      "n": "Belgique",
+      "base": 19,
+      "med": 19.0,
+      "p5": 19.0,
+      "p95": 22.0,
+      "same": 55.0
+     },
+     {
+      "n": "Norvège",
+      "base": 20,
+      "med": 20.0,
+      "p5": 19.0,
+      "p95": 22.0,
+      "same": 40.6
+     },
+     {
+      "n": "Russie",
+      "base": 21,
+      "med": 22.0,
+      "p5": 20.0,
+      "p95": 24.0,
+      "same": 28.2
+     },
+     {
+      "n": "Danemark",
+      "base": 22,
+      "med": 21.0,
+      "p5": 19.0,
+      "p95": 24.0,
+      "same": 23.0
+     },
+     {
+      "n": "Pologne",
+      "base": 23,
+      "med": 23.0,
+      "p5": 21.0,
+      "p95": 26.0,
+      "same": 28.8
+     },
+     {
+      "n": "Ouzbékistan",
+      "base": 24,
+      "med": 24.0,
+      "p5": 22.0,
+      "p95": 26.0,
+      "same": 35.8
+     },
+     {
+      "n": "Thaïlande",
+      "base": 25,
+      "med": 25.0,
+      "p5": 22.0,
+      "p95": 26.0,
+      "same": 32.0
+     },
+     {
+      "n": "Inde",
+      "base": 26,
+      "med": 26.0,
+      "p5": 25.0,
+      "p95": 28.0,
+      "same": 49.4
+     },
+     {
+      "n": "Slovénie",
+      "base": 27,
+      "med": 27.0,
+      "p5": 25.0,
+      "p95": 28.049999999999955,
+      "same": 55.0
+     },
+     {
+      "n": "Tchéquie",
+      "base": 28,
+      "med": 29.0,
+      "p5": 27.0,
+      "p95": 31.0,
+      "same": 22.2
+     },
+     {
+      "n": "Argentine",
+      "base": 29,
+      "med": 29.0,
+      "p5": 27.0,
+      "p95": 31.0,
+      "same": 27.8
+     },
+     {
+      "n": "Taipei chinois",
+      "base": 30,
+      "med": 29.0,
+      "p5": 27.0,
+      "p95": 31.0,
+      "same": 22.2
+     },
+     {
+      "n": "Égypte",
+      "base": 31,
+      "med": 31.0,
+      "p5": 28.0,
+      "p95": 32.0,
+      "same": 45.2
+     },
+     {
+      "n": "Kazakhstan",
+      "base": 32,
+      "med": 32.0,
+      "p5": 29.0,
+      "p95": 32.0,
+      "same": 63.0
+     },
+     {
+      "n": "Autriche",
+      "base": 33,
+      "med": 34.0,
+      "p5": 33.0,
+      "p95": 35.0,
+      "same": 42.6
+     },
+     {
+      "n": "Iran",
+      "base": 34,
+      "med": 34.0,
+      "p5": 33.0,
+      "p95": 35.0,
+      "same": 39.6
+     },
+     {
+      "n": "Serbie",
+      "base": 35,
+      "med": 35.0,
+      "p5": 33.0,
+      "p95": 36.0,
+      "same": 55.2
+     },
+     {
+      "n": "Afrique du Sud",
+      "base": 36,
+      "med": 36.0,
+      "p5": 35.0,
+      "p95": 37.0,
+      "same": 60.4
+     },
+     {
+      "n": "Turquie",
+      "base": 37,
+      "med": 37.0,
+      "p5": 36.0,
+      "p95": 38.0,
+      "same": 69.8
+     },
+     {
+      "n": "Portugal",
+      "base": 38,
+      "med": 38.0,
+      "p5": 37.0,
+      "p95": 40.0,
+      "same": 74.2
+     },
+     {
+      "n": "Géorgie",
+      "base": 39,
+      "med": 40.0,
+      "p5": 38.0,
+      "p95": 45.0,
+      "same": 31.4
+     },
+     {
+      "n": "Mexique",
+      "base": 40,
+      "med": 40.0,
+      "p5": 39.0,
+      "p95": 43.0,
+      "same": 28.2
+     },
+     {
+      "n": "Finlande",
+      "base": 41,
+      "med": 41.0,
+      "p5": 39.0,
+      "p95": 44.0,
+      "same": 22.6
+     },
+     {
+      "n": "Azerbaïdjan",
+      "base": 42,
+      "med": 42.0,
+      "p5": 39.0,
+      "p95": 46.0,
+      "same": 14.6
+     },
+     {
+      "n": "Viêt Nam",
+      "base": 43,
+      "med": 43.0,
+      "p5": 40.0,
+      "p95": 46.0,
+      "same": 24.4
+     },
+     {
+      "n": "Colombie",
+      "base": 44,
+      "med": 45.0,
+      "p5": 42.0,
+      "p95": 47.0,
+      "same": 20.2
+     },
+     {
+      "n": "Jamaïque",
+      "base": 45,
+      "med": 45.0,
+      "p5": 39.0,
+      "p95": 48.0,
+      "same": 10.2
+     },
+     {
+      "n": "Indonésie",
+      "base": 46,
+      "med": 46.0,
+      "p5": 43.0,
+      "p95": 47.0,
+      "same": 33.0
+     },
+     {
+      "n": "Tunisie",
+      "base": 47,
+      "med": 45.0,
+      "p5": 40.0,
+      "p95": 48.0,
+      "same": 26.2
+     },
+     {
+      "n": "Lettonie",
+      "base": 48,
+      "med": 48.0,
+      "p5": 46.0,
+      "p95": 50.0,
+      "same": 55.6
+     },
+     {
+      "n": "Bulgarie",
+      "base": 49,
+      "med": 49.0,
+      "p5": 48.0,
+      "p95": 52.0,
+      "same": 43.2
+     },
+     {
+      "n": "Arménie",
+      "base": 50,
+      "med": 50.0,
+      "p5": 48.0,
+      "p95": 54.0,
+      "same": 28.2
+     }
+    ],
+    "leader": {
+     "France": 99.8,
+     "Royaume-Uni": 0.2
+    },
+    "rho": 0.999,
+    "top10": 9.97,
+    "top10_min": 9,
+    "moy50": 0.77
+   }
+  },
+  "poids ±20 %": {
+   "sport": {
+    "rows": [
+     {
+      "n": "États-Unis",
+      "base": 1,
+      "med": 1.0,
+      "p5": 1.0,
+      "p95": 2.0,
+      "same": 58.0
+     },
+     {
+      "n": "Chine",
+      "base": 2,
+      "med": 2.0,
+      "p5": 1.0,
+      "p95": 2.0,
+      "same": 58.0
+     },
+     {
+      "n": "France",
+      "base": 3,
+      "med": 3.0,
+      "p5": 3.0,
+      "p95": 4.0,
+      "same": 87.8
+     },
+     {
+      "n": "Royaume-Uni",
+      "base": 4,
+      "med": 4.0,
+      "p5": 3.0,
+      "p95": 5.0,
+      "same": 63.2
+     },
+     {
+      "n": "Japon",
+      "base": 5,
+      "med": 5.0,
+      "p5": 4.0,
+      "p95": 5.0,
+      "same": 73.0
+     },
+     {
+      "n": "Allemagne",
+      "base": 6,
+      "med": 6.0,
+      "p5": 6.0,
+      "p95": 7.0,
+      "same": 80.4
+     },
+     {
+      "n": "Italie",
+      "base": 7,
+      "med": 7.0,
+      "p5": 6.0,
+      "p95": 7.0,
+      "same": 80.2
+     },
+     {
+      "n": "Australie",
+      "base": 8,
+      "med": 8.0,
+      "p5": 8.0,
+      "p95": 8.0,
+      "same": 98.4
+     },
+     {
+      "n": "Espagne",
+      "base": 9,
+      "med": 9.0,
+      "p5": 9.0,
+      "p95": 10.0,
+      "same": 64.0
+     },
+     {
+      "n": "Corée du Sud",
+      "base": 10,
+      "med": 10.0,
+      "p5": 9.0,
+      "p95": 11.0,
+      "same": 47.0
+     },
+     {
+      "n": "Pays-Bas",
+      "base": 11,
+      "med": 11.0,
+      "p5": 9.0,
+      "p95": 11.0,
+      "same": 72.0
+     },
+     {
+      "n": "Canada",
+      "base": 12,
+      "med": 12.0,
+      "p5": 12.0,
+      "p95": 12.0,
+      "same": 99.8
+     },
+     {
+      "n": "Brésil",
+      "base": 13,
+      "med": 13.0,
+      "p5": 13.0,
+      "p95": 14.0,
+      "same": 91.0
+     },
+     {
+      "n": "Inde",
+      "base": 14,
+      "med": 15.0,
+      "p5": 13.0,
+      "p95": 19.0,
+      "same": 38.2
+     },
+     {
+      "n": "Russie",
+      "base": 15,
+      "med": 16.0,
+      "p5": 14.0,
+      "p95": 18.0,
+      "same": 23.2
+     },
+     {
+      "n": "Nouvelle-Zélande",
+      "base": 16,
+      "med": 16.0,
+      "p5": 14.0,
+      "p95": 19.0,
+      "same": 16.4
+     },
+     {
+      "n": "Suisse",
+      "base": 17,
+      "med": 16.0,
+      "p5": 14.0,
+      "p95": 19.0,
+      "same": 22.4
+     },
+     {
+      "n": "Suède",
+      "base": 18,
+      "med": 17.0,
+      "p5": 14.0,
+      "p95": 19.0,
+      "same": 20.6
+     },
+     {
+      "n": "Hongrie",
+      "base": 19,
+      "med": 19.0,
+      "p5": 16.0,
+      "p95": 20.0,
+      "same": 52.8
+     },
+     {
+      "n": "Ukraine",
+      "base": 20,
+      "med": 20.0,
+      "p5": 19.0,
+      "p95": 21.0,
+      "same": 68.4
+     },
+     {
+      "n": "Norvège",
+      "base": 21,
+      "med": 22.0,
+      "p5": 20.0,
+      "p95": 26.0,
+      "same": 32.2
+     },
+     {
+      "n": "Belgique",
+      "base": 22,
+      "med": 23.0,
+      "p5": 21.0,
+      "p95": 26.0,
+      "same": 19.6
+     },
+     {
+      "n": "Pologne",
+      "base": 23,
+      "med": 23.0,
+      "p5": 21.0,
+      "p95": 26.0,
+      "same": 21.4
+     },
+     {
+      "n": "Thaïlande",
+      "base": 24,
+      "med": 24.0,
+      "p5": 21.0,
+      "p95": 27.0,
+      "same": 18.4
+     },
+     {
+      "n": "Danemark",
+      "base": 25,
+      "med": 25.0,
+      "p5": 22.0,
+      "p95": 27.0,
+      "same": 21.0
+     },
+     {
+      "n": "Taipei chinois",
+      "base": 26,
+      "med": 26.0,
+      "p5": 22.0,
+      "p95": 28.0,
+      "same": 27.4
+     },
+     {
+      "n": "Égypte",
+      "base": 27,
+      "med": 27.0,
+      "p5": 22.0,
+      "p95": 29.0,
+      "same": 27.6
+     },
+     {
+      "n": "Argentine",
+      "base": 28,
+      "med": 28.0,
+      "p5": 25.0,
+      "p95": 32.0,
+      "same": 34.0
+     },
+     {
+      "n": "Ouzbékistan",
+      "base": 29,
+      "med": 29.0,
+      "p5": 27.0,
+      "p95": 32.0,
+      "same": 26.8
+     },
+     {
+      "n": "Tchéquie",
+      "base": 30,
+      "med": 31.0,
+      "p5": 28.0,
+      "p95": 34.0,
+      "same": 14.6
+     },
+     {
+      "n": "Turquie",
+      "base": 31,
+      "med": 31.0,
+      "p5": 29.0,
+      "p95": 34.0,
+      "same": 23.8
+     },
+     {
+      "n": "Iran",
+      "base": 32,
+      "med": 31.0,
+      "p5": 28.0,
+      "p95": 35.0,
+      "same": 15.8
+     },
+     {
+      "n": "Kazakhstan",
+      "base": 33,
+      "med": 33.0,
+      "p5": 30.0,
+      "p95": 36.0,
+      "same": 22.2
+     },
+     {
+      "n": "Autriche",
+      "base": 34,
+      "med": 34.0,
+      "p5": 30.950000000000003,
+      "p95": 36.0,
+      "same": 27.4
+     },
+     {
+      "n": "Slovénie",
+      "base": 35,
+      "med": 35.0,
+      "p5": 31.0,
+      "p95": 37.0,
+      "same": 28.6
+     },
+     {
+      "n": "Mexique",
+      "base": 36,
+      "med": 36.0,
+      "p5": 34.0,
+      "p95": 38.0,
+      "same": 36.8
+     },
+     {
+      "n": "Afrique du Sud",
+      "base": 37,
+      "med": 37.0,
+      "p5": 33.0,
+      "p95": 39.0,
+      "same": 31.4
+     },
+     {
+      "n": "Indonésie",
+      "base": 38,
+      "med": 38.0,
+      "p5": 36.0,
+      "p95": 41.0,
+      "same": 42.8
+     },
+     {
+      "n": "Viêt Nam",
+      "base": 39,
+      "med": 39.0,
+      "p5": 37.0,
+      "p95": 43.0,
+      "same": 33.6
+     },
+     {
+      "n": "Portugal",
+      "base": 40,
+      "med": 40.0,
+      "p5": 38.0,
+      "p95": 42.0,
+      "same": 34.0
+     },
+     {
+      "n": "Serbie",
+      "base": 41,
+      "med": 41.0,
+      "p5": 38.0,
+      "p95": 44.0,
+      "same": 19.8
+     },
+     {
+      "n": "Colombie",
+      "base": 42,
+      "med": 42.0,
+      "p5": 40.0,
+      "p95": 43.0,
+      "same": 31.6
+     },
+     {
+      "n": "Finlande",
+      "base": 43,
+      "med": 42.0,
+      "p5": 40.0,
+      "p95": 44.0,
+      "same": 37.4
+     },
+     {
+      "n": "Roumanie",
+      "base": 44,
+      "med": 45.0,
+      "p5": 42.0,
+      "p95": 48.0,
+      "same": 34.4
+     },
+     {
+      "n": "Azerbaïdjan",
+      "base": 45,
+      "med": 46.0,
+      "p5": 44.0,
+      "p95": 49.0,
+      "same": 20.4
+     },
+     {
+      "n": "Irlande",
+      "base": 46,
+      "med": 46.0,
+      "p5": 44.0,
+      "p95": 50.0,
+      "same": 21.4
+     },
+     {
+      "n": "Israël",
+      "base": 47,
+      "med": 48.0,
+      "p5": 44.0,
+      "p95": 53.049999999999955,
+      "same": 13.8
+     },
+     {
+      "n": "Géorgie",
+      "base": 48,
+      "med": 49.0,
+      "p5": 45.0,
+      "p95": 54.0,
+      "same": 14.0
+     },
+     {
+      "n": "Malaisie",
+      "base": 49,
+      "med": 50.0,
+      "p5": 45.0,
+      "p95": 56.0,
+      "same": 8.6
+     },
+     {
+      "n": "Tunisie",
+      "base": 50,
+      "med": 51.0,
+      "p5": 45.0,
+      "p95": 56.0,
+      "same": 8.4
+     }
+    ],
+    "leader": {
+     "États-Unis": 58.0,
+     "Chine": 42.0
+    },
+    "rho": 0.9979,
+    "top10": 9.72,
+    "top10_min": 9,
+    "moy50": 1.14
+   },
+   "pr": {
+    "rows": [
+     {
+      "n": "France",
+      "base": 1,
+      "med": 1.0,
+      "p5": 1.0,
+      "p95": 2.0,
+      "same": 88.4
+     },
+     {
+      "n": "Royaume-Uni",
+      "base": 2,
+      "med": 2.0,
+      "p5": 1.0,
+      "p95": 3.0,
+      "same": 82.0
+     },
+     {
+      "n": "États-Unis",
+      "base": 3,
+      "med": 3.0,
+      "p5": 3.0,
+      "p95": 4.0499999999999545,
+      "same": 52.6
+     },
+     {
+      "n": "Japon",
+      "base": 4,
+      "med": 4.0,
+      "p5": 2.0,
+      "p95": 5.0,
+      "same": 42.2
+     },
+     {
+      "n": "Australie",
+      "base": 5,
+      "med": 5.0,
+      "p5": 4.0,
+      "p95": 6.0,
+      "same": 71.8
+     },
+     {
+      "n": "Italie",
+      "base": 6,
+      "med": 6.0,
+      "p5": 5.0,
+      "p95": 6.0,
+      "same": 78.8
+     },
+     {
+      "n": "Allemagne",
+      "base": 7,
+      "med": 7.0,
+      "p5": 7.0,
+      "p95": 7.0,
+      "same": 94.6
+     },
+     {
+      "n": "Espagne",
+      "base": 8,
+      "med": 9.0,
+      "p5": 8.0,
+      "p95": 11.0,
+      "same": 43.2
+     },
+     {
+      "n": "Pays-Bas",
+      "base": 9,
+      "med": 9.0,
+      "p5": 8.0,
+      "p95": 10.0,
+      "same": 36.0
+     },
+     {
+      "n": "Chine",
+      "base": 10,
+      "med": 10.0,
+      "p5": 8.0,
+      "p95": 11.0,
+      "same": 48.6
+     },
+     {
+      "n": "Corée du Sud",
+      "base": 11,
+      "med": 11.0,
+      "p5": 8.0,
+      "p95": 12.0,
+      "same": 72.0
+     },
+     {
+      "n": "Nouvelle-Zélande",
+      "base": 12,
+      "med": 12.0,
+      "p5": 11.0,
+      "p95": 13.0,
+      "same": 60.0
+     },
+     {
+      "n": "Canada",
+      "base": 13,
+      "med": 13.0,
+      "p5": 12.0,
+      "p95": 13.0,
+      "same": 67.4
+     },
+     {
+      "n": "Hongrie",
+      "base": 14,
+      "med": 14.0,
+      "p5": 13.950000000000003,
+      "p95": 16.0,
+      "same": 46.8
+     },
+     {
+      "n": "Suède",
+      "base": 15,
+      "med": 15.0,
+      "p5": 14.0,
+      "p95": 17.0,
+      "same": 34.6
+     },
+     {
+      "n": "Suisse",
+      "base": 16,
+      "med": 16.0,
+      "p5": 14.0,
+      "p95": 17.0,
+      "same": 34.2
+     },
+     {
+      "n": "Ukraine",
+      "base": 17,
+      "med": 17.0,
+      "p5": 15.0,
+      "p95": 18.0,
+      "same": 44.8
+     },
+     {
+      "n": "Brésil",
+      "base": 18,
+      "med": 18.0,
+      "p5": 17.0,
+      "p95": 18.0,
+      "same": 86.6
+     },
+     {
+      "n": "Belgique",
+      "base": 19,
+      "med": 20.0,
+      "p5": 19.0,
+      "p95": 24.0,
+      "same": 35.8
+     },
+     {
+      "n": "Norvège",
+      "base": 20,
+      "med": 20.0,
+      "p5": 19.0,
+      "p95": 24.049999999999955,
+      "same": 25.8
+     },
+     {
+      "n": "Russie",
+      "base": 21,
+      "med": 21.0,
+      "p5": 19.0,
+      "p95": 25.0,
+      "same": 22.6
+     },
+     {
+      "n": "Danemark",
+      "base": 22,
+      "med": 21.0,
+      "p5": 19.0,
+      "p95": 25.0,
+      "same": 12.8
+     },
+     {
+      "n": "Pologne",
+      "base": 23,
+      "med": 24.0,
+      "p5": 20.0,
+      "p95": 27.0,
+      "same": 15.8
+     },
+     {
+      "n": "Ouzbékistan",
+      "base": 24,
+      "med": 24.0,
+      "p5": 20.0,
+      "p95": 28.0,
+      "same": 15.6
+     },
+     {
+      "n": "Thaïlande",
+      "base": 25,
+      "med": 24.0,
+      "p5": 20.0,
+      "p95": 28.0,
+      "same": 15.4
+     },
+     {
+      "n": "Inde",
+      "base": 26,
+      "med": 27.0,
+      "p5": 24.0,
+      "p95": 30.0,
+      "same": 23.0
+     },
+     {
+      "n": "Slovénie",
+      "base": 27,
+      "med": 27.0,
+      "p5": 23.0,
+      "p95": 30.0,
+      "same": 17.4
+     },
+     {
+      "n": "Tchéquie",
+      "base": 28,
+      "med": 29.0,
+      "p5": 26.0,
+      "p95": 32.0,
+      "same": 14.0
+     },
+     {
+      "n": "Argentine",
+      "base": 29,
+      "med": 30.0,
+      "p5": 23.0,
+      "p95": 33.0,
+      "same": 14.0
+     },
+     {
+      "n": "Taipei chinois",
+      "base": 30,
+      "med": 29.0,
+      "p5": 23.0,
+      "p95": 32.0,
+      "same": 17.2
+     },
+     {
+      "n": "Égypte",
+      "base": 31,
+      "med": 31.0,
+      "p5": 26.0,
+      "p95": 33.0,
+      "same": 24.6
+     },
+     {
+      "n": "Kazakhstan",
+      "base": 32,
+      "med": 31.0,
+      "p5": 28.0,
+      "p95": 34.0,
+      "same": 23.2
+     },
+     {
+      "n": "Autriche",
+      "base": 33,
+      "med": 34.0,
+      "p5": 32.0,
+      "p95": 36.0,
+      "same": 28.0
+     },
+     {
+      "n": "Iran",
+      "base": 34,
+      "med": 34.0,
+      "p5": 31.950000000000003,
+      "p95": 36.0,
+      "same": 28.4
+     },
+     {
+      "n": "Serbie",
+      "base": 35,
+      "med": 35.0,
+      "p5": 32.0,
+      "p95": 38.0,
+      "same": 30.4
+     },
+     {
+      "n": "Afrique du Sud",
+      "base": 36,
+      "med": 36.0,
+      "p5": 33.0,
+      "p95": 38.0,
+      "same": 27.0
+     },
+     {
+      "n": "Turquie",
+      "base": 37,
+      "med": 37.0,
+      "p5": 35.0,
+      "p95": 39.0,
+      "same": 39.4
+     },
+     {
+      "n": "Portugal",
+      "base": 38,
+      "med": 39.0,
+      "p5": 36.0,
+      "p95": 43.0,
+      "same": 29.8
+     },
+     {
+      "n": "Géorgie",
+      "base": 39,
+      "med": 41.0,
+      "p5": 37.95,
+      "p95": 47.0,
+      "same": 16.8
+     },
+     {
+      "n": "Mexique",
+      "base": 40,
+      "med": 41.0,
+      "p5": 38.0,
+      "p95": 44.0,
+      "same": 19.6
+     },
+     {
+      "n": "Finlande",
+      "base": 41,
+      "med": 41.0,
+      "p5": 38.0,
+      "p95": 46.0,
+      "same": 17.0
+     },
+     {
+      "n": "Azerbaïdjan",
+      "base": 42,
+      "med": 42.0,
+      "p5": 38.0,
+      "p95": 47.0,
+      "same": 12.6
+     },
+     {
+      "n": "Viêt Nam",
+      "base": 43,
+      "med": 43.0,
+      "p5": 39.0,
+      "p95": 47.0,
+      "same": 13.6
+     },
+     {
+      "n": "Colombie",
+      "base": 44,
+      "med": 45.0,
+      "p5": 41.0,
+      "p95": 47.0,
+      "same": 17.2
+     },
+     {
+      "n": "Jamaïque",
+      "base": 45,
+      "med": 45.0,
+      "p5": 38.0,
+      "p95": 53.0,
+      "same": 6.8
+     },
+     {
+      "n": "Indonésie",
+      "base": 46,
+      "med": 45.0,
+      "p5": 40.0,
+      "p95": 48.0,
+      "same": 19.4
+     },
+     {
+      "n": "Tunisie",
+      "base": 47,
+      "med": 46.0,
+      "p5": 38.0,
+      "p95": 51.0,
+      "same": 15.2
+     },
+     {
+      "n": "Lettonie",
+      "base": 48,
+      "med": 48.0,
+      "p5": 40.0,
+      "p95": 53.0,
+      "same": 16.4
+     },
+     {
+      "n": "Bulgarie",
+      "base": 49,
+      "med": 49.0,
+      "p5": 46.0,
+      "p95": 55.0,
+      "same": 21.6
+     },
+     {
+      "n": "Arménie",
+      "base": 50,
+      "med": 51.0,
+      "p5": 47.0,
+      "p95": 56.0,
+      "same": 15.6
+     }
+    ],
+    "leader": {
+     "France": 88.4,
+     "Royaume-Uni": 11.6
+    },
+    "rho": 0.9969,
+    "top10": 9.78,
+    "top10_min": 8,
+    "moy50": 1.39
+   }
+  },
+  "poids ±40 %": {
+   "sport": {
+    "rows": [
+     {
+      "n": "États-Unis",
+      "base": 1,
+      "med": 1.0,
+      "p5": 1.0,
+      "p95": 2.0,
+      "same": 59.6
+     },
+     {
+      "n": "Chine",
+      "base": 2,
+      "med": 2.0,
+      "p5": 1.0,
+      "p95": 2.0,
+      "same": 59.4
+     },
+     {
+      "n": "France",
+      "base": 3,
+      "med": 3.0,
+      "p5": 3.0,
+      "p95": 4.0499999999999545,
+      "same": 66.2
+     },
+     {
+      "n": "Royaume-Uni",
+      "base": 4,
+      "med": 4.0,
+      "p5": 3.0,
+      "p95": 5.0,
+      "same": 43.6
+     },
+     {
+      "n": "Japon",
+      "base": 5,
+      "med": 5.0,
+      "p5": 3.0,
+      "p95": 6.0,
+      "same": 50.8
+     },
+     {
+      "n": "Allemagne",
+      "base": 6,
+      "med": 6.0,
+      "p5": 5.0,
+      "p95": 7.0,
+      "same": 54.0
+     },
+     {
+      "n": "Italie",
+      "base": 7,
+      "med": 7.0,
+      "p5": 5.0,
+      "p95": 8.0,
+      "same": 53.2
+     },
+     {
+      "n": "Australie",
+      "base": 8,
+      "med": 8.0,
+      "p5": 7.0,
+      "p95": 9.0,
+      "same": 76.0
+     },
+     {
+      "n": "Espagne",
+      "base": 9,
+      "med": 10.0,
+      "p5": 9.0,
+      "p95": 11.0,
+      "same": 44.8
+     },
+     {
+      "n": "Corée du Sud",
+      "base": 10,
+      "med": 10.0,
+      "p5": 8.0,
+      "p95": 11.0,
+      "same": 29.2
+     },
+     {
+      "n": "Pays-Bas",
+      "base": 11,
+      "med": 11.0,
+      "p5": 9.0,
+      "p95": 11.0,
+      "same": 48.4
+     },
+     {
+      "n": "Canada",
+      "base": 12,
+      "med": 12.0,
+      "p5": 11.0,
+      "p95": 13.0,
+      "same": 85.0
+     },
+     {
+      "n": "Brésil",
+      "base": 13,
+      "med": 13.0,
+      "p5": 12.950000000000003,
+      "p95": 16.0,
+      "same": 58.2
+     },
+     {
+      "n": "Inde",
+      "base": 14,
+      "med": 16.0,
+      "p5": 13.0,
+      "p95": 21.0,
+      "same": 14.8
+     },
+     {
+      "n": "Russie",
+      "base": 15,
+      "med": 16.0,
+      "p5": 13.0,
+      "p95": 20.0,
+      "same": 18.8
+     },
+     {
+      "n": "Nouvelle-Zélande",
+      "base": 16,
+      "med": 17.0,
+      "p5": 13.0,
+      "p95": 21.0,
+      "same": 11.6
+     },
+     {
+      "n": "Suisse",
+      "base": 17,
+      "med": 16.0,
+      "p5": 13.0,
+      "p95": 21.0,
+      "same": 18.8
+     },
+     {
+      "n": "Suède",
+      "base": 18,
+      "med": 17.0,
+      "p5": 14.0,
+      "p95": 20.0,
+      "same": 15.6
+     },
+     {
+      "n": "Hongrie",
+      "base": 19,
+      "med": 18.0,
+      "p5": 15.0,
+      "p95": 22.0,
+      "same": 17.4
+     },
+     {
+      "n": "Ukraine",
+      "base": 20,
+      "med": 20.0,
+      "p5": 16.0,
+      "p95": 23.049999999999955,
+      "same": 23.0
+     },
+     {
+      "n": "Norvège",
+      "base": 21,
+      "med": 23.0,
+      "p5": 18.0,
+      "p95": 28.0,
+      "same": 13.0
+     },
+     {
+      "n": "Belgique",
+      "base": 22,
+      "med": 23.0,
+      "p5": 18.0,
+      "p95": 28.0,
+      "same": 10.0
+     },
+     {
+      "n": "Pologne",
+      "base": 23,
+      "med": 24.0,
+      "p5": 20.0,
+      "p95": 28.0,
+      "same": 16.4
+     },
+     {
+      "n": "Thaïlande",
+      "base": 24,
+      "med": 24.0,
+      "p5": 19.0,
+      "p95": 29.0,
+      "same": 9.8
+     },
+     {
+      "n": "Danemark",
+      "base": 25,
+      "med": 24.0,
+      "p5": 19.0,
+      "p95": 31.0,
+      "same": 7.8
+     },
+     {
+      "n": "Taipei chinois",
+      "base": 26,
+      "med": 26.0,
+      "p5": 21.0,
+      "p95": 31.0,
+      "same": 12.0
+     },
+     {
+      "n": "Égypte",
+      "base": 27,
+      "med": 26.0,
+      "p5": 19.0,
+      "p95": 33.0,
+      "same": 9.2
+     },
+     {
+      "n": "Argentine",
+      "base": 28,
+      "med": 28.0,
+      "p5": 22.0,
+      "p95": 35.0,
+      "same": 12.0
+     },
+     {
+      "n": "Ouzbékistan",
+      "base": 29,
+      "med": 30.0,
+      "p5": 23.0,
+      "p95": 36.0,
+      "same": 14.2
+     },
+     {
+      "n": "Tchéquie",
+      "base": 30,
+      "med": 31.0,
+      "p5": 26.0,
+      "p95": 36.0,
+      "same": 9.8
+     },
+     {
+      "n": "Turquie",
+      "base": 31,
+      "med": 32.0,
+      "p5": 26.950000000000003,
+      "p95": 36.0,
+      "same": 12.8
+     },
+     {
+      "n": "Iran",
+      "base": 32,
+      "med": 31.0,
+      "p5": 25.0,
+      "p95": 37.0,
+      "same": 9.2
+     },
+     {
+      "n": "Kazakhstan",
+      "base": 33,
+      "med": 33.0,
+      "p5": 26.0,
+      "p95": 38.0,
+      "same": 11.8
+     },
+     {
+      "n": "Autriche",
+      "base": 34,
+      "med": 34.0,
+      "p5": 28.0,
+      "p95": 38.0,
+      "same": 12.8
+     },
+     {
+      "n": "Slovénie",
+      "base": 35,
+      "med": 34.0,
+      "p5": 28.0,
+      "p95": 38.0,
+      "same": 13.8
+     },
+     {
+      "n": "Mexique",
+      "base": 36,
+      "med": 36.0,
+      "p5": 30.0,
+      "p95": 40.0,
+      "same": 14.6
+     },
+     {
+      "n": "Afrique du Sud",
+      "base": 37,
+      "med": 37.0,
+      "p5": 29.0,
+      "p95": 43.0,
+      "same": 13.4
+     },
+     {
+      "n": "Indonésie",
+      "base": 38,
+      "med": 38.5,
+      "p5": 31.0,
+      "p95": 43.0,
+      "same": 13.0
+     },
+     {
+      "n": "Viêt Nam",
+      "base": 39,
+      "med": 40.0,
+      "p5": 34.0,
+      "p95": 46.049999999999955,
+      "same": 10.2
+     },
+     {
+      "n": "Portugal",
+      "base": 40,
+      "med": 40.0,
+      "p5": 36.0,
+      "p95": 44.0,
+      "same": 14.8
+     },
+     {
+      "n": "Serbie",
+      "base": 41,
+      "med": 42.0,
+      "p5": 36.0,
+      "p95": 47.049999999999955,
+      "same": 9.0
+     },
+     {
+      "n": "Colombie",
+      "base": 42,
+      "med": 41.0,
+      "p5": 38.0,
+      "p95": 46.0,
+      "same": 16.4
+     },
+     {
+      "n": "Finlande",
+      "base": 43,
+      "med": 42.0,
+      "p5": 37.0,
+      "p95": 49.0,
+      "same": 14.8
+     },
+     {
+      "n": "Roumanie",
+      "base": 44,
+      "med": 46.0,
+      "p5": 39.0,
+      "p95": 54.0,
+      "same": 10.2
+     },
+     {
+      "n": "Azerbaïdjan",
+      "base": 45,
+      "med": 46.0,
+      "p5": 40.95,
+      "p95": 53.0,
+      "same": 10.2
+     },
+     {
+      "n": "Irlande",
+      "base": 46,
+      "med": 47.0,
+      "p5": 42.0,
+      "p95": 54.0,
+      "same": 10.0
+     },
+     {
+      "n": "Israël",
+      "base": 47,
+      "med": 49.0,
+      "p5": 42.0,
+      "p95": 57.0,
+      "same": 9.0
+     },
+     {
+      "n": "Géorgie",
+      "base": 48,
+      "med": 50.0,
+      "p5": 43.0,
+      "p95": 57.0,
+      "same": 9.8
+     },
+     {
+      "n": "Malaisie",
+      "base": 49,
+      "med": 50.0,
+      "p5": 43.0,
+      "p95": 59.0,
+      "same": 7.6
+     },
+     {
+      "n": "Tunisie",
+      "base": 50,
+      "med": 51.0,
+      "p5": 42.0,
+      "p95": 61.0,
+      "same": 4.8
+     }
+    ],
+    "leader": {
+     "États-Unis": 59.6,
+     "Chine": 40.4
+    },
+    "rho": 0.9931,
+    "top10": 9.52,
+    "top10_min": 9,
+    "moy50": 2.18
+   },
+   "pr": {
+    "rows": [
+     {
+      "n": "France",
+      "base": 1,
+      "med": 1.0,
+      "p5": 1.0,
+      "p95": 2.0,
+      "same": 73.6
+     },
+     {
+      "n": "Royaume-Uni",
+      "base": 2,
+      "med": 2.0,
+      "p5": 1.0,
+      "p95": 4.0,
+      "same": 52.6
+     },
+     {
+      "n": "États-Unis",
+      "base": 3,
+      "med": 3.0,
+      "p5": 3.0,
+      "p95": 5.0,
+      "same": 47.0
+     },
+     {
+      "n": "Japon",
+      "base": 4,
+      "med": 4.0,
+      "p5": 2.0,
+      "p95": 7.0,
+      "same": 22.4
+     },
+     {
+      "n": "Australie",
+      "base": 5,
+      "med": 5.0,
+      "p5": 3.0,
+      "p95": 7.0,
+      "same": 37.0
+     },
+     {
+      "n": "Italie",
+      "base": 6,
+      "med": 6.0,
+      "p5": 3.0,
+      "p95": 7.0,
+      "same": 41.6
+     },
+     {
+      "n": "Allemagne",
+      "base": 7,
+      "med": 7.0,
+      "p5": 5.0,
+      "p95": 8.0,
+      "same": 60.0
+     },
+     {
+      "n": "Espagne",
+      "base": 8,
+      "med": 9.0,
+      "p5": 7.0,
+      "p95": 11.0,
+      "same": 27.0
+     },
+     {
+      "n": "Pays-Bas",
+      "base": 9,
+      "med": 9.0,
+      "p5": 7.0,
+      "p95": 11.0,
+      "same": 20.8
+     },
+     {
+      "n": "Chine",
+      "base": 10,
+      "med": 10.0,
+      "p5": 8.0,
+      "p95": 11.0,
+      "same": 40.6
+     },
+     {
+      "n": "Corée du Sud",
+      "base": 11,
+      "med": 11.0,
+      "p5": 8.0,
+      "p95": 12.0,
+      "same": 35.6
+     },
+     {
+      "n": "Nouvelle-Zélande",
+      "base": 12,
+      "med": 12.0,
+      "p5": 10.0,
+      "p95": 16.0,
+      "same": 31.6
+     },
+     {
+      "n": "Canada",
+      "base": 13,
+      "med": 13.0,
+      "p5": 12.0,
+      "p95": 14.0,
+      "same": 53.4
+     },
+     {
+      "n": "Hongrie",
+      "base": 14,
+      "med": 15.0,
+      "p5": 12.0,
+      "p95": 18.0,
+      "same": 24.4
+     },
+     {
+      "n": "Suède",
+      "base": 15,
+      "med": 15.0,
+      "p5": 13.0,
+      "p95": 18.0,
+      "same": 24.8
+     },
+     {
+      "n": "Suisse",
+      "base": 16,
+      "med": 16.0,
+      "p5": 14.0,
+      "p95": 20.0,
+      "same": 23.8
+     },
+     {
+      "n": "Ukraine",
+      "base": 17,
+      "med": 16.0,
+      "p5": 14.0,
+      "p95": 20.0,
+      "same": 21.4
+     },
+     {
+      "n": "Brésil",
+      "base": 18,
+      "med": 18.0,
+      "p5": 16.0,
+      "p95": 21.0,
+      "same": 33.0
+     },
+     {
+      "n": "Belgique",
+      "base": 19,
+      "med": 21.0,
+      "p5": 17.0,
+      "p95": 27.0,
+      "same": 12.6
+     },
+     {
+      "n": "Norvège",
+      "base": 20,
+      "med": 21.0,
+      "p5": 17.0,
+      "p95": 29.0,
+      "same": 11.6
+     },
+     {
+      "n": "Russie",
+      "base": 21,
+      "med": 22.0,
+      "p5": 19.0,
+      "p95": 27.0,
+      "same": 16.0
+     },
+     {
+      "n": "Danemark",
+      "base": 22,
+      "med": 22.0,
+      "p5": 16.0,
+      "p95": 29.0,
+      "same": 12.2
+     },
+     {
+      "n": "Pologne",
+      "base": 23,
+      "med": 24.0,
+      "p5": 19.950000000000003,
+      "p95": 29.049999999999955,
+      "same": 12.2
+     },
+     {
+      "n": "Ouzbékistan",
+      "base": 24,
+      "med": 24.0,
+      "p5": 18.0,
+      "p95": 31.0,
+      "same": 7.8
+     },
+     {
+      "n": "Thaïlande",
+      "base": 25,
+      "med": 25.0,
+      "p5": 19.0,
+      "p95": 31.0,
+      "same": 12.6
+     },
+     {
+      "n": "Inde",
+      "base": 26,
+      "med": 27.0,
+      "p5": 23.0,
+      "p95": 31.0,
+      "same": 12.2
+     },
+     {
+      "n": "Slovénie",
+      "base": 27,
+      "med": 26.0,
+      "p5": 20.0,
+      "p95": 32.0,
+      "same": 9.6
+     },
+     {
+      "n": "Tchéquie",
+      "base": 28,
+      "med": 29.0,
+      "p5": 22.0,
+      "p95": 34.0,
+      "same": 10.4
+     },
+     {
+      "n": "Argentine",
+      "base": 29,
+      "med": 29.0,
+      "p5": 20.0,
+      "p95": 36.0,
+      "same": 9.8
+     },
+     {
+      "n": "Taipei chinois",
+      "base": 30,
+      "med": 29.0,
+      "p5": 21.0,
+      "p95": 36.0,
+      "same": 12.2
+     },
+     {
+      "n": "Égypte",
+      "base": 31,
+      "med": 30.0,
+      "p5": 20.0,
+      "p95": 37.0,
+      "same": 9.6
+     },
+     {
+      "n": "Kazakhstan",
+      "base": 32,
+      "med": 31.0,
+      "p5": 22.950000000000003,
+      "p95": 37.0,
+      "same": 12.8
+     },
+     {
+      "n": "Autriche",
+      "base": 33,
+      "med": 33.0,
+      "p5": 27.0,
+      "p95": 38.0,
+      "same": 12.8
+     },
+     {
+      "n": "Iran",
+      "base": 34,
+      "med": 34.0,
+      "p5": 27.0,
+      "p95": 40.0,
+      "same": 14.0
+     },
+     {
+      "n": "Serbie",
+      "base": 35,
+      "med": 35.0,
+      "p5": 28.0,
+      "p95": 43.0,
+      "same": 12.2
+     },
+     {
+      "n": "Afrique du Sud",
+      "base": 36,
+      "med": 36.0,
+      "p5": 29.0,
+      "p95": 45.0,
+      "same": 10.0
+     },
+     {
+      "n": "Turquie",
+      "base": 37,
+      "med": 37.5,
+      "p5": 33.0,
+      "p95": 43.0,
+      "same": 13.6
+     },
+     {
+      "n": "Portugal",
+      "base": 38,
+      "med": 40.0,
+      "p5": 34.0,
+      "p95": 46.0,
+      "same": 11.2
+     },
+     {
+      "n": "Géorgie",
+      "base": 39,
+      "med": 42.0,
+      "p5": 34.0,
+      "p95": 51.0,
+      "same": 5.0
+     },
+     {
+      "n": "Mexique",
+      "base": 40,
+      "med": 41.0,
+      "p5": 35.0,
+      "p95": 46.0,
+      "same": 11.6
+     },
+     {
+      "n": "Finlande",
+      "base": 41,
+      "med": 42.0,
+      "p5": 36.0,
+      "p95": 52.0,
+      "same": 8.8
+     },
+     {
+      "n": "Azerbaïdjan",
+      "base": 42,
+      "med": 43.0,
+      "p5": 35.0,
+      "p95": 51.0,
+      "same": 7.2
+     },
+     {
+      "n": "Viêt Nam",
+      "base": 43,
+      "med": 43.0,
+      "p5": 36.0,
+      "p95": 51.0,
+      "same": 6.8
+     },
+     {
+      "n": "Colombie",
+      "base": 44,
+      "med": 44.0,
+      "p5": 38.0,
+      "p95": 50.0,
+      "same": 11.4
+     },
+     {
+      "n": "Jamaïque",
+      "base": 45,
+      "med": 46.0,
+      "p5": 33.0,
+      "p95": 60.0,
+      "same": 5.2
+     },
+     {
+      "n": "Indonésie",
+      "base": 46,
+      "med": 45.0,
+      "p5": 37.0,
+      "p95": 52.0,
+      "same": 8.8
+     },
+     {
+      "n": "Tunisie",
+      "base": 47,
+      "med": 46.0,
+      "p5": 35.0,
+      "p95": 57.0,
+      "same": 5.4
+     },
+     {
+      "n": "Lettonie",
+      "base": 48,
+      "med": 48.0,
+      "p5": 37.0,
+      "p95": 58.0,
+      "same": 8.0
+     },
+     {
+      "n": "Bulgarie",
+      "base": 49,
+      "med": 50.0,
+      "p5": 41.95,
+      "p95": 58.0,
+      "same": 8.8
+     },
+     {
+      "n": "Arménie",
+      "base": 50,
+      "med": 51.0,
+      "p5": 40.0,
+      "p95": 61.0,
+      "same": 8.4
+     }
+    ],
+    "leader": {
+     "France": 73.6,
+     "Royaume-Uni": 26.2,
+     "Japon": 0.2
+    },
+    "rho": 0.9909,
+    "top10": 9.5,
+    "top10_min": 8,
+    "moy50": 2.62
+   }
+  },
+  "résultats ±5 %": {
+   "sport": {
+    "rows": [
+     {
+      "n": "États-Unis",
+      "base": 1,
+      "med": 1.0,
+      "p5": 1.0,
+      "p95": 2.0,
+      "same": 85.2
+     },
+     {
+      "n": "Chine",
+      "base": 2,
+      "med": 2.0,
+      "p5": 1.0,
+      "p95": 2.0,
+      "same": 85.2
+     },
+     {
+      "n": "France",
+      "base": 3,
+      "med": 3.0,
+      "p5": 3.0,
+      "p95": 3.0,
+      "same": 100.0
+     },
+     {
+      "n": "Royaume-Uni",
+      "base": 4,
+      "med": 4.0,
+      "p5": 4.0,
+      "p95": 4.0,
+      "same": 100.0
+     },
+     {
+      "n": "Japon",
+      "base": 5,
+      "med": 5.0,
+      "p5": 5.0,
+      "p95": 5.0,
+      "same": 100.0
+     },
+     {
+      "n": "Allemagne",
+      "base": 6,
+      "med": 6.0,
+      "p5": 6.0,
+      "p95": 6.0,
+      "same": 100.0
+     },
+     {
+      "n": "Italie",
+      "base": 7,
+      "med": 7.0,
+      "p5": 7.0,
+      "p95": 7.0,
+      "same": 100.0
+     },
+     {
+      "n": "Australie",
+      "base": 8,
+      "med": 8.0,
+      "p5": 8.0,
+      "p95": 8.0,
+      "same": 100.0
+     },
+     {
+      "n": "Espagne",
+      "base": 9,
+      "med": 9.0,
+      "p5": 9.0,
+      "p95": 9.0,
+      "same": 99.2
+     },
+     {
+      "n": "Corée du Sud",
+      "base": 10,
+      "med": 10.0,
+      "p5": 10.0,
+      "p95": 10.0,
+      "same": 99.0
+     },
+     {
+      "n": "Pays-Bas",
+      "base": 11,
+      "med": 11.0,
+      "p5": 11.0,
+      "p95": 11.0,
+      "same": 99.8
+     },
+     {
+      "n": "Canada",
+      "base": 12,
+      "med": 12.0,
+      "p5": 12.0,
+      "p95": 12.0,
+      "same": 100.0
+     },
+     {
+      "n": "Brésil",
+      "base": 13,
+      "med": 13.0,
+      "p5": 13.0,
+      "p95": 13.0,
+      "same": 100.0
+     },
+     {
+      "n": "Inde",
+      "base": 14,
+      "med": 14.0,
+      "p5": 14.0,
+      "p95": 15.0,
+      "same": 90.6
+     },
+     {
+      "n": "Russie",
+      "base": 15,
+      "med": 15.0,
+      "p5": 14.0,
+      "p95": 18.0,
+      "same": 45.6
+     },
+     {
+      "n": "Nouvelle-Zélande",
+      "base": 16,
+      "med": 16.0,
+      "p5": 15.0,
+      "p95": 18.0,
+      "same": 32.0
+     },
+     {
+      "n": "Suisse",
+      "base": 17,
+      "med": 17.0,
+      "p5": 15.0,
+      "p95": 18.0,
+      "same": 30.8
+     },
+     {
+      "n": "Suède",
+      "base": 18,
+      "med": 18.0,
+      "p5": 16.0,
+      "p95": 18.0,
+      "same": 60.6
+     },
+     {
+      "n": "Hongrie",
+      "base": 19,
+      "med": 19.0,
+      "p5": 19.0,
+      "p95": 19.0,
+      "same": 100.0
+     },
+     {
+      "n": "Ukraine",
+      "base": 20,
+      "med": 20.0,
+      "p5": 20.0,
+      "p95": 20.0,
+      "same": 100.0
+     },
+     {
+      "n": "Norvège",
+      "base": 21,
+      "med": 21.0,
+      "p5": 21.0,
+      "p95": 23.0,
+      "same": 60.8
+     },
+     {
+      "n": "Belgique",
+      "base": 22,
+      "med": 22.0,
+      "p5": 21.0,
+      "p95": 23.0,
+      "same": 51.4
+     },
+     {
+      "n": "Pologne",
+      "base": 23,
+      "med": 23.0,
+      "p5": 22.0,
+      "p95": 24.0,
+      "same": 62.0
+     },
+     {
+      "n": "Thaïlande",
+      "base": 24,
+      "med": 24.0,
+      "p5": 23.0,
+      "p95": 25.0,
+      "same": 57.2
+     },
+     {
+      "n": "Danemark",
+      "base": 25,
+      "med": 25.0,
+      "p5": 24.0,
+      "p95": 25.0,
+      "same": 70.6
+     },
+     {
+      "n": "Taipei chinois",
+      "base": 26,
+      "med": 26.0,
+      "p5": 26.0,
+      "p95": 27.0,
+      "same": 68.2
+     },
+     {
+      "n": "Égypte",
+      "base": 27,
+      "med": 27.0,
+      "p5": 26.0,
+      "p95": 27.0,
+      "same": 71.6
+     },
+     {
+      "n": "Argentine",
+      "base": 28,
+      "med": 28.0,
+      "p5": 28.0,
+      "p95": 28.0,
+      "same": 99.2
+     },
+     {
+      "n": "Ouzbékistan",
+      "base": 29,
+      "med": 29.0,
+      "p5": 29.0,
+      "p95": 29.0,
+      "same": 95.8
+     },
+     {
+      "n": "Tchéquie",
+      "base": 30,
+      "med": 31.0,
+      "p5": 30.0,
+      "p95": 32.0,
+      "same": 33.6
+     },
+     {
+      "n": "Turquie",
+      "base": 31,
+      "med": 31.0,
+      "p5": 30.0,
+      "p95": 32.0,
+      "same": 34.2
+     },
+     {
+      "n": "Iran",
+      "base": 32,
+      "med": 31.0,
+      "p5": 30.0,
+      "p95": 32.0,
+      "same": 34.0
+     },
+     {
+      "n": "Kazakhstan",
+      "base": 33,
+      "med": 33.0,
+      "p5": 32.0,
+      "p95": 34.0,
+      "same": 88.0
+     },
+     {
+      "n": "Autriche",
+      "base": 34,
+      "med": 34.0,
+      "p5": 34.0,
+      "p95": 35.0,
+      "same": 70.8
+     },
+     {
+      "n": "Slovénie",
+      "base": 35,
+      "med": 35.0,
+      "p5": 34.0,
+      "p95": 35.0,
+      "same": 75.2
+     },
+     {
+      "n": "Mexique",
+      "base": 36,
+      "med": 36.0,
+      "p5": 36.0,
+      "p95": 37.0,
+      "same": 84.8
+     },
+     {
+      "n": "Afrique du Sud",
+      "base": 37,
+      "med": 37.0,
+      "p5": 36.0,
+      "p95": 37.0,
+      "same": 84.6
+     },
+     {
+      "n": "Indonésie",
+      "base": 38,
+      "med": 38.0,
+      "p5": 38.0,
+      "p95": 38.0,
+      "same": 99.8
+     },
+     {
+      "n": "Viêt Nam",
+      "base": 39,
+      "med": 39.0,
+      "p5": 39.0,
+      "p95": 40.0,
+      "same": 92.8
+     },
+     {
+      "n": "Portugal",
+      "base": 40,
+      "med": 40.0,
+      "p5": 39.0,
+      "p95": 40.0,
+      "same": 89.8
+     },
+     {
+      "n": "Serbie",
+      "base": 41,
+      "med": 41.0,
+      "p5": 41.0,
+      "p95": 42.0,
+      "same": 73.2
+     },
+     {
+      "n": "Colombie",
+      "base": 42,
+      "med": 42.0,
+      "p5": 41.0,
+      "p95": 43.0,
+      "same": 68.8
+     },
+     {
+      "n": "Finlande",
+      "base": 43,
+      "med": 43.0,
+      "p5": 42.0,
+      "p95": 43.0,
+      "same": 88.8
+     },
+     {
+      "n": "Roumanie",
+      "base": 44,
+      "med": 44.0,
+      "p5": 44.0,
+      "p95": 45.0,
+      "same": 90.2
+     },
+     {
+      "n": "Azerbaïdjan",
+      "base": 45,
+      "med": 45.0,
+      "p5": 44.0,
+      "p95": 46.0,
+      "same": 61.6
+     },
+     {
+      "n": "Irlande",
+      "base": 46,
+      "med": 46.0,
+      "p5": 45.0,
+      "p95": 46.0,
+      "same": 66.4
+     },
+     {
+      "n": "Israël",
+      "base": 47,
+      "med": 47.0,
+      "p5": 47.0,
+      "p95": 49.0,
+      "same": 76.2
+     },
+     {
+      "n": "Géorgie",
+      "base": 48,
+      "med": 49.0,
+      "p5": 47.0,
+      "p95": 51.0,
+      "same": 37.8
+     },
+     {
+      "n": "Malaisie",
+      "base": 49,
+      "med": 50.0,
+      "p5": 47.0,
+      "p95": 52.0,
+      "same": 23.8
+     },
+     {
+      "n": "Tunisie",
+      "base": 50,
+      "med": 50.0,
+      "p5": 47.0,
+      "p95": 52.0,
+      "same": 22.2
+     }
+    ],
+    "leader": {
+     "États-Unis": 85.2,
+     "Chine": 14.8
+    },
+    "rho": 0.9997,
+    "top10": 10.0,
+    "top10_min": 9,
+    "moy50": 0.31
+   },
+   "pr": {
+    "rows": [
+     {
+      "n": "France",
+      "base": 1,
+      "med": 1.0,
+      "p5": 1.0,
+      "p95": 1.0,
+      "same": 100.0
+     },
+     {
+      "n": "Royaume-Uni",
+      "base": 2,
+      "med": 2.0,
+      "p5": 2.0,
+      "p95": 2.0,
+      "same": 100.0
+     },
+     {
+      "n": "États-Unis",
+      "base": 3,
+      "med": 3.0,
+      "p5": 3.0,
+      "p95": 4.0,
+      "same": 85.4
+     },
+     {
+      "n": "Japon",
+      "base": 4,
+      "med": 4.0,
+      "p5": 3.0,
+      "p95": 4.0,
+      "same": 85.2
+     },
+     {
+      "n": "Australie",
+      "base": 5,
+      "med": 5.0,
+      "p5": 5.0,
+      "p95": 5.0,
+      "same": 99.8
+     },
+     {
+      "n": "Italie",
+      "base": 6,
+      "med": 6.0,
+      "p5": 6.0,
+      "p95": 6.0,
+      "same": 100.0
+     },
+     {
+      "n": "Allemagne",
+      "base": 7,
+      "med": 7.0,
+      "p5": 7.0,
+      "p95": 7.0,
+      "same": 100.0
+     },
+     {
+      "n": "Espagne",
+      "base": 8,
+      "med": 8.0,
+      "p5": 8.0,
+      "p95": 8.0,
+      "same": 97.6
+     },
+     {
+      "n": "Pays-Bas",
+      "base": 9,
+      "med": 9.0,
+      "p5": 9.0,
+      "p95": 10.0,
+      "same": 78.4
+     },
+     {
+      "n": "Chine",
+      "base": 10,
+      "med": 10.0,
+      "p5": 9.0,
+      "p95": 10.0,
+      "same": 78.8
+     },
+     {
+      "n": "Corée du Sud",
+      "base": 11,
+      "med": 11.0,
+      "p5": 11.0,
+      "p95": 11.0,
+      "same": 100.0
+     },
+     {
+      "n": "Nouvelle-Zélande",
+      "base": 12,
+      "med": 12.0,
+      "p5": 12.0,
+      "p95": 13.0,
+      "same": 75.8
+     },
+     {
+      "n": "Canada",
+      "base": 13,
+      "med": 13.0,
+      "p5": 12.0,
+      "p95": 13.0,
+      "same": 75.8
+     },
+     {
+      "n": "Hongrie",
+      "base": 14,
+      "med": 14.0,
+      "p5": 14.0,
+      "p95": 15.0,
+      "same": 76.0
+     },
+     {
+      "n": "Suède",
+      "base": 15,
+      "med": 15.0,
+      "p5": 14.0,
+      "p95": 16.0,
+      "same": 47.0
+     },
+     {
+      "n": "Suisse",
+      "base": 16,
+      "med": 16.0,
+      "p5": 14.0,
+      "p95": 17.0,
+      "same": 44.2
+     },
+     {
+      "n": "Ukraine",
+      "base": 17,
+      "med": 17.0,
+      "p5": 16.0,
+      "p95": 17.0,
+      "same": 77.6
+     },
+     {
+      "n": "Brésil",
+      "base": 18,
+      "med": 18.0,
+      "p5": 18.0,
+      "p95": 18.0,
+      "same": 100.0
+     },
+     {
+      "n": "Belgique",
+      "base": 19,
+      "med": 19.0,
+      "p5": 19.0,
+      "p95": 20.0,
+      "same": 74.6
+     },
+     {
+      "n": "Norvège",
+      "base": 20,
+      "med": 20.0,
+      "p5": 19.0,
+      "p95": 21.0,
+      "same": 65.4
+     },
+     {
+      "n": "Russie",
+      "base": 21,
+      "med": 22.0,
+      "p5": 21.0,
+      "p95": 23.0,
+      "same": 39.6
+     },
+     {
+      "n": "Danemark",
+      "base": 22,
+      "med": 21.0,
+      "p5": 20.0,
+      "p95": 22.0,
+      "same": 38.2
+     },
+     {
+      "n": "Pologne",
+      "base": 23,
+      "med": 23.0,
+      "p5": 22.0,
+      "p95": 25.0,
+      "same": 47.8
+     },
+     {
+      "n": "Ouzbékistan",
+      "base": 24,
+      "med": 24.0,
+      "p5": 23.0,
+      "p95": 25.0,
+      "same": 56.4
+     },
+     {
+      "n": "Thaïlande",
+      "base": 25,
+      "med": 25.0,
+      "p5": 23.0,
+      "p95": 26.0,
+      "same": 54.2
+     },
+     {
+      "n": "Inde",
+      "base": 26,
+      "med": 26.0,
+      "p5": 25.0,
+      "p95": 26.0,
+      "same": 68.4
+     },
+     {
+      "n": "Slovénie",
+      "base": 27,
+      "med": 27.0,
+      "p5": 27.0,
+      "p95": 28.0,
+      "same": 90.6
+     },
+     {
+      "n": "Tchéquie",
+      "base": 28,
+      "med": 29.0,
+      "p5": 28.0,
+      "p95": 31.0,
+      "same": 34.2
+     },
+     {
+      "n": "Argentine",
+      "base": 29,
+      "med": 29.0,
+      "p5": 28.0,
+      "p95": 30.0,
+      "same": 38.4
+     },
+     {
+      "n": "Taipei chinois",
+      "base": 30,
+      "med": 29.0,
+      "p5": 28.0,
+      "p95": 31.0,
+      "same": 29.8
+     },
+     {
+      "n": "Égypte",
+      "base": 31,
+      "med": 31.0,
+      "p5": 29.0,
+      "p95": 32.0,
+      "same": 79.8
+     },
+     {
+      "n": "Kazakhstan",
+      "base": 32,
+      "med": 32.0,
+      "p5": 31.0,
+      "p95": 32.0,
+      "same": 93.6
+     },
+     {
+      "n": "Autriche",
+      "base": 33,
+      "med": 33.0,
+      "p5": 33.0,
+      "p95": 34.0,
+      "same": 58.4
+     },
+     {
+      "n": "Iran",
+      "base": 34,
+      "med": 34.0,
+      "p5": 33.0,
+      "p95": 35.0,
+      "same": 48.4
+     },
+     {
+      "n": "Serbie",
+      "base": 35,
+      "med": 35.0,
+      "p5": 34.0,
+      "p95": 35.0,
+      "same": 82.2
+     },
+     {
+      "n": "Afrique du Sud",
+      "base": 36,
+      "med": 36.0,
+      "p5": 36.0,
+      "p95": 37.0,
+      "same": 88.8
+     },
+     {
+      "n": "Turquie",
+      "base": 37,
+      "med": 37.0,
+      "p5": 36.0,
+      "p95": 37.0,
+      "same": 89.2
+     },
+     {
+      "n": "Portugal",
+      "base": 38,
+      "med": 38.0,
+      "p5": 38.0,
+      "p95": 38.0,
+      "same": 97.0
+     },
+     {
+      "n": "Géorgie",
+      "base": 39,
+      "med": 39.0,
+      "p5": 39.0,
+      "p95": 43.0,
+      "same": 58.6
+     },
+     {
+      "n": "Mexique",
+      "base": 40,
+      "med": 40.0,
+      "p5": 39.0,
+      "p95": 41.0,
+      "same": 53.8
+     },
+     {
+      "n": "Finlande",
+      "base": 41,
+      "med": 41.0,
+      "p5": 39.0,
+      "p95": 42.0,
+      "same": 44.2
+     },
+     {
+      "n": "Azerbaïdjan",
+      "base": 42,
+      "med": 42.0,
+      "p5": 39.0,
+      "p95": 44.0,
+      "same": 32.4
+     },
+     {
+      "n": "Viêt Nam",
+      "base": 43,
+      "med": 43.0,
+      "p5": 42.0,
+      "p95": 45.0,
+      "same": 51.0
+     },
+     {
+      "n": "Colombie",
+      "base": 44,
+      "med": 45.0,
+      "p5": 43.0,
+      "p95": 47.0,
+      "same": 28.6
+     },
+     {
+      "n": "Jamaïque",
+      "base": 45,
+      "med": 45.0,
+      "p5": 41.0,
+      "p95": 47.0,
+      "same": 16.6
+     },
+     {
+      "n": "Indonésie",
+      "base": 46,
+      "med": 46.0,
+      "p5": 44.0,
+      "p95": 47.0,
+      "same": 42.0
+     },
+     {
+      "n": "Tunisie",
+      "base": 47,
+      "med": 46.0,
+      "p5": 42.0,
+      "p95": 47.0,
+      "same": 41.2
+     },
+     {
+      "n": "Lettonie",
+      "base": 48,
+      "med": 48.0,
+      "p5": 48.0,
+      "p95": 49.0,
+      "same": 88.2
+     },
+     {
+      "n": "Bulgarie",
+      "base": 49,
+      "med": 49.0,
+      "p5": 48.0,
+      "p95": 50.0,
+      "same": 72.0
+     },
+     {
+      "n": "Arménie",
+      "base": 50,
+      "med": 50.0,
+      "p5": 49.0,
+      "p95": 53.0,
+      "same": 40.4
+     }
+    ],
+    "leader": {
+     "France": 100.0
+    },
+    "rho": 0.9996,
+    "top10": 10.0,
+    "top10_min": 10,
+    "moy50": 0.44
+   }
+  },
+  "résultats ±10 %": {
+   "sport": {
+    "rows": [
+     {
+      "n": "États-Unis",
+      "base": 1,
+      "med": 1.0,
+      "p5": 1.0,
+      "p95": 2.0,
+      "same": 73.0
+     },
+     {
+      "n": "Chine",
+      "base": 2,
+      "med": 2.0,
+      "p5": 1.0,
+      "p95": 2.0,
+      "same": 73.0
+     },
+     {
+      "n": "France",
+      "base": 3,
+      "med": 3.0,
+      "p5": 3.0,
+      "p95": 3.0,
+      "same": 98.8
+     },
+     {
+      "n": "Royaume-Uni",
+      "base": 4,
+      "med": 4.0,
+      "p5": 4.0,
+      "p95": 5.0,
+      "same": 92.0
+     },
+     {
+      "n": "Japon",
+      "base": 5,
+      "med": 5.0,
+      "p5": 4.0,
+      "p95": 5.0,
+      "same": 93.2
+     },
+     {
+      "n": "Allemagne",
+      "base": 6,
+      "med": 6.0,
+      "p5": 6.0,
+      "p95": 7.0,
+      "same": 91.4
+     },
+     {
+      "n": "Italie",
+      "base": 7,
+      "med": 7.0,
+      "p5": 6.0,
+      "p95": 7.0,
+      "same": 91.4
+     },
+     {
+      "n": "Australie",
+      "base": 8,
+      "med": 8.0,
+      "p5": 8.0,
+      "p95": 8.0,
+      "same": 100.0
+     },
+     {
+      "n": "Espagne",
+      "base": 9,
+      "med": 9.0,
+      "p5": 9.0,
+      "p95": 10.0,
+      "same": 89.8
+     },
+     {
+      "n": "Corée du Sud",
+      "base": 10,
+      "med": 10.0,
+      "p5": 9.0,
+      "p95": 11.0,
+      "same": 83.6
+     },
+     {
+      "n": "Pays-Bas",
+      "base": 11,
+      "med": 11.0,
+      "p5": 10.0,
+      "p95": 11.0,
+      "same": 93.0
+     },
+     {
+      "n": "Canada",
+      "base": 12,
+      "med": 12.0,
+      "p5": 12.0,
+      "p95": 12.0,
+      "same": 100.0
+     },
+     {
+      "n": "Brésil",
+      "base": 13,
+      "med": 13.0,
+      "p5": 13.0,
+      "p95": 13.0,
+      "same": 100.0
+     },
+     {
+      "n": "Inde",
+      "base": 14,
+      "med": 14.0,
+      "p5": 14.0,
+      "p95": 17.0,
+      "same": 62.0
+     },
+     {
+      "n": "Russie",
+      "base": 15,
+      "med": 16.0,
+      "p5": 14.0,
+      "p95": 18.0,
+      "same": 25.4
+     },
+     {
+      "n": "Nouvelle-Zélande",
+      "base": 16,
+      "med": 16.0,
+      "p5": 14.0,
+      "p95": 18.0,
+      "same": 17.2
+     },
+     {
+      "n": "Suisse",
+      "base": 17,
+      "med": 16.0,
+      "p5": 14.0,
+      "p95": 18.0,
+      "same": 25.0
+     },
+     {
+      "n": "Suède",
+      "base": 18,
+      "med": 17.0,
+      "p5": 15.0,
+      "p95": 18.0,
+      "same": 41.0
+     },
+     {
+      "n": "Hongrie",
+      "base": 19,
+      "med": 19.0,
+      "p5": 19.0,
+      "p95": 20.0,
+      "same": 89.6
+     },
+     {
+      "n": "Ukraine",
+      "base": 20,
+      "med": 20.0,
+      "p5": 19.0,
+      "p95": 20.0,
+      "same": 94.0
+     },
+     {
+      "n": "Norvège",
+      "base": 21,
+      "med": 22.0,
+      "p5": 21.0,
+      "p95": 24.0,
+      "same": 47.6
+     },
+     {
+      "n": "Belgique",
+      "base": 22,
+      "med": 22.0,
+      "p5": 21.0,
+      "p95": 24.0,
+      "same": 32.8
+     },
+     {
+      "n": "Pologne",
+      "base": 23,
+      "med": 23.0,
+      "p5": 21.0,
+      "p95": 25.0,
+      "same": 32.0
+     },
+     {
+      "n": "Thaïlande",
+      "base": 24,
+      "med": 24.0,
+      "p5": 22.0,
+      "p95": 26.0,
+      "same": 31.6
+     },
+     {
+      "n": "Danemark",
+      "base": 25,
+      "med": 25.0,
+      "p5": 22.0,
+      "p95": 26.0,
+      "same": 38.8
+     },
+     {
+      "n": "Taipei chinois",
+      "base": 26,
+      "med": 26.0,
+      "p5": 24.0,
+      "p95": 27.0,
+      "same": 49.0
+     },
+     {
+      "n": "Égypte",
+      "base": 27,
+      "med": 27.0,
+      "p5": 25.0,
+      "p95": 28.0,
+      "same": 57.0
+     },
+     {
+      "n": "Argentine",
+      "base": 28,
+      "med": 28.0,
+      "p5": 27.0,
+      "p95": 29.0,
+      "same": 79.8
+     },
+     {
+      "n": "Ouzbékistan",
+      "base": 29,
+      "med": 29.0,
+      "p5": 28.0,
+      "p95": 31.0,
+      "same": 59.6
+     },
+     {
+      "n": "Tchéquie",
+      "base": 30,
+      "med": 31.0,
+      "p5": 29.0,
+      "p95": 33.0,
+      "same": 29.0
+     },
+     {
+      "n": "Turquie",
+      "base": 31,
+      "med": 31.0,
+      "p5": 29.0,
+      "p95": 33.0,
+      "same": 27.4
+     },
+     {
+      "n": "Iran",
+      "base": 32,
+      "med": 31.0,
+      "p5": 29.0,
+      "p95": 33.0,
+      "same": 24.8
+     },
+     {
+      "n": "Kazakhstan",
+      "base": 33,
+      "med": 33.0,
+      "p5": 30.950000000000003,
+      "p95": 35.0,
+      "same": 42.4
+     },
+     {
+      "n": "Autriche",
+      "base": 34,
+      "med": 34.0,
+      "p5": 33.0,
+      "p95": 35.0,
+      "same": 46.8
+     },
+     {
+      "n": "Slovénie",
+      "base": 35,
+      "med": 35.0,
+      "p5": 33.0,
+      "p95": 36.0,
+      "same": 52.4
+     },
+     {
+      "n": "Mexique",
+      "base": 36,
+      "med": 36.0,
+      "p5": 35.95,
+      "p95": 37.0,
+      "same": 61.6
+     },
+     {
+      "n": "Afrique du Sud",
+      "base": 37,
+      "med": 37.0,
+      "p5": 36.0,
+      "p95": 38.0,
+      "same": 59.6
+     },
+     {
+      "n": "Indonésie",
+      "base": 38,
+      "med": 38.0,
+      "p5": 37.0,
+      "p95": 39.0,
+      "same": 85.4
+     },
+     {
+      "n": "Viêt Nam",
+      "base": 39,
+      "med": 39.0,
+      "p5": 38.0,
+      "p95": 40.0,
+      "same": 69.8
+     },
+     {
+      "n": "Portugal",
+      "base": 40,
+      "med": 40.0,
+      "p5": 39.0,
+      "p95": 41.0,
+      "same": 60.8
+     },
+     {
+      "n": "Serbie",
+      "base": 41,
+      "med": 41.0,
+      "p5": 40.0,
+      "p95": 43.0,
+      "same": 42.0
+     },
+     {
+      "n": "Colombie",
+      "base": 42,
+      "med": 42.0,
+      "p5": 41.0,
+      "p95": 43.0,
+      "same": 44.4
+     },
+     {
+      "n": "Finlande",
+      "base": 43,
+      "med": 43.0,
+      "p5": 41.0,
+      "p95": 43.0,
+      "same": 64.0
+     },
+     {
+      "n": "Roumanie",
+      "base": 44,
+      "med": 44.0,
+      "p5": 44.0,
+      "p95": 46.0,
+      "same": 68.2
+     },
+     {
+      "n": "Azerbaïdjan",
+      "base": 45,
+      "med": 45.0,
+      "p5": 44.0,
+      "p95": 47.0,
+      "same": 43.6
+     },
+     {
+      "n": "Irlande",
+      "base": 46,
+      "med": 46.0,
+      "p5": 44.0,
+      "p95": 47.0,
+      "same": 47.4
+     },
+     {
+      "n": "Israël",
+      "base": 47,
+      "med": 47.0,
+      "p5": 46.0,
+      "p95": 50.0,
+      "same": 42.2
+     },
+     {
+      "n": "Géorgie",
+      "base": 48,
+      "med": 49.0,
+      "p5": 47.0,
+      "p95": 53.0,
+      "same": 22.6
+     },
+     {
+      "n": "Malaisie",
+      "base": 49,
+      "med": 50.0,
+      "p5": 47.0,
+      "p95": 53.0,
+      "same": 20.2
+     },
+     {
+      "n": "Tunisie",
+      "base": 50,
+      "med": 50.0,
+      "p5": 47.0,
+      "p95": 54.0,
+      "same": 14.6
+     }
+    ],
+    "leader": {
+     "États-Unis": 73.0,
+     "Chine": 27.0
+    },
+    "rho": 0.9993,
+    "top10": 9.93,
+    "top10_min": 9,
+    "moy50": 0.61
+   },
+   "pr": {
+    "rows": [
+     {
+      "n": "France",
+      "base": 1,
+      "med": 1.0,
+      "p5": 1.0,
+      "p95": 1.0,
+      "same": 98.8
+     },
+     {
+      "n": "Royaume-Uni",
+      "base": 2,
+      "med": 2.0,
+      "p5": 2.0,
+      "p95": 2.0,
+      "same": 98.8
+     },
+     {
+      "n": "États-Unis",
+      "base": 3,
+      "med": 3.0,
+      "p5": 3.0,
+      "p95": 4.0,
+      "same": 72.6
+     },
+     {
+      "n": "Japon",
+      "base": 4,
+      "med": 4.0,
+      "p5": 3.0,
+      "p95": 4.0,
+      "same": 71.4
+     },
+     {
+      "n": "Australie",
+      "base": 5,
+      "med": 5.0,
+      "p5": 5.0,
+      "p95": 5.0,
+      "same": 96.4
+     },
+     {
+      "n": "Italie",
+      "base": 6,
+      "med": 6.0,
+      "p5": 6.0,
+      "p95": 6.0,
+      "same": 98.2
+     },
+     {
+      "n": "Allemagne",
+      "base": 7,
+      "med": 7.0,
+      "p5": 7.0,
+      "p95": 7.0,
+      "same": 100.0
+     },
+     {
+      "n": "Espagne",
+      "base": 8,
+      "med": 8.0,
+      "p5": 8.0,
+      "p95": 10.0,
+      "same": 73.2
+     },
+     {
+      "n": "Pays-Bas",
+      "base": 9,
+      "med": 9.0,
+      "p5": 8.0,
+      "p95": 10.0,
+      "same": 53.8
+     },
+     {
+      "n": "Chine",
+      "base": 10,
+      "med": 10.0,
+      "p5": 8.0,
+      "p95": 10.0,
+      "same": 57.6
+     },
+     {
+      "n": "Corée du Sud",
+      "base": 11,
+      "med": 11.0,
+      "p5": 10.0,
+      "p95": 11.0,
+      "same": 94.8
+     },
+     {
+      "n": "Nouvelle-Zélande",
+      "base": 12,
+      "med": 12.0,
+      "p5": 12.0,
+      "p95": 13.0,
+      "same": 73.8
+     },
+     {
+      "n": "Canada",
+      "base": 13,
+      "med": 13.0,
+      "p5": 12.0,
+      "p95": 13.0,
+      "same": 73.8
+     },
+     {
+      "n": "Hongrie",
+      "base": 14,
+      "med": 14.0,
+      "p5": 14.0,
+      "p95": 16.0,
+      "same": 53.2
+     },
+     {
+      "n": "Suède",
+      "base": 15,
+      "med": 15.0,
+      "p5": 14.0,
+      "p95": 17.0,
+      "same": 29.4
+     },
+     {
+      "n": "Suisse",
+      "base": 16,
+      "med": 16.0,
+      "p5": 14.0,
+      "p95": 17.0,
+      "same": 33.2
+     },
+     {
+      "n": "Ukraine",
+      "base": 17,
+      "med": 17.0,
+      "p5": 15.0,
+      "p95": 17.0,
+      "same": 62.0
+     },
+     {
+      "n": "Brésil",
+      "base": 18,
+      "med": 18.0,
+      "p5": 18.0,
+      "p95": 18.0,
+      "same": 99.8
+     },
+     {
+      "n": "Belgique",
+      "base": 19,
+      "med": 19.0,
+      "p5": 19.0,
+      "p95": 22.0,
+      "same": 53.8
+     },
+     {
+      "n": "Norvège",
+      "base": 20,
+      "med": 20.0,
+      "p5": 19.0,
+      "p95": 22.0,
+      "same": 37.4
+     },
+     {
+      "n": "Russie",
+      "base": 21,
+      "med": 22.0,
+      "p5": 20.0,
+      "p95": 24.0,
+      "same": 30.4
+     },
+     {
+      "n": "Danemark",
+      "base": 22,
+      "med": 21.0,
+      "p5": 19.0,
+      "p95": 24.0,
+      "same": 21.4
+     },
+     {
+      "n": "Pologne",
+      "base": 23,
+      "med": 23.0,
+      "p5": 21.0,
+      "p95": 26.0,
+      "same": 28.8
+     },
+     {
+      "n": "Ouzbékistan",
+      "base": 24,
+      "med": 24.0,
+      "p5": 22.0,
+      "p95": 27.0,
+      "same": 31.4
+     },
+     {
+      "n": "Thaïlande",
+      "base": 25,
+      "med": 24.0,
+      "p5": 22.0,
+      "p95": 27.0,
+      "same": 27.8
+     },
+     {
+      "n": "Inde",
+      "base": 26,
+      "med": 26.0,
+      "p5": 24.0,
+      "p95": 28.0,
+      "same": 41.8
+     },
+     {
+      "n": "Slovénie",
+      "base": 27,
+      "med": 27.0,
+      "p5": 25.0,
+      "p95": 29.0,
+      "same": 49.6
+     },
+     {
+      "n": "Tchéquie",
+      "base": 28,
+      "med": 29.0,
+      "p5": 27.0,
+      "p95": 32.0,
+      "same": 25.2
+     },
+     {
+      "n": "Argentine",
+      "base": 29,
+      "med": 29.0,
+      "p5": 27.0,
+      "p95": 31.0,
+      "same": 27.4
+     },
+     {
+      "n": "Taipei chinois",
+      "base": 30,
+      "med": 29.0,
+      "p5": 27.0,
+      "p95": 31.0,
+      "same": 25.6
+     },
+     {
+      "n": "Égypte",
+      "base": 31,
+      "med": 31.0,
+      "p5": 29.0,
+      "p95": 32.0,
+      "same": 52.2
+     },
+     {
+      "n": "Kazakhstan",
+      "base": 32,
+      "med": 32.0,
+      "p5": 29.0,
+      "p95": 33.0,
+      "same": 61.0
+     },
+     {
+      "n": "Autriche",
+      "base": 33,
+      "med": 34.0,
+      "p5": 33.0,
+      "p95": 35.0,
+      "same": 43.2
+     },
+     {
+      "n": "Iran",
+      "base": 34,
+      "med": 34.0,
+      "p5": 33.0,
+      "p95": 35.0,
+      "same": 35.4
+     },
+     {
+      "n": "Serbie",
+      "base": 35,
+      "med": 35.0,
+      "p5": 33.0,
+      "p95": 36.0,
+      "same": 54.6
+     },
+     {
+      "n": "Afrique du Sud",
+      "base": 36,
+      "med": 36.0,
+      "p5": 35.0,
+      "p95": 37.0,
+      "same": 63.2
+     },
+     {
+      "n": "Turquie",
+      "base": 37,
+      "med": 37.0,
+      "p5": 35.0,
+      "p95": 38.0,
+      "same": 65.8
+     },
+     {
+      "n": "Portugal",
+      "base": 38,
+      "med": 38.0,
+      "p5": 37.0,
+      "p95": 40.0,
+      "same": 70.2
+     },
+     {
+      "n": "Géorgie",
+      "base": 39,
+      "med": 40.0,
+      "p5": 38.0,
+      "p95": 46.0,
+      "same": 29.0
+     },
+     {
+      "n": "Mexique",
+      "base": 40,
+      "med": 40.0,
+      "p5": 39.0,
+      "p95": 42.0,
+      "same": 33.8
+     },
+     {
+      "n": "Finlande",
+      "base": 41,
+      "med": 41.0,
+      "p5": 39.0,
+      "p95": 44.0,
+      "same": 25.4
+     },
+     {
+      "n": "Azerbaïdjan",
+      "base": 42,
+      "med": 42.0,
+      "p5": 39.0,
+      "p95": 46.0,
+      "same": 16.0
+     },
+     {
+      "n": "Viêt Nam",
+      "base": 43,
+      "med": 43.0,
+      "p5": 41.0,
+      "p95": 46.0,
+      "same": 32.2
+     },
+     {
+      "n": "Colombie",
+      "base": 44,
+      "med": 45.0,
+      "p5": 42.0,
+      "p95": 47.0,
+      "same": 20.8
+     },
+     {
+      "n": "Jamaïque",
+      "base": 45,
+      "med": 45.0,
+      "p5": 39.0,
+      "p95": 48.0,
+      "same": 10.6
+     },
+     {
+      "n": "Indonésie",
+      "base": 46,
+      "med": 45.0,
+      "p5": 43.0,
+      "p95": 47.0,
+      "same": 35.2
+     },
+     {
+      "n": "Tunisie",
+      "base": 47,
+      "med": 46.0,
+      "p5": 40.0,
+      "p95": 48.0,
+      "same": 27.2
+     },
+     {
+      "n": "Lettonie",
+      "base": 48,
+      "med": 48.0,
+      "p5": 46.0,
+      "p95": 50.0,
+      "same": 52.2
+     },
+     {
+      "n": "Bulgarie",
+      "base": 49,
+      "med": 49.0,
+      "p5": 48.0,
+      "p95": 53.0,
+      "same": 38.4
+     },
+     {
+      "n": "Arménie",
+      "base": 50,
+      "med": 51.0,
+      "p5": 48.0,
+      "p95": 54.0,
+      "same": 23.6
+     }
+    ],
+    "leader": {
+     "France": 98.8,
+     "Royaume-Uni": 1.2
+    },
+    "rho": 0.9989,
+    "top10": 9.95,
+    "top10_min": 9,
+    "moy50": 0.8
+   }
+  },
+  "résultats ±25 %": {
+   "sport": {
+    "rows": [
+     {
+      "n": "États-Unis",
+      "base": 1,
+      "med": 1.0,
+      "p5": 1.0,
+      "p95": 2.0,
+      "same": 59.8
+     },
+     {
+      "n": "Chine",
+      "base": 2,
+      "med": 2.0,
+      "p5": 1.0,
+      "p95": 2.0,
+      "same": 59.8
+     },
+     {
+      "n": "France",
+      "base": 3,
+      "med": 3.0,
+      "p5": 3.0,
+      "p95": 4.0,
+      "same": 82.6
+     },
+     {
+      "n": "Royaume-Uni",
+      "base": 4,
+      "med": 4.0,
+      "p5": 3.0,
+      "p95": 5.0,
+      "same": 60.4
+     },
+     {
+      "n": "Japon",
+      "base": 5,
+      "med": 5.0,
+      "p5": 4.0,
+      "p95": 5.0,
+      "same": 71.0
+     },
+     {
+      "n": "Allemagne",
+      "base": 6,
+      "med": 6.0,
+      "p5": 6.0,
+      "p95": 7.0,
+      "same": 69.4
+     },
+     {
+      "n": "Italie",
+      "base": 7,
+      "med": 7.0,
+      "p5": 6.0,
+      "p95": 8.0,
+      "same": 64.6
+     },
+     {
+      "n": "Australie",
+      "base": 8,
+      "med": 8.0,
+      "p5": 7.0,
+      "p95": 8.0,
+      "same": 89.6
+     },
+     {
+      "n": "Espagne",
+      "base": 9,
+      "med": 9.0,
+      "p5": 9.0,
+      "p95": 11.0,
+      "same": 61.8
+     },
+     {
+      "n": "Corée du Sud",
+      "base": 10,
+      "med": 10.0,
+      "p5": 9.0,
+      "p95": 11.0,
+      "same": 44.4
+     },
+     {
+      "n": "Pays-Bas",
+      "base": 11,
+      "med": 11.0,
+      "p5": 9.0,
+      "p95": 11.0,
+      "same": 64.8
+     },
+     {
+      "n": "Canada",
+      "base": 12,
+      "med": 12.0,
+      "p5": 12.0,
+      "p95": 12.0,
+      "same": 98.4
+     },
+     {
+      "n": "Brésil",
+      "base": 13,
+      "med": 13.0,
+      "p5": 13.0,
+      "p95": 14.0,
+      "same": 83.4
+     },
+     {
+      "n": "Inde",
+      "base": 14,
+      "med": 15.0,
+      "p5": 13.0,
+      "p95": 19.0,
+      "same": 31.4
+     },
+     {
+      "n": "Russie",
+      "base": 15,
+      "med": 16.0,
+      "p5": 14.0,
+      "p95": 19.0,
+      "same": 20.4
+     },
+     {
+      "n": "Nouvelle-Zélande",
+      "base": 16,
+      "med": 16.0,
+      "p5": 14.0,
+      "p95": 19.0,
+      "same": 18.4
+     },
+     {
+      "n": "Suisse",
+      "base": 17,
+      "med": 16.0,
+      "p5": 14.0,
+      "p95": 19.0,
+      "same": 19.0
+     },
+     {
+      "n": "Suède",
+      "base": 18,
+      "med": 17.0,
+      "p5": 14.0,
+      "p95": 19.0,
+      "same": 19.0
+     },
+     {
+      "n": "Hongrie",
+      "base": 19,
+      "med": 19.0,
+      "p5": 16.0,
+      "p95": 21.0,
+      "same": 36.8
+     },
+     {
+      "n": "Ukraine",
+      "base": 20,
+      "med": 20.0,
+      "p5": 17.950000000000003,
+      "p95": 22.0,
+      "same": 49.6
+     },
+     {
+      "n": "Norvège",
+      "base": 21,
+      "med": 22.5,
+      "p5": 20.0,
+      "p95": 26.0,
+      "same": 22.8
+     },
+     {
+      "n": "Belgique",
+      "base": 22,
+      "med": 22.0,
+      "p5": 20.0,
+      "p95": 26.0,
+      "same": 21.2
+     },
+     {
+      "n": "Pologne",
+      "base": 23,
+      "med": 23.0,
+      "p5": 21.0,
+      "p95": 27.0,
+      "same": 20.8
+     },
+     {
+      "n": "Thaïlande",
+      "base": 24,
+      "med": 24.0,
+      "p5": 21.0,
+      "p95": 27.049999999999955,
+      "same": 18.4
+     },
+     {
+      "n": "Danemark",
+      "base": 25,
+      "med": 24.0,
+      "p5": 21.0,
+      "p95": 28.0,
+      "same": 16.2
+     },
+     {
+      "n": "Taipei chinois",
+      "base": 26,
+      "med": 26.0,
+      "p5": 22.0,
+      "p95": 29.0,
+      "same": 20.6
+     },
+     {
+      "n": "Égypte",
+      "base": 27,
+      "med": 26.0,
+      "p5": 22.0,
+      "p95": 29.049999999999955,
+      "same": 22.8
+     },
+     {
+      "n": "Argentine",
+      "base": 28,
+      "med": 28.0,
+      "p5": 25.0,
+      "p95": 32.0,
+      "same": 25.2
+     },
+     {
+      "n": "Ouzbékistan",
+      "base": 29,
+      "med": 30.0,
+      "p5": 27.0,
+      "p95": 34.0,
+      "same": 21.2
+     },
+     {
+      "n": "Tchéquie",
+      "base": 30,
+      "med": 31.0,
+      "p5": 28.0,
+      "p95": 35.0,
+      "same": 13.2
+     },
+     {
+      "n": "Turquie",
+      "base": 31,
+      "med": 31.0,
+      "p5": 28.0,
+      "p95": 35.0,
+      "same": 21.6
+     },
+     {
+      "n": "Iran",
+      "base": 32,
+      "med": 31.0,
+      "p5": 27.0,
+      "p95": 35.0,
+      "same": 11.0
+     },
+     {
+      "n": "Kazakhstan",
+      "base": 33,
+      "med": 33.0,
+      "p5": 29.0,
+      "p95": 37.0,
+      "same": 15.0
+     },
+     {
+      "n": "Autriche",
+      "base": 34,
+      "med": 34.0,
+      "p5": 30.0,
+      "p95": 37.0,
+      "same": 21.4
+     },
+     {
+      "n": "Slovénie",
+      "base": 35,
+      "med": 34.0,
+      "p5": 30.0,
+      "p95": 37.0,
+      "same": 17.2
+     },
+     {
+      "n": "Mexique",
+      "base": 36,
+      "med": 36.0,
+      "p5": 33.0,
+      "p95": 38.0,
+      "same": 25.4
+     },
+     {
+      "n": "Afrique du Sud",
+      "base": 37,
+      "med": 37.0,
+      "p5": 32.0,
+      "p95": 39.0,
+      "same": 28.2
+     },
+     {
+      "n": "Indonésie",
+      "base": 38,
+      "med": 38.0,
+      "p5": 36.0,
+      "p95": 41.0,
+      "same": 29.0
+     },
+     {
+      "n": "Viêt Nam",
+      "base": 39,
+      "med": 39.0,
+      "p5": 37.0,
+      "p95": 42.0,
+      "same": 28.6
+     },
+     {
+      "n": "Portugal",
+      "base": 40,
+      "med": 40.0,
+      "p5": 38.0,
+      "p95": 43.0,
+      "same": 22.2
+     },
+     {
+      "n": "Serbie",
+      "base": 41,
+      "med": 41.5,
+      "p5": 38.0,
+      "p95": 44.0,
+      "same": 19.2
+     },
+     {
+      "n": "Colombie",
+      "base": 42,
+      "med": 42.0,
+      "p5": 39.0,
+      "p95": 44.0,
+      "same": 24.6
+     },
+     {
+      "n": "Finlande",
+      "base": 43,
+      "med": 42.0,
+      "p5": 40.0,
+      "p95": 45.0,
+      "same": 26.6
+     },
+     {
+      "n": "Roumanie",
+      "base": 44,
+      "med": 45.0,
+      "p5": 42.0,
+      "p95": 50.0,
+      "same": 19.6
+     },
+     {
+      "n": "Azerbaïdjan",
+      "base": 45,
+      "med": 46.0,
+      "p5": 43.0,
+      "p95": 51.0,
+      "same": 19.6
+     },
+     {
+      "n": "Irlande",
+      "base": 46,
+      "med": 46.0,
+      "p5": 43.0,
+      "p95": 52.0,
+      "same": 12.8
+     },
+     {
+      "n": "Israël",
+      "base": 47,
+      "med": 48.0,
+      "p5": 44.0,
+      "p95": 55.0,
+      "same": 11.8
+     },
+     {
+      "n": "Géorgie",
+      "base": 48,
+      "med": 50.0,
+      "p5": 45.0,
+      "p95": 55.049999999999955,
+      "same": 9.6
+     },
+     {
+      "n": "Malaisie",
+      "base": 49,
+      "med": 50.0,
+      "p5": 45.0,
+      "p95": 56.049999999999955,
+      "same": 8.4
+     },
+     {
+      "n": "Tunisie",
+      "base": 50,
+      "med": 50.0,
+      "p5": 44.0,
+      "p95": 57.0,
+      "same": 9.0
+     }
+    ],
+    "leader": {
+     "États-Unis": 59.8,
+     "Chine": 40.2
+    },
+    "rho": 0.9968,
+    "top10": 9.65,
+    "top10_min": 9,
+    "moy50": 1.39
+   },
+   "pr": {
+    "rows": [
+     {
+      "n": "France",
+      "base": 1,
+      "med": 1.0,
+      "p5": 1.0,
+      "p95": 2.0,
+      "same": 85.2
+     },
+     {
+      "n": "Royaume-Uni",
+      "base": 2,
+      "med": 2.0,
+      "p5": 1.0,
+      "p95": 3.0,
+      "same": 76.6
+     },
+     {
+      "n": "États-Unis",
+      "base": 3,
+      "med": 3.0,
+      "p5": 3.0,
+      "p95": 5.0,
+      "same": 48.2
+     },
+     {
+      "n": "Japon",
+      "base": 4,
+      "med": 4.0,
+      "p5": 2.0,
+      "p95": 6.0,
+      "same": 38.0
+     },
+     {
+      "n": "Australie",
+      "base": 5,
+      "med": 5.0,
+      "p5": 3.0,
+      "p95": 6.0,
+      "same": 51.6
+     },
+     {
+      "n": "Italie",
+      "base": 6,
+      "med": 6.0,
+      "p5": 4.0,
+      "p95": 7.0,
+      "same": 62.8
+     },
+     {
+      "n": "Allemagne",
+      "base": 7,
+      "med": 7.0,
+      "p5": 6.0,
+      "p95": 8.0,
+      "same": 84.2
+     },
+     {
+      "n": "Espagne",
+      "base": 8,
+      "med": 9.0,
+      "p5": 8.0,
+      "p95": 11.0,
+      "same": 36.8
+     },
+     {
+      "n": "Pays-Bas",
+      "base": 9,
+      "med": 9.0,
+      "p5": 8.0,
+      "p95": 11.0,
+      "same": 29.0
+     },
+     {
+      "n": "Chine",
+      "base": 10,
+      "med": 10.0,
+      "p5": 8.0,
+      "p95": 11.0,
+      "same": 43.2
+     },
+     {
+      "n": "Corée du Sud",
+      "base": 11,
+      "med": 11.0,
+      "p5": 8.0,
+      "p95": 12.0,
+      "same": 62.8
+     },
+     {
+      "n": "Nouvelle-Zélande",
+      "base": 12,
+      "med": 12.0,
+      "p5": 11.0,
+      "p95": 14.0,
+      "same": 55.4
+     },
+     {
+      "n": "Canada",
+      "base": 13,
+      "med": 13.0,
+      "p5": 12.0,
+      "p95": 14.0,
+      "same": 62.4
+     },
+     {
+      "n": "Hongrie",
+      "base": 14,
+      "med": 15.0,
+      "p5": 13.0,
+      "p95": 17.0,
+      "same": 34.4
+     },
+     {
+      "n": "Suède",
+      "base": 15,
+      "med": 15.0,
+      "p5": 14.0,
+      "p95": 17.0,
+      "same": 29.8
+     },
+     {
+      "n": "Suisse",
+      "base": 16,
+      "med": 16.0,
+      "p5": 14.0,
+      "p95": 18.0,
+      "same": 24.4
+     },
+     {
+      "n": "Ukraine",
+      "base": 17,
+      "med": 17.0,
+      "p5": 14.0,
+      "p95": 18.0,
+      "same": 39.0
+     },
+     {
+      "n": "Brésil",
+      "base": 18,
+      "med": 18.0,
+      "p5": 17.0,
+      "p95": 19.0,
+      "same": 66.0
+     },
+     {
+      "n": "Belgique",
+      "base": 19,
+      "med": 20.0,
+      "p5": 18.0,
+      "p95": 25.0,
+      "same": 27.2
+     },
+     {
+      "n": "Norvège",
+      "base": 20,
+      "med": 21.0,
+      "p5": 19.0,
+      "p95": 26.0,
+      "same": 20.6
+     },
+     {
+      "n": "Russie",
+      "base": 21,
+      "med": 22.0,
+      "p5": 19.0,
+      "p95": 26.0,
+      "same": 20.6
+     },
+     {
+      "n": "Danemark",
+      "base": 22,
+      "med": 21.0,
+      "p5": 18.0,
+      "p95": 27.0,
+      "same": 11.4
+     },
+     {
+      "n": "Pologne",
+      "base": 23,
+      "med": 24.0,
+      "p5": 20.0,
+      "p95": 29.0,
+      "same": 14.8
+     },
+     {
+      "n": "Ouzbékistan",
+      "base": 24,
+      "med": 24.0,
+      "p5": 20.0,
+      "p95": 30.0,
+      "same": 10.6
+     },
+     {
+      "n": "Thaïlande",
+      "base": 25,
+      "med": 24.0,
+      "p5": 20.0,
+      "p95": 30.0,
+      "same": 12.6
+     },
+     {
+      "n": "Inde",
+      "base": 26,
+      "med": 27.0,
+      "p5": 24.0,
+      "p95": 31.0,
+      "same": 20.6
+     },
+     {
+      "n": "Slovénie",
+      "base": 27,
+      "med": 26.0,
+      "p5": 21.0,
+      "p95": 30.0,
+      "same": 14.8
+     },
+     {
+      "n": "Tchéquie",
+      "base": 28,
+      "med": 29.0,
+      "p5": 24.0,
+      "p95": 33.0,
+      "same": 11.4
+     },
+     {
+      "n": "Argentine",
+      "base": 29,
+      "med": 29.0,
+      "p5": 23.0,
+      "p95": 33.0,
+      "same": 14.6
+     },
+     {
+      "n": "Taipei chinois",
+      "base": 30,
+      "med": 29.0,
+      "p5": 23.0,
+      "p95": 32.0,
+      "same": 14.0
+     },
+     {
+      "n": "Égypte",
+      "base": 31,
+      "med": 30.0,
+      "p5": 26.0,
+      "p95": 33.0,
+      "same": 23.8
+     },
+     {
+      "n": "Kazakhstan",
+      "base": 32,
+      "med": 31.0,
+      "p5": 25.0,
+      "p95": 35.0,
+      "same": 19.0
+     },
+     {
+      "n": "Autriche",
+      "base": 33,
+      "med": 34.0,
+      "p5": 30.0,
+      "p95": 36.0,
+      "same": 26.6
+     },
+     {
+      "n": "Iran",
+      "base": 34,
+      "med": 34.0,
+      "p5": 30.0,
+      "p95": 37.0,
+      "same": 21.4
+     },
+     {
+      "n": "Serbie",
+      "base": 35,
+      "med": 35.0,
+      "p5": 31.0,
+      "p95": 40.0,
+      "same": 20.4
+     },
+     {
+      "n": "Afrique du Sud",
+      "base": 36,
+      "med": 36.0,
+      "p5": 33.0,
+      "p95": 39.0,
+      "same": 26.0
+     },
+     {
+      "n": "Turquie",
+      "base": 37,
+      "med": 37.0,
+      "p5": 34.0,
+      "p95": 41.0,
+      "same": 24.2
+     },
+     {
+      "n": "Portugal",
+      "base": 38,
+      "med": 39.0,
+      "p5": 35.0,
+      "p95": 45.0,
+      "same": 17.8
+     },
+     {
+      "n": "Géorgie",
+      "base": 39,
+      "med": 42.0,
+      "p5": 36.0,
+      "p95": 49.0,
+      "same": 9.0
+     },
+     {
+      "n": "Mexique",
+      "base": 40,
+      "med": 41.0,
+      "p5": 38.0,
+      "p95": 45.0,
+      "same": 17.0
+     },
+     {
+      "n": "Finlande",
+      "base": 41,
+      "med": 42.0,
+      "p5": 38.0,
+      "p95": 47.0,
+      "same": 14.2
+     },
+     {
+      "n": "Azerbaïdjan",
+      "base": 42,
+      "med": 42.0,
+      "p5": 37.0,
+      "p95": 49.0,
+      "same": 8.4
+     },
+     {
+      "n": "Viêt Nam",
+      "base": 43,
+      "med": 43.0,
+      "p5": 39.0,
+      "p95": 46.0,
+      "same": 16.2
+     },
+     {
+      "n": "Colombie",
+      "base": 44,
+      "med": 44.0,
+      "p5": 40.0,
+      "p95": 48.0,
+      "same": 13.6
+     },
+     {
+      "n": "Jamaïque",
+      "base": 45,
+      "med": 45.5,
+      "p5": 37.0,
+      "p95": 54.0,
+      "same": 5.4
+     },
+     {
+      "n": "Indonésie",
+      "base": 46,
+      "med": 45.0,
+      "p5": 40.0,
+      "p95": 49.0,
+      "same": 15.4
+     },
+     {
+      "n": "Tunisie",
+      "base": 47,
+      "med": 45.0,
+      "p5": 38.0,
+      "p95": 52.0,
+      "same": 10.6
+     },
+     {
+      "n": "Lettonie",
+      "base": 48,
+      "med": 48.0,
+      "p5": 38.0,
+      "p95": 55.0,
+      "same": 11.0
+     },
+     {
+      "n": "Bulgarie",
+      "base": 49,
+      "med": 50.0,
+      "p5": 45.0,
+      "p95": 57.0,
+      "same": 14.4
+     },
+     {
+      "n": "Arménie",
+      "base": 50,
+      "med": 51.0,
+      "p5": 45.0,
+      "p95": 58.0,
+      "same": 12.2
+     }
+    ],
+    "leader": {
+     "France": 85.2,
+     "Royaume-Uni": 14.8
+    },
+    "rho": 0.9954,
+    "top10": 9.69,
+    "top10_min": 8,
+    "moy50": 1.75
+   }
+  },
+  "poids ±10 % et résultats ±10 %": {
+   "sport": {
+    "rows": [
+     {
+      "n": "États-Unis",
+      "base": 1,
+      "med": 1.0,
+      "p5": 1.0,
+      "p95": 2.0,
+      "same": 61.4
+     },
+     {
+      "n": "Chine",
+      "base": 2,
+      "med": 2.0,
+      "p5": 1.0,
+      "p95": 2.0,
+      "same": 61.4
+     },
+     {
+      "n": "France",
+      "base": 3,
+      "med": 3.0,
+      "p5": 3.0,
+      "p95": 3.0,
+      "same": 96.8
+     },
+     {
+      "n": "Royaume-Uni",
+      "base": 4,
+      "med": 4.0,
+      "p5": 4.0,
+      "p95": 5.0,
+      "same": 83.6
+     },
+     {
+      "n": "Japon",
+      "base": 5,
+      "med": 5.0,
+      "p5": 4.0,
+      "p95": 5.0,
+      "same": 86.8
+     },
+     {
+      "n": "Allemagne",
+      "base": 6,
+      "med": 6.0,
+      "p5": 6.0,
+      "p95": 7.0,
+      "same": 86.6
+     },
+     {
+      "n": "Italie",
+      "base": 7,
+      "med": 7.0,
+      "p5": 6.0,
+      "p95": 7.0,
+      "same": 85.8
+     },
+     {
+      "n": "Australie",
+      "base": 8,
+      "med": 8.0,
+      "p5": 8.0,
+      "p95": 8.0,
+      "same": 99.2
+     },
+     {
+      "n": "Espagne",
+      "base": 9,
+      "med": 9.0,
+      "p5": 9.0,
+      "p95": 10.0,
+      "same": 78.4
+     },
+     {
+      "n": "Corée du Sud",
+      "base": 10,
+      "med": 10.0,
+      "p5": 9.0,
+      "p95": 11.0,
+      "same": 64.6
+     },
+     {
+      "n": "Pays-Bas",
+      "base": 11,
+      "med": 11.0,
+      "p5": 10.0,
+      "p95": 11.0,
+      "same": 82.8
+     },
+     {
+      "n": "Canada",
+      "base": 12,
+      "med": 12.0,
+      "p5": 12.0,
+      "p95": 12.0,
+      "same": 100.0
+     },
+     {
+      "n": "Brésil",
+      "base": 13,
+      "med": 13.0,
+      "p5": 13.0,
+      "p95": 13.0,
+      "same": 98.2
+     },
+     {
+      "n": "Inde",
+      "base": 14,
+      "med": 15.0,
+      "p5": 14.0,
+      "p95": 18.0,
+      "same": 46.2
+     },
+     {
+      "n": "Russie",
+      "base": 15,
+      "med": 16.0,
+      "p5": 14.0,
+      "p95": 18.0,
+      "same": 23.4
+     },
+     {
+      "n": "Nouvelle-Zélande",
+      "base": 16,
+      "med": 16.0,
+      "p5": 14.0,
+      "p95": 18.0,
+      "same": 19.2
+     },
+     {
+      "n": "Suisse",
+      "base": 17,
+      "med": 16.0,
+      "p5": 14.0,
+      "p95": 18.0,
+      "same": 24.4
+     },
+     {
+      "n": "Suède",
+      "base": 18,
+      "med": 17.0,
+      "p5": 14.0,
+      "p95": 19.0,
+      "same": 29.0
+     },
+     {
+      "n": "Hongrie",
+      "base": 19,
+      "med": 19.0,
+      "p5": 17.950000000000003,
+      "p95": 20.0,
+      "same": 71.4
+     },
+     {
+      "n": "Ukraine",
+      "base": 20,
+      "med": 20.0,
+      "p5": 19.0,
+      "p95": 20.0,
+      "same": 87.8
+     },
+     {
+      "n": "Norvège",
+      "base": 21,
+      "med": 22.0,
+      "p5": 21.0,
+      "p95": 25.0,
+      "same": 43.0
+     },
+     {
+      "n": "Belgique",
+      "base": 22,
+      "med": 22.0,
+      "p5": 21.0,
+      "p95": 25.0,
+      "same": 27.4
+     },
+     {
+      "n": "Pologne",
+      "base": 23,
+      "med": 23.0,
+      "p5": 21.0,
+      "p95": 26.0,
+      "same": 26.6
+     },
+     {
+      "n": "Thaïlande",
+      "base": 24,
+      "med": 24.0,
+      "p5": 21.0,
+      "p95": 26.0,
+      "same": 25.2
+     },
+     {
+      "n": "Danemark",
+      "base": 25,
+      "med": 25.0,
+      "p5": 22.0,
+      "p95": 27.0,
+      "same": 29.6
+     },
+     {
+      "n": "Taipei chinois",
+      "base": 26,
+      "med": 26.0,
+      "p5": 24.0,
+      "p95": 28.0,
+      "same": 35.0
+     },
+     {
+      "n": "Égypte",
+      "base": 27,
+      "med": 27.0,
+      "p5": 23.950000000000003,
+      "p95": 28.0,
+      "same": 42.2
+     },
+     {
+      "n": "Argentine",
+      "base": 28,
+      "med": 28.0,
+      "p5": 26.950000000000003,
+      "p95": 30.0,
+      "same": 58.0
+     },
+     {
+      "n": "Ouzbékistan",
+      "base": 29,
+      "med": 29.0,
+      "p5": 28.0,
+      "p95": 32.0,
+      "same": 42.2
+     },
+     {
+      "n": "Tchéquie",
+      "base": 30,
+      "med": 31.0,
+      "p5": 29.0,
+      "p95": 33.0,
+      "same": 21.4
+     },
+     {
+      "n": "Turquie",
+      "base": 31,
+      "med": 31.0,
+      "p5": 29.0,
+      "p95": 33.0,
+      "same": 28.2
+     },
+     {
+      "n": "Iran",
+      "base": 32,
+      "med": 31.0,
+      "p5": 29.0,
+      "p95": 33.049999999999955,
+      "same": 22.2
+     },
+     {
+      "n": "Kazakhstan",
+      "base": 33,
+      "med": 33.0,
+      "p5": 30.0,
+      "p95": 35.0,
+      "same": 28.4
+     },
+     {
+      "n": "Autriche",
+      "base": 34,
+      "med": 34.0,
+      "p5": 32.0,
+      "p95": 36.0,
+      "same": 37.8
+     },
+     {
+      "n": "Slovénie",
+      "base": 35,
+      "med": 35.0,
+      "p5": 32.0,
+      "p95": 36.0,
+      "same": 36.2
+     },
+     {
+      "n": "Mexique",
+      "base": 36,
+      "med": 36.0,
+      "p5": 35.0,
+      "p95": 37.0,
+      "same": 47.8
+     },
+     {
+      "n": "Afrique du Sud",
+      "base": 37,
+      "med": 37.0,
+      "p5": 34.0,
+      "p95": 38.0,
+      "same": 41.4
+     },
+     {
+      "n": "Indonésie",
+      "base": 38,
+      "med": 38.0,
+      "p5": 37.0,
+      "p95": 40.0,
+      "same": 62.0
+     },
+     {
+      "n": "Viêt Nam",
+      "base": 39,
+      "med": 39.0,
+      "p5": 38.0,
+      "p95": 41.0,
+      "same": 49.4
+     },
+     {
+      "n": "Portugal",
+      "base": 40,
+      "med": 40.0,
+      "p5": 38.0,
+      "p95": 42.0,
+      "same": 44.8
+     },
+     {
+      "n": "Serbie",
+      "base": 41,
+      "med": 41.0,
+      "p5": 39.0,
+      "p95": 43.0,
+      "same": 29.6
+     },
+     {
+      "n": "Colombie",
+      "base": 42,
+      "med": 42.0,
+      "p5": 40.0,
+      "p95": 43.0,
+      "same": 36.8
+     },
+     {
+      "n": "Finlande",
+      "base": 43,
+      "med": 43.0,
+      "p5": 41.0,
+      "p95": 43.0,
+      "same": 50.8
+     },
+     {
+      "n": "Roumanie",
+      "base": 44,
+      "med": 44.0,
+      "p5": 44.0,
+      "p95": 47.0,
+      "same": 56.4
+     },
+     {
+      "n": "Azerbaïdjan",
+      "base": 45,
+      "med": 45.0,
+      "p5": 44.0,
+      "p95": 48.0,
+      "same": 30.2
+     },
+     {
+      "n": "Irlande",
+      "base": 46,
+      "med": 46.0,
+      "p5": 44.0,
+      "p95": 48.049999999999955,
+      "same": 28.0
+     },
+     {
+      "n": "Israël",
+      "base": 47,
+      "med": 48.0,
+      "p5": 45.0,
+      "p95": 52.0,
+      "same": 22.6
+     },
+     {
+      "n": "Géorgie",
+      "base": 48,
+      "med": 49.0,
+      "p5": 46.0,
+      "p95": 54.0,
+      "same": 15.2
+     },
+     {
+      "n": "Malaisie",
+      "base": 49,
+      "med": 50.0,
+      "p5": 46.0,
+      "p95": 55.0,
+      "same": 12.4
+     },
+     {
+      "n": "Tunisie",
+      "base": 50,
+      "med": 50.0,
+      "p5": 46.0,
+      "p95": 55.0,
+      "same": 11.2
+     }
+    ],
+    "leader": {
+     "États-Unis": 61.4,
+     "Chine": 38.6
+    },
+    "rho": 0.9988,
+    "top10": 9.83,
+    "top10_min": 9,
+    "moy50": 0.85
+   },
+   "pr": {
+    "rows": [
+     {
+      "n": "France",
+      "base": 1,
+      "med": 1.0,
+      "p5": 1.0,
+      "p95": 1.0,
+      "same": 96.8
+     },
+     {
+      "n": "Royaume-Uni",
+      "base": 2,
+      "med": 2.0,
+      "p5": 2.0,
+      "p95": 2.0,
+      "same": 95.8
+     },
+     {
+      "n": "États-Unis",
+      "base": 3,
+      "med": 3.0,
+      "p5": 3.0,
+      "p95": 4.0,
+      "same": 64.4
+     },
+     {
+      "n": "Japon",
+      "base": 4,
+      "med": 4.0,
+      "p5": 3.0,
+      "p95": 5.0,
+      "same": 60.0
+     },
+     {
+      "n": "Australie",
+      "base": 5,
+      "med": 5.0,
+      "p5": 4.0,
+      "p95": 6.0,
+      "same": 85.0
+     },
+     {
+      "n": "Italie",
+      "base": 6,
+      "med": 6.0,
+      "p5": 5.0,
+      "p95": 6.0,
+      "same": 89.6
+     },
+     {
+      "n": "Allemagne",
+      "base": 7,
+      "med": 7.0,
+      "p5": 7.0,
+      "p95": 7.0,
+      "same": 99.2
+     },
+     {
+      "n": "Espagne",
+      "base": 8,
+      "med": 8.0,
+      "p5": 8.0,
+      "p95": 10.0,
+      "same": 55.0
+     },
+     {
+      "n": "Pays-Bas",
+      "base": 9,
+      "med": 9.0,
+      "p5": 8.0,
+      "p95": 10.0,
+      "same": 38.8
+     },
+     {
+      "n": "Chine",
+      "base": 10,
+      "med": 10.0,
+      "p5": 8.0,
+      "p95": 11.0,
+      "same": 49.6
+     },
+     {
+      "n": "Corée du Sud",
+      "base": 11,
+      "med": 11.0,
+      "p5": 10.0,
+      "p95": 11.0,
+      "same": 84.6
+     },
+     {
+      "n": "Nouvelle-Zélande",
+      "base": 12,
+      "med": 12.0,
+      "p5": 12.0,
+      "p95": 13.0,
+      "same": 69.0
+     },
+     {
+      "n": "Canada",
+      "base": 13,
+      "med": 13.0,
+      "p5": 12.0,
+      "p95": 13.0,
+      "same": 71.8
+     },
+     {
+      "n": "Hongrie",
+      "base": 14,
+      "med": 15.0,
+      "p5": 14.0,
+      "p95": 16.0,
+      "same": 46.0
+     },
+     {
+      "n": "Suède",
+      "base": 15,
+      "med": 15.0,
+      "p5": 14.0,
+      "p95": 17.0,
+      "same": 32.4
+     },
+     {
+      "n": "Suisse",
+      "base": 16,
+      "med": 16.0,
+      "p5": 14.0,
+      "p95": 17.0,
+      "same": 35.0
+     },
+     {
+      "n": "Ukraine",
+      "base": 17,
+      "med": 17.0,
+      "p5": 15.0,
+      "p95": 17.0,
+      "same": 56.8
+     },
+     {
+      "n": "Brésil",
+      "base": 18,
+      "med": 18.0,
+      "p5": 18.0,
+      "p95": 18.0,
+      "same": 97.4
+     },
+     {
+      "n": "Belgique",
+      "base": 19,
+      "med": 20.0,
+      "p5": 19.0,
+      "p95": 23.0,
+      "same": 43.2
+     },
+     {
+      "n": "Norvège",
+      "base": 20,
+      "med": 20.0,
+      "p5": 19.0,
+      "p95": 23.0,
+      "same": 27.4
+     },
+     {
+      "n": "Russie",
+      "base": 21,
+      "med": 22.0,
+      "p5": 20.0,
+      "p95": 24.0,
+      "same": 28.2
+     },
+     {
+      "n": "Danemark",
+      "base": 22,
+      "med": 21.0,
+      "p5": 19.0,
+      "p95": 25.0,
+      "same": 17.8
+     },
+     {
+      "n": "Pologne",
+      "base": 23,
+      "med": 23.0,
+      "p5": 20.0,
+      "p95": 26.0,
+      "same": 21.2
+     },
+     {
+      "n": "Ouzbékistan",
+      "base": 24,
+      "med": 24.0,
+      "p5": 21.0,
+      "p95": 28.0,
+      "same": 23.8
+     },
+     {
+      "n": "Thaïlande",
+      "base": 25,
+      "med": 24.0,
+      "p5": 21.0,
+      "p95": 27.0,
+      "same": 20.6
+     },
+     {
+      "n": "Inde",
+      "base": 26,
+      "med": 26.0,
+      "p5": 24.0,
+      "p95": 29.0,
+      "same": 33.4
+     },
+     {
+      "n": "Slovénie",
+      "base": 27,
+      "med": 27.0,
+      "p5": 24.0,
+      "p95": 29.0,
+      "same": 32.2
+     },
+     {
+      "n": "Tchéquie",
+      "base": 28,
+      "med": 29.0,
+      "p5": 26.0,
+      "p95": 32.0,
+      "same": 17.4
+     },
+     {
+      "n": "Argentine",
+      "base": 29,
+      "med": 29.0,
+      "p5": 25.950000000000003,
+      "p95": 32.0,
+      "same": 20.0
+     },
+     {
+      "n": "Taipei chinois",
+      "base": 30,
+      "med": 29.0,
+      "p5": 25.0,
+      "p95": 32.0,
+      "same": 16.0
+     },
+     {
+      "n": "Égypte",
+      "base": 31,
+      "med": 31.0,
+      "p5": 28.0,
+      "p95": 32.0,
+      "same": 33.4
+     },
+     {
+      "n": "Kazakhstan",
+      "base": 32,
+      "med": 32.0,
+      "p5": 28.0,
+      "p95": 33.0,
+      "same": 42.2
+     },
+     {
+      "n": "Autriche",
+      "base": 33,
+      "med": 34.0,
+      "p5": 32.0,
+      "p95": 35.0,
+      "same": 36.4
+     },
+     {
+      "n": "Iran",
+      "base": 34,
+      "med": 34.0,
+      "p5": 32.0,
+      "p95": 36.0,
+      "same": 31.2
+     },
+     {
+      "n": "Serbie",
+      "base": 35,
+      "med": 35.0,
+      "p5": 33.0,
+      "p95": 37.0,
+      "same": 39.0
+     },
+     {
+      "n": "Afrique du Sud",
+      "base": 36,
+      "med": 36.0,
+      "p5": 34.0,
+      "p95": 37.0,
+      "same": 43.8
+     },
+     {
+      "n": "Turquie",
+      "base": 37,
+      "med": 37.0,
+      "p5": 35.0,
+      "p95": 38.0,
+      "same": 52.8
+     },
+     {
+      "n": "Portugal",
+      "base": 38,
+      "med": 38.0,
+      "p5": 37.0,
+      "p95": 42.0,
+      "same": 50.8
+     },
+     {
+      "n": "Géorgie",
+      "base": 39,
+      "med": 40.0,
+      "p5": 38.0,
+      "p95": 47.0,
+      "same": 21.4
+     },
+     {
+      "n": "Mexique",
+      "base": 40,
+      "med": 41.0,
+      "p5": 39.0,
+      "p95": 43.0,
+      "same": 27.4
+     },
+     {
+      "n": "Finlande",
+      "base": 41,
+      "med": 41.0,
+      "p5": 39.0,
+      "p95": 45.0,
+      "same": 20.8
+     },
+     {
+      "n": "Azerbaïdjan",
+      "base": 42,
+      "med": 42.0,
+      "p5": 38.0,
+      "p95": 47.0,
+      "same": 12.6
+     },
+     {
+      "n": "Viêt Nam",
+      "base": 43,
+      "med": 43.0,
+      "p5": 39.0,
+      "p95": 46.0,
+      "same": 20.4
+     },
+     {
+      "n": "Colombie",
+      "base": 44,
+      "med": 45.0,
+      "p5": 41.0,
+      "p95": 47.0,
+      "same": 17.4
+     },
+     {
+      "n": "Jamaïque",
+      "base": 45,
+      "med": 45.0,
+      "p5": 39.0,
+      "p95": 49.0,
+      "same": 9.2
+     },
+     {
+      "n": "Indonésie",
+      "base": 46,
+      "med": 45.0,
+      "p5": 42.0,
+      "p95": 47.0,
+      "same": 22.6
+     },
+     {
+      "n": "Tunisie",
+      "base": 47,
+      "med": 45.0,
+      "p5": 39.0,
+      "p95": 49.0,
+      "same": 18.0
+     },
+     {
+      "n": "Lettonie",
+      "base": 48,
+      "med": 48.0,
+      "p5": 43.0,
+      "p95": 51.0,
+      "same": 34.6
+     },
+     {
+      "n": "Bulgarie",
+      "base": 49,
+      "med": 50.0,
+      "p5": 48.0,
+      "p95": 53.0,
+      "same": 27.0
+     },
+     {
+      "n": "Arménie",
+      "base": 50,
+      "med": 51.0,
+      "p5": 48.0,
+      "p95": 54.0,
+      "same": 17.2
+     }
+    ],
+    "leader": {
+     "France": 96.8,
+     "Royaume-Uni": 3.2
+    },
+    "rho": 0.9982,
+    "top10": 9.88,
+    "top10_min": 9,
+    "moy50": 1.06
+   }
+  },
+  "poids ±20 % et résultats ±25 %": {
+   "sport": {
+    "rows": [
+     {
+      "n": "États-Unis",
+      "base": 1,
+      "med": 1.0,
+      "p5": 1.0,
+      "p95": 2.0,
+      "same": 56.0
+     },
+     {
+      "n": "Chine",
+      "base": 2,
+      "med": 2.0,
+      "p5": 1.0,
+      "p95": 2.0,
+      "same": 55.8
+     },
+     {
+      "n": "France",
+      "base": 3,
+      "med": 3.0,
+      "p5": 3.0,
+      "p95": 4.0,
+      "same": 72.2
+     },
+     {
+      "n": "Royaume-Uni",
+      "base": 4,
+      "med": 4.0,
+      "p5": 3.0,
+      "p95": 5.0,
+      "same": 48.2
+     },
+     {
+      "n": "Japon",
+      "base": 5,
+      "med": 5.0,
+      "p5": 3.0,
+      "p95": 6.0,
+      "same": 57.4
+     },
+     {
+      "n": "Allemagne",
+      "base": 6,
+      "med": 6.0,
+      "p5": 5.0,
+      "p95": 7.0,
+      "same": 65.0
+     },
+     {
+      "n": "Italie",
+      "base": 7,
+      "med": 7.0,
+      "p5": 6.0,
+      "p95": 8.0,
+      "same": 60.8
+     },
+     {
+      "n": "Australie",
+      "base": 8,
+      "med": 8.0,
+      "p5": 7.0,
+      "p95": 8.0,
+      "same": 81.0
+     },
+     {
+      "n": "Espagne",
+      "base": 9,
+      "med": 9.0,
+      "p5": 9.0,
+      "p95": 11.0,
+      "same": 57.0
+     },
+     {
+      "n": "Corée du Sud",
+      "base": 10,
+      "med": 10.0,
+      "p5": 9.0,
+      "p95": 11.0,
+      "same": 40.2
+     },
+     {
+      "n": "Pays-Bas",
+      "base": 11,
+      "med": 11.0,
+      "p5": 9.0,
+      "p95": 11.0,
+      "same": 57.6
+     },
+     {
+      "n": "Canada",
+      "base": 12,
+      "med": 12.0,
+      "p5": 12.0,
+      "p95": 13.0,
+      "same": 91.0
+     },
+     {
+      "n": "Brésil",
+      "base": 13,
+      "med": 13.0,
+      "p5": 13.0,
+      "p95": 16.0,
+      "same": 65.0
+     },
+     {
+      "n": "Inde",
+      "base": 14,
+      "med": 15.0,
+      "p5": 13.0,
+      "p95": 20.0,
+      "same": 23.6
+     },
+     {
+      "n": "Russie",
+      "base": 15,
+      "med": 16.0,
+      "p5": 14.0,
+      "p95": 20.0,
+      "same": 21.8
+     },
+     {
+      "n": "Nouvelle-Zélande",
+      "base": 16,
+      "med": 16.0,
+      "p5": 13.0,
+      "p95": 20.0,
+      "same": 18.2
+     },
+     {
+      "n": "Suisse",
+      "base": 17,
+      "med": 16.0,
+      "p5": 14.0,
+      "p95": 19.0,
+      "same": 17.8
+     },
+     {
+      "n": "Suède",
+      "base": 18,
+      "med": 17.0,
+      "p5": 14.0,
+      "p95": 20.0,
+      "same": 18.6
+     },
+     {
+      "n": "Hongrie",
+      "base": 19,
+      "med": 19.0,
+      "p5": 15.0,
+      "p95": 21.0,
+      "same": 26.2
+     },
+     {
+      "n": "Ukraine",
+      "base": 20,
+      "med": 20.0,
+      "p5": 17.0,
+      "p95": 23.0,
+      "same": 29.8
+     },
+     {
+      "n": "Norvège",
+      "base": 21,
+      "med": 23.0,
+      "p5": 19.0,
+      "p95": 27.0,
+      "same": 17.2
+     },
+     {
+      "n": "Belgique",
+      "base": 22,
+      "med": 23.0,
+      "p5": 19.0,
+      "p95": 27.0,
+      "same": 15.6
+     },
+     {
+      "n": "Pologne",
+      "base": 23,
+      "med": 23.5,
+      "p5": 20.0,
+      "p95": 27.0,
+      "same": 16.8
+     },
+     {
+      "n": "Thaïlande",
+      "base": 24,
+      "med": 24.0,
+      "p5": 20.0,
+      "p95": 28.0,
+      "same": 17.6
+     },
+     {
+      "n": "Danemark",
+      "base": 25,
+      "med": 24.0,
+      "p5": 20.0,
+      "p95": 29.0,
+      "same": 8.4
+     },
+     {
+      "n": "Taipei chinois",
+      "base": 26,
+      "med": 26.0,
+      "p5": 21.0,
+      "p95": 30.0,
+      "same": 16.6
+     },
+     {
+      "n": "Égypte",
+      "base": 27,
+      "med": 26.0,
+      "p5": 21.0,
+      "p95": 32.0,
+      "same": 16.4
+     },
+     {
+      "n": "Argentine",
+      "base": 28,
+      "med": 28.0,
+      "p5": 23.0,
+      "p95": 34.0,
+      "same": 14.8
+     },
+     {
+      "n": "Ouzbékistan",
+      "base": 29,
+      "med": 30.0,
+      "p5": 25.0,
+      "p95": 34.0,
+      "same": 19.4
+     },
+     {
+      "n": "Tchéquie",
+      "base": 30,
+      "med": 32.0,
+      "p5": 27.0,
+      "p95": 36.0,
+      "same": 11.8
+     },
+     {
+      "n": "Turquie",
+      "base": 31,
+      "med": 31.0,
+      "p5": 27.0,
+      "p95": 35.0,
+      "same": 15.4
+     },
+     {
+      "n": "Iran",
+      "base": 32,
+      "med": 31.0,
+      "p5": 26.950000000000003,
+      "p95": 35.0,
+      "same": 12.4
+     },
+     {
+      "n": "Kazakhstan",
+      "base": 33,
+      "med": 33.0,
+      "p5": 27.950000000000003,
+      "p95": 37.0,
+      "same": 10.8
+     },
+     {
+      "n": "Autriche",
+      "base": 34,
+      "med": 34.0,
+      "p5": 29.0,
+      "p95": 37.0,
+      "same": 14.4
+     },
+     {
+      "n": "Slovénie",
+      "base": 35,
+      "med": 34.0,
+      "p5": 29.0,
+      "p95": 38.0,
+      "same": 16.8
+     },
+     {
+      "n": "Mexique",
+      "base": 36,
+      "med": 36.0,
+      "p5": 32.0,
+      "p95": 39.0,
+      "same": 22.2
+     },
+     {
+      "n": "Afrique du Sud",
+      "base": 37,
+      "med": 37.0,
+      "p5": 30.0,
+      "p95": 41.0,
+      "same": 15.0
+     },
+     {
+      "n": "Indonésie",
+      "base": 38,
+      "med": 38.0,
+      "p5": 34.0,
+      "p95": 42.0,
+      "same": 17.8
+     },
+     {
+      "n": "Viêt Nam",
+      "base": 39,
+      "med": 39.0,
+      "p5": 36.0,
+      "p95": 43.049999999999955,
+      "same": 19.0
+     },
+     {
+      "n": "Portugal",
+      "base": 40,
+      "med": 40.0,
+      "p5": 37.0,
+      "p95": 43.0,
+      "same": 23.0
+     },
+     {
+      "n": "Serbie",
+      "base": 41,
+      "med": 42.0,
+      "p5": 37.0,
+      "p95": 47.0,
+      "same": 14.6
+     },
+     {
+      "n": "Colombie",
+      "base": 42,
+      "med": 42.0,
+      "p5": 38.0,
+      "p95": 45.0,
+      "same": 22.2
+     },
+     {
+      "n": "Finlande",
+      "base": 43,
+      "med": 42.0,
+      "p5": 39.0,
+      "p95": 46.0,
+      "same": 20.8
+     },
+     {
+      "n": "Roumanie",
+      "base": 44,
+      "med": 45.0,
+      "p5": 41.0,
+      "p95": 52.0,
+      "same": 14.0
+     },
+     {
+      "n": "Azerbaïdjan",
+      "base": 45,
+      "med": 46.0,
+      "p5": 41.0,
+      "p95": 52.0,
+      "same": 14.4
+     },
+     {
+      "n": "Irlande",
+      "base": 46,
+      "med": 46.0,
+      "p5": 42.0,
+      "p95": 53.0,
+      "same": 12.8
+     },
+     {
+      "n": "Israël",
+      "base": 47,
+      "med": 49.0,
+      "p5": 44.0,
+      "p95": 56.0,
+      "same": 9.6
+     },
+     {
+      "n": "Géorgie",
+      "base": 48,
+      "med": 50.0,
+      "p5": 44.0,
+      "p95": 57.0,
+      "same": 8.2
+     },
+     {
+      "n": "Malaisie",
+      "base": 49,
+      "med": 50.0,
+      "p5": 44.0,
+      "p95": 58.0,
+      "same": 6.2
+     },
+     {
+      "n": "Tunisie",
+      "base": 50,
+      "med": 50.0,
+      "p5": 43.0,
+      "p95": 58.0,
+      "same": 4.4
+     }
+    ],
+    "leader": {
+     "États-Unis": 56.0,
+     "Chine": 44.0
+    },
+    "rho": 0.9952,
+    "top10": 9.6,
+    "top10_min": 9,
+    "moy50": 1.76
+   },
+   "pr": {
+    "rows": [
+     {
+      "n": "France",
+      "base": 1,
+      "med": 1.0,
+      "p5": 1.0,
+      "p95": 2.0,
+      "same": 79.0
+     },
+     {
+      "n": "Royaume-Uni",
+      "base": 2,
+      "med": 2.0,
+      "p5": 1.0,
+      "p95": 3.0,
+      "same": 61.0
+     },
+     {
+      "n": "États-Unis",
+      "base": 3,
+      "med": 4.0,
+      "p5": 2.0,
+      "p95": 5.0,
+      "same": 43.2
+     },
+     {
+      "n": "Japon",
+      "base": 4,
+      "med": 4.0,
+      "p5": 2.0,
+      "p95": 6.0,
+      "same": 29.2
+     },
+     {
+      "n": "Australie",
+      "base": 5,
+      "med": 5.0,
+      "p5": 3.0,
+      "p95": 6.0,
+      "same": 43.6
+     },
+     {
+      "n": "Italie",
+      "base": 6,
+      "med": 6.0,
+      "p5": 4.0,
+      "p95": 7.0,
+      "same": 50.8
+     },
+     {
+      "n": "Allemagne",
+      "base": 7,
+      "med": 7.0,
+      "p5": 6.0,
+      "p95": 8.0,
+      "same": 70.8
+     },
+     {
+      "n": "Espagne",
+      "base": 8,
+      "med": 9.0,
+      "p5": 7.950000000000003,
+      "p95": 11.0,
+      "same": 33.6
+     },
+     {
+      "n": "Pays-Bas",
+      "base": 9,
+      "med": 9.0,
+      "p5": 7.0,
+      "p95": 11.0,
+      "same": 26.6
+     },
+     {
+      "n": "Chine",
+      "base": 10,
+      "med": 9.0,
+      "p5": 8.0,
+      "p95": 11.0,
+      "same": 36.8
+     },
+     {
+      "n": "Corée du Sud",
+      "base": 11,
+      "med": 11.0,
+      "p5": 8.0,
+      "p95": 12.0,
+      "same": 51.8
+     },
+     {
+      "n": "Nouvelle-Zélande",
+      "base": 12,
+      "med": 12.0,
+      "p5": 10.0,
+      "p95": 14.0,
+      "same": 46.6
+     },
+     {
+      "n": "Canada",
+      "base": 13,
+      "med": 13.0,
+      "p5": 12.0,
+      "p95": 14.0,
+      "same": 61.8
+     },
+     {
+      "n": "Hongrie",
+      "base": 14,
+      "med": 15.0,
+      "p5": 12.0,
+      "p95": 17.0,
+      "same": 27.4
+     },
+     {
+      "n": "Suède",
+      "base": 15,
+      "med": 15.0,
+      "p5": 13.0,
+      "p95": 17.049999999999955,
+      "same": 26.4
+     },
+     {
+      "n": "Suisse",
+      "base": 16,
+      "med": 16.0,
+      "p5": 14.0,
+      "p95": 18.049999999999955,
+      "same": 26.8
+     },
+     {
+      "n": "Ukraine",
+      "base": 17,
+      "med": 17.0,
+      "p5": 14.0,
+      "p95": 19.0,
+      "same": 31.2
+     },
+     {
+      "n": "Brésil",
+      "base": 18,
+      "med": 18.0,
+      "p5": 16.0,
+      "p95": 20.0,
+      "same": 45.8
+     },
+     {
+      "n": "Belgique",
+      "base": 19,
+      "med": 21.0,
+      "p5": 18.0,
+      "p95": 27.0,
+      "same": 18.0
+     },
+     {
+      "n": "Norvège",
+      "base": 20,
+      "med": 21.0,
+      "p5": 18.0,
+      "p95": 27.0,
+      "same": 15.4
+     },
+     {
+      "n": "Russie",
+      "base": 21,
+      "med": 22.0,
+      "p5": 19.0,
+      "p95": 27.0,
+      "same": 19.0
+     },
+     {
+      "n": "Danemark",
+      "base": 22,
+      "med": 21.0,
+      "p5": 17.0,
+      "p95": 28.0,
+      "same": 10.0
+     },
+     {
+      "n": "Pologne",
+      "base": 23,
+      "med": 24.0,
+      "p5": 20.0,
+      "p95": 30.0,
+      "same": 11.6
+     },
+     {
+      "n": "Ouzbékistan",
+      "base": 24,
+      "med": 24.0,
+      "p5": 19.0,
+      "p95": 31.0,
+      "same": 10.0
+     },
+     {
+      "n": "Thaïlande",
+      "base": 25,
+      "med": 24.0,
+      "p5": 20.0,
+      "p95": 30.0,
+      "same": 12.2
+     },
+     {
+      "n": "Inde",
+      "base": 26,
+      "med": 27.0,
+      "p5": 23.0,
+      "p95": 31.0,
+      "same": 19.4
+     },
+     {
+      "n": "Slovénie",
+      "base": 27,
+      "med": 26.0,
+      "p5": 20.0,
+      "p95": 31.0,
+      "same": 9.4
+     },
+     {
+      "n": "Tchéquie",
+      "base": 28,
+      "med": 30.0,
+      "p5": 24.0,
+      "p95": 34.0,
+      "same": 6.4
+     },
+     {
+      "n": "Argentine",
+      "base": 29,
+      "med": 29.0,
+      "p5": 21.0,
+      "p95": 35.0,
+      "same": 8.2
+     },
+     {
+      "n": "Taipei chinois",
+      "base": 30,
+      "med": 29.0,
+      "p5": 22.0,
+      "p95": 34.0,
+      "same": 11.0
+     },
+     {
+      "n": "Égypte",
+      "base": 31,
+      "med": 30.0,
+      "p5": 24.0,
+      "p95": 35.0,
+      "same": 13.4
+     },
+     {
+      "n": "Kazakhstan",
+      "base": 32,
+      "med": 31.0,
+      "p5": 24.0,
+      "p95": 36.0,
+      "same": 11.6
+     },
+     {
+      "n": "Autriche",
+      "base": 33,
+      "med": 33.0,
+      "p5": 29.0,
+      "p95": 37.0,
+      "same": 18.8
+     },
+     {
+      "n": "Iran",
+      "base": 34,
+      "med": 34.0,
+      "p5": 29.0,
+      "p95": 37.0,
+      "same": 16.4
+     },
+     {
+      "n": "Serbie",
+      "base": 35,
+      "med": 35.0,
+      "p5": 30.0,
+      "p95": 43.0,
+      "same": 12.8
+     },
+     {
+      "n": "Afrique du Sud",
+      "base": 36,
+      "med": 36.0,
+      "p5": 31.0,
+      "p95": 42.0,
+      "same": 14.4
+     },
+     {
+      "n": "Turquie",
+      "base": 37,
+      "med": 37.0,
+      "p5": 33.0,
+      "p95": 42.0,
+      "same": 17.2
+     },
+     {
+      "n": "Portugal",
+      "base": 38,
+      "med": 39.0,
+      "p5": 34.0,
+      "p95": 46.0,
+      "same": 15.0
+     },
+     {
+      "n": "Géorgie",
+      "base": 39,
+      "med": 42.0,
+      "p5": 35.0,
+      "p95": 50.0,
+      "same": 6.8
+     },
+     {
+      "n": "Mexique",
+      "base": 40,
+      "med": 41.0,
+      "p5": 37.0,
+      "p95": 45.0,
+      "same": 17.2
+     },
+     {
+      "n": "Finlande",
+      "base": 41,
+      "med": 42.0,
+      "p5": 37.0,
+      "p95": 49.0,
+      "same": 10.4
+     },
+     {
+      "n": "Azerbaïdjan",
+      "base": 42,
+      "med": 43.0,
+      "p5": 36.0,
+      "p95": 50.0,
+      "same": 8.2
+     },
+     {
+      "n": "Viêt Nam",
+      "base": 43,
+      "med": 43.0,
+      "p5": 37.0,
+      "p95": 48.0,
+      "same": 12.4
+     },
+     {
+      "n": "Colombie",
+      "base": 44,
+      "med": 44.0,
+      "p5": 39.0,
+      "p95": 49.0,
+      "same": 15.0
+     },
+     {
+      "n": "Jamaïque",
+      "base": 45,
+      "med": 45.0,
+      "p5": 35.0,
+      "p95": 58.0,
+      "same": 5.6
+     },
+     {
+      "n": "Indonésie",
+      "base": 46,
+      "med": 45.0,
+      "p5": 39.0,
+      "p95": 50.0,
+      "same": 11.4
+     },
+     {
+      "n": "Tunisie",
+      "base": 47,
+      "med": 45.0,
+      "p5": 36.0,
+      "p95": 54.0,
+      "same": 7.2
+     },
+     {
+      "n": "Lettonie",
+      "base": 48,
+      "med": 49.0,
+      "p5": 38.0,
+      "p95": 56.0,
+      "same": 7.0
+     },
+     {
+      "n": "Bulgarie",
+      "base": 49,
+      "med": 50.0,
+      "p5": 43.0,
+      "p95": 58.0,
+      "same": 8.2
+     },
+     {
+      "n": "Arménie",
+      "base": 50,
+      "med": 51.0,
+      "p5": 42.0,
+      "p95": 59.0,
+      "same": 11.0
+     }
+    ],
+    "leader": {
+     "France": 79.0,
+     "Royaume-Uni": 20.8,
+     "Japon": 0.2
+    },
+    "rho": 0.9933,
+    "top10": 9.59,
+    "top10_min": 8,
+    "moy50": 2.19
+   }
+  }
+ },
+ "scenarios": {
+  "exposant": {
+   "exposant 1,0": {
+    "sport": {
+     "rho": 0.9974,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 1.62,
+     "max20": 4,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 0.9959,
+     "top10": 10,
+     "top20": 19,
+     "moy50": 1.78,
+     "max20": 2,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis",
+      "Japon",
+      "Australie",
+      "Italie",
+      "Allemagne",
+      "Espagne",
+      "Pays-Bas",
+      "Chine"
+     ]
+    }
+   },
+   "exposant 1,25": {
+    "sport": {
+     "rho": 0.9994,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.56,
+     "max20": 3,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 0.9988,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.76,
+     "max20": 2,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis",
+      "Japon",
+      "Australie",
+      "Italie",
+      "Allemagne",
+      "Espagne",
+      "Chine",
+      "Pays-Bas"
+     ]
+    }
+   },
+   "exposant 1,45": {
+    "sport": {
+     "rho": 1.0,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.0,
+     "max20": 0,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 1.0,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.0,
+     "max20": 0,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis",
+      "Japon",
+      "Australie",
+      "Italie",
+      "Allemagne",
+      "Espagne",
+      "Pays-Bas",
+      "Chine"
+     ]
+    }
+   },
+   "exposant 1,75": {
+    "sport": {
+     "rho": 0.9986,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.82,
+     "max20": 1,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 0.9985,
+     "top10": 10,
+     "top20": 19,
+     "moy50": 0.88,
+     "max20": 2,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis",
+      "Japon",
+      "Australie",
+      "Italie",
+      "Allemagne",
+      "Espagne",
+      "Chine",
+      "Pays-Bas"
+     ]
+    }
+   },
+   "exposant 2,0": {
+    "sport": {
+     "rho": 0.9956,
+     "top10": 10,
+     "top20": 19,
+     "moy50": 1.42,
+     "max20": 1,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 0.9951,
+     "top10": 10,
+     "top20": 19,
+     "moy50": 1.6,
+     "max20": 3,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis",
+      "Japon",
+      "Australie",
+      "Italie",
+      "Allemagne",
+      "Espagne",
+      "Pays-Bas",
+      "Chine"
+     ]
+    }
+   },
+   "exposant 3,0": {
+    "sport": {
+     "rho": 0.9754,
+     "top10": 10,
+     "top20": 17,
+     "moy50": 3.98,
+     "max20": 6,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Japon",
+      "Royaume-Uni",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 0.9692,
+     "top10": 10,
+     "top20": 17,
+     "moy50": 4.6,
+     "max20": 10,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis",
+      "Australie",
+      "Japon",
+      "Italie",
+      "Allemagne",
+      "Espagne",
+      "Pays-Bas",
+      "Chine"
+     ]
+    }
+   },
+   "tous les sports à égalité": {
+    "sport": {
+     "rho": 0.9752,
+     "top10": 9,
+     "top20": 18,
+     "moy50": 4.04,
+     "max20": 8,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "Royaume-Uni"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "Royaume-Uni",
+      "France",
+      "Allemagne",
+      "Japon",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Pays-Bas"
+     ]
+    },
+    "pr": {
+     "rho": 0.9653,
+     "top10": 10,
+     "top20": 18,
+     "moy50": 5.3,
+     "max20": 10,
+     "n1": "Royaume-Uni",
+     "podium": [
+      "Royaume-Uni",
+      "France",
+      "États-Unis"
+     ],
+     "top10_new": [
+      "Royaume-Uni",
+      "France",
+      "États-Unis",
+      "Allemagne",
+      "Italie",
+      "Japon",
+      "Australie",
+      "Pays-Bas",
+      "Chine",
+      "Espagne"
+     ]
+    }
+   }
+  },
+  "critères": {
+   "référence 35/25/25/15": {
+    "sport": {
+     "rho": 1.0,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.0,
+     "max20": 0,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 1.0,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.0,
+     "max20": 0,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis",
+      "Japon",
+      "Australie",
+      "Italie",
+      "Allemagne",
+      "Espagne",
+      "Pays-Bas",
+      "Chine"
+     ]
+    }
+   },
+   "critères égaux 25/25/25/25": {
+    "sport": {
+     "rho": 0.9994,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.92,
+     "max20": 5,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 0.9993,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.76,
+     "max20": 2,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis",
+      "Japon",
+      "Australie",
+      "Italie",
+      "Allemagne",
+      "Espagne",
+      "Pays-Bas",
+      "Chine"
+     ]
+    }
+   },
+   "sans olympisme 41/29/29/0": {
+    "sport": {
+     "rho": 0.9985,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 1.44,
+     "max20": 3,
+     "n1": "Chine",
+     "podium": [
+      "Chine",
+      "États-Unis",
+      "France"
+     ],
+     "top10_new": [
+      "Chine",
+      "États-Unis",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Italie",
+      "Allemagne",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 0.998,
+     "top10": 10,
+     "top20": 19,
+     "moy50": 1.6,
+     "max20": 6,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis",
+      "Japon",
+      "Italie",
+      "Australie",
+      "Allemagne",
+      "Espagne",
+      "Pays-Bas",
+      "Chine"
+     ]
+    }
+   },
+   "pratique d'abord 50/20/20/10": {
+    "sport": {
+     "rho": 0.9992,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.82,
+     "max20": 1,
+     "n1": "Chine",
+     "podium": [
+      "Chine",
+      "États-Unis",
+      "France"
+     ],
+     "top10_new": [
+      "Chine",
+      "États-Unis",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 0.9989,
+     "top10": 10,
+     "top20": 19,
+     "moy50": 1.12,
+     "max20": 2,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "Japon"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "États-Unis",
+      "Australie",
+      "Italie",
+      "Allemagne",
+      "Espagne",
+      "Chine",
+      "Pays-Bas"
+     ]
+    }
+   },
+   "audience d'abord 25/45/20/10": {
+    "sport": {
+     "rho": 0.9986,
+     "top10": 9,
+     "top20": 20,
+     "moy50": 0.82,
+     "max20": 2,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Pays-Bas"
+     ]
+    },
+    "pr": {
+     "rho": 0.9982,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 1.24,
+     "max20": 2,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis",
+      "Japon",
+      "Australie",
+      "Italie",
+      "Allemagne",
+      "Espagne",
+      "Pays-Bas",
+      "Chine"
+     ]
+    }
+   },
+   "olympisme renforcé 30/20/20/30": {
+    "sport": {
+     "rho": 0.9991,
+     "top10": 10,
+     "top20": 19,
+     "moy50": 1.22,
+     "max20": 5,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Corée du Sud",
+      "Espagne"
+     ]
+    },
+    "pr": {
+     "rho": 0.999,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.92,
+     "max20": 2,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis",
+      "Japon",
+      "Australie",
+      "Italie",
+      "Allemagne",
+      "Chine",
+      "Pays-Bas",
+      "Espagne"
+     ]
+    }
+   },
+   "diffusion d'abord 25/20/45/10": {
+    "sport": {
+     "rho": 0.9987,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.88,
+     "max20": 5,
+     "n1": "Chine",
+     "podium": [
+      "Chine",
+      "États-Unis",
+      "France"
+     ],
+     "top10_new": [
+      "Chine",
+      "États-Unis",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 0.998,
+     "top10": 10,
+     "top20": 19,
+     "moy50": 1.04,
+     "max20": 2,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis",
+      "Japon",
+      "Australie",
+      "Italie",
+      "Allemagne",
+      "Espagne",
+      "Pays-Bas",
+      "Chine"
+     ]
+    }
+   }
+  },
+  "pondération": {
+   "50 / 25 / 25": {
+    "sport": {
+     "rho": 1.0,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.0,
+     "max20": 0,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 1.0,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.0,
+     "max20": 0,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis",
+      "Japon",
+      "Australie",
+      "Italie",
+      "Allemagne",
+      "Espagne",
+      "Pays-Bas",
+      "Chine"
+     ]
+    }
+   },
+   "60 / 20 / 20": {
+    "sport": {
+     "rho": 1.0,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.0,
+     "max20": 0,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 0.9993,
+     "top10": 10,
+     "top20": 19,
+     "moy50": 0.96,
+     "max20": 2,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis",
+      "Japon",
+      "Australie",
+      "Allemagne",
+      "Italie",
+      "Chine",
+      "Espagne",
+      "Pays-Bas"
+     ]
+    }
+   },
+   "40 / 30 / 30": {
+    "sport": {
+     "rho": 1.0,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.0,
+     "max20": 0,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 0.9994,
+     "top10": 9,
+     "top20": 20,
+     "moy50": 0.84,
+     "max20": 2,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "Japon"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Australie",
+      "États-Unis",
+      "Italie",
+      "Allemagne",
+      "Espagne",
+      "Pays-Bas",
+      "Corée du Sud"
+     ]
+    }
+   },
+   "33 / 33 / 33": {
+    "sport": {
+     "rho": 1.0,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.0,
+     "max20": 0,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 0.9985,
+     "top10": 9,
+     "top20": 20,
+     "moy50": 1.46,
+     "max20": 2,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "Japon"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Australie",
+      "États-Unis",
+      "Italie",
+      "Allemagne",
+      "Pays-Bas",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    }
+   },
+   "70 / 15 / 15": {
+    "sport": {
+     "rho": 1.0,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.0,
+     "max20": 0,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 0.998,
+     "top10": 10,
+     "top20": 18,
+     "moy50": 1.92,
+     "max20": 4,
+     "n1": "France",
+     "podium": [
+      "France",
+      "États-Unis",
+      "Royaume-Uni"
+     ],
+     "top10_new": [
+      "France",
+      "États-Unis",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Chine",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Pays-Bas"
+     ]
+    }
+   },
+   "50 / 50 / 0": {
+    "sport": {
+     "rho": 1.0,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.0,
+     "max20": 0,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 0.9746,
+     "top10": 8,
+     "top20": 15,
+     "moy50": 6.98,
+     "max20": 17,
+     "n1": "Chine",
+     "podium": [
+      "Chine",
+      "États-Unis",
+      "France"
+     ],
+     "top10_new": [
+      "Chine",
+      "États-Unis",
+      "France",
+      "Japon",
+      "Royaume-Uni",
+      "Italie",
+      "Allemagne",
+      "Inde",
+      "Brésil",
+      "Espagne"
+     ]
+    }
+   },
+   "50 / 0 / 50": {
+    "sport": {
+     "rho": 1.0,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.0,
+     "max20": 0,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 0.9749,
+     "top10": 9,
+     "top20": 18,
+     "moy50": 7.12,
+     "max20": 11,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Australie",
+      "Royaume-Uni"
+     ],
+     "top10_new": [
+      "France",
+      "Australie",
+      "Royaume-Uni",
+      "Pays-Bas",
+      "Nouvelle-Zélande",
+      "Italie",
+      "Allemagne",
+      "Japon",
+      "États-Unis",
+      "Espagne"
+     ]
+    }
+   }
+  },
+  "sans un sport": {
+   "sans FIBA": {
+    "sport": {
+     "rho": 0.989,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 1.12,
+     "max20": 2,
+     "n1": "Chine",
+     "podium": [
+      "Chine",
+      "États-Unis",
+      "France"
+     ],
+     "top10_new": [
+      "Chine",
+      "États-Unis",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Italie",
+      "Allemagne",
+      "Australie",
+      "Corée du Sud",
+      "Espagne"
+     ]
+    },
+    "pr": {
+     "rho": 0.9869,
+     "top10": 10,
+     "top20": 19,
+     "moy50": 1.74,
+     "max20": 4,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "Japon"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "États-Unis",
+      "Italie",
+      "Australie",
+      "Allemagne",
+      "Chine",
+      "Pays-Bas",
+      "Espagne"
+     ]
+    }
+   },
+   "sans FIFA": {
+    "sport": {
+     "rho": 0.9947,
+     "top10": 9,
+     "top20": 20,
+     "moy50": 1.08,
+     "max20": 4,
+     "n1": "Chine",
+     "podium": [
+      "Chine",
+      "États-Unis",
+      "France"
+     ],
+     "top10_new": [
+      "Chine",
+      "États-Unis",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Corée du Sud",
+      "Pays-Bas"
+     ]
+    },
+    "pr": {
+     "rho": 0.9921,
+     "top10": 9,
+     "top20": 19,
+     "moy50": 1.34,
+     "max20": 3,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "Japon"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "États-Unis",
+      "Australie",
+      "Italie",
+      "Allemagne",
+      "Chine",
+      "Pays-Bas",
+      "Corée du Sud"
+     ]
+    }
+   },
+   "sans FIVB": {
+    "sport": {
+     "rho": 0.9993,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.68,
+     "max20": 1,
+     "n1": "Chine",
+     "podium": [
+      "Chine",
+      "États-Unis",
+      "France"
+     ],
+     "top10_new": [
+      "Chine",
+      "États-Unis",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 0.9983,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 1.46,
+     "max20": 2,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis",
+      "Japon",
+      "Australie",
+      "Italie",
+      "Allemagne",
+      "Espagne",
+      "Chine",
+      "Pays-Bas"
+     ]
+    }
+   },
+   "sans ITTF": {
+    "sport": {
+     "rho": 0.9936,
+     "top10": 9,
+     "top20": 20,
+     "moy50": 0.52,
+     "max20": 1,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Pays-Bas"
+     ]
+    },
+    "pr": {
+     "rho": 0.9933,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.52,
+     "max20": 2,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis",
+      "Australie",
+      "Italie",
+      "Japon",
+      "Allemagne",
+      "Espagne",
+      "Pays-Bas",
+      "Chine"
+     ]
+    }
+   },
+   "sans World Athletics": {
+    "sport": {
+     "rho": 0.9773,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.3,
+     "max20": 1,
+     "n1": "Chine",
+     "podium": [
+      "Chine",
+      "États-Unis",
+      "France"
+     ],
+     "top10_new": [
+      "Chine",
+      "États-Unis",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 0.971,
+     "top10": 10,
+     "top20": 19,
+     "moy50": 1.04,
+     "max20": 2,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "Japon"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "États-Unis",
+      "Australie",
+      "Italie",
+      "Allemagne",
+      "Espagne",
+      "Chine",
+      "Pays-Bas"
+     ]
+    }
+   },
+   "sans UCI": {
+    "sport": {
+     "rho": 0.9998,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.68,
+     "max20": 2,
+     "n1": "Chine",
+     "podium": [
+      "Chine",
+      "États-Unis",
+      "France"
+     ],
+     "top10_new": [
+      "Chine",
+      "États-Unis",
+      "France",
+      "Japon",
+      "Royaume-Uni",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 0.9995,
+     "top10": 9,
+     "top20": 19,
+     "moy50": 1.08,
+     "max20": 11,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "Japon"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "États-Unis",
+      "Australie",
+      "Italie",
+      "Allemagne",
+      "Espagne",
+      "Chine",
+      "Corée du Sud"
+     ]
+    }
+   },
+   "sans FIDE": {
+    "sport": {
+     "rho": 0.9993,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 1.26,
+     "max20": 6,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 0.999,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 1.76,
+     "max20": 2,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis",
+      "Japon",
+      "Australie",
+      "Italie",
+      "Allemagne",
+      "Espagne",
+      "Chine",
+      "Pays-Bas"
+     ]
+    }
+   },
+   "sans BWF": {
+    "sport": {
+     "rho": 0.9996,
+     "top10": 9,
+     "top20": 20,
+     "moy50": 0.9,
+     "max20": 4,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Pays-Bas"
+     ]
+    },
+    "pr": {
+     "rho": 0.9995,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.74,
+     "max20": 1,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis",
+      "Japon",
+      "Australie",
+      "Italie",
+      "Allemagne",
+      "Pays-Bas",
+      "Espagne",
+      "Chine"
+     ]
+    }
+   },
+   "sans ITF": {
+    "sport": {
+     "rho": 0.9996,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.76,
+     "max20": 4,
+     "n1": "Chine",
+     "podium": [
+      "Chine",
+      "États-Unis",
+      "France"
+     ],
+     "top10_new": [
+      "Chine",
+      "États-Unis",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Corée du Sud",
+      "Espagne"
+     ]
+    },
+    "pr": {
+     "rho": 0.9994,
+     "top10": 10,
+     "top20": 19,
+     "moy50": 0.92,
+     "max20": 2,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "Japon"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "États-Unis",
+      "Australie",
+      "Italie",
+      "Allemagne",
+      "Chine",
+      "Pays-Bas",
+      "Espagne"
+     ]
+    }
+   },
+   "sans World Aquatics": {
+    "sport": {
+     "rho": 0.9999,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.34,
+     "max20": 3,
+     "n1": "Chine",
+     "podium": [
+      "Chine",
+      "États-Unis",
+      "France"
+     ],
+     "top10_new": [
+      "Chine",
+      "États-Unis",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 0.9999,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.48,
+     "max20": 3,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "Japon"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "États-Unis",
+      "Italie",
+      "Australie",
+      "Allemagne",
+      "Espagne",
+      "Pays-Bas",
+      "Chine"
+     ]
+    }
+   },
+   "sans ICC": {
+    "sport": {
+     "rho": 0.974,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.76,
+     "max20": 5,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 0.9742,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.9,
+     "max20": 2,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis",
+      "Japon",
+      "Australie",
+      "Italie",
+      "Allemagne",
+      "Pays-Bas",
+      "Espagne",
+      "Chine"
+     ]
+    }
+   },
+   "sans World Taekwondo": {
+    "sport": {
+     "rho": 0.9984,
+     "top10": 9,
+     "top20": 20,
+     "moy50": 0.98,
+     "max20": 3,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Pays-Bas"
+     ]
+    },
+    "pr": {
+     "rho": 0.9976,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 1.14,
+     "max20": 2,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis",
+      "Japon",
+      "Australie",
+      "Italie",
+      "Allemagne",
+      "Pays-Bas",
+      "Espagne",
+      "Chine"
+     ]
+    }
+   },
+   "sans IGF": {
+    "sport": {
+     "rho": 0.9999,
+     "top10": 9,
+     "top20": 20,
+     "moy50": 0.28,
+     "max20": 3,
+     "n1": "Chine",
+     "podium": [
+      "Chine",
+      "États-Unis",
+      "France"
+     ],
+     "top10_new": [
+      "Chine",
+      "États-Unis",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Pays-Bas"
+     ]
+    },
+    "pr": {
+     "rho": 0.9998,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.32,
+     "max20": 1,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "Japon"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "États-Unis",
+      "Australie",
+      "Italie",
+      "Allemagne",
+      "Pays-Bas",
+      "Espagne",
+      "Chine"
+     ]
+    }
+   },
+   "sans IJF": {
+    "sport": {
+     "rho": 0.9959,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.74,
+     "max20": 3,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 0.9945,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 1.22,
+     "max20": 1,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis",
+      "Australie",
+      "Japon",
+      "Italie",
+      "Allemagne",
+      "Espagne",
+      "Chine",
+      "Pays-Bas"
+     ]
+    }
+   },
+   "sans IHF": {
+    "sport": {
+     "rho": 0.9992,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 0.72,
+     "max20": 1,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Italie",
+      "Allemagne",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 0.9988,
+     "top10": 10,
+     "top20": 19,
+     "moy50": 1.2,
+     "max20": 9,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis",
+      "Japon",
+      "Italie",
+      "Australie",
+      "Allemagne",
+      "Espagne",
+      "Pays-Bas",
+      "Chine"
+     ]
+    }
+   }
+  },
+  "fiabilité": {
+   "sports A seulement": {
+    "sport": {
+     "rho": 0.9544,
+     "top10": 9,
+     "top20": 18,
+     "moy50": 5.18,
+     "max20": 10,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Japon",
+      "Royaume-Uni",
+      "Allemagne",
+      "Australie",
+      "Italie",
+      "Corée du Sud",
+      "Pays-Bas"
+     ]
+    },
+    "pr": {
+     "rho": 0.9505,
+     "top10": 8,
+     "top20": 19,
+     "moy50": 5.28,
+     "max20": 11,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis",
+      "Australie",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Pays-Bas",
+      "Corée du Sud",
+      "Nouvelle-Zélande"
+     ]
+    }
+   },
+   "sports A et B (sans C)": {
+    "sport": {
+     "rho": 0.998,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 1.64,
+     "max20": 2,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Royaume-Uni",
+      "Japon",
+      "Allemagne",
+      "Italie",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 0.9974,
+     "top10": 10,
+     "top20": 20,
+     "moy50": 1.5,
+     "max20": 3,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis"
+     ],
+     "top10_new": [
+      "France",
+      "Royaume-Uni",
+      "États-Unis",
+      "Japon",
+      "Australie",
+      "Italie",
+      "Allemagne",
+      "Espagne",
+      "Pays-Bas",
+      "Chine"
+     ]
+    }
+   },
+   "méthode complète seulement": {
+    "sport": {
+     "rho": 0.9832,
+     "top10": 10,
+     "top20": 19,
+     "moy50": 3.28,
+     "max20": 4,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Japon",
+      "Royaume-Uni",
+      "Italie",
+      "Allemagne",
+      "Australie",
+      "Espagne",
+      "Corée du Sud"
+     ]
+    },
+    "pr": {
+     "rho": 0.9808,
+     "top10": 10,
+     "top20": 19,
+     "moy50": 3.84,
+     "max20": 6,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Japon",
+      "Royaume-Uni"
+     ],
+     "top10_new": [
+      "France",
+      "Japon",
+      "Royaume-Uni",
+      "États-Unis",
+      "Australie",
+      "Italie",
+      "Allemagne",
+      "Espagne",
+      "Chine",
+      "Pays-Bas"
+     ]
+    }
+   },
+   "sports olympiques d'été seulement": {
+    "sport": {
+     "rho": 0.9102,
+     "top10": 10,
+     "top20": 17,
+     "moy50": 6.22,
+     "max20": 19,
+     "n1": "États-Unis",
+     "podium": [
+      "États-Unis",
+      "Chine",
+      "France"
+     ],
+     "top10_new": [
+      "États-Unis",
+      "Chine",
+      "France",
+      "Japon",
+      "Royaume-Uni",
+      "Allemagne",
+      "Corée du Sud",
+      "Australie",
+      "Italie",
+      "Espagne"
+     ]
+    },
+    "pr": {
+     "rho": 0.9055,
+     "top10": 9,
+     "top20": 17,
+     "moy50": 6.68,
+     "max20": 11,
+     "n1": "France",
+     "podium": [
+      "France",
+      "Japon",
+      "Royaume-Uni"
+     ],
+     "top10_new": [
+      "France",
+      "Japon",
+      "Royaume-Uni",
+      "États-Unis",
+      "Corée du Sud",
+      "Australie",
+      "Allemagne",
+      "Italie",
+      "Espagne",
+      "Chine"
+     ]
+    }
+   }
+  }
+ },
+ "meta": {
+  "n_nations": 151,
+  "n_feds": 123,
+  "n_attr": 80,
+  "runs": 500,
+  "w_top": [
+   [
+    "FIBA",
+    3.62
+   ],
+   [
+    "FIFA",
+    3.29
+   ],
+   [
+    "FIVB",
+    2.88
+   ],
+   [
+    "ITTF",
+    2.58
+   ],
+   [
+    "World Athletics",
+    2.52
+   ],
+   [
+    "UCI",
+    2.37
+   ],
+   [
+    "FIDE",
+    2.26
+   ],
+   [
+    "BWF",
+    2.23
+   ],
+   [
+    "ITF",
+    2.22
+   ],
+   [
+    "World Aquatics",
+    2.22
+   ],
+   [
+    "ICC",
+    1.84
+   ],
+   [
+    "World Taekwondo",
+    1.69
+   ],
+   [
+    "IGF",
+    1.68
+   ],
+   [
+    "IJF",
+    1.63
+   ],
+   [
+    "IHF",
+    1.61
+   ]
+  ]
+ }
+};
 const SLUG=s=>String(s).normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 const SITE=VER.site;
 const LANG=document.documentElement.lang||'fr';
@@ -1467,7 +11132,7 @@ $('#dl').innerHTML=`<div class="srcgroup dlall"><h4>Toute l'édition</h4><p clas
 // routing
 const LEGAL={"site": "HoloSport Ranking (HSR)", "domaine": "holosportranking.github.io/holosportranking", "hebergeur_nom": "GitHub, Inc. (service GitHub Pages)", "hebergeur_adresse": "88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis", "hebergeur_telephone": "+1 877 448 4820", "date_maj": "12 novembre 2026"};
 document.querySelectorAll('[data-l]').forEach(el=>{const v=(LEGAL[el.dataset.l]||'').trim();if(v){el.textContent=v}else{el.textContent='[à compléter : '+(el.dataset.hint||el.dataset.l)+']';el.classList.add('todo')}});
-const VIEWS=['performance','highlights','classement','genre','efficience','demographie','sports','comparer','federations','methode','journal','sources','donnees','mentions-legales','confidentialite','conditions'];
+const VIEWS=['performance','highlights','classement','genre','efficience','demographie','sports','comparer','federations','methode','robustesse','journal','sources','donnees','mentions-legales','confidentialite','conditions'];
 function route(){const h=location.hash.slice(1);const v=VIEWS.includes(h)?h:(/^(nation|sport)\//.test(h)?(document.body.dataset.v||(h[0]==='s'?'sports':'performance')):'performance');
   VIEWS.forEach(x=>$('#v-'+x).hidden=x!==v);if(['mentions-legales','confidentialite','conditions'].includes(v))window.scrollTo(0,0);
   document.querySelectorAll('nav.tabs a').forEach(a=>a.setAttribute('aria-current',a.getAttribute('href')==='#'+v?'page':'false'));document.body.dataset.v=v;const mb=$('#morebtn');if(mb)mb.classList.toggle('on',!!document.querySelector('#morepanel > div:not(.mobonly) a[aria-current="page"]'));$('#morepanel').hidden=true;$('#morebtn').setAttribute('aria-expanded','false');placeMap(v);if(_lastTracked!==v){_lastTracked=v;const go=()=>track(location.pathname+'#'+v,document.title+' – '+v);if(window.goatcounter&&window.goatcounter.count)go();else window.addEventListener('load',()=>setTimeout(go,300),{once:true})}}
@@ -1696,6 +11361,54 @@ function pods(){
   pod3('p3-pop',peOk.slice(0,3).map(r=>({n:r.n,r:r.erk,v:'efficience '+fmt(r.eff),s:fmtPop(r.p)+' hab.'})));
 }
 
+
+// robustesse (tests de sensibilité)
+(function(){const R=ROB;const el=$('#rob');if(!el)return;if(!R||!R.montecarlo){el.innerHTML='<p class="muted">Analyse indisponible pour cette édition.</p>';return}
+ const MC=R.montecarlo, SC=R.scenarios, M=R.meta||{};
+ const pct=x=>fmt(x,x>=99.95||x<0.05?0:1)+' %';
+ const lead=(o)=>Object.entries(o).slice(0,2).map(([n,v])=>`${esc(DN(n))} ${pct(v)}`).join(', ');
+ const mod=MC['poids ±10 % et résultats ±10 %'], big=MC['poids ±20 % et résultats ±25 %'];
+ const n1=Object.keys(mod.pr.leader)[0], sp=Object.entries(mod.sport.leader);
+ const cards=[
+  ['gold','N°1 de la performance réelle',esc(DN(n1)),`en tête dans ${pct(mod.pr.leader[n1])} des recalculs à variations modérées, ${pct(big.pr.leader[n1]||0)} à fortes variations`],
+  ['mint','Top 10 de la performance réelle',`${fmt(mod.pr.top10,1)} / 10`,`nations conservées en moyenne à variations modérées (${fmt(big.pr.top10,1)} à fortes variations)`],
+  ['sky','N°1 du classement sportif',sp.map(x=>esc(DN(x[0]))).join(' / '),`un duel : ${sp.map(([n,v])=>esc(DN(n))+' '+pct(v)).join(', ')} selon les recalculs`],
+  ['rose','Choix le plus déterminant','Pondération 50/25/25','la place des deux efficiences pèse bien plus que la cotation des sports']];
+ const card=c=>`<div class="robcard ${c[0]}"><small>${c[1]}</small><b>${c[2]}</b><span>${c[3]}</span></div>`;
+ const mcNames=Object.keys(MC);
+ let cur={s:'poids ±10 % et résultats ±10 %',k:'pr'};
+ const chart=()=>{const m=MC[cur.s][cur.k];const rows=m.rows.slice(0,30);const mx=Math.max(...rows.map(r=>r.p95),30);
+   const W=760,rowH=22,L=170,H=rows.length*rowH+34,x=v=>L+(v-1)/(mx-1)*(W-L-20);
+   let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Intervalles de rang des 30 premières nations" class="robsvg">`;
+   for(const v of [1,...Array.from({length:Math.floor(mx/(mx>40?10:5))},(_,i)=>(i+1)*(mx>40?10:5))]){const xx=x(v);s+=`<line x1="${xx}" x2="${xx}" y1="14" y2="${H-18}" class="g"/><text x="${xx}" y="${H-4}" class="ax">${v}</text>`}
+   rows.forEach((r,i)=>{const y=24+i*rowH;s+=`<text x="${L-10}" y="${y+4}" class="nm" text-anchor="end">${esc(DN(r.n))}</text><line x1="${x(r.p5)}" x2="${x(r.p95)}" y1="${y}" y2="${y}" class="rg"/><circle cx="${x(r.base)}" cy="${y}" r="4.5" class="bs"><title>${esc(DN(r.n))} : rang publié ${r.base}, 90 % des recalculs entre ${r.p5} et ${r.p95}</title></circle>`});
+   $('#robchart').innerHTML=s+'</svg>';
+   $('#robnote').textContent=`Point : rang publié. Trait : rang obtenu dans 90 % des 500 recalculs (du 5e au 95e centile). Scénario : ${cur.s}.`};
+ const mcRows=mcNames.map(k=>{const m=MC[k];return `<tr><td>${esc(k)}</td><td class="r">${fmt(m.pr.top10,1)}</td><td class="r">${m.pr.top10_min}</td><td class="r">${fmt(m.pr.moy50,1)}</td><td>${lead(m.pr.leader)}</td><td>${lead(m.sport.leader)}</td></tr>`}).join('');
+ const grpLab={'exposant':'Exposant de la cotation des sports','critères':'Poids des quatre critères de cotation','pondération':'Pondération de la performance réelle (sportif / économique / démographique)','sans un sport':'Retrait d\'un grand sport','fiabilité':'Périmètre des sports'};
+ const scTables=Object.entries(SC).map(([g,o])=>`<h3>${esc(grpLab[g]||g)}</h3><div class="tablebox"><table><thead><tr><th>Scénario</th><th class="r">Top 10 conservé</th><th class="r">Écart moyen (top 50)</th><th>Podium de la performance réelle</th><th>N°1 sportif</th></tr></thead><tbody>${Object.entries(o).map(([k,v])=>`<tr><td>${esc(k)}</td><td class="r">${v.pr.top10} / 10</td><td class="r">${fmt(v.pr.moy50,1)}</td><td>${v.pr.podium.map(n=>esc(DN(n))).join(' · ')}</td><td>${esc(DN(v.sport.n1))}</td></tr>`).join('')}</tbody></table></div>`).join('');
+ el.innerHTML=`<div class="robcards">${cards.map(card).join('')}</div>
+ <h3>Quel rang dans 90 % des cas ?</h3>
+ <p class="small muted">Chaque nation est recalculée 500 fois avec des poids de sports et des résultats légèrement modifiés au hasard. Plus le trait est court, plus son rang est solide.</p>
+ <div class="robctl"><div class="seg" role="group" aria-label="Classement">${[['pr','Performance réelle'],['sport','Classement sportif']].map(([k,l])=>`<button type="button" data-rk="${k}" aria-pressed="${k===cur.k}">${l}</button>`).join('')}</div>
+ <label class="small muted">Variations <select id="robsel">${mcNames.map(k=>`<option ${k===cur.s?'selected':''}>${esc(k)}</option>`).join('')}</select></label></div>
+ <figure class="chartbox"><div id="robchart"></div><figcaption class="small muted" id="robnote"></figcaption></figure>
+ <h3>Variations aléatoires : petites et grandes</h3>
+ <p class="small muted">Poids : chaque coefficient de sport est multiplié par un facteur tiré au hasard (±5 % à ±40 %). Résultats : les points de chaque nation dans chaque sport varient au hasard (±5 % à ±25 %), le total de 1000 points par fédération étant conservé. 500 recalculs par ligne.</p>
+ <div class="tablebox"><table><thead><tr><th>Variation</th><th class="r">Top 10 conservé (moyenne)</th><th class="r">Pire cas</th><th class="r">Écart moyen (top 50)</th><th>N°1 performance réelle</th><th>N°1 sportif</th></tr></thead><tbody>${mcRows}</tbody></table></div>
+ <h3 style="margin-top:28px">Changer les règles de la méthode</h3>
+ <p class="small muted">Chaque ligne recalcule tout le classement avec une seule règle modifiée. Référence publiée : exposant 1,45 ; critères 35 / 25 / 25 / 15 ; pondération 50 / 25 / 25 ; tous les sports attribués.</p>
+ ${scTables}
+ <h3 style="margin-top:28px">Ce qu'il faut en retenir</h3>
+ <ul class="robul"><li><b>Le haut de la performance réelle est solide.</b> Le n°1 garde la tête dans tous les changements de règles testés et dans la très grande majorité des recalculs aléatoires.</li>
+ <li><b>La tête du classement sportif est un duel.</b> L'écart entre les deux premiers est faible : il s'inverse avec de petites variations. Nous le présentons donc comme tel.</li>
+ <li><b>Les zones sensibles</b> sont la fin du top 10, les places 14 à 22 et le bas du top 50, où quelques nations peuvent gagner ou perdre cinq places.</li>
+ <li><b>Le choix le plus déterminant</b> est la place des deux efficiences dans la performance réelle : sans l'efficience démographique, les pays très peuplés remontent nettement ; sans l'efficience économique, les petits pays riches progressent. La cotation des sports, elle, change peu le classement.</li></ul>
+ <p class="small muted">Analyse refaite à chaque édition (${esc(String(M.runs||500))} recalculs par variation aléatoire). Code et résultats détaillés disponibles sur demande ; les données de base sont dans la rubrique Données.</p>`;
+ chart();
+ el.addEventListener('click',e=>{const b=e.target.closest('[data-rk]');if(!b)return;cur.k=b.dataset.rk;el.querySelectorAll('[data-rk]').forEach(x=>x.setAttribute('aria-pressed',x===b));chart()});
+ $('#robsel').addEventListener('change',e=>{cur.s=e.target.value;chart()});
+})();
 // journal des modifications
 (function(){const c=`<iframe src="${SITE}widget/" title="Top 10 HoloSport Ranking" width="360" height="460" style="border:0;border-radius:12px;max-width:100%" loading="lazy"></iframe>`;const el=document.getElementById('embedcode');if(el)el.textContent=c;const r=document.getElementById('rsslink');if(r)r.href=SITE+'flux.xml';const an=document.getElementById('annlink');if(an)an.href=SITE+'annuaire/';const b=document.getElementById('embedcopy');if(b)b.onclick=async()=>{try{await navigator.clipboard.writeText(c);b.textContent='Code copié'}catch(e){prompt('Code à copier',c)}}})();
 (function(){const b=document.getElementById('citecopy');if(b)b.addEventListener('click',async()=>{const tx=b.previousElementSibling.textContent;try{await navigator.clipboard.writeText(tx);b.textContent='Citation copiée'}catch(e){const r=document.createRange();r.selectNodeContents(b.previousElementSibling);const s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Sélectionnée : Ctrl+C'}})})();
