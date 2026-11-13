@@ -721,6 +721,16 @@ main:focus{outline:none!important}
 .robul{display:flex;flex-direction:column;gap:8px;line-height:1.55}
 @media (max-width:900px){.robcards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:520px){.robcards{grid-template-columns:1fr}}
+
+/* ===== Et si les résultats changeaient ? ===== */
+.impgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.impcard{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px 16px 6px}
+.impcard h3{margin:0 0 6px;font-size:21px}.impcard .tablebox{margin:8px 0}.impcard tr.foc td{font-weight:600}
+.impcard .pill{display:inline-block;margin:0 4px 4px 0;background:var(--accent-soft);color:var(--ink);padding:3px 8px;border-radius:999px;font-size:12px}
+.mvu{color:#22c55e;font-weight:700}.mvd{color:#f87171;font-weight:700}.mv0{color:var(--muted)}
+:root[data-theme="light"] .mvu{color:#15803d}:root[data-theme="light"] .mvd{color:#b91c1c}
+.lnk{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:6px}.lnk:hover{text-decoration:underline}.lnk:focus-visible{outline:3px solid var(--gold,#f5a524)}
+@media (max-width:900px){.impgrid{grid-template-columns:1fr}}
 </style>
 
 <a class="skip" href="#main" onclick="event.preventDefault();document.getElementById('main').focus()">Aller au contenu</a>
@@ -744,7 +754,7 @@ main:focus{outline:none!important}
       <div class="mobonly"><span class="gl">Rubriques</span><a href="#performance">Performance réelle</a><a href="#demographie">Efficience démographique</a><a href="#efficience">Efficience économique</a><a href="#classement">Classement sportif</a><a href="#highlights">Highlights du mois</a><a href="#sports">Par sport</a><input type="search" id="gsearch2" list="gslist" placeholder="Une nation ou un sport…" aria-label="Rechercher une nation ou un sport"></div>
       <div><span class="gl">Classements</span><a href="#genre">Femmes · Hommes</a></div>
       <div><span class="gl">Explorer</span><a href="#comparer">Comparer deux nations</a><a href="#federations">Fédérations</a></div>
-      <div><span class="gl">Comprendre</span><a href="#methode">Méthode</a><a href="#robustesse">Robustesse</a><a href="#journal">Journal des modifications</a><a href="#sources">Sources</a><a href="#donnees">Données</a></div>
+      <div><span class="gl">Comprendre</span><a href="#methode">Méthode</a><a href="#robustesse">Robustesse</a><a href="#impact">Et si les résultats changeaient ?</a><a href="#journal">Journal des modifications</a><a href="#sources">Sources</a><a href="#donnees">Données</a></div>
     </div></div>
   <div class="gsearch"><input type="search" id="gsearch" list="gslist" placeholder="Une nation ou un sport…" aria-label="Rechercher une nation ou un sport"><datalist id="gslist"></datalist></div>
   <a class="langsw" id="langsw" href="en/" hreflang="en" lang="en" data-noi18n aria-label="English version" title="English version">EN</a>
@@ -898,6 +908,11 @@ main:focus{outline:none!important}
 <section class="view" id="v-robustesse" hidden>
   <div class="view-head"><div><div class="vgrp">Comprendre</div><h2>Robustesse du classement</h2><p>Un classement multisport repose sur des choix : le poids de chaque sport, la façon de répartir les points, la place des efficiences. Nous avons recalculé le classement des milliers de fois en faisant varier ces choix pour mesurer ce qui tient et ce qui bouge.</p></div></div>
   <div id="rob"></div>
+</section>
+
+<section class="view" id="v-impact" hidden>
+  <div class="view-head"><div><div class="vgrp">Comprendre</div><h2>Comment bouge le classement selon les résultats sportifs ?</h2><p>Et si un favori perdait, si un outsider gagnait ? Nous avons rejoué quelques compétitions avec un autre résultat, puis recalculé tout le classement avec les règles HSR, pour voir ce que pèse réellement un titre.</p></div></div>
+  <div id="imp"></div>
 </section>
 
 <section class="view" id="v-journal" hidden>
@@ -1178,7 +1193,8 @@ const FIAB={"FIBA": {"g": "A", "lab": "élevée", "why": ["méthode complète", 
    "Nouveau logo HSR : les lettres HSR en italique, traversées par une orbite en forme de piste et un point or, le leader.",
    "Finitions : chiffres harmonisés (points sur 1000 à une décimale, apport au score sans décimale, poids à deux décimales), page d'erreur 404, icône de site, page d'accueil 3,5 fois plus légère, contrastes conformes WCAG AA et navigation complète au clavier.",
    "Correction : dans le classeur Excel et le fichier CSV de performance réelle, les nations sans classement d'efficience (Indes occidentales, Monaco) recevaient par erreur la note maximale (Indes occidentales 33e au lieu de 70e). Le site n'était pas concerné ; les fichiers sont corrigés.",
-   "Nouvelle rubrique « Robustesse » : tests de sensibilité du classement (variations aléatoires des poids et des résultats, changements de règles de la méthode), refaits à chaque édition."
+   "Nouvelle rubrique « Robustesse » : tests de sensibilité du classement (variations aléatoires des poids et des résultats, changements de règles de la méthode), refaits à chaque édition.",
+   "Nouvelle rubrique « Et si les résultats changeaient ? » : sept scénarios rejoués (États-Unis éliminés au basket, France ou Maroc champions du monde de football, etc.) et la valeur d'un titre mondial dans chaque grand sport."
   ],
   "titre_en": "Overhaul of the individual-sport method and full data check",
   "items_en": [
@@ -1194,7 +1210,8 @@ const FIAB={"FIBA": {"g": "A", "lab": "élevée", "why": ["méthode complète", 
    "New HSR logo: the letters HSR in italics, crossed by a track-shaped orbit and a gold dot, the leader.",
    "Finishing touches: consistent figures (points out of 1,000 to one decimal, contribution to score with no decimals, weights to two decimals), 404 error page, site icon, home page 3.5 times lighter, WCAG AA contrast and full keyboard navigation.",
    "Correction: in the Excel workbook and the overall performance CSV file, nations without an efficiency ranking (West Indies, Monaco) wrongly received the maximum score (West Indies 33rd instead of 70th). The website was not affected; the files are corrected.",
-   "New “Robustness” section: sensitivity tests of the ranking (random variations of weights and results, changes to the method's rules), redone at every edition."
+   "New “Robustness” section: sensitivity tests of the ranking (random variations of weights and results, changes to the method's rules), redone at every edition.",
+   "New “What if results changed?” section: seven replayed scenarios (United States knocked out in basketball, France or Morocco winning the football World Cup, etc.) and the value of a world title in each major sport."
   ]
  },
  {
@@ -10856,6 +10873,1021 @@ const FIAB={"FIBA": {"g": "A", "lab": "élevée", "why": ["méthode complète", 
    ]
   ]
  }
+}, IMP={
+ "sc": [
+  {
+   "t": "Les États-Unis éliminés d'entrée aux deux Coupes du monde de basket",
+   "d": "Les États-Unis (4es chez les hommes en 2023, champions du monde chez les femmes en 2026) ne marquent aucun point aux Coupes du monde FIBA ; les nations classées derrière eux gagnent une place.",
+   "comps": [
+    {
+     "c": "BKM-WC",
+     "n": "Coupe du monde FIBA 2023",
+     "f": "FIBA",
+     "w": 3.62
+    },
+    {
+     "c": "BKF-WC",
+     "n": "Coupe du monde féminine FIBA 2026",
+     "f": "FIBA",
+     "w": 3.62
+    }
+   ],
+   "focus": [
+    {
+     "n": "États-Unis",
+     "s0": 1,
+     "s1": 2,
+     "p0": 3,
+     "p1": 4,
+     "dsc": -91.1
+    },
+    {
+     "n": "Chine",
+     "s0": 2,
+     "s1": 1,
+     "p0": 10,
+     "p1": 9,
+     "dsc": 0.0
+    }
+   ],
+   "moves": [
+    {
+     "n": "France",
+     "s0": 3,
+     "s1": 3,
+     "p0": 1,
+     "p1": 1,
+     "dsc": 17.7
+    },
+    {
+     "n": "Espagne",
+     "s0": 9,
+     "s1": 9,
+     "p0": 8,
+     "p1": 8,
+     "dsc": 10.1
+    },
+    {
+     "n": "Allemagne",
+     "s0": 6,
+     "s1": 6,
+     "p0": 7,
+     "p1": 7,
+     "dsc": 7.6
+    },
+    {
+     "n": "Belgique",
+     "s0": 22,
+     "s1": 22,
+     "p0": 19,
+     "p1": 19,
+     "dsc": 7.6
+    },
+    {
+     "n": "Lettonie",
+     "s0": 55,
+     "s1": 54,
+     "p0": 48,
+     "p1": 48,
+     "dsc": 7.6
+    },
+    {
+     "n": "Japon",
+     "s0": 5,
+     "s1": 5,
+     "p0": 4,
+     "p1": 3,
+     "dsc": 0.0
+    },
+    {
+     "n": "Pays-Bas",
+     "s0": 11,
+     "s1": 11,
+     "p0": 9,
+     "p1": 10,
+     "dsc": 0.0
+    },
+    {
+     "n": "Roumanie",
+     "s0": 44,
+     "s1": 44,
+     "p0": 52,
+     "p1": 51,
+     "dsc": 0.0
+    }
+   ],
+   "ch_s": 4,
+   "ch_p": 16,
+   "top10_s": true,
+   "top10_p": true,
+   "t_en": "The United States knocked out early at both Basketball World Cups",
+   "d_en": "The United States (4th in the 2023 men's tournament, women's world champions in 2026) score no points at the FIBA World Cups; the nations ranked behind them move up one place."
+  },
+  {
+   "t": "La France championne du monde de football",
+   "d": "La France (4e de la Coupe du monde 2026) remporte le titre ; l'Espagne, l'Argentine et le Royaume-Uni reculent d'une place.",
+   "comps": [
+    {
+     "c": "FBM-WC",
+     "n": "Coupe du monde FIFA 2026",
+     "f": "FIFA",
+     "w": 3.29
+    }
+   ],
+   "focus": [
+    {
+     "n": "France",
+     "s0": 3,
+     "s1": 3,
+     "p0": 1,
+     "p1": 1,
+     "dsc": 55.2
+    },
+    {
+     "n": "Espagne",
+     "s0": 9,
+     "s1": 9,
+     "p0": 8,
+     "p1": 8,
+     "dsc": -27.6
+    },
+    {
+     "n": "Royaume-Uni",
+     "s0": 4,
+     "s1": 4,
+     "p0": 2,
+     "p1": 2,
+     "dsc": -11.8
+    }
+   ],
+   "moves": [
+    {
+     "n": "Argentine",
+     "s0": 28,
+     "s1": 28,
+     "p0": 29,
+     "p1": 29,
+     "dsc": -15.8
+    }
+   ],
+   "ch_s": 0,
+   "ch_p": 0,
+   "top10_s": false,
+   "top10_p": false,
+   "t_en": "France win the FIFA World Cup",
+   "d_en": "France (4th at the 2026 World Cup) win the title; Spain, Argentina and the United Kingdom each drop one place."
+  },
+  {
+   "t": "Le Maroc champion du monde de football",
+   "d": "Le Maroc (quart-de-finaliste en 2026) remporte la Coupe du monde : l'effet d'un titre majeur pour une nation du milieu de classement.",
+   "comps": [
+    {
+     "c": "FBM-WC",
+     "n": "Coupe du monde FIFA 2026",
+     "f": "FIFA",
+     "w": 3.29
+    }
+   ],
+   "focus": [
+    {
+     "n": "Maroc",
+     "s0": 69,
+     "s1": 60,
+     "p0": 67,
+     "p1": 60,
+     "dsc": 67.0
+    }
+   ],
+   "moves": [
+    {
+     "n": "Espagne",
+     "s0": 9,
+     "s1": 9,
+     "p0": 8,
+     "p1": 8,
+     "dsc": -27.6
+    },
+    {
+     "n": "Argentine",
+     "s0": 28,
+     "s1": 28,
+     "p0": 29,
+     "p1": 29,
+     "dsc": -15.8
+    },
+    {
+     "n": "France",
+     "s0": 3,
+     "s1": 3,
+     "p0": 1,
+     "p1": 1,
+     "dsc": -11.8
+    },
+    {
+     "n": "Royaume-Uni",
+     "s0": 4,
+     "s1": 4,
+     "p0": 2,
+     "p1": 2,
+     "dsc": -11.8
+    },
+    {
+     "n": "Indonésie",
+     "s0": 38,
+     "s1": 38,
+     "p0": 46,
+     "p1": 47,
+     "dsc": 0.0
+    },
+    {
+     "n": "Malaisie",
+     "s0": 49,
+     "s1": 49,
+     "p0": 60,
+     "p1": 61,
+     "dsc": 0.0
+    },
+    {
+     "n": "Tunisie",
+     "s0": 50,
+     "s1": 50,
+     "p0": 47,
+     "p1": 46,
+     "dsc": 0.0
+    },
+    {
+     "n": "Hong Kong",
+     "s0": 52,
+     "s1": 52,
+     "p0": 59,
+     "p1": 58,
+     "dsc": 0.0
+    }
+   ],
+   "ch_s": 10,
+   "ch_p": 25,
+   "top10_s": false,
+   "top10_p": false,
+   "t_en": "Morocco win the FIFA World Cup",
+   "d_en": "Morocco (quarter-finalists in 2026) win the World Cup: the effect of a major title for a mid-table nation."
+  },
+  {
+   "t": "Les États-Unis sans aucune médaille de natation",
+   "d": "Les États-Unis ne gagnent aucune médaille de natation aux JO 2024 (28 en réalité) ni aux Mondiaux 2025 (32 en réalité) ; les points vont aux autres nations médaillées.",
+   "comps": [
+    {
+     "c": "NAT-JO",
+     "n": "JO 2024 – natation",
+     "f": "World Aquatics",
+     "w": 2.22
+    },
+    {
+     "c": "NAT-WC",
+     "n": "Mondiaux de Singapour 2025 (toutes disciplines)",
+     "f": "World Aquatics",
+     "w": 2.22
+    }
+   ],
+   "focus": [
+    {
+     "n": "États-Unis",
+     "s0": 1,
+     "s1": 2,
+     "p0": 3,
+     "p1": 5,
+     "dsc": -343.8
+    },
+    {
+     "n": "Australie",
+     "s0": 8,
+     "s1": 8,
+     "p0": 5,
+     "p1": 4,
+     "dsc": 71.3
+    },
+    {
+     "n": "Chine",
+     "s0": 2,
+     "s1": 1,
+     "p0": 10,
+     "p1": 8,
+     "dsc": 51.6
+    }
+   ],
+   "moves": [
+    {
+     "n": "Canada",
+     "s0": 12,
+     "s1": 12,
+     "p0": 13,
+     "p1": 13,
+     "dsc": 27.1
+    },
+    {
+     "n": "France",
+     "s0": 3,
+     "s1": 3,
+     "p0": 1,
+     "p1": 1,
+     "dsc": 26.5
+    },
+    {
+     "n": "Italie",
+     "s0": 7,
+     "s1": 7,
+     "p0": 6,
+     "p1": 6,
+     "dsc": 26.0
+    },
+    {
+     "n": "Hongrie",
+     "s0": 19,
+     "s1": 19,
+     "p0": 14,
+     "p1": 14,
+     "dsc": 18.9
+    },
+    {
+     "n": "Royaume-Uni",
+     "s0": 4,
+     "s1": 4,
+     "p0": 2,
+     "p1": 2,
+     "dsc": 16.5
+    },
+    {
+     "n": "Allemagne",
+     "s0": 6,
+     "s1": 6,
+     "p0": 7,
+     "p1": 7,
+     "dsc": 14.9
+    },
+    {
+     "n": "Russie",
+     "s0": 15,
+     "s1": 15,
+     "p0": 21,
+     "p1": 21,
+     "dsc": 11.0
+    },
+    {
+     "n": "Pays-Bas",
+     "s0": 11,
+     "s1": 11,
+     "p0": 9,
+     "p1": 10,
+     "dsc": 9.2
+    }
+   ],
+   "ch_s": 6,
+   "ch_p": 25,
+   "top10_s": true,
+   "top10_p": true,
+   "t_en": "The United States win no swimming medals",
+   "d_en": "The United States win no swimming medals at the 2024 Olympics (28 in reality) or the 2025 World Championships (32 in reality); the points go to the other medal-winning nations."
+  },
+  {
+   "t": "L'Inde championne du monde de hockey sur gazon",
+   "d": "L'Inde (8e de la dernière Coupe du monde masculine) remporte le titre : un sport de poids moyen pour une nation très peuplée.",
+   "comps": [
+    {
+     "c": "HKH-WC",
+     "n": "Coupe du monde 2026 (8 premiers)",
+     "f": "FIH",
+     "w": 1.22
+    }
+   ],
+   "focus": [
+    {
+     "n": "Inde",
+     "s0": 14,
+     "s1": 14,
+     "p0": 26,
+     "p1": 26,
+     "dsc": 25.9
+    }
+   ],
+   "moves": [
+    {
+     "n": "Allemagne",
+     "s0": 6,
+     "s1": 6,
+     "p0": 7,
+     "p1": 7,
+     "dsc": -10.7
+    },
+    {
+     "n": "Espagne",
+     "s0": 9,
+     "s1": 9,
+     "p0": 8,
+     "p1": 8,
+     "dsc": -6.1
+    },
+    {
+     "n": "Pays-Bas",
+     "s0": 11,
+     "s1": 11,
+     "p0": 9,
+     "p1": 9,
+     "dsc": -4.6
+    },
+    {
+     "n": "Argentine",
+     "s0": 28,
+     "s1": 28,
+     "p0": 29,
+     "p1": 29,
+     "dsc": -4.6
+    },
+    {
+     "n": "Sri Lanka",
+     "s0": 81,
+     "s1": 81,
+     "p0": 90,
+     "p1": 89,
+     "dsc": 0.0
+    },
+    {
+     "n": "Éthiopie",
+     "s0": 83,
+     "s1": 83,
+     "p0": 83,
+     "p1": 82,
+     "dsc": 0.0
+    },
+    {
+     "n": "Bénin",
+     "s0": 86,
+     "s1": 86,
+     "p0": 82,
+     "p1": 83,
+     "dsc": 0.0
+    },
+    {
+     "n": "Tadjikistan",
+     "s0": 91,
+     "s1": 91,
+     "p0": 89,
+     "p1": 90,
+     "dsc": 0.0
+    }
+   ],
+   "ch_s": 0,
+   "ch_p": 4,
+   "top10_s": false,
+   "top10_p": false,
+   "t_en": "India win the Field Hockey World Cup",
+   "d_en": "India (8th at the last men's World Cup) win the title: a mid-weight sport for a very populous nation."
+  },
+  {
+   "t": "La France championne du monde de handball",
+   "d": "La France (3e en 2025) remporte le Mondial masculin de handball devant le Danemark et la Croatie.",
+   "comps": [
+    {
+     "c": "HBH-WC",
+     "n": "Championnat du monde 2025",
+     "f": "IHF",
+     "w": 1.61
+    }
+   ],
+   "focus": [
+    {
+     "n": "France",
+     "s0": 3,
+     "s1": 3,
+     "p0": 1,
+     "p1": 1,
+     "dsc": 44.2
+    },
+    {
+     "n": "Danemark",
+     "s0": 25,
+     "s1": 25,
+     "p0": 22,
+     "p1": 22,
+     "dsc": -28.1
+    }
+   ],
+   "moves": [
+    {
+     "n": "Croatie",
+     "s0": 54,
+     "s1": 55,
+     "p0": 51,
+     "p1": 54,
+     "dsc": -16.1
+    },
+    {
+     "n": "Colombie",
+     "s0": 42,
+     "s1": 42,
+     "p0": 44,
+     "p1": 45,
+     "dsc": 0.0
+    },
+    {
+     "n": "Roumanie",
+     "s0": 44,
+     "s1": 44,
+     "p0": 52,
+     "p1": 51,
+     "dsc": 0.0
+    },
+    {
+     "n": "Irlande",
+     "s0": 46,
+     "s1": 46,
+     "p0": 53,
+     "p1": 52,
+     "dsc": 0.0
+    },
+    {
+     "n": "Israël",
+     "s0": 47,
+     "s1": 47,
+     "p0": 54,
+     "p1": 53,
+     "dsc": 0.0
+    },
+    {
+     "n": "Lettonie",
+     "s0": 55,
+     "s1": 54,
+     "p0": 48,
+     "p1": 48,
+     "dsc": 0.0
+    },
+    {
+     "n": "Jamaïque",
+     "s0": 59,
+     "s1": 59,
+     "p0": 45,
+     "p1": 44,
+     "dsc": 0.0
+    },
+    {
+     "n": "Guatemala",
+     "s0": 97,
+     "s1": 97,
+     "p0": 99,
+     "p1": 98,
+     "dsc": 0.0
+    }
+   ],
+   "ch_s": 2,
+   "ch_p": 8,
+   "top10_s": false,
+   "top10_p": false,
+   "t_en": "France win the Handball World Championship",
+   "d_en": "France (3rd in 2025) win the men's Handball World Championship ahead of Denmark and Croatia."
+  },
+  {
+   "t": "Une année parfaite pour l'Allemagne",
+   "d": "L'Allemagne remporte la même année les Coupes du monde de football, de basket (hommes et femmes) et de handball, et le Mondial de volley masculin.",
+   "comps": [
+    {
+     "c": "FBM-WC",
+     "n": "Coupe du monde FIFA 2026",
+     "f": "FIFA",
+     "w": 3.29
+    },
+    {
+     "c": "BKM-WC",
+     "n": "Coupe du monde FIBA 2023",
+     "f": "FIBA",
+     "w": 3.62
+    },
+    {
+     "c": "BKF-WC",
+     "n": "Coupe du monde féminine FIBA 2026",
+     "f": "FIBA",
+     "w": 3.62
+    },
+    {
+     "c": "HBH-WC",
+     "n": "Championnat du monde 2025",
+     "f": "IHF",
+     "w": 1.61
+    },
+    {
+     "c": "VBM-WC",
+     "n": "Championnat du monde 2025",
+     "f": "FIVB",
+     "w": 2.88
+    }
+   ],
+   "focus": [
+    {
+     "n": "Allemagne",
+     "s0": 6,
+     "s1": 6,
+     "p0": 7,
+     "p1": 7,
+     "dsc": 252.7
+    }
+   ],
+   "moves": [
+    {
+     "n": "Espagne",
+     "s0": 9,
+     "s1": 9,
+     "p0": 8,
+     "p1": 8,
+     "dsc": -35.2
+    },
+    {
+     "n": "France",
+     "s0": 3,
+     "s1": 3,
+     "p0": 1,
+     "p1": 1,
+     "dsc": -34.0
+    },
+    {
+     "n": "Danemark",
+     "s0": 25,
+     "s1": 25,
+     "p0": 22,
+     "p1": 22,
+     "dsc": -28.1
+    },
+    {
+     "n": "États-Unis",
+     "s0": 1,
+     "s1": 1,
+     "p0": 3,
+     "p1": 3,
+     "dsc": -17.7
+    },
+    {
+     "n": "Iran",
+     "s0": 32,
+     "s1": 32,
+     "p0": 34,
+     "p1": 35,
+     "dsc": -16.1
+    },
+    {
+     "n": "Croatie",
+     "s0": 54,
+     "s1": 55,
+     "p0": 51,
+     "p1": 54,
+     "dsc": -16.1
+    },
+    {
+     "n": "Argentine",
+     "s0": 28,
+     "s1": 28,
+     "p0": 29,
+     "p1": 28,
+     "dsc": -15.8
+    },
+    {
+     "n": "Italie",
+     "s0": 7,
+     "s1": 7,
+     "p0": 6,
+     "p1": 6,
+     "dsc": -14.1
+    }
+   ],
+   "ch_s": 4,
+   "ch_p": 21,
+   "top10_s": false,
+   "top10_p": false,
+   "t_en": "A perfect year for Germany",
+   "d_en": "Germany win, in the same year, the football World Cup, both Basketball World Cups (men and women), the Handball World Championship and the men's Volleyball World Championship."
+  }
+ ],
+ "val": [
+  {
+   "c": "CHF-OL",
+   "t": "Mondial",
+   "tp": "Principale",
+   "n": "Olympiade d'échecs 2026 – féminin",
+   "f": "FIDE",
+   "d": "Échecs – féminin",
+   "g": "Femmes",
+   "pts": 109.6,
+   "w": 2.26,
+   "val": 247.5,
+   "r30": 6,
+   "r60": 19
+  },
+  {
+   "c": "CHO-OL",
+   "t": "Mondial",
+   "tp": "Principale",
+   "n": "Olympiade d'échecs 2026 – open",
+   "f": "FIDE",
+   "d": "Échecs – open",
+   "g": "Hommes",
+   "pts": 62.5,
+   "w": 2.26,
+   "val": 141.1,
+   "r30": 2,
+   "r60": 15
+  },
+  {
+   "c": "HBH-WC",
+   "t": "Mondial",
+   "tp": "Principale",
+   "n": "Championnat du monde 2025",
+   "f": "IHF",
+   "d": "Handball",
+   "g": "Hommes",
+   "pts": 62.5,
+   "w": 1.61,
+   "val": 100.5,
+   "r30": 2,
+   "r60": 12
+  },
+  {
+   "c": "HBF-WC",
+   "t": "Mondial",
+   "tp": "Principale",
+   "n": "Championnat du monde 2025 (8 premières)",
+   "f": "IHF",
+   "d": "Handball",
+   "g": "Femmes",
+   "pts": 62.5,
+   "w": 1.61,
+   "val": 100.5,
+   "r30": 2,
+   "r60": 12
+  },
+  {
+   "c": "FBM-WC",
+   "t": "Mondial",
+   "tp": "Principale",
+   "n": "Coupe du monde FIFA 2026",
+   "f": "FIFA",
+   "d": "Football",
+   "g": "Hommes",
+   "pts": 30.0,
+   "w": 3.29,
+   "val": 98.6,
+   "r30": 2,
+   "r60": 12
+  },
+  {
+   "c": "CKH-ODI",
+   "t": "Mondial",
+   "tp": "Principale",
+   "n": "Coupe du monde ODI 2023",
+   "f": "ICC",
+   "d": "Cricket",
+   "g": "Hommes",
+   "pts": 46.0,
+   "w": 1.84,
+   "val": 84.6,
+   "r30": 1,
+   "r60": 8
+  },
+  {
+   "c": "CKF-T20",
+   "t": "Mondial",
+   "tp": "Principale",
+   "n": "Coupe du monde T20 féminine 2024",
+   "f": "ICC",
+   "d": "Cricket",
+   "g": "Femmes",
+   "pts": 46.0,
+   "w": 1.84,
+   "val": 84.6,
+   "r30": 1,
+   "r60": 8
+  },
+  {
+   "c": "BDEH-WC",
+   "t": "Mondial",
+   "tp": "Principale",
+   "n": "Thomas Cup 2026",
+   "f": "BWF",
+   "d": "Badminton – Thomas Cup",
+   "g": "Hommes",
+   "pts": 33.1,
+   "w": 2.23,
+   "val": 73.8,
+   "r30": 1,
+   "r60": 6
+  },
+  {
+   "c": "BDEF-WC",
+   "t": "Mondial",
+   "tp": "Principale",
+   "n": "Uber Cup 2026",
+   "f": "BWF",
+   "d": "Badminton – Uber Cup",
+   "g": "Femmes",
+   "pts": 33.1,
+   "w": 2.23,
+   "val": 73.8,
+   "r30": 1,
+   "r60": 6
+  },
+  {
+   "c": "TNEH-WC",
+   "t": "Mondial",
+   "tp": "Principale",
+   "n": "Coupe Davis 2025",
+   "f": "ITF",
+   "d": "Tennis – Coupe Davis",
+   "g": "Hommes",
+   "pts": 33.1,
+   "w": 2.22,
+   "val": 73.5,
+   "r30": 1,
+   "r60": 6
+  },
+  {
+   "c": "TNEF-WC",
+   "t": "Mondial",
+   "tp": "Principale",
+   "n": "Billie Jean King Cup 2025",
+   "f": "ITF",
+   "d": "Tennis – Billie Jean King Cup",
+   "g": "Femmes",
+   "pts": 33.1,
+   "w": 2.22,
+   "val": 73.5,
+   "r30": 1,
+   "r60": 6
+  },
+  {
+   "c": "BBH-P12",
+   "t": "Mondial",
+   "tp": "Principale",
+   "n": "Premier12 2024",
+   "f": "WBSC",
+   "d": "Baseball",
+   "g": "Hommes",
+   "pts": 46.0,
+   "w": 1.39,
+   "val": 64.1,
+   "r30": 1,
+   "r60": 5
+  },
+  {
+   "c": "BKM-WC",
+   "t": "Mondial",
+   "tp": "Principale",
+   "n": "Coupe du monde FIBA 2023",
+   "f": "FIBA",
+   "d": "Basketball 5x5",
+   "g": "Hommes",
+   "pts": 17.5,
+   "w": 3.62,
+   "val": 63.3,
+   "r30": 1,
+   "r60": 5
+  },
+  {
+   "c": "BKF-WC",
+   "t": "Mondial",
+   "tp": "Principale",
+   "n": "Coupe du monde féminine FIBA 2026",
+   "f": "FIBA",
+   "d": "Basketball 5x5",
+   "g": "Femmes",
+   "pts": 17.5,
+   "w": 3.62,
+   "val": 63.3,
+   "r30": 1,
+   "r60": 5
+  },
+  {
+   "c": "FBF-WC",
+   "t": "Mondial",
+   "tp": "Principale",
+   "n": "Coupe du monde féminine 2023",
+   "f": "FIFA",
+   "d": "Football",
+   "g": "Femmes",
+   "pts": 17.5,
+   "w": 3.29,
+   "val": 57.5,
+   "r30": 1,
+   "r60": 4
+  },
+  {
+   "c": "CRF-WC",
+   "t": "Mondial",
+   "tp": "Principale",
+   "n": "Mondiaux de Montréal 2026 – course en ligne dames (top 4 publié)",
+   "f": "UCI",
+   "d": "Cyclisme sur route",
+   "g": "Femmes",
+   "pts": 23.0,
+   "w": 2.37,
+   "val": 54.5,
+   "r30": 1,
+   "r60": 4
+  },
+  {
+   "c": "VBM-WC",
+   "t": "Mondial",
+   "tp": "Principale",
+   "n": "Championnat du monde 2025",
+   "f": "FIVB",
+   "d": "Volleyball",
+   "g": "Hommes",
+   "pts": 17.5,
+   "w": 2.88,
+   "val": 50.4,
+   "r30": 1,
+   "r60": 4
+  },
+  {
+   "c": "VBF-WC",
+   "t": "Mondial",
+   "tp": "Principale",
+   "n": "Championnat du monde 2025",
+   "f": "FIVB",
+   "d": "Volleyball",
+   "g": "Femmes",
+   "pts": 17.5,
+   "w": 2.88,
+   "val": 50.4,
+   "r30": 1,
+   "r60": 4
+  },
+  {
+   "c": "TTMX-WC",
+   "t": "Mondial",
+   "tp": "Principale",
+   "n": "Mondiaux 2025 – double mixte",
+   "f": "ITTF",
+   "d": "Tennis de table – double mixte",
+   "g": "Mixte",
+   "pts": 18.4,
+   "w": 2.58,
+   "val": 47.5,
+   "r30": 1,
+   "r60": 4
+  },
+  {
+   "c": "TTEH-WC",
+   "t": "Mondial",
+   "tp": "Principale",
+   "n": "Mondiaux par équipes 2026",
+   "f": "ITTF",
+   "d": "Tennis de table – équipes",
+   "g": "Hommes",
+   "pts": 16.5,
+   "w": 2.58,
+   "val": 42.8,
+   "r30": 0,
+   "r60": 3
+  }
+ ],
+ "top_all": [
+  {
+   "n": "Olympiade d'échecs 2026 – féminin",
+   "f": "FIDE",
+   "val": 247.5
+  },
+  {
+   "n": "Championnat du monde amateur 2025 (Vancouver)",
+   "f": "IGF (go)",
+   "val": 232.4
+  },
+  {
+   "n": "Coupe du monde 2023",
+   "f": "World Netball",
+   "val": 197.2
+  },
+  {
+   "n": "Championnat du monde 2023 – hommes",
+   "f": "World Lacrosse",
+   "val": 183.6
+  },
+  {
+   "n": "Championnat du monde 2025 (Shanghai)",
+   "f": "WXF",
+   "val": 183.5
+  },
+  {
+   "n": "Championnat du monde WDF 2025 – femmes (finale)",
+   "f": "WDF",
+   "val": 155.0
+  },
+  {
+   "n": "Championnat du monde 2024 – femmes",
+   "f": "FIP",
+   "val": 143.6
+  },
+  {
+   "n": "Olympiade d'échecs 2026 – open",
+   "f": "FIDE",
+   "val": 141.1
+  }
+ ],
+ "n30": "Tchéquie",
+ "n60": "Arménie"
 };
 const SLUG=s=>String(s).normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 const SITE=VER.site;
@@ -11132,7 +12164,7 @@ $('#dl').innerHTML=`<div class="srcgroup dlall"><h4>Toute l'édition</h4><p clas
 // routing
 const LEGAL={"site": "HoloSport Ranking (HSR)", "domaine": "holosportranking.github.io/holosportranking", "hebergeur_nom": "GitHub, Inc. (service GitHub Pages)", "hebergeur_adresse": "88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis", "hebergeur_telephone": "+1 877 448 4820", "date_maj": "12 novembre 2026"};
 document.querySelectorAll('[data-l]').forEach(el=>{const v=(LEGAL[el.dataset.l]||'').trim();if(v){el.textContent=v}else{el.textContent='[à compléter : '+(el.dataset.hint||el.dataset.l)+']';el.classList.add('todo')}});
-const VIEWS=['performance','highlights','classement','genre','efficience','demographie','sports','comparer','federations','methode','robustesse','journal','sources','donnees','mentions-legales','confidentialite','conditions'];
+const VIEWS=['performance','highlights','classement','genre','efficience','demographie','sports','comparer','federations','methode','robustesse','impact','journal','sources','donnees','mentions-legales','confidentialite','conditions'];
 function route(){const h=location.hash.slice(1);const v=VIEWS.includes(h)?h:(/^(nation|sport)\//.test(h)?(document.body.dataset.v||(h[0]==='s'?'sports':'performance')):'performance');
   VIEWS.forEach(x=>$('#v-'+x).hidden=x!==v);if(['mentions-legales','confidentialite','conditions'].includes(v))window.scrollTo(0,0);
   document.querySelectorAll('nav.tabs a').forEach(a=>a.setAttribute('aria-current',a.getAttribute('href')==='#'+v?'page':'false'));document.body.dataset.v=v;const mb=$('#morebtn');if(mb)mb.classList.toggle('on',!!document.querySelector('#morepanel > div:not(.mobonly) a[aria-current="page"]'));$('#morepanel').hidden=true;$('#morebtn').setAttribute('aria-expanded','false');placeMap(v);if(_lastTracked!==v){_lastTracked=v;const go=()=>track(location.pathname+'#'+v,document.title+' – '+v);if(window.goatcounter&&window.goatcounter.count)go();else window.addEventListener('load',()=>setTimeout(go,300),{once:true})}}
@@ -11362,6 +12394,32 @@ function pods(){
 }
 
 
+
+// et si les résultats changeaient ? (scénarios)
+(function(){const X=IMP;const el=$('#imp');if(!el)return;if(!X||!X.sc){el.innerHTML='<p class="muted">Analyse indisponible pour cette édition.</p>';return}
+ const en=LANG==='en';
+ const mv=(a,b)=>a===b?`<span class="mv0">${a}<sup>e</sup> =</span>`:`<span class="${b<a?'mvu':'mvd'}">${a}<sup>e</sup> → ${b}<sup>e</sup></span>`;
+ const sg=x=>(x>0?'+':'')+fmt(x,0);
+ const nat=n=>`<button type="button" class="lnk" data-nat="${esc(n)}">${fl(n)} ${esc(DN(n))}</button>`;
+ const card=s=>`<article class="impcard"><h3>${esc(en?s.t_en:s.t)}</h3><p class="small muted">${esc(en?s.d_en:s.d)}</p>
+  <p class="small">${s.comps.map(c=>`<span class="pill">${esc(c.n)}</span>`).join(' ')}</p>
+  <div class="tablebox"><table><thead><tr><th>Nation</th><th class="r">Apport au score</th><th>Sportif</th><th>Perf. réelle</th></tr></thead><tbody>
+  ${s.focus.map(x=>`<tr class="foc"><td>${nat(x.n)}</td><td class="r">${sg(x.dsc)}</td><td>${mv(x.s0,x.s1)}</td><td>${mv(x.p0,x.p1)}</td></tr>`).join('')}
+  ${s.moves.slice(0,5).map(x=>`<tr><td>${nat(x.n)}</td><td class="r">${sg(x.dsc)}</td><td>${mv(x.s0,x.s1)}</td><td>${mv(x.p0,x.p1)}</td></tr>`).join('')}</tbody></table></div>
+  <p class="small muted">${(s.ch_s||s.ch_p)?`${s.ch_s} nation${s.ch_s>1?'s':''} change${s.ch_s>1?'nt':''} de rang au classement sportif, ${s.ch_p} en performance réelle${s.top10_p?' ; le top 10 de la performance réelle est modifié':''}.`:'Aucune nation ne change de rang : seuls les scores bougent.'}</p></article>`;
+ const V=X.val;
+ el.innerHTML=`<div class="impgrid">${X.sc.map(card).join('')}</div>
+ <h3 style="margin-top:30px">Ce que rapporte un titre mondial</h3>
+ <p class="small muted">Pour les grands sports, l'apport au score d'une victoire au championnat du monde principal : points sur 1000 du vainqueur × coefficient du sport. Dernières colonnes : places gagnées au classement sportif par une nation classée 30e (${esc(DN(X.n30))}) ou 60e (${esc(DN(X.n60))}) si elle remportait ce titre, toutes choses égales par ailleurs.</p>
+ <div class="tablebox"><table><thead><tr><th>Compétition</th><th>Discipline</th><th class="r">Points sur 1000</th><th class="r">Coef.</th><th class="r">Apport au score</th><th class="r">Nation 30e</th><th class="r">Nation 60e</th></tr></thead><tbody>
+ ${V.map(v=>`<tr><td>${esc(v.n)}</td><td>${esc(v.d)} <span class="muted small">${esc(v.f)}</span></td><td class="r">${fmt(v.pts,1)}</td><td class="r">${fmt(v.w,2)}</td><td class="r"><b>${fmt(v.val,0)}</b></td><td class="r">+${v.r30}</td><td class="r">+${v.r60}</td></tr>`).join('')}</tbody></table></div>
+ <h3 style="margin-top:28px">Ce qu'il faut en retenir</h3>
+ <ul class="robul"><li><b>Un seul titre ne bouscule pas le haut du classement.</b> Les grandes nations marquent des points dans 40 à 50 sports : même une Coupe du monde de football ne fait gagner ou perdre que quelques dizaines de points sur plus de 4 000.</li>
+ <li><b>La tête se joue sur la profondeur.</b> Ce qui fait vraiment bouger le podium, c'est la perte d'un sport entier où une nation domine (la natation pour les États-Unis), pas une finale perdue.</li>
+ <li><b>Pour une nation du milieu de tableau, un grand titre change tout.</b> ${(()=>{const m=(X.sc.find(s=>s.t.startsWith('Le Maroc'))||{}).focus;if(!m||!m[0])return '';const x=m[0];return `Le Maroc champion du monde gagnerait ${x.s0-x.s1} places au classement sportif et ${x.p0-x.p1} en performance réelle.`})()}</li>
+ <li><b>La valeur d'un titre dépend du sport et du nombre de compétitions</b> qui se partagent ses 1000 points : un sport qui compte peu d'épreuves concentre ses points sur son championnat du monde.</li></ul>
+ <p class="small muted">Méthode : la compétition est rejouée avec le résultat imaginé, les autres nations gardant leur ordre (une nation éliminée libère sa place, la dernière place n'étant attribuée à personne ; les médailles retirées sont réparties au prorata des autres médaillés). Les points de la fédération, puis tout le classement, sont recalculés avec les règles publiées.</p>`;
+})();
 // robustesse (tests de sensibilité)
 (function(){const R=ROB;const el=$('#rob');if(!el)return;if(!R||!R.montecarlo){el.innerHTML='<p class="muted">Analyse indisponible pour cette édition.</p>';return}
  const MC=R.montecarlo, SC=R.scenarios, M=R.meta||{};
