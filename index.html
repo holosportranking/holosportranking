@@ -733,12 +733,14 @@ main:focus{outline:none!important}
   </div>
   <div class="spot" id="spot"></div>
   <a class="hlteaser" id="hlteaser" href="#highlights" hidden data-off="1"></a>
+  <div class="mapslot" data-mode="pr">
   <figure class="mapbox" id="mapbox">
     <div class="maphead">
       <figcaption><b>La carte du monde</b> <span class="small muted" id="map-sub">selon la performance réelle</span> <span class="small muted">· cliquez sur un pays pour ouvrir sa fiche</span></figcaption>
     </div>
     <div class="mapwrap"><div id="worldmap"></div><div class="maptip" id="maptip" hidden></div><div class="maplegend" id="maplegend"></div><button type="button" class="zoombtn" id="zoombtn" aria-pressed="false">Zoom Europe</button></div>
   </figure>
+  </div>
   <div id="movers" hidden></div>
   <div class="tablebox"><table>
     <thead><tr><th>Rang</th><th>Nation</th><th class="r">Indice</th><th class="hide-sm">Composition</th><th class="r">Sportif</th><th class="r">Écon.</th><th class="r">Démo.</th></tr></thead>
@@ -758,6 +760,7 @@ main:focus{outline:none!important}
     <div class="controls"><input type="search" id="q-nat" placeholder="Rechercher une nation" aria-label="Rechercher une nation"></div>
   </div>
   <div class="pod3" id="p3-nat"></div>
+  <div class="mapslot" data-mode="s"></div>
   <div class="tablebox"><table>
     <thead><tr><th>Rang</th><th>Nation</th><th class="r">Score</th><th class="hide-sm"></th><th class="r hide-sm">Sports</th><th class="hide-sm">Principaux apports</th></tr></thead>
     <tbody id="tb-nat"></tbody></table></div>
@@ -775,6 +778,7 @@ main:focus{outline:none!important}
     </div>
   </div>
   <div class="pod3" id="p3-gen"></div>
+  <div class="mapslot" data-mode="g"></div>
   <div class="tablebox"><table>
     <thead><tr><th>Rang</th><th>Nation</th><th class="r">Score</th><th class="hide-sm"></th><th class="r hide-sm" id="g-other">Rang hommes</th><th class="r hide-sm">Part féminine</th><th class="r hide-sm">Rang sportif</th></tr></thead>
     <tbody id="tb-gen"></tbody></table></div>
@@ -816,6 +820,7 @@ main:focus{outline:none!important}
     <div class="controls"><input type="search" id="q-eff" placeholder="Rechercher une nation" aria-label="Rechercher une nation"></div>
   </div>
   <div class="pod3" id="p3-eff"></div>
+  <div class="mapslot" data-mode="e"></div>
   <div class="effgrid">
     <figure class="chartbox"><figcaption class="small muted">Score sportif selon le PIB PPA par habitant (échelles logarithmiques). La courbe donne le score attendu ; au-dessus, la nation fait mieux que son niveau de vie. Les 20 nations les plus efficientes sont nommées (12 sur téléphone) ; cliquez sur un nom pour ouvrir la fiche de la nation.</figcaption><div id="effchart"></div></figure>
     <div class="note">Ce classement ne tient pas compte de la taille de la population : à niveau de vie égal, un pays très peuplé dispose de plus d'athlètes, ce qui avantage la Chine, l'Inde ou les États-Unis. Un classement rapporté à la population sera publié séparément.</div>
@@ -832,6 +837,7 @@ main:focus{outline:none!important}
     <div class="controls"><input type="search" id="q-pop" placeholder="Rechercher une nation" aria-label="Rechercher une nation"></div>
   </div>
   <div class="pod3" id="p3-pop"></div>
+  <div class="mapslot" data-mode="d"></div>
   <div class="effgrid">
     <figure class="chartbox"><figcaption class="small muted">Score sportif selon la population (échelles logarithmiques). La courbe donne le score attendu selon la loi normale ; au-dessus, la nation fait mieux que sa taille. Les 20 nations les plus efficientes sont nommées (12 sur téléphone) ; cliquez sur un nom pour ouvrir la fiche.</figcaption><div id="popchart"></div></figure>
     <div class="note" style="border-left-color:var(--accent);background:var(--accent-soft)"><b>Le principe : la loi normale.</b> Les aptitudes sportives se répartissent selon une courbe en cloche. Le champion d'un pays est son individu le plus extrême : dans une population de N personnes, on attend un talent maximal d'environ Φ⁻¹(1 − 1/N) écarts-types au-dessus de la moyenne. Ce niveau monte très lentement avec la population : 4,6 σ pour l'Islande (400 000 habitants), 5,5 σ pour la France, 6,1 σ pour la Chine. Une population 20 fois plus grande ne donne donc pas 20 fois plus de champions de très haut niveau, ce qui évite d'avantager mécaniquement les géants démographiques.</div>
@@ -1419,7 +1425,7 @@ document.querySelectorAll('[data-l]').forEach(el=>{const v=(LEGAL[el.dataset.l]|
 const VIEWS=['performance','highlights','classement','genre','efficience','demographie','sports','comparer','federations','methode','journal','sources','donnees','mentions-legales','confidentialite','conditions'];
 function route(){const h=location.hash.slice(1);const v=VIEWS.includes(h)?h:(/^(nation|sport)\//.test(h)?(document.body.dataset.v||(h[0]==='s'?'sports':'performance')):'performance');
   VIEWS.forEach(x=>$('#v-'+x).hidden=x!==v);if(['mentions-legales','confidentialite','conditions'].includes(v))window.scrollTo(0,0);
-  document.querySelectorAll('nav.tabs a').forEach(a=>a.setAttribute('aria-current',a.getAttribute('href')==='#'+v?'page':'false'));document.body.dataset.v=v;const mb=$('#morebtn');if(mb)mb.classList.toggle('on',!!document.querySelector('#morepanel > div:not(.mobonly) a[aria-current="page"]'));$('#morepanel').hidden=true;$('#morebtn').setAttribute('aria-expanded','false');}
+  document.querySelectorAll('nav.tabs a').forEach(a=>a.setAttribute('aria-current',a.getAttribute('href')==='#'+v?'page':'false'));document.body.dataset.v=v;const mb=$('#morebtn');if(mb)mb.classList.toggle('on',!!document.querySelector('#morepanel > div:not(.mobonly) a[aria-current="page"]'));$('#morepanel').hidden=true;$('#morebtn').setAttribute('aria-expanded','false');placeMap(v);}
 
 function deepOpen(){const m=decodeURIComponent(location.hash.slice(1)).match(/^(nation|sport)\/([^/]+)(\/page)?$/);if(!m)return false;
   let ok=false;if(m[1]==='nation'){const n=N.find(x=>SLUG(x.n)===m[2]);if(n){showNat(n.n);ok=true}}
@@ -1523,7 +1529,7 @@ function renderGen(){
     <td class="r num hide-sm">${tot?fmt(100*v.f/tot)+' %':'–'}</td><td class="r num hide-sm">${spRank[n]||'–'}</td></tr>`}).join('')||`<tr><td colspan="7" class="muted">Aucune nation ne correspond.</td></tr>`;
   $('#more-gen').parentElement.hidden=genAll||!!q||rows.length<=30;
 }
-document.querySelectorAll('[data-g]').forEach(b=>b.addEventListener('click',()=>{gKey=b.dataset.g;document.querySelectorAll('[data-g]').forEach(x=>x.setAttribute('aria-pressed',x===b));renderGen();pods()}));
+document.querySelectorAll('[data-g]').forEach(b=>b.addEventListener('click',()=>{gKey=b.dataset.g;document.querySelectorAll('[data-g]').forEach(x=>x.setAttribute('aria-pressed',x===b));renderGen();pods();if(document.body.dataset.v==='genre')placeMap('genre')}));
 $('#q-gen').addEventListener('input',renderGen);$('#more-gen').addEventListener('click',()=>{genAll=true;renderGen()});
 // qui domine chaque sport
 function renderSports(){
@@ -1601,8 +1607,8 @@ const natNames=N.map(n=>n.n).sort((a,b)=>a.localeCompare(b,'fr'));
 let cmpAll=false;
 function rankInfo(n){
   const pr=prRank.find(r=>r.n===n),e=efOk.find(r=>r.n===n),d=peOk.find(r=>r.n===n),s=N.find(x=>x.n===n);
-  return [['Performance réelle',pr&&pr.rk,pr&&('indice '+fmt(pr.v,1))],['Classement sportif',s.rk,fmt(s.s)+' pts'],
-   ['Femmes',G[n]?gRank.f[n]:null,G[n]?fmt(G[n].f)+' pts':''],['Hommes',G[n]?gRank.h[n]:null,G[n]?fmt(G[n].h)+' pts':''],
+  return [['Performance réelle',pr&&pr.rk,pr&&('indice '+fmt(pr.v,1))],['Classement sportif',s.rk,fmt(s.s)+' points'],
+   ['Femmes',G[n]?gRank.f[n]:null,G[n]?fmt(G[n].f)+' points':''],['Hommes',G[n]?gRank.h[n]:null,G[n]?fmt(G[n].h)+' points':''],
    ['Efficience économique',e&&e.erk,e&&('efficience '+fmt(e.eff))],['Efficience démographique',d&&d.erk,d&&('efficience '+fmt(d.eff))]];
 }
 function renderCmp(){
@@ -1631,8 +1637,8 @@ renderCmp();
 function pod3(id,items){const el=document.getElementById(id);if(!el)return;const o=[items[1],items[0],items[2]].filter(Boolean);
   el.innerHTML=o.map(x=>{const k=x.r;return `<button type="button" class="p3 p3-${k}" data-nat="${esc(x.n)}" style="--d:${k}"><span class="p3r">${k}</span>${fl(x.n,'fl-xl')}<span class="p3n">${esc(x.n)}</span><span class="p3v num">${x.v}</span>${x.s?`<span class="p3s">${x.s}</span>`:''}</button>`}).join('')}
 function pods(){
-  pod3('p3-nat',N.slice().sort((a,b)=>a.rk-b.rk).slice(0,3).map(n=>({n:n.n,r:n.rk,v:fmt(n.s)+' pts',s:n.nf+' sports'})));
-  const g=Object.entries(G).sort((a,b)=>b[1][gKey]-a[1][gKey]).slice(0,3);pod3('p3-gen',g.map(([n,v],i)=>({n,r:i+1,v:fmt(v[gKey])+' pts',s:gKey==='f'?'classement féminin':'classement masculin'})));
+  pod3('p3-nat',N.slice().sort((a,b)=>a.rk-b.rk).slice(0,3).map(n=>({n:n.n,r:n.rk,v:fmt(n.s)+' points',s:n.nf+' sports'})));
+  const g=Object.entries(G).sort((a,b)=>b[1][gKey]-a[1][gKey]).slice(0,3);pod3('p3-gen',g.map(([n,v],i)=>({n,r:i+1,v:fmt(v[gKey])+' points',s:gKey==='f'?'classement féminin':'classement masculin'})));
   pod3('p3-eff',efOk.slice(0,3).map(r=>({n:r.n,r:r.erk,v:'efficience '+fmt(r.eff),s:'sportif : '+r.rk+'e'})));
   pod3('p3-pop',peOk.slice(0,3).map(r=>({n:r.n,r:r.erk,v:'efficience '+fmt(r.eff),s:fmtPop(r.p)+' hab.'})));
 }
@@ -1643,9 +1649,9 @@ function pods(){
 $('#journal').innerHTML=JOURNAL.map(j=>{const d=new Date(j.date+'T12:00:00');return `<article class="jr"><div class="jrd"><b>${d.toLocaleDateString('fr-FR',{day:'numeric',month:'long',year:'numeric'})}</b>${j.version?`<span>méthode v${esc(j.version)}</span>`:''}</div><div class="jrb"><h3>${esc(j.titre)}</h3><ul>${j.items.map(i=>`<li>${esc(i)}</li>`).join('')}</ul></div></article>`}).join('');
 // carte du monde
 const MAPMODES={pr:{lab:'selon la performance réelle',get:()=>Object.fromEntries(prRank.map(r=>[r.n,{rk:r.rk,v:'indice '+fmt(r.v,1)}]))},
- s:{lab:'selon le classement sportif',get:()=>Object.fromEntries(N.map(n=>[n.n,{rk:n.rk,v:fmt(n.s)+' pts'}]))},
- f:{lab:'selon le classement féminin',get:()=>Object.fromEntries(Object.entries(G).map(([n,v])=>[n,{rk:gRank.f[n],v:fmt(v.f)+' pts'}]))},
- h:{lab:'selon le classement masculin',get:()=>Object.fromEntries(Object.entries(G).map(([n,v])=>[n,{rk:gRank.h[n],v:fmt(v.h)+' pts'}]))},
+ s:{lab:'selon le classement sportif',get:()=>Object.fromEntries(N.map(n=>[n.n,{rk:n.rk,v:fmt(n.s)+' points'}]))},
+ f:{lab:'selon le classement féminin',get:()=>Object.fromEntries(Object.entries(G).map(([n,v])=>[n,{rk:gRank.f[n],v:fmt(v.f)+' points'}]))},
+ h:{lab:'selon le classement masculin',get:()=>Object.fromEntries(Object.entries(G).map(([n,v])=>[n,{rk:gRank.h[n],v:fmt(v.h)+' points'}]))},
  e:{lab:'selon l\'efficience économique',get:()=>Object.fromEntries(efOk.map(r=>[r.n,{rk:r.erk,v:'efficience '+fmt(r.eff)}]))},
  d:{lab:'selon l\'efficience démographique',get:()=>Object.fromEntries(peOk.map(r=>[r.n,{rk:r.erk,v:'efficience '+fmt(r.eff)}]))}};
 const BUCKETS=[[1,10],[11,25],[26,50],[51,80],[81,110],[111,999]];
@@ -1680,6 +1686,8 @@ function mapZoom(){const svg=$('#worldmap svg');const full=svg.getAttribute('vie
   $('#zoombtn').addEventListener('click',e=>{const on=e.currentTarget.getAttribute('aria-pressed')!=='true';e.currentTarget.setAttribute('aria-pressed',on);e.currentTarget.textContent=on?'Monde entier':'Zoom Europe';svg.setAttribute('viewBox',on?eu:full);svg.classList.toggle('zoomed',on)});
 }
 function initMap(m){MAP=m;drawMap();colorMap();mapZoom()}
+function placeMap(v){const slot=document.querySelector('#v-'+v+' .mapslot');if(!slot)return;const box=$('#mapbox');if(box.parentNode!==slot)slot.appendChild(box);
+  const md=slot.dataset.mode==='g'?gKey:slot.dataset.mode;if(md!==mapMode){mapMode=md;if(MAP)colorMap()}}
 (function(){const el=document.getElementById('mapdata');const tx=el.textContent.trim();if(tx.startsWith('{'))initMap(JSON.parse(tx));else fetch(el.dataset.src).then(r=>r.json()).then(initMap).catch(()=>{$('#worldmap').textContent='Carte indisponible pour le moment.'})})();
 // navigation : menu Plus, recherche globale, thème
 (function(){
