@@ -51,14 +51,14 @@ BVF-JO,BVF,JO,Monde,JO Paris 2024 – beach-volley,Places,0.5,50,https://en.wiki
 TTSH-JO,TTSH,JO,Monde,JO 2024 – simple messieurs (jusqu'aux huitièmes),Places,0.5,67.5,https://www.wikiwand.com/en/articles/Table_tennis_at_the_2024_Summer_Olympics_%E2%80%93_Men's_singles
 TTSH-WC,TTSH,Mondial,Monde,Mondiaux 2025 – simple messieurs (jusqu'aux huitièmes),Places,0.5,67.5,https://en.wikipedia.org/wiki/2025_World_Table_Tennis_Championships_%E2%80%93_Men%27s_singles ; https://www.allabouttabletennis.com/world-championships-2025-mens-singles.html
 TTDH-WC,TTDH,Mondial,Monde,Mondiaux 2025 – double messieurs,Places,1,90,https://en.wikipedia.org/wiki/2025_World_Table_Tennis_Championships
-TTEH-JO,TTEH,JO,Monde,JO 2024 – équipes messieurs,Places,0.5,45,https://en.wikipedia.org/wiki/List_of_2024_Summer_Olympics_medal_winners ; 4e : https://wiki.riteme.site/wiki/Table_tennis_at_the_2024_Summer_Olympics_%E2%80%93_Men%27s_team
+TTEH-JO,TTEH,JO,Monde,JO 2024 – équipes messieurs,Places,0.5,45,https://en.wikipedia.org/wiki/List_of_2024_Summer_Olympics_medal_winners ; 4e : https://en.wikipedia.org/wiki/Table_tennis_at_the_2024_Summer_Olympics_%E2%80%93_Men%27s_team
 TTEH-WC,TTEH,Mondial,Monde,Mondiaux par équipes 2026,Places,0.5,45,https://en.wikipedia.org/wiki/2026_World_Team_Table_Tennis_Championships
 TTSF-JO,TTSF,JO,Monde,JO 2024 – simple dames (jusqu'aux huitièmes),Places,0.5,67.5,https://www.allabouttabletennis.com/2024-olympic-games-womens-singles-results.html
 TTSF-WC,TTSF,Mondial,Monde,Mondiaux 2025 – simple dames (jusqu'aux huitièmes),Places,0.5,67.5,https://en.wikipedia.org/wiki/2025_World_Table_Tennis_Championships_%E2%80%93_Women%27s_singles ; https://www.allabouttabletennis.com/world-championships-2025-womens-singles.html
 TTDF-WC,TTDF,Mondial,Monde,Mondiaux 2025 – double dames,Places,1,90,https://en.wikipedia.org/wiki/2025_World_Table_Tennis_Championships
-TTEF-JO,TTEF,JO,Monde,JO 2024 – équipes dames,Places,0.5,45,https://en.wikipedia.org/wiki/List_of_2024_Summer_Olympics_medal_winners ; 4e : https://wiki.riteme.site/wiki/Table_tennis_at_the_2024_Summer_Olympics_%E2%80%93_Women%27s_team
+TTEF-JO,TTEF,JO,Monde,JO 2024 – équipes dames,Places,0.5,45,https://en.wikipedia.org/wiki/List_of_2024_Summer_Olympics_medal_winners ; 4e : https://en.wikipedia.org/wiki/Table_tennis_at_the_2024_Summer_Olympics_%E2%80%93_Women%27s_team
 TTEF-WC,TTEF,Mondial,Monde,Mondiaux par équipes 2026,Places,0.5,45,https://en.wikipedia.org/wiki/2026_World_Team_Table_Tennis_Championships
-TTMX-JO,TTMX,JO,Monde,JO 2024 – double mixte,Places,0.5,50,https://en.wikipedia.org/wiki/List_of_2024_Summer_Olympics_medal_winners ; 4e : https://wiki.riteme.site/wiki/Table_tennis_at_the_2024_Summer_Olympics_%E2%80%93_Mixed_doubles
+TTMX-JO,TTMX,JO,Monde,JO 2024 – double mixte,Places,0.5,50,https://en.wikipedia.org/wiki/List_of_2024_Summer_Olympics_medal_winners ; 4e : https://en.wikipedia.org/wiki/Table_tennis_at_the_2024_Summer_Olympics_%E2%80%93_Mixed_doubles
 TTMX-WC,TTMX,Mondial,Monde,Mondiaux 2025 – double mixte,Places,0.5,50,https://en.wikipedia.org/wiki/2025_World_Table_Tennis_Championships
 TNSH-JO,TNSH,JO,Monde,JO 2024 – simple messieurs (jusqu'aux quarts),Places,0.31,42.19,https://wikiwand.com/en/Tennis_at_the_2024_Summer_Olympics_%E2%80%93_Men%27s_singles
 TNSH-OPE,TNSH,Majeur,Monde,Open d'Australie 2026 – messieurs (jusqu'aux huitièmes),Places,0.17,23.2,"https://mungomash.com/sports/tennis/australian-open-2026/draw/mens-singles/ (tableau ; nationalités d'après les drapeaux, joueurs neutres russes et biélorusses rattachés à leur pays)"
@@ -194,7 +194,7 @@ NET-WC,NET,Mondial,Monde,Coupe du monde 2023,Places,1,1000,https://netball.sport
 DARH-WC,DARH,Mondial,Monde,Championnat du monde PDC 2026 – hommes,Places,1,500,https://dartsnews.com/pdc/pdc-world-darts-championship-semi-final-round-up-gian-van-veen-sets-final-showdown-with-luke-littler-after-gary-anderson-epic
 DARF-WC,DARF,Mondial,Monde,Championnat du monde WDF 2025 – femmes (finale),Places,1,500,https://dartsworld.com/2025/12/hedman-lifts-womens-world-title/
 GO-WC,GO,Mondial,Monde,Championnat du monde amateur 2025 (Vancouver),Places,1,1000,https://aims.sport/vancouver-makes-history-as-first-north-american-host-of-the-world-amateur-go-championship/2025
-BOBS-JO,BOBS,JO,Monde,JO 2026 – bobsleigh et skeleton,Médailles,1,1000,https://www.olympedia.org/editions/72/sports/
+BOBS-JO,BOBS,JO,Monde,JO 2026 – bobsleigh et skeleton,Médailles,1,1000,https://www.olympedia.org/editions/72/sports/BOB ; skeleton : https://en.wikipedia.org/wiki/Skeleton_at_the_2026_Winter_Olympics
 JJ-WG,JJ,Mondial,Monde,Jeux mondiaux 2025 – ju-jitsu,Médailles,1,1000,https://en.wikipedia.org/wiki/Ju-jitsu_at_the_2025_World_Games
 BRIH-WC,BRIH,Mondial,Monde,Bermuda Bowl 2025 (podium),Places,1,500,https://news.bridgebase.com/?p=48590
 BRIF-WC,BRIF,Mondial,Monde,Venice Cup 2025 (podium),Places,1,500,https://news.bridgebase.com/?p=48590
