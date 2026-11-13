@@ -1,0 +1,152 @@
+nation,nation_en,id,iso2,wikidata,continent,population
+Afghanistan,Afghanistan,afghanistan,AF,Q889,AS,45047068
+Afrique du Sud,South Africa,afrique-du-sud,ZA,Q258,AF,65453084
+Albanie,Albania,albanie,AL,Q222,EU,2751025
+Algérie,Algeria,algerie,DZ,Q262,AF,48028334
+Allemagne,Germany,allemagne,DE,Q183,EU,83644258
+Angola,Angola,angola,AO,Q916,AF,40215180
+Arabie saoudite,Saudi Arabia,arabie-saoudite,SA,Q851,AS,35165787
+Argentine,Argentina,argentine,AR,Q414,AM,46003734
+Arménie,Armenia,armenie,AM,Q399,EU,2930915
+Australie,Australia,australie,AU,Q408,OC,27227096
+Autriche,Austria,autriche,AT,Q40,EU,9107266
+Azerbaïdjan,Azerbaijan,azerbaidjan,AZ,Q227,EU,10454855
+Bahamas,Bahamas,bahamas,BS,Q778,AM,404628
+Bahreïn,Bahrain,bahrein,BH,Q398,AS,1675572
+Bangladesh,Bangladesh,bangladesh,BD,Q902,AS,177818044
+Barbade,Barbados,barbade,BB,Q244,AM,282724
+Belgique,Belgium,belgique,BE,Q31,EU,11774642
+Bermudes,Bermuda,bermudes,BM,Q23635,AM,64459
+Biélorussie,Belarus,bielorussie,BY,Q184,EU,8937018
+Bosnie-Herzégovine,Bosnia and Herzegovina,bosnie-herzegovine,BA,Q225,EU,3114242
+Botswana,Botswana,botswana,BW,Q963,AF,2603388
+Brunei,Brunei,brunei,BN,Q921,AS,469775
+Brésil,Brazil,bresil,BR,Q155,AM,213562666
+Bulgarie,Bulgaria,bulgarie,BG,Q219,EU,6667660
+Burkina Faso,Burkina Faso,burkina-faso,BF,Q965,AF,24601700
+Bénin,Benin,benin,BJ,Q962,AF,15170420
+Cambodge,Cambodia,cambodge,KH,Q424,AS,18051219
+Cameroun,Cameroon,cameroun,CM,Q1009,AF,30640817
+Canada,Canada,canada,CA,Q16,AM,40467728
+Cap-Vert,Cabo Verde,cap-vert,CV,Q1011,AF,529630
+Chili,Chile,chili,CL,Q298,AM,19945850
+Chine,China,chine,CN,Q148,AS,1412914089
+Chypre,Cyprus,chypre,CY,Q229,EU,1382334
+Colombie,Colombia,colombie,CO,Q739,AM,53936226
+Corée du Nord,North Korea,coree-du-nord,KP,Q423,AS,26633691
+Corée du Sud,South Korea,coree-du-sud,KR,Q884,AS,51600388
+Costa Rica,Costa Rica,costa-rica,CR,Q800,AM,5174789
+Croatie,Croatia,croatie,HR,Q224,EU,3822345
+Cuba,Cuba,cuba,CU,Q241,AM,10892659
+Côte d'Ivoire,Côte d'Ivoire,cote-d-ivoire,CI,Q1008,AF,33494346
+Danemark,Denmark,danemark,DK,Q35,EU,6023520
+Dominique,Dominica,dominique,DM,Q784,AM,65511
+Espagne,Spain,espagne,ES,Q29,EU,47850793
+Estonie,Estonia,estonie,EE,Q191,EU,1331062
+Fidji,Fiji,fidji,FJ,Q712,OC,937282
+Finlande,Finland,finlande,FI,Q33,EU,5621739
+France,France,france,FR,Q142,EU,69009271
+Ghana,Ghana,ghana,GH,Q117,AF,35697557
+Grenade,Grenada,grenade,GD,Q769,AM,117362
+Grèce,Greece,grece,GR,Q41,EU,9897116
+Guatemala,Guatemala,guatemala,GT,Q774,AM,18967978
+Géorgie,Georgia,georgie,GE,Q230,EU,3804642
+Haïti,Haiti,haiti,HT,Q790,AM,12037506
+Honduras,Honduras,honduras,HN,Q783,AM,11184760
+Hong Kong,Hong Kong,hong-kong,HK,Q8646,AS,7378602
+Hongrie,Hungary,hongrie,HU,Q28,EU,9585818
+Inde,India,inde,IN,Q668,AS,1476625576
+Indes occidentales,Indes occidentales,indes-occidentales,,,AM,
+Indonésie,Indonesia,indonesie,ID,Q252,AS,287886782
+Iran,Iran,iran,IR,Q794,AS,93168497
+Irlande,Ireland,irlande,IE,Q27,EU,5356950
+Islande,Iceland,islande,IS,Q189,EU,402329
+Israël,Israel,israel,IL,Q801,EU,9647689
+Italie,Italy,italie,IT,Q38,EU,58926166
+Jamaïque,Jamaica,jamaique,JM,Q766,AM,2833404
+Japon,Japan,japon,JP,Q17,AS,122427731
+Jordanie,Jordan,jordanie,JO,Q810,AS,11589532
+Kazakhstan,Kazakhstan,kazakhstan,KZ,Q232,AS,21083626
+Kenya,Kenya,kenya,KE,Q114,AF,58636412
+Kirghizistan,Kyrgyzstan,kirghizistan,KG,Q813,AS,7400464
+Kosovo,Kosovo,kosovo,XK,Q1246,EU,1666992
+Lesotho,Lesotho,lesotho,LS,Q1013,AF,2389336
+Lettonie,Latvia,lettonie,LV,Q211,EU,1835935
+Liban,Lebanon,liban,LB,Q822,AS,5897467
+Libéria,Liberia,liberia,LR,Q1014,AF,5853949
+Lituanie,Lithuania,lituanie,LT,Q37,EU,2797338
+Luxembourg,Luxembourg,luxembourg,LU,Q32,EU,687448
+Macao,Macao,macao,MO,Q14773,AS,723188
+Malaisie,Malaysia,malaisie,MY,Q833,AS,36385115
+Mali,Mali,mali,ML,Q912,AF,25932275
+Maroc,Morocco,maroc,MA,Q1028,AF,38762441
+Mexique,Mexico,mexique,MX,Q96,AM,132997658
+Moldavie,Moldova,moldavie,MD,Q217,EU,2961253
+Monaco,Monaco,monaco,MC,Q235,EU,38087
+Mongolie,Mongolia,mongolie,MN,Q711,AS,3556798
+Monténégro,Montenegro,montenegro,ME,Q236,EU,626233
+Mozambique,Mozambique,mozambique,MZ,Q1029,AF,36639850
+Namibie,Namibia,namibie,NA,Q1030,AF,3153246
+Nicaragua,Nicaragua,nicaragua,NI,Q811,AM,7097329
+Nigeria,Nigeria,nigeria,NG,Q1033,AF,242431832
+Norvège,Norway,norvege,NO,Q20,EU,5652989
+Nouvelle-Zélande,New Zealand,nouvelle-zelande,NZ,Q664,OC,5287479
+Népal,Nepal,nepal,NP,Q837,AS,29629410
+Oman,Oman,oman,OM,Q842,AS,5671458
+Ouganda,Uganda,ouganda,UG,Q1036,AF,52761470
+Ouzbékistan,Uzbekistan,ouzbekistan,UZ,Q265,AS,37724223
+Pakistan,Pakistan,pakistan,PK,Q843,AS,259299792
+Panama,Panama,panama,PA,Q804,AM,4625718
+Papouasie-Nouvelle-Guinée,Papua New Guinea,papouasie-nouvelle-guinee,PG,Q691,OC,10947848
+Paraguay,Paraguay,paraguay,PY,Q733,AM,7095279
+Pays-Bas,Netherlands,pays-bas,NL,Q55,EU,18448775
+Philippines,Philippines,philippines,PH,Q928,AS,117724472
+Pologne,Poland,pologne,PL,Q36,EU,37843188
+Porto Rico,Puerto Rico,porto-rico,PR,Q1183,AM,3222688
+Portugal,Portugal,portugal,PT,Q45,EU,10395362
+Pérou,Peru,perou,PE,Q419,AM,34922148
+Qatar,Qatar,qatar,QA,Q846,AS,3173559
+RD Congo,DR Congo,rd-congo,CD,Q974,AF,116452162
+Roumanie,Romania,roumanie,RO,Q218,EU,18800605
+Royaume-Uni,United Kingdom,royaume-uni,GB,Q145,EU,70225165
+Russie,Russia,russie,RU,Q159,EU,143394458
+République dominicaine,Dominican Republic,republique-dominicaine,DO,Q786,AM,11609500
+Saint-Vincent-et-les-Grenadines,Saint Vincent and the Grenadines,saint-vincent-et-les-grenadines,VC,Q757,AM,99244
+Sainte-Lucie,Saint Lucia,sainte-lucie,LC,Q760,AM,180488
+Salvador,El Salvador,salvador,SV,Q792,AM,6391254
+Samoa,Samoa,samoa,WS,Q683,OC,220528
+Serbie,Serbia,serbie,RS,Q403,EU,6641964
+Singapour,Singapore,singapour,SG,Q334,AS,5905748
+Slovaquie,Slovakia,slovaquie,SK,Q214,EU,5451342
+Slovénie,Slovenia,slovenie,SI,Q215,EU,2114574
+Soudan du Sud,South Sudan,soudan-du-sud,SS,Q958,AF,12436037
+Sri Lanka,Sri Lanka,sri-lanka,LK,Q854,AS,23348315
+Suisse,Switzerland,suisse,CH,Q39,EU,9007798
+Suède,Sweden,suede,SE,Q34,EU,10701046
+Sénégal,Senegal,senegal,SN,Q1041,AF,19366548
+Tadjikistan,Tajikistan,tadjikistan,TJ,Q863,AS,10978598
+Tahiti,French Polynesia,tahiti,PF,Q30971,OC,283076
+Taipei chinois,Chinese Taipei,taipei-chinois,,Q865,AS,23011292
+Tanzanie,Tanzania,tanzanie,TZ,Q924,AF,72563780
+Tchéquie,Czechia,tchequie,CZ,Q213,EU,10527780
+Thaïlande,Thailand,thailande,TH,Q869,AS,71559614
+Tonga,Tonga,tonga,TO,Q678,OC,103291
+Trinité-et-Tobago,Trinidad and Tobago,trinite-et-tobago,TT,Q754,AM,1513268
+Tunisie,Tunisia,tunisie,TN,Q948,AF,12415138
+Turkménistan,Turkmenistan,turkmenistan,TM,Q874,AS,7736632
+Turquie,Türkiye,turquie,TR,Q43,EU,87926082
+Ukraine,Ukraine,ukraine,UA,Q212,EU,39535848
+Uruguay,Uruguay,uruguay,UY,Q77,AM,3382537
+Vanuatu,Vanuatu,vanuatu,VU,Q686,OC,342564
+Venezuela,Venezuela,venezuela,VE,Q717,AM,28633711
+Viêt Nam,Vietnam,viet-nam,VN,Q881,AS,102177431
+Zambie,Zambia,zambie,ZM,Q953,AF,22521915
+Zimbabwe,Zimbabwe,zimbabwe,ZW,Q954,AF,17273580
+Égypte,Egypt,egypte,EG,Q79,AF,120101175
+Émirats arabes unis,United Arab Emirates,emirats-arabes-unis,AE,Q878,AS,11574682
+Équateur,Ecuador,equateur,EC,Q736,AM,18444506
+Érythrée,Eritrea,erythree,ER,Q986,AF,3682669
+États-Unis,United States,etats-unis,US,Q30,AM,349035494
+Éthiopie,Ethiopia,ethiopie,ET,Q115,AF,138902185
+Îles Vierges,U.S. Virgin Islands,iles-vierges,VI,Q11703,AM,83400
+Îles Vierges britanniques,British Virgin Islands,iles-vierges-britanniques,VG,Q25305,AM,39936

@@ -1,0 +1,61 @@
+rank,nation,nation_en,iso2,balance_index,women_share_pct,women_rank,men_rank,rank_gap,sport_rank
+1,Autriche,Austria,AT,99.7,49.9,31,33,2,34
+2,Israël,Israel,IL,97.6,48.8,42,53,11,46
+3,Viêt Nam,Vietnam,VN,97.5,51.2,46,55,9,53
+4,États-Unis,United States,US,97.4,51.3,2,1,-1,1
+5,Australie,Australia,AU,97,48.5,9,8,-1,8
+6,Tchéquie,Czechia,CZ,96.9,48.4,28,30,2,30
+7,Russie,Russia,RU,95.6,52.2,16,17,1,15
+8,Allemagne,Germany,DE,94.7,47.3,5,7,2,6
+9,Hongrie,Hungary,HU,94,53,18,20,2,19
+10,Japon,Japan,JP,93.9,53,3,5,2,5
+11,Hong Kong,Hong Kong,HK,93.9,53.1,44,56,12,51
+12,Colombie,Colombia,CO,93.1,53.5,38,47,9,41
+13,Philippines,Philippines,PH,92.4,53.8,53,64,11,60
+14,Norvège,Norway,NO,92,46,22,24,2,22
+15,Ukraine,Ukraine,UA,91.7,54.1,19,26,7,20
+16,Thaïlande,Thailand,TH,91.4,45.7,25,27,2,24
+17,Malaisie,Malaysia,MY,90.5,45.2,50,51,1,48
+18,Indonésie,Indonesia,ID,90.2,45.1,37,38,1,38
+19,Mexique,Mexico,MX,90.1,54.9,30,40,10,37
+20,Italie,Italy,IT,90,45,6,6,0,7
+21,Inde,India,IN,89.7,44.9,20,14,-6,18
+22,Brésil,Brazil,BR,89.2,55.4,13,15,2,13
+23,Nouvelle-Zélande,New Zealand,NZ,88.7,55.6,15,19,4,16
+24,Belgique,Belgium,BE,88.6,44.3,24,22,-2,21
+25,Taipei chinois,Chinese Taipei,,88.5,44.3,27,28,1,27
+26,Suède,Sweden,SE,86.5,43.2,21,13,-8,17
+27,Canada,Canada,CA,85.4,57.3,11,12,1,12
+28,Suisse,Switzerland,CH,85.3,57.3,14,21,7,14
+29,Slovénie,Slovenia,SI,85,42.5,33,31,-2,35
+30,Chine,China,CN,82.7,58.6,1,4,3,2
+31,Afrique du Sud,South Africa,ZA,82.7,41.3,35,32,-3,36
+32,Irlande,Ireland,IE,82.2,41.1,48,49,1,45
+33,Finlande,Finland,FI,82,41,41,43,2,42
+34,Croatie,Croatia,HR,81.5,40.7,52,52,0,54
+35,Corée du Nord,North Korea,KP,81.2,59.4,43,61,18,56
+36,Kazakhstan,Kazakhstan,KZ,81.1,59.5,26,39,13,33
+37,Espagne,Spain,ES,80.5,40.3,12,9,-3,10
+38,France,France,FR,80.3,40.2,4,2,-2,3
+39,Portugal,Portugal,PT,79.9,39.9,39,36,-3,39
+40,Argentine,Argentina,AR,79.6,39.8,32,29,-3,28
+41,Égypte,Egypt,EG,79.3,39.6,29,25,-4,26
+42,Corée du Sud,South Korea,KR,78,61,8,10,2,9
+43,Porto Rico,Puerto Rico,PR,76.8,61.6,49,70,21,58
+44,Lettonie,Latvia,LV,76.5,38.2,55,50,-5,55
+45,Pays-Bas,Netherlands,NL,75.4,62.3,10,11,1,11
+46,Turquie,Türkiye,TR,73.2,63.4,23,41,18,32
+47,Royaume-Uni,United Kingdom,GB,72.7,36.3,7,3,-4,4
+48,Cuba,Cuba,CU,70.1,35.1,61,54,-7,57
+49,Serbie,Serbia,RS,67,33.5,45,37,-8,40
+50,Pologne,Poland,PL,66.4,66.8,17,34,17,23
+51,Tunisie,Tunisia,TN,63.9,31.9,56,45,-11,49
+52,Grèce,Greece,GR,60.4,30.2,58,48,-10,52
+53,Bulgarie,Bulgaria,BG,56.7,28.3,59,44,-15,50
+54,Danemark,Denmark,DK,54.5,27.3,36,16,-20,25
+55,Roumanie,Romania,RO,51.5,74.2,34,65,31,43
+56,Iran,Iran,IR,49,24.5,40,23,-17,31
+57,Ouzbékistan,Uzbekistan,UZ,38,19,47,18,-29,29
+58,Géorgie,Georgia,GE,29.4,14.7,74,42,-32,47
+59,Azerbaïdjan,Azerbaijan,AZ,23.9,12,80,35,-45,44
+60,Arménie,Armenia,AM,12.5,6.3,103,46,-57,59

@@ -98,3 +98,35 @@ classements_mondiaux.csv,nation_en,string,Nation (anglais),Nation (English)
 classements_mondiaux.csv,name_in_source,string,Nom tel qu'écrit dans la source,Name as written in the source
 classements_mondiaux.csv,counted,integer,1 si compté (plafond par nation),1 if counted (per-nation cap)
 classements_mondiaux.csv,points,number,Points attribués,Points awarded
+nations.csv,nation,string,Nation (français),Nation (French)
+nations.csv,nation_en,string,Nation (anglais),Nation (English)
+nations.csv,id,string,Identifiant HSR (adresse de la fiche : nation/<id>/),HSR identifier (profile address: nation/<id>/)
+nations.csv,iso2,string,Code ISO alpha-2,ISO alpha-2 code
+nations.csv,wikidata,string,Identifiant Wikidata (Natural Earth),Wikidata identifier (Natural Earth)
+nations.csv,continent,string,"Continent : EU, AF, AM, AS, OC","Continent: EU, AF, AM, AS, OC"
+nations.csv,population,integer,Population (estimation 2026),Population (2026 estimate)
+sous_classements.csv,group,string,"Groupe : continent-EU…OC, moins-10-millions, sports-ete, sports-hiver, sports-olympiques","Group: continent-EU…OC, under-10-million, summer/winter/olympic sports"
+sous_classements.csv,rank,integer,Rang dans le groupe,Rank within the group
+sous_classements.csv,nation,string,Nation (français),Nation (French)
+sous_classements.csv,nation_en,string,Nation (anglais),Nation (English)
+sous_classements.csv,iso2,string,Code ISO alpha-2,ISO alpha-2 code
+sous_classements.csv,value,number,"Indice de performance réelle (continents, petites nations) ou score dans la famille de sports","Overall performance index (continents, small nations) or score in the family of sports"
+sous_classements.csv,overall_rank,integer,"Rang mondial de performance réelle (continents, petites nations)","World overall performance rank (continents, small nations)"
+sous_classements.csv,sport_rank,integer,Rang mondial au classement sportif,World sport ranking position
+equilibre_femmes_hommes.csv,rank,integer,Rang selon l'indice,Rank by index
+equilibre_femmes_hommes.csv,nation,string,Nation (français),Nation (French)
+equilibre_femmes_hommes.csv,nation_en,string,Nation (anglais),Nation (English)
+equilibre_femmes_hommes.csv,iso2,string,Code ISO alpha-2,ISO alpha-2 code
+equilibre_femmes_hommes.csv,balance_index,number,Indice = 100 − 2 × |part féminine − 50|,Index = 100 − 2 × |women's share − 50|
+equilibre_femmes_hommes.csv,women_share_pct,number,Part féminine du score (%),Women's share of the score (%)
+equilibre_femmes_hommes.csv,women_rank,integer,Rang féminin,Women's rank
+equilibre_femmes_hommes.csv,men_rank,integer,Rang masculin,Men's rank
+equilibre_femmes_hommes.csv,rank_gap,integer,Rang masculin − rang féminin (positif : mieux classée chez les femmes),Men's rank − women's rank (positive: ranks higher among women)
+equilibre_femmes_hommes.csv,sport_rank,integer,Rang sportif,Sport rank
+projection_la2028.csv,rank,integer,Rang selon les médailles projetées,Rank by projected medals
+projection_la2028.csv,nation,string,Nation (français),Nation (French)
+projection_la2028.csv,nation_en,string,Nation (anglais),Nation (English)
+projection_la2028.csv,iso2,string,Code ISO alpha-2,ISO alpha-2 code
+projection_la2028.csv,projected_medals,number,Médailles projetées (toutes couleurs),Projected medals (all colours)
+projection_la2028.csv,projected_gold,number,Médailles d'or projetées,Projected gold medals
+projection_la2028.csv,main_sports,string,Fédérations qui apportent le plus de médailles,Federations contributing the most medals

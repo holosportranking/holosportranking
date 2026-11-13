@@ -765,6 +765,254 @@
     ]
    },
    "rows": 1030
+  },
+  {
+   "name": "nations",
+   "path": "nations.csv",
+   "title": "Nations",
+   "description": "Référentiel des nations classées : codes ISO, identifiant Wikidata, continent (association olympique continentale) et population.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "nation",
+      "type": "string",
+      "description": "Nation (français)",
+      "description_en": "Nation (French)"
+     },
+     {
+      "name": "nation_en",
+      "type": "string",
+      "description": "Nation (anglais)",
+      "description_en": "Nation (English)"
+     },
+     {
+      "name": "id",
+      "type": "string",
+      "description": "Identifiant HSR (adresse de la fiche : nation/<id>/)",
+      "description_en": "HSR identifier (profile address: nation/<id>/)"
+     },
+     {
+      "name": "iso2",
+      "type": "string",
+      "description": "Code ISO alpha-2",
+      "description_en": "ISO alpha-2 code"
+     },
+     {
+      "name": "wikidata",
+      "type": "string",
+      "description": "Identifiant Wikidata (Natural Earth)",
+      "description_en": "Wikidata identifier (Natural Earth)"
+     },
+     {
+      "name": "continent",
+      "type": "string",
+      "description": "Continent : EU, AF, AM, AS, OC",
+      "description_en": "Continent: EU, AF, AM, AS, OC"
+     },
+     {
+      "name": "population",
+      "type": "integer",
+      "description": "Population (estimation 2026)",
+      "description_en": "Population (2026 estimate)"
+     }
+    ]
+   },
+   "rows": 151
+  },
+  {
+   "name": "sous_classements",
+   "path": "sous_classements.csv",
+   "title": "Sous-classements / Sub-rankings",
+   "description": "Classement par continent et parmi les nations de moins de 10 millions d'habitants (selon la performance réelle), et par famille de sports (score dans ces seuls sports).",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "group",
+      "type": "string",
+      "description": "Groupe : continent-EU…OC, moins-10-millions, sports-ete, sports-hiver, sports-olympiques",
+      "description_en": "Group: continent-EU…OC, under-10-million, summer/winter/olympic sports"
+     },
+     {
+      "name": "rank",
+      "type": "integer",
+      "description": "Rang dans le groupe",
+      "description_en": "Rank within the group"
+     },
+     {
+      "name": "nation",
+      "type": "string",
+      "description": "Nation (français)",
+      "description_en": "Nation (French)"
+     },
+     {
+      "name": "nation_en",
+      "type": "string",
+      "description": "Nation (anglais)",
+      "description_en": "Nation (English)"
+     },
+     {
+      "name": "iso2",
+      "type": "string",
+      "description": "Code ISO alpha-2",
+      "description_en": "ISO alpha-2 code"
+     },
+     {
+      "name": "value",
+      "type": "number",
+      "description": "Indice de performance réelle (continents, petites nations) ou score dans la famille de sports",
+      "description_en": "Overall performance index (continents, small nations) or score in the family of sports"
+     },
+     {
+      "name": "overall_rank",
+      "type": "integer",
+      "description": "Rang mondial de performance réelle (continents, petites nations)",
+      "description_en": "World overall performance rank (continents, small nations)"
+     },
+     {
+      "name": "sport_rank",
+      "type": "integer",
+      "description": "Rang mondial au classement sportif",
+      "description_en": "World sport ranking position"
+     }
+    ]
+   },
+   "rows": 546
+  },
+  {
+   "name": "equilibre_femmes_hommes",
+   "path": "equilibre_femmes_hommes.csv",
+   "title": "Équilibre femmes-hommes / Women-men balance",
+   "description": "Indice d'équilibre (100 = parité des scores féminin et masculin) et écart de rang, pour les 60 premières nations du classement sportif.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "rank",
+      "type": "integer",
+      "description": "Rang selon l'indice",
+      "description_en": "Rank by index"
+     },
+     {
+      "name": "nation",
+      "type": "string",
+      "description": "Nation (français)",
+      "description_en": "Nation (French)"
+     },
+     {
+      "name": "nation_en",
+      "type": "string",
+      "description": "Nation (anglais)",
+      "description_en": "Nation (English)"
+     },
+     {
+      "name": "iso2",
+      "type": "string",
+      "description": "Code ISO alpha-2",
+      "description_en": "ISO alpha-2 code"
+     },
+     {
+      "name": "balance_index",
+      "type": "number",
+      "description": "Indice = 100 − 2 × |part féminine − 50|",
+      "description_en": "Index = 100 − 2 × |women's share − 50|"
+     },
+     {
+      "name": "women_share_pct",
+      "type": "number",
+      "description": "Part féminine du score (%)",
+      "description_en": "Women's share of the score (%)"
+     },
+     {
+      "name": "women_rank",
+      "type": "integer",
+      "description": "Rang féminin",
+      "description_en": "Women's rank"
+     },
+     {
+      "name": "men_rank",
+      "type": "integer",
+      "description": "Rang masculin",
+      "description_en": "Men's rank"
+     },
+     {
+      "name": "rank_gap",
+      "type": "integer",
+      "description": "Rang masculin − rang féminin (positif : mieux classée chez les femmes)",
+      "description_en": "Men's rank − women's rank (positive: ranks higher among women)"
+     },
+     {
+      "name": "sport_rank",
+      "type": "integer",
+      "description": "Rang sportif",
+      "description_en": "Sport rank"
+     }
+    ]
+   },
+   "rows": 60
+  },
+  {
+   "name": "projection_la2028",
+   "path": "projection_la2028.csv",
+   "title": "Projection Los Angeles 2028 (exercice) / Los Angeles 2028 projection (exercise)",
+   "description": "Exercice, pas une prédiction : médailles des JO 2028 réparties dans chaque sport au prorata des points HSR actuels.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "rank",
+      "type": "integer",
+      "description": "Rang selon les médailles projetées",
+      "description_en": "Rank by projected medals"
+     },
+     {
+      "name": "nation",
+      "type": "string",
+      "description": "Nation (français)",
+      "description_en": "Nation (French)"
+     },
+     {
+      "name": "nation_en",
+      "type": "string",
+      "description": "Nation (anglais)",
+      "description_en": "Nation (English)"
+     },
+     {
+      "name": "iso2",
+      "type": "string",
+      "description": "Code ISO alpha-2",
+      "description_en": "ISO alpha-2 code"
+     },
+     {
+      "name": "projected_medals",
+      "type": "number",
+      "description": "Médailles projetées (toutes couleurs)",
+      "description_en": "Projected medals (all colours)"
+     },
+     {
+      "name": "projected_gold",
+      "type": "number",
+      "description": "Médailles d'or projetées",
+      "description_en": "Projected gold medals"
+     },
+     {
+      "name": "main_sports",
+      "type": "string",
+      "description": "Fédérations qui apportent le plus de médailles",
+      "description_en": "Federations contributing the most medals"
+     }
+    ]
+   },
+   "rows": 147
   }
  ]
 }

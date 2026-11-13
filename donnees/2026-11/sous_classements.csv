@@ -1,0 +1,547 @@
+group,rank,nation,nation_en,iso2,value,overall_rank,sport_rank
+continent-EU,1,France,France,FR,98.11,1,3
+continent-EU,2,Royaume-Uni,United Kingdom,GB,96.9,2,4
+continent-EU,3,Italie,Italy,IT,94.85,6,7
+continent-EU,4,Allemagne,Germany,DE,94.66,7,6
+continent-EU,5,Pays-Bas,Netherlands,NL,92.82,8,11
+continent-EU,6,Espagne,Spain,ES,92.63,10,10
+continent-EU,7,Suisse,Switzerland,CH,88.67,14,14
+continent-EU,8,Hongrie,Hungary,HU,88.58,15,19
+continent-EU,9,Suède,Sweden,SE,88.02,16,17
+continent-EU,10,Ukraine,Ukraine,UA,87.37,17,20
+continent-EU,11,Belgique,Belgium,BE,84.42,19,21
+continent-EU,12,Norvège,Norway,NO,83.38,20,22
+continent-EU,13,Russie,Russia,RU,82.92,21,15
+continent-EU,14,Danemark,Denmark,DK,82.91,22,25
+continent-EU,15,Pologne,Poland,PL,82.53,23,23
+continent-EU,16,Slovénie,Slovenia,SI,80.28,26,35
+continent-EU,17,Tchéquie,Czechia,CZ,80.02,27,30
+continent-EU,18,Autriche,Austria,AT,75.89,34,34
+continent-EU,19,Serbie,Serbia,RS,75.81,35,40
+continent-EU,20,Portugal,Portugal,PT,73.17,37,39
+continent-EU,21,Turquie,Türkiye,TR,73.06,38,32
+continent-EU,22,Géorgie,Georgia,GE,71.55,39,47
+continent-EU,23,Finlande,Finland,FI,70.95,40,42
+continent-EU,24,Azerbaïdjan,Azerbaijan,AZ,70.81,41,44
+continent-EU,25,Lettonie,Latvia,LV,66.62,46,55
+continent-EU,26,Bulgarie,Bulgaria,BG,65.83,48,50
+continent-EU,27,Arménie,Armenia,AM,65.46,49,59
+continent-EU,28,Roumanie,Romania,RO,65.2,50,43
+continent-EU,29,Croatie,Croatia,HR,64.68,51,54
+continent-EU,30,Israël,Israel,IL,64.55,52,46
+continent-EU,31,Irlande,Ireland,IE,64.35,53,45
+continent-EU,32,Grèce,Greece,GR,62.37,54,52
+continent-EU,33,Moldavie,Moldova,MD,61.36,56,65
+continent-EU,34,Lituanie,Lithuania,LT,56.97,63,64
+continent-EU,35,Slovaquie,Slovakia,SK,52.98,68,66
+continent-EU,36,Monaco,Monaco,MC,48.67,76,78
+continent-EU,37,Kosovo,Kosovo,XK,48.49,77,87
+continent-EU,38,Biélorussie,Belarus,BY,48.19,78,72
+continent-EU,39,Monténégro,Montenegro,ME,46.73,83,90
+continent-EU,40,Estonie,Estonia,EE,35.36,96,100
+continent-EU,41,Islande,Iceland,IS,28.73,111,112
+continent-EU,42,Luxembourg,Luxembourg,LU,26.62,115,111
+continent-EU,43,Albanie,Albania,AL,24.08,120,116
+continent-EU,44,Chypre,Cyprus,CY,22.19,122,118
+continent-EU,45,Bosnie-Herzégovine,Bosnia and Herzegovina,BA,19.14,125,124
+continent-AF,1,Égypte,Egypt,EG,78.9,30,26
+continent-AF,2,Afrique du Sud,South Africa,ZA,74.87,36,36
+continent-AF,3,Tunisie,Tunisia,TN,69.31,45,49
+continent-AF,4,Kenya,Kenya,KE,58.88,62,63
+continent-AF,5,Maroc,Morocco,MA,53.73,67,69
+continent-AF,6,Algérie,Algeria,DZ,51.6,71,67
+continent-AF,7,Nigeria,Nigeria,NG,48.87,75,71
+continent-AF,8,Bénin,Benin,BJ,47.19,81,86
+continent-AF,9,Éthiopie,Ethiopia,ET,46.97,82,83
+continent-AF,10,Sénégal,Senegal,SN,43.92,88,89
+continent-AF,11,Côte d'Ivoire,Côte d'Ivoire,CI,35.96,95,94
+continent-AF,12,Zimbabwe,Zimbabwe,ZW,33.59,99,99
+continent-AF,13,Botswana,Botswana,BW,33.17,101,105
+continent-AF,14,Ouganda,Uganda,UG,31.61,104,106
+continent-AF,15,Mali,Mali,ML,30.61,108,109
+continent-AF,16,Soudan du Sud,South Sudan,SS,29.37,109,119
+continent-AF,17,Cap-Vert,Cabo Verde,CV,24.59,119,126
+continent-AF,18,Cameroun,Cameroon,CM,23.71,121,115
+continent-AF,19,Angola,Angola,AO,20.47,124,120
+continent-AF,20,Mozambique,Mozambique,MZ,17.31,127,130
+continent-AF,21,Ghana,Ghana,GH,15.72,129,129
+continent-AF,22,Tanzanie,Tanzania,TZ,14.36,131,131
+continent-AF,23,Zambie,Zambia,ZM,13.52,133,133
+continent-AF,24,Burkina Faso,Burkina Faso,BF,13.2,135,135
+continent-AF,25,Namibie,Namibia,NA,12.45,136,132
+continent-AF,26,RD Congo,DR Congo,CD,7.74,140,143
+continent-AF,27,Libéria,Liberia,LR,6.72,143,145
+continent-AF,28,Lesotho,Lesotho,LS,6.37,145,145
+continent-AF,29,Érythrée,Eritrea,ER,3.1,148,148
+continent-AM,1,États-Unis,United States,US,95.98,3,1
+continent-AM,2,Canada,Canada,CA,90.21,13,12
+continent-AM,3,Brésil,Brazil,BR,85.86,18,13
+continent-AM,4,Argentine,Argentina,AR,78.94,29,28
+continent-AM,5,Mexique,Mexico,MX,70.69,42,37
+continent-AM,6,Colombie,Colombia,CO,69.71,43,41
+continent-AM,7,Jamaïque,Jamaica,JM,66.36,47,61
+continent-AM,8,Cuba,Cuba,CU,61.59,55,57
+continent-AM,9,Porto Rico,Puerto Rico,PR,61.07,59,58
+continent-AM,10,Venezuela,Venezuela,VE,56.2,65,70
+continent-AM,11,Pérou,Peru,PE,55.72,66,62
+continent-AM,12,République dominicaine,Dominican Republic,DO,52.14,69,68
+continent-AM,13,Indes occidentales,Indes occidentales,,52,70,73
+continent-AM,14,Équateur,Ecuador,EC,44.65,87,80
+continent-AM,15,Chili,Chile,CL,40.48,92,82
+continent-AM,16,Uruguay,Uruguay,UY,37.2,94,95
+continent-AM,17,Guatemala,Guatemala,GT,33.73,98,97
+continent-AM,18,Grenade,Grenada,GD,31.5,105,121
+continent-AM,19,Panama,Panama,PA,28.14,112,108
+continent-AM,20,Sainte-Lucie,Saint Lucia,LC,26.99,113,123
+continent-AM,21,Salvador,El Salvador,SV,24.92,118,114
+continent-AM,22,Trinité-et-Tobago,Trinidad and Tobago,TT,20.51,123,122
+continent-AM,23,Paraguay,Paraguay,PY,18.09,126,124
+continent-AM,24,Dominique,Dominica,DM,14.65,130,128
+continent-AM,25,Bahamas,Bahamas,BS,13.87,132,133
+continent-AM,26,Îles Vierges,U.S. Virgin Islands,VI,13.21,134,126
+continent-AM,27,Nicaragua,Nicaragua,NI,10.4,138,135
+continent-AM,28,Honduras,Honduras,HN,7.86,139,140
+continent-AM,29,Saint-Vincent-et-les-Grenadines,Saint Vincent and the Grenadines,VC,6.97,142,139
+continent-AM,30,Îles Vierges britanniques,British Virgin Islands,VG,6.67,144,141
+continent-AM,31,Barbade,Barbados,BB,6.2,146,145
+continent-AM,32,Costa Rica,Costa Rica,CR,3.91,147,144
+continent-AM,33,Haïti,Haiti,HT,1.02,150,149
+continent-AM,34,Bermudes,Bermuda,BM,0.89,151,149
+continent-AS,1,Japon,Japan,JP,95.87,4,5
+continent-AS,2,Chine,China,CN,92.67,9,2
+continent-AS,3,Corée du Sud,South Korea,KR,92.44,11,9
+continent-AS,4,Ouzbékistan,Uzbekistan,UZ,82.1,24,29
+continent-AS,5,Thaïlande,Thailand,TH,81.32,25,24
+continent-AS,6,Inde,India,IN,79.82,28,18
+continent-AS,7,Taipei chinois,Chinese Taipei,,78.4,31,27
+continent-AS,8,Kazakhstan,Kazakhstan,KZ,77.97,32,33
+continent-AS,9,Iran,Iran,IR,76.01,33,31
+continent-AS,10,Indonésie,Indonesia,ID,69.48,44,38
+continent-AS,11,Viêt Nam,Vietnam,VN,61.34,57,53
+continent-AS,12,Hong Kong,Hong Kong,HK,61.13,58,51
+continent-AS,13,Malaisie,Malaysia,MY,60.73,60,48
+continent-AS,14,Corée du Nord,North Korea,KP,59.47,61,56
+continent-AS,15,Philippines,Philippines,PH,56.91,64,60
+continent-AS,16,Jordanie,Jordan,JO,51.38,72,75
+continent-AS,17,Kirghizistan,Kyrgyzstan,KG,51.1,73,79
+continent-AS,18,Mongolie,Mongolia,MN,50.19,74,77
+continent-AS,19,Pakistan,Pakistan,PK,47.2,80,76
+continent-AS,20,Singapour,Singapore,SG,45.6,85,74
+continent-AS,21,Bahreïn,Bahrain,BH,45.24,86,84
+continent-AS,22,Tadjikistan,Tajikistan,TJ,43.43,89,91
+continent-AS,23,Sri Lanka,Sri Lanka,LK,43.09,90,81
+continent-AS,24,Macao,Macao,MO,41,91,92
+continent-AS,25,Bangladesh,Bangladesh,BD,38.61,93,85
+continent-AS,26,Cambodge,Cambodia,KH,34.8,97,98
+continent-AS,27,Qatar,Qatar,QA,33.19,100,96
+continent-AS,28,Émirats arabes unis,United Arab Emirates,AE,32.62,103,93
+continent-AS,29,Turkménistan,Turkmenistan,TM,31.21,106,103
+continent-AS,30,Népal,Nepal,NP,30.7,107,104
+continent-AS,31,Brunei,Brunei,BN,28.88,110,110
+continent-AS,32,Liban,Lebanon,LB,26.83,114,113
+continent-AS,33,Afghanistan,Afghanistan,AF,26.54,116,117
+continent-AS,34,Arabie saoudite,Saudi Arabia,SA,25.6,117,102
+continent-AS,35,Oman,Oman,OM,7.66,141,138
+continent-OC,1,Australie,Australia,AU,95.39,5,8
+continent-OC,2,Nouvelle-Zélande,New Zealand,NZ,90.8,12,16
+continent-OC,3,Fidji,Fiji,FJ,47.57,79,88
+continent-OC,4,Samoa,Samoa,WS,46.39,84,101
+continent-OC,5,Papouasie-Nouvelle-Guinée,Papua New Guinea,PG,32.85,102,107
+continent-OC,6,Tahiti,French Polynesia,PF,16.44,128,135
+continent-OC,7,Vanuatu,Vanuatu,VU,11.74,137,142
+continent-OC,8,Tonga,Tonga,TO,1.37,149,149
+moins-10-millions,1,Nouvelle-Zélande,New Zealand,NZ,90.8,12,16
+moins-10-millions,2,Suisse,Switzerland,CH,88.67,14,14
+moins-10-millions,3,Hongrie,Hungary,HU,88.58,15,19
+moins-10-millions,4,Norvège,Norway,NO,83.38,20,22
+moins-10-millions,5,Danemark,Denmark,DK,82.91,22,25
+moins-10-millions,6,Slovénie,Slovenia,SI,80.28,26,35
+moins-10-millions,7,Autriche,Austria,AT,75.89,34,34
+moins-10-millions,8,Serbie,Serbia,RS,75.81,35,40
+moins-10-millions,9,Géorgie,Georgia,GE,71.55,39,47
+moins-10-millions,10,Finlande,Finland,FI,70.95,40,42
+moins-10-millions,11,Lettonie,Latvia,LV,66.62,46,55
+moins-10-millions,12,Jamaïque,Jamaica,JM,66.36,47,61
+moins-10-millions,13,Bulgarie,Bulgaria,BG,65.83,48,50
+moins-10-millions,14,Arménie,Armenia,AM,65.46,49,59
+moins-10-millions,15,Croatie,Croatia,HR,64.68,51,54
+moins-10-millions,16,Israël,Israel,IL,64.55,52,46
+moins-10-millions,17,Irlande,Ireland,IE,64.35,53,45
+moins-10-millions,18,Grèce,Greece,GR,62.37,54,52
+moins-10-millions,19,Moldavie,Moldova,MD,61.36,56,65
+moins-10-millions,20,Hong Kong,Hong Kong,HK,61.13,58,51
+moins-10-millions,21,Porto Rico,Puerto Rico,PR,61.07,59,58
+moins-10-millions,22,Lituanie,Lithuania,LT,56.97,63,64
+moins-10-millions,23,Slovaquie,Slovakia,SK,52.98,68,66
+moins-10-millions,24,Kirghizistan,Kyrgyzstan,KG,51.1,73,79
+moins-10-millions,25,Mongolie,Mongolia,MN,50.19,74,77
+moins-10-millions,26,Monaco,Monaco,MC,48.67,76,78
+moins-10-millions,27,Kosovo,Kosovo,XK,48.49,77,87
+moins-10-millions,28,Biélorussie,Belarus,BY,48.19,78,72
+moins-10-millions,29,Fidji,Fiji,FJ,47.57,79,88
+moins-10-millions,30,Monténégro,Montenegro,ME,46.73,83,90
+moins-10-millions,31,Samoa,Samoa,WS,46.39,84,101
+moins-10-millions,32,Singapour,Singapore,SG,45.6,85,74
+moins-10-millions,33,Bahreïn,Bahrain,BH,45.24,86,84
+moins-10-millions,34,Macao,Macao,MO,41,91,92
+moins-10-millions,35,Uruguay,Uruguay,UY,37.2,94,95
+moins-10-millions,36,Estonie,Estonia,EE,35.36,96,100
+moins-10-millions,37,Qatar,Qatar,QA,33.19,100,96
+moins-10-millions,38,Botswana,Botswana,BW,33.17,101,105
+moins-10-millions,39,Grenade,Grenada,GD,31.5,105,121
+moins-10-millions,40,Turkménistan,Turkmenistan,TM,31.21,106,103
+moins-10-millions,41,Brunei,Brunei,BN,28.88,110,110
+moins-10-millions,42,Islande,Iceland,IS,28.73,111,112
+moins-10-millions,43,Panama,Panama,PA,28.14,112,108
+moins-10-millions,44,Sainte-Lucie,Saint Lucia,LC,26.99,113,123
+moins-10-millions,45,Liban,Lebanon,LB,26.83,114,113
+moins-10-millions,46,Luxembourg,Luxembourg,LU,26.62,115,111
+moins-10-millions,47,Salvador,El Salvador,SV,24.92,118,114
+moins-10-millions,48,Cap-Vert,Cabo Verde,CV,24.59,119,126
+moins-10-millions,49,Albanie,Albania,AL,24.08,120,116
+moins-10-millions,50,Chypre,Cyprus,CY,22.19,122,118
+moins-10-millions,51,Trinité-et-Tobago,Trinidad and Tobago,TT,20.51,123,122
+moins-10-millions,52,Bosnie-Herzégovine,Bosnia and Herzegovina,BA,19.14,125,124
+moins-10-millions,53,Paraguay,Paraguay,PY,18.09,126,124
+moins-10-millions,54,Tahiti,French Polynesia,PF,16.44,128,135
+moins-10-millions,55,Dominique,Dominica,DM,14.65,130,128
+moins-10-millions,56,Bahamas,Bahamas,BS,13.87,132,133
+moins-10-millions,57,Îles Vierges,U.S. Virgin Islands,VI,13.21,134,126
+moins-10-millions,58,Namibie,Namibia,NA,12.45,136,132
+moins-10-millions,59,Vanuatu,Vanuatu,VU,11.74,137,142
+moins-10-millions,60,Nicaragua,Nicaragua,NI,10.4,138,135
+moins-10-millions,61,Oman,Oman,OM,7.66,141,138
+moins-10-millions,62,Saint-Vincent-et-les-Grenadines,Saint Vincent and the Grenadines,VC,6.97,142,139
+moins-10-millions,63,Libéria,Liberia,LR,6.72,143,145
+moins-10-millions,64,Îles Vierges britanniques,British Virgin Islands,VG,6.67,144,141
+moins-10-millions,65,Lesotho,Lesotho,LS,6.37,145,145
+moins-10-millions,66,Barbade,Barbados,BB,6.2,146,145
+moins-10-millions,67,Costa Rica,Costa Rica,CR,3.91,147,144
+moins-10-millions,68,Érythrée,Eritrea,ER,3.1,148,148
+moins-10-millions,69,Tonga,Tonga,TO,1.37,149,149
+moins-10-millions,70,Bermudes,Bermuda,BM,0.89,151,149
+sports-ete,1,Chine,China,CN,5752.2,,2
+sports-ete,2,États-Unis,United States,US,5513.8,,1
+sports-ete,3,France,France,FR,4385.1,,3
+sports-ete,4,Royaume-Uni,United Kingdom,GB,4218,,4
+sports-ete,5,Japon,Japan,JP,3957.8,,5
+sports-ete,6,Italie,Italy,IT,3198.6,,7
+sports-ete,7,Australie,Australia,AU,3075.2,,8
+sports-ete,8,Allemagne,Germany,DE,3017,,6
+sports-ete,9,Corée du Sud,South Korea,KR,2453.1,,9
+sports-ete,10,Espagne,Spain,ES,2370.7,,10
+sports-ete,11,Pays-Bas,Netherlands,NL,2193.1,,11
+sports-ete,12,Brésil,Brazil,BR,1631.8,,13
+sports-ete,13,Canada,Canada,CA,1624.2,,12
+sports-ete,14,Nouvelle-Zélande,New Zealand,NZ,1357.6,,16
+sports-ete,15,Russie,Russia,RU,1341.5,,15
+sports-ete,16,Inde,India,IN,1337.2,,18
+sports-ete,17,Hongrie,Hungary,HU,1256.7,,19
+sports-ete,18,Ukraine,Ukraine,UA,1188.1,,20
+sports-ete,19,Belgique,Belgium,BE,1042.8,,21
+sports-ete,20,Pologne,Poland,PL,1011.3,,23
+sports-ete,21,Thaïlande,Thailand,TH,984.4,,24
+sports-ete,22,Suède,Sweden,SE,978.1,,17
+sports-ete,23,Danemark,Denmark,DK,956.2,,25
+sports-ete,24,Suisse,Switzerland,CH,954.9,,14
+sports-ete,25,Égypte,Egypt,EG,929,,26
+sports-ete,26,Taipei chinois,Chinese Taipei,,904.9,,27
+sports-ete,27,Argentine,Argentina,AR,809.2,,28
+sports-ete,28,Ouzbékistan,Uzbekistan,UZ,802.4,,29
+sports-ete,29,Iran,Iran,IR,764.9,,31
+sports-ete,30,Turquie,Türkiye,TR,750.2,,32
+sports-ete,31,Kazakhstan,Kazakhstan,KZ,703.1,,33
+sports-ete,32,Tchéquie,Czechia,CZ,657.1,,30
+sports-ete,33,Afrique du Sud,South Africa,ZA,653.1,,36
+sports-ete,34,Slovénie,Slovenia,SI,646.4,,35
+sports-ete,35,Mexique,Mexico,MX,628.1,,37
+sports-ete,36,Norvège,Norway,NO,583.3,,22
+sports-ete,37,Indonésie,Indonesia,ID,555.4,,38
+sports-ete,38,Portugal,Portugal,PT,517.4,,39
+sports-ete,39,Serbie,Serbia,RS,463.5,,40
+sports-ete,40,Autriche,Austria,AT,453,,34
+sports-ete,41,Colombie,Colombia,CO,452.8,,41
+sports-ete,42,Roumanie,Romania,RO,376.2,,43
+sports-ete,43,Azerbaïdjan,Azerbaijan,AZ,360.9,,44
+sports-ete,44,Irlande,Ireland,IE,355.5,,45
+sports-ete,45,Israël,Israel,IL,331.7,,46
+sports-ete,46,Malaisie,Malaysia,MY,316.4,,48
+sports-ete,47,Tunisie,Tunisia,TN,315.7,,49
+sports-ete,48,Hong Kong,Hong Kong,HK,303.1,,51
+sports-ete,49,Bulgarie,Bulgaria,BG,303,,50
+sports-ete,50,Géorgie,Georgia,GE,302.6,,47
+sports-ete,51,Grèce,Greece,GR,300.6,,52
+sports-ete,52,Viêt Nam,Vietnam,VN,299.6,,53
+sports-ete,53,Croatie,Croatia,HR,292.2,,54
+sports-ete,54,Corée du Nord,North Korea,KP,271.3,,56
+sports-ete,55,Finlande,Finland,FI,254.2,,42
+sports-ete,56,Lettonie,Latvia,LV,237.4,,55
+sports-ete,57,Cuba,Cuba,CU,236.7,,57
+sports-ete,58,Porto Rico,Puerto Rico,PR,234.7,,58
+sports-ete,59,Arménie,Armenia,AM,225.6,,59
+sports-ete,60,Philippines,Philippines,PH,216.8,,60
+sports-ete,61,Jamaïque,Jamaica,JM,203.4,,61
+sports-ete,62,Pérou,Peru,PE,191.1,,62
+sports-ete,63,Kenya,Kenya,KE,187.6,,63
+sports-ete,64,Lituanie,Lithuania,LT,185.8,,64
+sports-ete,65,Moldavie,Moldova,MD,184.1,,65
+sports-ete,66,Algérie,Algeria,DZ,173.1,,67
+sports-ete,67,République dominicaine,Dominican Republic,DO,165.6,,68
+sports-ete,68,Maroc,Morocco,MA,164.7,,69
+sports-ete,69,Venezuela,Venezuela,VE,156.8,,70
+sports-ete,70,Slovaquie,Slovakia,SK,151.5,,66
+sports-ete,71,Nigeria,Nigeria,NG,138.5,,71
+sports-ete,72,Biélorussie,Belarus,BY,134.1,,72
+sports-ete,73,Indes occidentales,Indes occidentales,,129.9,,73
+sports-ete,74,Singapour,Singapore,SG,127.3,,74
+sports-ete,75,Jordanie,Jordan,JO,121.6,,75
+sports-ete,76,Pakistan,Pakistan,PK,117.7,,76
+sports-ete,77,Mongolie,Mongolia,MN,116.8,,77
+sports-ete,78,Monaco,Monaco,MC,114.2,,78
+sports-ete,79,Kirghizistan,Kyrgyzstan,KG,107.2,,79
+sports-ete,80,Équateur,Ecuador,EC,104.1,,80
+sports-ete,81,Sri Lanka,Sri Lanka,LK,101.6,,81
+sports-ete,82,Chili,Chile,CL,97.7,,82
+sports-ete,83,Éthiopie,Ethiopia,ET,96.9,,83
+sports-ete,84,Bahreïn,Bahrain,BH,92.4,,84
+sports-ete,85,Bangladesh,Bangladesh,BD,80.8,,85
+sports-ete,86,Bénin,Benin,BJ,75.7,,86
+sports-ete,87,Kosovo,Kosovo,XK,74.5,,87
+sports-ete,88,Fidji,Fiji,FJ,73.3,,88
+sports-ete,89,Sénégal,Senegal,SN,67.2,,89
+sports-ete,90,Monténégro,Montenegro,ME,66.9,,90
+sports-ete,91,Tadjikistan,Tajikistan,TJ,66.5,,91
+sports-ete,92,Macao,Macao,MO,63.6,,92
+sports-ete,93,Émirats arabes unis,United Arab Emirates,AE,56.8,,93
+sports-ete,94,Côte d'Ivoire,Côte d'Ivoire,CI,55.4,,94
+sports-ete,95,Uruguay,Uruguay,UY,54.5,,95
+sports-ete,96,Qatar,Qatar,QA,52.9,,96
+sports-ete,97,Guatemala,Guatemala,GT,52.1,,97
+sports-ete,98,Cambodge,Cambodia,KH,47.5,,98
+sports-ete,99,Zimbabwe,Zimbabwe,ZW,43.2,,99
+sports-ete,100,Samoa,Samoa,WS,42.6,,101
+sports-ete,101,Arabie saoudite,Saudi Arabia,SA,40.2,,102
+sports-ete,102,Estonie,Estonia,EE,39.9,,100
+sports-ete,103,Turkménistan,Turkmenistan,TM,39,,103
+sports-ete,104,Népal,Nepal,NP,36,,104
+sports-ete,105,Botswana,Botswana,BW,35.3,,105
+sports-ete,106,Ouganda,Uganda,UG,35,,106
+sports-ete,107,Papouasie-Nouvelle-Guinée,Papua New Guinea,PG,34.8,,107
+sports-ete,108,Panama,Panama,PA,33.6,,108
+sports-ete,109,Mali,Mali,ML,29.2,,109
+sports-ete,110,Brunei,Brunei,BN,24.2,,110
+sports-ete,111,Luxembourg,Luxembourg,LU,24,,111
+sports-ete,112,Islande,Iceland,IS,23.7,,112
+sports-ete,113,Liban,Lebanon,LB,23.6,,113
+sports-ete,114,Salvador,El Salvador,SV,22.6,,114
+sports-ete,115,Cameroun,Cameroon,CM,21.6,,115
+sports-ete,116,Albanie,Albania,AL,20.3,,116
+sports-ete,117,Afghanistan,Afghanistan,AF,19.6,,117
+sports-ete,118,Chypre,Cyprus,CY,18.7,,118
+sports-ete,119,Soudan du Sud,South Sudan,SS,18.5,,119
+sports-ete,120,Angola,Angola,AO,17.8,,120
+sports-ete,121,Grenade,Grenada,GD,16.7,,121
+sports-ete,122,Trinité-et-Tobago,Trinidad and Tobago,TT,15.8,,122
+sports-ete,123,Sainte-Lucie,Saint Lucia,LC,15.2,,123
+sports-ete,124,Paraguay,Paraguay,PY,15.1,,124
+sports-ete,125,Bosnie-Herzégovine,Bosnia and Herzegovina,BA,15.1,,124
+sports-ete,126,Îles Vierges,U.S. Virgin Islands,VI,12.6,,126
+sports-ete,127,Cap-Vert,Cabo Verde,CV,12.6,,126
+sports-ete,128,Dominique,Dominica,DM,10.8,,128
+sports-ete,129,Ghana,Ghana,GH,10,,129
+sports-ete,130,Mozambique,Mozambique,MZ,6.9,,130
+sports-ete,131,Tanzanie,Tanzania,TZ,6.4,,131
+sports-ete,132,Namibie,Namibia,NA,5.6,,132
+sports-ete,133,Zambie,Zambia,ZM,5.1,,133
+sports-ete,134,Bahamas,Bahamas,BS,5.1,,133
+sports-ete,135,Nicaragua,Nicaragua,NI,4.4,,135
+sports-ete,136,Tahiti,French Polynesia,PF,4.4,,135
+sports-ete,137,Burkina Faso,Burkina Faso,BF,4.4,,135
+sports-ete,138,Oman,Oman,OM,4.1,,138
+sports-ete,139,Saint-Vincent-et-les-Grenadines,Saint Vincent and the Grenadines,VC,3.7,,139
+sports-ete,140,Honduras,Honduras,HN,3.6,,140
+sports-ete,141,Îles Vierges britanniques,British Virgin Islands,VG,2.9,,141
+sports-ete,142,Vanuatu,Vanuatu,VU,2.6,,142
+sports-ete,143,RD Congo,DR Congo,CD,1.9,,143
+sports-ete,144,Costa Rica,Costa Rica,CR,1.6,,144
+sports-ete,145,Barbade,Barbados,BB,1.5,,145
+sports-ete,146,Lesotho,Lesotho,LS,1.5,,145
+sports-ete,147,Libéria,Liberia,LR,1.5,,145
+sports-ete,148,Érythrée,Eritrea,ER,0.7,,148
+sports-hiver,1,Allemagne,Germany,DE,666.6,,6
+sports-hiver,2,États-Unis,United States,US,529.8,,1
+sports-hiver,3,Norvège,Norway,NO,477,,22
+sports-hiver,4,France,France,FR,436.5,,3
+sports-hiver,5,Suisse,Switzerland,CH,435.7,,14
+sports-hiver,6,Suède,Sweden,SE,371.4,,17
+sports-hiver,7,Italie,Italy,IT,354.3,,7
+sports-hiver,8,Canada,Canada,CA,348.7,,12
+sports-hiver,9,Japon,Japan,JP,249.4,,5
+sports-hiver,10,Autriche,Austria,AT,235.6,,34
+sports-hiver,11,Pays-Bas,Netherlands,NL,192.3,,11
+sports-hiver,12,Finlande,Finland,FI,179.9,,42
+sports-hiver,13,Espagne,Spain,ES,140.3,,10
+sports-hiver,14,Royaume-Uni,United Kingdom,GB,137.9,,4
+sports-hiver,15,Tchéquie,Czechia,CZ,121.4,,30
+sports-hiver,16,Corée du Sud,South Korea,KR,104.2,,9
+sports-hiver,17,Chine,China,CN,95.9,,2
+sports-hiver,18,Lettonie,Latvia,LV,48,,55
+sports-hiver,19,Russie,Russia,RU,47.6,,15
+sports-hiver,20,Slovénie,Slovenia,SI,34.7,,35
+sports-hiver,21,Australie,Australia,AU,31.4,,8
+sports-hiver,22,Danemark,Denmark,DK,25,,25
+sports-hiver,23,Slovaquie,Slovakia,SK,23.2,,66
+sports-hiver,24,Pologne,Poland,PL,22.6,,23
+sports-hiver,25,Nouvelle-Zélande,New Zealand,NZ,21.4,,16
+sports-hiver,26,Belgique,Belgium,BE,20,,21
+sports-hiver,27,Kazakhstan,Kazakhstan,KZ,17.9,,33
+sports-hiver,28,Géorgie,Georgia,GE,17.3,,47
+sports-hiver,29,Bulgarie,Bulgaria,BG,11.9,,50
+sports-hiver,30,Hongrie,Hungary,HU,10.8,,19
+sports-hiver,31,Turquie,Türkiye,TR,8.3,,32
+sports-hiver,32,Brésil,Brazil,BR,7.8,,13
+sports-hiver,33,Ukraine,Ukraine,UA,5.2,,20
+sports-hiver,34,Estonie,Estonia,EE,3.1,,100
+sports-olympiques,1,États-Unis,United States,US,5267.7,,1
+sports-olympiques,2,France,France,FR,3999.1,,3
+sports-olympiques,3,Japon,Japan,JP,3676.9,,5
+sports-olympiques,4,Chine,China,CN,3665.8,,2
+sports-olympiques,5,Allemagne,Germany,DE,2971.5,,6
+sports-olympiques,6,Royaume-Uni,United Kingdom,GB,2917.3,,4
+sports-olympiques,7,Australie,Australia,AU,2435.8,,8
+sports-olympiques,8,Italie,Italy,IT,2397.2,,7
+sports-olympiques,9,Corée du Sud,South Korea,KR,2174.3,,9
+sports-olympiques,10,Espagne,Spain,ES,1889.5,,10
+sports-olympiques,11,Pays-Bas,Netherlands,NL,1780.4,,11
+sports-olympiques,12,Canada,Canada,CA,1707.3,,12
+sports-olympiques,13,Brésil,Brazil,BR,1554.5,,13
+sports-olympiques,14,Suisse,Switzerland,CH,1080.1,,14
+sports-olympiques,15,Nouvelle-Zélande,New Zealand,NZ,1045.3,,16
+sports-olympiques,16,Norvège,Norway,NO,972.3,,22
+sports-olympiques,17,Suède,Sweden,SE,962.8,,17
+sports-olympiques,18,Belgique,Belgium,BE,893.8,,21
+sports-olympiques,19,Danemark,Denmark,DK,884.6,,25
+sports-olympiques,20,Hongrie,Hungary,HU,884.1,,19
+sports-olympiques,21,Russie,Russia,RU,866.6,,15
+sports-olympiques,22,Pologne,Poland,PL,786.4,,23
+sports-olympiques,23,Inde,India,IN,744,,18
+sports-olympiques,24,Égypte,Egypt,EG,737.6,,26
+sports-olympiques,25,Argentine,Argentina,AR,641.8,,28
+sports-olympiques,26,Taipei chinois,Chinese Taipei,,617.4,,27
+sports-olympiques,27,Autriche,Austria,AT,603.6,,34
+sports-olympiques,28,Tchéquie,Czechia,CZ,583,,30
+sports-olympiques,29,Slovénie,Slovenia,SI,551.2,,35
+sports-olympiques,30,Afrique du Sud,South Africa,ZA,543.8,,36
+sports-olympiques,31,Mexique,Mexico,MX,537.2,,37
+sports-olympiques,32,Turquie,Türkiye,TR,531.9,,32
+sports-olympiques,33,Ukraine,Ukraine,UA,473.6,,20
+sports-olympiques,34,Ouzbékistan,Uzbekistan,UZ,447.5,,29
+sports-olympiques,35,Serbie,Serbia,RS,446.8,,40
+sports-olympiques,36,Iran,Iran,IR,432.2,,31
+sports-olympiques,37,Thaïlande,Thailand,TH,409.9,,24
+sports-olympiques,38,Portugal,Portugal,PT,404.4,,39
+sports-olympiques,39,Roumanie,Romania,RO,352.7,,43
+sports-olympiques,40,Irlande,Ireland,IE,347.4,,45
+sports-olympiques,41,Kazakhstan,Kazakhstan,KZ,342.8,,33
+sports-olympiques,42,Colombie,Colombia,CO,338.7,,41
+sports-olympiques,43,Indonésie,Indonesia,ID,274.4,,38
+sports-olympiques,44,Géorgie,Georgia,GE,274.2,,47
+sports-olympiques,45,Croatie,Croatia,HR,272.2,,54
+sports-olympiques,46,Corée du Nord,North Korea,KP,271.3,,56
+sports-olympiques,47,Lettonie,Latvia,LV,270.5,,55
+sports-olympiques,48,Bulgarie,Bulgaria,BG,238.3,,50
+sports-olympiques,49,Cuba,Cuba,CU,236.7,,57
+sports-olympiques,50,Finlande,Finland,FI,234.1,,42
+sports-olympiques,51,Grèce,Greece,GR,231.3,,52
+sports-olympiques,52,Azerbaïdjan,Azerbaijan,AZ,217.9,,44
+sports-olympiques,53,Porto Rico,Puerto Rico,PR,209.1,,58
+sports-olympiques,54,Pérou,Peru,PE,191.1,,62
+sports-olympiques,55,Philippines,Philippines,PH,189.4,,60
+sports-olympiques,56,Kenya,Kenya,KE,172.8,,63
+sports-olympiques,57,République dominicaine,Dominican Republic,DO,165.6,,68
+sports-olympiques,58,Hong Kong,Hong Kong,HK,157.2,,51
+sports-olympiques,59,Israël,Israel,IL,151.4,,46
+sports-olympiques,60,Tunisie,Tunisia,TN,144.3,,49
+sports-olympiques,61,Malaisie,Malaysia,MY,138.7,,48
+sports-olympiques,62,Nigeria,Nigeria,NG,138.5,,71
+sports-olympiques,63,Arménie,Armenia,AM,135.5,,59
+sports-olympiques,64,Indes occidentales,Indes occidentales,,129.9,,73
+sports-olympiques,65,Venezuela,Venezuela,VE,127.4,,70
+sports-olympiques,66,Jamaïque,Jamaica,JM,122.9,,61
+sports-olympiques,67,Lituanie,Lithuania,LT,120.3,,64
+sports-olympiques,68,Pakistan,Pakistan,PK,117.7,,76
+sports-olympiques,69,Équateur,Ecuador,EC,104.1,,80
+sports-olympiques,70,Maroc,Morocco,MA,103.8,,69
+sports-olympiques,71,Algérie,Algeria,DZ,102.3,,67
+sports-olympiques,72,Éthiopie,Ethiopia,ET,96.9,,83
+sports-olympiques,73,Sri Lanka,Sri Lanka,LK,94.2,,81
+sports-olympiques,74,Bahreïn,Bahrain,BH,92.4,,84
+sports-olympiques,75,Biélorussie,Belarus,BY,81.5,,72
+sports-olympiques,76,Kirghizistan,Kyrgyzstan,KG,78.9,,79
+sports-olympiques,77,Chili,Chile,CL,77.8,,82
+sports-olympiques,78,Moldavie,Moldova,MD,76.8,,65
+sports-olympiques,79,Fidji,Fiji,FJ,73.3,,88
+sports-olympiques,80,Mongolie,Mongolia,MN,68.6,,77
+sports-olympiques,81,Sénégal,Senegal,SN,67.2,,89
+sports-olympiques,82,Slovaquie,Slovakia,SK,66.7,,66
+sports-olympiques,83,Tadjikistan,Tajikistan,TJ,66.5,,91
+sports-olympiques,84,Jordanie,Jordan,JO,66.1,,75
+sports-olympiques,85,Bangladesh,Bangladesh,BD,66,,85
+sports-olympiques,86,Macao,Macao,MO,63.6,,92
+sports-olympiques,87,Monténégro,Montenegro,ME,60.2,,90
+sports-olympiques,88,Côte d'Ivoire,Côte d'Ivoire,CI,55.4,,94
+sports-olympiques,89,Uruguay,Uruguay,UY,54.5,,95
+sports-olympiques,90,Qatar,Qatar,QA,52.9,,96
+sports-olympiques,91,Kosovo,Kosovo,XK,48.9,,87
+sports-olympiques,92,Singapour,Singapore,SG,46.6,,74
+sports-olympiques,93,Zimbabwe,Zimbabwe,ZW,43.2,,99
+sports-olympiques,94,Estonie,Estonia,EE,43,,100
+sports-olympiques,95,Botswana,Botswana,BW,35.3,,105
+sports-olympiques,96,Panama,Panama,PA,33.6,,108
+sports-olympiques,97,Guatemala,Guatemala,GT,30.9,,97
+sports-olympiques,98,Mali,Mali,ML,29.2,,109
+sports-olympiques,99,Luxembourg,Luxembourg,LU,24,,111
+sports-olympiques,100,Islande,Iceland,IS,23.7,,112
+sports-olympiques,101,Ouganda,Uganda,UG,23.4,,106
+sports-olympiques,102,Salvador,El Salvador,SV,22.6,,114
+sports-olympiques,103,Émirats arabes unis,United Arab Emirates,AE,21,,93
+sports-olympiques,104,Albanie,Albania,AL,20.3,,116
+sports-olympiques,105,Afghanistan,Afghanistan,AF,19.6,,117
+sports-olympiques,106,Chypre,Cyprus,CY,18.7,,118
+sports-olympiques,107,Soudan du Sud,South Sudan,SS,18.5,,119
+sports-olympiques,108,Angola,Angola,AO,17.8,,120
+sports-olympiques,109,Grenade,Grenada,GD,16.7,,121
+sports-olympiques,110,Trinité-et-Tobago,Trinidad and Tobago,TT,15.8,,122
+sports-olympiques,111,Sainte-Lucie,Saint Lucia,LC,15.2,,123
+sports-olympiques,112,Paraguay,Paraguay,PY,15.1,,124
+sports-olympiques,113,Bosnie-Herzégovine,Bosnia and Herzegovina,BA,15.1,,124
+sports-olympiques,114,Liban,Lebanon,LB,14.6,,113
+sports-olympiques,115,Arabie saoudite,Saudi Arabia,SA,13.6,,102
+sports-olympiques,116,Cap-Vert,Cabo Verde,CV,12.6,,126
+sports-olympiques,117,Cameroun,Cameroon,CM,12.1,,115
+sports-olympiques,118,Dominique,Dominica,DM,10.8,,128
+sports-olympiques,119,Papouasie-Nouvelle-Guinée,Papua New Guinea,PG,10.6,,107
+sports-olympiques,120,Ghana,Ghana,GH,10,,129
+sports-olympiques,121,Samoa,Samoa,WS,7.8,,101
+sports-olympiques,122,Viêt Nam,Vietnam,VN,7.4,,53
+sports-olympiques,123,Monaco,Monaco,MC,7.1,,78
+sports-olympiques,124,Mozambique,Mozambique,MZ,6.9,,130
+sports-olympiques,125,Tanzanie,Tanzania,TZ,6.4,,131
+sports-olympiques,126,Namibie,Namibia,NA,5.6,,132
+sports-olympiques,127,Zambie,Zambia,ZM,5.1,,133
+sports-olympiques,128,Bahamas,Bahamas,BS,5.1,,133
+sports-olympiques,129,Nicaragua,Nicaragua,NI,4.4,,135
+sports-olympiques,130,Tahiti,French Polynesia,PF,4.4,,135
+sports-olympiques,131,Burkina Faso,Burkina Faso,BF,4.4,,135
+sports-olympiques,132,Oman,Oman,OM,4.1,,138
+sports-olympiques,133,Saint-Vincent-et-les-Grenadines,Saint Vincent and the Grenadines,VC,3.7,,139
+sports-olympiques,134,Honduras,Honduras,HN,3.6,,140
+sports-olympiques,135,Îles Vierges britanniques,British Virgin Islands,VG,2.9,,141
+sports-olympiques,136,Népal,Nepal,NP,2.6,,104
+sports-olympiques,137,Vanuatu,Vanuatu,VU,2.6,,142
+sports-olympiques,138,RD Congo,DR Congo,CD,1.9,,143
+sports-olympiques,139,Costa Rica,Costa Rica,CR,1.6,,144
+sports-olympiques,140,Barbade,Barbados,BB,1.5,,145
+sports-olympiques,141,Lesotho,Lesotho,LS,1.5,,145
+sports-olympiques,142,Libéria,Liberia,LR,1.5,,145
+sports-olympiques,143,Érythrée,Eritrea,ER,0.7,,148

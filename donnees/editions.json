@@ -15,6 +15,10 @@
   "competitions.csv",
   "resultats.csv",
   "classements_mondiaux.csv",
+  "nations.csv",
+  "sous_classements.csv",
+  "equilibre_femmes_hommes.csv",
+  "projection_la2028.csv",
   "dictionnaire.csv",
   "datapackage.json"
  ]

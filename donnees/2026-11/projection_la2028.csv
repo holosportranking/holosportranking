@@ -1,0 +1,148 @@
+rank,nation,nation_en,iso2,projected_medals,projected_gold,main_sports
+1,États-Unis,United States,US,111.01,36.34,World Aquatics | World Athletics | World Gymnastics
+2,Chine,China,CN,84.95,27.38,World Aquatics | World Gymnastics | ISSF
+3,Japon,Japan,JP,61.38,18.38,IJF | UWW | World Gymnastics
+4,France,France,FR,57.53,18.34,UCI | World Aquatics | IJF
+5,Royaume-Uni,United Kingdom,GB,53.81,17.7,World Aquatics | World Athletics | World Rowing
+6,Australie,Australia,AU,48.98,16.14,World Aquatics | ICF | World Athletics
+7,Italie,Italy,IT,45.49,14.91,World Aquatics | UCI | World Athletics
+8,Pays-Bas,Netherlands,NL,37.16,12.35,UCI | World Rowing | World Aquatics
+9,Allemagne,Germany,DE,35.2,11.52,FEI | World Aquatics | World Athletics
+10,Corée du Sud,South Korea,KR,33.98,10.57,World Archery | ISSF | IJF
+11,Espagne,Spain,ES,27.67,9.01,World Aquatics | World Athletics | ICF
+12,Russie,Russia,RU,24.94,7.68,World Aquatics | World Gymnastics | UWW
+13,Canada,Canada,CA,24.65,8.01,World Aquatics | World Athletics | World Lacrosse
+14,Hongrie,Hungary,HU,23.58,7.65,ICF | World Aquatics | FIE
+15,Brésil,Brazil,BR,16.33,4.9,IJF | World Gymnastics | World Boxing
+16,Pologne,Poland,PL,16.14,5.2,UCI | World Athletics | World Climbing
+17,Ouzbékistan,Uzbekistan,UZ,15.95,4.12,World Boxing | UWW | World Taekwondo
+18,Belgique,Belgium,BE,14.23,4.65,UCI | World Athletics | FEI
+19,Nouvelle-Zélande,New Zealand,NZ,13.97,4.66,World Rowing | ICF | World Athletics
+20,Suisse,Switzerland,CH,13.92,4.64,UCI | ISSF | World Athletics
+21,Ukraine,Ukraine,UA,13.12,4.09,FIE | UWW | ICF
+22,Iran,Iran,IR,12.95,3.31,UWW | World Taekwondo | IWF
+23,Kazakhstan,Kazakhstan,KZ,10.93,2.91,World Boxing | IJF | UWW
+24,Roumanie,Romania,RO,10.63,3.52,World Rowing | World Aquatics | IWF
+25,Danemark,Denmark,DK,10.49,3.43,UCI | FEI | BWF
+26,Turquie,Türkiye,TR,9.93,2.79,World Boxing | World Taekwondo | UWW
+27,Inde,India,IN,9.83,3.09,ISSF | World Boxing | ICC
+28,Kenya,Kenya,KE,9.35,3.12,World Athletics | FIVB
+29,Suède,Sweden,SE,9.06,2.99,World Athletics | World Sailing | World Aquatics
+30,Géorgie,Georgia,GE,8.77,2.33,IJF | UWW | World Boxing
+31,Slovénie,Slovenia,SI,8.74,2.86,World Climbing | UCI | World Sailing
+32,Irlande,Ireland,IE,8.74,2.76,World Rowing | World Boxing | World Aquatics
+33,Mexique,Mexico,MX,8.5,2.74,World Aquatics | World Archery | IFAF
+34,Azerbaïdjan,Azerbaijan,AZ,8.12,2.06,UWW | IJF | World Boxing
+35,Cuba,Cuba,CU,7.93,2.22,UWW | World Boxing | World Athletics
+36,Norvège,Norway,NO,7.85,2.58,World Athletics | ISSF | IWF
+37,Corée du Nord,North Korea,KP,7.3,2.14,UWW | IWF | World Aquatics
+38,Taipei chinois,Chinese Taipei,,7.26,2.19,World Boxing | ITTF | BWF
+39,Jamaïque,Jamaica,JM,6.92,2.31,World Athletics | FIFA
+40,Afrique du Sud,South Africa,ZA,6.79,2.26,World Aquatics | World Athletics | ICC
+41,Égypte,Egypt,EG,6.74,2.2,World Squash | UIPM | IWF
+42,Croatie,Croatia,HR,6.71,2.04,World Aquatics | IJF | World Rowing
+43,Serbie,Serbia,RS,6.64,2.13,World Aquatics | FIBA | ISSF
+44,Autriche,Austria,AT,6.42,2.08,World Sailing | World Climbing | ISSF
+45,Tchéquie,Czechia,CZ,6.42,2.14,ICF | ITF | World Athletics
+46,Grèce,Greece,GR,6.06,1.9,World Rowing | World Aquatics | World Athletics
+47,Bulgarie,Bulgaria,BG,5.57,1.59,UWW | IWF | World Boxing
+48,Éthiopie,Ethiopia,ET,5.54,1.85,World Athletics
+49,Thaïlande,Thailand,TH,5.16,1.6,IWF | BWF | World Taekwondo
+50,Portugal,Portugal,PT,5.1,1.64,World Athletics | ICF | IJF
+51,Arménie,Armenia,AM,5.09,1.53,UWW | World Gymnastics | IWF
+52,Colombie,Colombia,CO,4.99,1.61,IWF | World Athletics | World Gymnastics
+53,Israël,Israel,IL,4.7,1.45,World Sailing | IJF | World Gymnastics
+54,Philippines,Philippines,PH,4.56,1.45,World Gymnastics | World Boxing | IGF
+55,Kirghizistan,Kyrgyzstan,KG,4.17,1.06,UWW | World Boxing | World Aquatics
+56,Tunisie,Tunisia,TN,4.02,1.19,World Taekwondo | World Aquatics | World Athletics
+57,Algérie,Algeria,DZ,4,1.27,World Gymnastics | World Boxing | World Athletics
+58,Équateur,Ecuador,EC,3.82,1.17,World Athletics | UWW | IWF
+59,Bahreïn,Bahrain,BH,3.7,1.11,UWW | World Athletics | IWF
+60,Indonésie,Indonesia,ID,3.63,1.21,IWF | BWF | World Climbing
+61,Hong Kong,Hong Kong,HK,3.57,1.19,FIE | World Aquatics | ITTF
+62,Argentine,Argentina,AR,3.02,1.01,FIH | World Sailing | FIFA
+63,Moldavie,Moldova,MD,2.97,0.84,UWW | ICF | IJF
+64,Mongolie,Mongolia,MN,2.94,0.74,IJF | UWW | World Boxing
+65,République dominicaine,Dominican Republic,DO,2.56,0.78,World Athletics | World Boxing | IWF
+66,Tadjikistan,Tajikistan,TJ,2.52,0.63,IJF | World Boxing
+67,Pérou,Peru,PE,2.28,0.76,ISA | World Skate | World Athletics
+68,Nigeria,Nigeria,NG,2.06,0.67,World Athletics | IWF | FIBA
+69,Botswana,Botswana,BW,2.02,0.67,World Athletics
+70,Lituanie,Lithuania,LT,1.89,0.63,World Athletics | World Rowing | World Aquatics
+71,Kosovo,Kosovo,XK,1.8,0.45,IJF
+72,Porto Rico,Puerto Rico,PR,1.72,0.54,World Athletics | WBSC | UWW
+73,Chili,Chile,CL,1.49,0.45,ISSF | UWW | IWF
+74,Finlande,Finland,FI,1.44,0.46,World Athletics | UWW | FIVB
+75,Estonie,Estonia,EE,1.32,0.44,FIE | World Athletics | FIVB
+76,Jordanie,Jordan,JO,1.2,0.3,World Taekwondo | World Boxing | FIFA
+77,Slovaquie,Slovakia,SK,1.16,0.37,ICF | World Athletics | UWW
+78,Albanie,Albania,AL,1.09,0.27,UWW
+79,Lettonie,Latvia,LV,1.08,0.36,FIBA | World Athletics | FIVB
+80,Ouganda,Uganda,UG,1.06,0.35,World Athletics | FIBA | ICC
+81,Venezuela,Venezuela,VE,1.05,0.33,WBSC | World Athletics | World Boxing
+82,Guatemala,Guatemala,GT,1.03,0.34,ISSF | FIFA
+83,Biélorussie,Belarus,BY,1.01,0.34,World Aquatics | ITF | FIFA
+84,Grenade,Grenada,GD,0.95,0.32,World Athletics
+85,Qatar,Qatar,QA,0.95,0.32,World Athletics | FIVB | FIFA
+86,Malaisie,Malaysia,MY,0.95,0.32,BWF | World Squash | FIH
+87,Singapour,Singapore,SG,0.95,0.32,World Sailing | BWF | ITTF
+88,Maroc,Morocco,MA,0.95,0.32,World Athletics | FIFA
+89,Côte d'Ivoire,Côte d'Ivoire,CI,0.94,0.26,World Taekwondo | World Athletics | FIBA
+90,Trinité-et-Tobago,Trinidad and Tobago,TT,0.9,0.3,World Athletics
+91,Uruguay,Uruguay,UY,0.88,0.29,World Rowing | World Athletics | FIFA
+92,Sainte-Lucie,Saint Lucia,LC,0.87,0.29,World Athletics
+93,Panama,Panama,PA,0.79,0.22,World Boxing | World Athletics | WBSC
+94,Pakistan,Pakistan,PK,0.71,0.24,World Athletics | ICC | FIH
+95,Dominique,Dominica,DM,0.62,0.21,World Athletics
+96,Chypre,Cyprus,CY,0.56,0.19,World Sailing | World Athletics
+97,Macao,Macao,MO,0.44,0.15,ITTF
+98,Cap-Vert,Cabo Verde,CV,0.44,0.11,World Boxing | FIBA
+99,Émirats arabes unis,United Arab Emirates,AE,0.42,0.11,IJF | ICC | FIFA
+100,Indes occidentales,Indes occidentales,,0.42,0.14,ICC
+101,Sri Lanka,Sri Lanka,LK,0.38,0.13,ICC | World Athletics
+102,Zimbabwe,Zimbabwe,ZW,0.38,0.13,World Athletics | ICC
+103,Fidji,Fiji,FJ,0.35,0.12,World Rugby | FIFA
+104,Tanzanie,Tanzania,TZ,0.33,0.11,World Athletics | ICC
+105,Zambie,Zambia,ZM,0.29,0.1,World Athletics
+106,Salvador,El Salvador,SV,0.29,0.1,World Archery | FIBA | FIFA
+107,Bahamas,Bahamas,BS,0.29,0.1,World Athletics | FIBA
+108,Sénégal,Senegal,SN,0.27,0.09,World Athletics | FIFA | FIBA
+109,Samoa,Samoa,WS,0.26,0.09,World Athletics | World Rugby
+110,Arabie saoudite,Saudi Arabia,SA,0.25,0.06,World Taekwondo | FIFA
+111,Burkina Faso,Burkina Faso,BF,0.25,0.08,World Athletics
+112,Monaco,Monaco,MC,0.24,0.08,World Aquatics | ITF
+113,Bangladesh,Bangladesh,BD,0.21,0.07,ICC
+114,Ghana,Ghana,GH,0.21,0.07,World Athletics | FIFA
+115,Monténégro,Montenegro,ME,0.21,0.07,IHF | FIBA
+116,Saint-Vincent-et-les-Grenadines,Saint Vincent and the Grenadines,VC,0.21,0.07,World Athletics
+117,Islande,Iceland,IS,0.18,0.06,ISSF | FIFA | FIBA
+118,Luxembourg,Luxembourg,LU,0.18,0.06,World Triathlon
+119,Îles Vierges britanniques,British Virgin Islands,VG,0.17,0.06,World Athletics
+120,Mali,Mali,ML,0.1,0.03,FIBA | FIFA
+121,Barbade,Barbados,BB,0.08,0.03,World Athletics
+122,Lesotho,Lesotho,LS,0.08,0.03,World Athletics
+123,Libéria,Liberia,LR,0.08,0.03,World Athletics
+124,Afghanistan,Afghanistan,AF,0.06,0.02,ICC
+125,Soudan du Sud,South Sudan,SS,0.06,0.02,FIBA
+126,Angola,Angola,AO,0.06,0.02,FIBA
+127,Bosnie-Herzégovine,Bosnia and Herzegovina,BA,0.05,0.02,FIBA | FIVB
+128,Liban,Lebanon,LB,0.05,0.02,FIBA
+129,Érythrée,Eritrea,ER,0.04,0.01,World Athletics
+130,Cameroun,Cameroon,CM,0.04,0.01,FIBA | FIVB | FIFA
+131,Papouasie-Nouvelle-Guinée,Papua New Guinea,PG,0.03,0.01,ICC
+132,Paraguay,Paraguay,PY,0.03,0.01,FIFA
+133,Viêt Nam,Vietnam,VN,0.02,0.01,FIVB | FIFA
+134,Mozambique,Mozambique,MZ,0.02,0.01,FIBA
+135,Nicaragua,Nicaragua,NI,0.02,0.01,WBSC
+136,Namibie,Namibia,NA,0.02,0.01,ICC
+137,Népal,Nepal,NP,0.01,0,ICC
+138,Oman,Oman,OM,0.01,0,FIFA | ICC
+139,Tahiti,French Polynesia,PF,0.01,0,FIFA
+140,Honduras,Honduras,HN,0.01,0,FIFA
+141,Vanuatu,Vanuatu,VU,0,0,FIFA
+142,RD Congo,DR Congo,CD,0,0,FIFA
+143,Costa Rica,Costa Rica,CR,0,0,FIFA
+144,Tonga,Tonga,TO,0,0,World Rugby
+145,Îles Vierges,U.S. Virgin Islands,VI,0,0,FIBA
+146,Haïti,Haiti,HT,0,0,FIFA
+147,Bermudes,Bermuda,BM,0,0,FIVB
