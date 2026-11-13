@@ -1,0 +1,2347 @@
+competition,nation,nation_en,place_from,place_to,gold,silver,bronze,points
+BKM-WC,Allemagne,Germany,1,1,,,,17.5
+BKM-WC,Serbie,Serbia,2,2,,,,12.6
+BKM-WC,Canada,Canada,3,3,,,,9.8
+BKM-WC,États-Unis,United States,4,4,,,,7.7
+BKM-WC,Lettonie,Latvia,5,5,,,,5.6
+BKM-WC,Lituanie,Lithuania,6,6,,,,5.6
+BKM-WC,Slovénie,Slovenia,7,7,,,,5.6
+BKM-WC,Italie,Italy,8,8,,,,5.6
+BKM-JO,États-Unis,United States,1,1,,,,17.5
+BKM-JO,France,France,2,2,,,,12.6
+BKM-JO,Serbie,Serbia,3,3,,,,9.8
+BKM-JO,Allemagne,Germany,4,4,,,,7.7
+BKM-JO,Canada,Canada,5,5,,,,5.6
+BKM-JO,Australie,Australia,6,6,,,,5.6
+BKM-JO,Brésil,Brazil,7,7,,,,5.6
+BKM-JO,Grèce,Greece,8,8,,,,5.6
+BKM-EU,Allemagne,Germany,1,1,,,,5.25
+BKM-EU,Turquie,Turkey (Türkiye),2,2,,,,3.78
+BKM-EU,Grèce,Greece,3,3,,,,2.94
+BKM-EU,Finlande,Finland,4,4,,,,2.31
+BKM-EU,Lituanie,Lithuania,5,8,,,,1.68
+BKM-EU,Pologne,Poland,5,8,,,,1.68
+BKM-EU,Slovénie,Slovenia,5,8,,,,1.68
+BKM-EU,Géorgie,Georgia,5,8,,,,1.68
+BKM-AM,Brésil,Brazil,1,1,,,,3.75
+BKM-AM,Argentine,Argentina,2,2,,,,2.7
+BKM-AM,États-Unis,United States,3,3,,,,2.1
+BKM-AM,Canada,Canada,4,4,,,,1.65
+BKM-AM,République dominicaine,Dominican Republic,5,5,,,,1.2
+BKM-AM,Porto Rico,Puerto Rico,6,6,,,,1.2
+BKM-AM,Uruguay,Uruguay,7,7,,,,1.2
+BKM-AM,Colombie,Colombia,8,8,,,,1.2
+BKM-AF,Angola,Angola,1,1,,,,2.25
+BKM-AF,Mali,Mali,2,2,,,,1.62
+BKM-AF,Sénégal,Senegal,3,3,,,,1.26
+BKM-AF,Cameroun,Cameroon,4,4,,,,0.99
+BKM-AF,Nigeria,Nigeria,5,5,,,,0.72
+BKM-AF,Égypte,Egypt,6,6,,,,0.72
+BKM-AF,Côte d'Ivoire,Côte d'Ivoire,7,7,,,,0.72
+BKM-AF,Cap-Vert,Cabo Verde,8,8,,,,0.72
+BKM-AS,Australie,Australia,1,1,,,,3.75
+BKM-AS,Chine,China,2,2,,,,2.7
+BKM-AS,Iran,Iran,3,3,,,,2.1
+BKM-AS,Nouvelle-Zélande,New Zealand,4,4,,,,1.65
+BKM-AS,Taipei chinois,Taiwan,5,5,,,,1.2
+BKM-AS,Corée du Sud,South Korea,6,6,,,,1.2
+BKM-AS,Philippines,Philippines,7,7,,,,1.2
+BKM-AS,Liban,Lebanon,8,8,,,,1.2
+B3M-WC,Lettonie,Latvia,1,1,,,,21.93
+B3M-WC,Allemagne,Germany,2,2,,,,15.79
+B3M-WC,Serbie,Serbia,3,3,,,,12.28
+B3M-JO,Pays-Bas,Netherlands,1,1,,,,12.5
+B3M-JO,France,France,2,2,,,,9
+B3M-JO,Lituanie,Lithuania,3,3,,,,7
+B3M-JO,Lettonie,Latvia,4,4,,,,5.5
+B3M-JO,Serbie,Serbia,5,5,,,,4
+B3M-JO,Pologne,Poland,6,6,,,,4
+B3M-JO,États-Unis,United States,7,7,,,,4
+B3M-JO,Chine,China,8,8,,,,4
+BKF-WC,États-Unis,United States,1,1,,,,17.5
+BKF-WC,France,France,2,2,,,,12.6
+BKF-WC,Espagne,Spain,3,3,,,,9.8
+BKF-WC,Allemagne,Germany,4,4,,,,7.7
+BKF-WC,Belgique,Belgium,5,5,,,,5.6
+BKF-WC,Australie,Australia,6,6,,,,5.6
+BKF-WC,Chine,China,7,7,,,,5.6
+BKF-WC,Hongrie,Hungary,8,8,,,,5.6
+BKF-JO,États-Unis,United States,1,1,,,,17.5
+BKF-JO,France,France,2,2,,,,12.6
+BKF-JO,Australie,Australia,3,3,,,,9.8
+BKF-JO,Belgique,Belgium,4,4,,,,7.7
+BKF-JO,Espagne,Spain,5,5,,,,5.6
+BKF-JO,Serbie,Serbia,6,6,,,,5.6
+BKF-JO,Allemagne,Germany,7,7,,,,5.6
+BKF-JO,Nigeria,Nigeria,8,8,,,,5.6
+BKF-EU,Belgique,Belgium,1,1,,,,5.25
+BKF-EU,Espagne,Spain,2,2,,,,3.78
+BKF-EU,Italie,Italy,3,3,,,,2.94
+BKF-EU,France,France,4,4,,,,2.31
+BKF-EU,Allemagne,Germany,5,5,,,,1.68
+BKF-EU,Tchéquie,Czech Republic (Czechia),6,6,,,,1.68
+BKF-EU,Turquie,Turkey (Türkiye),7,7,,,,1.68
+BKF-EU,Lituanie,Lithuania,8,8,,,,1.68
+BKF-AM,États-Unis,United States,1,1,,,,3.75
+BKF-AM,Brésil,Brazil,2,2,,,,2.7
+BKF-AM,Canada,Canada,3,3,,,,2.1
+BKF-AM,Argentine,Argentina,4,4,,,,1.65
+BKF-AM,Colombie,Colombia,5,5,,,,1.2
+BKF-AM,Porto Rico,Puerto Rico,6,6,,,,1.2
+BKF-AM,Mexique,Mexico,7,7,,,,1.2
+BKF-AM,République dominicaine,Dominican Republic,8,8,,,,1.2
+BKF-AF,Nigeria,Nigeria,1,1,,,,2.25
+BKF-AF,Mali,Mali,2,2,,,,1.62
+BKF-AF,Soudan du Sud,South Sudan,3,3,,,,1.26
+BKF-AF,Sénégal,Senegal,4,4,,,,0.99
+BKF-AF,Cameroun,Cameroon,5,5,,,,0.72
+BKF-AF,Mozambique,Mozambique,6,6,,,,0.72
+BKF-AF,Côte d'Ivoire,Côte d'Ivoire,7,7,,,,0.72
+BKF-AF,Ouganda,Uganda,8,8,,,,0.72
+BKF-AS,Australie,Australia,1,1,,,,3.75
+BKF-AS,Japon,Japan,2,2,,,,2.7
+BKF-AS,Chine,China,3,3,,,,2.1
+BKF-AS,Corée du Sud,South Korea,4,4,,,,1.65
+BKF-AS,Nouvelle-Zélande,New Zealand,5,5,,,,1.2
+BKF-AS,Philippines,Philippines,6,6,,,,1.2
+BKF-AS,Liban,Lebanon,7,7,,,,1.2
+BKF-AS,Indonésie,Indonesia,8,8,,,,1.2
+B3F-WC,États-Unis,United States,1,1,,,,21.93
+B3F-WC,Australie,Australia,2,2,,,,15.79
+B3F-WC,Pays-Bas,Netherlands,3,3,,,,12.28
+B3F-JO,Allemagne,Germany,1,1,,,,12.5
+B3F-JO,Espagne,Spain,2,2,,,,9
+B3F-JO,États-Unis,United States,3,3,,,,7
+B3F-JO,Canada,Canada,4,4,,,,5.5
+B3F-JO,Australie,Australia,5,5,,,,4
+B3F-JO,Chine,China,6,6,,,,4
+B3F-JO,Azerbaïdjan,Azerbaijan,7,7,,,,4
+B3F-JO,France,France,8,8,,,,4
+FBM-WC,Espagne,Spain,1,1,,,,30
+FBM-WC,Argentine,Argentina,2,2,,,,21.6
+FBM-WC,Royaume-Uni,United Kingdom,3,3,,,,16.8
+FBM-WC,France,France,4,4,,,,13.2
+FBM-WC,Maroc,Morocco,5,8,,,,9.6
+FBM-WC,Belgique,Belgium,5,8,,,,9.6
+FBM-WC,Norvège,Norway,5,8,,,,9.6
+FBM-WC,Suisse,Switzerland,5,8,,,,9.6
+FBM-JO,Espagne,Spain,1,1,,,,5
+FBM-JO,France,France,2,2,,,,3.6
+FBM-JO,Maroc,Morocco,3,3,,,,2.8
+FBM-JO,Égypte,Egypt,4,4,,,,2.2
+FBM-JO,Japon,Japan,5,8,,,,1.6
+FBM-JO,Paraguay,Paraguay,5,8,,,,1.6
+FBM-JO,États-Unis,United States,5,8,,,,1.6
+FBM-JO,Argentine,Argentina,5,8,,,,1.6
+FBM-EU,Espagne,Spain,1,1,,,,7.72
+FBM-EU,Royaume-Uni,United Kingdom,2,2,,,,5.56
+FBM-EU,France,France,3,4,,,,3.86
+FBM-EU,Pays-Bas,Netherlands,3,4,,,,3.86
+FBM-SA,Argentine,Argentina,1,1,,,,3.31
+FBM-SA,Colombie,Colombia,2,2,,,,2.38
+FBM-SA,Uruguay,Uruguay,3,3,,,,1.85
+FBM-SA,Canada,Canada,4,4,,,,1.46
+FBM-NA,Mexique,Mexico,1,1,,,,2.21
+FBM-NA,États-Unis,United States,2,2,,,,1.59
+FBM-NA,Guatemala,Guatemala,3,4,,,,1.1
+FBM-NA,Honduras,Honduras,3,4,,,,1.1
+FBM-AF,Maroc,Morocco,1,1,,,,3.31
+FBM-AF,Sénégal,Senegal,2,2,,,,2.38
+FBM-AF,Nigeria,Nigeria,3,3,,,,1.85
+FBM-AF,Égypte,Egypt,4,4,,,,1.46
+FBM-AS,Qatar,Qatar,1,1,,,,4.41
+FBM-AS,Jordanie,Jordan,2,2,,,,3.18
+FBM-AS,Iran,Iran,3,4,,,,2.21
+FBM-AS,Corée du Sud,South Korea,3,4,,,,2.21
+FBM-OC,Nouvelle-Zélande,New Zealand,1,1,,,,1.1
+FBM-OC,Vanuatu,Vanuatu,2,2,,,,0.79
+FBM-OC,Tahiti,French Polynesia,3,3,,,,0.62
+FBM-OC,Fidji,Fiji,4,4,,,,0.49
+FSM-WC,Brésil,Brazil,1,1,,,,18.38
+FSM-WC,Argentine,Argentina,2,2,,,,13.24
+FSM-WC,Ukraine,Ukraine,3,3,,,,10.29
+FSM-WC,France,France,4,4,,,,8.09
+BSM-WC,Brésil,Brazil,1,1,,,,9.19
+BSM-WC,Biélorussie,Belarus,2,2,,,,6.62
+BSM-WC,Portugal,Portugal,3,3,,,,5.15
+BSM-WC,Sénégal,Senegal,4,4,,,,4.04
+FBF-WC,Espagne,Spain,1,1,,,,17.5
+FBF-WC,Royaume-Uni,United Kingdom,2,2,,,,12.6
+FBF-WC,Suède,Sweden,3,3,,,,9.8
+FBF-WC,Australie,Australia,4,4,,,,7.7
+FBF-WC,Japon,Japan,5,8,,,,5.6
+FBF-WC,Pays-Bas,Netherlands,5,8,,,,5.6
+FBF-WC,France,France,5,8,,,,5.6
+FBF-WC,Colombie,Colombia,5,8,,,,5.6
+FBF-JO,États-Unis,United States,1,1,,,,17.5
+FBF-JO,Brésil,Brazil,2,2,,,,12.6
+FBF-JO,Allemagne,Germany,3,3,,,,9.8
+FBF-JO,Espagne,Spain,4,4,,,,7.7
+FBF-JO,Japon,Japan,5,8,,,,5.6
+FBF-JO,Colombie,Colombia,5,8,,,,5.6
+FBF-JO,Canada,Canada,5,8,,,,5.6
+FBF-JO,France,France,5,8,,,,5.6
+FBF-EU,Royaume-Uni,United Kingdom,1,1,,,,8.13
+FBF-EU,Espagne,Spain,2,2,,,,5.85
+FBF-EU,Allemagne,Germany,3,4,,,,4.06
+FBF-EU,Italie,Italy,3,4,,,,4.06
+FBF-SA,Brésil,Brazil,1,1,,,,3.48
+FBF-SA,Colombie,Colombia,2,2,,,,2.51
+FBF-SA,Argentine,Argentina,3,3,,,,1.95
+FBF-SA,Uruguay,Uruguay,4,4,,,,1.53
+FBF-NA,États-Unis,United States,1,1,,,,2.32
+FBF-NA,Brésil,Brazil,2,2,,,,1.67
+FBF-NA,Canada,Canada,3,4,,,,1.16
+FBF-NA,Mexique,Mexico,3,4,,,,1.16
+FBF-AF,Nigeria,Nigeria,1,1,,,,3.48
+FBF-AF,Maroc,Morocco,2,2,,,,2.51
+FBF-AF,Ghana,Ghana,3,3,,,,1.95
+FBF-AF,Afrique du Sud,South Africa,4,4,,,,1.53
+FBF-AS,Japon,Japan,1,1,,,,4.64
+FBF-AS,Australie,Australia,2,2,,,,3.34
+FBF-AS,Chine,China,3,4,,,,2.32
+FBF-AS,Corée du Sud,South Korea,3,4,,,,2.32
+FSF-WC,Brésil,Brazil,1,1,,,,36.76
+FSF-WC,Portugal,Portugal,2,2,,,,26.47
+FSF-WC,Espagne,Spain,3,3,,,,20.59
+FSF-WC,Argentine,Argentina,4,4,,,,16.18
+VBM-WC,Italie,Italy,1,1,,,,17.5
+VBM-WC,Bulgarie,Bulgaria,2,2,,,,12.6
+VBM-WC,Pologne,Poland,3,3,,,,9.8
+VBM-WC,Tchéquie,Czech Republic (Czechia),4,4,,,,7.7
+VBM-WC,États-Unis,United States,5,5,,,,5.6
+VBM-WC,Turquie,Turkey (Türkiye),6,6,,,,5.6
+VBM-WC,Belgique,Belgium,7,7,,,,5.6
+VBM-WC,Iran,Iran,8,8,,,,5.6
+VBM-JO,France,France,1,1,,,,17.5
+VBM-JO,Pologne,Poland,2,2,,,,12.6
+VBM-JO,États-Unis,United States,3,3,,,,9.8
+VBM-JO,Italie,Italy,4,4,,,,7.7
+VBM-JO,Japon,Japan,5,8,,,,5.6
+VBM-JO,Allemagne,Germany,5,8,,,,5.6
+VBM-JO,Brésil,Brazil,5,8,,,,5.6
+VBM-JO,Slovénie,Slovenia,5,8,,,,5.6
+VBM-EU,Pologne,Poland,1,1,,,,9.65
+VBM-EU,France,France,2,2,,,,6.95
+VBM-EU,Finlande,Finland,3,3,,,,5.4
+VBM-EU,Slovénie,Slovenia,4,4,,,,4.25
+VBM-SA,Brésil,Brazil,1,1,,,,4.93
+VBM-SA,Argentine,Argentina,2,2,,,,3.55
+VBM-SA,Chili,Chile,3,3,,,,2.76
+VBM-NA,États-Unis,United States,1,1,,,,2.76
+VBM-NA,Canada,Canada,2,2,,,,1.99
+VBM-NA,Cuba,Cuba,3,3,,,,1.54
+VBM-NA,République dominicaine,Dominican Republic,4,4,,,,1.21
+VBM-AS,Japon,Japan,1,1,,,,3.75
+VBM-AS,Iran,Iran,2,2,,,,2.7
+VBM-AS,Corée du Sud,South Korea,3,3,,,,2.1
+VBM-AS,Australie,Australia,4,4,,,,1.65
+VBM-AS,Thaïlande,Thailand,5,5,,,,1.2
+VBM-AS,Chine,China,6,6,,,,1.2
+VBM-AS,Taipei chinois,Taiwan,7,7,,,,1.2
+VBM-AS,Inde,India,8,8,,,,1.2
+BVM-WC,Suède,Sweden,1,1,,,,21.93
+BVM-WC,Suède,Sweden,2,2,,,,15.79
+BVM-WC,France,France,3,3,,,,12.28
+BVM-JO,Suède,Sweden,1,1,,,,18.38
+BVM-JO,Allemagne,Germany,2,2,,,,13.24
+BVM-JO,Norvège,Norway,3,3,,,,10.29
+BVM-JO,Qatar,Qatar,4,4,,,,8.09
+VBF-WC,Italie,Italy,1,1,,,,17.5
+VBF-WC,Turquie,Turkey (Türkiye),2,2,,,,12.6
+VBF-WC,Brésil,Brazil,3,3,,,,9.8
+VBF-WC,Japon,Japan,4,4,,,,7.7
+VBF-WC,États-Unis,United States,5,5,,,,5.6
+VBF-WC,Pays-Bas,Netherlands,6,6,,,,5.6
+VBF-WC,Pologne,Poland,7,7,,,,5.6
+VBF-WC,France,France,8,8,,,,5.6
+VBF-JO,Italie,Italy,1,1,,,,17.5
+VBF-JO,États-Unis,United States,2,2,,,,12.6
+VBF-JO,Brésil,Brazil,3,3,,,,9.8
+VBF-JO,Turquie,Turkey (Türkiye),4,4,,,,7.7
+VBF-JO,Chine,China,5,8,,,,5.6
+VBF-JO,Serbie,Serbia,5,8,,,,5.6
+VBF-JO,Pologne,Poland,5,8,,,,5.6
+VBF-JO,République dominicaine,Dominican Republic,5,8,,,,5.6
+VBF-EU,Turquie,Turkey (Türkiye),1,1,,,,8.75
+VBF-EU,Italie,Italy,2,2,,,,6.3
+VBF-EU,Serbie,Serbia,3,3,,,,4.9
+VBF-EU,Pologne,Poland,4,4,,,,3.85
+VBF-EU,Pays-Bas,Netherlands,5,5,,,,2.8
+VBF-EU,Grèce,Greece,6,6,,,,2.8
+VBF-EU,Suède,Sweden,7,7,,,,2.8
+VBF-EU,Allemagne,Germany,8,8,,,,2.8
+VBF-SA,Brésil,Brazil,1,1,,,,5.51
+VBF-SA,Argentine,Argentina,2,2,,,,3.97
+VBF-SA,Colombie,Colombia,3,3,,,,3.09
+VBF-SA,Chili,Chile,4,4,,,,2.43
+VBF-NA,Canada,Canada,1,1,,,,3.68
+VBF-NA,États-Unis,United States,2,2,,,,2.65
+VBF-NA,Cuba,Cuba,3,3,,,,2.06
+VBF-NA,République dominicaine,Dominican Republic,4,4,,,,1.62
+BVF-WC,Lettonie,Latvia,1,1,,,,21.93
+BVF-WC,États-Unis,United States,2,2,,,,15.79
+BVF-WC,Brésil,Brazil,3,3,,,,12.28
+BVF-JO,Brésil,Brazil,1,1,,,,18.38
+BVF-JO,Canada,Canada,2,2,,,,13.24
+BVF-JO,Suisse,Switzerland,3,3,,,,10.29
+BVF-JO,Australie,Australia,4,4,,,,8.09
+TTSH-JO,Chine,China,1,1,,,,12.78
+TTSH-JO,Suède,Sweden,2,2,,,,9.2
+TTSH-JO,France,France,3,3,,,,7.16
+TTSH-JO,Brésil,Brazil,4,4,,,,5.63
+TTSH-JO,Taipei chinois,Taiwan,5,8,,,,4.09
+TTSH-JO,Japon,Japan,5,8,,,,4.09
+TTSH-JO,Corée du Sud,South Korea,5,8,,,,4.09
+TTSH-JO,Égypte,Egypt,5,8,,,,4.09
+TTSH-JO,Allemagne,Germany,9,16,,,,2.05
+TTSH-JO,Japon,Japan,9,16,,,,2.05
+TTSH-JO,France,France,9,16,,,,2.05
+TTSH-JO,Slovénie,Slovenia,9,16,,,,2.05
+TTSH-JO,Taipei chinois,Taiwan,9,16,,,,2.05
+TTSH-JO,Kazakhstan,Kazakhstan,9,16,,,,2.05
+TTSH-JO,Danemark,Denmark,9,16,,,,2.05
+TTSH-JO,États-Unis,United States,9,16,,,,2.05
+TTSH-WC,Chine,China,1,1,,,,12.78
+TTSH-WC,Brésil,Brazil,2,2,,,,9.2
+TTSH-WC,Chine,China,3,4,,,,6.39
+TTSH-WC,Suède,Sweden,3,4,,,,6.39
+TTSH-WC,Chine,China,5,8,,,,4.09
+TTSH-WC,Corée du Sud,South Korea,5,8,,,,4.09
+TTSH-WC,Japon,Japan,5,8,,,,4.09
+TTSH-WC,Taipei chinois,Taiwan,5,8,,,,4.09
+TTSH-WC,Suède,Sweden,9,16,,,,2.05
+TTSH-WC,Royaume-Uni,United Kingdom,9,16,,,,2.05
+TTSH-WC,France,France,9,16,,,,2.05
+TTSH-WC,Nigeria,Nigeria,9,16,,,,2.05
+TTSH-WC,Slovénie,Slovenia,9,16,,,,2.05
+TTSH-WC,Corée du Sud,South Korea,9,16,,,,2.05
+TTSH-WC,Allemagne,Germany,9,16,,,,2.05
+TTSH-WC,France,France,9,16,,,,2.05
+TTDH-WC,Japon,Japan,1,1,,,,33.09
+TTDH-WC,Taipei chinois,Taiwan,2,2,,,,23.82
+TTDH-WC,France,France,3,4,,,,16.54
+TTDH-WC,France,France,3,4,,,,16.54
+TTEH-JO,Chine,China,1,1,,,,16.54
+TTEH-JO,Suède,Sweden,2,2,,,,11.91
+TTEH-JO,France,France,3,3,,,,9.26
+TTEH-JO,Japon,Japan,4,4,,,,7.28
+TTEH-WC,Chine,China,1,1,,,,16.54
+TTEH-WC,Japon,Japan,2,2,,,,11.91
+TTEH-WC,Taipei chinois,Taiwan,3,4,,,,8.27
+TTEH-WC,France,France,3,4,,,,8.27
+TTSF-JO,Chine,China,1,1,,,,12.78
+TTSF-JO,Chine,China,2,2,,,,9.2
+TTSF-JO,Japon,Japan,3,3,,,,7.16
+TTSF-JO,Corée du Sud,South Korea,4,4,,,,5.63
+TTSF-JO,Taipei chinois,Taiwan,5,8,,,,4.09
+TTSF-JO,Corée du Nord,North Korea,5,8,,,,4.09
+TTSF-JO,Japon,Japan,5,8,,,,4.09
+TTSF-JO,Autriche,Austria,5,8,,,,4.09
+TTSF-JO,Inde,India,9,16,,,,2.05
+TTSF-JO,Pologne,Poland,9,16,,,,2.05
+TTSF-JO,Porto Rico,Puerto Rico,9,16,,,,2.05
+TTSF-JO,France,France,9,16,,,,2.05
+TTSF-JO,États-Unis,United States,9,16,,,,2.05
+TTSF-JO,Inde,India,9,16,,,,2.05
+TTSF-JO,Roumanie,Romania,9,16,,,,2.05
+TTSF-JO,Pays-Bas,Netherlands,9,16,,,,2.05
+TTSF-WC,Chine,China,1,1,,,,12.78
+TTSF-WC,Chine,China,2,2,,,,9.2
+TTSF-WC,Japon,Japan,3,4,,,,6.39
+TTSF-WC,Chine,China,3,4,,,,6.39
+TTSF-WC,Japon,Japan,5,8,,,,4.09
+TTSF-WC,Chine,China,5,8,,,,4.09
+TTSF-WC,Japon,Japan,5,8,,,,4.09
+TTSF-WC,Japon,Japan,5,8,,,,4.09
+TTSF-WC,Corée du Sud,South Korea,9,16,,,,2.05
+TTSF-WC,Croatie,Croatia,9,16,,,,2.05
+TTSF-WC,Taipei chinois,Taiwan,9,16,,,,2.05
+TTSF-WC,France,France,9,16,,,,2.05
+TTSF-WC,Brésil,Brazil,9,16,,,,2.05
+TTSF-WC,Chine,China,9,16,,,,2.05
+TTSF-WC,Singapour,Singapore,9,16,,,,2.05
+TTSF-WC,Roumanie,Romania,9,16,,,,2.05
+TTDF-WC,Chine,China,1,1,,,,26.16
+TTDF-WC,Autriche,Austria,2,2,,,,18.84
+TTDF-WC,Roumanie,Romania,2,2,,,,18.84
+TTDF-WC,Corée du Sud,South Korea,3,4,,,,13.08
+TTDF-WC,Japon,Japan,3,4,,,,13.08
+TTEF-JO,Chine,China,1,1,,,,16.54
+TTEF-JO,Japon,Japan,2,2,,,,11.91
+TTEF-JO,Corée du Sud,South Korea,3,3,,,,9.26
+TTEF-JO,Allemagne,Germany,4,4,,,,7.28
+TTEF-WC,Chine,China,1,1,,,,16.54
+TTEF-WC,Japon,Japan,2,2,,,,11.91
+TTEF-WC,Roumanie,Romania,3,4,,,,8.27
+TTEF-WC,Allemagne,Germany,3,4,,,,8.27
+TTMX-JO,Chine,China,1,1,,,,18.38
+TTMX-JO,Corée du Nord,North Korea,2,2,,,,13.24
+TTMX-JO,Corée du Sud,South Korea,3,3,,,,10.29
+TTMX-JO,Hong Kong,Hong Kong,4,4,,,,8.09
+TTMX-WC,Chine,China,1,1,,,,18.38
+TTMX-WC,Japon,Japan,2,2,,,,13.24
+TTMX-WC,Corée du Sud,South Korea,3,4,,,,9.19
+TTMX-WC,Hong Kong,Hong Kong,3,4,,,,9.19
+TNSH-JO,Serbie,Serbia,1,1,,,,10.55
+TNSH-JO,Espagne,Spain,2,2,,,,7.59
+TNSH-JO,Italie,Italy,3,3,,,,5.91
+TNSH-JO,Canada,Canada,4,4,,,,4.64
+TNSH-JO,Allemagne,Germany,5,8,,,,3.38
+TNSH-JO,Norvège,Norway,5,8,,,,3.38
+TNSH-JO,Grèce,Greece,5,8,,,,3.38
+TNSH-JO,États-Unis,United States,5,8,,,,3.38
+TNSH-OPE,Espagne,Spain,1,1,,,,4.39
+TNSH-OPE,Serbie,Serbia,2,2,,,,3.16
+TNSH-OPE,Allemagne,Germany,3,4,,,,2.2
+TNSH-OPE,Italie,Italy,3,4,,,,2.2
+TNSH-OPE,Australie,Australia,5,8,,,,1.41
+TNSH-OPE,États-Unis,United States,5,8,,,,1.41
+TNSH-OPE,Italie,Italy,5,8,,,,1.41
+TNSH-OPE,États-Unis,United States,5,8,,,,1.41
+TNSH-OPE,États-Unis,United States,9,16,,,,0.7
+TNSH-OPE,Kazakhstan,Kazakhstan,9,16,,,,0.7
+TNSH-OPE,Argentine,Argentina,9,16,,,,0.7
+TNSH-OPE,Russie,Russia,9,16,,,,0.7
+TNSH-OPE,Tchéquie,Czech Republic (Czechia),9,16,,,,0.7
+TNSH-OPE,Norvège,Norway,9,16,,,,0.7
+TNSH-OPE,Italie,Italy,9,16,,,,0.7
+TNSH-OPE,États-Unis,United States,9,16,,,,0.7
+TNSH-ROL,Allemagne,Germany,1,1,,,,4.39
+TNSH-ROL,Italie,Italy,2,2,,,,3.16
+TNSH-ROL,Tchéquie,Czech Republic (Czechia),3,4,,,,2.2
+TNSH-ROL,Italie,Italy,3,4,,,,2.2
+TNSH-ROL,Italie,Italy,5,8,,,,1.41
+TNSH-ROL,Canada,Canada,5,8,,,,1.41
+TNSH-ROL,Espagne,Spain,5,8,,,,1.41
+TNSH-ROL,Brésil,Brazil,5,8,,,,1.41
+TNSH-ROL,Pays-Bas,Netherlands,9,16,,,,0.7
+TNSH-ROL,Espagne,Spain,9,16,,,,0.7
+TNSH-ROL,Norvège,Norway,9,16,,,,0.7
+TNSH-ROL,Russie,Russia,9,16,,,,0.7
+TNSH-ROL,États-Unis,United States,9,16,,,,0.7
+TNSH-ROL,Chili,Chile,9,16,,,,0.7
+TNSH-ROL,États-Unis,United States,9,16,,,,0.7
+TNSH-ROL,Argentine,Argentina,9,16,,,,0.7
+TNSH-WIM,Italie,Italy,1,1,,,,4.39
+TNSH-WIM,Allemagne,Germany,2,2,,,,3.16
+TNSH-WIM,Serbie,Serbia,3,4,,,,2.2
+TNSH-WIM,Royaume-Uni,United Kingdom,3,4,,,,2.2
+TNSH-WIM,Canada,Canada,5,8,,,,1.41
+TNSH-WIM,Allemagne,Germany,5,8,,,,1.41
+TNSH-WIM,Italie,Italy,5,8,,,,1.41
+TNSH-WIM,États-Unis,United States,5,8,,,,1.41
+TNSH-WIM,Australie,Australia,9,16,,,,0.7
+TNSH-WIM,Bulgarie,Bulgaria,9,16,,,,0.7
+TNSH-WIM,Kazakhstan,Kazakhstan,9,16,,,,0.7
+TNSH-WIM,Tchéquie,Czech Republic (Czechia),9,16,,,,0.7
+TNSH-WIM,Pologne,Poland,9,16,,,,0.7
+TNSH-WIM,Espagne,Spain,9,16,,,,0.7
+TNSH-WIM,Japon,Japan,9,16,,,,0.7
+TNSH-WIM,Russie,Russia,9,16,,,,0.7
+TNSH-US ,Allemagne,Germany,1,1,,,,4.39
+TNSH-US ,États-Unis,United States,2,2,,,,3.16
+TNSH-US ,États-Unis,United States,3,4,,,,2.2
+TNSH-US ,Russie,Russia,3,4,,,,2.2
+TNSH-US ,Pays-Bas,Netherlands,5,8,,,,1.41
+TNSH-US ,Belgique,Belgium,5,8,,,,1.41
+TNSH-US ,États-Unis,United States,5,8,,,,1.41
+TNSH-US ,Espagne,Spain,5,8,,,,1.41
+TNSH-US ,Italie,Italy,9,16,,,,0.7
+TNSH-US ,France,France,9,16,,,,0.7
+TNSH-US ,États-Unis,United States,9,16,,,,0.7
+TNSH-US ,Argentine,Argentina,9,16,,,,0.7
+TNSH-US ,Russie,Russia,9,16,,,,0.7
+TNSH-US ,Argentine,Argentina,9,16,,,,0.7
+TNSH-US ,Grèce,Greece,9,16,,,,0.7
+TNSH-US ,États-Unis,United States,9,16,,,,0.7
+TNSF-OPE,Kazakhstan,Kazakhstan,1,1,,,,4.39
+TNSF-OPE,Biélorussie,Belarus,2,2,,,,3.16
+TNSF-OPE,Ukraine,Ukraine,3,4,,,,2.2
+TNSF-OPE,États-Unis,United States,3,4,,,,2.2
+TNSF-OPE,États-Unis,United States,5,8,,,,1.41
+TNSF-OPE,États-Unis,United States,5,8,,,,1.41
+TNSF-OPE,États-Unis,United States,5,8,,,,1.41
+TNSF-OPE,Pologne,Poland,5,8,,,,1.41
+TNSF-OPE,Canada,Canada,9,16,,,,0.7
+TNSF-OPE,Kazakhstan,Kazakhstan,9,16,,,,0.7
+TNSF-OPE,Tchéquie,Czech Republic (Czechia),9,16,,,,0.7
+TNSF-OPE,Russie,Russia,9,16,,,,0.7
+TNSF-OPE,États-Unis,United States,9,16,,,,0.7
+TNSF-OPE,Chine,China,9,16,,,,0.7
+TNSF-OPE,Belgique,Belgium,9,16,,,,0.7
+TNSF-OPE,Australie,Australia,9,16,,,,0.7
+TNSF-ROL,Russie,Russia,1,1,,,,4.39
+TNSF-ROL,Pologne,Poland,2,2,,,,3.16
+TNSF-ROL,Ukraine,Ukraine,3,4,,,,2.2
+TNSF-ROL,Russie,Russia,3,4,,,,2.2
+TNSF-ROL,Biélorussie,Belarus,5,8,,,,1.41
+TNSF-ROL,Russie,Russia,5,8,,,,1.41
+TNSF-ROL,Ukraine,Ukraine,5,8,,,,1.41
+TNSF-ROL,Roumanie,Romania,5,8,,,,1.41
+TNSF-ROL,Japon,Japan,9,16,,,,0.7
+TNSF-ROL,États-Unis,United States,9,16,,,,0.7
+TNSF-ROL,Autriche,Austria,9,16,,,,0.7
+TNSF-ROL,France,France,9,16,,,,0.7
+TNSF-ROL,Suisse,Switzerland,9,16,,,,0.7
+TNSF-ROL,Pologne,Poland,9,16,,,,0.7
+TNSF-ROL,Suisse,Switzerland,9,16,,,,0.7
+TNSF-ROL,Chine,China,9,16,,,,0.7
+TNSF-WIM,Tchéquie,Czech Republic (Czechia),1,1,,,,4.39
+TNSF-WIM,Tchéquie,Czech Republic (Czechia),2,2,,,,3.16
+TNSF-WIM,États-Unis,United States,3,4,,,,2.2
+TNSF-WIM,Ukraine,Ukraine,3,4,,,,2.2
+TNSF-WIM,Japon,Japan,5,8,,,,1.41
+TNSF-WIM,États-Unis,United States,5,8,,,,1.41
+TNSF-WIM,Italie,Italy,5,8,,,,1.41
+TNSF-WIM,Belgique,Belgium,5,8,,,,1.41
+TNSF-WIM,Biélorussie,Belarus,9,16,,,,0.7
+TNSF-WIM,Tchéquie,Czech Republic (Czechia),9,16,,,,0.7
+TNSF-WIM,États-Unis,United States,9,16,,,,0.7
+TNSF-WIM,Suisse,Switzerland,9,16,,,,0.7
+TNSF-WIM,États-Unis,United States,9,16,,,,0.7
+TNSF-WIM,Philippines,Philippines,9,16,,,,0.7
+TNSF-WIM,États-Unis,United States,9,16,,,,0.7
+TNSF-WIM,Tchéquie,Czech Republic (Czechia),9,16,,,,0.7
+TNSF-US ,Kazakhstan,Kazakhstan,1,1,,,,4.39
+TNSF-US ,Biélorussie,Belarus,2,2,,,,3.16
+TNSF-US ,États-Unis,United States,3,4,,,,2.2
+TNSF-US ,États-Unis,United States,3,4,,,,2.2
+TNSF-US ,Russie,Russia,5,8,,,,1.41
+TNSF-US ,Chine,China,5,8,,,,1.41
+TNSF-US ,Tchéquie,Czech Republic (Czechia),5,8,,,,1.41
+TNSF-US ,États-Unis,United States,5,8,,,,1.41
+TNSF-US ,États-Unis,United States,9,16,,,,0.7
+TNSF-US ,Ukraine,Ukraine,9,16,,,,0.7
+TNSF-US ,Roumanie,Romania,9,16,,,,0.7
+TNSF-US ,Russie,Russia,9,16,,,,0.7
+TNSF-US ,Autriche,Austria,9,16,,,,0.7
+TNSF-US ,États-Unis,United States,9,16,,,,0.7
+TNSF-US ,Pologne,Poland,9,16,,,,0.7
+TNSF-US ,Japon,Japan,9,16,,,,0.7
+TNSF-JO,Chine,China,1,1,,,,10.55
+TNSF-JO,Croatie,Croatia,2,2,,,,7.59
+TNSF-JO,Pologne,Poland,3,3,,,,5.91
+TNSF-JO,Slovaquie,Slovakia,4,4,,,,4.64
+TNSF-JO,Allemagne,Germany,5,8,,,,3.38
+TNSF-JO,États-Unis,United States,5,8,,,,3.38
+TNSF-JO,Tchéquie,Czech Republic (Czechia),5,8,,,,3.38
+TNSF-JO,Ukraine,Ukraine,5,8,,,,3.38
+TNDH-JO,Australie,Australia,1,1,,,,39.47
+TNDH-JO,États-Unis,United States,2,2,,,,28.42
+TNDH-JO,États-Unis,United States,3,3,,,,22.11
+TNDF-JO,Italie,Italy,1,1,,,,39.47
+TNDF-JO,Russie,Russia,2,2,,,,28.42
+TNDF-JO,Espagne,Spain,3,3,,,,22.11
+TNMX-JO,Tchéquie,Czech Republic (Czechia),1,1,,,,36.76
+TNMX-JO,Chine,China,2,2,,,,26.47
+TNMX-JO,Canada,Canada,3,3,,,,20.59
+TNMX-JO,Pays-Bas,Netherlands,4,4,,,,16.18
+TNEH-WC,Italie,Italy,1,1,,,,33.09
+TNEH-WC,Espagne,Spain,2,2,,,,23.82
+TNEH-WC,Allemagne,Germany,3,4,,,,16.54
+TNEH-WC,Belgique,Belgium,3,4,,,,16.54
+TNEF-WC,Italie,Italy,1,1,,,,33.09
+TNEF-WC,États-Unis,United States,2,2,,,,23.82
+TNEF-WC,Ukraine,Ukraine,3,4,,,,16.54
+TNEF-WC,Royaume-Uni,United Kingdom,3,4,,,,16.54
+BDSH-JO,Danemark,Denmark,1,1,,,,24.82
+BDSH-JO,Thaïlande,Thailand,2,2,,,,17.87
+BDSH-JO,Malaisie,Malaysia,3,3,,,,13.9
+BDSH-JO,Inde,India,4,4,,,,10.92
+BDSH-WC,France,France,1,1,,,,24.82
+BDSH-WC,Japon,Japan,2,2,,,,17.87
+BDSH-WC,Taipei chinois,Taiwan,3,4,,,,12.41
+BDSH-WC,Canada,Canada,3,4,,,,12.41
+BDSF-JO,Corée du Sud,South Korea,1,1,,,,24.82
+BDSF-JO,Chine,China,2,2,,,,17.87
+BDSF-JO,Indonésie,Indonesia,3,3,,,,13.9
+BDSF-JO,Espagne,Spain,4,4,,,,10.92
+BDSF-WC,Corée du Sud,South Korea,1,1,,,,24.82
+BDSF-WC,Japon,Japan,2,2,,,,17.87
+BDSF-WC,Chine,China,3,4,,,,12.41
+BDSF-WC,Thaïlande,Thailand,3,4,,,,12.41
+BDDH-JO,Taipei chinois,Taiwan,1,1,,,,8.27
+BDDH-JO,Chine,China,2,2,,,,5.96
+BDDH-JO,Malaisie,Malaysia,3,3,,,,4.63
+BDDH-JO,Danemark,Denmark,4,4,,,,3.64
+BDDH-WC,Chine,China,1,1,,,,8.27
+BDDH-WC,Malaisie,Malaysia,2,2,,,,5.96
+BDDH-WC,Corée du Sud,South Korea,3,4,,,,4.14
+BDDH-WC,Taipei chinois,Taiwan,3,4,,,,4.14
+BDDF-JO,Chine,China,1,1,,,,8.27
+BDDF-JO,Chine,China,2,2,,,,5.96
+BDDF-JO,Japon,Japan,3,3,,,,4.63
+BDDF-JO,Malaisie,Malaysia,4,4,,,,3.64
+BDDF-WC,Corée du Sud,South Korea,1,1,,,,8.27
+BDDF-WC,Chine,China,2,2,,,,5.96
+BDDF-WC,Inde,India,3,4,,,,4.14
+BDDF-WC,Chine,China,3,4,,,,4.14
+BDMX-JO,Chine,China,1,1,,,,9.19
+BDMX-JO,Corée du Sud,South Korea,2,2,,,,6.62
+BDMX-JO,Japon,Japan,3,3,,,,5.15
+BDMX-JO,Corée du Sud,South Korea,4,4,,,,4.04
+BDMX-WC,France,France,1,1,,,,9.19
+BDMX-WC,Chine,China,2,2,,,,6.62
+BDMX-WC,Indonésie,Indonesia,3,4,,,,4.6
+BDMX-WC,Chine,China,3,4,,,,4.6
+BDEH-WC,Chine,China,1,1,,,,33.09
+BDEH-WC,France,France,2,2,,,,23.82
+BDEH-WC,Inde,India,3,4,,,,16.54
+BDEH-WC,Danemark,Denmark,3,4,,,,16.54
+BDEF-WC,Corée du Sud,South Korea,1,1,,,,33.09
+BDEF-WC,Chine,China,2,2,,,,23.82
+BDEF-WC,Japon,Japan,3,4,,,,16.54
+BDEF-WC,Indonésie,Indonesia,3,4,,,,16.54
+CHO-OL,Ouzbékistan,Uzbekistan,1,1,,,,62.5
+CHO-OL,Inde,India,2,2,,,,45
+CHO-OL,Allemagne,Germany,3,3,,,,35
+CHO-OL,États-Unis,United States,4,7,,,,21.88
+CHO-OL,Azerbaïdjan,Azerbaijan,4,7,,,,21.88
+CHO-OL,Arménie,Armenia,4,7,,,,21.88
+CHO-OL,Hongrie,Hungary,4,7,,,,21.88
+CHO-OL,Chine,China,8,8,,,,20
+CHF-OL,Chine,China,1,1,,,,109.65
+CHF-OL,Kazakhstan,Kazakhstan,2,2,,,,78.95
+CHF-OL,Inde,India,3,3,,,,61.4
+ATH-JO,États-Unis,United States,,,,,,93.33,322
+ATH-JO,Kenya,Kenya,,,,,,31.3,108
+ATH-JO,Royaume-Uni,United Kingdom,,,,,,28.99,100
+ATH-JO,Éthiopie,Ethiopia,,,,,,23.19,80
+ATH-JO,Jamaïque,Jamaica,,,,,,20.29,70
+ATH-JO,Italie,Italy,,,,,,19.13,66
+ATH-JO,Pays-Bas,Netherlands,,,,,,19.13,66
+ATH-JO,Canada,Canada,,,,,,15.65,54
+ATH-JO,Australie,Australia,,,,,,14.78,51
+ATH-JO,Allemagne,Germany,,,,,,14.78,51
+ATH-JO,Espagne,Spain,,,,,,13.62,47
+ATH-JO,France,France,,,,,,11.01,38
+ATH-JO,Chine,China,,,,,,11.01,38
+ATH-JO,Norvège,Norway,,,,,,11.01,38
+ATH-JO,Belgique,Belgium,,,,,,9.86,34
+ATH-JO,Japon,Japan,,,,,,9.86,34
+ATH-JO,Afrique du Sud,South Africa,,,,,,6.96,24
+ATH-JO,Ukraine,Ukraine,,,,,,6.67,23
+ATH-JO,Pologne,Poland,,,,,,5.8,20
+ATH-JO,Botswana,Botswana,,,,,,5.8,20
+ATH-JO,Nouvelle-Zélande,New Zealand,,,,,,5.8,20
+ATH-JO,Ouganda,Uganda,,,,,,5.51,19
+ATH-JO,Équateur,Ecuador,,,,,,5.22,18
+ATH-JO,Suisse,Switzerland,,,,,,5.22,18
+ATH-JO,Suède,Sweden,,,,,,4.64,16
+ATH-JO,Grenade,Grenada,,,,,,4.64,16
+ATH-JO,Bahreïn,Bahrain,,,,,,4.35,15
+ATH-JO,Brésil,Brazil,,,,,,4.35,15
+ATH-JO,Sainte-Lucie,Saint Lucia,,,,,,4.35,15
+ATH-JO,Tchéquie,Czech Republic (Czechia),,,,,,4.35,15
+ATH-JO,Grèce,Greece,,,,,,4.06,14
+ATH-JO,Nigeria,Nigeria,,,,,,3.48,12
+ATH-JO,République dominicaine,Dominican Republic,,,,,,3.48,12
+ATH-JO,Colombie,Colombia,,,,,,3.19,11
+ATH-JO,Finlande,Finland,,,,,,3.19,11
+ATH-JO,Croatie,Croatia,,,,,,3.19,11
+ATH-JO,Cuba,Cuba,,,,,,2.9,10
+ATH-JO,Irlande,Ireland,,,,,,2.9,10
+ATH-JO,Qatar,Qatar,,,,,,2.61,9
+ATH-JO,Estonie,Estonia,,,,,,2.61,9
+ATH-JO,Tunisie,Tunisia,,,,,,2.61,9
+ATH-JO,Mexique,Mexico,,,,,,2.61,9
+ATH-JO,Hongrie,Hungary,,,,,,2.61,9
+ATH-JO,Dominique,Dominica,,,,,,2.32,8
+ATH-JO,Lituanie,Lithuania,,,,,,2.32,8
+ATH-JO,Maroc,Morocco,,,,,,2.32,8
+ATH-JO,Portugal,Portugal,,,,,,2.32,8
+ATH-JO,Pakistan,Pakistan,,,,,,2.32,8
+ATH-JO,Trinité-et-Tobago,Trinidad and Tobago,,,,,,2.03,7
+ATH-JO,Inde,India,,,,,,2.03,7
+ATH-JO,Zambie,Zambia,,,,,,2.03,7
+ATH-JO,Pérou,Peru,,,,,,1.74,6
+ATH-JO,Algérie,Algeria,,,,,,1.74,6
+ATH-JO,Porto Rico,Puerto Rico,,,,,,1.74,6
+ATH-JO,Saint-Vincent-et-les-Grenadines,Saint Vincent and the Grenadines,,,,,,1.45,5
+ATH-JO,Philippines,Philippines,,,,,,1.45,5
+ATH-JO,Slovénie,Slovenia,,,,,,1.45,5
+ATH-JO,Turquie,Turkey (Türkiye),,,,,,1.16,4
+ATH-JO,Autriche,Austria,,,,,,1.16,4
+ATH-JO,Zimbabwe,Zimbabwe,,,,,,1.16,4
+ATH-JO,Burkina Faso,Burkina Faso,,,,,,1.16,4
+ATH-JO,Îles Vierges britanniques,British Virgin Islands,,,,,,1.16,4
+ATH-JO,Bahamas,Bahamas,,,,,,0.87,3
+ATH-JO,Azerbaïdjan,Azerbaijan,,,,,,0.58,2
+ATH-JO,Lesotho,Lesotho,,,,,,0.58,2
+ATH-JO,Ouzbékistan,Uzbekistan,,,,,,0.58,2
+ATH-JO,Barbade,Barbados,,,,,,0.58,2
+ATH-JO,Chypre,Cyprus,,,,,,0.58,2
+ATH-JO,Roumanie,Romania,,,,,,0.58,2
+ATH-JO,Corée du Sud,South Korea,,,,,,0.58,2
+ATH-JO,Libéria,Liberia,,,,,,0.58,2
+ATH-JO,Côte d'Ivoire,Côte d'Ivoire,,,,,,0.58,2
+ATH-JO,Bulgarie,Bulgaria,,,,,,0.29,1
+ATH-JO,Israël,Israel,,,,,,0.29,1
+ATH-JO,Venezuela,Venezuela,,,,,,0.29,1
+ATH-WC,États-Unis,United States,,,,,,87.1,308
+ATH-WC,Kenya,Kenya,,,,,,33.37,118
+ATH-WC,Jamaïque,Jamaica,,,,,,27.71,98
+ATH-WC,Allemagne,Germany,,,,,,18.67,66
+ATH-WC,Royaume-Uni,United Kingdom,,,,,,18.67,66
+ATH-WC,Italie,Italy,,,,,,17.53,62
+ATH-WC,Pays-Bas,Netherlands,,,,,,15.55,55
+ATH-WC,Éthiopie,Ethiopia,,,,,,15.27,54
+ATH-WC,France,France,,,,,,14.42,51
+ATH-WC,Chine,China,,,,,,14.14,50
+ATH-WC,Espagne,Spain,,,,,,14.14,50
+ATH-WC,Canada,Canada,,,,,,12.44,44
+ATH-WC,Australie,Australia,,,,,,11.6,41
+ATH-WC,Pologne,Poland,,,,,,10.18,36
+ATH-WC,Suède,Sweden,,,,,,9.33,33
+ATH-WC,Cuba,Cuba,,,,,,9.05,32
+ATH-WC,Japon,Japan,,,,,,9.05,32
+ATH-WC,Nouvelle-Zélande,New Zealand,,,,,,8.48,30
+ATH-WC,Botswana,Botswana,,,,,,8.2,29
+ATH-WC,Belgique,Belgium,,,,,,7.35,26
+ATH-WC,Afrique du Sud,South Africa,,,,,,7.07,25
+ATH-WC,Brésil,Brazil,,,,,,6.22,22
+ATH-WC,Ukraine,Ukraine,,,,,,5.94,21
+ATH-WC,Suisse,Switzerland,,,,,,5.66,20
+ATH-WC,Équateur,Ecuador,,,,,,5.37,19
+ATH-WC,Nigeria,Nigeria,,,,,,5.37,19
+ATH-WC,Portugal,Portugal,,,,,,5.37,19
+ATH-WC,Bahreïn,Bahrain,,,,,,5.09,18
+ATH-WC,Norvège,Norway,,,,,,4.24,15
+ATH-WC,Trinité-et-Tobago,Trinidad and Tobago,,,,,,4.24,15
+ATH-WC,Mexique,Mexico,,,,,,3.96,14
+ATH-WC,Algérie,Algeria,,,,,,3.39,12
+ATH-WC,Irlande,Ireland,,,,,,3.39,12
+ATH-WC,Lituanie,Lithuania,,,,,,3.39,12
+ATH-WC,Tchéquie,Czech Republic (Czechia),,,,,,3.11,11
+ATH-WC,Finlande,Finland,,,,,,3.11,11
+ATH-WC,Grèce,Greece,,,,,,3.11,11
+ATH-WC,Maroc,Morocco,,,,,,3.11,11
+ATH-WC,Qatar,Qatar,,,,,,3.11,11
+ATH-WC,République dominicaine,Dominican Republic,,,,,,2.83,10
+ATH-WC,Colombie,Colombia,,,,,,2.55,9
+ATH-WC,Inde,India,,,,,,2.55,9
+ATH-WC,Slovaquie,Slovakia,,,,,,2.26,8
+ATH-WC,Tanzanie,Tanzania,,,,,,2.26,8
+ATH-WC,Dominique,Dominica,,,,,,1.98,7
+ATH-WC,Grenade,Grenada,,,,,,1.98,7
+ATH-WC,Hongrie,Hungary,,,,,,1.98,7
+ATH-WC,Israël,Israel,,,,,,1.98,7
+ATH-WC,Corée du Sud,South Korea,,,,,,1.98,7
+ATH-WC,Lettonie,Latvia,,,,,,1.98,7
+ATH-WC,Porto Rico,Puerto Rico,,,,,,1.98,7
+ATH-WC,Serbie,Serbia,,,,,,1.98,7
+ATH-WC,Slovénie,Slovenia,,,,,,1.98,7
+ATH-WC,Sainte-Lucie,Saint Lucia,,,,,,1.7,6
+ATH-WC,Samoa,Samoa,,,,,,1.7,6
+ATH-WC,Ouganda,Uganda,,,,,,1.7,6
+ATH-WC,Uruguay,Uruguay,,,,,,1.7,6
+ATH-WC,Venezuela,Venezuela,,,,,,1.7,6
+ATH-WC,Ghana,Ghana,,,,,,1.41,5
+ATH-WC,Tunisie,Tunisia,,,,,,1.41,5
+ATH-WC,Bahamas,Bahamas,,,,,,1.13,4
+ATH-WC,Bulgarie,Bulgaria,,,,,,1.13,4
+ATH-WC,Côte d'Ivoire,Côte d'Ivoire,,,,,,1.13,4
+ATH-WC,Croatie,Croatia,,,,,,1.13,4
+ATH-WC,Estonie,Estonia,,,,,,1.13,4
+ATH-WC,Panama,Panama,,,,,,1.13,4
+ATH-WC,Pérou,Peru,,,,,,1.13,4
+ATH-WC,Kazakhstan,Kazakhstan,,,,,,0.85,3
+ATH-WC,Sénégal,Senegal,,,,,,0.85,3
+ATH-WC,Burkina Faso,Burkina Faso,,,,,,0.57,2
+ATH-WC,Sri Lanka,Sri Lanka,,,,,,0.57,2
+ATH-WC,Zimbabwe,Zimbabwe,,,,,,0.57,2
+ATH-WC,Danemark,Denmark,,,,,,0.28,1
+ATH-WC,Érythrée,Eritrea,,,,,,0.28,1
+NAT-JO,États-Unis,United States,,,8,13,7,100.71
+NAT-JO,Australie,Australia,,,7,9,3,71.75
+NAT-JO,France,France,,,4,1,2,27.64
+NAT-JO,Canada,Canada,,,3,2,3,28.96
+NAT-JO,Hongrie,Hungary,,,3,1,1,20.26
+NAT-JO,Chine,China,,,2,3,7,38.24
+NAT-JO,Italie,Italy,,,2,1,3,20.82
+NAT-JO,Suède,Sweden,,,2,0,0,9.47
+NAT-JO,Royaume-Uni,United Kingdom,,,1,4,0,18.36
+NAT-JO,Allemagne,Germany,,,1,1,1,10.79
+NAT-JO,Afrique du Sud,South Africa,,,1,1,0,8.14
+NAT-JO,Irlande,Ireland,,,1,0,2,10.03
+NAT-JO,Pays-Bas,Netherlands,,,1,0,2,10.03
+NAT-JO,Roumanie,Romania,,,1,0,1,7.38
+NAT-JO,Grèce,Greece,,,0,1,0,3.41
+NAT-JO,Japon,Japan,,,0,1,0,3.41
+NAT-JO,Hong Kong,Hong Kong,,,0,0,2,5.3
+NAT-JO,Corée du Sud,South Korea,,,0,0,1,2.65
+NAT-JO,Suisse,Switzerland,,,0,0,1,2.65
+NAT-WC,Chine,China,,,15,12,10,66.08
+NAT-WC,Australie,Australia,,,13,7,8,50.89
+NAT-WC,États-Unis,United States,,,10,11,11,54.42
+NAT-WC,Russie,Russia,,,6,8,4,31.64
+NAT-WC,Allemagne,Germany,,,6,3,1,19.71
+NAT-WC,Espagne,Spain,,,4,3,5,20.25
+NAT-WC,France,France,,,4,1,5,16.99
+NAT-WC,Canada,Canada,,,4,1,4,15.73
+NAT-WC,Italie,Italy,,,2,11,6,30.01
+NAT-WC,Roumanie,Romania,,,2,0,1,5.79
+NAT-WC,Tunisie,Tunisia,,,2,0,0,4.52
+NAT-WC,Japon,Japan,,,1,4,3,12.56
+NAT-WC,Mexique,Mexico,,,1,4,3,12.56
+NAT-WC,Hongrie,Hungary,,,1,3,3,10.94
+NAT-WC,Royaume-Uni,United Kingdom,,,1,2,2,8.05
+NAT-WC,Afrique du Sud,South Africa,,,1,2,1,6.78
+NAT-WC,Pays-Bas,Netherlands,,,1,0,2,4.79
+NAT-WC,Grèce,Greece,,,1,0,1,3.53
+NAT-WC,Autriche,Austria,,,1,0,0,2.26
+NAT-WC,Lituanie,Lithuania,,,1,0,0,2.26
+NAT-WC,Suisse,Switzerland,,,0,2,0,3.25
+NAT-WC,Biélorussie,Belarus,,,0,1,2,4.16
+NAT-WC,Belgique,Belgium,,,0,1,1,2.89
+NAT-WC,Corée du Nord,North Korea,,,0,1,1,2.89
+NAT-WC,Pologne,Poland,,,0,1,0,1.63
+NAT-WC,Ukraine,Ukraine,,,0,1,0,1.63
+NAT-WC,Kirghizistan,Kyrgyzstan,,,0,0,1,1.27
+NAT-WC,Monaco,Monaco,,,0,0,1,1.27
+NAT-WC,Corée du Sud,South Korea,,,0,0,1,1.27
+WPH-JO,Serbie,Serbia,1,1,,,,18.38
+WPH-JO,Croatie,Croatia,2,2,,,,13.24
+WPH-JO,États-Unis,United States,3,3,,,,10.29
+WPH-JO,Hongrie,Hungary,4,4,,,,8.09
+WPF-JO,Espagne,Spain,1,1,,,,18.38
+WPF-JO,Australie,Australia,2,2,,,,13.24
+WPF-JO,Pays-Bas,Netherlands,3,3,,,,10.29
+WPF-JO,États-Unis,United States,4,4,,,,8.09
+NAR-JO,Chine,China,,,2,0,0,43.86
+NAR-JO,États-Unis,United States,,,0,1,0,15.79
+NAR-JO,Royaume-Uni,United Kingdom,,,0,1,0,15.79
+NAR-JO,Espagne,Spain,,,0,0,1,12.28
+NAR-JO,Pays-Bas,Netherlands,,,0,0,1,12.28
+CRH-JO,Belgique,Belgium,,,2,0,1,35.09
+CRH-JO,France,France,,,0,1,1,17.54
+CRH-JO,Italie,Italy,,,0,1,0,9.87
+CRH-WC,États-Unis,United States,1,1,,,,11.84
+CRH-WC,Australie,Australia,2,2,,,,8.52
+CRH-WC,Pays-Bas,Netherlands,3,3,,,,6.63
+CRH-WC,États-Unis,United States,4,4,,,,5.21
+CRH-WC,Mexique,Mexico,5,5,,,,3.79
+CRH-WC,Danemark,Denmark,6,6,,,,3.79
+CRH-WC,Royaume-Uni,United Kingdom,7,7,,,,3.79
+CRH-WC,États-Unis,United States,8,8,,,,3.79
+CRH-WC,Italie,Italy,9,9,,,,1.89
+CRH-WC,Irlande,Ireland,10,10,,,,1.89
+CRH-WC,Suisse,Switzerland,11,11,,,,1.89
+CRH-WC,Belgique,Belgium,12,12,,,,1.89
+CRH-WC,Espagne,Spain,13,13,,,,1.89
+CRH-WC,Suisse,Switzerland,14,14,,,,1.89
+CRH-WC,France,France,15,15,,,,1.89
+CRH-WC,Norvège,Norway,16,16,,,,1.89
+CRH-TDF,Slovénie,Slovenia,1,1,,,,14.2
+CRH-TDF,Belgique,Belgium,2,2,,,,10.23
+CRH-TDF,Mexique,Mexico,3,3,,,,7.95
+CRH-TDF,France,France,4,4,,,,6.25
+CRH-TDF,France,France,5,5,,,,4.55
+CRH-TDF,Danemark,Denmark,6,6,,,,4.55
+CRH-TDF,Espagne,Spain,7,7,,,,4.55
+CRH-TDF,Équateur,Ecuador,8,8,,,,4.55
+CRH-TDF,France,France,9,9,,,,2.27
+CRH-TDF,Royaume-Uni,United Kingdom,10,10,,,,2.27
+CRH-TDF,Suisse,Switzerland,11,11,,,,2.27
+CRH-TDF,Norvège,Norway,12,12,,,,2.27
+CRH-TDF,États-Unis,United States,13,13,,,,2.27
+CRH-TDF,Italie,Italy,14,14,,,,2.27
+CRH-TDF,Australie,Australia,15,15,,,,2.27
+CRH-TDF,France,France,16,16,,,,2.27
+CRF-JO,États-Unis,United States,,,1,0,1,21.38
+CRF-JO,Australie,Australia,,,1,0,0,13.71
+CRF-JO,Pays-Bas,Netherlands,,,0,1,0,9.87
+CRF-JO,Royaume-Uni,United Kingdom,,,0,1,0,9.87
+CRF-JO,Belgique,Belgium,,,0,0,1,7.68
+CRF-WC,Pays-Bas,Netherlands,1,1,,,,22.98
+CRF-WC,Pologne,Poland,2,2,,,,16.54
+CRF-WC,Italie,Italy,3,3,,,,12.87
+CRF-WC,Suisse,Switzerland,4,4,,,,10.11
+CRF-TDF,Pays-Bas,Netherlands,1,1,,,,16.45
+CRF-TDF,Pologne,Poland,2,2,,,,11.84
+CRF-TDF,Italie,Italy,3,3,,,,9.21
+CRF-GIRO,Pays-Bas,Netherlands,1,1,,,,16.45
+CRF-GIRO,Allemagne,Germany,2,2,,,,11.84
+CRF-GIRO,Pays-Bas,Netherlands,3,3,,,,9.21
+CAU-JO,France,France,,,3,2,2,27.1
+CAU-JO,Pays-Bas,Netherlands,,,3,2,1,24.37
+CAU-JO,Australie,Australia,,,2,2,3,24.95
+CAU-JO,États-Unis,United States,,,2,2,0,16.76
+CAU-JO,Royaume-Uni,United Kingdom,,,2,4,4,34.7
+CAU-JO,Nouvelle-Zélande,New Zealand,,,2,2,1,19.49
+CAU-JO,Belgique,Belgium,,,0,0,1,2.73
+CAU-JO,Italie,Italy,,,1,1,1,11.11
+CAU-JO,Portugal,Portugal,,,1,1,0,8.38
+CAU-JO,Argentine,Argentina,,,1,0,0,4.87
+CAU-JO,Chine,China,,,1,0,0,4.87
+CAU-JO,Allemagne,Germany,,,0,1,1,6.24
+CAU-JO,Pologne,Poland,,,0,1,0,3.51
+CAU-JO,Danemark,Denmark,,,0,0,1,2.73
+CAU-JO,Afrique du Sud,South Africa,,,0,0,1,2.73
+CAU-JO,Suède,Sweden,,,0,0,1,2.73
+CAU-JO,Suisse,Switzerland,,,0,0,1,2.73
+CKH-T20,Inde,India,1,1,,,,31.25
+CKH-T20,Nouvelle-Zélande,New Zealand,2,2,,,,22.5
+CKH-T20,Afrique du Sud,South Africa,3,4,,,,15.63
+CKH-T20,Royaume-Uni,United Kingdom,3,4,,,,15.63
+CKH-T20,Indes occidentales,Indes occidentales,5,8,,,,10
+CKH-T20,Zimbabwe,Zimbabwe,5,8,,,,10
+CKH-T20,Pakistan,Pakistan,5,8,,,,10
+CKH-T20,Sri Lanka,Sri Lanka,5,8,,,,10
+CKH-ODI,Australie,Australia,1,1,,,,45.96
+CKH-ODI,Inde,India,2,2,,,,33.09
+CKH-ODI,Nouvelle-Zélande,New Zealand,3,4,,,,22.98
+CKH-ODI,Afrique du Sud,South Africa,3,4,,,,22.98
+CKF-ODI,Inde,India,1,1,,,,31.25
+CKF-ODI,Afrique du Sud,South Africa,2,2,,,,22.5
+CKF-ODI,Australie,Australia,3,3,,,,17.5
+CKF-ODI,Royaume-Uni,United Kingdom,4,4,,,,13.75
+CKF-ODI,Sri Lanka,Sri Lanka,5,5,,,,10
+CKF-ODI,Nouvelle-Zélande,New Zealand,6,6,,,,10
+CKF-ODI,Bangladesh,Bangladesh,7,7,,,,10
+CKF-ODI,Pakistan,Pakistan,8,8,,,,10
+CKF-T20,Nouvelle-Zélande,New Zealand,1,1,,,,45.96
+CKF-T20,Afrique du Sud,South Africa,2,2,,,,33.09
+CKF-T20,Indes occidentales,Indes occidentales,3,4,,,,22.98
+CKF-T20,Australie,Australia,3,4,,,,22.98
+TKD-JO,Corée du Sud,South Korea,,,2,0,1,56.34
+TKD-JO,Iran,Iran,,,1,2,1,66.02
+TKD-JO,Ouzbékistan,Uzbekistan,,,1,1,0,37.85
+TKD-JO,France,France,,,1,0,1,34.33
+TKD-JO,Tunisie,Tunisia,,,1,0,1,34.33
+TKD-JO,Hongrie,Hungary,,,1,0,0,22.01
+TKD-JO,Thaïlande,Thailand,,,1,0,0,22.01
+TKD-JO,Chine,China,,,0,1,1,28.17
+TKD-JO,Azerbaïdjan,Azerbaijan,,,0,1,0,15.85
+TKD-JO,Royaume-Uni,United Kingdom,,,0,1,0,15.85
+TKD-JO,Jordanie,Jordan,,,0,1,0,15.85
+TKD-JO,Serbie,Serbia,,,0,1,0,15.85
+TKD-JO,Belgique,Belgium,,,0,0,1,12.32
+TKD-JO,Brésil,Brazil,,,0,0,1,12.32
+TKD-JO,Bulgarie,Bulgaria,,,0,0,1,12.32
+TKD-JO,Canada,Canada,,,0,0,1,12.32
+TKD-JO,Croatie,Croatia,,,0,0,1,12.32
+TKD-JO,Cuba,Cuba,,,0,0,1,12.32
+TKD-JO,Danemark,Denmark,,,0,0,1,12.32
+TKD-JO,Italie,Italy,,,0,0,1,12.32
+TKD-JO,Côte d'Ivoire,Côte d'Ivoire,,,0,0,1,12.32
+TKD-JO,Turquie,Turkey (Türkiye),,,0,0,1,12.32
+TKD-JO,États-Unis,United States,,,0,0,1,12.32
+TKD-WC,Turquie,Turkey (Türkiye),,,3,2,1,55.02
+TKD-WC,Corée du Sud,South Korea,,,2,2,2,50.18
+TKD-WC,Brésil,Brazil,,,2,2,0,37.85
+TKD-WC,Tunisie,Tunisia,,,2,0,0,22.01
+TKD-WC,Iran,Iran,,,1,1,1,25.09
+TKD-WC,Ouzbékistan,Uzbekistan,,,1,1,1,25.09
+TKD-WC,Hongrie,Hungary,,,1,1,0,18.93
+TKD-WC,Égypte,Egypt,,,1,0,1,17.17
+TKD-WC,Belgique,Belgium,,,1,0,0,11
+TKD-WC,Taipei chinois,Taiwan,,,1,0,0,11
+TKD-WC,Thaïlande,Thailand,,,1,0,0,11
+TKD-WC,Russie,Russia,,,0,3,2,36.09
+TKD-WC,Chine,China,,,0,1,8,57.22
+TKD-WC,Italie,Italy,,,0,1,0,7.92
+TKD-WC,Côte d'Ivoire,Côte d'Ivoire,,,0,1,0,7.92
+TKD-WC,Arabie saoudite,Saudi Arabia,,,0,1,0,7.92
+TKD-WC,Royaume-Uni,United Kingdom,,,0,0,2,12.32
+TKD-WC,Jordanie,Jordan,,,0,0,2,12.32
+TKD-WC,Kazakhstan,Kazakhstan,,,0,0,2,12.32
+TKD-WC,États-Unis,United States,,,0,0,2,12.32
+TKD-WC,Australie,Australia,,,0,0,1,6.16
+TKD-WC,Azerbaïdjan,Azerbaijan,,,0,0,1,6.16
+TKD-WC,Croatie,Croatia,,,0,0,1,6.16
+TKD-WC,Grèce,Greece,,,0,0,1,6.16
+TKD-WC,Nigeria,Nigeria,,,0,0,1,6.16
+TKD-WC,Pologne,Poland,,,0,0,1,6.16
+TKD-WC,Espagne,Spain,,,0,0,1,6.16
+TKD-WC,Ukraine,Ukraine,,,0,0,1,6.16
+GFH-JO,États-Unis,United States,1,1,,,,17.76
+GFH-JO,Royaume-Uni,United Kingdom,2,2,,,,12.78
+GFH-JO,Japon,Japan,3,3,,,,9.94
+GFH-JO,France,France,4,4,,,,7.81
+GFH-JO,Irlande,Ireland,5,6,,,,5.68
+GFH-JO,Espagne,Spain,5,6,,,,5.68
+GFH-JO,Danemark,Denmark,7,7,,,,5.68
+GFH-JO,Corée du Sud,South Korea,8,8,,,,5.68
+GFH-JO,Canada,Canada,9,13,,,,2.84
+GFH-JO,Australie,Australia,9,13,,,,2.84
+GFH-JO,Chili,Chile,9,13,,,,2.84
+GFH-JO,Belgique,Belgium,9,13,,,,2.84
+GFH-JO,États-Unis,United States,9,13,,,,2.84
+GFH-JO,États-Unis,United States,14,15,,,,2.84
+GFH-JO,Danemark,Denmark,14,15,,,,2.84
+GFH-JO,Afrique du Sud,South Africa,16,16,,,,2.84
+GFH-Masters,Royaume-Uni,United Kingdom,1,1,,,,7.18
+GFH-Masters,États-Unis,United States,2,2,,,,5.17
+GFH-Masters,Royaume-Uni,United Kingdom,3,6,,,,2.94
+GFH-Masters,États-Unis,United States,3,6,,,,2.94
+GFH-Masters,Royaume-Uni,United Kingdom,3,6,,,,2.94
+GFH-Masters,États-Unis,United States,3,6,,,,2.94
+GFH-Masters,États-Unis,United States,7,8,,,,2.3
+GFH-Masters,États-Unis,United States,7,8,,,,2.3
+GFH-Masters,États-Unis,United States,9,10,,,,1.15
+GFH-Masters,États-Unis,United States,9,10,,,,1.15
+GFH-Masters,États-Unis,United States,11,11,,,,1.15
+GFH-Masters,États-Unis,United States,12,16,,,,1.15
+GFH-Masters,Japon,Japan,12,16,,,,1.15
+GFH-Masters,États-Unis,United States,12,16,,,,1.15
+GFH-Masters,États-Unis,United States,12,16,,,,1.15
+GFH-Masters,États-Unis,United States,12,16,,,,1.15
+GFH-Masters,Australie,Australia,12,16,,,,1.15
+GFH-PGA,Royaume-Uni,United Kingdom,1,1,,,,7.18
+GFH-PGA,États-Unis,United States,2,3,,,,4.6
+GFH-PGA,Espagne,Spain,2,3,,,,4.6
+GFH-PGA,États-Unis,United States,4,6,,,,2.59
+GFH-PGA,Suède,Sweden,4,6,,,,2.59
+GFH-PGA,Allemagne,Germany,4,6,,,,2.59
+GFH-PGA,Australie,Australia,7,9,,,,1.91
+GFH-PGA,Royaume-Uni,United Kingdom,7,9,,,,1.91
+GFH-PGA,États-Unis,United States,7,9,,,,1.91
+GFH-PGA,États-Unis,United States,10,13,,,,1.15
+GFH-PGA,Royaume-Uni,United Kingdom,10,13,,,,1.15
+GFH-PGA,États-Unis,United States,10,13,,,,1.15
+GFH-PGA,États-Unis,United States,10,13,,,,1.15
+GFH-PGA,États-Unis,United States,14,16,,,,1.15
+GFH-PGA,Royaume-Uni,United Kingdom,14,16,,,,1.15
+GFH-PGA,États-Unis,United States,14,16,,,,1.15
+GFH-PGA,États-Unis,United States,14,16,,,,1.15
+GFH-USOpen,États-Unis,United States,1,1,,,,7.4
+GFH-USOpen,États-Unis,United States,2,2,,,,5.33
+GFH-USOpen,Corée du Sud,South Korea,3,3,,,,4.14
+GFH-USOpen,États-Unis,United States,4,6,,,,2.66
+GFH-USOpen,États-Unis,United States,4,6,,,,2.66
+GFH-USOpen,États-Unis,United States,4,6,,,,2.66
+GFH-USOpen,Chili,Chile,7,10,,,,1.78
+GFH-USOpen,Royaume-Uni,United Kingdom,7,10,,,,1.78
+GFH-USOpen,États-Unis,United States,7,10,,,,1.78
+GFH-USOpen,États-Unis,United States,7,10,,,,1.78
+GFH-USOpen,Royaume-Uni,United Kingdom,11,16,,,,1.18
+GFH-USOpen,Royaume-Uni,United Kingdom,11,16,,,,1.18
+GFH-USOpen,Royaume-Uni,United Kingdom,11,16,,,,1.18
+GFH-USOpen,Royaume-Uni,United Kingdom,11,16,,,,1.18
+GFH-USOpen,États-Unis,United States,11,16,,,,1.18
+GFH-USOpen,États-Unis,United States,11,16,,,,1.18
+GFH-Open,Nouvelle-Zélande,New Zealand,1,1,,,,7.18
+GFH-Open,États-Unis,United States,2,2,,,,5.17
+GFH-Open,États-Unis,United States,3,3,,,,4.02
+GFH-Open,États-Unis,United States,4,5,,,,2.73
+GFH-Open,Royaume-Uni,United Kingdom,4,5,,,,2.73
+GFH-Open,Afrique du Sud,South Africa,6,8,,,,2.3
+GFH-Open,Australie,Australia,6,8,,,,2.3
+GFH-Open,Corée du Sud,South Korea,6,8,,,,2.3
+GFH-Open,États-Unis,United States,9,13,,,,1.15
+GFH-Open,Australie,Australia,9,13,,,,1.15
+GFH-Open,Danemark,Denmark,9,13,,,,1.15
+GFH-Open,Suède,Sweden,9,13,,,,1.15
+GFH-Open,États-Unis,United States,9,13,,,,1.15
+GFH-Open,Canada,Canada,14,16,,,,1.15
+GFH-Open,Corée du Sud,South Korea,14,16,,,,1.15
+GFH-Open,Japon,Japan,14,16,,,,1.15
+GFH-Open,États-Unis,United States,14,16,,,,1.15
+GFF-JO,Nouvelle-Zélande,New Zealand,1,1,,,,45.96
+GFF-JO,Allemagne,Germany,2,2,,,,33.09
+GFF-JO,Chine,China,3,3,,,,25.74
+GFF-JO,Philippines,Philippines,4,7,,,,16.08
+GFF-JO,Australie,Australia,4,7,,,,16.08
+GFF-JO,Corée du Sud,South Korea,4,7,,,,16.08
+GFF-JO,Japon,Japan,4,7,,,,16.08
+GFF-JO,Taipei chinois,Taiwan,8,9,,,,11.03
+GFF-JO,États-Unis,United States,8,9,,,,11.03
+GFF-JO,Suède,Sweden,10,12,,,,7.35
+GFF-JO,Chine,China,10,12,,,,7.35
+GFF-JO,Colombie,Colombia,10,12,,,,7.35
+GFF-JO,Suisse,Switzerland,13,16,,,,7.35
+GFF-JO,Philippines,Philippines,13,16,,,,7.35
+GFF-JO,Afrique du Sud,South Africa,13,16,,,,7.35
+GFF-JO,Espagne,Spain,13,16,,,,7.35
+GFF-JO,Canada,Canada,13,16,,,,7.35
+JUD-JO,Japon,Japan,,,3,2,3,71.83
+JUD-JO,France,France,,,2,2,6,79.81
+JUD-JO,Azerbaïdjan,Azerbaijan,,,2,0,0,23.47
+JUD-JO,Géorgie,Georgia,,,1,2,0,28.64
+JUD-JO,Brésil,Brazil,,,1,1,2,33.33
+JUD-JO,Ouzbékistan,Uzbekistan,,,1,0,2,24.88
+JUD-JO,Kazakhstan,Kazakhstan,,,1,0,1,18.31
+JUD-JO,Canada,Canada,,,1,0,0,11.74
+JUD-JO,Croatie,Croatia,,,1,0,0,11.74
+JUD-JO,Italie,Italy,,,1,0,0,11.74
+JUD-JO,Slovénie,Slovenia,,,1,0,0,11.74
+JUD-JO,Corée du Sud,South Korea,,,0,2,3,36.62
+JUD-JO,Israël,Israel,,,0,2,1,23.47
+JUD-JO,Kosovo,Kosovo,,,0,1,1,15.02
+JUD-JO,Allemagne,Germany,,,0,1,0,8.45
+JUD-JO,Mexique,Mexico,,,0,1,0,8.45
+JUD-JO,Mongolie,Mongolia,,,0,1,0,8.45
+JUD-JO,Moldavie,Moldova,,,0,0,2,13.15
+JUD-JO,Tadjikistan,Tajikistan,,,0,0,2,13.15
+JUD-JO,Autriche,Austria,,,0,0,1,6.57
+JUD-JO,Belgique,Belgium,,,0,0,1,6.57
+JUD-JO,Chine,China,,,0,0,1,6.57
+JUD-JO,Espagne,Spain,,,0,0,1,6.57
+JUD-JO,Grèce,Greece,,,0,0,1,6.57
+JUD-JO,Portugal,Portugal,,,0,0,1,6.57
+JUD-JO,Suède,Sweden,,,0,0,1,6.57
+JUD-WC,Japon,Japan,,,6,4,5,137.09
+JUD-WC,Russie,Russia,,,3,0,2,48.36
+JUD-WC,Géorgie,Georgia,,,2,2,1,46.95
+JUD-WC,Italie,Italy,,,2,0,0,23.47
+JUD-WC,Corée du Sud,South Korea,,,1,1,3,39.91
+JUD-WC,France,France,,,1,1,2,33.33
+JUD-WC,Allemagne,Germany,,,0,1,3,28.17
+JUD-WC,Tadjikistan,Tajikistan,,,0,1,2,21.6
+JUD-WC,Brésil,Brazil,,,0,1,1,15.02
+JUD-WC,Kosovo,Kosovo,,,0,1,1,15.02
+JUD-WC,Canada,Canada,,,0,1,0,8.45
+JUD-WC,Croatie,Croatia,,,0,1,0,8.45
+JUD-WC,Kazakhstan,Kazakhstan,,,0,1,0,8.45
+JUD-WC,Azerbaïdjan,Azerbaijan,,,0,0,3,19.72
+JUD-WC,Mongolie,Mongolia,,,0,0,2,13.15
+JUD-WC,Hongrie,Hungary,,,0,0,1,6.57
+JUD-WC,Pays-Bas,Netherlands,,,0,0,1,6.57
+JUD-WC,Portugal,Portugal,,,0,0,1,6.57
+JUD-WC,Espagne,Spain,,,0,0,1,6.57
+JUD-WC,Émirats arabes unis,United Arab Emirates,,,0,0,1,6.57
+HBH-WC,Danemark,Denmark,1,1,,,,62.5
+HBH-WC,Croatie,Croatia,2,2,,,,45
+HBH-WC,France,France,3,3,,,,35
+HBH-WC,Portugal,Portugal,4,4,,,,27.5
+HBH-WC,Égypte,Egypt,5,5,,,,20
+HBH-WC,Allemagne,Germany,6,6,,,,20
+HBH-WC,Brésil,Brazil,7,7,,,,20
+HBH-WC,Hongrie,Hungary,8,8,,,,20
+HBH-JO,Danemark,Denmark,1,1,,,,62.5
+HBH-JO,Allemagne,Germany,2,2,,,,45
+HBH-JO,Espagne,Spain,3,3,,,,35
+HBH-JO,Slovénie,Slovenia,4,4,,,,27.5
+HBH-JO,Égypte,Egypt,5,5,,,,20
+HBH-JO,Norvège,Norway,6,6,,,,20
+HBH-JO,Suède,Sweden,7,7,,,,20
+HBH-JO,France,France,8,8,,,,20
+HBF-WC,Norvège,Norway,1,1,,,,62.5
+HBF-WC,Allemagne,Germany,2,2,,,,45
+HBF-WC,France,France,3,3,,,,35
+HBF-WC,Pays-Bas,Netherlands,4,4,,,,27.5
+HBF-WC,Danemark,Denmark,5,5,,,,20
+HBF-WC,Brésil,Brazil,6,6,,,,20
+HBF-WC,Hongrie,Hungary,7,7,,,,20
+HBF-WC,Monténégro,Montenegro,8,8,,,,20
+HBF-JO,Norvège,Norway,1,1,,,,62.5
+HBF-JO,France,France,2,2,,,,45
+HBF-JO,Danemark,Denmark,3,3,,,,35
+HBF-JO,Suède,Sweden,4,4,,,,27.5
+HBF-JO,Pays-Bas,Netherlands,5,5,,,,20
+HBF-JO,Hongrie,Hungary,6,6,,,,20
+HBF-JO,Brésil,Brazil,7,7,,,,20
+HBF-JO,Allemagne,Germany,8,8,,,,20
+GYM-JO,Chine,China,,,3,6,3,108.17
+GYM-JO,États-Unis,United States,,,3,1,5,78.37
+GYM-JO,Japon,Japan,,,3,0,1,42.79
+GYM-JO,Philippines,Philippines,,,2,0,0,24.04
+GYM-JO,Brésil,Brazil,,,1,2,1,36.06
+GYM-JO,Italie,Italy,,,1,1,3,40.87
+GYM-JO,Russie,Russia,,,1,1,0,20.67
+GYM-JO,Royaume-Uni,United Kingdom,,,1,0,2,25.48
+GYM-JO,Algérie,Algeria,,,1,0,0,12.02
+GYM-JO,Allemagne,Germany,,,1,0,0,12.02
+GYM-JO,Irlande,Ireland,,,1,0,0,12.02
+GYM-JO,Israël,Israel,,,0,2,0,17.31
+GYM-JO,Arménie,Armenia,,,0,1,0,8.65
+GYM-JO,Bulgarie,Bulgaria,,,0,1,0,8.65
+GYM-JO,Colombie,Colombia,,,0,1,0,8.65
+GYM-JO,Kazakhstan,Kazakhstan,,,0,1,0,8.65
+GYM-JO,Ukraine,Ukraine,,,0,1,0,8.65
+GYM-JO,Canada,Canada,,,0,0,1,6.73
+GYM-JO,Taipei chinois,Taiwan,,,0,0,1,6.73
+GYM-JO,Grèce,Greece,,,0,0,1,6.73
+GYM-JO,Roumanie,Romania,,,0,0,1,6.73
+GYM-WC,Chine,China,,,3,1,3,98.68
+GYM-WC,Japon,Japan,,,2,2,1,73.1
+GYM-WC,États-Unis,United States,,,2,1,2,70.18
+GYM-WC,Russie,Russia,,,2,1,1,59.94
+GYM-WC,Royaume-Uni,United Kingdom,,,1,2,2,65.06
+GYM-WC,Algérie,Algeria,,,1,1,0,31.43
+GYM-WC,Philippines,Philippines,,,1,0,1,28.51
+GYM-WC,Arménie,Armenia,,,0,2,0,26.32
+GYM-WC,Canada,Canada,,,0,1,0,13.16
+GYM-WC,Turquie,Turkey (Türkiye),,,0,1,0,13.16
+GYM-WC,Suisse,Switzerland,,,0,0,1,10.23
+GYM-WC,Ukraine,Ukraine,,,0,0,1,10.23
+BBH-WBC,Venezuela,Venezuela,1,1,,,,31.25
+BBH-WBC,États-Unis,United States,2,2,,,,22.5
+BBH-WBC,République dominicaine,Dominican Republic,3,4,,,,15.63
+BBH-WBC,Italie,Italy,3,4,,,,15.63
+BBH-WBC,Canada,Canada,5,8,,,,10
+BBH-WBC,Corée du Sud,South Korea,5,8,,,,10
+BBH-WBC,Japon,Japan,5,8,,,,10
+BBH-WBC,Porto Rico,Puerto Rico,5,8,,,,10
+BBH-P12,Taipei chinois,Taiwan,1,1,,,,45.96
+BBH-P12,Japon,Japan,2,2,,,,33.09
+BBH-P12,États-Unis,United States,3,3,,,,25.74
+BBH-P12,Venezuela,Venezuela,4,4,,,,20.22
+CAN-JOS,Nouvelle-Zélande,New Zealand,,,3,0,0,32.11
+CAN-JOS,Allemagne,Germany,,,2,1,1,35.1
+CAN-JOS,Tchéquie,Czech Republic (Czechia),,,2,0,0,21.4
+CAN-JOS,Chine,China,,,2,0,0,21.4
+CAN-JOS,Canada,Canada,,,1,0,1,16.7
+CAN-JOS,Hongrie,Hungary,,,0,4,3,48.8
+CAN-JOS,Australie,Australia,,,0,1,1,13.7
+CAN-JOS,Brésil,Brazil,,,0,1,0,7.71
+CAN-JOS,Italie,Italy,,,0,1,0,7.71
+CAN-JOS,Ukraine,Ukraine,,,0,1,0,7.71
+CAN-JOS,États-Unis,United States,,,0,1,0,7.71
+CAN-JOS,Espagne,Spain,,,0,0,2,11.99
+CAN-JOS,Cuba,Cuba,,,0,0,1,5.99
+CAN-JOS,Danemark,Denmark,,,0,0,1,5.99
+CAN-JOS,Moldavie,Moldova,,,0,0,1,5.99
+CAN-JOL,Australie,Australia,,,3,0,0,54.82
+CAN-JOL,France,France,,,1,2,0,44.59
+CAN-JOL,Italie,Italy,,,1,0,0,18.27
+CAN-JOL,Nouvelle-Zélande,New Zealand,,,1,0,0,18.27
+CAN-JOL,Royaume-Uni,United Kingdom,,,0,2,2,46.78
+CAN-JOL,Allemagne,Germany,,,0,1,1,23.39
+CAN-JOL,Pologne,Poland,,,0,1,0,13.16
+CAN-JOL,Slovaquie,Slovakia,,,0,0,1,10.23
+CAN-JOL,Espagne,Spain,,,0,0,1,10.23
+CAN-JOL,États-Unis,United States,,,0,0,1,10.23
+CAN-WC,Hongrie,Hungary,,,6,2,5,93.57
+CAN-WC,Ukraine,Ukraine,,,4,0,0,36.55
+CAN-WC,Russie,Russia,,,3,2,4,61.04
+CAN-WC,Tchéquie,Czech Republic (Czechia),,,2,1,0,24.85
+CAN-WC,Pologne,Poland,,,2,0,1,23.39
+CAN-WC,Espagne,Spain,,,1,3,4,49.34
+CAN-WC,Chine,China,,,1,2,1,27.41
+CAN-WC,Portugal,Portugal,,,1,1,1,20.83
+CAN-WC,Moldavie,Moldova,,,1,0,1,14.25
+CAN-WC,Danemark,Denmark,,,1,0,0,9.14
+CAN-WC,Suède,Sweden,,,1,0,0,9.14
+CAN-WC,Ouzbékistan,Uzbekistan,,,1,0,0,9.14
+CAN-WC,Australie,Australia,,,0,4,0,26.32
+CAN-WC,Canada,Canada,,,0,3,0,19.74
+CAN-WC,Italie,Italy,,,0,2,0,13.16
+CAN-WC,Cuba,Cuba,,,0,1,0,6.58
+CAN-WC,Grèce,Greece,,,0,1,0,6.58
+CAN-WC,Slovénie,Slovenia,,,0,1,0,6.58
+CAN-WC,Afrique du Sud,South Africa,,,0,1,0,6.58
+CAN-WC,Allemagne,Germany,,,0,0,2,10.23
+CAN-WC,Géorgie,Georgia,,,0,0,1,5.12
+CAN-WC,Royaume-Uni,United Kingdom,,,0,0,1,5.12
+CAN-WC,Nouvelle-Zélande,New Zealand,,,0,0,1,5.12
+CAN-WC,Norvège,Norway,,,0,0,1,5.12
+CAN-WC,États-Unis,United States,,,0,0,1,5.12
+LUT-JO,Japon,Japan,,,8,1,2,96.24
+LUT-JO,Iran,Iran,,,2,4,2,58.69
+LUT-JO,États-Unis,United States,,,2,2,3,50.08
+LUT-JO,Bulgarie,Bulgaria,,,2,0,0,19.56
+LUT-JO,Cuba,Cuba,,,1,1,3,33.26
+LUT-JO,Géorgie,Georgia,,,1,1,0,16.82
+LUT-JO,Ouzbékistan,Uzbekistan,,,1,0,1,15.26
+LUT-JO,Bahreïn,Bahrain,,,1,0,0,9.78
+LUT-JO,Ukraine,Ukraine,,,0,2,1,19.56
+LUT-JO,Kirghizistan,Kyrgyzstan,,,0,1,4,28.95
+LUT-JO,Chine,China,,,0,1,4,28.95
+LUT-JO,Arménie,Armenia,,,0,1,1,12.52
+LUT-JO,Chili,Chile,,,0,1,0,7.04
+LUT-JO,Équateur,Ecuador,,,0,1,0,7.04
+LUT-JO,Kazakhstan,Kazakhstan,,,0,1,0,7.04
+LUT-JO,Moldavie,Moldova,,,0,1,0,7.04
+LUT-JO,Azerbaïdjan,Azerbaijan,,,0,0,3,16.43
+LUT-JO,Albanie,Albania,,,0,0,2,10.95
+LUT-JO,Corée du Nord,North Korea,,,0,0,2,10.95
+LUT-JO,Turquie,Turkey (Türkiye),,,0,0,2,10.95
+LUT-JO,Colombie,Colombia,,,0,0,1,5.48
+LUT-JO,Danemark,Denmark,,,0,0,1,5.48
+LUT-JO,Grèce,Greece,,,0,0,1,5.48
+LUT-JO,Inde,India,,,0,0,1,5.48
+LUT-JO,Norvège,Norway,,,0,0,1,5.48
+LUT-JO,Porto Rico,Puerto Rico,,,0,0,1,5.48
+LUT-WC,Japon,Japan,,,7,3,3,63.62
+LUT-WC,Iran,Iran,,,6,4,5,68.54
+LUT-WC,États-Unis,United States,,,4,1,3,37.56
+LUT-WC,Corée du Nord,North Korea,,,3,2,2,32.63
+LUT-WC,Russie,Russia,,,1,4,8,49.06
+LUT-WC,Azerbaïdjan,Azerbaijan,,,1,2,5,30.75
+LUT-WC,Ouzbékistan,Uzbekistan,,,1,1,3,19.95
+LUT-WC,Équateur,Ecuador,,,1,1,0,10.09
+LUT-WC,Géorgie,Georgia,,,1,1,0,10.09
+LUT-WC,Ukraine,Ukraine,,,1,1,0,10.09
+LUT-WC,Arménie,Armenia,,,1,0,3,15.73
+LUT-WC,Kazakhstan,Kazakhstan,,,1,0,2,12.44
+LUT-WC,Grèce,Greece,,,1,0,0,5.87
+LUT-WC,Serbie,Serbia,,,1,0,0,5.87
+LUT-WC,Kirghizistan,Kyrgyzstan,,,0,2,3,18.31
+LUT-WC,Chine,China,,,0,1,4,17.37
+LUT-WC,Mongolie,Mongolia,,,0,1,3,14.08
+LUT-WC,Turquie,Turkey (Türkiye),,,0,1,2,10.8
+LUT-WC,Hongrie,Hungary,,,0,1,1,7.51
+LUT-WC,Albanie,Albania,,,0,1,0,4.23
+LUT-WC,Bulgarie,Bulgaria,,,0,1,0,4.23
+LUT-WC,France,France,,,0,1,0,4.23
+LUT-WC,Corée du Sud,South Korea,,,0,1,0,4.23
+LUT-WC,Bahreïn,Bahrain,,,0,0,3,9.86
+LUT-WC,Moldavie,Moldova,,,0,0,2,6.57
+LUT-WC,Canada,Canada,,,0,0,1,3.29
+LUT-WC,Croatie,Croatia,,,0,0,1,3.29
+LUT-WC,Cuba,Cuba,,,0,0,1,3.29
+LUT-WC,Finlande,Finland,,,0,0,1,3.29
+LUT-WC,Inde,India,,,0,0,1,3.29
+LUT-WC,Pologne,Poland,,,0,0,1,3.29
+LUT-WC,Roumanie,Romania,,,0,0,1,3.29
+LUT-WC,Slovaquie,Slovakia,,,0,0,1,3.29
+HAL-JO,Chine,China,,,5,0,0,109.65
+HAL-JO,Bulgarie,Bulgaria,,,1,0,1,34.21
+HAL-JO,États-Unis,United States,,,1,0,1,34.21
+HAL-JO,Géorgie,Georgia,,,1,0,0,21.93
+HAL-JO,Indonésie,Indonesia,,,1,0,0,21.93
+HAL-JO,Norvège,Norway,,,1,0,0,21.93
+HAL-JO,Thaïlande,Thailand,,,0,2,1,43.86
+HAL-JO,Colombie,Colombia,,,0,2,0,31.58
+HAL-JO,Arménie,Armenia,,,0,1,0,15.79
+HAL-JO,Canada,Canada,,,0,1,0,15.79
+HAL-JO,Égypte,Egypt,,,0,1,0,15.79
+HAL-JO,Corée du Sud,South Korea,,,0,1,0,15.79
+HAL-JO,Roumanie,Romania,,,0,1,0,15.79
+HAL-JO,Ouzbékistan,Uzbekistan,,,0,1,0,15.79
+HAL-JO,Russie,Russia,,,0,0,1,12.28
+HAL-JO,Bahreïn,Bahrain,,,0,0,1,12.28
+HAL-JO,Équateur,Ecuador,,,0,0,2,24.56
+HAL-JO,Royaume-Uni,United Kingdom,,,0,0,1,12.28
+HAL-JO,Italie,Italy,,,0,0,1,12.28
+HAL-JO,Taipei chinois,Taiwan,,,0,0,1,12.28
+HAL-WC,Corée du Nord,North Korea,,,17,5,1,96.67
+HAL-WC,Thaïlande,Thailand,,,3,2,3,27.96
+HAL-WC,Chine,China,,,3,1,4,27.23
+HAL-WC,Arménie,Armenia,,,3,1,1,19.55
+HAL-WC,États-Unis,United States,,,3,0,6,29.06
+HAL-WC,Corée du Sud,South Korea,,,3,0,3,21.38
+HAL-WC,Ouzbékistan,Uzbekistan,,,3,0,2,18.82
+HAL-WC,Colombie,Colombia,,,2,5,5,38.38
+HAL-WC,Indonésie,Indonesia,,,2,1,2,17.54
+HAL-WC,Turquie,Turkey (Türkiye),,,2,1,2,17.54
+HAL-WC,Bulgarie,Bulgaria,,,2,1,0,12.43
+HAL-WC,Norvège,Norway,,,2,1,0,12.43
+HAL-WC,Iran,Iran,,,1,4,1,20.29
+HAL-WC,Roumanie,Romania,,,1,3,0,14.44
+HAL-WC,République dominicaine,Dominican Republic,,,1,2,0,11.15
+HAL-WC,Bahreïn,Bahrain,,,0,4,2,18.27
+HAL-WC,Égypte,Egypt,,,0,4,2,18.27
+HAL-WC,Cuba,Cuba,,,0,3,0,9.87
+HAL-WC,Nigeria,Nigeria,,,0,3,0,9.87
+HAL-WC,Canada,Canada,,,0,2,1,9.14
+HAL-WC,Inde,India,,,0,2,1,9.14
+HAL-WC,Japon,Japan,,,0,2,1,9.14
+HAL-WC,Chili,Chile,,,0,1,0,3.29
+HAL-WC,Taipei chinois,Taiwan,,,0,0,4,10.23
+HAL-WC,Moldavie,Moldova,,,0,0,3,7.68
+HAL-WC,Australie,Australia,,,0,0,2,5.12
+HAL-WC,France,France,,,0,0,1,2.56
+HAL-WC,Philippines,Philippines,,,0,0,1,2.56
+BOX-JO,Ouzbékistan,Uzbekistan,,,5,0,0,68.76
+BOX-JO,Chine,China,,,3,2,0,61.06
+BOX-JO,Taipei chinois,Taiwan,,,1,0,2,29.15
+BOX-JO,Cuba,Cuba,,,1,0,1,21.45
+BOX-JO,Algérie,Algeria,,,1,0,0,13.75
+BOX-JO,Irlande,Ireland,,,1,0,0,13.75
+BOX-JO,Ukraine,Ukraine,,,1,0,0,13.75
+BOX-JO,France,France,,,0,2,1,27.5
+BOX-JO,Turquie,Turkey (Türkiye),,,0,2,1,27.5
+BOX-JO,Kazakhstan,Kazakhstan,,,0,1,1,17.6
+BOX-JO,Espagne,Spain,,,0,1,1,17.6
+BOX-JO,Azerbaïdjan,Azerbaijan,,,0,1,0,9.9
+BOX-JO,Kirghizistan,Kyrgyzstan,,,0,1,0,9.9
+BOX-JO,Mexique,Mexico,,,0,1,0,9.9
+BOX-JO,Panama,Panama,,,0,1,0,9.9
+BOX-JO,Pologne,Poland,,,0,1,0,9.9
+BOX-JO,Australie,Australia,,,0,0,2,15.4
+BOX-JO,République dominicaine,Dominican Republic,,,0,0,2,15.4
+BOX-JO,Philippines,Philippines,,,0,0,2,15.4
+BOX-JO,Bulgarie,Bulgaria,,,0,0,1,7.7
+BOX-JO,Brésil,Brazil,,,0,0,1,7.7
+BOX-JO,Cap-Vert,Cabo Verde,,,0,0,1,7.7
+BOX-JO,Canada,Canada,,,0,0,1,7.7
+BOX-JO,Corée du Nord,North Korea,,,0,0,1,7.7
+BOX-JO,Géorgie,Georgia,,,0,0,1,7.7
+BOX-JO,Allemagne,Germany,,,0,0,1,7.7
+BOX-JO,Royaume-Uni,United Kingdom,,,0,0,1,7.7
+BOX-JO,Corée du Sud,South Korea,,,0,0,1,7.7
+BOX-JO,Tadjikistan,Tajikistan,,,0,0,1,7.7
+BOX-JO,Thaïlande,Thailand,,,0,0,1,7.7
+BOX-JO,États-Unis,United States,,,0,0,1,7.7
+BOX-WC,Kazakhstan,Kazakhstan,,,7,1,2,77.82
+BOX-WC,Ouzbékistan,Uzbekistan,,,6,2,3,80.28
+BOX-WC,Inde,India,,,2,1,1,28.87
+BOX-WC,Brésil,Brazil,,,1,3,0,27.82
+BOX-WC,Pologne,Poland,,,1,2,0,21.48
+BOX-WC,Australie,Australia,,,1,1,1,20.07
+BOX-WC,Irlande,Ireland,,,1,0,2,18.66
+BOX-WC,Taipei chinois,Taiwan,,,1,0,1,13.73
+BOX-WC,Royaume-Uni,United Kingdom,,,0,2,3,27.46
+BOX-WC,Turquie,Turkey (Türkiye),,,0,2,1,17.61
+BOX-WC,Japon,Japan,,,0,1,2,16.2
+BOX-WC,Bulgarie,Bulgaria,,,0,1,1,11.27
+BOX-WC,Mongolie,Mongolia,,,0,1,1,11.27
+BOX-WC,Espagne,Spain,,,0,1,1,11.27
+BOX-WC,France,France,,,0,1,0,6.34
+BOX-WC,États-Unis,United States,,,0,1,0,6.34
+BOX-WC,Chine,China,,,0,0,5,24.65
+BOX-WC,Cuba,Cuba,,,0,0,3,14.79
+BOX-WC,Azerbaïdjan,Azerbaijan,,,0,0,2,9.86
+BOX-WC,Autriche,Austria,,,0,0,1,4.93
+BOX-WC,Canada,Canada,,,0,0,1,4.93
+BOX-WC,Colombie,Colombia,,,0,0,1,4.93
+BOX-WC,Croatie,Croatia,,,0,0,1,4.93
+BOX-WC,Géorgie,Georgia,,,0,0,1,4.93
+BOX-WC,Hongrie,Hungary,,,0,0,1,4.93
+BOX-WC,Italie,Italy,,,0,0,1,4.93
+BOX-WC,Jordanie,Jordan,,,0,0,1,4.93
+BOX-WC,Corée du Sud,South Korea,,,0,0,1,4.93
+BOX-WC,Ukraine,Ukraine,,,0,0,1,4.93
+BOX-WC,Venezuela,Venezuela,,,0,0,1,4.93
+SKB-JO,Japon,Japan,,,2,2,0,188.6
+SKB-JO,Australie,Australia,,,2,0,0,109.65
+SKB-JO,États-Unis,United States,,,0,2,1,109.65
+SKB-JO,Brésil,Brazil,,,0,0,2,61.4
+SKB-JO,Royaume-Uni,United Kingdom,,,0,0,1,30.7
+SNK-WC,Chine,China,1,1,,,,94.7
+SNK-WC,Royaume-Uni,United Kingdom,2,2,,,,68.18
+SNK-WC,Royaume-Uni,United Kingdom,3,4,,,,47.35
+SNK-WC,Royaume-Uni,United Kingdom,3,4,,,,47.35
+SNK-WC,Chine,China,5,8,,,,30.3
+SNK-WC,Royaume-Uni,United Kingdom,5,8,,,,30.3
+SNK-WC,Australie,Australia,5,8,,,,30.3
+SNK-WC,Iran,Iran,5,8,,,,30.3
+SNK-WC,Chine,China,9,16,,,,15.15
+SNK-WC,Royaume-Uni,United Kingdom,9,16,,,,15.15
+SNK-WC,Chine,China,9,16,,,,15.15
+SNK-WC,Royaume-Uni,United Kingdom,9,16,,,,15.15
+SNK-WC,Royaume-Uni,United Kingdom,9,16,,,,15.15
+SNK-WC,Royaume-Uni,United Kingdom,9,16,,,,15.15
+SNK-WC,Royaume-Uni,United Kingdom,9,16,,,,15.15
+SNK-WC,Royaume-Uni,United Kingdom,9,16,,,,15.15
+RGH-WC,Afrique du Sud,South Africa,1,1,,,,50
+RGH-WC,Nouvelle-Zélande,New Zealand,2,2,,,,36
+RGH-WC,Royaume-Uni,United Kingdom,3,3,,,,28
+RGH-WC,Argentine,Argentina,4,4,,,,22
+RGH-WC,France,France,5,8,,,,16
+RGH-WC,Irlande,Ireland,5,8,,,,16
+RGH-WC,Royaume-Uni,United Kingdom,5,8,,,,16
+RGH-WC,Fidji,Fiji,5,8,,,,16
+RGF-WC,Royaume-Uni,United Kingdom,1,1,,,,50
+RGF-WC,Canada,Canada,2,2,,,,36
+RGF-WC,Nouvelle-Zélande,New Zealand,3,3,,,,28
+RGF-WC,France,France,4,4,,,,22
+RGF-WC,Afrique du Sud,South Africa,5,8,,,,16
+RGF-WC,Australie,Australia,5,8,,,,16
+RGF-WC,Irlande,Ireland,5,8,,,,16
+RGF-WC,Royaume-Uni,United Kingdom,5,8,,,,16
+R7H-JO,France,France,1,1,,,,36.76
+R7H-JO,Fidji,Fiji,2,2,,,,26.47
+R7H-JO,Afrique du Sud,South Africa,3,3,,,,20.59
+R7H-JO,Australie,Australia,4,4,,,,16.18
+R7F-JO,Nouvelle-Zélande,New Zealand,1,1,,,,36.76
+R7F-JO,Canada,Canada,2,2,,,,26.47
+R7F-JO,États-Unis,United States,3,3,,,,20.59
+R7F-JO,Australie,Australia,4,4,,,,16.18
+ARC-JO,Corée du Sud,South Korea,,,5,1,1,275.44
+ARC-JO,États-Unis,United States,,,0,1,1,56.14
+ARC-JO,France,France,,,0,1,1,56.14
+ARC-JO,Allemagne,Germany,,,0,1,0,31.58
+ARC-JO,Chine,China,,,0,1,0,31.58
+ARC-JO,Turquie,Turkey (Türkiye),,,0,0,1,24.56
+ARC-JO,Mexique,Mexico,,,0,0,1,24.56
+ARC-WC,Corée du Sud,South Korea,,,2,1,4,108.77
+ARC-WC,Mexique,Mexico,,,2,0,1,56.14
+ARC-WC,Espagne,Spain,,,2,0,0,43.86
+ARC-WC,France,France,,,1,1,0,37.72
+ARC-WC,Inde,India,,,1,1,0,37.72
+ARC-WC,Taipei chinois,Taiwan,,,1,0,0,21.93
+ARC-WC,Pays-Bas,Netherlands,,,1,0,0,21.93
+ARC-WC,États-Unis,United States,,,0,2,0,31.58
+ARC-WC,Japon,Japan,,,0,1,2,40.35
+ARC-WC,Brésil,Brazil,,,0,1,0,15.79
+ARC-WC,Chine,China,,,0,1,0,15.79
+ARC-WC,Danemark,Denmark,,,0,1,0,15.79
+ARC-WC,Salvador,El Salvador,,,0,1,0,15.79
+ARC-WC,Colombie,Colombia,,,0,0,1,12.28
+ARC-WC,Kazakhstan,Kazakhstan,,,0,0,1,12.28
+ARC-WC,Slovénie,Slovenia,,,0,0,1,12.28
+HKH-WC,Allemagne,Germany,1,1,,,,31.25
+HKH-WC,Espagne,Spain,2,2,,,,22.5
+HKH-WC,Argentine,Argentina,3,3,,,,17.5
+HKH-WC,Pays-Bas,Netherlands,4,4,,,,13.75
+HKH-WC,Australie,Australia,5,5,,,,10
+HKH-WC,Royaume-Uni,United Kingdom,6,6,,,,10
+HKH-WC,Belgique,Belgium,7,7,,,,10
+HKH-WC,Inde,India,8,8,,,,10
+HKH-JO,Pays-Bas,Netherlands,1,1,,,,31.25
+HKH-JO,Allemagne,Germany,2,2,,,,22.5
+HKH-JO,Inde,India,3,3,,,,17.5
+HKH-JO,Espagne,Spain,4,4,,,,13.75
+HKH-JO,Belgique,Belgium,5,5,,,,10
+HKH-JO,Australie,Australia,6,6,,,,10
+HKH-JO,Royaume-Uni,United Kingdom,7,7,,,,10
+HKH-JO,Argentine,Argentina,8,8,,,,10
+HKF-WC,Argentine,Argentina,1,1,,,,31.25
+HKF-WC,Pays-Bas,Netherlands,2,2,,,,22.5
+HKF-WC,Belgique,Belgium,3,3,,,,17.5
+HKF-WC,Australie,Australia,4,4,,,,13.75
+HKF-WC,Inde,India,5,5,,,,10
+HKF-WC,Allemagne,Germany,6,6,,,,10
+HKF-WC,Espagne,Spain,7,7,,,,10
+HKF-WC,Chine,China,8,8,,,,10
+HKF-JO,Pays-Bas,Netherlands,1,1,,,,31.25
+HKF-JO,Chine,China,2,2,,,,22.5
+HKF-JO,Argentine,Argentina,3,3,,,,17.5
+HKF-JO,Belgique,Belgium,4,4,,,,13.75
+HKF-JO,Australie,Australia,5,5,,,,10
+HKF-JO,Allemagne,Germany,6,6,,,,10
+HKF-JO,Espagne,Spain,7,7,,,,10
+HKF-JO,Royaume-Uni,United Kingdom,8,8,,,,10
+TRI-JO,Royaume-Uni,United Kingdom,,,1,0,2,154.97
+TRI-JO,France,France,,,1,0,1,114.04
+TRI-JO,Allemagne,Germany,,,1,0,0,73.1
+TRI-JO,Nouvelle-Zélande,New Zealand,,,0,1,0,52.63
+TRI-JO,Suisse,Switzerland,,,0,1,0,52.63
+TRI-JO,États-Unis,United States,,,0,1,0,52.63
+TIR-JO,Chine,China,,,5,2,3,118.71
+TIR-JO,Corée du Sud,South Korea,,,3,3,0,75.44
+TIR-JO,États-Unis,United States,,,1,3,1,54.39
+TIR-JO,Italie,Italy,,,1,2,1,43.86
+TIR-JO,Royaume-Uni,United Kingdom,,,1,1,0,25.15
+TIR-JO,Guatemala,Guatemala,,,1,0,1,22.81
+TIR-JO,Suisse,Switzerland,,,1,0,1,22.81
+TIR-JO,Chili,Chile,,,1,0,0,14.62
+TIR-JO,Serbie,Serbia,,,1,0,0,14.62
+TIR-JO,France,France,,,0,1,0,10.53
+TIR-JO,Suède,Sweden,,,0,1,0,10.53
+TIR-JO,Turquie,Turkey (Türkiye),,,0,1,0,10.53
+TIR-JO,Ukraine,Ukraine,,,0,1,0,10.53
+TIR-JO,Inde,India,,,0,0,3,24.56
+TIR-JO,Australie,Australia,,,0,0,1,8.19
+TIR-JO,Taipei chinois,Taiwan,,,0,0,1,8.19
+TIR-JO,Croatie,Croatia,,,0,0,1,8.19
+TIR-JO,Hongrie,Hungary,,,0,0,1,8.19
+TIR-JO,Kazakhstan,Kazakhstan,,,0,0,1,8.19
+TIR-WC,Chine,China,,,12,7,2,103.61
+TIR-WC,Corée du Sud,South Korea,,,7,3,4,65.04
+TIR-WC,Inde,India,,,3,6,4,54.54
+TIR-WC,Suisse,Switzerland,,,3,5,4,50.43
+TIR-WC,Norvège,Norway,,,3,4,3,43.13
+TIR-WC,France,France,,,3,0,3,26.7
+TIR-WC,Allemagne,Germany,,,2,2,1,22.82
+TIR-WC,Autriche,Austria,,,2,1,2,21.91
+TIR-WC,Tchéquie,Czech Republic (Czechia),,,2,1,0,15.52
+TIR-WC,Ukraine,Ukraine,,,1,1,3,19.4
+TIR-WC,Pologne,Poland,,,1,0,2,12.09
+TIR-WC,Hongrie,Hungary,,,0,1,2,10.5
+TIR-WC,Turquie,Turkey (Türkiye),,,0,1,2,10.5
+TIR-WC,Danemark,Denmark,,,0,1,1,7.3
+TIR-WC,Azerbaïdjan,Azerbaijan,,,0,1,0,4.11
+TIR-WC,Hong Kong,Hong Kong,,,0,1,0,4.11
+TIR-WC,Italie,Italy,,,0,1,0,4.11
+TIR-WC,Roumanie,Romania,,,0,1,0,4.11
+TIR-WC,Suède,Sweden,,,0,1,0,4.11
+TIR-WC,Kazakhstan,Kazakhstan,,,0,0,2,6.39
+TIR-WC,Royaume-Uni,United Kingdom,,,0,0,1,3.19
+TIR-WC,Islande,Iceland,,,0,0,1,3.19
+TIR-WC,Russie,Russia,,,0,0,1,3.19
+AVI-JO,Pays-Bas,Netherlands,,,4,3,1,105.26
+AVI-JO,Royaume-Uni,United Kingdom,,,3,2,3,95.86
+AVI-JO,Roumanie,Romania,,,2,3,0,65.16
+AVI-JO,Nouvelle-Zélande,New Zealand,,,1,2,1,46.99
+AVI-JO,Allemagne,Germany,,,1,0,1,24.44
+AVI-JO,Irlande,Ireland,,,1,0,1,24.44
+AVI-JO,États-Unis,United States,,,1,0,1,24.44
+AVI-JO,Croatie,Croatia,,,1,0,0,15.66
+AVI-JO,Italie,Italy,,,0,2,0,22.56
+AVI-JO,Canada,Canada,,,0,1,0,11.28
+AVI-JO,Russie,Russia,,,0,1,0,11.28
+AVI-JO,Grèce,Greece,,,0,0,2,17.54
+AVI-JO,Australie,Australia,,,0,0,1,8.77
+AVI-JO,Lituanie,Lithuania,,,0,0,1,8.77
+AVI-JO,Pologne,Poland,,,0,0,1,8.77
+AVI-JO,Suisse,Switzerland,,,0,0,1,8.77
+AVI-WC,Pays-Bas,Netherlands,,,4,1,1,64.33
+AVI-WC,Roumanie,Romania,,,2,4,0,59.45
+AVI-WC,Chine,China,,,2,2,0,41.91
+AVI-WC,Irlande,Ireland,,,2,0,2,38.01
+AVI-WC,États-Unis,United States,,,2,0,2,38.01
+AVI-WC,Royaume-Uni,United Kingdom,,,1,4,1,54.09
+AVI-WC,Italie,Italy,,,1,1,0,20.96
+AVI-WC,Nouvelle-Zélande,New Zealand,,,1,0,2,25.83
+AVI-WC,Pologne,Poland,,,1,0,1,19.01
+AVI-WC,Grèce,Greece,,,1,0,0,12.18
+AVI-WC,Uruguay,Uruguay,,,1,0,0,12.18
+AVI-WC,Allemagne,Germany,,,0,1,2,22.42
+AVI-WC,Autriche,Austria,,,0,1,0,8.77
+AVI-WC,France,France,,,0,1,0,8.77
+AVI-WC,Indonésie,Indonesia,,,0,1,0,8.77
+AVI-WC,Serbie,Serbia,,,0,1,0,8.77
+AVI-WC,Tunisie,Tunisia,,,0,1,0,8.77
+AVI-WC,Russie,Russia,,,0,0,2,13.65
+AVI-WC,Suisse,Switzerland,,,0,0,2,13.65
+AVI-WC,Danemark,Denmark,,,0,0,1,6.82
+AVI-WC,Mexique,Mexico,,,0,0,1,6.82
+AVI-WC,Pérou,Peru,,,0,0,1,6.82
+KAR-WC,Égypte,Egypt,,,3,0,1,108.01
+KAR-WC,Iran,Iran,,,1,1,1,69.17
+KAR-WC,Italie,Italy,,,1,1,1,69.17
+KAR-WC,Japon,Japan,,,1,1,1,69.17
+KAR-WC,Turquie,Turkey (Türkiye),,,1,1,1,69.17
+KAR-WC,Jordanie,Jordan,,,1,0,1,47.33
+KAR-WC,Ouzbékistan,Uzbekistan,,,1,0,1,47.33
+KAR-WC,France,France,,,1,0,0,30.34
+KAR-WC,Allemagne,Germany,,,1,0,0,30.34
+KAR-WC,Hong Kong,Hong Kong,,,1,0,0,30.34
+KAR-WC,Kazakhstan,Kazakhstan,,,0,1,2,55.83
+KAR-WC,Ukraine,Ukraine,,,0,1,1,38.83
+KAR-WC,Chine,China,,,0,1,0,21.84
+KAR-WC,Kosovo,Kosovo,,,0,1,0,21.84
+KAR-WC,Malaisie,Malaysia,,,0,1,0,21.84
+KAR-WC,Maroc,Morocco,,,0,1,0,21.84
+KAR-WC,Porto Rico,Puerto Rico,,,0,1,0,21.84
+KAR-WC,Slovaquie,Slovakia,,,0,1,0,21.84
+KAR-WC,Grèce,Greece,,,0,0,2,33.98
+KAR-WC,Algérie,Algeria,,,0,0,1,16.99
+KAR-WC,Arménie,Armenia,,,0,0,1,16.99
+KAR-WC,Azerbaïdjan,Azerbaijan,,,0,0,1,16.99
+KAR-WC,Chili,Chile,,,0,0,1,16.99
+KAR-WC,Croatie,Croatia,,,0,0,1,16.99
+KAR-WC,Royaume-Uni,United Kingdom,,,0,0,1,16.99
+KAR-WC,Arabie saoudite,Saudi Arabia,,,0,0,1,16.99
+KAR-WC,Tunisie,Tunisia,,,0,0,1,16.99
+KAR-WC,États-Unis,United States,,,0,0,1,16.99
+KAR-WC,Venezuela,Venezuela,,,0,0,1,16.99
+FIS-JO,Norvège,Norway,,,14,5,7,82.24
+FIS-JO,États-Unis,United States,,,5,8,4,49.68
+FIS-JO,Italie,Italy,,,3,3,7,34.7
+FIS-JO,Allemagne,Germany,,,2,2,1,15.29
+FIS-JO,France,France,,,0,4,2,15.29
+FIS-JO,Suède,Sweden,,,5,5,3,39.28
+FIS-JO,Suisse,Switzerland,,,5,7,5,49.07
+FIS-JO,Autriche,Austria,,,4,5,4,37.6
+FIS-JO,Japon,Japan,,,4,4,7,41.27
+FIS-JO,Canada,Canada,,,2,2,2,17.43
+FIS-JO,Chine,China,,,4,3,4,32.1
+FIS-JO,Corée du Sud,South Korea,,,1,1,1,8.71
+FIS-JO,Australie,Australia,,,3,2,1,19.11
+FIS-JO,Royaume-Uni,United Kingdom,,,1,0,1,5.96
+FIS-JO,Tchéquie,Czech Republic (Czechia),,,1,1,0,6.57
+FIS-JO,Slovénie,Slovenia,,,2,1,1,12.53
+FIS-JO,Brésil,Brazil,,,1,0,0,3.82
+FIS-JO,Pologne,Poland,,,0,2,1,7.64
+FIS-JO,Nouvelle-Zélande,New Zealand,,,0,2,1,7.64
+FIS-JO,Finlande,Finland,,,0,1,3,9.17
+FIS-JO,Estonie,Estonia,,,0,1,0,2.75
+FIS-JO,Bulgarie,Bulgaria,,,0,0,1,2.14
+BIA-JO,France,France,,,6,4,3,210.53
+BIA-JO,Norvège,Norway,,,3,5,3,165.07
+BIA-JO,Suède,Sweden,,,1,1,1,45.45
+BIA-JO,Italie,Italy,,,1,1,0,34.29
+BIA-JO,Bulgarie,Bulgaria,,,0,0,1,11.16
+BIA-JO,Tchéquie,Czech Republic (Czechia),,,0,0,1,11.16
+BIA-JO,Finlande,Finland,,,0,0,1,11.16
+BIA-JO,Allemagne,Germany,,,0,0,1,11.16
+PVL-JO,Pays-Bas,Netherlands,,,5,6,2,65.41
+PVL-JO,Italie,Italy,,,3,0,2,25.81
+PVL-JO,États-Unis,United States,,,2,2,1,25.06
+PVL-JO,Norvège,Norway,,,1,2,1,18.8
+PVL-JO,Canada,Canada,,,1,1,3,21.3
+PVL-JO,Tchéquie,Czech Republic (Czechia),,,1,1,0,10.78
+PVL-JO,Chine,China,,,1,0,2,13.28
+PVL-JO,Danemark,Denmark,,,0,1,0,4.51
+PVL-JO,Pologne,Poland,,,0,1,0,4.51
+PVL-JO,Japon,Japan,,,0,0,3,10.53
+PST-JO,Pays-Bas,Netherlands,,,5,1,1,45.91
+PST-JO,Corée du Sud,South Korea,,,2,3,2,38.6
+PST-JO,Canada,Canada,,,1,2,2,26.02
+PST-JO,Italie,Italy,,,1,2,1,21.93
+PST-JO,Chine,China,,,0,1,0,5.26
+PST-JO,Belgique,Belgium,,,0,0,1,4.09
+PST-JO,Lettonie,Latvia,,,0,0,1,4.09
+PST-JO,États-Unis,United States,,,0,0,1,4.09
+PAR-JO,États-Unis,United States,,,2,1,0,35.79
+PAR-JO,Japon,Japan,,,1,3,2,56.32
+PAR-JO,France,France,,,1,0,0,13.16
+PAR-JO,Kazakhstan,Kazakhstan,,,1,0,0,13.16
+PAR-JO,Géorgie,Georgia,,,0,1,0,9.47
+PAR-JO,Canada,Canada,,,0,0,1,7.37
+PAR-JO,Allemagne,Germany,,,0,0,1,7.37
+PAR-JO,Italie,Italy,,,0,0,1,7.37
+PAR-WC,Japon,Japan,,,1,2,1,49.34
+PAR-WC,États-Unis,United States,,,1,0,1,25.66
+PAR-WC,Allemagne,Germany,,,1,0,0,16.45
+PAR-WC,France,France,,,1,0,0,16.45
+PAR-WC,Canada,Canada,,,0,1,1,21.05
+PAR-WC,Géorgie,Georgia,,,0,1,0,11.84
+PAR-WC,Belgique,Belgium,,,0,0,1,9.21
+CURH-JO,Canada,Canada,1,1,,,,28.13
+CURH-JO,Royaume-Uni,United Kingdom,2,2,,,,20.25
+CURH-JO,Suisse,Switzerland,3,3,,,,15.75
+CURH-JO,Norvège,Norway,4,4,,,,12.38
+CURH-JO,États-Unis,United States,5,5,,,,9
+CURH-JO,Italie,Italy,6,6,,,,9
+CURH-JO,Allemagne,Germany,7,7,,,,9
+CURH-JO,Tchéquie,Czech Republic (Czechia),8,8,,,,9
+CURF-JO,Suède,Sweden,1,1,,,,28.13
+CURF-JO,Suisse,Switzerland,2,2,,,,20.25
+CURF-JO,Canada,Canada,3,3,,,,15.75
+CURF-JO,États-Unis,United States,4,4,,,,12.38
+CURF-JO,Corée du Sud,South Korea,5,5,,,,9
+CURF-JO,Royaume-Uni,United Kingdom,6,6,,,,9
+CURF-JO,Danemark,Denmark,7,7,,,,9
+CURF-JO,Japon,Japan,8,8,,,,9
+CURX-JO,Suède,Sweden,1,1,,,,43.86
+CURX-JO,États-Unis,United States,2,2,,,,31.58
+CURX-JO,Italie,Italy,3,3,,,,24.56
+HGH-JO,États-Unis,United States,1,1,,,,31.25
+HGH-JO,Canada,Canada,2,2,,,,22.5
+HGH-JO,Finlande,Finland,3,3,,,,17.5
+HGH-JO,Slovaquie,Slovakia,4,4,,,,13.75
+HGH-JO,Suisse,Switzerland,5,5,,,,10
+HGH-JO,Allemagne,Germany,6,6,,,,10
+HGH-JO,Suède,Sweden,7,7,,,,10
+HGH-JO,Tchéquie,Czech Republic (Czechia),8,8,,,,10
+HGH-WC,Finlande,Finland,1,1,,,,31.25
+HGH-WC,Suisse,Switzerland,2,2,,,,22.5
+HGH-WC,Norvège,Norway,3,3,,,,17.5
+HGH-WC,Canada,Canada,4,4,,,,13.75
+HGH-WC,Tchéquie,Czech Republic (Czechia),5,5,,,,10
+HGH-WC,Lettonie,Latvia,6,6,,,,10
+HGH-WC,Suède,Sweden,7,7,,,,10
+HGH-WC,États-Unis,United States,8,8,,,,10
+HGF-JO,États-Unis,United States,1,1,,,,31.25
+HGF-JO,Canada,Canada,2,2,,,,22.5
+HGF-JO,Suisse,Switzerland,3,3,,,,17.5
+HGF-JO,Suède,Sweden,4,4,,,,13.75
+HGF-JO,Tchéquie,Czech Republic (Czechia),5,5,,,,10
+HGF-JO,Finlande,Finland,6,6,,,,10
+HGF-JO,Allemagne,Germany,7,7,,,,10
+HGF-JO,Italie,Italy,8,8,,,,10
+HGF-WC,États-Unis,United States,1,1,,,,31.25
+HGF-WC,Canada,Canada,2,2,,,,22.5
+HGF-WC,Finlande,Finland,3,3,,,,17.5
+HGF-WC,Tchéquie,Czech Republic (Czechia),4,4,,,,13.75
+HGF-WC,Suisse,Switzerland,5,5,,,,10
+HGF-WC,Suède,Sweden,6,6,,,,10
+HGF-WC,Japon,Japan,7,7,,,,10
+HGF-WC,Allemagne,Germany,8,8,,,,10
+EQU-JO,Allemagne,Germany,,,4,1,0,172.51
+EQU-JO,Royaume-Uni,United Kingdom,,,2,0,3,134.5
+EQU-JO,France,France,,,0,1,1,46.78
+EQU-JO,Australie,Australia,,,0,1,0,26.32
+EQU-JO,Danemark,Denmark,,,0,1,0,26.32
+EQU-JO,Suisse,Switzerland,,,0,1,0,26.32
+EQU-JO,États-Unis,United States,,,0,1,0,26.32
+EQU-JO,Japon,Japan,,,0,0,1,20.47
+EQU-JO,Pays-Bas,Netherlands,,,0,0,1,20.47
+VOI-JO,Pays-Bas,Netherlands,,,2,0,2,68.42
+VOI-JO,Autriche,Austria,,,2,0,0,43.86
+VOI-JO,Italie,Italy,,,2,0,0,43.86
+VOI-JO,Australie,Australia,,,1,1,0,37.72
+VOI-JO,Israël,Israel,,,1,1,0,37.72
+VOI-JO,Royaume-Uni,United Kingdom,,,1,0,1,34.21
+VOI-JO,Espagne,Spain,,,1,0,0,21.93
+VOI-JO,France,France,,,0,1,1,28.07
+VOI-JO,Nouvelle-Zélande,New Zealand,,,0,1,1,28.07
+VOI-JO,Suède,Sweden,,,0,1,1,28.07
+VOI-JO,Argentine,Argentina,,,0,1,0,15.79
+VOI-JO,Chypre,Cyprus,,,0,1,0,15.79
+VOI-JO,Danemark,Denmark,,,0,1,0,15.79
+VOI-JO,Japon,Japan,,,0,1,0,15.79
+VOI-JO,Slovénie,Slovenia,,,0,1,0,15.79
+VOI-JO,Norvège,Norway,,,0,0,1,12.28
+VOI-JO,Pérou,Peru,,,0,0,1,12.28
+VOI-JO,Singapour,Singapore,,,0,0,1,12.28
+VOI-JO,États-Unis,United States,,,0,0,1,12.28
+ESC-JO,Japon,Japan,,,2,1,2,70.18
+ESC-JO,États-Unis,United States,,,2,1,1,59.94
+ESC-JO,Corée du Sud,South Korea,,,2,1,0,49.71
+ESC-JO,Hong Kong,Hong Kong,,,2,0,0,36.55
+ESC-JO,France,France,,,1,4,2,91.37
+ESC-JO,Italie,Italy,,,1,3,1,67.98
+ESC-JO,Hongrie,Hungary,,,1,1,1,41.67
+ESC-JO,Ukraine,Ukraine,,,1,0,1,28.51
+ESC-JO,Tunisie,Tunisia,,,0,1,0,13.16
+ESC-JO,Canada,Canada,,,0,0,1,10.23
+ESC-JO,Tchéquie,Czech Republic (Czechia),,,0,0,1,10.23
+ESC-JO,Égypte,Egypt,,,0,0,1,10.23
+ESC-JO,Pologne,Poland,,,0,0,1,10.23
+ESC-WC,France,France,,,2,3,1,76.82
+ESC-WC,États-Unis,United States,,,2,1,0,44.27
+ESC-WC,Italie,Italy,,,2,0,4,69.01
+ESC-WC,Japon,Japan,,,2,0,1,41.67
+ESC-WC,Russie,Russia,,,1,2,0,39.71
+ESC-WC,Ukraine,Ukraine,,,1,0,2,34.51
+ESC-WC,Géorgie,Georgia,,,1,0,0,16.28
+ESC-WC,Hong Kong,Hong Kong,,,1,0,0,16.28
+ESC-WC,Hongrie,Hungary,,,0,3,3,62.5
+ESC-WC,Corée du Sud,South Korea,,,0,1,2,29.95
+ESC-WC,Estonie,Estonia,,,0,1,1,20.83
+ESC-WC,Pologne,Poland,,,0,1,0,11.72
+ESC-WC,Chine,China,,,0,0,1,9.11
+ESC-WC,Égypte,Egypt,,,0,0,1,9.11
+ESC-WC,Kazakhstan,Kazakhstan,,,0,0,1,9.11
+ESC-WC,Roumanie,Romania,,,0,0,1,9.11
+BOU-WG,Tunisie,Tunisia,,,2,0,0,146.2
+BOU-WG,Chine,China,,,1,2,0,178.36
+BOU-WG,Italie,Italy,,,1,1,1,166.67
+BOU-WG,France,France,,,1,0,2,154.97
+BOU-WG,Bénin,Benin,,,1,0,0,73.1
+BOU-WG,Thaïlande,Thailand,,,0,1,2,134.5
+BOU-WG,Slovénie,Slovenia,,,0,1,1,93.57
+BOU-WG,Turquie,Turkey (Türkiye),,,0,1,0,52.63
+SRF-JO,France,France,,,1,0,1,171.05
+SRF-JO,États-Unis,United States,,,1,0,0,109.65
+SRF-JO,Brésil,Brazil,,,0,1,1,140.35
+SRF-JO,Australie,Australia,,,0,1,0,78.95
+ESCA-JO,Pologne,Poland,,,1,0,1,85.53
+ESCA-JO,Royaume-Uni,United Kingdom,,,1,0,0,54.82
+ESCA-JO,Indonésie,Indonesia,,,1,0,0,54.82
+ESCA-JO,Slovénie,Slovenia,,,1,0,0,54.82
+ESCA-JO,Chine,China,,,0,2,0,78.95
+ESCA-JO,États-Unis,United States,,,0,1,1,70.18
+ESCA-JO,Japon,Japan,,,0,1,0,39.47
+ESCA-JO,Autriche,Austria,,,0,0,2,61.4
+WSH-WG,Chine,China,,,5,1,0,209.06
+WSH-WG,Iran,Iran,,,2,1,1,119.88
+WSH-WG,Hong Kong,Hong Kong,,,2,1,0,99.42
+WSH-WG,Malaisie,Malaysia,,,1,1,1,83.33
+WSH-WG,Égypte,Egypt,,,1,0,1,57.02
+WSH-WG,Corée du Sud,South Korea,,,1,0,0,36.55
+WSH-WG,Viêt Nam,Vietnam,,,0,2,1,73.1
+WSH-WG,Singapour,Singapore,,,0,1,3,87.72
+WSH-WG,Japon,Japan,,,0,1,1,46.78
+WSH-WG,Brunei,Brunei,,,0,1,0,26.32
+WSH-WG,Inde,India,,,0,1,0,26.32
+WSH-WG,Indonésie,Indonesia,,,0,1,0,26.32
+WSH-WG,Ouzbékistan,Uzbekistan,,,0,1,0,26.32
+WSH-WG,Taipei chinois,Taiwan,,,0,0,2,40.94
+WSH-WG,Philippines,Philippines,,,0,0,1,20.47
+WSH-WG,Espagne,Spain,,,0,0,1,20.47
+MTH-WG,Chine,China,,,2,0,1,187.13
+MTH-WG,Russie,Russia,,,1,0,0,73.1
+MTH-WG,Mexique,Mexico,,,1,0,0,73.1
+MTH-WG,Moldavie,Moldova,,,1,0,0,73.1
+MTH-WG,Ukraine,Ukraine,,,1,0,0,73.1
+MTH-WG,Thaïlande,Thailand,,,0,1,1,93.57
+MTH-WG,Israël,Israel,,,0,1,0,52.63
+MTH-WG,Italie,Italy,,,0,1,0,52.63
+MTH-WG,Pologne,Poland,,,0,1,0,52.63
+MTH-WG,Turquie,Turkey (Türkiye),,,0,1,0,52.63
+MTH-WG,États-Unis,United States,,,0,1,0,52.63
+MTH-WG,France,France,,,0,0,1,40.94
+MTH-WG,Hongrie,Hungary,,,0,0,1,40.94
+MTH-WG,Maroc,Morocco,,,0,0,1,40.94
+MTH-WG,Slovaquie,Slovakia,,,0,0,1,40.94
+SAU-WG,Italie,Italy,,,6,6,5,71.93
+SAU-WG,Allemagne,Germany,,,5,6,2,57.24
+SAU-WG,France,France,,,2,2,3,28.07
+SAU-WG,Nouvelle-Zélande,New Zealand,,,2,0,2,17.11
+SAU-WG,Pologne,Poland,,,1,2,0,13.38
+SAU-WG,Australie,Australia,,,0,0,2,6.14
+SAU-WG,Espagne,Spain,,,0,0,2,6.14
+NAP-WG,Hongrie,Hungary,,,5,3,1,208.42
+NAP-WG,Allemagne,Germany,,,3,3,0,139.31
+NAP-WG,Ukraine,Ukraine,,,2,4,5,207.34
+NAP-WG,Chine,China,,,2,1,1,88.55
+NAP-WG,Russie,Russia,,,2,0,4,114.47
+NAP-WG,Corée du Sud,South Korea,,,1,1,2,76.67
+NAP-WG,Pologne,Poland,,,1,1,0,46.44
+NAP-WG,Colombie,Colombia,,,0,2,2,69.11
+NAP-WG,Taipei chinois,Taiwan,,,0,1,0,19.44
+NAP-WG,Égypte,Egypt,,,0,0,1,15.12
+NAP-WG,Italie,Italy,,,0,0,1,15.12
+KICK-WG,Israël,Israel,,,2,1,0,99.42
+KICK-WG,Ukraine,Ukraine,,,2,0,2,114.04
+KICK-WG,Hongrie,Hungary,,,2,0,0,73.1
+KICK-WG,Italie,Italy,,,1,1,1,83.33
+KICK-WG,Pays-Bas,Netherlands,,,1,0,1,57.02
+KICK-WG,Autriche,Austria,,,1,0,0,36.55
+KICK-WG,Royaume-Uni,United Kingdom,,,1,0,0,36.55
+KICK-WG,Grèce,Greece,,,1,0,0,36.55
+KICK-WG,Portugal,Portugal,,,1,0,0,36.55
+KICK-WG,Bulgarie,Bulgaria,,,0,2,1,73.1
+KICK-WG,Turquie,Turkey (Türkiye),,,0,2,0,52.63
+KICK-WG,Azerbaïdjan,Azerbaijan,,,0,1,0,26.32
+KICK-WG,Tchéquie,Czech Republic (Czechia),,,0,1,0,26.32
+KICK-WG,Allemagne,Germany,,,0,1,0,26.32
+KICK-WG,Guatemala,Guatemala,,,0,1,0,26.32
+KICK-WG,Mexique,Mexico,,,0,1,0,26.32
+KICK-WG,Slovaquie,Slovakia,,,0,1,0,26.32
+KICK-WG,Slovénie,Slovenia,,,0,0,2,40.94
+KICK-WG,Ouzbékistan,Uzbekistan,,,0,0,2,40.94
+KICK-WG,Canada,Canada,,,0,0,1,20.47
+KICK-WG,Serbie,Serbia,,,0,0,1,20.47
+KICK-WG,États-Unis,United States,,,0,0,1,20.47
+SQH-WG,France,France,1,1,,,,43.86
+SQH-WG,Hongrie,Hungary,2,2,,,,31.58
+SQH-WG,Colombie,Colombia,3,3,,,,24.56
+SQF-WG,Japon,Japan,1,1,,,,43.86
+SQF-WG,France,France,2,2,,,,31.58
+SQF-WG,Espagne,Spain,3,3,,,,24.56
+PMH-JO,Égypte,Egypt,1,1,,,,109.65
+PMH-JO,Japon,Japan,2,2,,,,78.95
+PMH-JO,Italie,Italy,3,3,,,,61.4
+PMF-JO,Hongrie,Hungary,1,1,,,,109.65
+PMF-JO,France,France,2,2,,,,78.95
+PMF-JO,Corée du Sud,South Korea,3,3,,,,61.4
+FLAG-WG,Mexique,Mexico,1,1,,,,73.53
+FLAG-WG,États-Unis,United States,2,2,,,,52.94
+FLAG-WG,Canada,Canada,3,3,,,,41.18
+FLAG-WG,Autriche,Austria,4,4,,,,32.35
+LAXF-WG,États-Unis,United States,1,1,,,,183.82
+LAXF-WG,Canada,Canada,2,2,,,,132.35
+LAXF-WG,Australie,Australia,3,3,,,,102.94
+LAXF-WG,Japon,Japan,4,4,,,,80.88
+LAXH-WC,États-Unis,United States,1,1,,,,290.7
+LAXH-WC,Canada,Canada,2,2,,,,209.3
+SAMB-WC,Russie,Russia,,,21,2,5,306.76
+SAMB-WC,Kazakhstan,Kazakhstan,,,2,2,8,96.26
+SAMB-WC,Kirghizistan,Kyrgyzstan,,,2,1,2,46.67
+SAMB-WC,Mongolie,Mongolia,,,2,0,6,65.14
+SAMB-WC,Ukraine,Ukraine,,,2,0,6,65.14
+SAMB-WC,Moldavie,Moldova,,,1,0,1,18.96
+SAMB-WC,Iran,Iran,,,1,0,0,12.15
+SAMB-WC,Ouzbékistan,Uzbekistan,,,0,8,2,83.62
+SAMB-WC,Biélorussie,Belarus,,,0,6,5,86.53
+SAMB-WC,Turkménistan,Turkmenistan,,,0,5,3,64.17
+SAMB-WC,Géorgie,Georgia,,,0,1,5,42.78
+SAMB-WC,Bulgarie,Bulgaria,,,0,1,3,29.17
+SAMB-WC,Cameroun,Cameroon,,,0,1,1,15.56
+SAMB-WC,Espagne,Spain,,,0,1,1,15.56
+SAMB-WC,Venezuela,Venezuela,,,0,1,1,15.56
+SAMB-WC,Israël,Israel,,,0,1,0,8.75
+SAMB-WC,Arménie,Armenia,,,0,0,2,13.61
+SAMB-WC,Azerbaïdjan,Azerbaijan,,,0,0,2,13.61
+DISC-ULT,États-Unis,United States,1,1,,,,43.86
+DISC-ULT,Canada,Canada,2,2,,,,31.58
+DISC-ULT,France,France,3,3,,,,24.56
+DISC-DG,États-Unis,United States,1,1,,,,43.86
+DISC-DG,Finlande,Finland,2,2,,,,31.58
+DISC-DG,Lettonie,Latvia,3,3,,,,24.56
+DAN-JO,Canada,Canada,,,1,0,0,109.65
+DAN-JO,Japon,Japan,,,1,0,0,109.65
+DAN-JO,France,France,,,0,1,0,78.95
+DAN-JO,Lituanie,Lithuania,,,0,1,0,78.95
+DAN-JO,États-Unis,United States,,,0,0,1,61.4
+DAN-JO,Chine,China,,,0,0,1,61.4
+DAN-WG,Chine,China,,,2,1,0,149.12
+DAN-WG,Allemagne,Germany,,,1,0,0,54.82
+DAN-WG,Moldavie,Moldova,,,1,0,0,54.82
+DAN-WG,Japon,Japan,,,0,1,1,70.18
+DAN-WG,France,France,,,0,1,0,39.47
+DAN-WG,Roumanie,Romania,,,0,1,0,39.47
+DAN-WG,Lituanie,Lithuania,,,0,0,1,30.7
+DAN-WG,Pologne,Poland,,,0,0,1,30.7
+DAN-WG,Espagne,Spain,,,0,0,1,30.7
+NET-WC,Australie,Australia,1,1,,,,367.65
+NET-WC,Royaume-Uni,United Kingdom,2,2,,,,264.71
+NET-WC,Jamaïque,Jamaica,3,3,,,,205.88
+NET-WC,Nouvelle-Zélande,New Zealand,4,4,,,,161.76
+DARH-WC,Royaume-Uni,United Kingdom,1,1,,,,183.82
+DARH-WC,Pays-Bas,Netherlands,2,2,,,,132.35
+DARH-WC,Royaume-Uni,United Kingdom,3,4,,,,91.91
+DARH-WC,Royaume-Uni,United Kingdom,3,4,,,,91.91
+DARF-WC,Royaume-Uni,United Kingdom,1,1,,,,290.7
+DARF-WC,Pays-Bas,Netherlands,2,2,,,,209.3
+GO-WC,Chine,China,1,1,,,,438.6
+GO-WC,Japon,Japan,2,2,,,,315.79
+GO-WC,Corée du Sud,South Korea,3,3,,,,245.61
+BOBS-JO,Allemagne,Germany,,,3,7,4,644.11
+BOBS-JO,Royaume-Uni,United Kingdom,,,2,0,0,125.31
+BOBS-JO,États-Unis,United States,,,1,0,2,132.83
+BOBS-JO,Autriche,Austria,,,1,0,0,62.66
+BOBS-JO,Suisse,Switzerland,,,0,0,1,35.09
+JJ-WG,Thaïlande,Thailand,,,3,0,1,82.18
+JJ-WG,Israël,Israel,,,2,2,1,92.34
+JJ-WG,Allemagne,Germany,,,2,1,1,75.72
+JJ-WG,Corée du Sud,South Korea,,,2,0,1,59.1
+JJ-WG,Italie,Italy,,,1,2,2,82.18
+JJ-WG,Émirats arabes unis,United Arab Emirates,,,1,2,1,69.25
+JJ-WG,Kazakhstan,Kazakhstan,,,1,1,2,65.56
+JJ-WG,France,France,,,1,1,1,52.63
+JJ-WG,Chine,China,,,1,1,0,39.7
+JJ-WG,Danemark,Denmark,,,1,1,0,39.7
+JJ-WG,Hongrie,Hungary,,,1,0,2,48.94
+JJ-WG,Belgique,Belgium,,,1,0,0,23.08
+JJ-WG,Suède,Sweden,,,1,0,0,23.08
+JJ-WG,Ukraine,Ukraine,,,1,0,0,23.08
+JJ-WG,Autriche,Austria,,,0,2,0,33.24
+JJ-WG,Canada,Canada,,,0,2,0,33.24
+JJ-WG,Pays-Bas,Netherlands,,,0,1,2,42.47
+JJ-WG,Mongolie,Mongolia,,,0,1,0,16.62
+JJ-WG,Philippines,Philippines,,,0,1,0,16.62
+JJ-WG,Portugal,Portugal,,,0,1,0,16.62
+JJ-WG,Brésil,Brazil,,,0,0,1,12.93
+JJ-WG,Colombie,Colombia,,,0,0,1,12.93
+JJ-WG,Mexique,Mexico,,,0,0,1,12.93
+JJ-WG,Monténégro,Montenegro,,,0,0,1,12.93
+JJ-WG,Arabie saoudite,Saudi Arabia,,,0,0,1,12.93
+BRIH-WC,États-Unis,United States,1,1,,,,219.3
+BRIH-WC,Danemark,Denmark,2,2,,,,157.89
+BRIH-WC,Suède,Sweden,3,3,,,,122.81
+BRIF-WC,Pays-Bas,Netherlands,1,1,,,,219.3
+BRIF-WC,Chine,China,2,2,,,,157.89
+BRIF-WC,Pologne,Poland,3,3,,,,122.81
+DRA-WG,Indonésie,Indonesia,,,3,2,0,324.56
+DRA-WG,Ukraine,Ukraine,,,2,1,1,239.77
+DRA-WG,Thaïlande,Thailand,,,1,1,2,207.6
+DRA-WG,Chine,China,,,0,2,0,105.26
+DRA-WG,Espagne,Spain,,,0,0,2,81.87
+DRA-WG,Taipei chinois,Taiwan,,,0,0,1,40.94
+PADH-WC,Argentine,Argentina,1,1,,,,183.82
+PADH-WC,Espagne,Spain,2,2,,,,132.35
+PADH-WC,Portugal,Portugal,3,3,,,,102.94
+PADH-WC,Italie,Italy,4,4,,,,80.88
+PADF-WC,Espagne,Spain,1,1,,,,290.7
+PADF-WC,Argentine,Argentina,2,2,,,,209.3
+WAK-WG,Allemagne,Germany,,,1,1,1,166.67
+WAK-WG,Chine,China,,,1,1,0,125.73
+WAK-WG,Australie,Australia,,,1,0,0,73.1
+WAK-WG,Canada,Canada,,,1,0,0,73.1
+WAK-WG,France,France,,,1,0,0,73.1
+WAK-WG,États-Unis,United States,,,1,0,0,73.1
+WAK-WG,Italie,Italy,,,0,2,0,105.26
+WAK-WG,Japon,Japan,,,0,1,0,52.63
+WAK-WG,Ukraine,Ukraine,,,0,1,0,52.63
+WAK-WG,Corée du Sud,South Korea,,,0,0,2,81.87
+WAK-WG,Argentine,Argentina,,,0,0,1,40.94
+WAK-WG,Hong Kong,Hong Kong,,,0,0,1,40.94
+WAK-WG,Pays-Bas,Netherlands,,,0,0,1,40.94
+FA-WG,Ukraine,Ukraine,,,2,5,3,199.56
+FA-WG,Taipei chinois,Taiwan,,,2,1,0,74.56
+FA-WG,Canada,Canada,,,2,0,1,70.18
+FA-WG,États-Unis,United States,,,1,2,2,97.59
+FA-WG,Suède,Sweden,,,1,1,2,77.85
+FA-WG,Nouvelle-Zélande,New Zealand,,,1,1,1,62.5
+FA-WG,Japon,Japan,,,1,1,0,47.15
+FA-WG,Norvège,Norway,,,1,0,2,58.11
+FA-WG,France,France,,,1,0,2,58.11
+FA-WG,Royaume-Uni,United Kingdom,,,1,0,1,42.76
+FA-WG,Îles Vierges,U.S. Virgin Islands,,,1,0,0,27.41
+FA-WG,Géorgie,Georgia,,,1,0,0,27.41
+FA-WG,Pologne,Poland,,,1,0,0,27.41
+FA-WG,Italie,Italy,,,0,2,1,54.82
+FA-WG,Hongrie,Hungary,,,0,1,0,19.74
+FA-WG,Liban,Lebanon,,,0,1,0,19.74
+FA-WG,Belgique,Belgium,,,0,1,0,19.74
+FA-WG,Australie,Australia,,,0,0,1,15.35
+SKIA-JO,France,France,,,1,1,1,333.33
+SKIA-JO,Suisse,Switzerland,,,1,1,0,251.46
+SKIA-JO,Espagne,Spain,,,1,0,2,309.94
+SKIA-JO,Russie,Russia,,,0,1,0,105.26
+FLOH-WG,Suède,Sweden,1,1,,,,183.82
+FLOH-WG,Finlande,Finland,2,2,,,,132.35
+FLOH-WG,Tchéquie,Czech Republic (Czechia),3,3,,,,102.94
+FLOH-WG,Suisse,Switzerland,4,4,,,,80.88
+FLOF-WG,Finlande,Finland,1,1,,,,183.82
+FLOF-WG,Suède,Sweden,2,2,,,,132.35
+FLOF-WG,Suisse,Switzerland,3,3,,,,102.94
+FLOF-WG,Tchéquie,Czech Republic (Czechia),4,4,,,,80.88
+LUGE-JO,Allemagne,Germany,,,3,1,1,375.44
+LUGE-JO,Italie,Italy,,,2,0,2,273.68
+LUGE-JO,Autriche,Austria,,,0,3,1,238.6
+LUGE-JO,Lettonie,Latvia,,,0,1,0,63.16
+LUGE-JO,États-Unis,United States,,,0,0,1,49.12
+KABH-WC,Inde,India,1,1,,,,183.82
+KABH-WC,Iran,Iran,2,2,,,,132.35
+KABH-WC,Thaïlande,Thailand,3,4,,,,91.91
+KABH-WC,Corée du Sud,South Korea,3,4,,,,91.91
+KABF-WC,Inde,India,1,1,,,,290.7
+KABF-WC,Taipei chinois,Taiwan,2,2,,,,209.3
+ORI-WG,Suisse,Switzerland,,,4,1,0,414.04
+ORI-WG,Belgique,Belgium,,,1,0,0,87.72
+ORI-WG,Tchéquie,Czech Republic (Czechia),,,0,1,1,112.28
+ORI-WG,Suède,Sweden,,,0,1,1,112.28
+ORI-WG,Italie,Italy,,,0,1,0,63.16
+ORI-WG,Slovaquie,Slovakia,,,0,1,0,63.16
+ORI-WG,Canada,Canada,,,0,0,1,49.12
+ORI-WG,Hongrie,Hungary,,,0,0,1,49.12
+ORI-WG,Espagne,Spain,,,0,0,1,49.12
+KOR-WG,Pays-Bas,Netherlands,1,1,,,,183.82
+KOR-WG,Belgique,Belgium,2,2,,,,132.35
+KOR-WG,Taipei chinois,Taiwan,3,3,,,,102.94
+KOR-WG,Tchéquie,Czech Republic (Czechia),4,4,,,,80.88
+KOR-WGB,Taipei chinois,Taiwan,1,1,,,,219.3
+KOR-WGB,Pays-Bas,Netherlands,2,2,,,,157.89
+KOR-WGB,Belgique,Belgium,3,3,,,,122.81
+XQ-WC,Viêt Nam,Vietnam,1,1,,,,581.4
+XQ-WC,Chine,China,2,2,,,,418.6
+SEP-WC,Viêt Nam,Vietnam,1,1,,,,438.6
+SEP-WC,Thaïlande,Thailand,2,2,,,,315.79
+SEP-WC,Inde,India,3,3,,,,245.61
+KEN-WC,Japon,Japan,1,1,,,,183.82
+KEN-WC,Corée du Sud,South Korea,2,2,,,,132.35
+KEN-WC,France,France,3,4,,,,91.91
+KEN-WC,États-Unis,United States,3,4,,,,91.91
+KEN-WCF,Japon,Japan,1,1,,,,183.82
+KEN-WCF,Corée du Sud,South Korea,2,2,,,,132.35
+KEN-WCF,Australie,Australia,3,4,,,,91.91
+KEN-WCF,États-Unis,United States,3,4,,,,91.91
+FAU-WC,Allemagne,Germany,1,1,,,,219.3
+FAU-WC,Autriche,Austria,2,2,,,,157.89
+FAU-WC,Brésil,Brazil,3,3,,,,122.81
+FAU-WCF,Brésil,Brazil,1,1,,,,219.3
+FAU-WCF,Allemagne,Germany,2,2,,,,157.89
+FAU-WCF,Suisse,Switzerland,3,3,,,,122.81
+SIL-WC,Indonésie,Indonesia,,,11,7,5,397.47
+SIL-WC,Viêt Nam,Vietnam,,,10,3,3,291.98
+SIL-WC,Malaisie,Malaysia,,,6,9,4,310.55
+RLGH-WC,Australie,Australia,1,1,,,,183.82
+RLGH-WC,Samoa,Samoa,2,2,,,,132.35
+RLGH-WC,Nouvelle-Zélande,New Zealand,3,4,,,,91.91
+RLGH-WC,Royaume-Uni,United Kingdom,3,4,,,,91.91
+RLGF-WC,Australie,Australia,1,1,,,,183.82
+RLGF-WC,Nouvelle-Zélande,New Zealand,2,2,,,,132.35
+RLGF-WC,Royaume-Uni,United Kingdom,3,4,,,,91.91
+RLGF-WC,Papouasie-Nouvelle-Guinée,Papua New Guinea,3,4,,,,91.91
+BANH-WC,Suède,Sweden,1,1,,,,183.82
+BANH-WC,Finlande,Finland,2,2,,,,132.35
+BANH-WC,Norvège,Norway,3,3,,,,102.94
+BANH-WC,États-Unis,United States,4,4,,,,80.88
+BANF-WC,Suède,Sweden,1,1,,,,183.82
+BANF-WC,Norvège,Norway,2,2,,,,132.35
+BANF-WC,États-Unis,United States,3,3,,,,102.94
+BANF-WC,Finlande,Finland,4,4,,,,80.88
+VOV-WC,Viêt Nam,Vietnam,,,24,1,0,357.02
+VOV-WC,Algérie,Algeria,,,9,10,5,274.41
+VOV-WC,Cambodge,Cambodia,,,7,11,5,255.92
+VOV-WC,Russie,Russia,,,3,2,6,112.65
+KHOH-WC,Inde,India,1,1,,,,125
+KHOH-WC,Népal,Nepal,2,2,,,,90
+KHOH-WC,Afrique du Sud,South Africa,3,4,,,,62.5
+KHOH-WC,Iran,Iran,3,4,,,,62.5
+KHOH-WC,Bangladesh,Bangladesh,5,8,,,,40
+KHOH-WC,Sri Lanka,Sri Lanka,5,8,,,,40
+KHOH-WC,Royaume-Uni,United Kingdom,5,8,,,,40
+KHOH-WC,Kenya,Kenya,5,8,,,,40
+KHOF-WC,Inde,India,1,1,,,,125
+KHOF-WC,Népal,Nepal,2,2,,,,90
+KHOF-WC,Afrique du Sud,South Africa,3,4,,,,62.5
+KHOF-WC,Ouganda,Uganda,3,4,,,,62.5
+KHOF-WC,Iran,Iran,5,8,,,,40
+KHOF-WC,Kenya,Kenya,5,8,,,,40
+KHOF-WC,Bangladesh,Bangladesh,5,8,,,,40
+KHOF-WC,Nouvelle-Zélande,New Zealand,5,8,,,,40
+SQH-PSA,Égypte,Egypt,1,1,,,,37.88
+SQH-PSA,Égypte,Egypt,2,2,,,,27.27
+SQH-PSA,Pérou,Peru,3,4,,,,18.94
+SQH-PSA,Égypte,Egypt,3,4,,,,18.94
+SQH-PSA,Royaume-Uni,United Kingdom,5,8,,,,12.12
+SQH-PSA,Égypte,Egypt,5,8,,,,12.12
+SQH-PSA,Égypte,Egypt,5,8,,,,12.12
+SQH-PSA,Nouvelle-Zélande,New Zealand,5,8,,,,12.12
+SQH-PSA,Mexique,Mexico,9,16,,,,6.06
+SQH-PSA,Égypte,Egypt,9,16,,,,6.06
+SQH-PSA,Égypte,Egypt,9,16,,,,6.06
+SQH-PSA,Égypte,Egypt,9,16,,,,6.06
+SQH-PSA,Royaume-Uni,United Kingdom,9,16,,,,6.06
+SQH-PSA,Égypte,Egypt,9,16,,,,6.06
+SQH-PSA,Égypte,Egypt,9,16,,,,6.06
+SQH-PSA,Royaume-Uni,United Kingdom,9,16,,,,6.06
+SQF-PSA,Égypte,Egypt,1,1,,,,37.88
+SQF-PSA,Égypte,Egypt,2,2,,,,27.27
+SQF-PSA,Égypte,Egypt,3,4,,,,18.94
+SQF-PSA,États-Unis,United States,3,4,,,,18.94
+SQF-PSA,Malaisie,Malaysia,5,8,,,,12.12
+SQF-PSA,Japon,Japan,5,8,,,,12.12
+SQF-PSA,Royaume-Uni,United Kingdom,5,8,,,,12.12
+SQF-PSA,Égypte,Egypt,5,8,,,,12.12
+SQF-PSA,Hong Kong,Hong Kong,9,16,,,,6.06
+SQF-PSA,Belgique,Belgium,9,16,,,,6.06
+SQF-PSA,Égypte,Egypt,9,16,,,,6.06
+SQF-PSA,Royaume-Uni,United Kingdom,9,16,,,,6.06
+SQF-PSA,Belgique,Belgium,9,16,,,,6.06
+SQF-PSA,Égypte,Egypt,9,16,,,,6.06
+SQF-PSA,France,France,9,16,,,,6.06
+SQF-PSA,États-Unis,United States,9,16,,,,6.06
+SQH-WT,Égypte,Egypt,1,1,,,,50
+SQH-WT,Royaume-Uni,United Kingdom,2,2,,,,36
+SQH-WT,France,France,3,4,,,,25
+SQH-WT,Suisse,Switzerland,3,4,,,,25
+SQH-WT,Allemagne,Germany,5,8,,,,16
+SQH-WT,Inde,India,5,8,,,,16
+SQH-WT,Hong Kong,Hong Kong,5,8,,,,16
+SQH-WT,Colombie,Colombia,5,8,,,,16
+SQF-WT,Égypte,Egypt,1,1,,,,50
+SQF-WT,États-Unis,United States,2,2,,,,36
+SQF-WT,Belgique,Belgium,3,4,,,,25
+SQF-WT,Malaisie,Malaysia,3,4,,,,25
+SQF-WT,Hong Kong,Hong Kong,5,8,,,,16
+SQF-WT,Royaume-Uni,United Kingdom,5,8,,,,16
+SQF-WT,Inde,India,5,8,,,,16
+SQF-WT,France,France,5,8,,,,16
+CURH-WC,Suède,Sweden,1,1,,,,28.13
+CURH-WC,Canada,Canada,2,2,,,,20.25
+CURH-WC,Royaume-Uni,United Kingdom,3,3,,,,15.75
+CURH-WC,États-Unis,United States,4,4,,,,12.38
+CURH-WC,Suisse,Switzerland,5,6,,,,9
+CURH-WC,Italie,Italy,5,6,,,,9
+CURH-WC,Chine,China,7,7,,,,9
+CURH-WC,Japon,Japan,8,8,,,,9
+CURF-WC,Suisse,Switzerland,1,1,,,,28.13
+CURF-WC,Canada,Canada,2,2,,,,20.25
+CURF-WC,Suède,Sweden,3,3,,,,15.75
+CURF-WC,Japon,Japan,4,4,,,,12.38
+CURF-WC,Corée du Sud,South Korea,5,6,,,,9
+CURF-WC,Turquie,Turkey (Türkiye),5,6,,,,9
+CURF-WC,Chine,China,7,7,,,,9
+CURF-WC,Italie,Italy,8,8,,,,9
+FIS-WC,Suisse,Switzerland,,,10,7,8,59.25
+FIS-WC,Autriche,Austria,,,3,9,8,42.37
+FIS-WC,Italie,Italy,,,6,3,2,28.17
+FIS-WC,États-Unis,United States,,,6,7,7,45.41
+FIS-WC,Norvège,Norway,,,15,12,11,90.46
+FIS-WC,Nouvelle-Zélande,New Zealand,,,3,1,0,11.29
+FIS-WC,Tchéquie,Czech Republic (Czechia),,,1,2,1,9.11
+FIS-WC,Allemagne,Germany,,,1,6,8,29.75
+FIS-WC,Suède,Sweden,,,7,1,5,31.93
+FIS-WC,Slovénie,Slovenia,,,4,1,0,14.33
+FIS-WC,Japon,Japan,,,5,9,7,46.75
+FIS-WC,France,France,,,3,2,2,16.88
+FIS-WC,Brésil,Brazil,,,1,0,0,3.04
+FIS-WC,Corée du Sud,South Korea,,,1,0,2,6.44
+FIS-WC,Finlande,Finland,,,0,2,3,9.47
+FIS-WC,Canada,Canada,,,3,3,3,20.76
+FIS-WC,Ukraine,Ukraine,,,0,2,0,4.37
+FIS-WC,Kazakhstan,Kazakhstan,,,0,0,2,3.4
+FIS-WC,Australie,Australia,,,1,1,2,8.62
+FIS-WC,Royaume-Uni,United Kingdom,,,1,1,0,5.22
+FIS-WC,Bulgarie,Bulgaria,,,1,0,0,3.04
+FIS-WC,Chine,China,,,0,3,0,6.56
+FIS-WC,Pays-Bas,Netherlands,,,0,0,1,1.7
+FIS-WC,Pologne,Poland,,,0,0,1,1.7
+BIA-WC,France,France,,,6,2,5,187.13
+BIA-WC,Norvège,Norway,,,4,3,2,133.04
+BIA-WC,Suède,Sweden,,,1,2,1,54.82
+BIA-WC,Allemagne,Germany,,,1,1,3,62.13
+BIA-WC,États-Unis,United States,,,0,2,0,26.32
+BIA-WC,Tchéquie,Czech Republic (Czechia),,,0,1,0,13.16
+BIA-WC,Italie,Italy,,,0,1,0,13.16
+BIA-WC,Finlande,Finland,,,0,0,1,10.23
+PVL-WC,Pays-Bas,Netherlands,,,8,6,4,79.82
+PVL-WC,Italie,Italy,,,3,1,1,23.46
+PVL-WC,Norvège,Norway,,,2,1,0,14.91
+PVL-WC,États-Unis,United States,,,1,2,3,22.59
+PVL-WC,Japon,Japan,,,1,1,0,9.43
+PVL-WC,Chine,China,,,1,0,1,8.55
+PVL-WC,Canada,Canada,,,0,2,2,14.04
+PVL-WC,Pologne,Poland,,,0,1,2,10.09
+PVL-WC,Tchéquie,Czech Republic (Czechia),,,0,1,1,7.02
+PVL-WC,Corée du Sud,South Korea,,,0,1,1,7.02
+PVL-WC,Belgique,Belgium,,,0,0,1,3.07
+PST-WC,Corée du Sud,South Korea,,,4,0,0,29.24
+PST-WC,Pays-Bas,Netherlands,,,2,5,0,40.94
+PST-WC,Canada,Canada,,,2,1,0,19.88
+PST-WC,Italie,Italy,,,1,2,3,30.12
+PST-WC,Chine,China,,,0,1,1,9.36
+PST-WC,Belgique,Belgium,,,0,0,2,8.19
+PST-WC,Royaume-Uni,United Kingdom,,,0,0,1,4.09
+PST-WC,Turquie,Turkey (Türkiye),,,0,0,1,4.09
+PST-WC,États-Unis,United States,,,0,0,1,4.09
+ESCA-WC,Slovénie,Slovenia,,,2,1,0,99.42
+ESCA-WC,Chine,China,,,1,1,1,83.33
+ESCA-WC,Japon,Japan,,,1,1,1,83.33
+ESCA-WC,Corée du Sud,South Korea,,,1,0,2,77.49
+ESCA-WC,Pologne,Poland,,,1,0,0,36.55
+ESCA-WC,France,France,,,0,2,0,52.63
+ESCA-WC,Allemagne,Germany,,,0,1,0,26.32
+ESCA-WC,États-Unis,United States,,,0,0,2,40.94
+VOI-WC,Pays-Bas,Netherlands,,,2,1,0,42.61
+VOI-WC,France,France,,,2,0,1,40.1
+VOI-WC,Italie,Italy,,,1,1,2,44.49
+VOI-WC,Japon,Japan,,,1,1,1,35.71
+VOI-WC,Allemagne,Germany,,,1,1,0,26.94
+VOI-WC,Israël,Israel,,,1,1,0,26.94
+VOI-WC,Pologne,Poland,,,1,1,0,26.94
+VOI-WC,Australie,Australia,,,1,0,2,33.21
+VOI-WC,Suède,Sweden,,,1,0,1,24.44
+VOI-WC,Hongrie,Hungary,,,1,0,0,15.66
+VOI-WC,Singapour,Singapore,,,1,0,0,15.66
+VOI-WC,États-Unis,United States,,,1,0,0,15.66
+VOI-WC,Royaume-Uni,United Kingdom,,,0,3,2,51.38
+VOI-WC,Suisse,Switzerland,,,0,2,0,22.56
+VOI-WC,Portugal,Portugal,,,0,1,1,20.05
+VOI-WC,Espagne,Spain,,,0,1,1,20.05
+VOI-WC,Slovénie,Slovenia,,,0,1,0,11.28
+VOI-WC,Canada,Canada,,,0,0,1,8.77
+VOI-WC,Danemark,Denmark,,,0,0,1,8.77
+VOI-WC,Nouvelle-Zélande,New Zealand,,,0,0,1,8.77
+SRF-WC,Australie,Australia,1,1,,,,125
+SRF-WC,Pérou,Peru,2,2,,,,90
+SRF-WC,Espagne,Spain,3,3,,,,70
+SRF-WC,France,France,4,4,,,,55
+SRF-WC,Brésil,Brazil,5,5,,,,40
+SRF-WC,États-Unis,United States,6,6,,,,40
+SRF-WC,Portugal,Portugal,7,7,,,,40
+SRF-WC,Argentine,Argentina,8,8,,,,40
+PMH-WC,Égypte,Egypt,1,1,,,,109.65
+PMH-WC,France,France,2,2,,,,78.95
+PMH-WC,Tchéquie,Czech Republic (Czechia),3,3,,,,61.4
+PMF-WC,Égypte,Egypt,1,1,,,,109.65
+PMF-WC,Hongrie,Hungary,2,2,,,,78.95
+PMF-WC,Italie,Italy,3,3,,,,61.4
+TRI-WC,Australie,Australia,1,1,,,,62.5
+TRI-WC,Brésil,Brazil,2,2,,,,45
+TRI-WC,Portugal,Portugal,3,3,,,,35
+TRI-WC,Allemagne,Germany,4,4,,,,27.5
+TRI-WC,Espagne,Spain,5,5,,,,20
+TRI-WC,Hongrie,Hungary,6,6,,,,20
+TRI-WC,Italie,Italy,7,7,,,,20
+TRI-WC,Suisse,Switzerland,8,8,,,,20
+TRI-WC,Allemagne,Germany,1,1,,,,62.5
+TRI-WC,France,France,2,2,,,,45
+TRI-WC,Royaume-Uni,United Kingdom,3,3,,,,35
+TRI-WC,États-Unis,United States,4,4,,,,27.5
+TRI-WC,Italie,Italy,5,5,,,,20
+TRI-WC,Luxembourg,Luxembourg,6,6,,,,20
+TRI-WC,France,France,7,7,,,,20
+TRI-WC,Russie,Russia,8,8,,,,20
+SKB-WC,Japon,Japan,,,2,2,1,233.64
+SKB-WC,Espagne,Spain,,,1,0,0,58.41
+SKB-WC,Royaume-Uni,United Kingdom,,,1,0,0,58.41
+SKB-WC,Pérou,Peru,,,0,1,0,42.06
+SKB-WC,Brésil,Brazil,,,0,1,0,42.06
+SKB-WC,États-Unis,United States,,,0,0,2,65.42
+EQU-WC,Allemagne,Germany,,,5,2,4,157.02
+EQU-WC,Royaume-Uni,United Kingdom,,,3,2,3,110.71
+EQU-WC,France,France,,,2,1,0,49.2
+EQU-WC,Suisse,Switzerland,,,1,0,0,18.09
+EQU-WC,Pays-Bas,Netherlands,,,1,0,0,18.09
+EQU-WC,Australie,Australia,,,1,1,0,31.11
+EQU-WC,Danemark,Denmark,,,0,2,1,36.18
+EQU-WC,Belgique,Belgium,,,0,3,1,49.2
+EQU-WC,États-Unis,United States,,,0,0,2,20.26
+EQU-WC,Italie,Italy,,,0,0,1,10.13
+SAU-WC,Italie,Italy,,,5,5,8,225.91
+SAU-WC,Allemagne,Germany,,,5,1,5,147.15
+SAU-WC,Nouvelle-Zélande,New Zealand,,,4,4,3,147.84
+SAU-WC,France,France,,,2,1,1,56.65
+SAU-WC,Pologne,Poland,,,2,0,0,34.54
+SAU-WC,Australie,Australia,,,1,8,1,126.42
+SAU-WC,Suède,Sweden,,,1,0,1,26.94
+SAU-WC,Taipei chinois,Taiwan,,,1,0,0,17.27
+SAU-WC,Japon,Japan,,,1,0,0,17.27
+DISC-WUC,États-Unis,United States,,,3,0,0,350.88
+DISC-WUC,Japon,Japan,,,0,1,0,84.21
+DISC-WUC,Colombie,Colombia,,,0,1,0,84.21
+DISC-WUC,Canada,Canada,,,0,1,0,84.21
+DISC-WUC,Australie,Australia,,,0,0,2,130.99
+DISC-WUC,France,France,,,0,0,1,65.5
+FLAG-WC,États-Unis,United States,1,1,,,,100
+FLAG-WC,Autriche,Austria,2,2,,,,72
+FLAG-WC,Suisse,Switzerland,3,3,,,,56
+FLAG-WC,Mexique,Mexico,4,4,,,,44
+FLAG-WC,France,France,5,5,,,,32
+FLAG-WC,Italie,Italy,6,6,,,,32
+FLAG-WC,Canada,Canada,7,7,,,,32
+FLAG-WC,Danemark,Denmark,8,8,,,,32
+FLAG-WC,États-Unis,United States,1,1,,,,100
+FLAG-WC,Mexique,Mexico,2,2,,,,72
+FLAG-WC,Japon,Japan,3,3,,,,56
+FLAG-WC,Autriche,Austria,4,4,,,,44
+FLAG-WC,Canada,Canada,5,5,,,,32
+FLAG-WC,Espagne,Spain,6,6,,,,32
+FLAG-WC,Royaume-Uni,United Kingdom,7,7,,,,32
+FLAG-WC,Italie,Italy,8,8,,,,32

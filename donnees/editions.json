@@ -1,0 +1,21 @@
+{
+ "latest": "2026-11",
+ "editions": [
+  "2026-11"
+ ],
+ "files": [
+  "performance_reelle.csv",
+  "classement_sportif.csv",
+  "femmes_hommes.csv",
+  "efficience_economique.csv",
+  "efficience_demographique.csv",
+  "points_par_federation.csv",
+  "federations.csv",
+  "disciplines.csv",
+  "competitions.csv",
+  "resultats.csv",
+  "classements_mondiaux.csv",
+  "dictionnaire.csv",
+  "datapackage.json"
+ ]
+}

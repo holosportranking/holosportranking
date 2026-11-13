@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /widget/
+Disallow: /en/widget/
 Sitemap: https://holosportranking.github.io/holosportranking/sitemap.xml

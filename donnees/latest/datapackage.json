@@ -1,0 +1,770 @@
+{
+ "name": "holosport-ranking",
+ "title": "HoloSport Ranking – classement mondial multisport des nations",
+ "version": "2026-11 (méthode v1.0)",
+ "description": "Édition de novembre 2026. Tableaux complets du calcul HSR.",
+ "homepage": "https://holosportranking.github.io/holosportranking/",
+ "created": "2026-11-13",
+ "licenses": [
+  {
+   "name": "CC-BY-NC-4.0",
+   "title": "CC BY-NC 4.0",
+   "path": "https://creativecommons.org/licenses/by-nc/4.0/deed.fr"
+  }
+ ],
+ "sources": [
+  {
+   "title": "Sources par compétition : colonne « source » de competitions.csv"
+  }
+ ],
+ "resources": [
+  {
+   "name": "performance_reelle",
+   "path": "performance_reelle.csv",
+   "title": "Performance réelle / Overall performance",
+   "description": "Classement principal HSR : indice combinant classement sportif (50 %), efficience économique (25 %) et démographique (25 %).",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "rank",
+      "type": "integer",
+      "description": "Rang de performance réelle",
+      "description_en": "Overall performance rank"
+     },
+     {
+      "name": "nation",
+      "type": "string",
+      "description": "Nom de la nation (français)",
+      "description_en": "Nation name (French)"
+     },
+     {
+      "name": "nation_en",
+      "type": "string",
+      "description": "Nom de la nation (anglais)",
+      "description_en": "Nation name (English)"
+     },
+     {
+      "name": "iso2",
+      "type": "string",
+      "description": "Code pays ISO 3166-1 alpha-2",
+      "description_en": "ISO 3166-1 alpha-2 country code"
+     },
+     {
+      "name": "index",
+      "type": "number",
+      "description": "Indice de performance réelle (0 à 100)",
+      "description_en": "Overall performance index (0 to 100)"
+     },
+     {
+      "name": "sport_rank",
+      "type": "integer",
+      "description": "Rang au classement sportif",
+      "description_en": "Sport ranking position"
+     },
+     {
+      "name": "economic_rank",
+      "type": "integer",
+      "description": "Rang d'efficience économique",
+      "description_en": "Economic efficiency rank"
+     },
+     {
+      "name": "demographic_rank",
+      "type": "integer",
+      "description": "Rang d'efficience démographique",
+      "description_en": "Demographic efficiency rank"
+     }
+    ]
+   },
+   "rows": 151
+  },
+  {
+   "name": "classement_sportif",
+   "path": "classement_sportif.csv",
+   "title": "Classement sportif / Sport ranking",
+   "description": "Score sportif : somme, sur toutes les fédérations, des points obtenus (sur 1000) multipliés par le poids de la fédération.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "rank",
+      "type": "integer",
+      "description": "Rang sportif",
+      "description_en": "Sport rank"
+     },
+     {
+      "name": "nation",
+      "type": "string",
+      "description": "Nation (français)",
+      "description_en": "Nation (French)"
+     },
+     {
+      "name": "nation_en",
+      "type": "string",
+      "description": "Nation (anglais)",
+      "description_en": "Nation (English)"
+     },
+     {
+      "name": "iso2",
+      "type": "string",
+      "description": "Code ISO alpha-2",
+      "description_en": "ISO alpha-2 code"
+     },
+     {
+      "name": "score",
+      "type": "number",
+      "description": "Score sportif (apport cumulé de tous les sports)",
+      "description_en": "Sport score (sum of weighted contributions)"
+     },
+     {
+      "name": "raw_points",
+      "type": "number",
+      "description": "Somme brute des points sur 1000, sans pondération",
+      "description_en": "Unweighted sum of points out of 1000"
+     },
+     {
+      "name": "federations",
+      "type": "integer",
+      "description": "Nombre de fédérations où la nation marque des points",
+      "description_en": "Number of federations where the nation scores"
+     }
+    ]
+   },
+   "rows": 151
+  },
+  {
+   "name": "femmes_hommes",
+   "path": "femmes_hommes.csv",
+   "title": "Femmes et hommes / Women and men",
+   "description": "Score sportif séparé entre épreuves féminines et masculines ; les deux scores s'additionnent.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "nation",
+      "type": "string",
+      "description": "Nation (français)",
+      "description_en": "Nation (French)"
+     },
+     {
+      "name": "nation_en",
+      "type": "string",
+      "description": "Nation (anglais)",
+      "description_en": "Nation (English)"
+     },
+     {
+      "name": "iso2",
+      "type": "string",
+      "description": "Code ISO alpha-2",
+      "description_en": "ISO alpha-2 code"
+     },
+     {
+      "name": "women_score",
+      "type": "number",
+      "description": "Score féminin",
+      "description_en": "Women's score"
+     },
+     {
+      "name": "women_rank",
+      "type": "integer",
+      "description": "Rang féminin",
+      "description_en": "Women's rank"
+     },
+     {
+      "name": "men_score",
+      "type": "number",
+      "description": "Score masculin",
+      "description_en": "Men's score"
+     },
+     {
+      "name": "men_rank",
+      "type": "integer",
+      "description": "Rang masculin",
+      "description_en": "Men's rank"
+     },
+     {
+      "name": "women_share_pct",
+      "type": "number",
+      "description": "Part féminine du score (%)",
+      "description_en": "Women's share of the score (%)"
+     }
+    ]
+   },
+   "rows": 151
+  },
+  {
+   "name": "efficience_economique",
+   "path": "efficience_economique.csv",
+   "title": "Efficience économique / Economic efficiency",
+   "description": "Score réel rapporté au score attendu selon le PIB PPA par habitant (régression log-log).",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "rank",
+      "type": "integer",
+      "description": "Rang d'efficience économique",
+      "description_en": "Economic efficiency rank"
+     },
+     {
+      "name": "nation",
+      "type": "string",
+      "description": "Nation (français)",
+      "description_en": "Nation (French)"
+     },
+     {
+      "name": "nation_en",
+      "type": "string",
+      "description": "Nation (anglais)",
+      "description_en": "Nation (English)"
+     },
+     {
+      "name": "iso2",
+      "type": "string",
+      "description": "Code ISO alpha-2",
+      "description_en": "ISO alpha-2 code"
+     },
+     {
+      "name": "efficiency",
+      "type": "number",
+      "description": "Efficience (score réel / score attendu × 1000)",
+      "description_en": "Efficiency (actual / expected score × 1000)"
+     },
+     {
+      "name": "score",
+      "type": "number",
+      "description": "Score sportif réel",
+      "description_en": "Actual sport score"
+     },
+     {
+      "name": "expected_score",
+      "type": "number",
+      "description": "Score attendu",
+      "description_en": "Expected score"
+     },
+     {
+      "name": "gdp_ppp_per_capita",
+      "type": "number",
+      "description": "PIB PPA par habitant (dollars internationaux)",
+      "description_en": "GDP PPP per capita (international dollars)"
+     }
+    ]
+   },
+   "rows": 144
+  },
+  {
+   "name": "efficience_demographique",
+   "path": "efficience_demographique.csv",
+   "title": "Efficience démographique / Demographic efficiency",
+   "description": "Score réel rapporté au score attendu selon la population (loi normale), nations de plus de 100 000 habitants.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "rank",
+      "type": "integer",
+      "description": "Rang d'efficience démographique",
+      "description_en": "Demographic efficiency rank"
+     },
+     {
+      "name": "nation",
+      "type": "string",
+      "description": "Nation (français)",
+      "description_en": "Nation (French)"
+     },
+     {
+      "name": "nation_en",
+      "type": "string",
+      "description": "Nation (anglais)",
+      "description_en": "Nation (English)"
+     },
+     {
+      "name": "iso2",
+      "type": "string",
+      "description": "Code ISO alpha-2",
+      "description_en": "ISO alpha-2 code"
+     },
+     {
+      "name": "efficiency",
+      "type": "number",
+      "description": "Efficience (score réel / score attendu × 1000)",
+      "description_en": "Efficiency (actual / expected score × 1000)"
+     },
+     {
+      "name": "score",
+      "type": "number",
+      "description": "Score sportif réel",
+      "description_en": "Actual sport score"
+     },
+     {
+      "name": "expected_score",
+      "type": "number",
+      "description": "Score attendu",
+      "description_en": "Expected score"
+     },
+     {
+      "name": "population",
+      "type": "integer",
+      "description": "Population",
+      "description_en": "Population"
+     }
+    ]
+   },
+   "rows": 144
+  },
+  {
+   "name": "points_par_federation",
+   "path": "points_par_federation.csv",
+   "title": "Points par fédération / Points by federation",
+   "description": "Une ligne par nation et par fédération : points sur 1000, poids de la fédération et apport au score.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "nation",
+      "type": "string",
+      "description": "Nation (français)",
+      "description_en": "Nation (French)"
+     },
+     {
+      "name": "nation_en",
+      "type": "string",
+      "description": "Nation (anglais)",
+      "description_en": "Nation (English)"
+     },
+     {
+      "name": "iso2",
+      "type": "string",
+      "description": "Code ISO alpha-2",
+      "description_en": "ISO alpha-2 code"
+     },
+     {
+      "name": "federation",
+      "type": "string",
+      "description": "Sigle de la fédération",
+      "description_en": "Federation acronym"
+     },
+     {
+      "name": "sport",
+      "type": "string",
+      "description": "Sport (français)",
+      "description_en": "Sport (French)"
+     },
+     {
+      "name": "points_per_1000",
+      "type": "number",
+      "description": "Points obtenus sur les 1000 de la fédération",
+      "description_en": "Points out of the federation's 1000"
+     },
+     {
+      "name": "weight_pct",
+      "type": "number",
+      "description": "Poids de la fédération (%)",
+      "description_en": "Federation weight (%)"
+     },
+     {
+      "name": "contribution",
+      "type": "number",
+      "description": "Apport au score (points × poids)",
+      "description_en": "Contribution to the score (points × weight)"
+     }
+    ]
+   },
+   "rows": 1445
+  },
+  {
+   "name": "federations",
+   "path": "federations.csv",
+   "title": "Fédérations / Federations",
+   "description": "Cotation des fédérations internationales : poids, notes des quatre critères, méthode, statut et note de fiabilité.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "rank",
+      "type": "integer",
+      "description": "Rang de cotation",
+      "description_en": "Rating rank"
+     },
+     {
+      "name": "acronym",
+      "type": "string",
+      "description": "Sigle",
+      "description_en": "Acronym"
+     },
+     {
+      "name": "name",
+      "type": "string",
+      "description": "Nom officiel",
+      "description_en": "Official name"
+     },
+     {
+      "name": "sport",
+      "type": "string",
+      "description": "Sport (français)",
+      "description_en": "Sport (French)"
+     },
+     {
+      "name": "weight_pct",
+      "type": "number",
+      "description": "Poids relatif (%)",
+      "description_en": "Relative weight (%)"
+     },
+     {
+      "name": "score_10",
+      "type": "number",
+      "description": "Note globale sur 10",
+      "description_en": "Overall score out of 10"
+     },
+     {
+      "name": "practice",
+      "type": "number",
+      "description": "Note pratique",
+      "description_en": "Participation score"
+     },
+     {
+      "name": "audience",
+      "type": "number",
+      "description": "Note audience",
+      "description_en": "Audience score"
+     },
+     {
+      "name": "broadcast",
+      "type": "number",
+      "description": "Note diffusion",
+      "description_en": "Broadcast score"
+     },
+     {
+      "name": "olympic",
+      "type": "number",
+      "description": "Note olympique",
+      "description_en": "Olympic score"
+     },
+     {
+      "name": "practitioners_m",
+      "type": "number",
+      "description": "Pratiquants (millions)",
+      "description_en": "Practitioners (millions)"
+     },
+     {
+      "name": "fans_m",
+      "type": "number",
+      "description": "Fans (millions)",
+      "description_en": "Fans (millions)"
+     },
+     {
+      "name": "level",
+      "type": "string",
+      "description": "Niveau",
+      "description_en": "Level"
+     },
+     {
+      "name": "method",
+      "type": "string",
+      "description": "Méthode de calcul (Complète, Allégée…)",
+      "description_en": "Calculation method"
+     },
+     {
+      "name": "status",
+      "type": "string",
+      "description": "Statut (Attribuée ou non)",
+      "description_en": "Status (attributed or not)"
+     },
+     {
+      "name": "reliability",
+      "type": "string",
+      "description": "Note de fiabilité (A, B, C)",
+      "description_en": "Reliability grade (A, B, C)"
+     }
+    ]
+   },
+   "rows": 123
+  },
+  {
+   "name": "disciplines",
+   "path": "disciplines.csv",
+   "title": "Disciplines",
+   "description": "Part de chaque discipline dans sa fédération, partage classement mondial / compétitions et poids des types de compétitions.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "code",
+      "type": "string",
+      "description": "Code discipline",
+      "description_en": "Discipline code"
+     },
+     {
+      "name": "federation",
+      "type": "string",
+      "description": "Sigle de la fédération",
+      "description_en": "Federation acronym"
+     },
+     {
+      "name": "gender",
+      "type": "string",
+      "description": "Genre (Hommes, Femmes, Mixte)",
+      "description_en": "Gender"
+     },
+     {
+      "name": "discipline",
+      "type": "string",
+      "description": "Discipline",
+      "description_en": "Discipline"
+     },
+     {
+      "name": "type",
+      "type": "string",
+      "description": "Principale ou secondaire",
+      "description_en": "Main or secondary"
+     },
+     {
+      "name": "share_federation",
+      "type": "number",
+      "description": "Part dans la fédération",
+      "description_en": "Share of the federation"
+     },
+     {
+      "name": "share_ranking",
+      "type": "number",
+      "description": "Part du classement mondial",
+      "description_en": "Share given to the world ranking"
+     },
+     {
+      "name": "w_olympics",
+      "type": "number",
+      "description": "Poids des JO",
+      "description_en": "Olympic Games weight"
+     },
+     {
+      "name": "w_worlds",
+      "type": "number",
+      "description": "Poids des Mondiaux",
+      "description_en": "World Championships weight"
+     },
+     {
+      "name": "w_majors",
+      "type": "number",
+      "description": "Poids des majeurs",
+      "description_en": "Majors weight"
+     },
+     {
+      "name": "w_continental",
+      "type": "number",
+      "description": "Poids des continentaux",
+      "description_en": "Continental weight"
+     }
+    ]
+   },
+   "rows": 138
+  },
+  {
+   "name": "competitions",
+   "path": "competitions.csv",
+   "title": "Compétitions / Competitions",
+   "description": "Chaque compétition prise en compte, son poids dans la discipline, ses points et sa source.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "code",
+      "type": "string",
+      "description": "Code compétition",
+      "description_en": "Competition code"
+     },
+     {
+      "name": "discipline",
+      "type": "string",
+      "description": "Code discipline",
+      "description_en": "Discipline code"
+     },
+     {
+      "name": "type",
+      "type": "string",
+      "description": "Type (JO, Mondial, Majeur, Continental…)",
+      "description_en": "Type"
+     },
+     {
+      "name": "zone",
+      "type": "string",
+      "description": "Zone",
+      "description_en": "Zone"
+     },
+     {
+      "name": "name",
+      "type": "string",
+      "description": "Nom de la compétition",
+      "description_en": "Competition name"
+     },
+     {
+      "name": "mode",
+      "type": "string",
+      "description": "Mode de calcul (Places, Médailles, Points)",
+      "description_en": "Scoring mode"
+     },
+     {
+      "name": "share_discipline",
+      "type": "number",
+      "description": "Part de la discipline",
+      "description_en": "Share of the discipline"
+     },
+     {
+      "name": "points",
+      "type": "number",
+      "description": "Points distribués",
+      "description_en": "Points distributed"
+     },
+     {
+      "name": "source",
+      "type": "string",
+      "description": "Lien vers la source",
+      "description_en": "Source link"
+     }
+    ]
+   },
+   "rows": 248
+  },
+  {
+   "name": "resultats",
+   "path": "resultats.csv",
+   "title": "Résultats / Results",
+   "description": "Places ou médailles de chaque nation dans chaque compétition, et points attribués.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "competition",
+      "type": "string",
+      "description": "Code compétition",
+      "description_en": "Competition code"
+     },
+     {
+      "name": "nation",
+      "type": "string",
+      "description": "Nation (français)",
+      "description_en": "Nation (French)"
+     },
+     {
+      "name": "nation_en",
+      "type": "string",
+      "description": "Nation (anglais)",
+      "description_en": "Nation (English)"
+     },
+     {
+      "name": "place_from",
+      "type": "integer",
+      "description": "Place (début d'intervalle)",
+      "description_en": "Place (start of range)"
+     },
+     {
+      "name": "place_to",
+      "type": "integer",
+      "description": "Place (fin d'intervalle)",
+      "description_en": "Place (end of range)"
+     },
+     {
+      "name": "gold",
+      "type": "integer",
+      "description": "Médailles d'or",
+      "description_en": "Gold medals"
+     },
+     {
+      "name": "silver",
+      "type": "integer",
+      "description": "Médailles d'argent",
+      "description_en": "Silver medals"
+     },
+     {
+      "name": "bronze",
+      "type": "integer",
+      "description": "Médailles de bronze",
+      "description_en": "Bronze medals"
+     },
+     {
+      "name": "points",
+      "type": "number",
+      "description": "Points attribués",
+      "description_en": "Points awarded"
+     }
+    ]
+   },
+   "rows": 2346
+  },
+  {
+   "name": "classements_mondiaux",
+   "path": "classements_mondiaux.csv",
+   "title": "Classements mondiaux / World rankings",
+   "description": "Rangs des classements mondiaux officiels, convertis en nations, et points attribués.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "discipline",
+      "type": "string",
+      "description": "Code discipline",
+      "description_en": "Discipline code"
+     },
+     {
+      "name": "rank",
+      "type": "integer",
+      "description": "Rang officiel",
+      "description_en": "Official rank"
+     },
+     {
+      "name": "nation",
+      "type": "string",
+      "description": "Nation (français)",
+      "description_en": "Nation (French)"
+     },
+     {
+      "name": "nation_en",
+      "type": "string",
+      "description": "Nation (anglais)",
+      "description_en": "Nation (English)"
+     },
+     {
+      "name": "name_in_source",
+      "type": "string",
+      "description": "Nom tel qu'écrit dans la source",
+      "description_en": "Name as written in the source"
+     },
+     {
+      "name": "counted",
+      "type": "integer",
+      "description": "1 si compté (plafond par nation)",
+      "description_en": "1 if counted (per-nation cap)"
+     },
+     {
+      "name": "points",
+      "type": "number",
+      "description": "Points attribués",
+      "description_en": "Points awarded"
+     }
+    ]
+   },
+   "rows": 1030
+  }
+ ]
+}

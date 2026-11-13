@@ -1,0 +1,249 @@
+code,discipline,type,zone,name,mode,share_discipline,points,source
+BKM-WC,BKM,Mondial,Monde,Coupe du monde FIBA 2023,Places,0.35,70,https://en.wikipedia.org/wiki/2023_FIBA_Basketball_World_Cup
+BKM-JO,BKM,JO,Monde,JO Paris 2024,Places,0.35,70,https://en.wikipedia.org/wiki/Basketball_at_the_2024_Summer_Olympics_%E2%80%93_Men%27s_tournament
+BKM-EU,BKM,Continental,Europe,EuroBasket 2025,Places,0.1,21,https://www.eurohoops.net/en/eurobasket/1854297/eurobasket-2025-results-standings-schedule
+BKM-AM,BKM,Continental,Amériques,AmeriCup 2025,Places,0.07,15,https://en.wikipedia.org/wiki/2025_FIBA_AmeriCup
+BKM-AF,BKM,Continental,Afrique,AfroBasket 2025,Places,0.04,9,https://en.wikipedia.org/wiki/FIBA_AfroBasket_2025
+BKM-AS,BKM,Continental,Asie-Océanie,Asia Cup FIBA 2025,Places,0.07,15,https://en.wikipedia.org/wiki/2025_FIBA_Asia_Cup
+B3M-WC,B3M,Mondial,Monde,Coupe du monde 3x3 2026,Places,0.5,50,https://en.wikipedia.org/wiki/2026_FIBA_3x3_World_Cup
+B3M-JO,B3M,JO,Monde,JO Paris 2024 – 3x3,Places,0.5,50,https://en.wikipedia.org/wiki/Basketball_at_the_2024_Summer_Olympics
+BKF-WC,BKF,Mondial,Monde,Coupe du monde féminine FIBA 2026,Places,0.35,70,https://en.wikipedia.org/wiki/2026_FIBA_Women%27s_Basketball_World_Cup
+BKF-JO,BKF,JO,Monde,JO Paris 2024,Places,0.35,70,https://en.wikipedia.org/wiki/Basketball_at_the_2024_Summer_Olympics_%E2%80%93_Women%27s_tournament
+BKF-EU,BKF,Continental,Europe,EuroBasket féminin 2025,Places,0.1,21,https://en.wikipedia.org/wiki/EuroBasket_Women_2025
+BKF-AM,BKF,Continental,Amériques,AmeriCup féminine 2025,Places,0.07,15,https://en.wikipedia.org/wiki/2025_FIBA_Women%27s_AmeriCup
+BKF-AF,BKF,Continental,Afrique,AfroBasket féminin 2025,Places,0.04,9,https://en.wikipedia.org/wiki/2025_FIBA_Women%27s_AfroBasket
+BKF-AS,BKF,Continental,Asie-Océanie,Asia Cup féminine FIBA 2025,Places,0.07,15,https://en.wikipedia.org/wiki/2025_FIBA_Women%27s_Asia_Cup
+B3F-WC,B3F,Mondial,Monde,Coupe du monde 3x3 2026,Places,0.5,50,https://en.wikipedia.org/wiki/2026_FIBA_3x3_World_Cup
+B3F-JO,B3F,JO,Monde,JO Paris 2024 – 3x3,Places,0.5,50,https://en.wikipedia.org/wiki/Basketball_at_the_2024_Summer_Olympics
+FBM-WC,FBM,Mondial,Monde,Coupe du monde FIFA 2026,Places,0.6,120,https://worldcupwiki.com/standings/
+FBM-JO,FBM,JO,Monde,JO Paris 2024 (U23),Places,0.1,20,https://en.wikipedia.org/wiki/Football_at_the_2024_Summer_Olympics
+FBM-EU,FBM,Continental,Europe,Euro 2024,Places,0.1,21,https://www.wusf.org/2024-07-10/spain-advances-to-the-european-soccer-championship-final-after-beating-france ; https://www.cbssports.com/soccer/news/england-vs-spain-argentina-vs-colombia-in-massive-sunday-finals-now-what-for-u-s-soccer-post-berhalter
+FBM-SA,FBM,Continental,Amérique du Sud,Copa América 2024,Places,0.04,9,https://www.cbssports.com/soccer/news/england-vs-spain-argentina-vs-colombia-in-massive-sunday-finals-now-what-for-u-s-soccer-post-berhalter (3e : Uruguay bat le Canada)
+FBM-NA,FBM,Continental,Amérique du Nord et centrale,Gold Cup 2025,Places,0.03,6,https://www.concacaf.com/en/gold-cup/news/jimenez-alvarez-lead-mexico-to-tenth-gold-cup-trophy
+FBM-AF,FBM,Continental,Afrique,CAN 2025,Places,0.04,9,https://www.moroccoworldnews.com/2026/10/341208/morocco-senegal-afcon-2025-dispute-what-is-happening-at-cas-and-when-will-the-verdict-be-known/
+FBM-AS,FBM,Continental,Asie,Coupe d'Asie 2023,Places,0.06,12,https://en.wikipedia.com/wiki/2023_AFC_Asian_Cup_knockout_stage
+FBM-OC,FBM,Continental,Océanie,Coupe d'Océanie 2024,Places,0.01,3,https://www.fijitimes.com.fj/?p=748958
+FSM-WC,FSM,Mondial,Monde,Coupe du monde de futsal 2024,Places,1,50,https://uaf.ua/en/news/52469
+BSM-WC,BSM,Mondial,Monde,Coupe du monde de beach soccer 2025,Places,1,25,https://en.wikipedia.org/wiki/2025_FIFA_Beach_Soccer_World_Cup
+FBF-WC,FBF,Mondial,Monde,Coupe du monde féminine 2023,Places,0.35,70,https://www.uefa.com/news-media/news/027a-166817b8be17-9e0082e122cd-1000--spain-win-2023-women-s-world-cup-all-the-results/
+FBF-JO,FBF,JO,Monde,JO Paris 2024,Places,0.35,70,https://en.wikipedia.org/wiki/Football_at_the_2024_Summer_Olympics
+FBF-EU,FBF,Continental,Europe,Euro féminin 2025,Places,0.11,22.11,https://www.aljazeera.com/sports/2025/7/20/uefa-womens-euro-2025-semifinals-qualified-teams-and-schedule
+FBF-SA,FBF,Continental,Amérique du Sud,Copa América féminine 2025,Places,0.05,9.47,https://copaamerica.com/en/news/argentina-uruguay-third-place-copa-america-femenina-2025
+FBF-NA,FBF,Continental,Amérique du Nord et centrale,W Gold Cup 2024,Places,0.03,6.32,https://www.wikipedia.com/wiki/2024_CONCACAF_W_Gold_Cup
+FBF-AF,FBF,Continental,Afrique,CAN féminine 2024 (jouée en 2025),Places,0.05,9.47,https://www.moroccoworldnews.com/2025/07/233501/ghana-claims-wafcon-bronze-with-4-3-penalty-shootout-win-over-south-africa/
+FBF-AS,FBF,Continental,Asie,Coupe d'Asie féminine 2026,Places,0.06,12.63,https://en.wikipedia.org/wiki/2026_AFC_Women%27s_Asian_Cup
+FSF-WC,FSF,Mondial,Monde,Coupe du monde féminine de futsal 2025,Places,1,100,https://en.wikipedia.org/wiki/2025_FIFA_Futsal_Women%27s_World_Cup
+VBM-WC,VBM,Mondial,Monde,Championnat du monde 2025,Places,0.35,70,https://en.wikipedia.org/wiki/2025_FIVB_Men%27s_Volleyball_World_Championship
+VBM-JO,VBM,JO,Monde,JO Paris 2024,Places,0.35,70,https://en.wikipedia.org/wiki/Volleyball_at_the_2024_Summer_Olympics
+VBM-EU,VBM,Continental,Europe,EuroVolley 2026,Places,0.13,26.25,https://www.fivb.com/poland-punch-ticket-to-la28-with-eurovolley-triumph/
+VBM-SA,VBM,Continental,Amérique du Sud,Championnat sud-américain 2026 (Rio de Janeiro),Places,0.06,11.25,https://www.fivb.com/brazil-reclaim-south-american-crown-in-rio-to-book-la28-olympics-and-2027-world-cup-spots/
+VBM-NA,VBM,Continental,Amérique du Nord et centrale,Championnat NORCECA 2026,Places,0.04,7.5,https://www.fivb.com/usa-outlast-canada-in-five-set-thriller-to-defend-norceca-title/
+VBM-AS,VBM,Continental,Asie,Championnat d'Asie 2026,Places,0.07,15,https://khelnow.com/volleyball/india-final-standings-avc-mens-volleyball-continental-championship-202609
+BVM-WC,BVM,Mondial,Monde,Championnats du monde de beach-volley 2025,Places,0.5,50,https://en.wikipedia.org/wiki/2025_Beach_Volleyball_World_Championships
+BVM-JO,BVM,JO,Monde,JO Paris 2024 – beach-volley,Places,0.5,50,https://en.wikipedia.org/wiki/Volleyball_at_the_2024_Summer_Olympics
+VBF-WC,VBF,Mondial,Monde,Championnat du monde 2025,Places,0.35,70,https://en.wikipedia.org/wiki/2025_FIVB_Women%27s_Volleyball_World_Championship
+VBF-JO,VBF,JO,Monde,JO Paris 2024,Places,0.35,70,https://en.wikipedia.org/wiki/Volleyball_at_the_2024_Summer_Olympics
+VBF-EU,VBF,Continental,Europe,EuroVolley féminin 2026,Places,0.17,35,https://en.wikipedia.org/wiki/2026_Women%27s_European_Volleyball_Championship
+VBF-SA,VBF,Continental,Amérique du Sud,Championnat sud-américain 2023,Places,0.07,15,https://en.wikipedia.org/wiki/2023_Women%27s_South_American_Volleyball_Championship
+VBF-NA,VBF,Continental,Amérique du Nord et centrale,Championnat NORCECA 2026,Places,0.05,10,https://www.fivb.com/?p=109584
+BVF-WC,BVF,Mondial,Monde,Championnats du monde de beach-volley 2025,Places,0.5,50,https://en.wikipedia.org/wiki/2025_Beach_Volleyball_World_Championships
+BVF-JO,BVF,JO,Monde,JO Paris 2024 – beach-volley,Places,0.5,50,https://en.wikipedia.org/wiki/Volleyball_at_the_2024_Summer_Olympics
+TTSH-JO,TTSH,JO,Monde,JO 2024 – simple messieurs (jusqu'aux huitièmes),Places,0.5,67.5,https://www.wikiwand.com/en/articles/Table_tennis_at_the_2024_Summer_Olympics_%E2%80%93_Men's_singles
+TTSH-WC,TTSH,Mondial,Monde,Mondiaux 2025 – simple messieurs (jusqu'aux huitièmes),Places,0.5,67.5,https://en.wikipedia.org/wiki/2025_World_Table_Tennis_Championships_%E2%80%93_Men%27s_singles ; https://www.allabouttabletennis.com/world-championships-2025-mens-singles.html
+TTDH-WC,TTDH,Mondial,Monde,Mondiaux 2025 – double messieurs,Places,1,90,https://en.wikipedia.org/wiki/2025_World_Table_Tennis_Championships
+TTEH-JO,TTEH,JO,Monde,JO 2024 – équipes messieurs,Places,0.5,45,https://en.wikipedia.org/wiki/List_of_2024_Summer_Olympics_medal_winners ; 4e : https://wiki.riteme.site/wiki/Table_tennis_at_the_2024_Summer_Olympics_%E2%80%93_Men%27s_team
+TTEH-WC,TTEH,Mondial,Monde,Mondiaux par équipes 2026,Places,0.5,45,https://en.wikipedia.org/wiki/2026_World_Team_Table_Tennis_Championships
+TTSF-JO,TTSF,JO,Monde,JO 2024 – simple dames (jusqu'aux huitièmes),Places,0.5,67.5,https://www.allabouttabletennis.com/2024-olympic-games-womens-singles-results.html
+TTSF-WC,TTSF,Mondial,Monde,Mondiaux 2025 – simple dames (jusqu'aux huitièmes),Places,0.5,67.5,https://en.wikipedia.org/wiki/2025_World_Table_Tennis_Championships_%E2%80%93_Women%27s_singles ; https://www.allabouttabletennis.com/world-championships-2025-womens-singles.html
+TTDF-WC,TTDF,Mondial,Monde,Mondiaux 2025 – double dames,Places,1,90,https://en.wikipedia.org/wiki/2025_World_Table_Tennis_Championships
+TTEF-JO,TTEF,JO,Monde,JO 2024 – équipes dames,Places,0.5,45,https://en.wikipedia.org/wiki/List_of_2024_Summer_Olympics_medal_winners ; 4e : https://wiki.riteme.site/wiki/Table_tennis_at_the_2024_Summer_Olympics_%E2%80%93_Women%27s_team
+TTEF-WC,TTEF,Mondial,Monde,Mondiaux par équipes 2026,Places,0.5,45,https://en.wikipedia.org/wiki/2026_World_Team_Table_Tennis_Championships
+TTMX-JO,TTMX,JO,Monde,JO 2024 – double mixte,Places,0.5,50,https://en.wikipedia.org/wiki/List_of_2024_Summer_Olympics_medal_winners ; 4e : https://wiki.riteme.site/wiki/Table_tennis_at_the_2024_Summer_Olympics_%E2%80%93_Mixed_doubles
+TTMX-WC,TTMX,Mondial,Monde,Mondiaux 2025 – double mixte,Places,0.5,50,https://en.wikipedia.org/wiki/2025_World_Table_Tennis_Championships
+TNSH-JO,TNSH,JO,Monde,JO 2024 – simple messieurs (jusqu'aux quarts),Places,0.31,42.19,https://wikiwand.com/en/Tennis_at_the_2024_Summer_Olympics_%E2%80%93_Men%27s_singles
+TNSH-OPE,TNSH,Majeur,Monde,Open d'Australie 2026 – messieurs (jusqu'aux huitièmes),Places,0.17,23.2,"https://mungomash.com/sports/tennis/australian-open-2026/draw/mens-singles/ (tableau ; nationalités d'après les drapeaux, joueurs neutres russes et biélorusses rattachés à leur pays)"
+TNSH-ROL,TNSH,Majeur,Monde,Roland-Garros 2026 – messieurs (jusqu'aux huitièmes),Places,0.17,23.2,"https://mungomash.com/sports/tennis/french-open-2026/draw/mens-singles/ (tableau ; nationalités d'après les drapeaux, joueurs neutres russes et biélorusses rattachés à leur pays)"
+TNSH-WIM,TNSH,Majeur,Monde,Wimbledon 2026 – messieurs (jusqu'aux huitièmes),Places,0.17,23.2,"https://mungomash.com/sports/tennis/wimbledon-2026/draw/mens-singles/ (tableau ; nationalités d'après les drapeaux, joueurs neutres russes et biélorusses rattachés à leur pays)"
+TNSH-US ,TNSH,Majeur,Monde,US Open 2026 – messieurs (jusqu'aux huitièmes),Places,0.17,23.2,"https://mungomash.com/sports/tennis/us-open-2026/draw/mens-singles/ (tableau ; nationalités d'après les drapeaux, joueurs neutres russes et biélorusses rattachés à leur pays)"
+TNSF-OPE,TNSF,Majeur,Monde,Open d'Australie 2026 – dames (jusqu'aux huitièmes),Places,0.17,23.2,"https://mungomash.com/sports/tennis/australian-open-2026/draw/womens-singles/ (tableau ; nationalités d'après les drapeaux, joueurs neutres russes et biélorusses rattachés à leur pays)"
+TNSF-ROL,TNSF,Majeur,Monde,Roland-Garros 2026 – dames (jusqu'aux huitièmes),Places,0.17,23.2,"https://mungomash.com/sports/tennis/french-open-2026/draw/womens-singles/ (tableau ; nationalités d'après les drapeaux, joueurs neutres russes et biélorusses rattachés à leur pays)"
+TNSF-WIM,TNSF,Majeur,Monde,Wimbledon 2026 – dames (jusqu'aux huitièmes),Places,0.17,23.2,"https://mungomash.com/sports/tennis/wimbledon-2026/draw/womens-singles/ (tableau ; nationalités d'après les drapeaux, joueurs neutres russes et biélorusses rattachés à leur pays)"
+TNSF-US ,TNSF,Majeur,Monde,US Open 2026 – dames (jusqu'aux huitièmes),Places,0.17,23.2,"https://www.usopen.org/en_US/scores/draws/2026_WS_draw.pdf (tableau ; nationalités d'après les drapeaux, joueurs neutres russes et biélorusses rattachés à leur pays)"
+TNSF-JO,TNSF,JO,Monde,JO 2024 – simple dames (jusqu'aux quarts),Places,0.31,42.19,https://en.wikipedia.org/wiki/Tennis_at_the_2024_Summer_Olympics_%E2%80%93_Women%27s_singles
+TNDH-JO,TNDH,JO,Monde,JO 2024 – double messieurs,Places,1,90,https://en.wikipedia.org/wiki/List_of_2024_Summer_Olympics_medal_winners
+TNDF-JO,TNDF,JO,Monde,JO 2024 – double dames,Places,1,90,https://en.wikipedia.org/wiki/List_of_2024_Summer_Olympics_medal_winners
+TNMX-JO,TNMX,JO,Monde,JO 2024 – double mixte,Places,1,100,https://en.wikipedia.org/wiki/List_of_2024_Summer_Olympics_medal_winners ; 4e : https://amp.cbc.ca/lite/story/1.7283376
+TNEH-WC,TNEH,Mondial,Monde,Coupe Davis 2025,Places,1,90,https://www.tennismajors.com/others-news/davis-cup-2025-finals-review-and-what-comes-next-840102.html
+TNEF-WC,TNEF,Mondial,Monde,Billie Jean King Cup 2025,Places,1,90,https://en.wikipedia.org/wiki/2025_Billie_Jean_King_Cup_finals
+BDSH-JO,BDSH,JO,Monde,JO 2024 – SH,Places,0.5,67.5,https://en.wikipedia.org/wiki/List_of_2024_Summer_Olympics_medal_winners ; 4e : https://olympics.com/en/news/paris-2024-olympics-badminton-india-lakshya-sen-men-singles-fourth
+BDSH-WC,BDSH,Mondial,Monde,Mondiaux 2026 – SH,Places,0.5,67.5,https://www.outlookindia.com/sports/badminton/bwf-world-championships-2026-wrap-winners-treesa-jolly-gayatri-gopichand-bronze-french-dominance-alex-lanier-an-se-young-highlights
+BDSF-JO,BDSF,JO,Monde,JO 2024 – SF,Places,0.5,67.5,https://en.wikipedia.org/wiki/List_of_2024_Summer_Olympics_medal_winners ; 4e : https://www.thejakartapost.com/sports/2024/08/04/indonesia-takes-home-first-medal-in-paris-following-shuttlers-withdrawal
+BDSF-WC,BDSF,Mondial,Monde,Mondiaux 2026 – SF,Places,0.5,67.5,https://www.outlookindia.com/sports/badminton/bwf-world-championships-2026-wrap-winners-treesa-jolly-gayatri-gopichand-bronze-french-dominance-alex-lanier-an-se-young-highlights
+BDDH-JO,BDDH,JO,Monde,JO 2024 – DH,Places,0.5,22.5,https://en.wikipedia.org/wiki/List_of_2024_Summer_Olympics_medal_winners ; 4e : https://www.malaymail.com/news/sports/2024/08/04/aaron-chia-wooi-yik-beat-denmark-duo-to-win-olympic-bronze-for-malaysia-in-badminton-mens-doubles/145998
+BDDH-WC,BDDH,Mondial,Monde,Mondiaux 2026 – DH,Places,0.5,22.5,https://www.outlookindia.com/sports/badminton/bwf-world-championships-2026-wrap-winners-treesa-jolly-gayatri-gopichand-bronze-french-dominance-alex-lanier-an-se-young-highlights
+BDDF-JO,BDDF,JO,Monde,JO 2024 – DF,Places,0.5,22.5,https://en.wikipedia.org/wiki/List_of_2024_Summer_Olympics_medal_winners ; 4e : https://malaymail.com/news/sports/2024/08/03/pearly-thinaahs-bronze-dream-falls-short-against-japans-matsuyama-shida/145959
+BDDF-WC,BDDF,Mondial,Monde,Mondiaux 2026 – DF,Places,0.5,22.5,https://www.outlookindia.com/sports/badminton/bwf-world-championships-2026-wrap-winners-treesa-jolly-gayatri-gopichand-bronze-french-dominance-alex-lanier-an-se-young-highlights
+BDMX-JO,BDMX,JO,Monde,JO 2024 – MX,Places,0.5,25,https://en.wikipedia.org/wiki/List_of_2024_Summer_Olympics_medal_winners ; 4e : https://thestar.com.my/news/world/2024/08/03/olympics--badminton-results-at-paris-olympics
+BDMX-WC,BDMX,Mondial,Monde,Mondiaux 2026 – MX,Places,0.5,25,https://www.outlookindia.com/sports/badminton/bwf-world-championships-2026-wrap-winners-treesa-jolly-gayatri-gopichand-bronze-french-dominance-alex-lanier-an-se-young-highlights
+BDEH-WC,BDEH,Mondial,Monde,Thomas Cup 2026,Places,1,90,https://en.wikipedia.org/wiki/2026_Thomas_%26_Uber_Cup
+BDEF-WC,BDEF,Mondial,Monde,Uber Cup 2026,Places,1,90,https://en.wikipedia.org/wiki/2026_Thomas_%26_Uber_Cup
+CHO-OL,CHO,Mondial,Monde,Olympiade d'échecs 2026 – open,Places,1,250,https://www.fide.com/uzbekistans-dream-finish-olympiad-gold-in-samarkand/
+CHF-OL,CHF,Mondial,Monde,Olympiade d'échecs 2026 – féminin,Places,1,250,https://www.fide.com/uzbekistans-dream-finish-olympiad-gold-in-samarkand/
+ATH-JO,ATH,JO,Monde,"JO 2024 – athlétisme (tableau des places, toutes nations)",Points,0.5,500,https://worldathletics.org/competitions/olympic-games/paris24/placingtable
+ATH-WC,ATH,Mondial,Monde,"Mondiaux de Tokyo 2025 (tableau des places, toutes nations)",Points,0.5,500,https://media.aws.iaaf.org/competitiondocuments/pdf/7190593/AT-------.PT1.pdf
+NAT-JO,NAT,JO,Monde,JO 2024 – natation,Médailles,0.5,400,https://olympics.fandom.com/wiki/Swimming_2024
+NAT-WC,NAT,Mondial,Monde,Mondiaux de Singapour 2025 (toutes disciplines),Médailles,0.5,400,https://en.wikipedia.org/wiki/2025_World_Aquatics_Championships
+WPH-JO,WPH,JO,Monde,JO 2024 – water-polo messieurs,Places,1,50,https://en.wikipedia.org/wiki/Water_polo_at_the_2024_Summer_Olympics
+WPF-JO,WPF,JO,Monde,JO 2024 – water-polo dames,Places,1,50,https://en.wikipedia.org/wiki/Water_polo_at_the_2024_Summer_Olympics
+NAR-JO,NAR,JO,Monde,JO 2024 – natation artistique (équipe + duo),Médailles,1,100,https://en.wikipedia.org/wiki/List_of_2024_Summer_Olympics_medal_winners
+CRH-JO,CRH,JO,Monde,JO 2024 – route et contre-la-montre messieurs,Médailles,0.31,62.5,https://en.wikipedia.org/wiki/Cycling_at_the_2024_Summer_Olympics
+CRH-WC,CRH,Mondial,Monde,Mondiaux de Montréal 2026 – course en ligne messieurs (top 16),Places,0.31,62.5,https://www.domestiquecycling.com/en/cycling-races/world-championship-rr-men/2026/race-results/
+CRH-TDF,CRH,Majeur,Monde,"Tour de France 2026 (classement général, top 16)",Places,0.38,75,https://cyclinguptodate.com/cycling/tour-de-france-2026-final-classifications-pogacar-pedersen-carapaz-and-del-toro-seal-victory-in-paris
+CRF-JO,CRF,JO,Monde,JO 2024 – route et contre-la-montre dames,Médailles,0.31,62.5,https://en.wikipedia.org/wiki/Cycling_at_the_2024_Summer_Olympics
+CRF-WC,CRF,Mondial,Monde,Mondiaux de Montréal 2026 – course en ligne dames (top 4 publié),Places,0.31,62.5,https://cyclinguptodate.com/cycling/results-womens-road-race-world-championships-montreal-2026-demi-vollering-wins-in-amazing-battle-against-niewiadoma-and-longo-borghini ; https://escapecollective.com/worlds-vollering-outkicks-niewiadoma-phinney-to-win-in-montreal/
+CRF-TDF,CRF,Majeur,Monde,Tour de France Femmes 2026,Places,0.19,37.5,https://www.cyclingweekly.com/racing/who-is-leading-the-tour-de-france-femmes-2026
+CRF-GIRO,CRF,Majeur,Monde,Giro d'Italia Women 2026,Places,0.19,37.5,https://en.wikipedia.org/wiki/2026_Giro_d%27Italia_Women
+CAU-JO,CAU,JO,Monde,"JO 2024 – piste, VTT, BMX (tableau total moins la route)",Médailles,1,200,https://en.wikipedia.org/wiki/Cycling_at_the_2024_Summer_Olympics
+CKH-T20,CKH,Mondial,Monde,Coupe du monde T20 2026,Places,0.5,125,https://www.skysports.com/cricket/news/12344/13502048/mens-t20-world-cup-2026-fixtures-england-india-pakistan-australia-scotland-ireland-west-indies-and-more
+CKH-ODI,CKH,Mondial,Monde,Coupe du monde ODI 2023,Places,0.5,125,https://www.icc-cricket.com/tournaments/cricketworldcup/news/icc-mens-cricket-world-cup-2023-finalists-confirmed
+CKF-ODI,CKF,Mondial,Monde,Coupe du monde ODI féminine 2025,Places,0.5,125,https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/2025_Women's_Cricket_World_Cup
+CKF-T20,CKF,Mondial,Monde,Coupe du monde T20 féminine 2024,Places,0.5,125,https://icc-cricket.com/news/history-made-in-dubai-new-zealand-win-their-first-women-s-t20-world-cup-title
+TKD-JO,TKD,JO,Monde,JO 2024 – taekwondo,Médailles,0.5,500,https://en.wikipedia.org/wiki/Taekwondo_at_the_2024_Summer_Olympics
+TKD-WC,TKD,Mondial,Monde,Mondiaux de Wuxi 2025,Médailles,0.5,500,https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/2025_World_Taekwondo_Championships
+GFH-JO,GFH,JO,Monde,JO 2024 – golf messieurs (top 16),Places,0.38,93.75,https://en.wikipedia.org/wiki/Golf_at_the_2024_Summer_Olympics_%E2%80%93_Men%27s_individual
+GFH-Masters,GFH,Majeur,Monde,Masters 2026 (top 16),Places,0.16,39.06,https://thegolfnewsnet.com/golfnewsnetteam/2026/04/12/2026-masters-tournament-final-results-prize-money-payout-pga-tour-leaderboard-and-how-much-each-golfer-won-142146
+GFH-PGA,GFH,Majeur,Monde,PGA Championship 2026 (top 16),Places,0.16,39.06,https://www.golfchannel.com/pga-of-america/news/pga-championship-2026-leaderboard-final-results-scores-from-aronimink
+GFH-USOpen,GFH,Majeur,Monde,US Open 2026 (top 16),Places,0.16,39.06,https://thegolfnewsnet.com/golfnewsnetteam/2026/06/21/2026-us-open-final-results-prize-money-payout-pga-tour-leaderboard-and-how-much-each-golfer-won-143537/
+GFH-Open,GFH,Majeur,Monde,The Open 2026 (top 16),Places,0.16,39.06,https://thegolfnewsnet.com/golfnewsnetteam/2026/07/19/2026-british-open-championship-final-results-prize-money-payout-pga-tour-leaderboard-and-how-much-each-golfer-won-144053/
+GFF-JO,GFF,JO,Monde,JO 2024 – golf dames (top 16),Places,1,250,https://en.wikipedia.org/wiki/Golf_at_the_2024_Summer_Olympics_%E2%80%93_Women%27s_individual
+JUD-JO,JUD,JO,Monde,JO 2024 – judo (dont équipes mixtes),Médailles,0.5,500,https://www.olympedia.org/editions/63/sports/JUD
+JUD-WC,JUD,Mondial,Monde,"Mondiaux de Budapest 2025 (toutes nations, équipes mixtes incluses)",Médailles,0.5,500,https://cliffipedia.org/content/wikipedia_en_all_maxi_2025-08/2025_World_Judo_Championships
+HBH-WC,HBH,Mondial,Monde,Championnat du monde 2025,Places,0.5,250,https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/2025_World_Men's_Handball_Championship
+HBH-JO,HBH,JO,Monde,JO 2024 (8 premiers),Places,0.5,250,https://en.wikipedia.org/wiki/Handball_at_the_2024_Summer_Olympics_%E2%80%93_Men%27s_tournament
+HBF-WC,HBF,Mondial,Monde,Championnat du monde 2025 (8 premières),Places,0.5,250,https://en.wikipedia.org/wiki/2025_World_Women%27s_Handball_Championship
+HBF-JO,HBF,JO,Monde,JO 2024 (8 premières),Places,0.5,250,https://en.wikipedia.org/wiki/Handball_at_the_2024_Summer_Olympics_%E2%80%93_Women%27s_tournament
+GYM-JO,GYM,JO,Monde,"JO 2024 – gymnastique (artistique, rythmique, trampoline)",Médailles,0.5,500,https://en.wikipedia.org/wiki/Gymnastics_at_the_2024_Summer_Olympics
+GYM-WC,GYM,Mondial,Monde,Mondiaux de gymnastique artistique 2025,Médailles,0.5,500,https://en.wikipedia.org/wiki/2025_World_Artistic_Gymnastics_Championships
+BBH-WBC,BBH,Mondial,Monde,World Baseball Classic 2026,Places,0.5,125,https://www.mlb.com/world-baseball-classic/news/how-to-watch-the-2026-world-baseball-classic
+BBH-P12,BBH,Mondial,Monde,Premier12 2024,Places,0.5,125,https://www.mlb.com/news/premier12-super-round-scores-and-results
+CAN-JOS,CAN,JO,Monde,JO 2024 – course en ligne,Médailles,0.25,250,https://www.olympedia.org/editions/63/sports/CSP
+CAN-JOL,CAN,JO,Monde,JO 2024 – slalom,Médailles,0.25,250,https://www.olympedia.org/editions/63/sports/CSL
+CAN-WC,CAN,Mondial,Monde,Mondiaux de course en ligne 2025,Médailles,0.5,500,https://en.wikipedia.org/wiki/2025_ICF_Canoe_Sprint_World_Championships
+LUT-JO,LUT,JO,Monde,JO 2024 – lutte,Médailles,0.5,500,https://www.olympedia.org/editions/63/sports/WRE
+LUT-WC,LUT,Mondial,Monde,Mondiaux de Zagreb 2025,Médailles,0.5,500,https://wikwiand-revamp.pages.dev/en/2025_World_Wrestling_Championships
+HAL-JO,HAL,JO,Monde,JO 2024 – haltérophilie,Médailles,0.5,500,https://www.olympedia.org/editions/63/sports/WLF
+HAL-WC,HAL,Mondial,Monde,Mondiaux de Førde 2025 (toutes médailles),Médailles,0.5,500,https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/2025_World_Weightlifting_Championships
+BOX-JO,BOX,JO,Monde,JO 2024 – boxe,Médailles,0.5,500,https://www.olympedia.org/editions/63/sports/BOX
+BOX-WC,BOX,Mondial,Monde,Mondiaux de Liverpool 2025,Médailles,0.5,500,https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/2025_World_Boxing_Championships
+SKB-JO,SKB,JO,Monde,JO 2024 – skateboard,Médailles,0.5,500,https://en.wikipedia.org/wiki/List_of_2024_Summer_Olympics_medal_winners
+SNK-WC,SNK,Mondial,Monde,Championnat du monde 2026 (jusqu'aux huitièmes),Places,1,500,https://wikwiand-revamp.pages.dev/en/2026_World_Snooker_Championship ; finale : https://www.skysports.com/more-sports/snooker/news/12243/13529588/world-snooker-championship-2026-results-as-wu-yize-beats-shaun-murphy-in-crucible-final
+RGH-WC,RGH,Mondial,Monde,Coupe du monde 2023,Places,1,200,https://www.world.rugby/news/889564/rugby-world-cup-2023-finals-review
+RGF-WC,RGF,Mondial,Monde,Coupe du monde féminine 2025 (jusqu'aux quarts),Places,1,200,https://resources.worldrugby-rims.pulselive.com/worldrugby/document/2025/10/01/e3f053cd-5e6c-40c5-ac00-ee0b93fc2ed7/Rugby-World-Cup-2025-Tournament-Review-ENG-.pdf
+R7H-JO,R7H,JO,Monde,JO 2024 – rugby à 7,Places,1,100,https://en.wikipedia.org/wiki/List_of_2024_Summer_Olympics_medal_winners ; 4e : https://olympics.com/en/paris-2024/videos/men-s-bronze-medal-match-rsa-aus-rugby-olympic-games-paris-2024
+R7F-JO,R7F,JO,Monde,JO 2024 – rugby à 7,Places,1,100,https://en.wikipedia.org/wiki/List_of_2024_Summer_Olympics_medal_winners ; 4e : https://olympics.com/en/paris-2024/videos/usa-v-aus-women-s-bronze-medal-match-rugby-sevens-olympic-games-paris-2024
+ARC-JO,ARC,JO,Monde,JO 2024 – tir à l'arc,Médailles,0.5,500,https://en.wikipedia.org/wiki/List_of_2024_Summer_Olympics_medal_winners
+ARC-WC,ARC,Mondial,Monde,Mondiaux de Gwangju 2025,Médailles,0.5,500,https://en.wikipedia.org/wiki/2025_World_Archery_Championships
+HKH-WC,HKH,Mondial,Monde,Coupe du monde 2026 (8 premiers),Places,0.5,125,https://en.wikipedia.org/wiki/2026_Men%27s_FIH_Hockey_World_Cup
+HKH-JO,HKH,JO,Monde,JO 2024 (8 premiers),Places,0.5,125,https://en.wikipedia.org/wiki/Field_hockey_at_the_2024_Summer_Olympics
+HKF-WC,HKF,Mondial,Monde,Coupe du monde 2026,Places,0.5,125,https://en.wikipedia.org/wiki/2026_Women%27s_FIH_Hockey_World_Cup
+HKF-JO,HKF,JO,Monde,JO 2024 (8 premières),Places,0.5,125,https://en.wikipedia.org/wiki/Field_hockey_at_the_2024_Summer_Olympics
+TRI-JO,TRI,JO,Monde,JO 2024 – triathlon,Médailles,0.5,500,https://www.olympedia.org/editions/63/sports/TRI
+TIR-JO,TIR,JO,Monde,JO 2024 – tir,Médailles,0.5,500,https://www.olympedia.org/editions/63/sports/SHO
+TIR-WC,TIR,Mondial,Monde,"Mondiaux du Caire 2025 (carabine, pistolet)",Médailles,0.5,500,https://en.wikipedia.org/wiki/2025_ISSF_World_Shooting_Championships
+AVI-JO,AVI,JO,Monde,JO 2024 – aviron,Médailles,0.5,500,https://www.olympedia.org/editions/63/sports/ROW
+AVI-WC,AVI,Mondial,Monde,Mondiaux de Shanghai 2025,Médailles,0.5,500,https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/2025_World_Rowing_Championships
+KAR-WC,KAR,Mondial,Monde,Mondiaux du Caire 2025,Médailles,1,1000,https://en.wikipedia.org/wiki/2025_World_Karate_Championships
+FIS-JO,FIS,JO,Monde,JO Milan-Cortina 2026 – ski et snowboard (tableau total moins les autres sports d'hiver),Médailles,0.5,500,https://www.olympedia.org/editions/72
+BIA-JO,BIA,JO,Monde,JO 2026 – biathlon,Médailles,0.5,500,https://www.olympedia.org/editions/72/sports/BTH
+PVL-JO,PVL,JO,Monde,JO 2026 – patinage de vitesse,Médailles,0.5,200,https://www.olympedia.org/editions/72/sports/SSK
+PST-JO,PST,JO,Monde,JO 2026 – short-track,Médailles,0.5,150,https://www.olympedia.org/editions/72/sports/STK
+PAR-JO,PAR,JO,Monde,JO 2026 – patinage artistique,Médailles,0.5,150,https://www.olympedia.org/editions/72/sports/FSK
+PAR-WC,PAR,Mondial,Monde,Mondiaux de Prague 2026 – patinage artistique,Médailles,0.5,150,https://www.nbcsports.com/olympics/news/world-figure-skating-championships-results-2026
+CURH-JO,CURH,JO,Monde,JO 2026 – hommes (8 premiers),Places,0.5,112.5,https://en.wikipedia.org/wiki/Curling_at_the_2026_Winter_Olympics_%E2%80%93_Men%27s_tournament
+CURF-JO,CURF,JO,Monde,JO 2026 – femmes (8 premières),Places,0.5,112.5,https://en.wikipedia.org/wiki/Curling_at_the_2026_Winter_Olympics_%E2%80%93_Women%27s_tournament
+CURX-JO,CURX,JO,Monde,JO 2026 – double mixte,Places,1,100,https://www.olympedia.org/editions/72/sports/CUR
+HGH-JO,HGH,JO,Monde,JO 2026 – hommes (8 premiers),Places,0.5,125,https://en.wikipedia.org/wiki/Ice_hockey_at_the_2026_Winter_Olympics_%E2%80%93_Men%27s_tournament
+HGH-WC,HGH,Mondial,Monde,Championnat du monde 2026 – hommes (8 premiers),Places,0.5,125,https://en.wikipedia.org/wiki/2026_IIHF_World_Championship
+HGF-JO,HGF,JO,Monde,JO 2026 – femmes (8 premières),Places,0.5,125,https://en.wikipedia.org/wiki/Ice_hockey_at_the_2026_Winter_Olympics_%E2%80%93_Women%27s_tournament
+HGF-WC,HGF,Mondial,Monde,Championnat du monde féminin 2025 (8 premières),Places,0.5,125,https://en.wikipedia.org/wiki/2025_IIHF_Women%27s_World_Championship
+EQU-JO,EQU,JO,Monde,JO 2024 – équitation,Médailles,0.5,500,https://en.wikipedia.org/wiki/List_of_2024_Summer_Olympics_medal_winners
+VOI-JO,VOI,JO,Monde,JO 2024 – voile,Médailles,0.5,500,https://www.olympedia.org/editions/63/sports/SAL
+ESC-JO,ESC,JO,Monde,JO 2024 – escrime,Médailles,0.5,500,https://www.olympedia.org/editions/63/sports/FEN
+ESC-WC,ESC,Mondial,Monde,Mondiaux de Tbilissi 2025,Médailles,0.5,500,https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/2025_World_Fencing_Championships
+BOU-WG,BOU,Mondial,Monde,Jeux mondiaux 2025 – sports de boules,Médailles,1,1000,https://en.wikipedia.org/wiki/Boules_sports_at_the_2025_World_Games
+SRF-JO,SRF,JO,Monde,JO 2024 – surf,Médailles,0.5,500,https://www.olympedia.org/editions/63/sports/SRF
+ESCA-JO,ESCA,JO,Monde,JO 2024 – escalade,Médailles,0.5,500,https://www.olympedia.org/editions/63/sports/CLB
+WSH-WG,WSH,Mondial,Monde,Jeux mondiaux 2025 – wushu,Médailles,1,1000,https://en.wikipedia.org/wiki/Wushu_at_the_2025_World_Games
+MTH-WG,MTH,Mondial,Monde,Jeux mondiaux 2025 – muay-thaï,Médailles,1,1000,https://en.wikipedia.org/wiki/Muaythai_at_the_2025_World_Games
+SAU-WG,SAU,Majeur,Monde,Jeux mondiaux 2025 – sauvetage,Médailles,0.2,200,https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Lifesaving_at_the_2025_World_Games
+NAP-WG,NAP,Mondial,Monde,Jeux mondiaux 2025 – nage avec palmes,Médailles,1,1000,https://en.wikipedia.org/wiki/Finswimming_at_the_2025_World_Games
+KICK-WG,KICK,Mondial,Monde,Jeux mondiaux 2025 – kickboxing,Médailles,1,1000,https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Kickboxing_at_the_2025_World_Games
+SQH-WG,SQH,Majeur,Monde,Jeux mondiaux 2025 – hommes,Places,0.2,100,https://en.wikipedia.org/wiki/Squash_at_the_2025_World_Games
+SQF-WG,SQF,Majeur,Monde,Jeux mondiaux 2025 – femmes,Places,0.2,100,https://en.wikipedia.org/wiki/Squash_at_the_2025_World_Games
+PMH-JO,PMH,JO,Monde,JO 2024 – hommes,Places,0.5,250,https://en.wikipedia.org/wiki/List_of_2024_Summer_Olympics_medal_winners
+PMF-JO,PMF,JO,Monde,JO 2024 – femmes,Places,0.5,250,https://en.wikipedia.org/wiki/List_of_2024_Summer_Olympics_medal_winners
+FLAG-WG,FLAG,Majeur,Monde,Jeux mondiaux 2025 – flag football féminin,Places,0.2,200,https://en.wikipedia.org/wiki/Flag_football_at_the_2025_World_Games
+LAXF-WG,LAXF,Mondial,Monde,Jeux mondiaux 2025 – femmes,Places,1,500,https://en.wikipedia.org/wiki/Lacrosse_at_the_2025_World_Games
+LAXH-WC,LAXH,Mondial,Monde,Championnat du monde 2023 – hommes,Places,1,500,"https://worldlacrosse.sport/2023-world-lacrosse-mens-championship-concludes-after-11-days (Haudenosaunee, 3e, non retenue comme nation)"
+SAMB-WC,SAMB,Mondial,Monde,Mondiaux de Bichkek 2025 (toutes nations),Médailles,1,1000,https://www.sportaran.com/en/post/zavershilsya-chempionat-mira-po-sambo-2025-v-bishkeke-itogi-turnira-i-medalnyj-zachet
+DISC-ULT,DISC,Majeur,Monde,Jeux mondiaux 2025 – ultimate,Places,0.1,100,https://en.wikipedia.org/wiki/Flying_disc_at_the_2025_World_Games
+DISC-DG,DISC,Majeur,Monde,Jeux mondiaux 2025 – disc golf,Places,0.1,100,https://en.wikipedia.org/wiki/Flying_disc_at_the_2025_World_Games
+DAN-JO,DAN,JO,Monde,JO 2024 – breaking,Médailles,0.5,500,https://en.wikipedia.org/wiki/List_of_2024_Summer_Olympics_medal_winners
+DAN-WG,DAN,Mondial,Monde,Jeux mondiaux 2025 – danse sportive,Médailles,0.5,500,https://en.wikipedia.org/wiki/Dancesport_at_the_2025_World_Games
+NET-WC,NET,Mondial,Monde,Coupe du monde 2023,Places,1,1000,https://netball.sport/events-and-results-2/netball-world-cup/cape-town-2023
+DARH-WC,DARH,Mondial,Monde,Championnat du monde PDC 2026 – hommes,Places,1,500,https://dartsnews.com/pdc/pdc-world-darts-championship-semi-final-round-up-gian-van-veen-sets-final-showdown-with-luke-littler-after-gary-anderson-epic
+DARF-WC,DARF,Mondial,Monde,Championnat du monde WDF 2025 – femmes (finale),Places,1,500,https://dartsworld.com/2025/12/hedman-lifts-womens-world-title/
+GO-WC,GO,Mondial,Monde,Championnat du monde amateur 2025 (Vancouver),Places,1,1000,https://aims.sport/vancouver-makes-history-as-first-north-american-host-of-the-world-amateur-go-championship/2025
+BOBS-JO,BOBS,JO,Monde,JO 2026 – bobsleigh et skeleton,Médailles,1,1000,https://www.olympedia.org/editions/72/sports/
+JJ-WG,JJ,Mondial,Monde,Jeux mondiaux 2025 – ju-jitsu,Médailles,1,1000,https://en.wikipedia.org/wiki/Ju-jitsu_at_the_2025_World_Games
+BRIH-WC,BRIH,Mondial,Monde,Bermuda Bowl 2025 (podium),Places,1,500,https://news.bridgebase.com/?p=48590
+BRIF-WC,BRIF,Mondial,Monde,Venice Cup 2025 (podium),Places,1,500,https://news.bridgebase.com/?p=48590
+DRA-WG,DRA,Mondial,Monde,Jeux mondiaux 2025 – bateau-dragon,Médailles,1,1000,https://en.wikipedia.org/wiki/Dragon_boat_at_the_2025_World_Games
+PADH-WC,PADH,Mondial,Monde,Championnat du monde 2024 – hommes,Places,1,500,https://thepeninsulaqatar.com/article/03/11/2024/argentina-spain-clinch-world-titles-in-doha
+PADF-WC,PADF,Mondial,Monde,Championnat du monde 2024 – femmes,Places,1,500,https://thepeninsulaqatar.com/article/03/11/2024/argentina-spain-clinch-world-titles-in-doha
+WAK-WG,WAK,Mondial,Monde,Jeux mondiaux 2025 – wakeboard / wakesurf,Médailles,1,1000,https://en.wikipedia.org/wiki/Wakeboarding_at_the_2025_World_Games
+FA-WG,FA,Mondial,Monde,Jeux mondiaux 2025 – force athlétique,Médailles,1,1000,https://en.wikipedia.org/wiki/Powerlifting_at_the_2025_World_Games
+SKIA-JO,SKIA,JO,Monde,JO 2026 – ski-alpinisme,Médailles,1,1000,https://www.olympedia.org/editions/72/sports/SMT
+FLOH-WG,FLOH,Mondial,Monde,Jeux mondiaux 2025 – hommes,Places,1,500,https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Floorball_at_the_2025_World_Games
+FLOF-WG,FLOF,Mondial,Monde,Jeux mondiaux 2025 – femmes,Places,1,500,https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Floorball_at_the_2025_World_Games
+LUGE-JO,LUGE,JO,Monde,JO 2026 – luge,Médailles,1,1000,https://www.olympedia.org/editions/72/sports/LUG
+KABH-WC,KABH,Mondial,Monde,Coupe du monde IKF 2016 – hommes (dernière édition IKF),Places,1,500,https://www.deccanchronicle.com/sports/in-other-news/221016/kabaddi-wc-2016-india-crowned-champions-after-comeback-win-against-iran.html
+KABF-WC,KABF,Mondial,Monde,Coupe du monde 2025 – femmes,Places,1,500,https://www.newsonair.gov.in/india-beat-chinese-taipei-35-28-to-win-their-second-consecutive-womens-kabaddi-world-cup
+ORI-WG,ORI,Mondial,Monde,Jeux mondiaux 2025 – course d'orientation,Médailles,1,1000,https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Orienteering_at_the_2025_World_Games
+KOR-WG,KOR,Mondial,Monde,Jeux mondiaux 2025 – korfball en salle,Places,0.5,500,https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Korfball_at_the_2025_World_Games
+KOR-WGB,KOR,Mondial,Monde,Jeux mondiaux 2025 – beach korfball,Places,0.5,500,https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Korfball_at_the_2025_World_Games
+XQ-WC,XQ,Mondial,Monde,Championnat du monde 2025 (Shanghai),Places,1,1000,https://vietnamnews.vn/sports/1726120/viet-nam-wins-first-world-xiangqi-standard-title-in-shanghai.html
+SEP-WC,SEP,Mondial,Monde,Coupe du monde ISTAF 2025 (classement général),Places,1,1000,https://vov.gov.vn/vietnam-beat-thailand-to-win-sepak-takraw-world-cup-2025-dtnew-1072904
+KEN-WC,KEN,Mondial,Monde,19e championnats du monde (Milan 2024) – équipes hommes et femmes,Places,0.5,500,https://www.kendoaustralia.asn.au/content/?p=6988
+KEN-WCF,KEN,Mondial,Monde,19e championnats du monde (Milan 2024) – équipes femmes,Places,0.5,500,https://www.kendoaustralia.asn.au/content/?p=6988
+FAU-WC,FAU,Mondial,Monde,Championnat du monde hommes 2023 (Mannheim),Places,0.5,500,https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Fistball_World_Championships
+FAU-WCF,FAU,Mondial,Monde,Championnat du monde femmes 2024,Places,0.5,500,https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Fistball_World_Championships
+SIL-WC,SIL,Mondial,Monde,"Championnats du monde 2024, Abu Dhabi (seniors, 3 premières nations)",Médailles,1,1000,https://www.liputan6.com/bola/read/5847021/indonesia-torehkan-prestasi-gemilang-raih-gelar-juara-umum-kejuaraan-dunia-pencak-silat-di-abu-dhabi ; https://tdtt.gov.vn/news/id/88687/vietnam-pencak-silat-wins-18-gold-medals-5-silver-medals-5-bronze-medals-at-the-2024-world-championship
+RLGH-WC,RLGH,Mondial,Monde,Coupe du monde 2021 – hommes,Places,1,500,https://www.loverugbyleague.com/post/australia-win-rugby-league-world-cup-final-over-samoa-in-front-of-67502-at-old-trafford
+RLGF-WC,RLGF,Mondial,Monde,Coupe du monde 2021 – femmes,Places,1,500,https://www.loverugbyleague.com/?p=712368
+BANH-WC,BANH,Mondial,Monde,Championnat du monde 2026 – hommes,Places,1,500,https://en.wikipedia.org/wiki/2026_Bandy_World_Championship
+BANF-WC,BANF,Mondial,Monde,Championnat du monde 2026 – femmes,Places,1,500,https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/2026_Women's_Bandy_World_Championship
+VOV-WC,VOV,Mondial,Monde,Championnats du monde 2025 (Bali),Médailles,1,1000,https://en.wikipedia.org/wiki/2025_Vovinam_World_Championships
+KHOH-WC,KHOH,Mondial,Monde,Coupe du monde 2025 – hommes (jusqu'aux quarts),Places,1,500,https://en.wikipedia.org/wiki/2025_Kho_Kho_World_Cup ; demi-finales : https://kathmandupost.com/sports/2025/01/19/nepal-s-men-s-and-women-s-teams-reach-kho-kho-world-cup-finals
+KHOF-WC,KHOF,Mondial,Monde,Coupe du monde 2025 – femmes (jusqu'aux quarts),Places,1,500,https://en.wikipedia.org/wiki/2025_Kho_Kho_World_Cup ; demi-finales : https://kathmandupost.com/sports/2025/01/19/nepal-s-men-s-and-women-s-teams-reach-kho-kho-world-cup-finals
+SQH-PSA,SQH,Mondial,Monde,"Championnats du monde PSA 2026, Gizeh (jusqu'aux huitièmes)",Places,0.4,200,https://unsquashable.com/blogs/international-squash-magazine/2026-psa-world-squash-championships ; https://worldsquashchamps.com/2026-day-four/
+SQF-PSA,SQF,Mondial,Monde,"Championnats du monde PSA 2026, Gizeh (jusqu'aux huitièmes)",Places,0.4,200,https://unsquashable.com/blogs/international-squash-magazine/2026-psa-world-squash-championships ; https://worldsquashchamps.com/2026-day-four/
+SQH-WT,SQH,Mondial,Monde,"Championnats du monde par équipes WSF 2024, Hong Kong",Places,0.4,200,https://worldteamsquash.com/2024-wsf-daily-d1/ ; https://olympics.com/en/news/wsf-squash-world-team-champs-2024-egypt-men-women-double-triumph
+SQF-WT,SQF,Mondial,Monde,"Championnats du monde par équipes WSF 2024, Hong Kong",Places,0.4,200,https://worldteamsquash.com/2024-wsf-daily-d1/ ; https://olympics.com/en/news/wsf-squash-world-team-champs-2024-egypt-men-women-double-triumph
+CURH-WC,CURH,Mondial,Monde,Championnat du monde 2026 – hommes (8 premiers),Places,0.5,112.5,https://en.wikipedia.org/wiki/2026_World_Men%27s_Curling_Championship
+CURF-WC,CURF,Mondial,Monde,Championnat du monde 2026 – femmes (8 premières),Places,0.5,112.5,https://curlit.com/PDF/WWCC2026_ResultsSummary.pdf
+FIS-WC,FIS,Mondial,Monde,"Mondiaux FIS 2025 (alpin Saalbach, nordique Trondheim, freestyle et snowboard Engadine)",Médailles,0.5,500,https://en.wikipedia.org/wiki/FIS_Alpine_World_Ski_Championships_2025 ; https://en.wikipedia.org/wiki/FIS_Nordic_World_Ski_Championships_2025 ; https://en.wikipedia.org/wiki/FIS_Freestyle_Ski_and_Snowboarding_World_Championships_2025
+BIA-WC,BIA,Mondial,Monde,Mondiaux de Lenzerheide 2025,Médailles,0.5,500,https://en.wikipedia.org/wiki/Biathlon_World_Championships_2025
+PVL-WC,PVL,Mondial,Monde,Mondiaux simple distance de Hamar 2025,Médailles,0.5,200,https://en.wikipedia.org/wiki/2025_World_Single_Distances_Speed_Skating_Championships
+PST-WC,PST,Mondial,Monde,Mondiaux de Montréal 2026,Médailles,0.5,150,https://en.wikipedia.org/wiki/2026_World_Short_Track_Speed_Skating_Championships
+ESCA-WC,ESCA,Mondial,Monde,"Mondiaux de Séoul 2025 (bloc, difficulté, vitesse)",Médailles,0.5,500,https://en.wikipedia.org/wiki/2025_IFSC_Climbing_World_Championships
+VOI-WC,VOI,Mondial,Monde,"Championnats du monde de voile 2023, La Haye (dernière édition toutes séries olympiques)",Médailles,0.5,500,https://en.wikipedia.org/wiki/2023_Sailing_World_Championships
+SRF-WC,SRF,Mondial,Monde,"ISA World Surfing Games 2025, El Salvador (classement des nations, 8 premières)",Places,0.5,500,https://isasurf.org//pdfs/ISA_WSG_2025_final_results.pdf
+PMH-WC,PMH,Mondial,Monde,Mondiaux 2025 – hommes,Places,0.5,250,https://en.wikipedia.org/wiki/2025_World_Modern_Pentathlon_Championships
+PMF-WC,PMF,Mondial,Monde,Mondiaux 2025 – femmes,Places,0.5,250,https://en.wikipedia.org/wiki/2025_World_Modern_Pentathlon_Championships
+TRI-WC,TRI,Mondial,Monde,"Championnat du monde WTCS 2025 (classement final, 8 premiers hommes et 8 premières femmes)",Places,0.5,500,https://en.wikipedia.org/wiki/2025_World_Triathlon_Championship_Series
+SKB-WC,SKB,Mondial,Monde,Mondiaux de São Paulo 2026 (street et park ; 3e du street hommes non publiée),Médailles,0.5,500,https://www.worldskate.org/skateboarding/news-skateboarding/3869-wst-sao-paulo-world-championships-finals-report.html ; https://www.nbcsports.com/olympics/news/tom-schaar-minna-stess-world-skateboarding-championships-2026-results
+EQU-WC,EQU,Mondial,Monde,Mondiaux FEI d'Aix-la-Chapelle 2026 (hors para-dressage ; pas de deux : or seul publié),Médailles,0.5,500,https://www.equishop.com/en/blogs/blog-equishop/mistrzostwa-swiata-aachen-2026-medale-i-polskie-wyniki ; https://en.wikipedia.org/wiki/2026_FEI_World_Championships
+SAU-WC,SAU,Mondial,Monde,"Championnats du monde 2024, Gold Coast (équipes nationales open, 9 premières nations)",Médailles,0.8,800,https://en.wikipedia.org/wiki/2024_Lifesaving_World_Championships
+DISC-WUC,DISC,Mondial,Monde,"Championnats du monde d'ultimate 2024 (open, femmes, mixte)",Médailles,0.8,800,https://en.wikipedia.org/wiki/2024_World_Ultimate_Championships
+FLAG-WC,FLAG,Mondial,Monde,"Championnats du monde IFAF 2024, Lahti (8 premiers hommes et 8 premières femmes)",Places,0.8,800,https://jenkkifutis.fi/a-historic-world-championship-tournament-concluded-with-celebrations-for-the-usa-teams/

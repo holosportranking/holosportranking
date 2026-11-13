@@ -1,0 +1,152 @@
+rank,nation,nation_en,iso2,index,sport_rank,economic_rank,demographic_rank
+1,France,France,FR,98.11,3,4,5
+2,Royaume-Uni,United Kingdom,GB,96.9,4,6,8
+3,États-Unis,United States,US,95.98,1,5,20
+4,Japon,Japan,JP,95.87,5,3,15
+5,Australie,Australia,AU,95.22,8,13,3
+6,Italie,Italy,IT,94.85,7,8,12
+7,Allemagne,Germany,DE,94.84,6,9,13
+8,Espagne,Spain,ES,93.14,9,12,14
+9,Pays-Bas,Netherlands,NL,92.82,11,20,4
+10,Chine,China,CN,92.67,2,1,41
+11,Corée du Sud,South Korea,KR,92.1,10,14,16
+12,Nouvelle-Zélande,New Zealand,NZ,90.63,16,26,1
+13,Canada,Canada,CA,90.21,12,19,18
+14,Hongrie,Hungary,HU,88.23,19,24,11
+15,Suède,Sweden,SE,87.69,18,30,10
+16,Suisse,Switzerland,CH,87.5,17,36,7
+17,Ukraine,Ukraine,UA,87.2,20,11,28
+18,Brésil,Brazil,BR,85.69,13,7,54
+19,Belgique,Belgium,BE,83.91,22,37,17
+20,Norvège,Norway,NO,83.72,21,51,6
+21,Russie,Russia,RU,82.92,15,21,52
+22,Danemark,Denmark,DK,82.91,25,45,9
+23,Pologne,Poland,PL,82,23,28,35
+24,Ouzbékistan,Uzbekistan,UZ,81.93,29,10,42
+25,Thaïlande,Thailand,TH,81.32,24,16,49
+26,Inde,India,IN,81.16,14,2,83
+27,Slovénie,Slovenia,SI,80.45,35,47,2
+28,Tchéquie,Czech Republic (Czechia),CZ,79.84,30,41,21
+29,Argentine,Argentina,AR,79.46,28,23,45
+30,Taipei chinois,Taiwan,,79.43,26,46,26
+31,Égypte,Egypt,EG,78.4,27,15,61
+32,Kazakhstan,Kazakhstan,KZ,77.62,33,33,36
+33,Autriche,Austria,AT,76.24,34,53,22
+34,Iran,Iran,IR,75.68,32,18,64
+35,Serbie,Serbia,RS,75.48,41,42,24
+36,Afrique du Sud,South Africa,ZA,74.01,37,17,65
+37,Turquie,Turkey (Türkiye),TR,73.57,31,34,62
+38,Portugal,Portugal,PT,72.14,40,55,32
+39,Géorgie,Georgia,GE,71.22,48,52,25
+40,Mexique,Mexico,MX,70.85,36,27,75
+41,Finlande,Finland,FI,70.62,43,67,23
+42,Azerbaïdjan,Azerbaijan,AZ,70.3,45,44,44
+43,Viêt Nam,Vietnam,VN,69.85,39,25,77
+44,Colombie,Colombia,CO,69.2,42,31,69
+45,Jamaïque,Jamaica,JM,69.13,59,38,30
+46,Indonésie,Indonesia,ID,68.96,38,22,87
+47,Tunisie,Tunisia,TN,68.81,50,32,55
+48,Lettonie,Latvia,LV,66.62,55,71,19
+49,Bulgarie,Bulgaria,BG,65.5,51,66,38
+50,Arménie,Armenia,AM,65.3,60,57,31
+51,Croatie,Croatia,HR,65.03,54,74,27
+52,Roumanie,Romania,RO,64.86,44,65,56
+53,Irlande,Ireland,IE,64.02,46,93,29
+54,Israël,Israel,IL,63.86,47,75,46
+55,Grèce,Greece,GR,62.21,53,68,51
+56,Cuba,Cuba,CU,61.59,57,,59
+57,Porto Rico,Puerto Rico,PR,61.24,58,82,33
+58,Moldavie,Moldova,MD,61.18,65,62,40
+59,Hong Kong,Hong Kong,HK,60.8,52,86,43
+60,Malaisie,Malaysia,MY,60.4,49,64,73
+61,Corée du Nord,North Korea,KP,59.24,56,,71
+62,Kenya,Kenya,KE,58.7,63,29,91
+63,Lituanie,Lithuania,LT,56.97,64,91,37
+64,Philippines,Philippines,PH,56.22,61,39,99
+65,Venezuela,Venezuela,VE,55.67,70,40,84
+66,Pérou,Peru,PE,55.54,62,58,82
+67,Maroc,Morocco,MA,53.73,69,49,88
+68,Slovaquie,Slovakia,SK,52.98,66,90,57
+69,République dominicaine,Dominican Republic,DO,52.14,68,76,72
+70,Indes occidentales,Indes occidentales,,52,73,,
+71,Algérie,Algeria,DZ,51.6,67,63,90
+72,Jordanie,Jordan,JO,51.38,75,60,79
+73,Kirghizistan,Kyrgyzstan,KG,50.92,79,56,78
+74,Mongolie,Mongolia,MN,50.37,77,81,60
+75,Monaco,Monaco,MC,48.67,78,,
+76,Nigeria,Nigeria,NG,48.52,71,48,115
+77,Kosovo,Kosovo,XK,48.49,87,,58
+78,Biélorussie,Belarus,BY,48.36,72,88,74
+79,Fidji,Fiji,FJ,47.75,88,87,48
+80,Monténégro,Montenegro,ME,46.91,90,97,39
+81,Pakistan,Pakistan,PK,46.85,76,43,120
+82,Éthiopie,Ethiopia,ET,46.62,83,35,116
+83,Bénin,Benin,BJ,46.49,86,50,96
+84,Singapour,Singapore,SG,45.6,74,107,67
+85,Bahreïn,Bahrain,BH,45.41,84,103,53
+86,Samoa,Samoa,WS,45.18,102,89,34
+87,Équateur,Ecuador,EC,44.82,80,78,89
+88,Sénégal,Senegal,SN,43.74,89,54,102
+89,Sri Lanka,Sri Lanka,LK,43.26,81,79,95
+90,Tadjikistan,Tajikistan,TJ,43.25,91,61,94
+91,Macao,Macao,MO,41,92,119,47
+92,Chili,Chile,CL,40.31,82,96,93
+93,Bangladesh,Bangladesh,BD,38.61,85,70,123
+94,Uruguay,Uruguay,UY,37.2,95,101,81
+95,Côte d'Ivoire,Côte d'Ivoire,CI,36.13,94,77,113
+96,Estonie,Estonia,EE,35.88,100,110,70
+97,Cambodge,Cambodia,KH,34.8,98,83,107
+98,Zimbabwe,Zimbabwe,ZW,33.77,99,85,109
+99,Guatemala,Guatemala,GT,33.73,97,92,106
+100,Botswana,Botswana,BW,33.34,105,99,86
+101,Qatar,Qatar,QA,33.02,96,124,80
+102,Émirats arabes unis,United Arab Emirates,AE,32.79,93,113,98
+103,Grenade,Grenada,GD,31.5,121,115,50
+104,Ouganda,Uganda,UG,31.43,106,69,125
+105,Papouasie-Nouvelle-Guinée,Papua New Guinea,PG,31.29,108,80,111
+106,Turkménistan,Turkmenistan,TM,31.21,103,100,101
+107,Népal,Nepal,NP,30.7,104,84,118
+108,Mali,Mali,ML,30.61,109,72,121
+109,Soudan du Sud,South Sudan,SS,29.37,119,59,122
+110,Brunei,Brunei,BN,28.88,110,133,68
+111,Islande,Iceland,IS,28.73,112,132,66
+112,Panama,Panama,PA,28.48,107,112,97
+113,Sainte-Lucie,Saint Lucia,LC,27.34,123,122,63
+114,Liban,Lebanon,LB,27,113,98,108
+115,Luxembourg,Luxembourg,LU,26.62,111,136,76
+116,Afghanistan,Afghanistan,AF,26.54,117,73,128
+117,Arabie saoudite,Saudi Arabia,SA,25.93,101,118,117
+118,Salvador,El Salvador,SV,24.92,114,104,112
+119,Cap-Vert,Cabo Verde,CV,24.42,126,111,85
+120,Albanie,Albania,AL,24.08,116,114,103
+121,Cameroun,Cameroon,CM,23.71,115,94,127
+122,Chypre,Cyprus,CY,22.36,118,131,92
+123,Trinité-et-Tobago,Trinidad and Tobago,TT,20.51,122,126,100
+124,Angola,Angola,AO,20.3,120,102,129
+125,Bosnie-Herzégovine,Bosnia and Herzegovina,BA,19.14,124,120,110
+126,Paraguay,Paraguay,PY,18.09,124,117,119
+127,Mozambique,Mozambique,MZ,17.14,130,95,135
+128,Tahiti,French Polynesia,PF,16.44,135,,104
+129,Ghana,Ghana,GH,15.72,129,108,132
+130,Dominique,Dominica,DM,14.65,128,125,
+131,Tanzanie,Tanzania,TZ,14.36,131,105,139
+132,Bahamas,Bahamas,BS,13.87,133,138,105
+133,Zambie,Zambia,ZM,13.52,133,109,136
+134,Îles Vierges,U.S. Virgin Islands,VI,13.21,126,135,
+135,Burkina Faso,Burkina Faso,BF,13.2,135,106,137
+136,Namibie,Namibia,NA,12.45,132,127,126
+137,Vanuatu,Vanuatu,VU,11.92,142,123,114
+138,Nicaragua,Nicaragua,NI,10.4,135,128,131
+139,Honduras,Honduras,HN,8.04,140,129,134
+140,RD Congo,Democratic Republic of the Congo,CD,7.74,143,116,143
+141,Oman,Oman,OM,7.66,138,139,130
+142,Saint-Vincent-et-les-Grenadines,Saint Vincent and the Grenadines,VC,6.97,139,137,
+143,Libéria,Liberia,LR,6.72,145,121,140
+144,Îles Vierges britanniques,British Virgin Islands,VG,6.67,141,,
+145,Lesotho,Lesotho,LS,6.37,145,130,133
+146,Barbade,Barbados,BB,6.02,145,141,124
+147,Costa Rica,Costa Rica,CR,4.08,144,140,138
+148,Érythrée,Eritrea,ER,3.1,148,134,142
+149,Tonga,Tonga,TO,1.37,149,143,141
+150,Haïti,Haiti,HT,1.02,149,142,144
+151,Bermudes,Bermuda,BM,0.89,149,144,

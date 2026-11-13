@@ -1,0 +1,124 @@
+rank,acronym,name,sport,weight_pct,score_10,practice,audience,broadcast,olympic,practitioners_m,fans_m,level,method,status,reliability
+1,FIBA,Fédération Internationale de Basketball,Basketball,3.6154,8.76,7.8,8.1,10.0,10.0,610.0,3300.0,1 - Majeur,Complète,Attribuée,A
+2,FIFA,Fédération Internationale de Football Association,Football,3.2852,8.2,6.0,8.4,10.0,10.0,365.0,3500.0,1 - Majeur,Complète,Attribuée,A
+3,FIVB,Fédération Internationale de Volleyball,Volleyball,2.8809,7.49,7.1,4.0,10.0,10.0,500.0,800.0,1 - Majeur,Complète,Attribuée,A
+4,ITTF,International Table Tennis Federation,Tennis de table,2.5847,6.95,5.5,4.1,10.0,10.0,300.0,850.0,1 - Majeur,Complète,Attribuée,A
+5,World Athletics,World Athletics,Athlétisme,2.5202,6.83,5.0,4.3,10.0,10.0,,,1 - Majeur,Complète,Attribuée,A
+6,UCI,Union Cycliste Internationale,Cyclisme,2.3718,6.55,5.0,3.4,9.8,10.0,,,1 - Majeur,Complète,Attribuée,A
+7,FIDE,Fédération Internationale des Échecs,Échecs,2.2572,6.33,7.8,1.8,9.6,5.0,605.0,,1 - Majeur,Complète,Attribuée,A
+8,BWF,Badminton World Federation,Badminton,2.2314,6.28,4.5,3.8,9.0,10.0,200.0,709.0,1 - Majeur,Complète,Attribuée,A
+9,ITF,International Tennis Federation,Tennis,2.2211,6.26,3.3,4.5,9.9,10.0,106.0,1000.0,1 - Majeur,Complète,Attribuée,A
+10,World Aquatics,World Aquatics (ex-FINA),Sports aquatiques,2.2159,6.25,4.0,3.4,10.0,10.0,,,1 - Majeur,Complète,Attribuée,A
+11,ICC,International Cricket Council,Cricket,1.841,5.5,5.5,4.5,5.0,8.0,300.0,1000.0,2 - Important,Complète,Attribuée,A
+12,World Taekwondo,World Taekwondo,Taekwondo,1.6878,5.18,2.5,1.2,10.0,10.0,,,2 - Important,Complète,Attribuée,A
+13,IGF,International Golf Federation,Golf,1.6783,5.16,3.3,3.0,7.0,10.0,112.2,450.0,2 - Important,Complète,Attribuée,A
+14,IJF,International Judo Federation,Judo,1.6267,5.05,2.0,1.5,9.9,10.0,,,2 - Important,Complète,Attribuée,A
+15,IHF,International Handball Federation,Handball,1.608,5.01,1.6,1.8,10.0,10.0,27.0,,2 - Important,Complète,Attribuée,A
+16,World Gymnastics,World Gymnastics (ex-FIG),Gymnastique,1.4568,4.68,2.5,2.2,7.0,10.0,,,2 - Important,Complète,Attribuée,A
+17,WBSC,World Baseball Softball Confederation,Baseball,1.394,4.54,2.4,3.2,6.8,8.0,60.0,500.0,2 - Important,Complète,Attribuée,A
+18,ICF,International Canoe Federation,Canoë-kayak,1.3365,4.41,1.6,0.8,8.6,10.0,,,2 - Important,Complète,Attribuée,A
+18,UWW,United World Wrestling,Lutte,1.3365,4.41,1.3,1.2,8.6,10.0,,,2 - Important,Complète,Attribuée,A
+20,IWF,International Weightlifting Federation,Haltérophilie,1.3233,4.38,1.0,1.0,9.1,10.0,,,2 - Important,Complète,Attribuée,A
+21,World Boxing,World Boxing,Boxe,1.3015,4.33,2.5,2.8,5.0,10.0,,,2 - Important,Complète,Attribuée,A
+22,World Skate,World Skate,Skateboard et roller,1.2884,4.3,2.5,1.0,6.7,10.0,,,2 - Important,Complète,Attribuée,B
+23,WCBS,World Confederation of Billiards Sports,Snooker,1.2754,4.27,3.2,3.2,6.4,5.0,,500.0,2 - Important,Complète,Attribuée,B
+24,World Rugby,World Rugby,Rugby à XV,1.2538,4.22,0.9,4.0,5.6,10.0,8.46,800.0,2 - Important,Complète,Attribuée,A
+25,World Archery,World Archery Federation,Tir à l'arc,1.2281,4.16,1.3,1.0,7.8,10.0,,,2 - Important,Complète,Attribuée,A
+26,FIH,International Hockey Federation,Hockey sur gazon,1.2195,4.14,1.6,2.2,6.1,10.0,,,2 - Important,Complète,Attribuée,A
+27,World Triathlon,World Triathlon,Triathlon,1.2025,4.1,1.0,0.8,8.2,10.0,,,2 - Important,Complète,Attribuée,A
+28,ISSF,International Shooting Sport Federation,Tir sportif,1.194,4.08,1.3,0.8,7.7,10.0,,,2 - Important,Complète,Attribuée,A
+29,WKF,World Karate Federation,Karaté,1.1728,4.03,2.0,0.8,9.5,5.0,,,2 - Important,Complète,Attribuée,B
+30,World Rowing,World Rowing (ex-FISA),Aviron,1.1392,3.95,1.0,0.8,7.6,10.0,,,3 - Intermédiaire,Complète,Attribuée,A
+31,FIS,Fédération Internationale de Ski et de Snowboard,Ski et snowboard,1.1308,3.93,2.0,1.8,6.3,8.0,,,3 - Intermédiaire,Complète,Attribuée,A
+32,IESF,International Esports Federation,,1.1267,3.92,3.2,3.6,7.0,1.0,,640.8,3 - Intermédiaire,Complète,Non attribuée,–
+33,FEI,Fédération Équestre Internationale,Équitation,1.1017,3.86,1.3,1.2,6.4,10.0,,,3 - Intermédiaire,Complète,Attribuée,A
+34,World Sailing,World Sailing,Voile,1.0894,3.83,1.3,0.8,6.7,10.0,,,3 - Intermédiaire,Complète,Attribuée,A
+35,FIA,Fédération Internationale de l'Automobile,Sport automobile,1.0688,3.78,0.8,4.1,6.9,5.0,,826.5,3 - Intermédiaire,Complète,Attribuée,A
+36,FIE,Fédération Internationale d'Escrime,Escrime,1.0402,3.71,0.6,0.8,7.2,10.0,,,3 - Intermédiaire,Complète,Attribuée,A
+37,WPBF,World Pétanque and Bowls Federation,Sports de boules,1.0362,3.7,2.5,0.6,7.7,5.0,,,3 - Intermédiaire,Complète,Attribuée,B
+38,ISA,International Surfing Association,Surf,0.9798,3.56,1.3,1.0,5.4,10.0,,,3 - Intermédiaire,Complète,Attribuée,A
+39,IFBB,International Fitness and Bodybuilding Federation,,0.9401,3.46,1.6,0.8,9.0,3.0,,,3 - Intermédiaire,Complète,Non attribuée,–
+40,World Climbing,World Climbing (ex-IFSC),Escalade,0.9323,3.44,1.6,1.0,4.5,10.0,,,3 - Intermédiaire,Complète,Attribuée,A
+41,IWUF,International Wushu Federation,Wushu,0.9205,3.41,1.6,0.8,7.6,5.0,,,3 - Intermédiaire,Complète,Attribuée,B
+42,CIPS,Confédération Internationale de la Pêche Sportive,,0.8894,3.33,4.0,0.5,5.4,3.0,,,3 - Intermédiaire,Complète,Non attribuée,–
+43,IFMA,International Federation of Muaythai Associations,Muay-thaï,0.8624,3.26,1.3,1.2,7.0,5.0,,,3 - Intermédiaire,Complète,Attribuée,B
+44,ILSF,International Life Saving Federation,Sauvetage sportif,0.8357,3.19,0.6,0.3,8.6,5.0,,,3 - Intermédiaire,Complète,Attribuée,A
+45,CMAS,Confédération Mondiale des Activités Subaquatiques,Nage avec palmes,0.813,3.13,1.3,0.3,7.4,5.0,,,3 - Intermédiaire,Complète,Attribuée,B
+45,ISU,International Skating Union,Patinage,0.813,3.13,1.0,1.5,4.8,8.0,,,3 - Intermédiaire,Complète,Attribuée,A
+47,WAKO,World Association of Kickboxing Organizations,Kickboxing,0.8054,3.11,1.3,0.8,6.8,5.0,,,3 - Intermédiaire,Complète,Attribuée,B
+48,World Squash,World Squash Federation,Squash,0.7942,3.08,1.0,0.6,5.5,8.0,,,3 - Intermédiaire,Complète,Attribuée,A
+49,IIHF,International Ice Hockey Federation,Hockey sur glace,0.7756,3.03,0.8,2.2,4.0,8.0,,,3 - Intermédiaire,Complète,Attribuée,A
+49,UIPM,Union Internationale de Pentathlon Moderne,Pentathlon moderne,0.7756,3.03,0.3,0.5,5.2,10.0,,,3 - Intermédiaire,Complète,Attribuée,C
+51,FIM,Fédération Internationale de Motocyclisme,Moto,0.7682,3.01,0.8,2.2,5.7,5.0,,,3 - Intermédiaire,Complète,Attribuée,B
+52,IBF,International Bowling Federation,,0.7461,2.95,2.0,0.5,5.5,5.0,,,3 - Intermédiaire,Complète,Non attribuée,–
+53,IFAF,International Federation of American Football,Football américain / flag,0.7387,2.93,0.8,2.2,3.6,8.0,,,3 - Intermédiaire,Complète,Attribuée,A
+54,IMMAF,International Mixed Martial Arts Federation,,0.6491,2.68,1.0,2.8,5.9,1.0,,,3 - Intermédiaire,Complète,Non attribuée,–
+55,World Lacrosse,World Lacrosse,Lacrosse,0.6316,2.63,0.5,0.6,4.4,8.0,,,3 - Intermédiaire,Complète,Attribuée,B
+56,ICU,International Cheer Union,,0.6212,2.6,1.0,0.5,5.5,5.0,,,3 - Intermédiaire,Complète,Non attribuée,–
+57,FIAS,International Sambo Federation,Sambo,0.6074,2.56,0.6,0.5,5.9,5.0,,,3 - Intermédiaire,Complète,Attribuée,B
+57,WFDF,World Flying Disc Federation,Disque volant,0.6074,2.56,0.8,0.3,5.8,5.0,,,3 - Intermédiaire,Complète,Attribuée,A
+59,WDSF,World DanceSport Federation,Danse sportive et breaking,0.5971,2.53,1.3,0.6,4.7,5.0,,,3 - Intermédiaire,Complète,Attribuée,A
+60,World Curling,World Curling Federation,Curling,0.5498,2.39,0.4,0.8,3.4,8.0,,,4 - Confidentiel,Complète,Attribuée,A
+61,IBU,International Biathlon Union,Biathlon,0.5431,2.37,0.4,1.2,2.9,8.0,,,4 - Confidentiel,Complète,Attribuée,A
+62,UIAA,Union Internationale des Associations d'Alpinisme,,0.5365,2.35,1.0,0.4,4.6,5.0,,,4 - Confidentiel,Complète,Non attribuée,–
+62,World Netball,World Netball,Netball,0.5365,2.35,1.0,1.0,4.0,5.0,,,4 - Confidentiel,Allégée,Attribuée,B
+64,WDF,World Darts Federation,Fléchettes,0.5332,2.34,1.6,1.5,3.8,3.0,,,4 - Confidentiel,Allégée,Attribuée,C
+65,IGF (go),International Go Federation,Go,0.5299,2.33,2.0,1.0,3.7,3.0,,,4 - Confidentiel,Allégée,Attribuée,C
+66,IBSF,International Bobsleigh and Skeleton Federation,Bobsleigh et skeleton,0.52,2.3,0.2,0.6,3.5,8.0,,,4 - Confidentiel,Allégée,Attribuée,B
+67,JJIF,Ju-Jitsu International Federation,Ju-jitsu,0.5168,2.29,0.6,0.3,6.2,3.0,,,4 - Confidentiel,Allégée,Attribuée,B
+68,WBF,World Bridge Federation,Bridge,0.507,2.26,0.8,0.3,4.6,5.0,,,4 - Confidentiel,Allégée,Attribuée,C
+69,FIP,International Padel Federation,Padel,0.494,2.22,1.9,0.8,4.8,1.0,35.0,,4 - Confidentiel,Allégée,Attribuée,B
+69,IDBF,International Dragon Boat Federation,Bateau-dragon,0.494,2.22,2.2,0.5,3.5,3.0,50.0,,4 - Confidentiel,Allégée,Attribuée,B
+71,IFS,International Sumo Federation,,0.478,2.17,0.4,1.0,4.1,5.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+72,FAI,Fédération Aéronautique Internationale,,0.4684,2.14,0.6,0.5,4.2,5.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+73,IWWF,International Waterski & Wakeboard Federation,Ski nautique et wakeboard,0.4589,2.11,0.6,0.3,4.3,5.0,,,4 - Confidentiel,Allégée,Attribuée,B
+74,IPF,International Powerlifting Federation,Force athlétique,0.4558,2.1,1.0,0.4,4.8,3.0,,,4 - Confidentiel,Allégée,Attribuée,B
+75,ISMF,International Ski Mountaineering Federation,Ski-alpinisme,0.4526,2.09,0.4,0.4,2.6,8.0,,,4 - Confidentiel,Allégée,Attribuée,B
+76,IFF,International Floorball Federation,Floorball,0.437,2.04,0.6,0.4,3.9,5.0,,,4 - Confidentiel,Allégée,Attribuée,B
+77,FIL,Fédération Internationale de Luge,Luge,0.4308,2.02,0.2,0.5,2.5,8.0,,,4 - Confidentiel,Allégée,Attribuée,B
+78,IPSC,International Practical Shooting Confederation,,0.4277,2.01,0.6,0.3,5.1,3.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+79,FITEQ,Fédération Internationale de Teqball,,0.4093,1.95,0.5,0.4,4.9,3.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+79,IKF (kabaddi),International Kabaddi Federation,Kabaddi,0.4093,1.95,2.0,2.9,1.5,1.0,,435.0,4 - Confidentiel,Allégée,Attribuée,B
+79,IOF,International Orienteering Federation,Course d'orientation,0.4093,1.95,0.5,0.3,3.8,5.0,,,4 - Confidentiel,Allégée,Attribuée,B
+82,FIP (polo),Federation of International Polo,,0.3882,1.88,0.3,0.5,3.6,5.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+82,IBJJF,International Brazilian Jiu-Jitsu Federation,,0.3882,1.88,1.0,0.5,5.0,1.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+82,IRF,International Racquetball Federation,,0.3882,1.88,0.5,0.3,3.5,5.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+82,TWIF,Tug of War International Federation,,0.3882,1.88,0.5,0.2,3.6,5.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+86,IFMP,International Federation of Match Poker,,0.3763,1.84,1.6,1.0,3.5,1.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+87,WAF,World Armwrestling Federation,,0.3733,1.83,0.8,0.5,3.9,3.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+88,FMJD,Fédération Mondiale du Jeu de Dames,,0.3645,1.8,1.0,0.3,3.7,3.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+89,IKF,International Korfball Federation,Korfball,0.3586,1.78,0.3,0.3,3.4,5.0,,,4 - Confidentiel,Allégée,Attribuée,B
+90,IAF,International Aikido Federation,,0.3528,1.76,0.6,0.3,4.1,3.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+90,UIM,Union Internationale Motonautique,,0.3528,1.76,0.3,0.5,3.1,5.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+92,WOF,World Obstacle (FISO),,0.3384,1.71,0.6,0.3,5.1,1.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+93,WXF,World Xiangqi Federation,Xiangqi,0.3156,1.63,2.0,0.6,2.5,1.0,,,4 - Confidentiel,Allégée,Attribuée,C
+94,IPF (pickleball),International Pickleball Federation,,0.31,1.61,1.6,0.6,3.0,1.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+95,IFI,International Federation Icestocksport,,0.3017,1.58,0.3,0.2,2.7,5.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+96,ISTF,International Soft Tennis Federation,,0.2962,1.56,0.8,0.4,2.9,3.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+97,IYSF,International Yoga Sports Federation,,0.2907,1.54,1.6,0.3,3.0,1.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+98,ITSF,International Table Soccer Federation,,0.2825,1.51,1.6,0.3,2.9,1.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+99,WCA,World Cube Association,,0.2798,1.5,0.2,0.3,4.8,1.0,0.29,,4 - Confidentiel,Allégée,Non attribuée,–
+100,ISTAF,International Sepaktakraw Federation,Sepak takraw,0.2691,1.46,0.6,0.6,2.6,3.0,,,4 - Confidentiel,Allégée,Attribuée,C
+100,WMF,World Minigolfsport Federation,,0.2691,1.46,0.6,0.2,3.0,3.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+102,FIK,International Kendo Federation,Kendo,0.2664,1.45,0.5,0.3,3.0,3.0,,,4 - Confidentiel,Allégée,Attribuée,B
+102,IJRU,International Jump Rope Union,,0.2664,1.45,1.0,0.3,3.5,1.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+104,IFA,International Fistball Association,Balle au poing,0.2558,1.41,0.3,0.2,3.2,3.0,,,4 - Confidentiel,Allégée,Attribuée,C
+105,IFHA,International Federation of Horseracing Authorities,,0.2506,1.39,0.4,1.8,2.6,1.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+106,FISav,Fédération Internationale de Savate,,0.2428,1.36,0.3,0.2,3.0,3.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+106,IPSF (silat),International Pencak Silat Federation (PERSILAT),Pencak silat,0.2428,1.36,0.8,0.5,3.2,1.0,,,4 - Confidentiel,Allégée,Attribuée,C
+108,IRL,International Rugby League,Rugby à XIII,0.2376,1.34,0.6,1.2,2.7,1.0,,,4 - Confidentiel,Allégée,Attribuée,B
+109,FIPV,Fédération Internationale de Pelote Basque,,0.235,1.33,0.3,0.3,1.6,5.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+110,FIB,Federation of International Bandy,Bandy,0.2173,1.26,0.3,0.3,1.3,5.0,,,4 - Confidentiel,Allégée,Attribuée,B
+111,WFPF,World Freerunning Parkour Federation,,0.2049,1.21,0.6,0.4,3.0,1.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+112,IFKO,International Federation of Kitesports Organisations,,0.2,1.19,0.6,0.3,3.0,1.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+113,IRaF,International Rafting Federation,,0.1903,1.15,0.5,0.3,3.0,1.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+114,IKKF,International Kho Kho Federation,Kho kho,0.1856,1.13,1.0,0.5,2.0,1.0,,,4 - Confidentiel,Allégée,Attribuée,B
+114,WVF,World Vovinam Federation,Vovinam,0.1856,1.13,0.5,0.2,3.0,1.0,,,4 - Confidentiel,Allégée,Attribuée,B
+116,AFI,Australian Football International,,0.1738,1.08,0.5,1.0,2.0,1.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+117,WDA,World Dodgeball Association,,0.1691,1.06,0.6,0.3,2.5,1.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+118,WSF (strongman),World Strongman Federation,,0.1622,1.03,0.3,0.6,2.5,1.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+119,IFSS,International Federation of Sleddog Sports,,0.1577,1.01,0.3,0.3,1.5,3.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+120,IFFFF,International Footvolley Federation,,0.127,0.87,0.4,0.3,2.0,1.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+121,GAA,Gaelic Athletic Association,,0.1166,0.82,0.4,0.6,1.5,1.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+122,FIFG,Federation for International FootGolf,,0.1145,0.81,0.3,0.2,2.0,1.0,,,4 - Confidentiel,Allégée,Non attribuée,–
+123,IFF (croquet),World Croquet Federation,,0.0706,0.58,0.3,0.2,1.1,1.0,,,4 - Confidentiel,Allégée,Non attribuée,–

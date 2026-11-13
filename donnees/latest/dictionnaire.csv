@@ -1,0 +1,100 @@
+file,column,type,description_fr,description_en
+performance_reelle.csv,rank,integer,Rang de performance réelle,Overall performance rank
+performance_reelle.csv,nation,string,Nom de la nation (français),Nation name (French)
+performance_reelle.csv,nation_en,string,Nom de la nation (anglais),Nation name (English)
+performance_reelle.csv,iso2,string,Code pays ISO 3166-1 alpha-2,ISO 3166-1 alpha-2 country code
+performance_reelle.csv,index,number,Indice de performance réelle (0 à 100),Overall performance index (0 to 100)
+performance_reelle.csv,sport_rank,integer,Rang au classement sportif,Sport ranking position
+performance_reelle.csv,economic_rank,integer,Rang d'efficience économique,Economic efficiency rank
+performance_reelle.csv,demographic_rank,integer,Rang d'efficience démographique,Demographic efficiency rank
+classement_sportif.csv,rank,integer,Rang sportif,Sport rank
+classement_sportif.csv,nation,string,Nation (français),Nation (French)
+classement_sportif.csv,nation_en,string,Nation (anglais),Nation (English)
+classement_sportif.csv,iso2,string,Code ISO alpha-2,ISO alpha-2 code
+classement_sportif.csv,score,number,Score sportif (apport cumulé de tous les sports),Sport score (sum of weighted contributions)
+classement_sportif.csv,raw_points,number,"Somme brute des points sur 1000, sans pondération",Unweighted sum of points out of 1000
+classement_sportif.csv,federations,integer,Nombre de fédérations où la nation marque des points,Number of federations where the nation scores
+femmes_hommes.csv,nation,string,Nation (français),Nation (French)
+femmes_hommes.csv,nation_en,string,Nation (anglais),Nation (English)
+femmes_hommes.csv,iso2,string,Code ISO alpha-2,ISO alpha-2 code
+femmes_hommes.csv,women_score,number,Score féminin,Women's score
+femmes_hommes.csv,women_rank,integer,Rang féminin,Women's rank
+femmes_hommes.csv,men_score,number,Score masculin,Men's score
+femmes_hommes.csv,men_rank,integer,Rang masculin,Men's rank
+femmes_hommes.csv,women_share_pct,number,Part féminine du score (%),Women's share of the score (%)
+efficience_economique.csv,rank,integer,Rang d'efficience économique,Economic efficiency rank
+efficience_economique.csv,nation,string,Nation (français),Nation (French)
+efficience_economique.csv,nation_en,string,Nation (anglais),Nation (English)
+efficience_economique.csv,iso2,string,Code ISO alpha-2,ISO alpha-2 code
+efficience_economique.csv,efficiency,number,Efficience (score réel / score attendu × 1000),Efficiency (actual / expected score × 1000)
+efficience_economique.csv,score,number,Score sportif réel,Actual sport score
+efficience_economique.csv,expected_score,number,Score attendu,Expected score
+efficience_economique.csv,gdp_ppp_per_capita,number,PIB PPA par habitant (dollars internationaux),GDP PPP per capita (international dollars)
+efficience_demographique.csv,rank,integer,Rang d'efficience démographique,Demographic efficiency rank
+efficience_demographique.csv,nation,string,Nation (français),Nation (French)
+efficience_demographique.csv,nation_en,string,Nation (anglais),Nation (English)
+efficience_demographique.csv,iso2,string,Code ISO alpha-2,ISO alpha-2 code
+efficience_demographique.csv,efficiency,number,Efficience (score réel / score attendu × 1000),Efficiency (actual / expected score × 1000)
+efficience_demographique.csv,score,number,Score sportif réel,Actual sport score
+efficience_demographique.csv,expected_score,number,Score attendu,Expected score
+efficience_demographique.csv,population,integer,Population,Population
+points_par_federation.csv,nation,string,Nation (français),Nation (French)
+points_par_federation.csv,nation_en,string,Nation (anglais),Nation (English)
+points_par_federation.csv,iso2,string,Code ISO alpha-2,ISO alpha-2 code
+points_par_federation.csv,federation,string,Sigle de la fédération,Federation acronym
+points_par_federation.csv,sport,string,Sport (français),Sport (French)
+points_par_federation.csv,points_per_1000,number,Points obtenus sur les 1000 de la fédération,Points out of the federation's 1000
+points_par_federation.csv,weight_pct,number,Poids de la fédération (%),Federation weight (%)
+points_par_federation.csv,contribution,number,Apport au score (points × poids),Contribution to the score (points × weight)
+federations.csv,rank,integer,Rang de cotation,Rating rank
+federations.csv,acronym,string,Sigle,Acronym
+federations.csv,name,string,Nom officiel,Official name
+federations.csv,sport,string,Sport (français),Sport (French)
+federations.csv,weight_pct,number,Poids relatif (%),Relative weight (%)
+federations.csv,score_10,number,Note globale sur 10,Overall score out of 10
+federations.csv,practice,number,Note pratique,Participation score
+federations.csv,audience,number,Note audience,Audience score
+federations.csv,broadcast,number,Note diffusion,Broadcast score
+federations.csv,olympic,number,Note olympique,Olympic score
+federations.csv,practitioners_m,number,Pratiquants (millions),Practitioners (millions)
+federations.csv,fans_m,number,Fans (millions),Fans (millions)
+federations.csv,level,string,Niveau,Level
+federations.csv,method,string,"Méthode de calcul (Complète, Allégée…)",Calculation method
+federations.csv,status,string,Statut (Attribuée ou non),Status (attributed or not)
+federations.csv,reliability,string,"Note de fiabilité (A, B, C)","Reliability grade (A, B, C)"
+disciplines.csv,code,string,Code discipline,Discipline code
+disciplines.csv,federation,string,Sigle de la fédération,Federation acronym
+disciplines.csv,gender,string,"Genre (Hommes, Femmes, Mixte)",Gender
+disciplines.csv,discipline,string,Discipline,Discipline
+disciplines.csv,type,string,Principale ou secondaire,Main or secondary
+disciplines.csv,share_federation,number,Part dans la fédération,Share of the federation
+disciplines.csv,share_ranking,number,Part du classement mondial,Share given to the world ranking
+disciplines.csv,w_olympics,number,Poids des JO,Olympic Games weight
+disciplines.csv,w_worlds,number,Poids des Mondiaux,World Championships weight
+disciplines.csv,w_majors,number,Poids des majeurs,Majors weight
+disciplines.csv,w_continental,number,Poids des continentaux,Continental weight
+competitions.csv,code,string,Code compétition,Competition code
+competitions.csv,discipline,string,Code discipline,Discipline code
+competitions.csv,type,string,"Type (JO, Mondial, Majeur, Continental…)",Type
+competitions.csv,zone,string,Zone,Zone
+competitions.csv,name,string,Nom de la compétition,Competition name
+competitions.csv,mode,string,"Mode de calcul (Places, Médailles, Points)",Scoring mode
+competitions.csv,share_discipline,number,Part de la discipline,Share of the discipline
+competitions.csv,points,number,Points distribués,Points distributed
+competitions.csv,source,string,Lien vers la source,Source link
+resultats.csv,competition,string,Code compétition,Competition code
+resultats.csv,nation,string,Nation (français),Nation (French)
+resultats.csv,nation_en,string,Nation (anglais),Nation (English)
+resultats.csv,place_from,integer,Place (début d'intervalle),Place (start of range)
+resultats.csv,place_to,integer,Place (fin d'intervalle),Place (end of range)
+resultats.csv,gold,integer,Médailles d'or,Gold medals
+resultats.csv,silver,integer,Médailles d'argent,Silver medals
+resultats.csv,bronze,integer,Médailles de bronze,Bronze medals
+resultats.csv,points,number,Points attribués,Points awarded
+classements_mondiaux.csv,discipline,string,Code discipline,Discipline code
+classements_mondiaux.csv,rank,integer,Rang officiel,Official rank
+classements_mondiaux.csv,nation,string,Nation (français),Nation (French)
+classements_mondiaux.csv,nation_en,string,Nation (anglais),Nation (English)
+classements_mondiaux.csv,name_in_source,string,Nom tel qu'écrit dans la source,Name as written in the source
+classements_mondiaux.csv,counted,integer,1 si compté (plafond par nation),1 if counted (per-nation cap)
+classements_mondiaux.csv,points,number,Points attribués,Points awarded

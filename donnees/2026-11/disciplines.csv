@@ -1,0 +1,139 @@
+code,federation,gender,discipline,type,share_federation,share_ranking,w_olympics,w_worlds,w_majors,w_continental
+BKM,FIBA,Hommes,Basketball 5x5,Principale,0.4,0.5,0.35,0.35,0,0.3
+B3M,FIBA,Hommes,Basketball 3x3,Secondaire,0.1,0,0.35,0.35,0,0.3
+BKF,FIBA,Femmes,Basketball 5x5,Principale,0.4,0.5,0.35,0.35,0,0.3
+B3F,FIBA,Femmes,Basketball 3x3,Secondaire,0.1,0,0.35,0.35,0,0.3
+FBM,FIFA,Hommes,Football,Principale,0.4,0.5,0.1,0.6,0,0.3
+FSM,FIFA,Hommes,Futsal,Secondaire,0.05,0,0,0.7,0,0.3
+BSM,FIFA,Hommes,Beach soccer,Secondaire,0.05,0.5,0,0.7,0,0.3
+FBF,FIFA,Femmes,Football,Principale,0.4,0.5,0.35,0.35,0,0.3
+FSF,FIFA,Femmes,Futsal,Secondaire,0.1,0,0,0.7,0,0.3
+VBM,FIVB,Hommes,Volleyball,Principale,0.4,0.5,0.35,0.35,0,0.3
+BVM,FIVB,Hommes,Beach-volley,Secondaire,0.1,0,0.35,0.35,0,0.3
+VBF,FIVB,Femmes,Volleyball,Principale,0.4,0.5,0.35,0.35,0,0.3
+BVF,FIVB,Femmes,Beach-volley,Secondaire,0.1,0,0.35,0.35,0,0.3
+TTSH,ITTF,Hommes,Tennis de table – simple,Principale,0.27,0.5,0.35,0.35,0,0.3
+TTDH,ITTF,Hommes,Tennis de table – double,Principale,0.09,0,0.35,0.35,0,0.3
+TTEH,ITTF,Hommes,Tennis de table – équipes,Principale,0.09,0,0.35,0.35,0,0.3
+TTSF,ITTF,Femmes,Tennis de table – simple,Principale,0.27,0.5,0.35,0.35,0,0.3
+TTDF,ITTF,Femmes,Tennis de table – double,Principale,0.09,0,0.35,0.35,0,0.3
+TTEF,ITTF,Femmes,Tennis de table – équipes,Principale,0.09,0,0.35,0.35,0,0.3
+TTMX,ITTF,Mixte,Tennis de table – double mixte,Principale,0.1,0,0.35,0.35,0,0.3
+TNSH,ITF,Hommes,Tennis – simple,Principale,0.27,0.5,0.25,0,0.55,0.2
+TNDH,ITF,Hommes,Tennis – double,Principale,0.09,0,0.25,0,0.55,0.2
+TNEH,ITF,Hommes,Tennis – Coupe Davis,Principale,0.09,0,0,1,0,0
+TNSF,ITF,Femmes,Tennis – simple,Principale,0.27,0.5,0.25,0,0.55,0.2
+TNDF,ITF,Femmes,Tennis – double,Principale,0.09,0,0.25,0,0.55,0.2
+TNEF,ITF,Femmes,Tennis – Billie Jean King Cup,Principale,0.09,0,0,1,0,0
+TNMX,ITF,Mixte,Tennis – double mixte,Principale,0.1,0,0.25,0,0.55,0.2
+BDSH,BWF,Hommes,Badminton – simple,Principale,0.27,0.5,0.35,0.35,0,0.3
+BDDH,BWF,Hommes,Badminton – double,Principale,0.09,0.5,0.35,0.35,0,0.3
+BDEH,BWF,Hommes,Badminton – Thomas Cup,Principale,0.09,0,0,1,0,0
+BDSF,BWF,Femmes,Badminton – simple,Principale,0.27,0.5,0.35,0.35,0,0.3
+BDDF,BWF,Femmes,Badminton – double,Principale,0.09,0.5,0.35,0.35,0,0.3
+BDEF,BWF,Femmes,Badminton – Uber Cup,Principale,0.09,0,0,1,0,0
+BDMX,BWF,Mixte,Badminton – double mixte,Principale,0.1,0.5,0.35,0.35,0,0.3
+CHO,FIDE,Hommes,Échecs – open,Principale,0.5,0.5,0,1,0,0
+CHF,FIDE,Femmes,Échecs – féminin,Principale,0.5,0.5,0,1,0,0
+ATH,World Athletics,Mixte,Athlétisme – toutes épreuves,Principale,1,0,0.35,0.35,0,0.3
+NAT,World Aquatics,Mixte,Natation (et Mondiaux toutes disciplines),Principale,0.8,0,0.35,0.35,0,0.3
+WPH,World Aquatics,Hommes,Water-polo,Secondaire,0.05,0,0.35,0.35,0,0.3
+WPF,World Aquatics,Femmes,Water-polo,Secondaire,0.05,0,0.35,0.35,0,0.3
+NAR,World Aquatics,Mixte,Natation artistique,Secondaire,0.1,0,0.35,0.35,0,0.3
+CRH,UCI,Hommes,Cyclisme sur route,Principale,0.4,0.5,0.25,0.25,0.3,0.2
+CRF,UCI,Femmes,Cyclisme sur route,Principale,0.4,0.5,0.25,0.25,0.3,0.2
+CAU,UCI,Mixte,"Piste, VTT, BMX",Secondaire,0.2,0,0.35,0.35,0,0.3
+CKH,ICC,Hommes,Cricket,Principale,0.5,0.5,0,1,0,0
+CKF,ICC,Femmes,Cricket,Principale,0.5,0.5,0,1,0,0
+TKD,World Taekwondo,Mixte,Taekwondo – toutes catégories,Principale,1,0,0.35,0.35,0,0.3
+GFH,IGF,Hommes,Golf,Principale,0.5,0.5,0.3,0,0.5,0.2
+GFF,IGF,Femmes,Golf,Principale,0.5,0.5,0.3,0,0.5,0.2
+JUD,IJF,Mixte,Judo – toutes catégories,Principale,1,0,0.35,0.35,0,0.3
+HBH,IHF,Hommes,Handball,Principale,0.5,0,0.35,0.35,0,0.3
+HBF,IHF,Femmes,Handball,Principale,0.5,0,0.35,0.35,0,0.3
+GYM,World Gymnastics,Mixte,Gymnastique – toutes disciplines,Principale,1,0,0.35,0.35,0,0.3
+BBH,WBSC,Hommes,Baseball,Principale,0.5,0.5,0,1,0,0
+SBF,WBSC,Femmes,Softball,Principale,0.5,1,0,1,0,0
+CAN,ICF,Mixte,Canoë-kayak – course en ligne et slalom,Principale,1,0,0.35,0.35,0,0.3
+LUT,UWW,Mixte,Lutte – toutes catégories,Principale,1,0,0.35,0.35,0,0.3
+HAL,IWF,Mixte,Haltérophilie – toutes catégories,Principale,1,0,0.35,0.35,0,0.3
+BOX,World Boxing,Mixte,Boxe – toutes catégories,Principale,1,0,0.35,0.35,0,0.3
+SKB,World Skate,Mixte,"Skateboard (street, park)",Principale,1,0,0.35,0.35,0,0.3
+SNK,WCBS,Mixte,Snooker,Principale,1,0.5,0,1,0,0
+RGH,World Rugby,Hommes,Rugby à XV,Principale,0.4,0.5,0.35,0.35,0,0.3
+R7H,World Rugby,Hommes,Rugby à 7,Secondaire,0.1,0,0.35,0.35,0,0.3
+RGF,World Rugby,Femmes,Rugby à XV,Principale,0.4,0.5,0.35,0.35,0,0.3
+R7F,World Rugby,Femmes,Rugby à 7,Secondaire,0.1,0,0.35,0.35,0,0.3
+ARC,World Archery,Mixte,Tir à l'arc – toutes épreuves,Principale,1,0,0.35,0.35,0,0.3
+HKH,FIH,Hommes,Hockey sur gazon,Principale,0.5,0.5,0.35,0.35,0,0.3
+HKF,FIH,Femmes,Hockey sur gazon,Principale,0.5,0.5,0.35,0.35,0,0.3
+TRI,World Triathlon,Mixte,Triathlon,Principale,1,0,0.35,0.35,0,0.3
+TIR,ISSF,Mixte,Tir sportif – toutes épreuves,Principale,1,0,0.35,0.35,0,0.3
+AVI,World Rowing,Mixte,Aviron,Principale,1,0,0.35,0.35,0,0.3
+KAR,WKF,Mixte,"Karaté (kata, kumite)",Principale,1,0,0.35,0.35,0,0.3
+FIS,FIS,Mixte,Ski et snowboard – toutes disciplines,Principale,1,0,0.5,0.5,0,0
+BIA,IBU,Mixte,Biathlon,Principale,1,0,0.5,0.5,0,0
+PVL,ISU,Mixte,Patinage de vitesse,Principale,0.4,0,0.5,0.5,0,0
+PST,ISU,Mixte,Short-track,Principale,0.3,0,0.5,0.5,0,0
+PAR,ISU,Mixte,Patinage artistique,Principale,0.3,0,0.5,0.5,0,0
+CURH,World Curling,Hommes,Curling – hommes,Principale,0.45,0.5,0.5,0.5,0,0
+CURF,World Curling,Femmes,Curling – femmes,Principale,0.45,0.5,0.5,0.5,0,0
+CURX,World Curling,Mixte,Curling – double mixte,Principale,0.1,0,0.5,0.5,0,0
+HGH,IIHF,Hommes,Hockey sur glace – hommes,Principale,0.5,0.5,0.5,0.5,0,0
+HGF,IIHF,Femmes,Hockey sur glace – femmes,Principale,0.5,0.5,0.5,0.5,0,0
+EQU,FEI,Mixte,Équitation – toutes disciplines,Principale,1,0,0.5,0.5,0,0
+VOI,World Sailing,Mixte,Voile,Principale,1,0,0.5,0.5,0,0
+AUTO,FIA,Mixte,"Sport automobile (Formule 1, pilotes)",Principale,1,1,0,1,0,0
+MOTO,FIM,Mixte,"Moto (MotoGP, pilotes)",Principale,1,1,0,1,0,0
+ESC,FIE,Mixte,Escrime – toutes armes,Principale,1,0,0.5,0.5,0,0
+BOU,WPBF,Mixte,Sports de boules,Principale,1,0,0,1,0,0
+SRF,ISA,Mixte,Surf,Principale,1,0,0.5,0.5,0,0
+ESCA,World Climbing,Mixte,Escalade,Principale,1,0,0.5,0.5,0,0
+WSH,IWUF,Mixte,Wushu,Principale,1,0,0,1,0,0
+MTH,IFMA,Mixte,Muay-thaï,Principale,1,0,0,1,0,0
+SAU,ILSF,Mixte,Sauvetage sportif,Principale,1,0,0,0.8,0.2,0
+NAP,CMAS,Mixte,Nage avec palmes,Principale,1,0,0,1,0,0
+KICK,WAKO,Mixte,Kickboxing,Principale,1,0,0,1,0,0
+SQH,World Squash,Hommes,Squash – hommes,Principale,0.5,0,0,0.8,0.2,0
+SQF,World Squash,Femmes,Squash – femmes,Principale,0.5,0,0,0.8,0.2,0
+PMH,UIPM,Hommes,Pentathlon moderne – hommes,Principale,0.5,0,0.5,0.5,0,0
+PMF,UIPM,Femmes,Pentathlon moderne – femmes,Principale,0.5,0,0.5,0.5,0,0
+FLAG,IFAF,Mixte,Football américain / flag,Principale,1,0,0,0.8,0.2,0
+LAXH,World Lacrosse,Hommes,Lacrosse – hommes,Principale,0.5,0,0,1,0,0
+LAXF,World Lacrosse,Femmes,Lacrosse – femmes,Principale,0.5,0,0,1,0,0
+SAMB,FIAS,Mixte,Sambo,Principale,1,0,0,1,0,0
+DISC,WFDF,Mixte,"Disque volant (ultimate, disc golf)",Principale,1,0,0,0.8,0.2,0
+DAN,WDSF,Mixte,Danse sportive et breaking,Principale,1,0,0.5,0.5,0,0
+NET,World Netball,Mixte,Netball,Principale,1,0,0.5,0.5,0,0
+DARH,WDF,Hommes,Fléchettes – hommes,Principale,0.5,0,0.5,0.5,0,0
+DARF,WDF,Femmes,Fléchettes – femmes,Principale,0.5,0,0.5,0.5,0,0
+GO,IGF (go),Mixte,Go,Principale,1,0,0.5,0.5,0,0
+BOBS,IBSF,Mixte,Bobsleigh et skeleton,Principale,1,0,0.5,0.5,0,0
+JJ,JJIF,Mixte,Ju-jitsu,Principale,1,0,0.5,0.5,0,0
+BRIH,WBF,Hommes,Bridge – hommes,Principale,0.5,0,0.5,0.5,0,0
+BRIF,WBF,Femmes,Bridge – femmes,Principale,0.5,0,0.5,0.5,0,0
+DRA,IDBF,Mixte,Bateau-dragon,Principale,1,0,0.5,0.5,0,0
+PADH,FIP,Hommes,Padel – hommes,Principale,0.5,0,0.5,0.5,0,0
+PADF,FIP,Femmes,Padel – femmes,Principale,0.5,0,0.5,0.5,0,0
+WAK,IWWF,Mixte,Ski nautique et wakeboard,Principale,1,0,0.5,0.5,0,0
+FA,IPF,Mixte,Force athlétique,Principale,1,0,0.5,0.5,0,0
+SKIA,ISMF,Mixte,Ski-alpinisme,Principale,1,0,0.5,0.5,0,0
+FLOH,IFF,Hommes,Floorball – hommes,Principale,0.5,0,0.5,0.5,0,0
+FLOF,IFF,Femmes,Floorball – femmes,Principale,0.5,0,0.5,0.5,0,0
+LUGE,FIL,Mixte,Luge,Principale,1,0,0.5,0.5,0,0
+KABH,IKF (kabaddi),Hommes,Kabaddi – hommes,Principale,0.5,0,0.5,0.5,0,0
+KABF,IKF (kabaddi),Femmes,Kabaddi – femmes,Principale,0.5,0,0.5,0.5,0,0
+ORI,IOF,Mixte,Course d'orientation,Principale,1,0,0.5,0.5,0,0
+KOR,IKF,Mixte,Korfball,Principale,1,0,0.5,0.5,0,0
+XQ,WXF,Mixte,Xiangqi,Principale,1,0,0.5,0.5,0,0
+SEP,ISTAF,Mixte,Sepak takraw,Principale,1,0,0.5,0.5,0,0
+KEN,FIK,Mixte,Kendo,Principale,1,0,0.5,0.5,0,0
+FAU,IFA,Mixte,Balle au poing,Principale,1,0,0.5,0.5,0,0
+SIL,IPSF (silat),Mixte,Pencak silat,Principale,1,0,0.5,0.5,0,0
+RLGH,IRL,Hommes,Rugby à XIII – hommes,Principale,0.5,0,0.5,0.5,0,0
+RLGF,IRL,Femmes,Rugby à XIII – femmes,Principale,0.5,0,0.5,0.5,0,0
+BANH,FIB,Hommes,Bandy – hommes,Principale,0.5,0,0.5,0.5,0,0
+BANF,FIB,Femmes,Bandy – femmes,Principale,0.5,0,0.5,0.5,0,0
+VOV,WVF,Mixte,Vovinam,Principale,1,0,0.5,0.5,0,0
+KHOH,IKKF,Hommes,Kho kho – hommes,Principale,0.5,0,0.5,0.5,0,0
+KHOF,IKKF,Femmes,Kho kho – femmes,Principale,0.5,0,0.5,0.5,0,0
