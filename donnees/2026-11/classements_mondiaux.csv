@@ -319,46 +319,46 @@ VBF,47,Bosnie-Herzégovine,Bosnia and Herzegovina,Bosnia and Herzegovina,1,0.07
 VBF,48,Royaume-Uni,United Kingdom,Scotland,1,0.04
 VBF,49,Bermudes,Bermuda,Bermuda,1,0.02
 VBF,50,Autriche,Austria,Austria,1,0
-TTSH,1,Chine,China,China,1,19.7
-TTSH,2,France,France,France,1,17.78
-TTSH,3,Japon,Japan,Japan,1,15.96
-TTSH,4,Japon,Japan,Japan,1,14.23
-TTSH,5,Suède,Sweden,Sweden,1,12.61
-TTSH,6,Taipei chinois,Taiwan,Chinese Taipei,1,11.08
-TTSH,7,Brésil,Brazil,Brazil,1,9.65
-TTSH,8,Chine,China,China,1,8.32
-TTSH,9,France,France,France,1,7.09
-TTSH,10,Corée du Sud,South Korea,South Korea,1,5.96
-TTSH,11,Allemagne,Germany,Germany,1,4.93
-TTSH,12,Slovénie,Slovenia,Slovenia,1,3.99
-TTSH,13,Japon,Japan,Japan,0,0
-TTSH,14,Danemark,Denmark,Denmark,1,2.41
-TTSH,15,Chine,China,China,0,0
-TTSH,16,Russie,Russia,AIN Russia,1,1.23
-TTSH,17,Japon,Japan,Japan,0,0
-TTSH,18,Chine,China,China,0,0
-TTSH,19,France,France,France,0,0
-TTSH,20,Allemagne,Germany,Germany,1,0.05
-TTSF,1,Chine,China,China,1,30.39
-TTSF,2,Chine,China,China,1,27.43
-TTSF,3,Macao,Macao,Macau,1,24.61
-TTSF,4,Japon,Japan,Japan,1,21.96
+TTSH,1,Japon,Japan,Japan,1,20.09
+TTSH,2,Japon,Japan,Japan,1,18.13
+TTSH,3,France,France,France,1,16.27
+TTSH,4,Chine,China,China,1,14.51
+TTSH,5,Taipei chinois,Taiwan,Chinese Taipei,1,12.86
+TTSH,6,Suède,Sweden,Sweden,1,11.3
+TTSH,7,Brésil,Brazil,Brazil,1,9.84
+TTSH,8,Corée du Sud,South Korea,South Korea,1,8.49
+TTSH,9,France,France,France,1,7.23
+TTSH,10,Chine,China,China,1,6.08
+TTSH,11,Allemagne,Germany,Germany,1,5.02
+TTSH,12,Chine,China,China,0,0
+TTSH,13,Chine,China,China,0,0
+TTSH,14,Slovénie,Slovenia,Slovenia,1,2.46
+TTSH,15,Japon,Japan,Japan,0,0
+TTSH,16,Allemagne,Germany,Germany,1,1.26
+TTSH,17,Russie,Russia,AIN Russia,1,0.8
+TTSH,18,Danemark,Denmark,Denmark,1,0.45
+TTSH,19,Corée du Sud,South Korea,South Korea,1,0.2
+TTSH,20,Japon,Japan,Japan,0,0
+TTSF,1,Chine,China,China,1,33.37
+TTSF,2,Chine,China,China,1,30.12
+TTSF,3,Japon,Japan,Japan,1,27.03
+TTSF,4,Chine,China,China,0,0
 TTSF,5,Chine,China,China,0,0
-TTSF,6,Chine,China,China,0,0
+TTSF,6,Japon,Japan,Japan,1,18.77
 TTSF,7,Chine,China,China,0,0
 TTSF,8,Chine,China,China,0,0
-TTSF,9,Japon,Japan,Japan,1,10.94
-TTSF,10,Allemagne,Germany,Germany,1,9.19
-TTSF,11,Corée du Sud,South Korea,South Korea,1,7.6
-TTSF,12,Japon,Japan,Japan,0,0
-TTSF,13,Japon,Japan,Japan,0,0
-TTSF,14,Chine,China,China,0,0
-TTSF,15,Japon,Japan,Japan,0,0
-TTSF,16,Corée du Sud,South Korea,South Korea,1,1.9
-TTSF,17,Japon,Japan,Japan,0,0
-TTSF,18,Allemagne,Germany,Germany,1,0.68
-TTSF,19,Porto Rico,Puerto Rico,Puerto Rico,1,0.3
-TTSF,20,Japon,Japan,Japan,0,0
+TTSF,9,Japon,Japan,Japan,0,0
+TTSF,10,Macao,Macao,Macau,1,10.1
+TTSF,11,Japon,Japan,Japan,0,0
+TTSF,12,Corée du Sud,South Korea,South Korea,1,6.76
+TTSF,13,Allemagne,Germany,Germany,1,5.34
+TTSF,14,Japon,Japan,Japan,0,0
+TTSF,15,Chine,China,China,0,0
+TTSF,16,Allemagne,Germany,Germany,1,2.09
+TTSF,17,Corée du Sud,South Korea,South Korea,1,1.33
+TTSF,18,Japon,Japan,Japan,0,0
+TTSF,19,Japon,Japan,Japan,0,0
+TTSF,20,Porto Rico,Puerto Rico,Puerto Rico,1,0.08
 TNSH,1,Allemagne,Germany,Germany,1,8.32
 TNSH,2,Italie,Italy,Italy,1,7.99
 TNSH,3,Espagne,Spain,Spain,1,7.67
@@ -483,12 +483,12 @@ BDDH,1,Corée du Sud,South Korea,South Korea,1,6.73
 BDDH,2,Indonésie,Indonesia,Indonesia,1,6.07
 BDDH,3,Chine,China,China,1,5.45
 BDDH,4,Malaisie,Malaysia,Malaysia,1,4.86
-BDDH,5,Inde,India,India,1,4.31
-BDDH,6,Malaisie,Malaysia,Malaysia,1,3.79
+BDDH,5,Inde,India,India,1,4.3
+BDDH,6,Malaisie,Malaysia,Malaysia,1,3.78
 BDDH,7,Indonésie,Indonesia,Indonesia,1,3.3
 BDDH,8,Royaume-Uni,United Kingdom,England,1,2.84
 BDDH,9,Japon,Japan,Japan,1,2.42
-BDDH,10,Chine,China,China,1,2.04
+BDDH,10,Chine,China,China,1,2.03
 BDDH,11,Malaisie,Malaysia,Malaysia,0,0
 BDDH,12,Indonésie,Indonesia,Indonesia,0,0
 BDDH,13,Danemark,Denmark,Denmark,1,1.08
@@ -496,9 +496,9 @@ BDDH,14,Corée du Sud,South Korea,South Korea,1,0.82
 BDDH,15,Taipei chinois,Taiwan,Chinese Taipei,1,0.61
 BDDH,16,Taipei chinois,Taiwan,Chinese Taipei,1,0.42
 BDDH,17,Danemark,Denmark,Denmark,1,0.27
-BDDH,18,Taipei chinois,Taiwan,Chinese Taipei,0,0
+BDDH,18,Malaisie,Malaysia,Malaysia,0,0
 BDDH,19,Malaisie,Malaysia,Malaysia,0,0
-BDDH,20,Malaisie,Malaysia,Malaysia,0,0
+BDDH,20,Japon,Japan,Japan,1,0.02
 BDSF,1,Corée du Sud,South Korea,South Korea,1,21.09
 BDSF,2,Japon,Japan,Japan,1,19.04
 BDSF,3,Chine,China,China,1,17.09
@@ -519,59 +519,59 @@ BDSF,17,Taipei chinois,Taiwan,Chinese Taipei,1,0.84
 BDSF,18,Danemark,Denmark,Denmark,1,0.47
 BDSF,19,Japon,Japan,Japan,0,0
 BDSF,20,Taipei chinois,Taiwan,Chinese Taipei,1,0.05
-BDDF,1,Chine,China,China,1,6.99
-BDDF,2,Corée du Sud,South Korea,South Korea,1,6.31
-BDDF,3,Japon,Japan,Japan,1,5.66
-BDDF,4,Chine,China,China,1,5.05
-BDDF,5,Malaisie,Malaysia,Malaysia,1,4.48
-BDDF,6,Corée du Sud,South Korea,South Korea,1,3.93
-BDDF,7,Japon,Japan,Japan,1,3.43
-BDDF,8,Chine,China,China,0,0
-BDDF,9,Indonésie,Indonesia,Indonesia,1,2.52
-BDDF,10,Taipei chinois,Taiwan,Chinese Taipei,1,2.12
-BDDF,11,Indonésie,Indonesia,Indonesia,1,1.75
-BDDF,12,Bulgarie,Bulgaria,Bulgaria,1,1.42
-BDDF,13,Taipei chinois,Taiwan,Chinese Taipei,1,1.12
-BDDF,14,Japon,Japan,Japan,0,0
+BDDF,1,Chine,China,China,1,7.1
+BDDF,2,Corée du Sud,South Korea,South Korea,1,6.41
+BDDF,3,Japon,Japan,Japan,1,5.75
+BDDF,4,Malaisie,Malaysia,Malaysia,1,5.13
+BDDF,5,Japon,Japan,Japan,1,4.55
+BDDF,6,Indonésie,Indonesia,Indonesia,1,4
+BDDF,7,Taipei chinois,Taiwan,Chinese Taipei,1,3.48
+BDDF,8,Indonésie,Indonesia,Indonesia,1,3
+BDDF,9,Bulgarie,Bulgaria,Bulgaria,1,2.56
+BDDF,10,Indonésie,Indonesia,Indonesia,0,0
+BDDF,11,Taipei chinois,Taiwan,Chinese Taipei,1,1.78
+BDDF,12,Japon,Japan,Japan,0,0
+BDDF,13,Japon,Japan,Japan,0,0
+BDDF,14,États-Unis,United States,USA,1,0.87
 BDDF,15,Japon,Japan,Japan,0,0
-BDDF,16,Indonésie,Indonesia,Indonesia,0,0
-BDDF,17,Taipei chinois,Taiwan,Chinese Taipei,0,0
-BDDF,18,États-Unis,United States,USA,1,0.16
+BDDF,16,Japon,Japan,Japan,0,0
+BDDF,17,Chine,China,China,1,0.28
+BDDF,18,Taipei chinois,Taiwan,Chinese Taipei,0,0
 BDDF,19,Hong Kong,Hong Kong,Hong Kong,1,0.07
-BDDF,20,Japon,Japan,Japan,0,0
-BDMX,1,Chine,China,China,1,8.01
-BDMX,2,Thaïlande,Thailand,Thailand,1,7.23
-BDMX,3,Danemark,Denmark,Denmark,1,6.49
-BDMX,4,Chine,China,China,1,5.79
-BDMX,5,France,France,France,1,5.13
+BDDF,20,Inde,India,India,1,0.02
+BDMX,1,Chine,China,China,1,8.12
+BDMX,2,Chine,China,China,1,7.33
+BDMX,3,France,France,France,1,6.58
+BDMX,4,Danemark,Denmark,Denmark,1,5.87
+BDMX,5,Thaïlande,Thailand,Thailand,1,5.2
 BDMX,6,Chine,China,China,0,0
-BDMX,7,Malaisie,Malaysia,Malaysia,1,3.92
-BDMX,8,Hong Kong,Hong Kong,Hong Kong,1,3.38
-BDMX,9,Chine,China,China,0,0
-BDMX,10,Taipei chinois,Taiwan,Chinese Taipei,1,2.42
-BDMX,11,Malaisie,Malaysia,Malaysia,1,2
-BDMX,12,Taipei chinois,Taiwan,Chinese Taipei,1,1.62
-BDMX,13,Japon,Japan,Japan,1,1.28
-BDMX,14,Thaïlande,Thailand,Thailand,1,0.98
-BDMX,15,Indonésie,Indonesia,Indonesia,1,0.72
-BDMX,16,Japon,Japan,Japan,1,0.5
-BDMX,17,États-Unis,United States,USA,1,0.32
-BDMX,18,Indonésie,Indonesia,Indonesia,1,0.18
-BDMX,19,Thaïlande,Thailand,Thailand,0,0
-BDMX,20,Inde,India,India,1,0.02
+BDMX,7,Taipei chinois,Taiwan,Chinese Taipei,1,3.98
+BDMX,8,Chine,China,China,0,0
+BDMX,9,Indonésie,Indonesia,Indonesia,1,2.92
+BDMX,10,Taipei chinois,Taiwan,Chinese Taipei,1,2.46
+BDMX,11,Malaisie,Malaysia,Malaysia,1,2.03
+BDMX,12,Japon,Japan,Japan,1,1.65
+BDMX,13,Japon,Japan,Japan,1,1.3
+BDMX,14,Malaisie,Malaysia,Malaysia,1,1
+BDMX,15,Hong Kong,Hong Kong,Hong Kong,1,0.73
+BDMX,16,États-Unis,United States,USA,1,0.51
+BDMX,17,Thaïlande,Thailand,Thailand,1,0.32
+BDMX,18,Chine,China,China,0,0
+BDMX,19,Japon,Japan,Japan,0,0
+BDMX,20,Taipei chinois,Taiwan,Chinese Taipei,0,0
 CHO,1,États-Unis,United States,USA,1,34.84
 CHO,2,Inde,India,India,1,31.45
 CHO,3,Chine,China,China,1,28.22
 CHO,4,Russie,Russia,Russia,1,25.17
-CHO,5,Ouzbékistan,Uzbekistan,Uzbekistan,1,22.3
+CHO,5,France,France,France,1,22.3
 CHO,6,Azerbaïdjan,Azerbaijan,Azerbaijan,1,19.6
-CHO,7,France,France,France,1,17.07
+CHO,7,Ouzbékistan,Uzbekistan,Uzbekistan,1,17.07
 CHO,8,Allemagne,Germany,Germany,1,14.72
 CHO,9,Ukraine,Ukraine,Ukraine,1,12.54
-CHO,10,Pays-Bas,Netherlands,Netherlands,1,10.54
-CHO,11,Espagne,Spain,Spain,1,8.71
-CHO,12,Hongrie,Hungary,Hungary,1,7.06
-CHO,13,Arménie,Armenia,Armenia,1,5.57
+CHO,10,Arménie,Armenia,Armenia,1,10.54
+CHO,11,Hongrie,Hungary,Hungary,1,8.71
+CHO,12,Pays-Bas,Netherlands,Netherlands,1,7.06
+CHO,13,Espagne,Spain,Spain,1,5.57
 CHO,14,Pologne,Poland,Poland,1,4.27
 CHO,15,Royaume-Uni,United Kingdom,England,1,3.14
 CHO,16,Norvège,Norway,Norway,1,2.18
@@ -600,42 +600,42 @@ CHF,18,Géorgie,Georgia,Georgia,1,0.86
 CHF,19,Ukraine,Ukraine,Ukraine,1,0.38
 CHF,20,Ukraine,Ukraine,Ukraine,1,0.1
 CRH,1,Belgique,Belgium,Belgium,1,51.95
-CRH,2,Danemark,Denmark,Denmark,1,42.08
-CRH,3,France,France,France,1,33.25
-CRH,4,Slovénie,Slovenia,Slovenia,1,25.45
-CRH,5,Royaume-Uni,United Kingdom,Great Britain,1,18.7
-CRH,6,Italie,Italy,Italy,1,12.99
-CRH,7,Pays-Bas,Netherlands,Netherlands,1,8.31
-CRH,8,Australie,Australia,Australia,1,4.68
+CRH,2,France,France,France,1,42.08
+CRH,3,Danemark,Denmark,Denmark,1,33.25
+CRH,4,Italie,Italy,Italy,1,25.45
+CRH,5,Slovénie,Slovenia,Slovenia,1,18.7
+CRH,6,Royaume-Uni,United Kingdom,Great Britain,1,12.99
+CRH,7,Espagne,Spain,Spain,1,8.31
+CRH,8,Pays-Bas,Netherlands,Netherlands,1,4.68
 CRH,9,États-Unis,United States,USA,1,2.08
-CRH,10,Mexique,Mexico,Mexico,1,0.52
+CRH,10,Norvège,Norway,Norway,1,0.52
 CRF,1,Pays-Bas,Netherlands,Netherlands,1,51.95
 CRF,2,Italie,Italy,Italy,1,42.08
-CRF,3,Suisse,Switzerland,Switzerland,1,33.25
+CRF,3,Pologne,Poland,Poland,1,33.25
 CRF,4,France,France,France,1,25.45
-CRF,5,Espagne,Spain,Spain,1,18.7
-CRF,6,Royaume-Uni,United Kingdom,Great Britain,1,12.99
-CRF,7,Pologne,Poland,Poland,1,8.31
-CRF,8,Nouvelle-Zélande,New Zealand,New Zealand,1,4.68
+CRF,5,Suisse,Switzerland,Switzerland,1,18.7
+CRF,6,Espagne,Spain,Spain,1,12.99
+CRF,7,Allemagne,Germany,Germany,1,8.31
+CRF,8,Belgique,Belgium,Belgium,1,4.68
 CRF,9,Canada,Canada,Canada,1,2.08
-CRF,10,Allemagne,Germany,Germany,1,0.52
-CKH,1,Inde,India,India,1,35.29
-CKH,2,Royaume-Uni,United Kingdom,England,1,31.85
-CKH,3,Australie,Australia,Australia,1,28.58
-CKH,4,Nouvelle-Zélande,New Zealand,New Zealand,1,25.49
-CKH,5,Afrique du Sud,South Africa,South Africa,1,22.58
-CKH,6,Pakistan,Pakistan,Pakistan,1,19.85
-CKH,7,Indes occidentales,Indes occidentales,West Indies,1,17.29
-CKH,8,Bangladesh,Bangladesh,Bangladesh,1,14.91
-CKH,9,Sri Lanka,Sri Lanka,Sri Lanka,1,12.7
-CKH,10,Afghanistan,Afghanistan,Afghanistan,1,10.67
-CKH,11,Zimbabwe,Zimbabwe,Zimbabwe,1,8.82
-CKH,12,Irlande,Ireland,Ireland,1,7.15
-CKH,13,États-Unis,United States,USA,1,5.65
-CKH,14,Pays-Bas,Netherlands,Netherlands,1,4.32
-CKH,15,Royaume-Uni,United Kingdom,Scotland,0,0
-CKH,16,Namibie,Namibia,Namibia,1,2.21
-CKH,17,Népal,Nepal,Nepal,1,1.41
+CRF,10,Royaume-Uni,United Kingdom,Great Britain,1,0.52
+CKH,1,Royaume-Uni,United Kingdom,England,1,35.04
+CKH,2,Inde,India,India,1,31.62
+CKH,3,Australie,Australia,Australia,1,28.38
+CKH,4,Nouvelle-Zélande,New Zealand,New Zealand,1,25.32
+CKH,5,Afrique du Sud,South Africa,South Africa,1,22.42
+CKH,6,Pakistan,Pakistan,Pakistan,1,19.71
+CKH,7,Indes occidentales,Indes occidentales,West Indies,1,17.17
+CKH,8,Bangladesh,Bangladesh,Bangladesh,1,14.8
+CKH,9,Sri Lanka,Sri Lanka,Sri Lanka,1,12.61
+CKH,10,Afghanistan,Afghanistan,Afghanistan,1,10.6
+CKH,11,Irlande,Ireland,Ireland,1,8.76
+CKH,12,Zimbabwe,Zimbabwe,Zimbabwe,1,7.1
+CKH,13,États-Unis,United States,USA,1,5.61
+CKH,14,Népal,Nepal,Nepal,1,4.29
+CKH,15,Pays-Bas,Netherlands,Netherlands,1,3.15
+CKH,16,Namibie,Namibia,Namibia,1,2.19
+CKH,17,Royaume-Uni,United Kingdom,Scotland,0,0
 CKH,18,Émirats arabes unis,United Arab Emirates,United Arab Emirates,1,0.79
 CKH,19,Oman,Oman,Oman,1,0.35
 CKH,20,Canada,Canada,Canada,1,0.09
@@ -657,8 +657,8 @@ CKF,15,Émirats arabes unis,United Arab Emirates,United Arab Emirates,1,3.25
 CKF,16,Zimbabwe,Zimbabwe,Zimbabwe,1,2.26
 CKF,17,Ouganda,Uganda,Uganda,1,1.44
 CKF,18,Namibie,Namibia,Namibia,1,0.81
-CKF,19,Tanzanie,Tanzania,Tanzania,1,0.36
-CKF,20,États-Unis,United States,USA,1,0.09
+CKF,19,États-Unis,United States,USA,1,0.36
+CKF,20,Tanzanie,Tanzania,Tanzania,1,0.09
 GFH,1,États-Unis,United States,USA,1,23.78
 GFH,2,Royaume-Uni,United Kingdom,Northern Ireland,1,22.83
 GFH,3,Royaume-Uni,United Kingdom,England,1,21.91
@@ -849,86 +849,86 @@ SNK,47,Royaume-Uni,United Kingdom,Wales,0,0
 SNK,48,Royaume-Uni,United Kingdom,England,0,0
 SNK,49,Chine,China,China,0,0
 SNK,50,Royaume-Uni,United Kingdom,England,0,0
-RGH,1,Afrique du Sud,South Africa,South Africa,1,31.99
-RGH,2,Nouvelle-Zélande,New Zealand,New Zealand,1,28.87
-RGH,3,France,France,France,1,25.91
-RGH,4,Irlande,Ireland,Ireland,1,23.11
-RGH,5,Royaume-Uni,United Kingdom,Scotland,1,20.47
-RGH,6,Royaume-Uni,United Kingdom,England,0,0
-RGH,7,Australie,Australia,Australia,1,15.67
-RGH,8,Argentine,Argentina,Argentina,1,13.51
-RGH,9,Royaume-Uni,United Kingdom,Wales,0,0
-RGH,10,Fidji,Fiji,Fiji,1,9.68
-RGH,11,Japon,Japan,Japan,1,8
-RGH,12,Italie,Italy,Italy,1,6.48
-RGH,13,Géorgie,Georgia,Georgia,1,5.12
-RGH,14,Uruguay,Uruguay,Uruguay,1,3.92
-RGH,15,Chili,Chile,Chile,1,2.88
-RGH,16,États-Unis,United States,USA,1,2
-RGH,17,Portugal,Portugal,Portugal,1,1.28
-RGH,18,Espagne,Spain,Spain,1,0.72
-RGH,19,Roumanie,Romania,Romania,1,0.32
-RGH,20,Tonga,Tonga,Tonga,1,0.08
-RGF,1,Royaume-Uni,United Kingdom,England,1,31.2
-RGF,2,Canada,Canada,Canada,1,28.16
-RGF,3,Nouvelle-Zélande,New Zealand,New Zealand,1,25.27
-RGF,4,France,France,France,1,22.54
-RGF,5,Irlande,Ireland,Ireland,1,19.97
-RGF,6,Royaume-Uni,United Kingdom,Scotland,0,0
-RGF,7,Australie,Australia,Australia,1,15.29
-RGF,8,États-Unis,United States,USA,1,13.18
-RGF,9,Italie,Italy,Italy,1,11.23
-RGF,10,Afrique du Sud,South Africa,South Africa,1,9.44
-RGF,11,Japon,Japan,Japan,1,7.8
-RGF,12,Royaume-Uni,United Kingdom,Wales,0,0
-RGF,13,Fidji,Fiji,Fiji,1,4.99
-RGF,14,Espagne,Spain,Spain,1,3.82
-RGF,15,Samoa,Samoa,Samoa,1,2.81
-RGF,16,Hong Kong,Hong Kong,Hong Kong,1,1.95
-RGF,17,Pays-Bas,Netherlands,Netherlands,1,1.25
-RGF,18,Russie,Russia,Russia,1,0.7
-RGF,19,Kazakhstan,Kazakhstan,Kazakhstan,1,0.31
+RGH,1,Afrique du Sud,South Africa,South Africa,1,31.7
+RGH,2,Nouvelle-Zélande,New Zealand,New Zealand,1,28.61
+RGH,3,Irlande,Ireland,Ireland,1,25.67
+RGH,4,France,France,France,1,22.9
+RGH,5,Royaume-Uni,United Kingdom,England,1,20.29
+RGH,6,Royaume-Uni,United Kingdom,Scotland,0,0
+RGH,7,Australie,Australia,Australia,1,15.53
+RGH,8,Argentine,Argentina,Argentina,1,13.39
+RGH,9,Fidji,Fiji,Fiji,1,11.41
+RGH,10,Royaume-Uni,United Kingdom,Wales,0,0
+RGH,11,Italie,Italy,Italy,1,7.92
+RGH,12,Japon,Japan,Japan,1,6.42
+RGH,13,Géorgie,Georgia,Georgia,1,5.07
+RGH,14,Portugal,Portugal,Portugal,1,3.88
+RGH,15,États-Unis,United States,USA,1,2.85
+RGH,16,Espagne,Spain,Spain,1,1.98
+RGH,17,Tonga,Tonga,Tonga,1,1.27
+RGH,18,Chili,Chile,Chile,1,0.71
+RGH,19,Samoa,Samoa,Samoa,1,0.32
+RGH,20,Uruguay,Uruguay,Uruguay,1,0.08
+RGF,1,Royaume-Uni,United Kingdom,England,1,30.46
+RGF,2,Nouvelle-Zélande,New Zealand,New Zealand,1,27.49
+RGF,3,Canada,Canada,Canada,1,24.68
+RGF,4,France,France,France,1,22.01
+RGF,5,Irlande,Ireland,Ireland,1,19.5
+RGF,6,États-Unis,United States,USA,1,17.14
+RGF,7,Australie,Australia,Australia,1,14.93
+RGF,8,Italie,Italy,Italy,1,12.87
+RGF,9,Royaume-Uni,United Kingdom,Scotland,0,0
+RGF,10,Afrique du Sud,South Africa,South Africa,1,9.22
+RGF,11,Royaume-Uni,United Kingdom,Wales,0,0
+RGF,12,Fidji,Fiji,Fiji,1,6.17
+RGF,13,Japon,Japan,Japan,1,4.87
+RGF,14,Espagne,Spain,Spain,1,3.73
+RGF,15,Samoa,Samoa,Samoa,1,2.74
+RGF,16,Pays-Bas,Netherlands,Netherlands,1,1.9
+RGF,17,Hong Kong,Hong Kong,Hong Kong,1,1.22
+RGF,18,Russie,Russia,AIN Russia,1,0.69
+RGF,19,Kazakhstan,Kazakhstan,Kazakhstan,1,0.3
 RGF,20,Allemagne,Germany,Germany,1,0.08
-HKH,1,Allemagne,Germany,Germany,1,35.56
-HKH,2,Belgique,Belgium,Belgium,1,32.09
-HKH,3,Australie,Australia,Australia,1,28.81
-HKH,4,Argentine,Argentina,Argentina,1,25.69
-HKH,5,Pays-Bas,Netherlands,Netherlands,1,22.76
-HKH,6,Espagne,Spain,Spain,1,20
-HKH,7,Royaume-Uni,United Kingdom,England,1,17.43
-HKH,8,Inde,India,India,1,15.02
-HKH,9,Nouvelle-Zélande,New Zealand,New Zealand,1,12.8
-HKH,10,France,France,France,1,10.76
-HKH,11,Irlande,Ireland,Ireland,1,8.89
-HKH,12,Pakistan,Pakistan,Pakistan,1,7.2
-HKH,13,Afrique du Sud,South Africa,South Africa,1,5.69
-HKH,14,Royaume-Uni,United Kingdom,Scotland,0,0
-HKH,15,Malaisie,Malaysia,Malaysia,1,3.2
-HKH,16,Égypte,Egypt,Egypt,1,2.22
-HKH,17,Japon,Japan,Japan,1,1.42
+HKH,1,Allemagne,Germany,Germany,1,35.26
+HKH,2,Belgique,Belgium,Belgium,1,31.82
+HKH,3,Australie,Australia,Australia,1,28.56
+HKH,4,Argentine,Argentina,Argentina,1,25.48
+HKH,5,Pays-Bas,Netherlands,Netherlands,1,22.57
+HKH,6,Espagne,Spain,Spain,1,19.83
+HKH,7,Royaume-Uni,United Kingdom,England,1,17.28
+HKH,8,Inde,India,India,1,14.9
+HKH,9,Nouvelle-Zélande,New Zealand,New Zealand,1,12.69
+HKH,10,France,France,France,1,10.67
+HKH,11,Irlande,Ireland,Ireland,1,8.82
+HKH,12,Pakistan,Pakistan,Pakistan,1,7.14
+HKH,13,Afrique du Sud,South Africa,South Africa,1,5.64
+HKH,14,Malaisie,Malaysia,Malaysia,1,4.32
+HKH,15,Japon,Japan,Japan,1,3.17
+HKH,16,Royaume-Uni,United Kingdom,Scotland,0,0
+HKH,17,Égypte,Egypt,Egypt,1,1.41
 HKH,18,Royaume-Uni,United Kingdom,Wales,0,0
-HKH,19,Canada,Canada,Canada,1,0.36
-HKH,20,Chine,China,China,1,0.09
+HKH,19,Canada,Canada,Canada,1,0.35
+HKH,20,Corée du Sud,South Korea,South Korea,1,0.09
 HKF,1,Pays-Bas,Netherlands,Netherlands,1,35.45
 HKF,2,Argentine,Argentina,Argentina,1,31.99
 HKF,3,Belgique,Belgium,Belgium,1,28.71
 HKF,4,Chine,China,China,1,25.61
 HKF,5,Espagne,Spain,Spain,1,22.69
 HKF,6,Allemagne,Germany,Germany,1,19.94
-HKF,7,Royaume-Uni,United Kingdom,England,1,17.37
-HKF,8,Inde,India,India,1,14.98
+HKF,7,Inde,India,India,1,17.37
+HKF,8,Royaume-Uni,United Kingdom,England,1,14.98
 HKF,9,Australie,Australia,Australia,1,12.76
 HKF,10,États-Unis,United States,USA,1,10.72
 HKF,11,Japon,Japan,Japan,1,8.86
 HKF,12,Nouvelle-Zélande,New Zealand,New Zealand,1,7.18
 HKF,13,Irlande,Ireland,Ireland,1,5.67
 HKF,14,Royaume-Uni,United Kingdom,Scotland,0,0
-HKF,15,Chili,Chile,Chile,1,3.19
-HKF,16,France,France,France,1,2.22
-HKF,17,Corée du Sud,South Korea,Korea,1,1.42
+HKF,15,Corée du Sud,South Korea,South Korea,1,3.19
+HKF,16,Chili,Chile,Chile,1,2.22
+HKF,17,France,France,France,1,1.42
 HKF,18,Afrique du Sud,South Africa,South Africa,1,0.8
-HKF,19,Italie,Italy,Italy,1,0.35
-HKF,20,Uruguay,Uruguay,Uruguay,1,0.09
+HKF,19,Uruguay,Uruguay,Uruguay,1,0.35
+HKF,20,Italie,Italy,Italy,1,0.09
 CURH,1,Canada,Canada,Canada,1,58.44
 CURH,2,Royaume-Uni,United Kingdom,Scotland,1,47.34
 CURH,3,Suède,Sweden,Sweden,1,37.4

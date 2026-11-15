@@ -1,96 +1,96 @@
 rank,nation,nation_en,iso2,projected_medals,projected_gold,main_sports
-1,États-Unis,United States,US,114,39,World Aquatics | World Athletics | World Gymnastics
-2,Chine,China,CN,86,27,World Aquatics | World Gymnastics | ISSF
-3,Japon,Japan,JP,65,19,IJF | UWW | World Gymnastics
-4,France,France,FR,59,22,UCI | World Aquatics | IJF
-5,Royaume-Uni,United Kingdom,GB,54,19,World Athletics | World Aquatics | World Rowing
-6,Australie,Australia,AU,51,17,World Aquatics | ICF | World Athletics
-7,Italie,Italy,IT,45,17,World Aquatics | UCI | World Athletics
-8,Allemagne,Germany,DE,37,12,FEI | World Athletics | World Aquatics
-9,Pays-Bas,Netherlands,NL,35,13,UCI | World Rowing | World Aquatics
-10,Corée du Sud,South Korea,KR,33,13,World Archery | ISSF | IJF
-11,Espagne,Spain,ES,28,10,World Aquatics | World Athletics | ICF
-12,Canada,Canada,CA,27,8,World Aquatics | World Athletics | ICF
-13,Russie,Russia,RU,24,9,World Aquatics | World Gymnastics | UWW
-14,Hongrie,Hungary,HU,24,7,World Aquatics | ICF | FIE
-15,Brésil,Brazil,BR,18,7,IJF | World Athletics | World Taekwondo
-16,Pologne,Poland,PL,17,7,UCI | World Athletics | ICF
-17,Ouzbékistan,Uzbekistan,UZ,17,4,World Boxing | UWW | World Taekwondo
-18,Belgique,Belgium,BE,16,4,UCI | World Athletics | FIBA
-19,Nouvelle-Zélande,New Zealand,NZ,15,6,ICF | World Rowing | World Athletics
-20,Suisse,Switzerland,CH,14,3,UCI | ISSF | World Athletics
-21,Iran,Iran,IR,13,3,UWW | World Taekwondo | IWF
-22,Ukraine,Ukraine,UA,12,5,World Athletics | ICF | UWW
+1,États-Unis,United States,US,115,39,World Aquatics | World Athletics | World Gymnastics
+2,Chine,China,CN,84,26,World Aquatics | World Gymnastics | ISSF
+3,France,France,FR,62,22,UCI | World Aquatics | IJF
+4,Japon,Japan,JP,62,19,IJF | UWW | World Gymnastics
+5,Australie,Australia,AU,51,18,World Aquatics | ICF | World Athletics
+6,Royaume-Uni,United Kingdom,GB,51,17,World Athletics | World Aquatics | World Rowing
+7,Italie,Italy,IT,47,18,UCI | World Aquatics | World Athletics
+8,Allemagne,Germany,DE,40,14,FEI | World Athletics | World Aquatics
+9,Pays-Bas,Netherlands,NL,36,13,UCI | World Rowing | World Aquatics
+10,Corée du Sud,South Korea,KR,31,13,World Archery | ISSF | World Taekwondo
+11,Espagne,Spain,ES,30,11,World Aquatics | World Athletics | IJF
+12,Canada,Canada,CA,24,7,World Aquatics | World Athletics | ICF
+12,Hongrie,Hungary,HU,24,7,World Aquatics | ICF | FIE
+14,Russie,Russia,RU,20,7,World Aquatics | UWW | IJF
+15,Brésil,Brazil,BR,19,7,World Gymnastics | World Athletics | World Taekwondo
+16,Ouzbékistan,Uzbekistan,UZ,18,5,World Boxing | UWW | World Taekwondo
+17,Belgique,Belgium,BE,17,4,UCI | World Athletics | FIBA
+18,Pologne,Poland,PL,16,6,UCI | World Athletics | ICF
+19,Nouvelle-Zélande,New Zealand,NZ,14,5,ICF | World Rowing | World Athletics
+20,Iran,Iran,IR,13,3,UWW | World Taekwondo | IWF
+20,Suisse,Switzerland,CH,13,3,UCI | ISSF | World Athletics
+22,Ukraine,Ukraine,UA,11,4,World Athletics | UWW | FIE
 23,Inde,India,IN,11,2,ISSF | World Boxing | World Athletics
-23,Turquie,Türkiye,TR,11,2,World Boxing | World Taekwondo | UWW
-25,Roumanie,Romania,RO,10,3,World Rowing | World Aquatics | ITTF
-26,Géorgie,Georgia,GE,10,2,IJF | UWW | IWF
-26,Slovénie,Slovenia,SI,10,2,UCI | World Climbing | FIVB
-28,Danemark,Denmark,DK,9,3,UCI | BWF | IHF
-28,Irlande,Ireland,IE,9,3,World Rowing | World Aquatics | World Boxing
+23,Kazakhstan,Kazakhstan,KZ,11,2,World Boxing | IJF | ITF
+25,Mexique,Mexico,MX,10,4,World Aquatics | World Archery | World Athletics
+26,Azerbaïdjan,Azerbaijan,AZ,10,2,IJF | UWW | World Taekwondo
+26,Turquie,Türkiye,TR,10,2,World Boxing | World Taekwondo | UWW
 28,Kenya,Kenya,KE,9,3,World Athletics
-28,Mexique,Mexico,MX,9,3,World Aquatics | World Archery | World Athletics
+28,Roumanie,Romania,RO,9,3,World Rowing | World Aquatics | ITTF
 28,Suède,Sweden,SE,9,3,World Athletics | World Aquatics | World Sailing
-33,Kazakhstan,Kazakhstan,KZ,9,2,World Boxing | IJF | UWW
-34,Cuba,Cuba,CU,8,3,UWW | World Athletics | World Boxing
-35,Azerbaïdjan,Azerbaijan,AZ,8,2,IJF | UWW | World Taekwondo
-36,Serbie,Serbia,RS,8,1,World Aquatics | FIBA | FIVB
-37,Afrique du Sud,South Africa,ZA,7,2,World Aquatics | World Athletics | ICC
-37,Corée du Nord,North Korea,KP,7,2,UWW | IWF | World Aquatics
-37,Égypte,Egypt,EG,7,2,World Squash | UIPM | World Taekwondo
-37,Jamaïque,Jamaica,JM,7,2,World Athletics
-41,Norvège,Norway,NO,6,3,World Athletics | ISSF | IHF
-42,Bulgarie,Bulgaria,BG,6,2,UWW | IWF | World Gymnastics
-42,Éthiopie,Ethiopia,ET,6,2,World Athletics
-42,Taipei chinois,Chinese Taipei,,6,2,World Boxing | ITTF | BWF
-45,Croatie,Croatia,HR,6,1,World Aquatics | World Athletics | World Taekwondo
-45,Portugal,Portugal,PT,6,1,FIFA | World Athletics | UCI
-47,Arménie,Armenia,AM,5,3,World Gymnastics | UWW | IWF
-47,Tchéquie,Czechia,CZ,5,3,ICF | World Athletics | ITF
-49,Autriche,Austria,AT,5,1,ISSF | World Rowing | World Sailing
-49,Kirghizistan,Kyrgyzstan,KG,5,1,UWW | World Boxing
-49,Tunisie,Tunisia,TN,5,1,World Taekwondo | World Athletics | World Aquatics
-52,Thaïlande,Thailand,TH,4,2,IWF | BWF | World Taekwondo
-53,Algérie,Algeria,DZ,4,1,World Gymnastics | World Athletics | World Boxing
-53,Bahreïn,Bahrain,BH,4,1,UWW | World Athletics | IWF
-53,Colombie,Colombia,CO,4,1,IWF | World Athletics | World Gymnastics
-53,Équateur,Ecuador,EC,4,1,World Athletics | UWW | IWF
-53,Grèce,Greece,GR,4,1,World Athletics | World Aquatics | UWW
-53,Israël,Israel,IL,4,1,World Sailing | IJF | World Gymnastics
-53,Philippines,Philippines,PH,4,1,World Gymnastics | World Boxing
-60,Hong Kong,Hong Kong,HK,3,1,FIE | World Aquatics
-60,Indonésie,Indonesia,ID,3,1,BWF | IWF | World Climbing
-62,Moldavie,Moldova,MD,3,0,IJF | ICF | UWW
-62,Mongolie,Mongolia,MN,3,0,IJF | UWW | World Boxing
-64,Argentine,Argentina,AR,2,1,FIFA | FIH
-64,Botswana,Botswana,BW,2,1,World Athletics
-64,Kosovo,Kosovo,XK,2,1,IJF
-64,Tadjikistan,Tajikistan,TJ,2,1,IJF
-68,Chili,Chile,CL,2,0,UWW | ISSF
-68,Estonie,Estonia,EE,2,0,World Athletics | FIE
-68,Pérou,Peru,PE,2,0,World Skate | ISA
-68,Porto Rico,Puerto Rico,PR,2,0,World Athletics | WBSC
-68,République dominicaine,Dominican Republic,DO,2,0,World Athletics | World Boxing
-73,Guatemala,Guatemala,GT,1,1,ISSF
-73,Nigeria,Nigeria,NG,1,1,World Athletics
-73,Ouganda,Uganda,UG,1,1,World Athletics
-76,Albanie,Albania,AL,1,0,UWW
-76,Biélorussie,Belarus,BY,1,0,World Aquatics
-76,Côte d'Ivoire,Côte d'Ivoire,CI,1,0,World Taekwondo
-76,Dominique,Dominica,DM,1,0,World Athletics
-76,Finlande,Finland,FI,1,0,World Athletics
-76,Grenade,Grenada,GD,1,0,World Athletics
-76,Indes occidentales,Indes occidentales,,1,0,ICC
-76,Jordanie,Jordan,JO,1,0,World Taekwondo
-76,Lettonie,Latvia,LV,1,0,FIBA
-76,Lituanie,Lithuania,LT,1,0,World Athletics
-76,Malaisie,Malaysia,MY,1,0,BWF
-76,Maroc,Morocco,MA,1,0,World Athletics
-76,Panama,Panama,PA,1,0,World Boxing
-76,Qatar,Qatar,QA,1,0,World Athletics
-76,Sainte-Lucie,Saint Lucia,LC,1,0,World Athletics
-76,Singapour,Singapore,SG,1,0,World Sailing
-76,Slovaquie,Slovakia,SK,1,0,ICF
-76,Trinité-et-Tobago,Trinidad and Tobago,TT,1,0,World Athletics
-76,Uruguay,Uruguay,UY,1,0,World Rowing
-76,Venezuela,Venezuela,VE,1,0,WBSC
+31,Géorgie,Georgia,GE,9,2,IJF | UWW | IWF
+31,Slovénie,Slovenia,SI,9,2,World Climbing | UCI | FIVB
+33,Serbie,Serbia,RS,9,1,World Aquatics | FIBA | FIVB
+34,Danemark,Denmark,DK,8,3,UCI | BWF | IHF
+34,Irlande,Ireland,IE,8,3,World Aquatics | World Boxing | World Rowing
+34,Tchéquie,Czechia,CZ,8,3,ICF | ITF | World Athletics
+37,Cuba,Cuba,CU,7,3,UWW | World Athletics | World Boxing
+37,Israël,Israel,IL,7,3,IJF | World Gymnastics | World Sailing
+37,Norvège,Norway,NO,7,3,World Athletics | ISSF | IHF
+37,Taipei chinois,Chinese Taipei,,7,3,World Boxing | ITTF | BWF
+41,Afrique du Sud,South Africa,ZA,7,2,World Aquatics | World Athletics | ICC
+41,Corée du Nord,North Korea,KP,7,2,UWW | IWF | World Aquatics
+41,Égypte,Egypt,EG,7,2,World Squash | UIPM | World Taekwondo
+41,Jamaïque,Jamaica,JM,7,2,World Athletics
+45,Croatie,Croatia,HR,7,1,World Aquatics | World Athletics | World Taekwondo
+46,Arménie,Armenia,AM,6,3,World Gymnastics | UWW | IWF
+47,Bulgarie,Bulgaria,BG,6,2,UWW | IWF | World Gymnastics
+47,Éthiopie,Ethiopia,ET,6,2,World Athletics
+49,Grèce,Greece,GR,6,1,World Rowing | World Athletics | World Aquatics
+50,Portugal,Portugal,PT,5,2,FIFA | World Athletics | UCI
+51,Autriche,Austria,AT,5,1,IJF | ISSF | World Sailing
+51,Kirghizistan,Kyrgyzstan,KG,5,1,UWW | World Boxing
+51,Tunisie,Tunisia,TN,5,1,World Taekwondo | World Athletics | World Aquatics
+54,Thaïlande,Thailand,TH,4,2,IWF | BWF | World Taekwondo
+55,Algérie,Algeria,DZ,4,1,World Gymnastics | World Athletics | World Boxing
+55,Bahreïn,Bahrain,BH,4,1,UWW | World Athletics | IWF
+55,Colombie,Colombia,CO,4,1,IWF | World Athletics | World Gymnastics
+55,Équateur,Ecuador,EC,4,1,World Athletics | UWW | IWF
+59,Hong Kong,Hong Kong,HK,3,1,FIE | World Aquatics
+59,Indonésie,Indonesia,ID,3,1,BWF | IWF | World Climbing
+61,Mongolie,Mongolia,MN,3,0,IJF | UWW | World Boxing
+62,Argentine,Argentina,AR,2,1,FIFA | FIH
+62,Botswana,Botswana,BW,2,1,World Athletics
+62,Philippines,Philippines,PH,2,1,World Gymnastics | World Boxing
+65,Biélorussie,Belarus,BY,2,0,World Aquatics | ICF
+65,Chili,Chile,CL,2,0,UWW | ISSF
+65,Estonie,Estonia,EE,2,0,World Athletics | FIE
+65,Moldavie,Moldova,MD,2,0,IJF | UWW
+65,Pérou,Peru,PE,2,0,World Skate | ISA
+65,Porto Rico,Puerto Rico,PR,2,0,World Athletics | WBSC
+65,République dominicaine,Dominican Republic,DO,2,0,World Athletics | World Boxing
+72,Guatemala,Guatemala,GT,1,1,ISSF
+72,Nigeria,Nigeria,NG,1,1,World Athletics
+72,Ouganda,Uganda,UG,1,1,World Athletics
+75,Albanie,Albania,AL,1,0,UWW
+75,Côte d'Ivoire,Côte d'Ivoire,CI,1,0,World Taekwondo
+75,Dominique,Dominica,DM,1,0,World Athletics
+75,Émirats arabes unis,United Arab Emirates,AE,1,0,IJF
+75,Finlande,Finland,FI,1,0,World Athletics
+75,Grenade,Grenada,GD,1,0,World Athletics
+75,Indes occidentales,Indes occidentales,,1,0,ICC
+75,Jordanie,Jordan,JO,1,0,World Taekwondo
+75,Kosovo,Kosovo,XK,1,0,IJF
+75,Lettonie,Latvia,LV,1,0,FIBA
+75,Lituanie,Lithuania,LT,1,0,World Athletics
+75,Malaisie,Malaysia,MY,1,0,BWF
+75,Maroc,Morocco,MA,1,0,World Athletics
+75,Panama,Panama,PA,1,0,World Boxing
+75,Qatar,Qatar,QA,1,0,World Athletics
+75,Sainte-Lucie,Saint Lucia,LC,1,0,World Athletics
+75,Singapour,Singapore,SG,1,0,World Sailing
+75,Slovaquie,Slovakia,SK,1,0,ICF
+75,Tadjikistan,Tajikistan,TJ,1,0,IJF
+75,Trinité-et-Tobago,Trinidad and Tobago,TT,1,0,World Athletics
+75,Venezuela,Venezuela,VE,1,0,WBSC

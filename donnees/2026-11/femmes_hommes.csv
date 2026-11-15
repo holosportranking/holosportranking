@@ -1,152 +1,153 @@
 nation,nation_en,iso2,women_score,women_rank,men_score,men_rank,women_share_pct
-Chine,China,CN,3428.9,1,2419.1,4,58.6
-États-Unis,United States,US,3100.7,2,2942.9,1,51.3
-Japon,Japan,JP,2231.8,3,1975.5,5,53
-France,France,FR,1936.5,4,2885.1,2,40.2
-Allemagne,Germany,DE,1743.6,5,1940,7,47.3
-Italie,Italy,IT,1598.5,6,1954.4,6,45
-Royaume-Uni,United Kingdom,GB,1582.8,7,2773.1,3,36.3
-Corée du Sud,South Korea,KR,1559.7,8,997.6,10,61
-Australie,Australia,AU,1507.1,9,1599.5,8,48.5
-Pays-Bas,Netherlands,NL,1485.6,10,899.8,11,62.3
-Canada,Canada,CA,1130.2,11,842.6,12,57.3
-Espagne,Spain,ES,1011.1,12,1499.9,9,40.3
-Brésil,Brazil,BR,908.3,13,731.3,15,55.4
-Suisse,Switzerland,CH,797.5,14,593.1,21,57.3
-Nouvelle-Zélande,New Zealand,NZ,767.2,15,611.7,19,55.6
-Russie,Russia,RU,724.9,16,664.2,17,52.2
-Pologne,Poland,PL,690.4,17,343.4,34,66.8
-Hongrie,Hungary,HU,672,18,595.5,20,53
-Ukraine,Ukraine,UA,646,19,547.4,26,54.1
-Inde,India,IN,599.9,20,737.4,14,44.9
-Suède,Sweden,SE,583.4,21,766.1,13,43.2
-Norvège,Norway,NO,488,22,572.4,24,46
-Turquie,Turkey (Türkiye),TR,480.9,23,277.6,41,63.4
-Belgique,Belgium,BE,470.6,24,592.2,22,44.3
-Thaïlande,Thailand,TH,449.8,25,534.6,27,45.7
-Kazakhstan,Kazakhstan,KZ,428.6,26,292.3,39,59.5
-Taipei chinois,Taiwan,,400.4,27,504.4,28,44.3
-Tchéquie,Czech Republic (Czechia),CZ,377.1,28,401.3,30,48.4
-Égypte,Egypt,EG,368.3,29,560.8,25,39.6
-Mexique,Mexico,MX,345.1,30,283,40,54.9
-Autriche,Austria,AT,343.4,31,345.2,33,49.9
-Argentine,Argentina,AR,322.1,32,487.1,29,39.8
-Slovénie,Slovenia,SI,289.3,33,391.8,31,42.5
-Roumanie,Romania,RO,279.3,34,96.9,65,74.2
-Afrique du Sud,South Africa,ZA,269.9,35,383.2,32,41.3
-Danemark,Denmark,DK,267.6,36,713.6,16,27.3
-Indonésie,Indonesia,ID,250.4,37,305,38,45.1
-Colombie,Colombia,CO,242.1,38,210.7,47,53.5
-Portugal,Portugal,PT,206.7,39,310.7,36,39.9
-Iran,Iran,IR,187.5,40,577.4,23,24.5
-Finlande,Finland,FI,178,41,256.2,43,41
-Israël,Israel,IL,161.9,42,169.7,53,48.8
-Corée du Nord,North Korea,KP,161.1,43,110.2,61,59.4
-Hong Kong,Hong Kong,HK,160.8,44,142.2,56,53.1
-Serbie,Serbia,RS,155.2,45,308.3,37,33.5
-Viêt Nam,Vietnam,VN,153.5,46,146.1,55,51.2
-Ouzbékistan,Uzbekistan,UZ,152.4,47,650,18,19
-Irlande,Ireland,IE,146.1,48,209.4,49,41.1
-Porto Rico,Puerto Rico,PR,144.6,49,90.1,70,61.6
-Malaisie,Malaysia,MY,143.1,50,173.3,51,45.2
-Kenya,Kenya,KE,124,51,63.6,77,66.1
-Croatie,Croatia,HR,119,52,173.2,52,40.7
-Philippines,Philippines,PH,116.6,53,100.2,64,53.8
-Algérie,Algeria,DZ,116.6,54,56.5,80,67.4
-Lettonie,Latvia,LV,109.2,55,176.3,50,38.2
-Tunisie,Tunisia,TN,100.8,56,214.9,45,31.9
-Nigeria,Nigeria,NG,94.9,57,43.6,87,68.5
-Grèce,Greece,GR,90.8,58,209.8,48,30.2
-Bulgarie,Bulgaria,BG,89.2,59,225.7,44,28.3
-Lituanie,Lithuania,LT,88.9,60,96.8,66,47.9
-Cuba,Cuba,CU,83,61,153.7,54,35.1
-Pérou,Peru,PE,81.4,62,109.8,62,42.6
-Indes occidentales,Indes occidentales,,79.7,63,50.2,84,61.4
+Chine,China,CN,3400.9,1,2370.2,4,58.9
+États-Unis,United States,US,3071.7,2,2965.6,1,50.9
+Japon,Japan,JP,2191.4,3,1983.6,6,52.5
+France,France,FR,2012.2,4,2921.3,2,40.8
+Allemagne,Germany,DE,1765,5,2014.1,5,46.7
+Italie,Italy,IT,1623.2,6,1971.7,7,45.2
+Royaume-Uni,United Kingdom,GB,1555.2,7,2802.8,3,35.7
+Corée du Sud,South Korea,KR,1514.1,8,947.3,10,61.5
+Australie,Australia,AU,1495.8,9,1627.2,8,47.9
+Pays-Bas,Netherlands,NL,1493.6,10,906.9,11,62.2
+Canada,Canada,CA,1053.4,11,803.6,12,56.7
+Espagne,Spain,ES,1022.4,12,1536.6,9,40
+Brésil,Brazil,BR,912.9,13,749.3,14,54.9
+Suisse,Switzerland,CH,751.3,14,595.8,20,55.8
+Nouvelle-Zélande,New Zealand,NZ,736.2,15,595.5,21,55.3
+Pologne,Poland,PL,706.4,16,327.4,36,68.3
+Russie,Russia,RU,684.2,17,612.1,19,52.8
+Hongrie,Hungary,HU,661.8,18,589.1,22,52.9
+Ukraine,Ukraine,UA,617.1,19,532.5,27,53.7
+Inde,India,IN,602.8,20,730.4,15,45.2
+Suède,Sweden,SE,583.3,21,751.4,13,43.7
+Belgique,Belgium,BE,501.6,22,631.7,18,44.3
+Norvège,Norway,NO,494.8,23,586.1,23,45.8
+Turquie,Turkey (Türkiye),TR,493.4,24,268,41,64.8
+Tchéquie,Czech Republic (Czechia),CZ,477.6,25,465.1,30,50.7
+Thaïlande,Thailand,TH,467.2,26,509.7,28,47.8
+Kazakhstan,Kazakhstan,KZ,444.6,27,292.3,39,60.3
+Taipei chinois,Taiwan,,429.5,28,571.8,25,42.9
+Égypte,Egypt,EG,368.3,29,559.8,26,39.7
+Mexique,Mexico,MX,359,30,295.6,38,54.8
+Autriche,Austria,AT,350.7,31,338.8,34,50.9
+Argentine,Argentina,AR,337.8,32,468.5,29,41.9
+Danemark,Denmark,DK,303.5,33,661.7,16,31.4
+Afrique du Sud,South Africa,ZA,286.6,34,399.5,31,41.8
+Slovénie,Slovenia,SI,284.9,35,367.5,33,43.7
+Roumanie,Romania,RO,259.5,36,90.2,70,74.2
+Indonésie,Indonesia,ID,253.7,37,302.3,37,45.6
+Colombie,Colombia,CO,244.3,38,213,49,53.4
+Israël,Israel,IL,228,39,207.7,50,52.3
+Iran,Iran,IR,219.4,40,572.8,24,27.7
+Portugal,Portugal,PT,201.8,41,281.7,40,41.7
+Viêt Nam,Vietnam,VN,180.6,42,173.2,53,51
+Finlande,Finland,FI,178,43,256.2,43,41
+Serbie,Serbia,RS,175.6,44,328.7,35,34.8
+Porto Rico,Puerto Rico,PR,168.1,45,102.5,64,62.1
+Ouzbékistan,Uzbekistan,UZ,166.9,46,653.3,17,20.3
+Corée du Nord,North Korea,KP,161.1,47,110.2,62,59.4
+Irlande,Ireland,IE,157.5,48,229.8,45,40.7
+Hong Kong,Hong Kong,HK,157,49,139.3,57,53
+Malaisie,Malaysia,MY,141.3,50,171.4,54,45.2
+Philippines,Philippines,PH,128.7,51,58.6,78,68.7
+Croatie,Croatia,HR,124.1,52,181.4,52,40.6
+Kenya,Kenya,KE,124,53,63.6,77,66.1
+Algérie,Algeria,DZ,116.5,54,56.5,80,67.3
+Lettonie,Latvia,LV,109.2,55,187.6,51,36.8
+Tunisie,Tunisia,TN,99.7,56,213.8,48,31.8
+Biélorussie,Belarus,BY,95.3,57,87.7,71,52.1
+Nigeria,Nigeria,NG,94.9,58,43.6,86,68.5
+Bulgarie,Bulgaria,BG,91.8,59,225.7,47,28.9
+Grèce,Greece,GR,91.4,60,226.9,46,28.7
+Lituanie,Lithuania,LT,88.9,61,96.8,66,47.9
+Singapour,Singapore,SG,81.3,62,117.3,60,40.9
+Indes occidentales,Indes occidentales,,79.7,63,50,84,61.4
 Slovaquie,Slovakia,SK,79.3,64,95.3,67,45.4
-Moldavie,Moldova,MD,76.9,65,107.2,63,41.8
-Mongolie,Mongolia,MN,76,66,40.8,89,65.1
-République dominicaine,Dominican Republic,DO,72.9,67,92.7,68,44
-Biélorussie,Belarus,BY,70.9,68,63.2,78,52.9
-Macao,Macao,MO,63.6,69,0,151,100
-Jamaïque,Jamaica,JM,62.5,70,140.9,57,30.7
-Kosovo,Kosovo,XK,61.7,71,12.8,112,82.8
-Équateur,Ecuador,EC,61,72,43.1,88,58.6
-Sri Lanka,Sri Lanka,LK,51.7,73,49.9,85,50.9
-Géorgie,Georgia,GE,47.1,74,272.9,42,14.7
-Pakistan,Pakistan,PK,46.5,75,71.2,72,39.5
-Bangladesh,Bangladesh,BD,45.9,76,34.9,95,56.8
-Singapour,Singapore,SG,45.7,77,81.7,71,35.9
-Monténégro,Montenegro,ME,45.2,78,21.7,100,67.6
-Éthiopie,Ethiopia,ET,44.2,79,52.8,82,45.6
-Azerbaïdjan,Azerbaijan,AZ,43.2,80,317.7,35,12
-Kirghizistan,Kyrgyzstan,KG,42.9,81,64.3,76,40
-Chili,Chile,CL,40.6,82,57.2,79,41.5
-Maroc,Morocco,MA,38.7,83,126,59,23.5
-Bénin,Benin,BJ,37.9,84,37.9,91,50
-Papouasie-Nouvelle-Guinée,Papua New Guinea,PG,34.8,85,0,147,100
-Jordanie,Jordan,JO,31,86,90.7,69,25.5
-Émirats arabes unis,United Arab Emirates,AE,29.2,87,27.6,96,51.4
-Venezuela,Venezuela,VE,28.6,88,128.2,58,18.2
-Guatemala,Guatemala,GT,28.1,89,24,98,53.9
-Ouganda,Uganda,UG,24.5,90,10.6,118,69.8
-Bahreïn,Bahrain,BH,23.8,91,68.6,73,25.8
-Cambodge,Cambodia,KH,23.7,92,23.7,99,50
-Mali,Mali,ML,23.1,93,6.1,123,79.1
-Islande,Iceland,IS,21.2,94,2.5,133,89.5
-Arabie saoudite,Saudi Arabia,SA,20,95,20.3,101,49.6
-Turkménistan,Turkmenistan,TM,19.5,96,19.5,104,50
-Sénégal,Senegal,SN,17.8,97,49.3,86,26.5
-Népal,Nepal,NP,16.7,98,19.3,106,46.4
-Estonie,Estonia,EE,15.5,99,27.4,97,36.1
-Sainte-Lucie,Saint Lucia,LC,15.2,100,0,145,100
-Panama,Panama,PA,14.3,101,19.3,105,42.6
-Uruguay,Uruguay,UY,14.2,102,40.3,90,26.1
-Arménie,Armenia,AM,14.1,103,211.5,46,6.3
-Brunei,Brunei,BN,12.1,104,12.1,115,50
-Cameroun,Cameroon,CM,12,105,9.6,119,55.6
-Luxembourg,Luxembourg,LU,12,106,12,116,50
-Salvador,El Salvador,SV,11.1,107,11.5,117,49.1
-Dominique,Dominica,DM,10.8,108,0,146,100
-Liban,Lebanon,LB,9.3,109,14.3,111,39.4
-Bosnie-Herzégovine,Bosnia and Herzegovina,BA,8.4,110,6.7,121,55.6
-Ghana,Ghana,GH,8.2,111,1.8,136,82
-Trinité-et-Tobago,Trinidad and Tobago,TT,7.9,112,7.9,120,50
-Mozambique,Mozambique,MZ,6.9,113,0,144,100
-Îles Vierges,U.S. Virgin Islands,VI,6.4,114,6.2,122,50.8
-Soudan du Sud,South Sudan,SS,6.3,115,12.3,114,33.9
-Fidji,Fiji,FJ,6.3,116,67,74,8.6
-Zimbabwe,Zimbabwe,ZW,6.3,117,36.8,93,14.6
-Samoa,Samoa,WS,5.7,118,37,92,13.3
-Côte d'Ivoire,Côte d'Ivoire,CI,4.8,119,50.7,83,8.6
-Tanzanie,Tanzania,TZ,3.5,120,2.8,130,55.6
-Bahamas,Bahamas,BS,2.5,121,2.6,132,49
-Burkina Faso,Burkina Faso,BF,2.2,122,2.2,134,50
-Saint-Vincent-et-les-Grenadines,Saint Vincent and the Grenadines,VC,1.8,123,1.8,137,50
-Costa Rica,Costa Rica,CR,1.6,124,0,148,100
-Îles Vierges britanniques,British Virgin Islands,VG,1.5,125,1.5,138,50
-Namibie,Namibia,NA,1.5,126,4.1,128,26.8
-Monaco,Monaco,MC,1.4,127,112.7,60,1.2
-Paraguay,Paraguay,PY,0.8,128,14.4,110,5.3
-Lesotho,Lesotho,LS,0.7,129,0.7,139,50
-Barbade,Barbados,BB,0.7,130,0.7,140,50
-Chypre,Cyprus,CY,0.7,131,17.9,107,3.8
-Libéria,Liberia,LR,0.7,132,0.7,141,50
-Érythrée,Eritrea,ER,0.4,133,0.4,142,50
-Haïti,Haiti,HT,0.1,134,0,149,100
-Bermudes,Bermuda,BM,0.1,135,0,150,100
-Angola,Angola,AO,0,136,17.8,108,0
-Cap-Vert,Cabo Verde,CV,0,137,12.6,113,0
-Honduras,Honduras,HN,0,138,3.6,129,0
-Qatar,Qatar,QA,0,139,52.9,81,0
-Vanuatu,Vanuatu,VU,0,140,2.6,131,0
-Tahiti,French Polynesia,PF,0,141,4.4,125,0
-Botswana,Botswana,BW,0,142,35.3,94,0
-Grenade,Grenada,GD,0,143,16.7,109,0
-Zambie,Zambia,ZM,0,144,5.1,124,0
-Tadjikistan,Tajikistan,TJ,0,145,66.5,75,0
-Albanie,Albania,AL,0,146,20.3,102,0
-RD Congo,Democratic Republic of the Congo,CD,0,147,1.9,135,0
-Oman,Oman,OM,0,148,4.1,127,0
-Afghanistan,Afghanistan,AF,0,149,19.6,103,0
-Nicaragua,Nicaragua,NI,0,150,4.4,126,0
-Tonga,Tonga,TO,0,151,0.1,143,0
+Bangladesh,Bangladesh,BD,77.9,65,34.7,94,69.2
+Pérou,Peru,PE,77.5,66,105.9,63,42.3
+Moldavie,Moldova,MD,76.9,67,98.8,65,43.8
+Cuba,Cuba,CU,74.2,68,153.7,56,32.6
+République dominicaine,Dominican Republic,DO,72.9,69,92.7,68,44
+Mongolie,Mongolia,MN,65.3,70,40.8,89,61.5
+Équateur,Ecuador,EC,61,71,43.1,87,58.6
+Sri Lanka,Sri Lanka,LK,60.2,72,58.3,79,50.8
+Jamaïque,Jamaica,JM,52.1,73,155.2,55,25.1
+Chili,Chile,CL,49.1,74,64.1,76,43.4
+Pakistan,Pakistan,PK,46.5,75,70.9,73,39.6
+Monténégro,Montenegro,ME,45.2,76,21.7,102,67.6
+Éthiopie,Ethiopia,ET,44.2,77,52.8,82,45.6
+Géorgie,Georgia,GE,43.7,78,266.3,42,14.1
+Azerbaïdjan,Azerbaijan,AZ,43.2,79,375,32,10.3
+Kirghizistan,Kyrgyzstan,KG,42.9,80,64.3,75,40
+Ouganda,Uganda,UG,41.5,81,27.6,97,60.1
+Fidji,Fiji,FJ,40.4,82,77.7,72,34.2
+Émirats arabes unis,United Arab Emirates,AE,40.3,83,38.6,90,51.1
+Maroc,Morocco,MA,38.7,84,126,59,23.5
+Bénin,Benin,BJ,37.9,85,37.9,91,50
+Kosovo,Kosovo,XK,37.2,86,12.8,116,74.4
+Népal,Nepal,NP,37.1,87,24.6,99,60.1
+Jordanie,Jordan,JO,31,88,90.7,69,25.5
+Samoa,Samoa,WS,29.8,89,37.4,92,44.3
+Venezuela,Venezuela,VE,28.6,90,128.2,58,18.2
+Guatemala,Guatemala,GT,28.1,91,24,100,53.9
+Macao,Macao,MO,26.1,92,0,151,100
+Bahreïn,Bahrain,BH,23.8,93,68.6,74,25.8
+Cambodge,Cambodia,KH,23.7,94,23.7,101,50
+Mali,Mali,ML,23.1,95,6.1,127,79.1
+Islande,Iceland,IS,21.2,96,2.5,136,89.5
+Arabie saoudite,Saudi Arabia,SA,20,97,20.3,103,49.6
+Turkménistan,Turkmenistan,TM,19.5,98,19.5,105,50
+Sénégal,Senegal,SN,17.8,99,49.3,85,26.5
+Malawi,Malawi,MW,17,100,17,111,50
+Tonga,Tonga,TO,17,101,18.6,108,47.8
+Trinité-et-Tobago,Trinidad and Tobago,TT,16.4,102,16.4,113,50
+Estonie,Estonia,EE,15.5,103,27.4,98,36.1
+Sainte-Lucie,Saint Lucia,LC,15.2,104,0,146,100
+Zimbabwe,Zimbabwe,ZW,14.9,105,42.2,88,26.1
+Panama,Panama,PA,14.3,106,19.3,107,42.6
+Arménie,Armenia,AM,14.1,107,255.6,44,5.2
+Uruguay,Uruguay,UY,12.6,108,33.5,95,27.3
+Brunei,Brunei,BN,12.1,109,12.1,119,50
+Cameroun,Cameroon,CM,12,110,9.6,122,55.6
+Luxembourg,Luxembourg,LU,12,111,12,120,50
+Salvador,El Salvador,SV,11.1,112,11.5,121,49.1
+Dominique,Dominica,DM,10.8,113,0,147,100
+Papouasie-Nouvelle-Guinée,Papua New Guinea,PG,10.6,114,0,152,100
+Liban,Lebanon,LB,9.3,115,14.3,115,39.4
+Barbade,Barbados,BB,9.3,116,9.3,123,50
+Bosnie-Herzégovine,Bosnia and Herzegovina,BA,8.4,117,6.7,125,55.6
+Ghana,Ghana,GH,8.2,118,1.8,139,82
+Mozambique,Mozambique,MZ,6.9,119,0,145,100
+Îles Vierges,U.S. Virgin Islands,VI,6.4,120,6.2,126,50.8
+Soudan du Sud,South Sudan,SS,6.3,121,12.3,118,33.9
+Namibie,Namibia,NA,6.1,122,8.6,124,41.5
+Côte d'Ivoire,Côte d'Ivoire,CI,4.8,123,50.7,83,8.6
+Tanzanie,Tanzania,TZ,3,124,2.8,133,51.7
+Bahamas,Bahamas,BS,2.5,125,2.6,135,49
+Burkina Faso,Burkina Faso,BF,2.2,126,2.2,137,50
+Saint-Vincent-et-les-Grenadines,Saint Vincent and the Grenadines,VC,1.8,127,1.8,140,50
+Costa Rica,Costa Rica,CR,1.6,128,0,148,100
+Îles Vierges britanniques,British Virgin Islands,VG,1.5,129,1.5,141,50
+Monaco,Monaco,MC,1.4,130,112.7,61,1.2
+Paraguay,Paraguay,PY,0.8,131,14.4,114,5.3
+Lesotho,Lesotho,LS,0.7,132,0.7,142,50
+Chypre,Cyprus,CY,0.7,133,17.9,109,3.8
+Libéria,Liberia,LR,0.7,134,0.7,143,50
+Érythrée,Eritrea,ER,0.4,135,0.4,144,50
+Haïti,Haiti,HT,0.1,136,0,149,100
+Bermudes,Bermuda,BM,0.1,137,0,150,100
+Angola,Angola,AO,0,138,17.8,110,0
+Cap-Vert,Cabo Verde,CV,0,139,12.6,117,0
+Honduras,Honduras,HN,0,140,3.6,132,0
+Qatar,Qatar,QA,0,141,52.9,81,0
+Vanuatu,Vanuatu,VU,0,142,2.6,134,0
+Tahiti,French Polynesia,PF,0,143,4.4,129,0
+Botswana,Botswana,BW,0,144,35.3,93,0
+Grenade,Grenada,GD,0,145,16.7,112,0
+Zambie,Zambia,ZM,0,146,5.1,128,0
+Tadjikistan,Tajikistan,TJ,0,147,31.4,96,0
+Albanie,Albania,AL,0,148,20.3,104,0
+RD Congo,Democratic Republic of the Congo,CD,0,149,1.9,138,0
+Oman,Oman,OM,0,150,4.1,131,0
+Afghanistan,Afghanistan,AF,0,151,19.5,106,0
+Nicaragua,Nicaragua,NI,0,152,4.4,130,0

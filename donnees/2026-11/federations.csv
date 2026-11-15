@@ -53,7 +53,7 @@ rank,acronym,name,sport,weight_pct,score_10,practice,audience,broadcast,olympic,
 52,IBF,International Bowling Federation,,0.7461,2.95,2.0,0.5,5.5,5.0,,,3 - Intermédiaire,Complète,Non attribuée,–
 53,IFAF,International Federation of American Football,Football américain / flag,0.7387,2.93,0.8,2.2,3.6,8.0,,,3 - Intermédiaire,Complète,Attribuée,A
 54,IMMAF,International Mixed Martial Arts Federation,,0.6491,2.68,1.0,2.8,5.9,1.0,,,3 - Intermédiaire,Complète,Non attribuée,–
-55,World Lacrosse,World Lacrosse,Lacrosse,0.6316,2.63,0.5,0.6,4.4,8.0,,,3 - Intermédiaire,Complète,Attribuée,B
+55,World Lacrosse,World Lacrosse,Lacrosse,0.6316,2.63,0.5,0.6,4.4,8.0,,,3 - Intermédiaire,Complète,Attribuée,A
 56,ICU,International Cheer Union,,0.6212,2.6,1.0,0.5,5.5,5.0,,,3 - Intermédiaire,Complète,Non attribuée,–
 57,FIAS,International Sambo Federation,Sambo,0.6074,2.56,0.6,0.5,5.9,5.0,,,3 - Intermédiaire,Complète,Attribuée,B
 57,WFDF,World Flying Disc Federation,Disque volant,0.6074,2.56,0.8,0.3,5.8,5.0,,,3 - Intermédiaire,Complète,Attribuée,A
@@ -62,11 +62,11 @@ rank,acronym,name,sport,weight_pct,score_10,practice,audience,broadcast,olympic,
 61,IBU,International Biathlon Union,Biathlon,0.5431,2.37,0.4,1.2,2.9,8.0,,,4 - Confidentiel,Complète,Attribuée,A
 62,UIAA,Union Internationale des Associations d'Alpinisme,,0.5365,2.35,1.0,0.4,4.6,5.0,,,4 - Confidentiel,Complète,Non attribuée,–
 62,World Netball,World Netball,Netball,0.5365,2.35,1.0,1.0,4.0,5.0,,,4 - Confidentiel,Allégée,Attribuée,B
-64,WDF,World Darts Federation,Fléchettes,0.5332,2.34,1.6,1.5,3.8,3.0,,,4 - Confidentiel,Allégée,Attribuée,C
-65,IGF (go),International Go Federation,Go,0.5299,2.33,2.0,1.0,3.7,3.0,,,4 - Confidentiel,Allégée,Attribuée,C
+64,WDF,World Darts Federation,Fléchettes,0.5332,2.34,1.6,1.5,3.8,3.0,,,4 - Confidentiel,Allégée,Attribuée,B
+65,IGF (go),International Go Federation,Go,0.5299,2.33,2.0,1.0,3.7,3.0,,,4 - Confidentiel,Allégée,Attribuée,B
 66,IBSF,International Bobsleigh and Skeleton Federation,Bobsleigh et skeleton,0.52,2.3,0.2,0.6,3.5,8.0,,,4 - Confidentiel,Allégée,Attribuée,B
 67,JJIF,Ju-Jitsu International Federation,Ju-jitsu,0.5168,2.29,0.6,0.3,6.2,3.0,,,4 - Confidentiel,Allégée,Attribuée,B
-68,WBF,World Bridge Federation,Bridge,0.507,2.26,0.8,0.3,4.6,5.0,,,4 - Confidentiel,Allégée,Attribuée,C
+68,WBF,World Bridge Federation,Bridge,0.507,2.26,0.8,0.3,4.6,5.0,,,4 - Confidentiel,Allégée,Attribuée,B
 69,FIP,International Padel Federation,Padel,0.494,2.22,1.9,0.8,4.8,1.0,35.0,,4 - Confidentiel,Allégée,Attribuée,B
 69,IDBF,International Dragon Boat Federation,Bateau-dragon,0.494,2.22,2.2,0.5,3.5,3.0,50.0,,4 - Confidentiel,Allégée,Attribuée,B
 71,IFS,International Sumo Federation,,0.478,2.17,0.4,1.0,4.1,5.0,,,4 - Confidentiel,Allégée,Non attribuée,–
@@ -102,7 +102,7 @@ rank,acronym,name,sport,weight_pct,score_10,practice,audience,broadcast,olympic,
 100,WMF,World Minigolfsport Federation,,0.2691,1.46,0.6,0.2,3.0,3.0,,,4 - Confidentiel,Allégée,Non attribuée,–
 102,FIK,International Kendo Federation,Kendo,0.2664,1.45,0.5,0.3,3.0,3.0,,,4 - Confidentiel,Allégée,Attribuée,B
 102,IJRU,International Jump Rope Union,,0.2664,1.45,1.0,0.3,3.5,1.0,,,4 - Confidentiel,Allégée,Non attribuée,–
-104,IFA,International Fistball Association,Balle au poing,0.2558,1.41,0.3,0.2,3.2,3.0,,,4 - Confidentiel,Allégée,Attribuée,C
+104,IFA,International Fistball Association,Balle au poing,0.2558,1.41,0.3,0.2,3.2,3.0,,,4 - Confidentiel,Allégée,Attribuée,B
 105,IFHA,International Federation of Horseracing Authorities,,0.2506,1.39,0.4,1.8,2.6,1.0,,,4 - Confidentiel,Allégée,Non attribuée,–
 106,FISav,Fédération Internationale de Savate,,0.2428,1.36,0.3,0.2,3.0,3.0,,,4 - Confidentiel,Allégée,Non attribuée,–
 106,IPSF (silat),International Pencak Silat Federation (PERSILAT),Pencak silat,0.2428,1.36,0.8,0.5,3.2,1.0,,,4 - Confidentiel,Allégée,Attribuée,C

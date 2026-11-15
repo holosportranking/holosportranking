@@ -4,7 +4,7 @@
  "version": "2026-11 (méthode v1.1)",
  "description": "Édition de novembre 2026. Tableaux complets du calcul HSR.",
  "homepage": "https://holosportranking.com/",
- "created": "2026-11-13",
+ "created": "2026-11-15",
  "licenses": [
   {
    "name": "CC-BY-NC-4.0",
@@ -78,7 +78,7 @@
      }
     ]
    },
-   "rows": 151
+   "rows": 152
   },
   {
    "name": "classement_sportif",
@@ -134,7 +134,7 @@
      }
     ]
    },
-   "rows": 151
+   "rows": 152
   },
   {
    "name": "femmes_hommes",
@@ -196,7 +196,7 @@
      }
     ]
    },
-   "rows": 151
+   "rows": 152
   },
   {
    "name": "efficience_economique",
@@ -258,7 +258,7 @@
      }
     ]
    },
-   "rows": 144
+   "rows": 145
   },
   {
    "name": "efficience_demographique",
@@ -320,7 +320,7 @@
      }
     ]
    },
-   "rows": 144
+   "rows": 145
   },
   {
    "name": "points_par_federation",
@@ -382,7 +382,7 @@
      }
     ]
    },
-   "rows": 1445
+   "rows": 1500
   },
   {
    "name": "federations",
@@ -640,7 +640,7 @@
      }
     ]
    },
-   "rows": 248
+   "rows": 249
   },
   {
    "name": "resultats",
@@ -708,7 +708,7 @@
      }
     ]
    },
-   "rows": 2346
+   "rows": 2428
   },
   {
    "name": "classements_mondiaux",
@@ -820,7 +820,7 @@
      }
     ]
    },
-   "rows": 151
+   "rows": 152
   },
   {
    "name": "sous_classements",
@@ -882,7 +882,7 @@
      }
     ]
    },
-   "rows": 546
+   "rows": 550
   },
   {
    "name": "equilibre_femmes_hommes",

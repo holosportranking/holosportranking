@@ -1,152 +1,153 @@
 rank,nation,nation_en,iso2,score,raw_points,federations
-1,États-Unis,United States,US,6043.6,5192.35,51
-2,Chine,China,CN,5848,4400.65,42
-3,France,France,FR,4821.5,4254.41,49
-4,Royaume-Uni,United Kingdom,GB,4355.9,4022.56,43
-5,Japon,Japan,JP,4207.3,3591.52,42
-6,Allemagne,Germany,DE,3683.6,3740.82,42
-7,Italie,Italy,IT,3552.9,3338.44,43
-8,Australie,Australia,AU,3106.6,2730.66,35
-9,Corée du Sud,South Korea,KR,2557.3,2359.69,31
-10,Espagne,Spain,ES,2511,2184.47,35
-11,Pays-Bas,Netherlands,NL,2385.4,2217.34,29
-12,Canada,Canada,CA,1972.8,1940.17,37
-13,Brésil,Brazil,BR,1639.6,1163.73,21
-14,Suisse,Switzerland,CH,1390.6,1890.78,25
-15,Russie,Russia,RU,1389.1,1286.42,22
-16,Nouvelle-Zélande,New Zealand,NZ,1379,1381.46,20
-17,Suède,Sweden,SE,1349.5,1749.87,24
-18,Inde,India,IN,1337.2,1369.62,17
-19,Hongrie,Hungary,HU,1267.5,1181.84,25
-20,Ukraine,Ukraine,UA,1193.3,1338.7,25
-21,Belgique,Belgium,BE,1062.8,915.26,19
-22,Norvège,Norway,NO,1060.3,1198,20
-23,Pologne,Poland,PL,1033.8,842.7,27
-24,Thaïlande,Thailand,TH,984.4,1141.3,15
-25,Danemark,Denmark,DK,981.2,742.38,22
-26,Égypte,Egypt,EG,929,983.87,14
-27,Taipei chinois,Taiwan,,904.9,992.51,20
-28,Argentine,Argentina,AR,809.2,685.84,12
-29,Ouzbékistan,Uzbekistan,UZ,802.4,599.53,13
-30,Tchéquie,Czech Republic (Czechia),CZ,778.5,884.31,19
-31,Iran,Iran,IR,764.9,759.99,13
-32,Turquie,Turkey (Türkiye),TR,758.5,524.99,18
-33,Kazakhstan,Kazakhstan,KZ,720.9,559.43,20
-34,Autriche,Austria,AT,688.6,947.51,20
-35,Slovénie,Slovenia,SI,681.1,499.11,16
-36,Afrique du Sud,South Africa,ZA,653.1,568.6,11
-37,Mexique,Mexico,MX,628.1,537.78,17
-38,Indonésie,Indonesia,ID,555.4,922.8,9
-39,Portugal,Portugal,PT,517.4,429.25,17
-40,Serbie,Serbia,RS,463.5,192.86,12
-41,Colombie,Colombia,CO,452.8,368.19,15
-42,Finlande,Finland,FI,434.2,764.43,11
-43,Roumanie,Romania,RO,376.2,274.81,13
-44,Azerbaïdjan,Azerbaijan,AZ,360.9,239.53,12
-45,Irlande,Ireland,IE,355.5,252.01,12
-46,Israël,Israel,IL,331.7,365.25,12
-47,Géorgie,Georgia,GE,320,264.48,12
-48,Malaisie,Malaysia,MY,316.4,503.22,6
-49,Tunisie,Tunisia,TN,315.7,251.86,8
-50,Bulgarie,Bulgaria,BG,314.9,255.6,13
-51,Hong Kong,Hong Kong,HK,303.1,293.92,10
-52,Grèce,Greece,GR,300.6,186.54,14
-53,Viêt Nam,Vietnam,VN,299.6,1024.55,7
-54,Croatie,Croatia,HR,292.2,170.67,15
-55,Lettonie,Latvia,LV,285.5,181.86,8
+1,États-Unis,United States,US,6037.4,5185.81,53
+2,Chine,China,CN,5771.1,4304.46,41
+3,France,France,FR,4933.5,4424.23,53
+4,Royaume-Uni,United Kingdom,GB,4358,4112.07,46
+5,Japon,Japan,JP,4175,3511.12,42
+6,Allemagne,Germany,DE,3779.1,3783.43,45
+7,Italie,Italy,IT,3594.9,3452.76,46
+8,Australie,Australia,AU,3123,2761,37
+9,Espagne,Spain,ES,2559,2200.83,36
+10,Corée du Sud,South Korea,KR,2461.4,2229.6,31
+11,Pays-Bas,Netherlands,NL,2400.5,2252.05,29
+12,Canada,Canada,CA,1857,1789.8,37
+13,Brésil,Brazil,BR,1662.3,1112.09,22
+14,Suisse,Switzerland,CH,1347.1,1870.15,25
+15,Suède,Sweden,SE,1334.7,1726.78,26
+16,Inde,India,IN,1333.2,1368.21,17
+17,Nouvelle-Zélande,New Zealand,NZ,1331.7,1339.26,21
+18,Russie,Russia,RU,1296.3,1218.86,22
+19,Hongrie,Hungary,HU,1250.9,1169.74,24
+20,Ukraine,Ukraine,UA,1149.5,1307.06,25
+21,Belgique,Belgium,BE,1133.3,1004.08,22
+22,Norvège,Norway,NO,1080.9,1219.6,22
+23,Pologne,Poland,PL,1033.8,781.02,28
+24,Taipei chinois,Taiwan,,1001.3,1117.45,21
+25,Thaïlande,Thailand,TH,976.9,1134.96,15
+26,Danemark,Denmark,DK,965.2,765.4,22
+27,Tchéquie,Czech Republic (Czechia),CZ,942.7,1086.32,22
+28,Égypte,Egypt,EG,928,983.06,14
+29,Ouzbékistan,Uzbekistan,UZ,820.3,616.87,14
+30,Argentine,Argentina,AR,806.3,711.83,14
+31,Iran,Iran,IR,792.3,826.85,13
+32,Turquie,Turkey (Türkiye),TR,761.4,555.31,18
+33,Kazakhstan,Kazakhstan,KZ,736.9,566.62,20
+34,Autriche,Austria,AT,689.5,936.3,19
+35,Afrique du Sud,South Africa,ZA,686.1,631.34,12
+36,Mexique,Mexico,MX,654.7,561.63,17
+37,Slovénie,Slovenia,SI,652.4,484.25,15
+38,Indonésie,Indonesia,ID,556,918.78,8
+39,Serbie,Serbia,RS,504.2,219.06,14
+40,Portugal,Portugal,PT,483.5,356.87,17
+41,Colombie,Colombia,CO,457.3,386.05,16
+42,Israël,Israel,IL,435.7,494.93,13
+43,Finlande,Finland,FI,434.2,764.43,11
+44,Azerbaïdjan,Azerbaijan,AZ,418.2,274.74,12
+45,Irlande,Ireland,IE,387.3,307.23,14
+46,Viêt Nam,Vietnam,VN,353.8,1126.88,8
+47,Roumanie,Romania,RO,349.8,251.59,12
+48,Grèce,Greece,GR,318.3,200.02,13
+49,Bulgarie,Bulgaria,BG,317.4,256.74,13
+50,Tunisie,Tunisia,TN,313.5,249.91,8
+51,Malaisie,Malaysia,MY,312.7,502.09,6
+52,Géorgie,Georgia,GE,310,257.43,11
+53,Croatie,Croatia,HR,305.5,180.07,16
+54,Lettonie,Latvia,LV,296.8,203.07,9
+55,Hong Kong,Hong Kong,HK,296.2,290.54,10
 56,Corée du Nord,North Korea,KP,271.3,175.46,6
-57,Cuba,Cuba,CU,236.7,148.34,8
-58,Porto Rico,Puerto Rico,PR,234.7,137.38,7
-59,Arménie,Armenia,AM,225.6,156.61,6
-60,Philippines,Philippines,PH,216.8,154.17,11
-61,Jamaïque,Jamaica,JM,203.4,198.58,3
-62,Pérou,Peru,PE,191.1,175.91,9
-63,Kenya,Kenya,KE,187.6,148.07,3
+57,Porto Rico,Puerto Rico,PR,270.6,194.87,8
+58,Arménie,Armenia,AM,269.7,184.13,6
+59,Cuba,Cuba,CU,227.9,141.76,8
+60,Jamaïque,Jamaica,JM,207.3,199.01,4
+61,Singapour,Singapore,SG,198.6,256.68,6
+62,Kenya,Kenya,KE,187.6,148.07,3
+63,Philippines,Philippines,PH,187.3,144.71,12
 64,Lituanie,Lithuania,LT,185.8,151.53,5
-65,Moldavie,Moldova,MD,184.1,201.56,7
-66,Slovaquie,Slovakia,SK,174.6,205.41,12
-67,Algérie,Algeria,DZ,173.1,356.21,6
-68,République dominicaine,Dominican Republic,DO,165.6,86.29,6
-69,Maroc,Morocco,MA,164.7,95.63,4
-70,Venezuela,Venezuela,VE,156.8,119.59,7
-71,Nigeria,Nigeria,NG,138.5,51.82,6
-72,Biélorussie,Belarus,BY,134.1,118.25,5
-73,Indes occidentales,Indes occidentales,,129.9,70.58,1
-74,Singapour,Singapore,SG,127.3,122.58,4
+65,Pérou,Peru,PE,183.4,169.09,8
+66,Biélorussie,Belarus,BY,183,156.18,7
+67,Moldavie,Moldova,MD,175.7,193.88,7
+68,Slovaquie,Slovakia,SK,174.6,205.41,12
+69,Algérie,Algeria,DZ,173,356.11,6
+70,République dominicaine,Dominican Republic,DO,165.6,86.29,6
+71,Maroc,Morocco,MA,164.7,95.63,4
+72,Venezuela,Venezuela,VE,156.8,119.59,7
+73,Nigeria,Nigeria,NG,138.5,51.82,6
+74,Indes occidentales,Indes occidentales,,129.7,70.46,1
 75,Jordanie,Jordan,JO,121.6,84.08,5
-76,Pakistan,Pakistan,PK,117.7,65.18,4
-77,Mongolie,Mongolia,MN,116.8,128.71,5
-78,Monaco,Monaco,MC,114.2,103.37,3
-79,Kirghizistan,Kyrgyzstan,KG,107.2,105.1,4
-80,Équateur,Ecuador,EC,104.1,60.24,5
-81,Sri Lanka,Sri Lanka,LK,101.6,90.96,3
-82,Chili,Chile,CL,97.7,65.11,10
-83,Éthiopie,Ethiopia,ET,96.9,38.46,1
-84,Bahreïn,Bahrain,BH,92.4,60.3,4
-85,Bangladesh,Bangladesh,BD,80.8,115.83,2
-86,Bénin,Benin,BJ,75.7,73.1,1
-87,Kosovo,Kosovo,XK,74.5,51.88,2
-88,Fidji,Fiji,FJ,73.3,57.63,2
-89,Sénégal,Senegal,SN,67.2,20.05,3
-90,Monténégro,Montenegro,ME,66.9,40.68,3
-91,Tadjikistan,Tajikistan,TJ,66.5,42.45,2
-92,Macao,Macao,MO,63.6,24.61,1
-93,Émirats arabes unis,United Arab Emirates,AE,56.8,80.73,4
-94,Côte d'Ivoire,Côte d'Ivoire,CI,55.4,26.85,4
-95,Uruguay,Uruguay,UY,54.5,27.27,6
+76,Sri Lanka,Sri Lanka,LK,118.5,122.64,4
+77,Fidji,Fiji,FJ,118.1,194.05,4
+78,Pakistan,Pakistan,PK,117.3,64.98,4
+79,Monaco,Monaco,MC,114.2,103.37,3
+80,Chili,Chile,CL,113.2,137.68,11
+81,Bangladesh,Bangladesh,BD,112.6,193.76,3
+82,Kirghizistan,Kyrgyzstan,KG,107.2,105.1,4
+83,Mongolie,Mongolia,MN,106.1,122.13,5
+84,Équateur,Ecuador,EC,104.1,60.24,5
+85,Éthiopie,Ethiopia,ET,96.9,38.46,1
+86,Bahreïn,Bahrain,BH,92.4,60.3,4
+87,Émirats arabes unis,United Arab Emirates,AE,78.9,94.35,4
+88,Bénin,Benin,BJ,75.7,73.1,1
+89,Ouganda,Uganda,UG,69.1,135.43,5
+90,Sénégal,Senegal,SN,67.2,20.05,3
+91,Samoa,Samoa,WS,67.1,253.01,3
+92,Monténégro,Montenegro,ME,66.9,40.68,3
+93,Népal,Nepal,NP,61.8,234.24,3
+94,Zimbabwe,Zimbabwe,ZW,57,52.86,3
+95,Côte d'Ivoire,Côte d'Ivoire,CI,55.4,26.85,4
 96,Qatar,Qatar,QA,52.9,18.45,3
 97,Guatemala,Guatemala,GT,52.1,50.24,3
-98,Cambodge,Cambodia,KH,47.5,255.92,1
-99,Zimbabwe,Zimbabwe,ZW,43.2,22.81,2
-100,Estonie,Estonia,EE,43,30.16,5
-101,Samoa,Samoa,WS,42.6,151.02,3
+98,Kosovo,Kosovo,XK,50,36.86,2
+99,Cambodge,Cambodia,KH,47.5,255.92,1
+100,Uruguay,Uruguay,UY,46.1,20.28,6
+101,Estonie,Estonia,EE,43,30.16,5
 102,Arabie saoudite,Saudi Arabia,SA,40.2,37.92,4
 103,Turkménistan,Turkmenistan,TM,39,64.17,1
-104,Népal,Nepal,NP,36,181.41,2
+104,Tonga,Tonga,TO,35.7,64.83,2
 105,Botswana,Botswana,BW,35.3,14,1
-106,Ouganda,Uganda,UG,35,71.87,4
-107,Papouasie-Nouvelle-Guinée,Papua New Guinea,PG,34.8,107.52,2
-108,Panama,Panama,PA,33.6,23.69,4
-109,Mali,Mali,ML,29.2,8.08,2
-110,Brunei,Brunei,BN,24.2,26.32,1
-111,Luxembourg,Luxembourg,LU,24.1,20,1
-112,Islande,Iceland,IS,23.7,9.23,3
-113,Liban,Lebanon,LB,23.6,23.77,2
-114,Salvador,El Salvador,SV,22.6,16.73,3
-115,Cameroun,Cameroon,CM,21.6,19.05,4
-116,Albanie,Albania,AL,20.3,15.18,1
-117,Afghanistan,Afghanistan,AF,19.6,10.67,1
-118,Chypre,Cyprus,CY,18.7,16.37,2
-119,Soudan du Sud,South Sudan,SS,18.5,5.13,1
-120,Angola,Angola,AO,17.8,4.93,1
-121,Grenade,Grenada,GD,16.7,6.62,1
-122,Trinité-et-Tobago,Trinidad and Tobago,TT,15.8,6.27,1
-123,Sainte-Lucie,Saint Lucia,LC,15.2,6.05,1
-124,Bosnie-Herzégovine,Bosnia and Herzegovina,BA,15.1,4.19,2
-124,Paraguay,Paraguay,PY,15.1,4.6,1
-126,Cap-Vert,Cabo Verde,CV,12.6,8.42,2
-126,Îles Vierges,U.S. Virgin Islands,VI,12.6,27.45,2
-128,Dominique,Dominica,DM,10.8,4.3,1
-129,Ghana,Ghana,GH,10,3.36,2
-130,Mozambique,Mozambique,MZ,6.9,1.91,1
-131,Tanzanie,Tanzania,TZ,6.4,2.62,2
-132,Namibie,Namibia,NA,5.6,3.02,1
-133,Bahamas,Bahamas,BS,5.1,2.02,2
-133,Zambie,Zambia,ZM,5.1,2.03,1
-135,Burkina Faso,Burkina Faso,BF,4.4,1.73,1
-135,Nicaragua,Nicaragua,NI,4.4,3.14,1
-135,Tahiti,French Polynesia,PF,4.4,1.33,1
-138,Oman,Oman,OM,4.1,1.4,2
-139,Saint-Vincent-et-les-Grenadines,Saint Vincent and the Grenadines,VC,3.7,1.45,1
-140,Honduras,Honduras,HN,3.6,1.1,1
-141,Îles Vierges britanniques,British Virgin Islands,VG,2.9,1.16,1
-142,Vanuatu,Vanuatu,VU,2.6,0.79,1
-143,RD Congo,Democratic Republic of the Congo,CD,1.9,0.57,1
-144,Costa Rica,Costa Rica,CR,1.6,0.48,1
-145,Barbade,Barbados,BB,1.5,0.58,1
-145,Lesotho,Lesotho,LS,1.5,0.58,1
-145,Libéria,Liberia,LR,1.5,0.58,1
-148,Érythrée,Eritrea,ER,0.7,0.28,1
-149,Bermudes,Bermuda,BM,0.1,0.02,1
-149,Haïti,Haiti,HT,0.1,0.04,1
-149,Tonga,Tonga,TO,0.1,0.08,1
+106,Malawi,Malawi,MW,34.1,63.56,1
+107,Panama,Panama,PA,33.6,23.69,4
+108,Trinité-et-Tobago,Trinidad and Tobago,TT,32.8,38.04,2
+109,Tadjikistan,Tajikistan,TJ,31.4,20.85,2
+110,Mali,Mali,ML,29.2,8.08,2
+111,Macao,Macao,MO,26.1,10.1,1
+112,Brunei,Brunei,BN,24.2,26.32,1
+113,Luxembourg,Luxembourg,LU,24.1,20,1
+114,Islande,Iceland,IS,23.7,9.23,3
+115,Liban,Lebanon,LB,23.6,23.77,2
+116,Salvador,El Salvador,SV,22.6,16.73,3
+117,Cameroun,Cameroon,CM,21.6,19.05,4
+118,Albanie,Albania,AL,20.3,15.18,1
+119,Afghanistan,Afghanistan,AF,19.5,10.6,1
+120,Chypre,Cyprus,CY,18.7,16.37,2
+121,Barbade,Barbados,BB,18.5,32.35,2
+121,Soudan du Sud,South Sudan,SS,18.5,5.13,1
+123,Angola,Angola,AO,17.8,4.93,1
+124,Grenade,Grenada,GD,16.7,6.62,1
+125,Sainte-Lucie,Saint Lucia,LC,15.2,6.05,1
+126,Bosnie-Herzégovine,Bosnia and Herzegovina,BA,15.1,4.19,2
+126,Paraguay,Paraguay,PY,15.1,4.6,1
+128,Namibie,Namibia,NA,14.7,38.71,2
+129,Cap-Vert,Cabo Verde,CV,12.6,8.42,2
+129,Îles Vierges,U.S. Virgin Islands,VI,12.6,27.45,2
+131,Dominique,Dominica,DM,10.8,4.3,1
+132,Papouasie-Nouvelle-Guinée,Papua New Guinea,PG,10.6,5.78,1
+133,Ghana,Ghana,GH,10,3.36,2
+134,Mozambique,Mozambique,MZ,6.9,1.91,1
+135,Tanzanie,Tanzania,TZ,5.9,2.35,2
+136,Bahamas,Bahamas,BS,5.1,2.02,2
+136,Zambie,Zambia,ZM,5.1,2.03,1
+138,Burkina Faso,Burkina Faso,BF,4.4,1.73,1
+138,Nicaragua,Nicaragua,NI,4.4,3.14,1
+138,Tahiti,French Polynesia,PF,4.4,1.33,1
+141,Oman,Oman,OM,4.1,1.4,2
+142,Saint-Vincent-et-les-Grenadines,Saint Vincent and the Grenadines,VC,3.7,1.45,1
+143,Honduras,Honduras,HN,3.6,1.1,1
+144,Îles Vierges britanniques,British Virgin Islands,VG,2.9,1.16,1
+145,Vanuatu,Vanuatu,VU,2.6,0.79,1
+146,RD Congo,Democratic Republic of the Congo,CD,1.9,0.57,1
+147,Costa Rica,Costa Rica,CR,1.6,0.48,1
+148,Lesotho,Lesotho,LS,1.5,0.58,1
+148,Libéria,Liberia,LR,1.5,0.58,1
+150,Érythrée,Eritrea,ER,0.7,0.28,1
+151,Bermudes,Bermuda,BM,0.1,0.02,1
+151,Haïti,Haiti,HT,0.1,0.04,1
