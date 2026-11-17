@@ -742,14 +742,46 @@ main:focus{outline:none!important}
 :root[data-theme="light"] .robcard.gold{--c:#a16207}:root[data-theme="light"] .robcard.mint{--c:#15803d}:root[data-theme="light"] .robcard.sky{--c:#0369a1}:root[data-theme="light"] .robcard.rose{--c:#be185d}
 .rtnotice{border:1px solid var(--line);border-left:4px solid #f5a524;background:var(--surface);border-radius:12px;padding:12px 16px;margin:0 0 18px;font-size:14px;line-height:1.5}
 .rtnotice b{color:#f5a524}:root[data-theme="light"] .rtnotice b{color:#a16207}
-.rtline{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:8px;margin:6px 0 22px}
-.rtyear{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 8px;text-align:center;display:flex;flex-direction:column;gap:4px;align-items:center;min-width:0}
-.rtyear b{font-family:var(--f-display);font-size:20px}.rtyear span{font-size:12.5px;line-height:1.25;overflow-wrap:anywhere}.rtyear small{font-size:11px;color:var(--muted)}
-.rtchips{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:6px 0}
-.rtchip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:99px;padding:3px 6px 3px 10px;font-size:13px;background:var(--surface)}
-.rtchip i{width:10px;height:10px;border-radius:50%;display:inline-block}.rtchip button{border:0;background:none;color:var(--muted);cursor:pointer;font-size:15px;line-height:1;padding:0 4px}
-.rtsvg{width:100%;height:auto;display:block}.rtsvg .g{stroke:var(--line);stroke-width:1}.rtsvg text{fill:currentColor;font-size:11.5px}.rtsvg .lb{font-size:12px;font-weight:600}
-@media (max-width:760px){.rtline{grid-template-columns:repeat(3,minmax(0,1fr))}}
+/* historique : frise des n°1 */
+.rtcap{margin:2px 0 0}
+.rttl{list-style:none;margin:10px 0 26px;padding:0;display:grid;grid-template-columns:repeat(9,minmax(0,1fr));position:relative}
+.rttl:before{content:"";position:absolute;left:5.5%;right:5.5%;top:31px;height:1px;background:var(--line)}
+.rttl li{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;min-width:0;padding:0 2px}
+.rttl .yr{font-size:11.5px;letter-spacing:.06em;color:var(--muted);font-variant-numeric:tabular-nums}
+.rttl .pt{width:9px;height:9px;border-radius:50%;background:var(--surface);border:1.5px solid var(--muted);position:relative;z-index:1}
+.rttl li.nw .pt{background:#f5a524;border-color:#f5a524;box-shadow:0 0 0 3px var(--bg,#070b16)}
+:root[data-theme="light"] .rttl li.nw .pt{background:#b7791f;border-color:#b7791f;box-shadow:0 0 0 3px #fff}
+.rttl .wn{display:flex;flex-direction:column;align-items:center;gap:4px;font-size:12.5px;line-height:1.2;min-height:48px}
+.rttl .wn b{font-weight:500;overflow-wrap:anywhere;color:var(--muted)}.rttl li.nw .wn b{font-weight:600;color:var(--ink)}.rttl li:not(.nw) .wn .fl{opacity:.6}
+.rttl .cv{font-size:10.5px;color:var(--muted);font-variant-numeric:tabular-nums;opacity:.8}
+/* historique : trajectoires (bump chart) */
+#v-historique{--rt1:#3987e5;--rt2:#d95926;--rt3:#199e70;--rt4:#c98500;--rt5:#d55181;--rt6:#0ca30c;--rt7:#9085e9;--rt8:#e66767}
+.rtviz{position:relative;padding:14px 10px 6px}
+:root[data-theme="light"] #v-historique{--rt1:#2a78d6;--rt2:#eb6834;--rt3:#1baf7a;--rt4:#eda100;--rt5:#e87ba4;--rt6:#008300;--rt7:#6250d6;--rt8:#e34948}
+#rt-chart{position:relative;width:100%}
+.rtsvg{display:block;width:100%;height:auto;overflow:visible;font-variant-numeric:tabular-nums}
+.rtsvg .grid line{stroke:var(--line);stroke-width:1;shape-rendering:crispEdges}
+.rtsvg .tk text{fill:var(--muted);font-size:11px}.rtsvg .tk .ttl{font-size:10px;letter-spacing:.08em;text-transform:uppercase}
+.rtsvg .ctx path{fill:none;stroke:var(--muted);stroke-width:1;opacity:.11}
+.rtsvg .ln{fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:opacity .15s,stroke-width .15s}
+.rtsvg .hit{fill:none;stroke:transparent;stroke-width:14}
+.rtsvg circle{stroke:var(--surface);stroke-width:2;transition:opacity .15s}.rtsvg circle.mk{opacity:0}
+.rtsvg .xh{stroke:var(--muted);stroke-width:1;opacity:.45}
+.rtsvg .lb text{fill:var(--ink);font-size:12px;transition:opacity .15s}.rtsvg .lb .rk{fill:var(--muted);font-size:11px}
+.rtsvg .ld{fill:none;stroke:var(--muted);stroke-width:1;opacity:.4}
+.rtsvg .ov{fill:transparent;cursor:crosshair}
+.rtsvg.foc .sr:not(.on) .ln,.rtsvg.foc .sr:not(.on) circle{opacity:.22}.rtsvg.foc .sr.on .ln{stroke-width:2.5}.rtsvg.foc .sr.on circle.mk{opacity:1}
+.rtsvg.foc .lb text:not(.on){opacity:.4}
+.rttip{position:absolute;pointer-events:none;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-size:12.5px;min-width:170px;box-shadow:0 8px 24px rgba(0,0,0,.28);z-index:3}
+.rttip .th{font-size:11px;color:var(--muted);margin-bottom:5px;letter-spacing:.02em}
+.rttip .tr{display:grid;grid-template-columns:14px 1fr auto;align-items:center;gap:6px;line-height:1.75}
+.rttip .tr i{width:12px;height:2px;border-radius:2px;display:block}.rttip .tr b{font-variant-numeric:tabular-nums;font-weight:600}
+.rtchips{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:8px 0 10px}
+.rtchip{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);border-radius:99px;padding:2px 4px 2px 10px;font-size:12.5px;background:transparent;color:var(--ink)}
+.rtchip i{width:14px;height:2px;border-radius:2px;display:inline-block}
+.rtchip button{border:0;background:none;color:var(--muted);cursor:pointer;font-size:14px;line-height:1;padding:2px 5px;border-radius:99px}.rtchip button:hover{color:var(--ink);background:var(--line)}
+.rtadd{font:inherit;font-size:12.5px;padding:4px 8px;border-radius:99px;border:1px dashed var(--line);background:transparent;color:var(--muted)}
+@media (max-width:760px){.rttl{grid-template-columns:repeat(9,minmax(64px,1fr));overflow-x:auto;padding-bottom:6px}.rttl:before{left:30px;right:auto;width:calc(9*64px - 60px)}}
 .robctl{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:8px 0}
 .robctl select{font:inherit;font-size:13px;padding:6px 8px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);margin-left:6px}
 .robsvg{width:100%;height:auto;display:block}.robsvg .g{stroke:var(--line);stroke-width:1}.robsvg .ax{fill:currentColor;opacity:.7;font-size:11px;text-anchor:middle}
@@ -3160,33 +3192,71 @@ function natExtra(n){const c=contOf(n),cr=c&&SOUSALL['c:'+c].rows.find(r=>r.n===
 (function(){const el=$('#retro');if(!el||!RETRO||!RETRO.ans||!RETRO.ans.length)return;
  const EN=LANG==='en', L2=(f,e)=>EN?e:f, A=RETRO.ans, Y=A.map(x=>x.a), last=A[A.length-1];
  const nf=x=>Number(x).toLocaleString(EN?'en-GB':'fr-FR',{minimumFractionDigits:1,maximumFractionDigits:1});
- const COL=['#4da3ff','#f5a524','#f472b6','#22c55e','#a78bfa','#ef4444','#2dd4bf','#e5e54a'];
  $('#rt-grp').textContent=L2('Classements','Rankings');$('#rt-h').textContent=L2('Historique 2017-2025','History 2017-2025');
  $('#rt-p').textContent=L2('Comment aurait évolué le classement HSR si on l\'avait publié depuis 2017 ? Un classement par année, arrêté au 31 décembre, avec les règles d\'aujourd\'hui.',
    'How would the HSR ranking have evolved had it been published since 2017? One ranking per year, as of 31 December, with today\'s rules.');
- let cur={k:'pr',a:last.a,all:false,sel:null};
+ let cur={k:'pr',a:last.a,all:false,sel:null,col:{}};
  const rows=(y,k)=>{const o=A.find(x=>x.a===y);return k==='pr'?o.n.map(r=>({n:r[0],r:r[1],v:r[2]})):o.n.map(r=>({n:r[0],r:r[3],v:r[4]})).sort((a,b)=>a.r-b.r)};
  const rank=(y,k,n)=>{const r=rows(y,k).find(x=>x.n===n);return r?r.r:null};
  const defSel=k=>rows(last.a,k).slice(0,6).map(x=>x.n);
  cur.sel=defSel('pr');
- const tl=k=>`<div class="rtline">${A.map(o=>{const w=rows(o.a,k)[0];return `<div class="rtyear"><small>${o.a}</small>${fl(w.n)}<span>${esc(DN(w.n))}</span><small title="${L2('part du poids des sports reconstituée','share of the weight of sports rebuilt')}">${L2('couverture','coverage')} ${nf(o.poids)} %</small></div>`}).join('')}</div>`;
- const chart=()=>{const k=cur.k, ns=cur.sel, nar=el.clientWidth<600, W=nar?430:820, ml=30, mr=nar?92:150, mt=14, mb=28;
-   const rk=ns.flatMap(n=>Y.map(y=>rank(y,k,n)).filter(v=>v!=null));const mx=Math.max(10,Math.min(60,Math.ceil(Math.max(...rk,1)/5)*5));
-   const H=Math.max(nar?300:260,mt+mb+mx*(nar?11:9)), x=i=>ml+i*(W-ml-mr)/(Y.length-1), yv=r=>mt+(r-1)*(H-mt-mb)/(mx-1);
-   let s=`<svg viewBox="0 0 ${W} ${H}" class="rtsvg" role="img" aria-label="${L2('Évolution du rang des nations choisies','Rank evolution of the selected nations')}">`;
-   const st=mx>30?10:5;for(const r of [1,...Array.from({length:Math.floor(mx/st)},(_,i)=>(i+1)*st)]){s+=`<line class="g" x1="${ml}" x2="${W-mr}" y1="${yv(r)}" y2="${yv(r)}"/><text x="${ml-8}" y="${yv(r)+4}" text-anchor="end">${r}</text>`}
-   Y.forEach((y,i)=>{s+=`<text x="${x(i)}" y="${H-8}" text-anchor="middle">${nar?"'"+String(y).slice(2):y}</text>`});
-   const labs=[];
-   ns.forEach((n,j)=>{const c=COL[j%COL.length];let d='';Y.forEach((y,i)=>{const r=rank(y,k,n);if(r==null||r>mx){return}d+=(d&&rank(Y[i-1],k,n)!=null&&rank(Y[i-1],k,n)<=mx?'L':'M')+x(i).toFixed(1)+','+yv(r).toFixed(1)});
-     s+=`<path d="${d}" fill="none" stroke="${c}" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>`;
-     Y.forEach((y,i)=>{const r=rank(y,k,n);if(r!=null&&r<=mx)s+=`<circle cx="${x(i).toFixed(1)}" cy="${yv(r).toFixed(1)}" r="3.6" fill="${c}"><title>${esc(DN(n))} – ${y} : ${r}${EN?'':'e'}</title></circle>`});
-     const r=rank(last.a,k,n);if(r!=null&&r<=mx)labs.push({n,c,y:yv(r)})});
-   labs.sort((a,b)=>a.y-b.y);for(let i=1;i<labs.length;i++)if(labs[i].y<labs[i-1].y+14)labs[i].y=labs[i-1].y+14;
-   labs.forEach(l=>{s+=`<text class="lb" x="${W-mr+10}" y="${(l.y+4).toFixed(1)}" style="fill:${l.c}">${esc(DN(l.n))}</text>`});
-   $('#rt-chart').innerHTML=s+'</svg>';
-   $('#rt-chips').innerHTML=ns.map((n,j)=>`<span class="rtchip"><i style="background:${COL[j%COL.length]}"></i>${esc(DN(n))}<button type="button" data-rm="${esc(n)}" aria-label="${L2('Retirer','Remove')} ${esc(DN(n))}">×</button></span>`).join('')+
-     (ns.length<8?`<select id="rt-add" aria-label="${L2('Ajouter une nation','Add a nation')}"><option value="">${L2('+ Ajouter une nation','+ Add a nation')}</option>${rows(last.a,k).filter(r=>!ns.includes(r.n)).map(r=>`<option value="${esc(r.n)}">${esc(DN(r.n))}</option>`).join('')}</select>`:'');
+ const tl=k=>{const W=A.map(o=>rows(o.a,k)[0].n);
+   return `<p class="small muted rtcap">${L2('Point plein : nouveau n°1. Sous chaque année : part du poids des sports reconstituée.','Filled dot: new number one. Under each year: share of the weight of sports rebuilt.')}</p><ol class="rttl">${A.map((o,i)=>{const n=W[i],nw=i===0||W[i-1]!==n;return `<li class="${nw?'nw':''}"><span class="yr">${o.a}</span><span class="pt" aria-hidden="true"></span><span class="wn">${fl(n)}<b>${esc(DN(n))}</b></span><span class="cv" title="${L2('part du poids des sports reconstituée','share of the weight of sports rebuilt')}">${nf(o.poids)} %</span></li>`}).join('')}</ol>`};
+ // couleur attachée à la nation (jamais à son rang) : un emplacement fixe par nation tant qu'elle est affichée
+ const slot=n=>{if(!(n in cur.col)){const used=new Set(Object.values(cur.col));let s=0;while(used.has(s))s++;cur.col[n]=s}return cur.col[n]};
+ const SV=i=>`var(--rt${i%8+1})`;
+ const chart=()=>{const k=cur.k, ns=cur.sel; Object.keys(cur.col).forEach(n=>{if(!ns.includes(n))delete cur.col[n]}); ns.forEach(slot);
+   const box=$('#rt-chart'), Wp=Math.max(320,Math.round(box.clientWidth||820)), nar=Wp<600;
+   const ml=nar?26:34, mr=nar?104:168, mt=30, mb=30;
+   const rk=ns.flatMap(n=>Y.map(y=>rank(y,k,n)).filter(v=>v!=null));
+   const mx=Math.max(20,Math.min(60,Math.ceil(Math.max(...rk,1)/5)*5));
+   const H=Math.round(Math.min(nar?440:520,Math.max(nar?300:340,mx*(nar?14:16)))+mt+mb);
+   const x=i=>ml+i*(Wp-ml-mr)/(Y.length-1), yv=r=>mt+(r-1)*(H-mt-mb)/(mx-1);
+   // tracé lissé : tangentes horizontales à chaque année (courbe de « bump chart »)
+   const path=pts=>{let d='';pts.forEach((p,i)=>{if(!p)return;const q=pts[i-1];
+     if(!q){d+=`M${p[0].toFixed(1)},${p[1].toFixed(1)}`;return}const cx=(q[0]+p[0])/2;d+=`C${cx.toFixed(1)},${q[1].toFixed(1)} ${cx.toFixed(1)},${p[1].toFixed(1)} ${p[0].toFixed(1)},${p[1].toFixed(1)}`});return d};
+   const pts=n=>Y.map((y,i)=>{const r=rank(y,k,n);return r!=null&&r<=mx?[x(i),yv(r)]:null});
+   let s=`<svg viewBox="0 0 ${Wp} ${H}" width="${Wp}" height="${H}" class="rtsvg" role="img" aria-label="${L2('Évolution du rang des nations choisies, de 2017 à 2025','Rank of the selected nations, 2017 to 2025')}">`;
+   const ticks=[1,...Array.from({length:Math.floor(mx/5)},(_,i)=>(i+1)*5)].filter(r=>r<=mx);
+   s+=`<g class="grid">${ticks.map(r=>`<line x1="${ml}" x2="${Wp-mr+6}" y1="${yv(r).toFixed(1)}" y2="${yv(r).toFixed(1)}"/>`).join('')}</g>`;
+   s+=`<g class="tk">${ticks.map(r=>`<text x="${ml-10}" y="${(yv(r)+3.5).toFixed(1)}" text-anchor="end">${r}</text>`).join('')}<text x="2" y="${mt-16}" text-anchor="start" class="ttl">${L2('rang','rank')}</text></g>`;
+   s+=`<g class="tk">${Y.map((y,i)=>`<text x="${x(i).toFixed(1)}" y="${H-10}" text-anchor="middle">${nar?"’"+String(y).slice(2):y}</text>`).join('')}</g>`;
+   // contexte : les autres nations du haut du classement, en filigrane
+   const ctx=[...new Set(Y.flatMap(y=>rows(y,k).filter(r=>r.r<=mx).map(r=>r.n)))].filter(n=>!ns.includes(n));
+   s+=`<g class="ctx">${ctx.map(n=>`<path d="${path(pts(n))}"/>`).join('')}</g>`;
+   s+=`<line class="xh" id="rt-xh" x1="0" x2="0" y1="${mt-6}" y2="${H-mb+4}" visibility="hidden"/>`;
+   ns.forEach(n=>{const P=pts(n),c=SV(slot(n)),d=path(P);
+     s+=`<g class="sr" data-n="${esc(n)}"><path class="hit" d="${d}"/><path class="ln" d="${d}" style="stroke:${c}"/>`;
+     const ends=[P.findIndex(p=>p),P.length-1-[...P].reverse().findIndex(p=>p)];
+     P.forEach((p,i)=>{if(p)s+=`<circle class="${ends.includes(i)?'end':'mk'}" cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="${ends.includes(i)?4:3}" style="fill:${c}"/>`});
+     s+='</g>'});
+   // étiquettes de fin : texte à l'encre, repère coloré, filet de rappel si l'étiquette a dû être décalée
+   const lab=ns.map(n=>({n,r:rank(last.a,k,n)})).filter(l=>l.r!=null&&l.r<=mx).map(l=>({...l,y0:yv(l.r),y:yv(l.r)})).sort((a,b)=>a.y0-b.y0);
+   const gap=nar?15:17;for(let i=1;i<lab.length;i++)if(lab[i].y<lab[i-1].y+gap)lab[i].y=lab[i-1].y+gap;
+   const ov=lab.length?lab[lab.length-1].y-(H-mb):0;if(ov>0)lab.forEach(l=>l.y-=ov);
+   const lx=Wp-mr+18;
+   s+=`<g class="lb">${lab.map(l=>{const c=SV(slot(l.n)),xe=x(Y.length-1);
+     return `<path class="ld" d="M${(xe+7).toFixed(1)},${l.y0.toFixed(1)} C${(xe+12).toFixed(1)},${l.y0.toFixed(1)} ${(lx-12).toFixed(1)},${l.y.toFixed(1)} ${(lx-4).toFixed(1)},${l.y.toFixed(1)}"/>`+
+     `<text x="${lx}" y="${(l.y+4).toFixed(1)}" data-n="${esc(l.n)}"><tspan class="rk">${l.r}</tspan> ${esc(DN(l.n))}</text>`}).join('')}</g>`;
+   s+=`<rect class="ov" x="${ml-10}" y="0" width="${Wp-mr-ml+20}" height="${H}"/>`;
+   box.innerHTML=s+'</svg><div class="rttip" id="rt-tip" hidden></div>';
+   const svg=box.querySelector('svg'),tip=$('#rt-tip'),xh=$('#rt-xh');
+   const focus=n=>{svg.classList.toggle('foc',!!n);svg.querySelectorAll('.sr').forEach(g=>g.classList.toggle('on',g.dataset.n===n));
+     svg.querySelectorAll('.lb text').forEach(t=>t.classList.toggle('on',t.dataset.n===n))};
+   const at=ev=>{const b=svg.getBoundingClientRect(),px=(ev.clientX-b.left)*Wp/b.width;let i=Math.round((px-ml)/((Wp-ml-mr)/(Y.length-1)));return Math.max(0,Math.min(Y.length-1,i))};
+   const show=(ev,i)=>{const y=Y[i];xh.setAttribute('x1',x(i));xh.setAttribute('x2',x(i));xh.setAttribute('visibility','visible');
+     const L=ns.map(n=>({n,r:rank(y,k,n)})).sort((a,b)=>(a.r??999)-(b.r??999));
+     tip.innerHTML=`<div class="th">${L2('31 décembre','31 December')} ${y}</div>`+L.map(l=>`<div class="tr"><i style="background:${SV(slot(l.n))}"></i><span>${esc(DN(l.n))}</span><b>${l.r??'–'}</b></div>`).join('');
+     tip.hidden=false;const bb=box.getBoundingClientRect(),sx=x(i)*bb.width/Wp,tw=tip.offsetWidth;
+     tip.style.left=Math.round(sx+tw+24>bb.width?sx-tw-14:sx+14)+'px';tip.style.top=Math.round(Math.max(4,(ev.clientY-bb.top)-tip.offsetHeight/2))+'px'};
+   const ovr=svg.querySelector('.ov');
+   ovr.addEventListener('pointermove',ev=>{show(ev,at(ev));const b=svg.getBoundingClientRect(),py=(ev.clientY-b.top)*H/b.height,i=at(ev);
+     let best=null,bd=10;ns.forEach(n=>{const r=rank(Y[i],k,n);if(r!=null&&r<=mx){const dd=Math.abs(yv(r)-py);if(dd<bd){bd=dd;best=n}}});focus(best)});
+   ovr.addEventListener('pointerleave',()=>{tip.hidden=true;xh.setAttribute('visibility','hidden');focus(null)});
+   $('#rt-chips').innerHTML=ns.map(n=>`<span class="rtchip"><i style="background:${SV(slot(n))}"></i>${esc(DN(n))}<button type="button" data-rm="${esc(n)}" aria-label="${L2('Retirer','Remove')} ${esc(DN(n))}">×</button></span>`).join('')+
+     (ns.length<8?`<select id="rt-add" class="rtadd" aria-label="${L2('Ajouter une nation','Add a nation')}"><option value="">${L2('+ Ajouter une nation','+ Add a nation')}</option>${rows(last.a,k).filter(r=>!ns.includes(r.n)).map(r=>`<option value="${esc(r.n)}">${esc(DN(r.n))}</option>`).join('')}</select>`:'');
    const ad=$('#rt-add');if(ad)ad.addEventListener('change',e=>{if(e.target.value){cur.sel.push(e.target.value);chart()}})};
+ let rz;addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(()=>{if(!$('#v-historique').hidden)chart()},150)});
  const table=()=>{const k=cur.k,y=cur.a,R=rows(y,k),prev=Y.includes(y-1)?rows(y-1,k):null,lim=cur.all?R.length:30;
    const dv=n=>{if(!prev)return '';const p=prev.find(x=>x.n===n),r=R.find(x=>x.n===n).r;if(!p)return `<span class="mv new">${L2('nouveau','new')}</span>`;const v=p.r-r;
      return v===0?'<span class="mv eq">=</span>':v>0?`<span class="mv up" title="${L2('depuis','since')} ${y-1}">▲${v}</span>`:`<span class="mv down" title="${L2('depuis','since')} ${y-1}">▼${-v}</span>`};
@@ -3202,7 +3272,7 @@ function natExtra(n){const c=contOf(n),cr=c&&SOUSALL['c:'+c].rows.find(r=>r.n===
  <h3>${L2('Le n°1 de chaque année','Number one each year')}</h3><div id="rt-tl"></div>
  <h3>${L2('Trajectoires','Trajectories')}</h3>
  <p class="small muted">${L2('Rang de chaque nation de 2017 à 2025 (1 = en tête). Ajoutez ou retirez des nations.','Rank of each nation from 2017 to 2025 (1 = top). Add or remove nations.')}</p>
- <div class="rtchips" id="rt-chips"></div><figure class="chartbox"><div id="rt-chart"></div></figure>
+ <div class="rtchips" id="rt-chips"></div><figure class="chartbox rtviz"><div id="rt-chart"></div></figure>
  <h3 style="margin-top:24px">${L2('Le classement année par année','The ranking year by year')}</h3>
  <div class="robctl"><label class="small muted">${L2('Année','Year')} <select id="rt-y">${Y.slice().reverse().map(y=>`<option ${y===cur.a?'selected':''}>${y}</option>`).join('')}</select></label><span class="small muted" id="rt-cap"></span></div>
  <div class="tablebox"><table><thead><tr><th>${L2('Rang','Rank')}</th><th>${L2('Nation','Nation')}</th><th class="r" id="rt-th"></th><th class="r hide-sm" id="rt-th0"></th></tr></thead><tbody id="rt-tb"></tbody></table></div>
@@ -3227,11 +3297,12 @@ function natExtra(n){const c=contOf(n),cr=c&&SOUSALL['c:'+c].rows.find(r=>r.n===
    'Les erreurs trouvées en vérifiant sont corrigées et consignées dans le journal des modifications.']).map(x=>`<li>${esc(x)}</li>`).join('')}</ul>
  <div class="dlbtns"><a class="btn pri" href="${SITE}donnees/historique/hsr-historique.csv" download>${L2('Télécharger les données (CSV)','Download the data (CSV)')}</a><a class="btn" href="${SITE}donnees/historique/hsr-historique.json" target="_blank" rel="noopener">JSON</a><a class="btn" href="#journal">${L2('Journal des modifications','Change log')}</a></div>`;
  const all=()=>{$('#rt-tl').innerHTML=tl(cur.k);chart();table()};
- el.addEventListener('click',e=>{const b=e.target.closest('[data-rk]');if(b){cur.k=b.dataset.rk;cur.sel=defSel(cur.k);el.querySelectorAll('[data-rk]').forEach(x=>x.setAttribute('aria-pressed',x===b));all();return}
+ el.addEventListener('click',e=>{const b=e.target.closest('[data-rk]');if(b){cur.k=b.dataset.rk;cur.sel=defSel(cur.k);cur.col={};el.querySelectorAll('[data-rk]').forEach(x=>x.setAttribute('aria-pressed',x===b));all();return}
    const m=e.target.closest('[data-rm]');if(m){cur.sel=cur.sel.filter(n=>n!==m.dataset.rm);chart()}});
  $('#rt-y').addEventListener('change',e=>{cur.a=+e.target.value;cur.all=false;table()});
  $('#rt-more').addEventListener('click',()=>{cur.all=true;table()});
  all();
+ new MutationObserver(()=>{if(!$('#v-historique').hidden)chart()}).observe($('#v-historique'),{attributes:true,attributeFilter:['hidden']});
 })();
 // robustesse (tests de sensibilité)
 (function(){const R=ROB;const el=$('#rob');if(!el)return;if(!R||!R.montecarlo){el.innerHTML='<p class="muted">Analyse indisponible pour cette édition.</p>';return}
