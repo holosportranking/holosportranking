@@ -417,7 +417,7 @@ main .wrap{padding-block:20px 48px}
 .hlmore{font-size:12.5px;color:var(--muted)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .dch .dn{background:#3a1d1b;color:#ff9c8f} :root:not([data-theme="light"]) .hlc .flag{background:#3b3115;color:#f5d27a}}
 :root[data-theme="dark"] .dch .dn{background:#3a1d1b;color:#ff9c8f} :root[data-theme="dark"] .hlc .flag{background:#3b3115;color:#f5d27a}
-@media (max-width:620px){.hlmov{grid-template-columns:1fr}.hlteaser{flex-wrap:wrap;gap:8px}.hlsec h3{font-size:23px}}
+@media (max-width:620px){.hlmov{grid-template-columns:1fr}.hlteaser{display:grid;grid-template-columns:1fr auto;gap:8px 10px;align-items:center}.hlteaser .k{justify-self:start}.hlteaser .go{grid-column:2;grid-row:1}.hlteaser .t{grid-column:1/-1;grid-row:2}.hlsec h3{font-size:23px}}
 /* ===== Animations (désactivées si l'utilisateur réduit les mouvements) et embellissements ===== */
 .spot{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
 .spotc{font:inherit;text-align:left;cursor:pointer;border:0;border-radius:14px;padding:14px 16px 16px;display:flex;flex-direction:column;gap:2px;min-width:0;color:#0b1a33;position:relative;overflow:hidden;box-shadow:var(--shadow);transition:transform .25s ease,box-shadow .25s ease}
@@ -1032,8 +1032,8 @@ main:focus{outline:none!important}
 #v-nes-en-janvier .l-labx .l-tip{position:fixed;pointer-events:none;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:7px 10px;font-size:13px;box-shadow:0 4px 16px rgba(0,0,0,.12);display:none;z-index:5}
 #v-nes-en-janvier .l-labx .l-legend{display:flex;gap:8px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
 #v-nes-en-janvier .l-labx .l-legend i{display:inline-block;width:24px;height:10px;border-radius:2px;margin-right:4px;vertical-align:middle}
-#v-nes-en-janvier .l-labwrap{max-width:none;margin:0;padding:0}
-#v-nes-en-janvier{font-family:var(--f-body)}</style>
+#v-nes-en-janvier .l-labx .l-labwrap{max-width:none;margin:0;padding:6px 0 0}#v-nes-en-janvier .l-labx .l-labwrap>*{min-width:0}
+#v-nes-en-janvier{font-family:var(--f-body)}#v-nes-en-janvier .l-labx h2{font-family:var(--f-display);font-size:22px;text-transform:uppercase;letter-spacing:.02em;line-height:1.15}#v-nes-en-janvier .l-labx h3{font-size:19px;line-height:1.2}#v-nes-en-janvier .l-labx .l-scroll{overflow-x:auto}#v-nes-en-janvier .l-labx .l-split>*,#v-nes-en-janvier .l-labx .l-grid2>*{min-width:0}#v-nes-en-janvier .l-labx .l-panel:has(table){overflow-x:auto}@media (max-width:620px){#v-nes-en-janvier .l-labx .l-labwrap{gap:16px}#v-nes-en-janvier .l-labx .l-panel{padding:14px}#v-nes-en-janvier .l-labx h2{font-size:20px}#v-nes-en-janvier .l-labx h3{font-size:17px}#v-nes-en-janvier .l-labx .l-kpis{grid-template-columns:1fr 1fr;gap:8px}#v-nes-en-janvier .l-labx .l-kpi{padding:12px}#v-nes-en-janvier .l-labx .l-kpi b{font-size:22px}#v-nes-en-janvier .l-labx .l-kpi span{font-size:12px}#v-nes-en-janvier #lo-mois{min-width:600px}#v-nes-en-janvier .l-labx table{font-size:12.5px}}</style>
 <section class="view" id="v-nes-en-janvier" hidden data-noi18n>
   <div class="view-head"><div><div class="vgrp">Lab</div><h2>Born in January, more often Olympians</h2><p>Among Olympians born since 1950, people born early in the year are more numerous than births in their country would suggest, and those born late in the year less numerous. This is the relative age effect: in youth categories, a child born in January can be almost a year ahead physically of a teammate born in December, and is more often spotted. Each Olympian is compared here with actual births in their country, in their year of birth.</p></div></div>
 <div class="l-labx">
@@ -1043,7 +1043,7 @@ main:focus{outline:none!important}
 <section class="l-panel">
   <h2>Olympians' birth months, compared with actual births</h2>
   <p class="l-note">Ratio between the number of Olympians born in each month and the number expected from births in the same country and year. 1 = as many as in the population. The grey line shows the result obtained by assuming births are spread according to month length alone: that assumption overstates the effect.</p>
-  <svg id="lo-mois" viewBox="0 0 760 290" role="img" aria-label="Index by month of birth"></svg>
+  <div class="l-scroll"><svg id="lo-mois" viewBox="0 0 760 290" role="img" aria-label="Index by month of birth"></svg></div>
 </section>
 <section class="l-split">
   <div class="l-panel">
@@ -1178,8 +1178,8 @@ new MutationObserver(go).observe(sec,{attributes:true,attributeFilter:["hidden"]
 }
 @media (prefers-reduced-motion:reduce){
 }
-#v-france-sportive .l-labwrap{max-width:none;margin:0;padding:0}
-#v-france-sportive{font-family:var(--f-body)}</style>
+#v-france-sportive .l-labx .l-labwrap{max-width:none;margin:0;padding:6px 0 0}#v-france-sportive .l-labx .l-labwrap>*{min-width:0}
+#v-france-sportive{font-family:var(--f-body)}#v-france-sportive .l-labx h2{font-family:var(--f-display);font-size:22px;text-transform:uppercase;letter-spacing:.02em;line-height:1.15}#v-france-sportive .l-labx h3{font-size:19px;line-height:1.2}#v-france-sportive .l-labx .l-scroll{overflow-x:auto}#v-france-sportive .l-labx .l-split>*,#v-france-sportive .l-labx .l-grid2>*{min-width:0}#v-france-sportive .l-labx .l-panel:has(table){overflow-x:auto}@media (max-width:620px){#v-france-sportive .l-labx .l-labwrap{gap:16px}#v-france-sportive .l-labx .l-panel{padding:14px}#v-france-sportive .l-labx h2{font-size:20px}#v-france-sportive .l-labx h3{font-size:17px}#v-france-sportive .l-labx .l-kpis{grid-template-columns:1fr 1fr;gap:8px}#v-france-sportive .l-labx .l-kpi{padding:12px}#v-france-sportive .l-labx .l-kpi b{font-size:22px}#v-france-sportive .l-labx .l-kpi span{font-size:12px}#v-france-sportive #lf-mois{min-width:600px}#v-france-sportive .l-labx table{font-size:12.5px}}</style>
 <section class="view" id="v-france-sportive" hidden data-noi18n>
   <div class="view-head"><div><div class="vgrp">Lab</div><h2>Sporting France, town by town</h2><p>Licences in single-sport federations, clubs and sports facilities in every French commune, from the official licence census (INJEP, 2023 season) and the national inventory of sports facilities (Data ES). All data are public and under an open licence. Federation, département and commune names are given in French.</p></div></div>
 <div class="l-labx">
