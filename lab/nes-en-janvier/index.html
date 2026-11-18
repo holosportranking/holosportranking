@@ -1,15 +1,27 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("hsr-theme")||"dark"}catch(e){document.documentElement.dataset.theme="dark"}</script>
 <title>Nés en janvier, plus souvent olympiques · HSR Lab</title>
 <meta name="description" content="L'effet du mois de naissance chez 58 682 olympiens nés depuis 1950, comparés aux naissances réelles de leur pays et de leur année.">
 <link rel="canonical" href="https://holosportranking.com/lab/nes-en-janvier/">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="alternate" hreflang="fr" href="https://holosportranking.com/lab/nes-en-janvier/">
+<link rel="alternate" hreflang="en" href="https://holosportranking.com/en/lab/nes-en-janvier/">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/barlow-condensed-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/barlow-condensed-500.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/barlow-condensed-600.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/barlow-condensed-700.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:800;font-display:swap;src:url(/assets/fonts/barlow-condensed-800.woff2) format('woff2')}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/archivo-400.woff2) format('woff2')}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/archivo-500.woff2) format('woff2')}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/archivo-600.woff2) format('woff2')}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/archivo-700.woff2) format('woff2')}
+
 /* Plan : récit en sections, un graphique par idée ; ratio 1 = référence neutre. Même système visuel que « La France sportive ». */
 :root{
   --bg:#f6f8fb; --surface:#ffffff; --ink:#132033; --muted:#5b6b80; --line:#dbe2ec; --accent:#2a78d6; --warm:#d4632f; --mid:#e6e9ee;
@@ -46,12 +58,36 @@ a{color:var(--accent)}
 .tip{position:fixed;pointer-events:none;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:7px 10px;font-size:13px;box-shadow:0 4px 16px rgba(0,0,0,.12);display:none;z-index:5}
 .legend{display:flex;gap:8px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
 .legend i{display:inline-block;width:24px;height:10px;border-radius:2px;margin-right:4px;vertical-align:middle}
+
+:root{--bg:#f3f5f9;--surface:#ffffff;--ink:#0f1e3a;--muted:#5a6884;--line:#dbe1ec;--accent:#1f4fbf;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;--body:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif}
+:root[data-theme="dark"]{--bg:#0c1322;--surface:#131c30;--ink:#e7ecf5;--muted:#93a1bb;--line:#26324c;--accent:#7fa6ff;color-scheme:dark}
+:root[data-theme="light"]{color-scheme:light}
+.labbar{position:sticky;top:0;z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+.labbar .lbw{max-width:1180px;margin:0 auto;padding:8px 20px;display:flex;align-items:center;gap:10px;font-size:14px}
+.labbar a{color:var(--ink);text-decoration:none;font-weight:600}
+.labbar a:hover{color:var(--accent)}
+.lbbrand{display:flex;align-items:center;gap:8px;font-family:var(--display);font-size:18px;letter-spacing:.02em}
+.lbbrand img{height:22px;width:auto;display:block}
+.lbsep{color:var(--muted)}
+.lbsp{flex:1}
+.lblang,.lbtheme{font:inherit;font-weight:600;font-size:13px;color:var(--muted)!important;background:none;border:1px solid var(--line);border-radius:9px;padding:5px 10px;cursor:pointer;line-height:1.2}
+.lblang:hover,.lbtheme:hover{color:var(--ink)!important}
+:root[data-theme="dark"] .ico-moon,:root[data-theme="light"] .ico-sun{display:none}
+@media (max-width:520px){.lbbrand span{display:none}}
 </style>
 </head>
 <body>
+<nav class="labbar" aria-label="HoloSport Ranking"><div class="lbw">
+<a class="lbbrand" href="/"><img src="/logo.svg" alt=""><span>HoloSport Ranking</span></a><span class="lbsep" aria-hidden="true">›</span><a href="/#lab">Lab</a>
+<span class="lbsp"></span><a class="lblang" href="/en/lab/nes-en-janvier/" hreflang="en" lang="en" aria-label="English version" title="English version">EN</a>
+<button type="button" class="lbtheme" id="lbtheme" aria-label="Basculer le thème clair ou sombre" title="Basculer le thème clair ou sombre"><span class="ico-sun" aria-hidden="true">☀</span><span class="ico-moon" aria-hidden="true">☾</span></button>
+</div></nav>
+<script>document.getElementById("lbtheme").addEventListener("click",()=>{const d=document.documentElement;const t=d.dataset.theme==="dark"?"light":"dark";d.dataset.theme=t;try{localStorage.setItem("hsr-theme",t)}catch(e){}});</script>
+
 <div class="wrap">
 <header>
-  <p><a class="chip" href="/" style="text-decoration:none;color:inherit">HoloSport Ranking · Lab</a></p>
+  <p class="chip">HSR Lab</p>
   <h1>Nés en janvier, plus souvent olympiques</h1>
   <p class="lede">Chez les olympiens nés depuis 1950, les natifs du début d'année sont plus nombreux que ne le voudraient les naissances de leur pays, et ceux de fin d'année moins nombreux. C'est l'effet de l'âge relatif : dans les catégories de jeunes, un enfant né en janvier a jusqu'à un an d'avance physique sur un camarade né en décembre, et il est plus souvent repéré. Chaque olympien est ici comparé aux naissances réelles de son pays, l'année de sa naissance.</p>
 </header>
@@ -88,7 +124,7 @@ a{color:var(--accent)}
 <div class="tip" id="tip"></div>
 <script>
 (async function(){
-const O=await fetch("olympiens.json").then(r=>r.json());
+const O=await fetch("/lab/nes-en-janvier/olympiens.json").then(r=>r.json());
 const fmt=n=>Math.round(n).toLocaleString("fr-FR"), f2=n=>n.toLocaleString("fr-FR",{minimumFractionDigits:2,maximumFractionDigits:2}), f1=n=>n.toLocaleString("fr-FR",{minimumFractionDigits:1,maximumFractionDigits:1});
 const st=O.st,G=O.glob,NV=O.naif,pc=v=>Math.round((v-1)*100);
 document.getElementById("kpis").innerHTML=[[fmt(G.n),"olympiens nés depuis 1950, comparés aux naissances de leur pays"],["+"+pc(G.q)+" %","de natifs de janvier-mars par rapport à octobre-décembre (de +"+pc(G.lo)+" à +"+pc(G.hi)+" %)"],["+"+pc(NV.q)+" %","ce qu'on aurait trouvé sans tenir compte des naissances réelles"],[f2(O.sports[0][2]),"rapport le plus fort : "+O.sports[0][0]]].map(([b,s])=>`<div class="kpi"><b>${b}</b><span>${s}</span></div>`).join("");
@@ -125,5 +161,6 @@ document.getElementById("meth").innerHTML=[
 ].map(x=>`<li>${x}</li>`).join("");
 })();
 </script>
+
 </body>
 </html>
