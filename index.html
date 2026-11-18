@@ -487,7 +487,7 @@ nav.tabs .pills a:active{transform:scale(.96)}
   color-scheme:light}
 body{--sec:var(--accent)}
 body[data-v="efficience"]{--sec:#f5a524} body[data-v="demographie"]{--sec:#22c55e} body[data-v="genre"]{--sec:#f472b6} body[data-v="genre"][data-g="h"]{--sec:#60a5fa}
-body[data-v="highlights"]{--sec:#f2c14e} body[data-v="sports"],body[data-v="federations"]{--sec:#22c3a6} body[data-v="comparer"]{--sec:#c084fc} body[data-v="equilibre"]{--sec:#a78bfa} body[data-v="sous"]{--sec:#38bdf8} body[data-v="la2028"],body[data-v="lab"],body[data-v="nes-en-janvier"],body[data-v="france-sportive"]{--sec:#fb923c}
+body[data-v="highlights"]{--sec:#f2c14e} body[data-v="sports"],body[data-v="federations"]{--sec:#22c3a6} body[data-v="comparer"]{--sec:#c084fc} body[data-v="equilibre"]{--sec:#a78bfa} body[data-v="sous"]{--sec:#38bdf8} body[data-v="semaine"]{--sec:#f43f5e} body[data-v="la2028"],body[data-v="lab"],body[data-v="nes-en-janvier"],body[data-v="france-sportive"]{--sec:#fb923c}
 body{background:var(--glow),var(--bg);background-attachment:fixed}
 /* en-tête fondu dans la page */
 header.hero{background:transparent!important;border-bottom:0!important;color:var(--ink)}
@@ -589,6 +589,21 @@ td.rk{font-family:var(--f-display);font-size:19px;font-weight:700;color:var(--mu
 .hcard:hover,.hcard:focus-visible{border-color:var(--accent);transform:translateY(-1px)}.hcard b{font-family:var(--f-display);font-size:18px;letter-spacing:.01em}.hcard span{font-size:13px;color:var(--muted)}
 @media (max-width:760px){.homecols{grid-template-columns:1fr}.hometop{columns:1}}
 .lateaser{background:linear-gradient(100deg,#3b1d0a,#c2410c)}.lateaser .k{background:#fb923c;color:#1a1a1a}
+.semteaser{background:linear-gradient(100deg,#3f0d1c,#be123c)}.semteaser .k{background:#fb7185;color:#1a1a1a}.semteaser .t b{font-size:24px}
+.semcard{display:grid;grid-template-columns:auto 1fr;gap:6px 26px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin:6px 0 22px;border-top:4px solid var(--sec)}
+.semcard .big{font-family:var(--f-display);font-weight:800;font-size:clamp(72px,11vw,128px);line-height:.85;color:var(--sec);letter-spacing:-.02em;grid-row:span 3}
+.semcard h3{margin:2px 0 0;font-family:var(--f-display);font-size:26px;text-transform:uppercase;letter-spacing:.01em;line-height:1.1}
+.semcard p{margin:0;line-height:1.6;max-width:72ch}.semcard .acts{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:6px}.semcard .acts a.btn{text-decoration:none}
+.semcard .semsrc{grid-column:2}@media (max-width:620px){.semcard .semsrc{grid-column:auto}}
+.semsrc{font-size:12.5px;color:var(--muted);margin-top:8px}.semsrc a{color:inherit}
+.semev{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:0 0 14px}
+.semev .when{font:700 12px/1 var(--f-body);letter-spacing:.12em;text-transform:uppercase;color:var(--sec)}
+.semev h4{margin:6px 0 2px;font-family:var(--f-display);font-size:23px;letter-spacing:.01em}.semev .where{color:var(--muted);font-size:13.5px;margin-bottom:8px}
+.semev p{margin:0 0 10px;line-height:1.6;max-width:80ch}.semev .tablebox{margin:8px 0}.semev td.up{color:#16a34a;font-weight:700}.semev td.dn{color:#dc2626;font-weight:700}
+.semnext{display:grid;gap:8px}.semnext>div{display:grid;grid-template-columns:150px 1fr auto;gap:12px;align-items:baseline;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 14px}
+.semnext .d{font-weight:700;color:var(--sec);font-size:13.5px}.semnext .p{font-size:13px;color:var(--muted);text-align:right}
+.semarch{display:grid;gap:8px}.semarch>div{display:flex;gap:14px;align-items:baseline;border-bottom:1px solid var(--line);padding:6px 0}.semarch b{font-family:var(--f-display);font-size:26px;color:var(--sec);min-width:60px}
+@media (max-width:620px){.semcard{grid-template-columns:1fr}.semcard .big{grid-row:auto}.semnext>div{grid-template-columns:1fr}.semnext .p{text-align:left}}
 details.howto{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:10px 16px}
 details.howto summary{cursor:pointer;font-weight:600;color:var(--muted)}
 details.howto[open] summary{margin-bottom:10px}
@@ -654,7 +669,7 @@ footer{border-top:1px solid var(--line)}
 }
 :root[data-theme="dark"]{--mapna:#26314b}
 
-.sml{display:none}@media (max-width:1320px){.mainlinks .lgl{display:none}.mainlinks .sml{display:inline}}
+.sml{display:none}@media (max-width:1460px){.mainlinks .lgl{display:none}.mainlinks .sml{display:inline}}@media (min-width:621px) and (max-width:1460px){.mainlinks a{padding:8px 9px}}@media (max-width:1320px){.mainlinks a.wk{display:none}}
 
 .famg .contrib{grid-template-columns:minmax(0,150px) minmax(0,1fr) auto!important}
 .famg .contrib .v{white-space:nowrap;text-align:right}.famg .contrib .v small{font-size:11.5px}
@@ -816,13 +831,13 @@ main:focus{outline:none!important}
 </header>
 <nav class="tabs" aria-label="Sections"><div class="wrap nav2">
   <a class="navbrand homelink" href="#accueil" aria-label="Accueil HoloSport Ranking"><span class="logo" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 92" role="img" aria-label="HoloSport Ranking"><defs><mask id="hsrL1" maskUnits="userSpaceOnUse" x="0" y="0" width="168" height="92"><rect width="168" height="92" fill="#fff"/><path d="M295 -700H437Q442 -700 445.5 -696.5Q449 -693 449 -688V-12Q449 -7 445.5 -3.5Q442 0 437 0H295Q290 0 286.5 -3.5Q283 -7 283 -12V-274Q283 -279 278 -279H206Q201 -279 201 -274V-12Q201 -7 197.5 -3.5Q194 0 189 0H47Q42 0 38.5 -3.5Q35 -7 35 -12V-688Q35 -693 38.5 -696.5Q42 -700 47 -700H189Q194 -700 197.5 -696.5Q201 -693 201 -688V-427Q201 -422 206 -422H278Q283 -422 283 -427V-688Q283 -693 286.5 -696.5Q290 -700 295 -700Z M494 -178V-209Q494 -214 497.5 -217.5Q501 -221 506 -221H646Q651 -221 654.5 -217.5Q658 -214 658 -209V-186Q658 -162 669.5 -148.0Q681 -134 699 -134Q717 -134 728.5 -147.5Q740 -161 740 -182Q740 -205 722.0 -223.5Q704 -242 650 -281Q600 -317 568.0 -345.5Q536 -374 513.0 -416.5Q490 -459 490 -515Q490 -572 515.5 -616.0Q541 -660 587.5 -684.0Q634 -708 694 -708Q755 -708 801.5 -683.5Q848 -659 873.5 -614.5Q899 -570 899 -512V-488Q899 -483 895.5 -479.5Q892 -476 887 -476H748Q743 -476 739.5 -479.5Q736 -483 736 -488V-516Q736 -538 724.0 -552.0Q712 -566 694 -566Q676 -566 665.0 -552.0Q654 -538 654 -515Q654 -490 671.0 -470.0Q688 -450 740 -412Q803 -365 835.0 -336.0Q867 -307 885.0 -271.5Q903 -236 903 -188Q903 -98 846.5 -45.0Q790 8 698 8Q637 8 591.0 -15.5Q545 -39 519.5 -81.5Q494 -124 494 -178Z M1201 -10 1133 -275Q1132 -279 1128 -279H1113Q1108 -279 1108 -274V-12Q1108 -7 1104.5 -3.5Q1101 0 1096 0H954Q949 0 945.5 -3.5Q942 -7 942 -12V-688Q942 -693 945.5 -696.5Q949 -700 954 -700H1169Q1227 -700 1272.0 -672.5Q1317 -645 1341.5 -595.5Q1366 -546 1366 -483Q1366 -427 1345.5 -382.5Q1325 -338 1288 -311Q1286 -310 1285.0 -308.5Q1284 -307 1285 -305L1371 -14L1372 -10Q1372 0 1361 0H1215Q1204 0 1201 -10ZM1108 -553V-411Q1108 -406 1113 -406H1141Q1168 -406 1184.0 -426.0Q1200 -446 1200 -481Q1200 -518 1184.0 -538.0Q1168 -558 1141 -558H1113Q1108 -558 1108 -553Z" transform="translate(27 70) skewX(-12) scale(.082)" fill="#000" stroke="#000" stroke-width="60" stroke-linejoin="round"/></mask><mask id="hsrL2" maskUnits="userSpaceOnUse" x="0" y="0" width="168" height="92"><rect width="168" height="92" fill="#fff"/><g transform="rotate(-13 84 46)"><path d="M8 46 A76 21 0 0 0 160 46" stroke="#000" stroke-width="8.6" fill="none" stroke-linecap="round"/><path d="M2 46 A82 26 0 0 0 166 46" stroke="#000" stroke-width="7.2" fill="none" stroke-linecap="round"/></g></mask></defs><g mask="url(#hsrL1)"><g transform="rotate(-13 84 46)"><path d="M8 46 A76 21 0 0 1 160 46" stroke="#5B8CFF" stroke-width="3.6" fill="none" stroke-linecap="round"/><path d="M2 46 A82 26 0 0 1 166 46" stroke="#2F57D9" stroke-width="2.2" fill="none" stroke-linecap="round"/></g></g><g mask="url(#hsrL2)"><path d="M295 -700H437Q442 -700 445.5 -696.5Q449 -693 449 -688V-12Q449 -7 445.5 -3.5Q442 0 437 0H295Q290 0 286.5 -3.5Q283 -7 283 -12V-274Q283 -279 278 -279H206Q201 -279 201 -274V-12Q201 -7 197.5 -3.5Q194 0 189 0H47Q42 0 38.5 -3.5Q35 -7 35 -12V-688Q35 -693 38.5 -696.5Q42 -700 47 -700H189Q194 -700 197.5 -696.5Q201 -693 201 -688V-427Q201 -422 206 -422H278Q283 -422 283 -427V-688Q283 -693 286.5 -696.5Q290 -700 295 -700Z M494 -178V-209Q494 -214 497.5 -217.5Q501 -221 506 -221H646Q651 -221 654.5 -217.5Q658 -214 658 -209V-186Q658 -162 669.5 -148.0Q681 -134 699 -134Q717 -134 728.5 -147.5Q740 -161 740 -182Q740 -205 722.0 -223.5Q704 -242 650 -281Q600 -317 568.0 -345.5Q536 -374 513.0 -416.5Q490 -459 490 -515Q490 -572 515.5 -616.0Q541 -660 587.5 -684.0Q634 -708 694 -708Q755 -708 801.5 -683.5Q848 -659 873.5 -614.5Q899 -570 899 -512V-488Q899 -483 895.5 -479.5Q892 -476 887 -476H748Q743 -476 739.5 -479.5Q736 -483 736 -488V-516Q736 -538 724.0 -552.0Q712 -566 694 -566Q676 -566 665.0 -552.0Q654 -538 654 -515Q654 -490 671.0 -470.0Q688 -450 740 -412Q803 -365 835.0 -336.0Q867 -307 885.0 -271.5Q903 -236 903 -188Q903 -98 846.5 -45.0Q790 8 698 8Q637 8 591.0 -15.5Q545 -39 519.5 -81.5Q494 -124 494 -178Z M1201 -10 1133 -275Q1132 -279 1128 -279H1113Q1108 -279 1108 -274V-12Q1108 -7 1104.5 -3.5Q1101 0 1096 0H954Q949 0 945.5 -3.5Q942 -7 942 -12V-688Q942 -693 945.5 -696.5Q949 -700 954 -700H1169Q1227 -700 1272.0 -672.5Q1317 -645 1341.5 -595.5Q1366 -546 1366 -483Q1366 -427 1345.5 -382.5Q1325 -338 1288 -311Q1286 -310 1285.0 -308.5Q1284 -307 1285 -305L1371 -14L1372 -10Q1372 0 1361 0H1215Q1204 0 1201 -10ZM1108 -553V-411Q1108 -406 1113 -406H1141Q1168 -406 1184.0 -426.0Q1200 -446 1200 -481Q1200 -518 1184.0 -538.0Q1168 -558 1141 -558H1113Q1108 -558 1108 -553Z" transform="translate(27 70) skewX(-12) scale(.082)" fill="currentColor"/></g><g transform="rotate(-13 84 46)"><path d="M8 46 A76 21 0 0 0 160 46" stroke="#5B8CFF" stroke-width="3.6" fill="none" stroke-linecap="round"/><path d="M2 46 A82 26 0 0 0 166 46" stroke="#2F57D9" stroke-width="2.2" fill="none" stroke-linecap="round"/><circle cx="125.9" cy="65.9" r="5.2" fill="#F5A524"/></g></svg></span></a>
-  <div class="mainlinks"><a href="#performance">Performance réelle</a><a href="#demographie">Efficience <span class="lgl">démographique</span><span class="sml">démo.</span></a><a href="#efficience">Efficience <span class="lgl">économique</span><span class="sml">éco.</span></a><a href="#classement">Sportif</a><a href="#highlights">Highlights</a><a href="#lab">Lab</a><a href="#sports">Par sport</a></div>
+  <div class="mainlinks"><a class="wk" href="#semaine"><span class="lgl">Cette semaine</span><span class="sml">Semaine</span></a><a href="#performance">Performance réelle</a><a href="#demographie">Efficience <span class="lgl">démographique</span><span class="sml">démo.</span></a><a href="#efficience">Efficience <span class="lgl">économique</span><span class="sml">éco.</span></a><a href="#classement">Sportif</a><a href="#highlights">Highlights</a><a href="#lab">Lab</a><a href="#sports">Par sport</a></div>
   <div class="morewrap"><button type="button" class="morebtn" id="morebtn" aria-expanded="false" aria-controls="morepanel">Plus <span aria-hidden="true">▾</span></button>
     <div class="morepanel" id="morepanel" hidden>
-      <div class="mobonly"><span class="gl">Rubriques</span><a href="#accueil">Accueil</a><a href="#performance">Performance réelle</a><a href="#demographie">Efficience démographique</a><a href="#efficience">Efficience économique</a><a href="#classement">Classement sportif</a><a href="#highlights">Highlights du mois</a><a href="#lab">Lab</a><a href="#sports">Par sport</a><input type="search" id="gsearch2" list="gslist" placeholder="Une nation ou un sport…" aria-label="Rechercher une nation ou un sport"></div>
+      <div class="mobonly"><span class="gl">Rubriques</span><a href="#accueil">Accueil</a><a href="#semaine">Cette semaine</a><a href="#performance">Performance réelle</a><a href="#demographie">Efficience démographique</a><a href="#efficience">Efficience économique</a><a href="#classement">Classement sportif</a><a href="#highlights">Highlights du mois</a><a href="#lab">Lab</a><a href="#sports">Par sport</a><input type="search" id="gsearch2" list="gslist" placeholder="Une nation ou un sport…" aria-label="Rechercher une nation ou un sport"></div>
       <div><span class="gl">Classements</span><a href="#genre">Femmes · Hommes</a><a href="#equilibre">Équilibre femmes-hommes</a><a href="#sous">Sous-classements</a><a href="#historique">Historique 2017-2025</a></div>
       <div><span class="gl">Lab</span><a href="#lab">Tout le Lab</a><a href="#la2028">Los Angeles 2028 : l'exercice</a><a href="#nes-en-janvier">Nés en janvier, plus souvent olympiques</a><a href="#france-sportive">La France sportive, commune par commune</a></div>
-      <div><span class="gl">Explorer</span><a href="#comparer">Comparer deux nations</a><a href="#federations">Fédérations</a></div>
+      <div><span class="gl">Explorer</span><a href="#semaine">Cette semaine</a><a href="#comparer">Comparer deux nations</a><a href="#federations">Fédérations</a></div>
       <div><span class="gl">Comprendre</span><a href="#methode">Méthode</a><a href="#robustesse">Robustesse</a><a href="#impact">Et si les résultats changeaient ?</a><a href="#journal">Journal des modifications</a><a href="#sources">Sources</a><a href="#donnees">Données</a></div>
     </div></div>
   <div class="gsearch"><input type="search" id="gsearch" list="gslist" placeholder="Une nation ou un sport…" aria-label="Rechercher une nation ou un sport"><datalist id="gslist"></datalist></div>
@@ -833,6 +848,7 @@ main:focus{outline:none!important}
 <main id="main" tabindex="-1"><div class="wrap">
 <section class="view" id="v-accueil">
   <div class="view-head"><div><div class="vgrp">HoloSport Ranking</div><h2>Bienvenue</h2><p>HSR classe chaque mois les nations du monde selon leurs résultats dans plus de 120 sports, puis compare ces résultats à la richesse et à la population de chaque pays. Voici l'essentiel de l'édition de novembre 2026.</p></div></div>
+  <a class="hlteaser semteaser" id="semteaser" href="#semaine" data-noi18n data-off="1"></a>
   <div class="spot" id="spot"></div>
   <a class="hlteaser" id="hlteaser" href="#highlights" hidden data-off="1"></a>
   <a class="hlteaser lateaser" id="lateaser" href="#la2028"></a>
@@ -854,6 +870,7 @@ main:focus{outline:none!important}
     <a class="hcard" href="#sous"><b>Sous-classements</b><span>Par continent, par famille de sports, petites nations.</span></a>
     <a class="hcard" href="#sports"><b>Par sport</b><span>Qui domine chaque sport, et le détail de chaque calcul.</span></a>
     <a class="hcard" href="#comparer"><b>Comparer deux nations</b><span>Rang par rang, sport par sport.</span></a>
+    <a class="hcard" href="#semaine"><b>Cette semaine</b><span>Le chiffre de la semaine et les compétitions qui vont faire bouger le classement.</span></a>
     <a class="hcard" href="#lab"><b>Le Lab</b><span>Études ponctuelles : Los Angeles 2028, mois de naissance des olympiens, France sportive.</span></a>
     <a class="hcard" href="#highlights"><b>Highlights du mois</b><span>Ce qui a fait bouger les classements.</span></a>
     <a class="hcard" href="#donnees"><b>Données et API</b><span>Tous les tableaux en CSV et en JSON, libres de réutilisation.</span></a>
@@ -957,6 +974,11 @@ main:focus{outline:none!important}
     <thead id="th-sous"></thead><tbody id="tb-sous"></tbody></table></div>
   <div class="more"><button class="btn" id="more-sous" type="button">Afficher toutes les nations</button></div>
   <p class="small muted" id="sous-foot"></p>
+</section>
+
+<section class="view" id="v-semaine" hidden data-noi18n>
+  <div class="view-head"><div><div class="vgrp" id="sem-grp">Cette semaine</div><h2 id="sem-h">Cette semaine</h2><p id="sem-p"></p></div></div>
+  <div id="sem"></div>
 </section>
 
 <style>#v-nes-en-janvier{ --warm:#d4632f; --mid:#e6e9ee;
@@ -1705,7 +1727,281 @@ const ISO={
 }
 ;
 const ORD=r=>r+'<sup>'+(+r===1?'er':'e')+'</sup>';
-const FIAB={"FIBA": {"g": "A", "lab": "élevée", "why": ["méthode complète", "16 compétitions", "jusqu'à 8 nations par compétition", "classement mondial (50 rangs)", "65 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 65}, "FIFA": {"g": "A", "lab": "élevée", "why": ["méthode complète", "18 compétitions", "jusqu'à 8 nations par compétition", "classement mondial (50 rangs)", "75 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 75}, "FIVB": {"g": "A", "lab": "élevée", "why": ["méthode complète", "15 compétitions", "jusqu'à 8 nations par compétition", "classement mondial (50 rangs)", "62 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 62}, "ITTF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "12 compétitions", "jusqu'à 16 nations par compétition", "classement mondial (20 rangs)", "27 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 27}, "World Athletics": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "88 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 88}, "UCI": {"g": "A", "lab": "élevée", "why": ["méthode complète", "8 compétitions", "tableaux des médailles ou des places", "classement mondial (10 rangs)", "24 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 24}, "FIDE": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "jusqu'à 8 nations par compétition", "classement mondial (20 rangs)", "23 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 23}, "BWF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "12 compétitions", "jusqu'à 4 nations par compétition", "classement mondial (20 rangs)", "17 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 17}, "ITF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "15 compétitions", "jusqu'à 16 nations par compétition", "classement mondial (50 rangs)", "36 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 36}, "World Aquatics": {"g": "A", "lab": "élevée", "why": ["méthode complète", "5 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "34 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 34}, "ICC": {"g": "A", "lab": "élevée", "why": ["méthode complète", "4 compétitions", "jusqu'à 8 nations par compétition", "classement mondial (20 rangs)", "23 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 23}, "World Taekwondo": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "34 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 34}, "IGF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "6 compétitions", "jusqu'à 17 nations par compétition", "classement mondial (50 rangs)", "25 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 25}, "IJF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "30 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 30}, "IHF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "4 compétitions", "jusqu'à 8 nations par compétition", "pas de classement mondial utilisé", "14 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 14}, "World Gymnastics": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "24 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 24}, "WBSC": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "jusqu'à 8 nations par compétition", "classement mondial (20 rangs)", "25 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 25}, "ICF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "3 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "26 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 26}, "UWW": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "38 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 38}, "IWF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "33 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 33}, "World Boxing": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "41 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 41}, "World Skate": {"g": "B", "lab": "moyenne", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "7 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 7}, "WCBS": {"g": "B", "lab": "moyenne", "why": ["méthode complète", "1 compétition", "jusqu'à 16 nations par compétition", "classement mondial (50 rangs)", "7 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 7}, "World Rugby": {"g": "A", "lab": "élevée", "why": ["méthode complète", "4 compétitions", "jusqu'à 8 nations par compétition", "classement mondial (20 rangs)", "24 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 24}, "World Archery": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "18 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 18}, "FIH": {"g": "A", "lab": "élevée", "why": ["méthode complète", "4 compétitions", "jusqu'à 8 nations par compétition", "classement mondial (20 rangs)", "23 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 23}, "World Triathlon": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "14 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 14}, "ISSF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "30 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 30}, "WKF": {"g": "B", "lab": "moyenne", "why": ["méthode complète", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "29 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 29}, "World Rowing": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "25 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 25}, "FIS": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "25 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 25}, "IESF": {"g": "–", "lab": "non attribuée", "why": ["résultats par nation non consolidés (titres par jeu, pas de classement des nations)"]}, "FEI": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "11 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 11}, "World Sailing": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "25 nations classées", "donnée la plus récente : 2024"], "last": 2024, "nnat": 25}, "FIA": {"g": "A", "lab": "élevée", "why": ["méthode complète", "0 compétition", "jusqu'à 0 nations par compétition", "classement mondial (20 rangs)", "14 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 14}, "FIE": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "19 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 19}, "WPBF": {"g": "B", "lab": "moyenne", "why": ["méthode complète", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "8 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 8}, "ISA": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "8 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 8}, "IFBB": {"g": "–", "lab": "non attribuée", "why": ["pas de tableau des médailles par nation trouvé"]}, "World Climbing": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "11 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 11}, "IWUF": {"g": "B", "lab": "moyenne", "why": ["méthode complète", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "16 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 16}, "CIPS": {"g": "–", "lab": "non attribuée", "why": ["pas de classement des nations trouvé"]}, "IFMA": {"g": "B", "lab": "moyenne", "why": ["méthode complète", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "15 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 15}, "ILSF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "10 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 10}, "CMAS": {"g": "B", "lab": "moyenne", "why": ["méthode complète", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "11 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 11}, "ISU": {"g": "A", "lab": "élevée", "why": ["méthode complète", "6 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "19 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 19}, "WAKO": {"g": "B", "lab": "moyenne", "why": ["méthode complète", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "22 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 22}, "World Squash": {"g": "A", "lab": "élevée", "why": ["méthode complète", "6 compétitions", "jusqu'à 16 nations par compétition", "pas de classement mondial utilisé", "17 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 17}, "IIHF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "4 compétitions", "jusqu'à 8 nations par compétition", "classement mondial (20 rangs)", "24 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 24}, "UIPM": {"g": "C", "lab": "limitée", "why": ["méthode complète", "4 compétitions", "jusqu'à 3 nations par compétition", "pas de classement mondial utilisé", "7 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 7}, "FIM": {"g": "B", "lab": "moyenne", "why": ["méthode complète", "0 compétition", "jusqu'à 0 nations par compétition", "classement mondial (20 rangs)", "7 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 7}, "IBF": {"g": "–", "lab": "non attribuée", "why": ["Mondiaux de bowling : tableau par nation non trouvé"]}, "IFAF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "jusqu'à 16 nations par compétition", "pas de classement mondial utilisé", "11 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 11}, "IMMAF": {"g": "–", "lab": "non attribuée", "why": ["tableau des médailles par nation non trouvé"]}, "World Lacrosse": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "jusqu'à 11 nations par compétition", "pas de classement mondial utilisé", "13 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 13}, "ICU": {"g": "–", "lab": "non attribuée", "why": ["Mondiaux de cheerleading : classement par nation non consolidé"]}, "FIAS": {"g": "B", "lab": "moyenne", "why": ["méthode complète", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "18 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 18}, "WFDF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "3 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "8 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 8}, "WDSF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "11 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 11}, "World Curling": {"g": "A", "lab": "élevée", "why": ["méthode complète", "5 compétitions", "jusqu'à 8 nations par compétition", "classement mondial (10 rangs)", "14 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 14}, "IBU": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "9 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 9}, "UIAA": {"g": "–", "lab": "non attribuée", "why": ["Coupe du monde d'escalade sur glace : classement par nation non trouvé"]}, "World Netball": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "1 compétition", "jusqu'à 16 nations par compétition", "pas de classement mondial utilisé", "14 nations classées", "donnée la plus récente : 2023"], "last": 2023, "nnat": 14}, "WDF": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "3 compétitions", "jusqu'à 16 nations par compétition", "pas de classement mondial utilisé", "13 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 13}, "IGF (go)": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "1 compétition", "jusqu'à 8 nations par compétition", "pas de classement mondial utilisé", "8 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 8}, "IBSF": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "5 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 5}, "JJIF": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "25 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 25}, "WBF": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "2 compétitions", "jusqu'à 7 nations par compétition", "pas de classement mondial utilisé", "13 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 13}, "FIP": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "2 compétitions", "jusqu'à 8 nations par compétition", "pas de classement mondial utilisé", "9 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 9}, "IDBF": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "6 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 6}, "IFS": {"g": "–", "lab": "non attribuée", "why": ["Mondiaux de sumo : résultats par nation non trouvés"]}, "FAI": {"g": "–", "lab": "non attribuée", "why": ["pas de classement des nations"]}, "IWWF": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "13 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 13}, "IPF": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "18 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 18}, "ISMF": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "4 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 4}, "IFF": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "2 compétitions", "jusqu'à 4 nations par compétition", "pas de classement mondial utilisé", "4 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 4}, "FIL": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "5 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 5}, "IPSC": {"g": "–", "lab": "non attribuée", "why": ["pas de tableau par nation trouvé"]}, "FITEQ": {"g": "–", "lab": "non attribuée", "why": ["Mondiaux 2025 : tableau des médailles non trouvé"]}, "IKF (kabaddi)": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "2 compétitions", "jusqu'à 6 nations par compétition", "pas de classement mondial utilisé", "7 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 7}, "IOF": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "9 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 9}, "FIP (polo)": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "IBJJF": {"g": "–", "lab": "non attribuée", "why": ["résultats publiés par club, pas par nation"]}, "IRF": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "TWIF": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "IFMP": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "WAF": {"g": "–", "lab": "non attribuée", "why": ["Mondiaux : tableaux contradictoires entre sources"]}, "FMJD": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "IKF": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "2 compétitions", "jusqu'à 4 nations par compétition", "pas de classement mondial utilisé", "4 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 4}, "IAF": {"g": "–", "lab": "non attribuée", "why": ["discipline sans compétition (aïkido)"]}, "UIM": {"g": "–", "lab": "non attribuée", "why": ["pas de classement des nations"]}, "WOF": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "WXF": {"g": "C", "lab": "limitée", "why": ["méthode allégée", "1 compétition", "jusqu'à 2 nations par compétition", "pas de classement mondial utilisé", "2 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 2}, "IPF (pickleball)": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "IFI": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "ISTF": {"g": "–", "lab": "non attribuée", "why": ["Mondiaux 2024 : résultats par nation non trouvés"]}, "IYSF": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "ITSF": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "WCA": {"g": "–", "lab": "non attribuée", "why": ["pas de compétition entre nations"]}, "ISTAF": {"g": "C", "lab": "limitée", "why": ["méthode allégée", "1 compétition", "jusqu'à 3 nations par compétition", "pas de classement mondial utilisé", "3 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 3}, "WMF": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "FIK": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "2 compétitions", "jusqu'à 4 nations par compétition", "pas de classement mondial utilisé", "5 nations classées", "donnée la plus récente : 2024"], "last": 2024, "nnat": 5}, "IJRU": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "IFA": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "2 compétitions", "jusqu'à 11 nations par compétition", "pas de classement mondial utilisé", "13 nations classées", "donnée la plus récente : 2024"], "last": 2024, "nnat": 13}, "IFHA": {"g": "–", "lab": "non attribuée", "why": ["pas de compétition entre nations"]}, "FISav": {"g": "–", "lab": "non attribuée", "why": ["Mondiaux 2024 : seule la 1re nation (France) est publiée ; un seul nom ne suffit pas à répartir 1000 points"]}, "IPSF (silat)": {"g": "C", "lab": "limitée", "why": ["méthode allégée", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "3 nations classées", "donnée la plus récente : 2024"], "last": 2024, "nnat": 3}, "IRL": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "2 compétitions", "jusqu'à 4 nations par compétition", "pas de classement mondial utilisé", "5 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 5}, "FIPV": {"g": "–", "lab": "non attribuée", "why": ["podium 2022 non vérifié"]}, "FIB": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "2 compétitions", "jusqu'à 4 nations par compétition", "pas de classement mondial utilisé", "4 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 4}, "WFPF": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "IFKO": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "IRaF": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "IKKF": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "2 compétitions", "jusqu'à 8 nations par compétition", "pas de classement mondial utilisé", "10 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 10}, "WVF": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "4 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 4}, "AFI": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "WDA": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "WSF (strongman)": {"g": "–", "lab": "non attribuée", "why": ["compétition individuelle sans classement des nations"]}, "IFSS": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "IFFFF": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "GAA": {"g": "–", "lab": "non attribuée", "why": ["pas de compétition entre nations (sport pratiqué presque uniquement en Irlande)"]}, "FIFG": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "IFF (croquet)": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}}, JOURNAL=[
+const SEM=[
+ {
+  "id": "2026-11-18",
+  "publie": "2026-11-18",
+  "du": "2026-11-19",
+  "au": "2026-11-29",
+  "chiffre": {
+   "v": "11",
+   "fr": {
+    "t": "sports où la Chine est seule en tête",
+    "x": "Sur les 80 fédérations sportives dont HSR répartit les points, la Chine est seule en tête de 11 : tennis de table, échecs, badminton, gymnastique, haltérophilie, tir sportif, sports de boules, escalade, wushu, muay-thaï et danse sportive. Elle partage aussi la première place au go et au xiangqi. Les États-Unis, pourtant 1ers du classement sportif, ne sont en tête que de 9 sports : basket, athlétisme, tennis, sports aquatiques, golf, hockey sur glace, football américain, lacrosse et disque volant. Leur avance vient de leur présence partout : ils marquent des points dans 53 fédérations, la Chine dans 41. Au total, 28 nations sont en tête d'au moins un sport."
+   },
+   "en": {
+    "t": "sports led by China alone",
+    "x": "Of the 80 sports federations whose points HSR distributes, China alone leads 11: table tennis, chess, badminton, gymnastics, weightlifting, shooting, boules sports, climbing, wushu, muaythai and dancesport. It also shares first place in go and xiangqi. The United States, although first in the sporting ranking, lead only 9 sports: basketball, athletics, tennis, aquatics, golf, ice hockey, American football, lacrosse and flying disc. Their lead comes from being everywhere: they score points in 53 federations, China in 41. In all, 28 nations lead at least one sport."
+   },
+   "lien": "#sports",
+   "lien_fr": "Voir le classement de chaque sport",
+   "lien_en": "See the ranking of each sport",
+   "sources": [
+    {
+     "fr": "HSR, édition de novembre 2026 : points par fédération (classement_nations.csv)",
+     "en": "HSR, November 2026 edition: points per federation (classement_nations.csv)",
+     "u": "https://holosportranking.com/#donnees"
+    }
+   ]
+  },
+  "agenda": [
+   {
+    "debut": "2026-11-24",
+    "fin": "2026-11-29",
+    "c": "TNEH-WC",
+    "nations": [
+     "Italie",
+     "Autriche",
+     "Canada",
+     "Tchéquie",
+     "Allemagne",
+     "Royaume-Uni",
+     "Corée du Sud",
+     "Espagne"
+    ],
+    "fr": {
+     "nom": "Coupe Davis, phase finale",
+     "sport": "Tennis",
+     "lieu": "Bologne (Italie)",
+     "x": "Huit nations se disputent le titre : l'Italie (tenante et pays hôte), l'Autriche, le Canada, la Tchéquie, l'Allemagne, le Royaume-Uni, la Corée du Sud et l'Espagne. Quarts de finale du 24 au 26 novembre, demi-finales les 27 et 28, finale le dimanche 29. Dans HSR, la Coupe Davis répartit 90 des 1000 points de la Fédération internationale de tennis : le titre en vaut 33,1, soit 73,5 points de score, presque autant que la Thomas Cup de badminton (73,8) et plus qu'un titre de champion du monde de basket (63,3). L'édition 2026 devrait remplacer celle de 2025 dans l'édition de décembre. La Belgique, demi-finaliste en 2025, n'est pas qualifiée : elle perdra ses 16,5 points, sans changer de rang (21e du classement sportif)."
+    },
+    "en": {
+     "nom": "Davis Cup Finals",
+     "sport": "Tennis",
+     "lieu": "Bologna (Italy)",
+     "x": "Eight nations compete for the title: Italy (holders and hosts), Austria, Canada, Czechia, Germany, the United Kingdom, South Korea and Spain. Quarter-finals from 24 to 26 November, semi-finals on the 27th and 28th, final on Sunday 29th. In HSR, the Davis Cup distributes 90 of the International Tennis Federation's 1,000 points: the title is worth 33.1, i.e. 73.5 score points, almost as much as badminton's Thomas Cup (73.8) and more than a basketball world title (63.3). The 2026 edition should replace the 2025 one in the December edition. Belgium, semi-finalists in 2025, did not qualify: they will lose their 16.5 points, without changing rank (21st in the sporting ranking)."
+    },
+    "sources": [
+     {
+      "fr": "Calendrier et tableau : Wikipédia, 2026 Davis Cup",
+      "en": "Schedule and draw: Wikipedia, 2026 Davis Cup",
+      "u": "https://en.wikipedia.org/wiki/2026_Davis_Cup"
+     },
+     {
+      "fr": "Programme officiel : LTA",
+      "en": "Official schedule: LTA",
+      "u": "https://www.lta.org.uk/fan-zone/davis-cup/news/beginners-guide-to-the-tournament"
+     }
+    ],
+    "enjeux": {
+     "c": "TNEH-WC",
+     "comp": "Coupe Davis 2025",
+     "f": "ITF",
+     "pts": 90,
+     "p1": 33.1,
+     "val": 73.5,
+     "w": 2.22,
+     "nations": [
+      {
+       "n": "Italie",
+       "engage": true,
+       "pts": 33.1,
+       "s0": 7,
+       "p0": 6,
+       "s_win": 7,
+       "p_win": 6,
+       "s_zero": 7,
+       "p_zero": 6,
+       "ds_win": 0.0,
+       "ds_zero": -73.5
+      },
+      {
+       "n": "Autriche",
+       "engage": true,
+       "pts": 0.0,
+       "s0": 34,
+       "p0": 36,
+       "s_win": 32,
+       "p_win": 33,
+       "s_zero": 34,
+       "p_zero": 36,
+       "ds_win": 73.5,
+       "ds_zero": -0.0
+      },
+      {
+       "n": "Canada",
+       "engage": true,
+       "pts": 0.0,
+       "s0": 12,
+       "p0": 13,
+       "s_win": 12,
+       "p_win": 13,
+       "s_zero": 12,
+       "p_zero": 13,
+       "ds_win": 73.5,
+       "ds_zero": -0.0
+      },
+      {
+       "n": "Tchéquie",
+       "engage": true,
+       "pts": 0.0,
+       "s0": 27,
+       "p0": 21,
+       "s_win": 24,
+       "p_win": 20,
+       "s_zero": 27,
+       "p_zero": 21,
+       "ds_win": 73.5,
+       "ds_zero": -0.0
+      },
+      {
+       "n": "Allemagne",
+       "engage": true,
+       "pts": 16.5,
+       "s0": 6,
+       "p0": 7,
+       "s_win": 6,
+       "p_win": 7,
+       "s_zero": 6,
+       "p_zero": 7,
+       "ds_win": 36.9,
+       "ds_zero": -36.6
+      },
+      {
+       "n": "Royaume-Uni",
+       "engage": true,
+       "pts": 0.0,
+       "s0": 4,
+       "p0": 2,
+       "s_win": 4,
+       "p_win": 2,
+       "s_zero": 4,
+       "p_zero": 2,
+       "ds_win": 73.5,
+       "ds_zero": -0.0
+      },
+      {
+       "n": "Corée du Sud",
+       "engage": true,
+       "pts": 0.0,
+       "s0": 10,
+       "p0": 11,
+       "s_win": 10,
+       "p_win": 11,
+       "s_zero": 10,
+       "p_zero": 11,
+       "ds_win": 73.5,
+       "ds_zero": -0.0
+      },
+      {
+       "n": "Espagne",
+       "engage": true,
+       "pts": 23.8,
+       "s0": 9,
+       "p0": 9,
+       "s_win": 9,
+       "p_win": 8,
+       "s_zero": 9,
+       "p_zero": 9,
+       "ds_win": 20.6,
+       "ds_zero": -52.8
+      },
+      {
+       "n": "Belgique",
+       "engage": false,
+       "pts": 16.5,
+       "s0": 21,
+       "p0": 19,
+       "s_zero": 21,
+       "p_zero": 19,
+       "ds_zero": -36.6
+      }
+     ]
+    },
+    "fed": "ITF",
+    "pts": 90.0,
+    "tenant": [
+     "Italie"
+    ]
+   }
+  ],
+  "ensuite": [
+   {
+    "debut": "2026-12-11",
+    "fin": "2027-01-03",
+    "c": "DARH-WC",
+    "fr": {
+     "nom": "Championnat du monde PDC de fléchettes",
+     "sport": "Fléchettes",
+     "lieu": "Londres (Royaume-Uni)"
+    },
+    "en": {
+     "nom": "PDC World Darts Championship",
+     "sport": "Darts",
+     "lieu": "London (United Kingdom)"
+    },
+    "sources": [
+     {
+      "fr": "Alexandra Palace",
+      "en": "Alexandra Palace",
+      "u": "https://www.alexandrapalace.com/whats-on/world-darts-championship-2026-2027/"
+     }
+    ],
+    "fed": "WDF",
+    "pts": 250.0,
+    "tenant": [
+     "Royaume-Uni"
+    ]
+   },
+   {
+    "debut": "2026-12-14",
+    "fin": "2026-12-19",
+    "c": "SQH-WT",
+    "c2": "SQF-WT",
+    "fr": {
+     "nom": "Championnats du monde de squash par équipes",
+     "sport": "Squash",
+     "lieu": "Cheongju (Corée du Sud)"
+    },
+    "en": {
+     "nom": "World Team Squash Championships",
+     "sport": "Squash",
+     "lieu": "Cheongju (South Korea)"
+    },
+    "sources": [
+     {
+      "fr": "Eyewitness News",
+      "en": "Eyewitness News",
+      "u": "https://www.ewn.co.za/sa-squash-stars-ready-to-take-on-the-world-in-south-korea/"
+     }
+    ],
+    "fed": "World Squash",
+    "pts": 400.0,
+    "tenant": [
+     "Égypte"
+    ]
+   }
+  ]
+ }
+], FIAB={"FIBA": {"g": "A", "lab": "élevée", "why": ["méthode complète", "16 compétitions", "jusqu'à 8 nations par compétition", "classement mondial (50 rangs)", "65 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 65}, "FIFA": {"g": "A", "lab": "élevée", "why": ["méthode complète", "18 compétitions", "jusqu'à 8 nations par compétition", "classement mondial (50 rangs)", "75 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 75}, "FIVB": {"g": "A", "lab": "élevée", "why": ["méthode complète", "15 compétitions", "jusqu'à 8 nations par compétition", "classement mondial (50 rangs)", "62 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 62}, "ITTF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "12 compétitions", "jusqu'à 16 nations par compétition", "classement mondial (20 rangs)", "27 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 27}, "World Athletics": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "88 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 88}, "UCI": {"g": "A", "lab": "élevée", "why": ["méthode complète", "8 compétitions", "tableaux des médailles ou des places", "classement mondial (10 rangs)", "24 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 24}, "FIDE": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "jusqu'à 8 nations par compétition", "classement mondial (20 rangs)", "23 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 23}, "BWF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "12 compétitions", "jusqu'à 4 nations par compétition", "classement mondial (20 rangs)", "17 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 17}, "ITF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "15 compétitions", "jusqu'à 16 nations par compétition", "classement mondial (50 rangs)", "36 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 36}, "World Aquatics": {"g": "A", "lab": "élevée", "why": ["méthode complète", "5 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "34 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 34}, "ICC": {"g": "A", "lab": "élevée", "why": ["méthode complète", "4 compétitions", "jusqu'à 8 nations par compétition", "classement mondial (20 rangs)", "23 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 23}, "World Taekwondo": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "34 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 34}, "IGF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "6 compétitions", "jusqu'à 17 nations par compétition", "classement mondial (50 rangs)", "25 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 25}, "IJF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "30 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 30}, "IHF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "4 compétitions", "jusqu'à 8 nations par compétition", "pas de classement mondial utilisé", "14 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 14}, "World Gymnastics": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "24 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 24}, "WBSC": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "jusqu'à 8 nations par compétition", "classement mondial (20 rangs)", "25 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 25}, "ICF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "3 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "26 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 26}, "UWW": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "38 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 38}, "IWF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "33 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 33}, "World Boxing": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "41 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 41}, "World Skate": {"g": "B", "lab": "moyenne", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "7 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 7}, "WCBS": {"g": "B", "lab": "moyenne", "why": ["méthode complète", "1 compétition", "jusqu'à 16 nations par compétition", "classement mondial (50 rangs)", "7 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 7}, "World Rugby": {"g": "A", "lab": "élevée", "why": ["méthode complète", "4 compétitions", "jusqu'à 8 nations par compétition", "classement mondial (20 rangs)", "24 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 24}, "World Archery": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "18 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 18}, "FIH": {"g": "A", "lab": "élevée", "why": ["méthode complète", "4 compétitions", "jusqu'à 8 nations par compétition", "classement mondial (20 rangs)", "23 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 23}, "World Triathlon": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "14 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 14}, "ISSF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "30 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 30}, "WKF": {"g": "B", "lab": "moyenne", "why": ["méthode complète", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "29 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 29}, "World Rowing": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "25 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 25}, "FIS": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "25 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 25}, "IESF": {"g": "–", "lab": "non attribuée", "why": ["résultats par nation non consolidés (titres par jeu, pas de classement des nations)"]}, "FEI": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "11 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 11}, "World Sailing": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "25 nations classées", "donnée la plus récente : 2024"], "last": 2024, "nnat": 25}, "FIA": {"g": "A", "lab": "élevée", "why": ["méthode complète", "0 compétition", "jusqu'à 0 nations par compétition", "classement mondial (20 rangs)", "14 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 14}, "FIE": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "19 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 19}, "WPBF": {"g": "B", "lab": "moyenne", "why": ["méthode complète", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "8 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 8}, "ISA": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "8 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 8}, "IFBB": {"g": "–", "lab": "non attribuée", "why": ["pas de tableau des médailles par nation trouvé"]}, "World Climbing": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "11 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 11}, "IWUF": {"g": "B", "lab": "moyenne", "why": ["méthode complète", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "16 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 16}, "CIPS": {"g": "–", "lab": "non attribuée", "why": ["pas de classement des nations trouvé"]}, "IFMA": {"g": "B", "lab": "moyenne", "why": ["méthode complète", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "15 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 15}, "ILSF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "10 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 10}, "CMAS": {"g": "B", "lab": "moyenne", "why": ["méthode complète", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "11 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 11}, "ISU": {"g": "A", "lab": "élevée", "why": ["méthode complète", "6 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "19 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 19}, "WAKO": {"g": "B", "lab": "moyenne", "why": ["méthode complète", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "22 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 22}, "World Squash": {"g": "A", "lab": "élevée", "why": ["méthode complète", "6 compétitions", "jusqu'à 16 nations par compétition", "pas de classement mondial utilisé", "17 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 17}, "IIHF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "4 compétitions", "jusqu'à 8 nations par compétition", "classement mondial (20 rangs)", "24 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 24}, "UIPM": {"g": "C", "lab": "limitée", "why": ["méthode complète", "4 compétitions", "jusqu'à 3 nations par compétition", "pas de classement mondial utilisé", "7 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 7}, "FIM": {"g": "B", "lab": "moyenne", "why": ["méthode complète", "0 compétition", "jusqu'à 0 nations par compétition", "classement mondial (20 rangs)", "7 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 7}, "IBF": {"g": "–", "lab": "non attribuée", "why": ["Mondiaux de bowling : tableau par nation non trouvé"]}, "IFAF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "jusqu'à 16 nations par compétition", "pas de classement mondial utilisé", "11 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 11}, "IMMAF": {"g": "–", "lab": "non attribuée", "why": ["tableau des médailles par nation non trouvé"]}, "World Lacrosse": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "jusqu'à 11 nations par compétition", "pas de classement mondial utilisé", "13 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 13}, "ICU": {"g": "–", "lab": "non attribuée", "why": ["Mondiaux de cheerleading : classement par nation non consolidé"]}, "FIAS": {"g": "B", "lab": "moyenne", "why": ["méthode complète", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "18 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 18}, "WFDF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "3 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "8 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 8}, "WDSF": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "11 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 11}, "World Curling": {"g": "A", "lab": "élevée", "why": ["méthode complète", "5 compétitions", "jusqu'à 8 nations par compétition", "classement mondial (10 rangs)", "14 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 14}, "IBU": {"g": "A", "lab": "élevée", "why": ["méthode complète", "2 compétitions", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "9 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 9}, "UIAA": {"g": "–", "lab": "non attribuée", "why": ["Coupe du monde d'escalade sur glace : classement par nation non trouvé"]}, "World Netball": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "1 compétition", "jusqu'à 16 nations par compétition", "pas de classement mondial utilisé", "14 nations classées", "donnée la plus récente : 2023"], "last": 2023, "nnat": 14}, "WDF": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "3 compétitions", "jusqu'à 16 nations par compétition", "pas de classement mondial utilisé", "13 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 13}, "IGF (go)": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "1 compétition", "jusqu'à 8 nations par compétition", "pas de classement mondial utilisé", "8 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 8}, "IBSF": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "5 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 5}, "JJIF": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "25 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 25}, "WBF": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "2 compétitions", "jusqu'à 7 nations par compétition", "pas de classement mondial utilisé", "13 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 13}, "FIP": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "2 compétitions", "jusqu'à 8 nations par compétition", "pas de classement mondial utilisé", "9 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 9}, "IDBF": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "6 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 6}, "IFS": {"g": "–", "lab": "non attribuée", "why": ["Mondiaux de sumo : résultats par nation non trouvés"]}, "FAI": {"g": "–", "lab": "non attribuée", "why": ["pas de classement des nations"]}, "IWWF": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "13 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 13}, "IPF": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "18 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 18}, "ISMF": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "4 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 4}, "IFF": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "2 compétitions", "jusqu'à 4 nations par compétition", "pas de classement mondial utilisé", "4 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 4}, "FIL": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "5 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 5}, "IPSC": {"g": "–", "lab": "non attribuée", "why": ["pas de tableau par nation trouvé"]}, "FITEQ": {"g": "–", "lab": "non attribuée", "why": ["Mondiaux 2025 : tableau des médailles non trouvé"]}, "IKF (kabaddi)": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "2 compétitions", "jusqu'à 6 nations par compétition", "pas de classement mondial utilisé", "7 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 7}, "IOF": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "9 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 9}, "FIP (polo)": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "IBJJF": {"g": "–", "lab": "non attribuée", "why": ["résultats publiés par club, pas par nation"]}, "IRF": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "TWIF": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "IFMP": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "WAF": {"g": "–", "lab": "non attribuée", "why": ["Mondiaux : tableaux contradictoires entre sources"]}, "FMJD": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "IKF": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "2 compétitions", "jusqu'à 4 nations par compétition", "pas de classement mondial utilisé", "4 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 4}, "IAF": {"g": "–", "lab": "non attribuée", "why": ["discipline sans compétition (aïkido)"]}, "UIM": {"g": "–", "lab": "non attribuée", "why": ["pas de classement des nations"]}, "WOF": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "WXF": {"g": "C", "lab": "limitée", "why": ["méthode allégée", "1 compétition", "jusqu'à 2 nations par compétition", "pas de classement mondial utilisé", "2 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 2}, "IPF (pickleball)": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "IFI": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "ISTF": {"g": "–", "lab": "non attribuée", "why": ["Mondiaux 2024 : résultats par nation non trouvés"]}, "IYSF": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "ITSF": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "WCA": {"g": "–", "lab": "non attribuée", "why": ["pas de compétition entre nations"]}, "ISTAF": {"g": "C", "lab": "limitée", "why": ["méthode allégée", "1 compétition", "jusqu'à 3 nations par compétition", "pas de classement mondial utilisé", "3 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 3}, "WMF": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "FIK": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "2 compétitions", "jusqu'à 4 nations par compétition", "pas de classement mondial utilisé", "5 nations classées", "donnée la plus récente : 2024"], "last": 2024, "nnat": 5}, "IJRU": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "IFA": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "2 compétitions", "jusqu'à 11 nations par compétition", "pas de classement mondial utilisé", "13 nations classées", "donnée la plus récente : 2024"], "last": 2024, "nnat": 13}, "IFHA": {"g": "–", "lab": "non attribuée", "why": ["pas de compétition entre nations"]}, "FISav": {"g": "–", "lab": "non attribuée", "why": ["Mondiaux 2024 : seule la 1re nation (France) est publiée ; un seul nom ne suffit pas à répartir 1000 points"]}, "IPSF (silat)": {"g": "C", "lab": "limitée", "why": ["méthode allégée", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "3 nations classées", "donnée la plus récente : 2024"], "last": 2024, "nnat": 3}, "IRL": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "2 compétitions", "jusqu'à 4 nations par compétition", "pas de classement mondial utilisé", "5 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 5}, "FIPV": {"g": "–", "lab": "non attribuée", "why": ["podium 2022 non vérifié"]}, "FIB": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "2 compétitions", "jusqu'à 4 nations par compétition", "pas de classement mondial utilisé", "4 nations classées", "donnée la plus récente : 2026"], "last": 2026, "nnat": 4}, "WFPF": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "IFKO": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "IRaF": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "IKKF": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "2 compétitions", "jusqu'à 8 nations par compétition", "pas de classement mondial utilisé", "10 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 10}, "WVF": {"g": "B", "lab": "moyenne", "why": ["méthode allégée", "1 compétition", "tableaux des médailles ou des places", "pas de classement mondial utilisé", "4 nations classées", "donnée la plus récente : 2025"], "last": 2025, "nnat": 4}, "AFI": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "WDA": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "WSF (strongman)": {"g": "–", "lab": "non attribuée", "why": ["compétition individuelle sans classement des nations"]}, "IFSS": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "IFFFF": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "GAA": {"g": "–", "lab": "non attribuée", "why": ["pas de compétition entre nations (sport pratiqué presque uniquement en Irlande)"]}, "FIFG": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}, "IFF (croquet)": {"g": "–", "lab": "non attribuée", "why": ["résultats non trouvés"]}}, JOURNAL=[
+ {
+  "date": "2026-11-18",
+  "version": "1.1",
+  "titre": "Nouvelle rubrique « Cette semaine »",
+  "titre_en": "New “This week” section",
+  "items": [
+   "Chaque semaine, un chiffre tiré du classement, avec sa source, et les compétitions à suivre qui comptent dans HSR.",
+   "Pour chaque compétition à suivre : les points en jeu et, pour chaque nation engagée, son rang sportif si elle gagne ou si elle ne marque rien, recalculé toutes choses égales par ailleurs.",
+   "Premier numéro : 11 sports où la Chine est seule en tête ; à suivre, la phase finale de la Coupe Davis (Bologne, 24-29 novembre).",
+   "Chaque numéro a une adresse à partager et figure dans le flux RSS du site."
+  ],
+  "items_en": [
+   "Every week, one number from the ranking, with its source, and the upcoming competitions that count in HSR.",
+   "For each competition to watch: the points at stake and, for each nation taking part, its sporting rank if it wins or if it scores nothing, recalculated with everything else unchanged.",
+   "First issue: 11 sports led by China alone; to watch, the Davis Cup Finals (Bologna, 24-29 November).",
+   "Each issue has its own address to share and appears in the site's RSS feed."
+  ]
+ },
  {
   "date": "2026-11-18",
   "version": "1.1",
@@ -3231,7 +3527,7 @@ $('#dl').innerHTML=`<div class="srcgroup dlall"><h4>Toute l'édition</h4><p clas
 // routing
 const LEGAL={"site": "HoloSport Ranking (HSR)", "domaine": "holosportranking.com", "hebergeur_nom": "GitHub, Inc. (service GitHub Pages)", "hebergeur_adresse": "88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis", "hebergeur_telephone": "+1 877 448 4820", "date_maj": "13 novembre 2026"};
 document.querySelectorAll('[data-l]').forEach(el=>{const v=(LEGAL[el.dataset.l]||'').trim();if(v){el.textContent=v}else{el.textContent='[à compléter : '+(el.dataset.hint||el.dataset.l)+']';el.classList.add('todo')}});
-const VIEWS=['accueil','performance','highlights','classement','genre','equilibre','sous','historique','lab','la2028','nes-en-janvier','france-sportive','efficience','demographie','sports','comparer','federations','methode','robustesse','impact','journal','sources','donnees','mentions-legales','confidentialite','conditions'];
+const VIEWS=['accueil','semaine','performance','highlights','classement','genre','equilibre','sous','historique','lab','la2028','nes-en-janvier','france-sportive','efficience','demographie','sports','comparer','federations','methode','robustesse','impact','journal','sources','donnees','mentions-legales','confidentialite','conditions'];
 function route(){const h=location.hash.slice(1);const v=VIEWS.includes(h)?h:(/^(nation|sport)\//.test(h)?(document.body.dataset.v||(h[0]==='s'?'sports':'accueil')):'accueil');
   VIEWS.forEach(x=>$('#v-'+x).hidden=x!==v);if(['mentions-legales','confidentialite','conditions'].includes(v))window.scrollTo(0,0);
   document.querySelectorAll('nav.tabs a').forEach(a=>{const h2=a.getAttribute('href');a.setAttribute('aria-current',h2==='#'+v||(h2==='#lab'&&a.closest('.mainlinks')&&['la2028','nes-en-janvier','france-sportive'].includes(v))?'page':'false')});document.body.dataset.v=v;const mb=$('#morebtn');if(mb)mb.classList.toggle('on',!!document.querySelector('#morepanel > div:not(.mobonly) a[aria-current="page"]'));$('#morepanel').hidden=true;$('#morebtn').setAttribute('aria-expanded','false');placeMap(v);if(_lastTracked!==v){_lastTracked=v;const go=()=>track(location.pathname+'#'+v,document.title+' – '+v);if(window.goatcounter&&window.goatcounter.count)go();else window.addEventListener('load',()=>setTimeout(go,300),{once:true})}}
@@ -3552,6 +3848,32 @@ function renderLA(){const q=$('#q-la').value.trim().toLowerCase();const rows=LA.
   const t3=LA.rows.slice(0,3).map(r=>`${esc(DN(r.n))} ${fmt(r.m,0)}`).join(' · ');
   $('#lateaser').innerHTML=LANG==='en'?`<span class="k">Exercise</span><span class="t"><b>Los Angeles 2028</b>If the medals followed today's balance of power: ${t3}…</span><span class="go">See the exercise →</span>`:`<span class="k">Exercice</span><span class="t"><b>Los Angeles 2028</b>Si les médailles suivaient les rapports de force d'aujourd'hui : ${t3}…</span><span class="go">Voir l'exercice →</span>`;
   $('#q-la').addEventListener('input',renderLA);$('#more-la').addEventListener('click',()=>{laAll=true;renderLA()});renderLA()})();
+(function(){if(!SEM.length)return;const W=SEM[0],EN=LANG==='en',L=EN?'en':'fr';
+  const dt=d=>new Date(d+'T12:00:00').toLocaleDateString(EN?'en-GB':'fr-FR',{day:'numeric',month:'long'});
+  const dty=d=>new Date(d+'T12:00:00').toLocaleDateString(EN?'en-GB':'fr-FR',{day:'numeric',month:'long',year:'numeric'});
+  const od=r=>EN?r+(['th','st','nd','rd'][(r%100>10&&r%100<14)?0:Math.min(r%10,4)%4]||'th'):r+(r===1?'er':'e');const C=EN?':':' :';
+  const per=(a,b)=>EN?`${dt(a)} – ${dty(b)}`:`du ${dt(a)} au ${dty(b)}`;
+  const n1=(x,d=1)=>EN?Number(x).toLocaleString('en-GB',{minimumFractionDigits:d,maximumFractionDigits:d}):fmt(x,d);
+  const src=a=>(a||[]).map(s=>`<a href="${esc(s.u)}" target="_blank" rel="noopener">${esc(s[L])}</a>`).join(' · ');
+  const share=(EN?'/en/':'/')+'semaine/'+W.id+'/';
+  $('#sem-grp').textContent=EN?'This week':'Cette semaine';$('#sem-h').textContent=EN?'This week in HSR':'Cette semaine dans HSR';
+  $('#sem-p').textContent=EN?`Every week, one number from the ranking and the competitions that will move it. This issue covers ${per(W.du,W.au)}; published on ${dty(W.publie)}.`:`Chaque semaine, un chiffre tiré du classement et les compétitions qui vont le faire bouger. Ce numéro couvre la période ${per(W.du,W.au)} ; publié le ${dty(W.publie)}.`;
+  const c=W.chiffre;let h=`<h3 class="hh">${EN?'Number of the week':'Le chiffre de la semaine'}</h3><div class="semcard"><div class="big">${esc(c.v)}</div><h3>${esc(c[L].t)}</h3><p>${esc(c[L].x)}</p>
+   <div class="acts"><a class="btn pri" href="${esc(c.lien)}">${esc(c['lien_'+L])}</a><button type="button" class="btn" id="sem-share">${EN?'Copy the link to share':'Copier le lien à partager'}</button></div><div class="semsrc">Source${C} ${src(c.sources)}</div></div>`;
+  const ag=W.agenda||[];h+=`<h3 class="hh">${EN?'What to watch':'À suivre'}</h3>`;
+  if(!ag.length)h+=`<p class="muted">${EN?'No competition counted by HSR this week.':'Aucune compétition comptée par HSR cette semaine.'}</p>`;
+  ag.forEach(it=>{const e=it.enjeux;h+=`<div class="semev"><div class="when">${per(it.debut,it.fin)} · ${esc(it[L].sport)}</div><h4>${esc(it[L].nom)}</h4><div class="where">${esc(it[L].lieu)}</div><p>${esc(it[L].x)}</p>`;
+   if(e){const rk=(a,b)=>`<td class="r num${b<a?' up':b>a?' dn':''}">${od(b)}</td>`;
+    const rows=e.nations.filter(n=>n.engage).sort((a,b)=>a.s0-b.s0).map(n=>`<tr class="click" tabindex="0" data-nat="${esc(n.n)}"><td class="nat">${fl(n.n)}${esc(DN(n.n))}</td><td class="r num">${n1(n.pts)}</td><td class="r num">${od(n.s0)}</td>${rk(n.s0,n.s_win).replace('</td>',` <span class="small muted">(+${n1(n.ds_win,0)})</span></td>`)}${rk(n.s0,n.s_zero)}</tr>`).join('');
+    h+=`<div class="tablebox"><table><thead><tr><th>${EN?'Nation':'Nation'}</th><th class="r">${EN?'Current points':'Points actuels'}</th><th class="r">${EN?'Sporting rank':'Rang sportif'}</th><th class="r">${EN?'If it wins (score)':'Si elle gagne (score)'}</th><th class="r">${EN?'If it scores nothing':'Si elle ne marque rien'}</th></tr></thead><tbody>${rows}</tbody></table></div>
+     <p class="small muted">${EN?`Current points: points won at the edition counted today (${esc(DN(e.comp))}), out of the federation's 1,000. Ranks recalculated with everything else unchanged: the nation receives the ${n1(e.p1)} points of the title, or none. Click a nation to open its page.`:`Points actuels : points obtenus à l'édition comptée aujourd'hui (${esc(DN(e.comp))}), sur les 1000 de la fédération. Rangs recalculés toutes choses égales par ailleurs : la nation reçoit les ${n1(e.p1)} points du titre, ou aucun. Cliquez sur une nation pour ouvrir sa fiche.`}</p>`}
+   h+=`<div class="semsrc">Sources${C} ${src(it.sources)}</div></div>`});
+  const nx=W.ensuite||[];if(nx.length){h+=`<h3 class="hh" style="margin-top:22px">${EN?'In the following weeks':'Dans les semaines suivantes'}</h3><div class="semnext">`+nx.map(it=>`<div><span class="d">${per(it.debut,it.fin)}</span><span><b>${esc(it[L].nom)}</b> · ${esc(it[L].lieu)} <span class="small muted">· ${src(it.sources)}</span></span><span class="p">${it.pts?(EN?`${n1(it.pts,0)} points at stake`:`${n1(it.pts,0)} points en jeu`):''}${it.tenant&&it.tenant.length?`<br>${EN?'Holder':'Tenant'}${C} ${it.tenant.map(n=>fl(n)+esc(DN(n))).join(', ')}`:''}</span></div>`).join('')+`</div>`}
+  if(SEM.length>1){h+=`<h3 class="hh" style="margin-top:26px">${EN?'Previous issues':'Les numéros précédents'}</h3><div class="semarch">`+SEM.slice(1).map(w=>`<div><b>${esc(w.chiffre.v)}</b><span>${esc(w.chiffre[L].t)} <span class="small muted">· ${dty(w.publie)}</span></span></div>`).join('')+`</div>`}
+  h+=`<p class="small muted" style="margin-top:18px">${EN?'Next issue on Monday. Follow the new issues with the <a href="/flux.xml">RSS feed</a>.':'Prochain numéro lundi. Suivez les nouveaux numéros avec le <a href="/flux.xml">flux RSS</a>.'}</p>`;
+  $('#sem').innerHTML=h;
+  $('#sem-share').addEventListener('click',ev=>{const u=location.origin+share;(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(()=>{ev.target.textContent=EN?'Link copied':'Lien copié'},()=>{prompt(EN?'Link to share':'Lien à partager',u)})});
+  const tz=$('#semteaser');const nx0=ag[0];tz.innerHTML=`<span class="k">${EN?'This week':'Cette semaine'}</span><span class="t"><b>${esc(c.v)}</b>${esc(c[L].t)}${nx0?` · ${EN?'To watch':'À suivre'}${C} ${esc(nx0[L].nom)}`:''}</span><span class="go">${EN?'Read →':'Lire →'}</span>`;tz.removeAttribute('data-off')})();
 function natExtra(n){const c=contOf(n),cr=c&&SOUSALL['c:'+c].rows.find(r=>r.n===n),e=EQ.by[n],l=LA.by[n],sm=POPN[n]&&POPN[n]<1e7&&SOUSALL['p:10'].rows.find(r=>r.n===n);
   const it=[];if(cr)it.push(`<div class="kpi"><b class="num">${ORD(cr.rk)}</b><span>${{EU:'en Europe',AF:'en Afrique',AM:'dans les Amériques',AS:'en Asie',OC:'en Océanie'}[c]}</span></div>`);
   if(sm)it.push(`<div class="kpi"><b class="num">${ORD(sm.rk)}</b><span>des nations de moins de 10 M d'hab.</span></div>`);
