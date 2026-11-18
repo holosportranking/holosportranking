@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La France sportive, commune par commune · HSR Lab</title>
+<meta name="description" content="Licences sportives, clubs et équipements de chaque commune et de chaque département, d'après le recensement INJEP 2023 et l'inventaire Data ES.">
+<link rel="canonical" href="https://holosportranking.com/lab/france-sportive/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Plan : carte des départements à gauche, fiche commune à droite ; tableaux en dessous. Bleu « piste », neutres froids. */
+:root{
+  --bg:#f6f8fb; --surface:#ffffff; --ink:#132033; --muted:#5b6b80; --line:#dbe2ec; --accent:#2a78d6;
+  --s0:#e8f0fb; --s1:#c6dbf6; --s2:#93bcee; --s3:#5a96e0; --s4:#2a78d6; --s5:#164f9c;
+  --neg:#c0532a; --pos:#1b7f5a; --mid:#e6e9ee;
+  --display:"Barlow Condensed","Arial Narrow",sans-serif; --body:"IBM Plex Sans",system-ui,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f1624; --surface:#151f31; --ink:#e7edf6; --muted:#9aa9bd; --line:#26334a; --accent:#5a9ff0;
+  --s0:#1a2a44; --s1:#1f3c6a; --s2:#25549a; --s3:#3274c9; --s4:#5a9ff0; --s5:#a9cdf8;
+  --neg:#e0804f; --pos:#3fb987; --mid:#2a3446; color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --bg:#0f1624; --surface:#151f31; --ink:#e7edf6; --muted:#9aa9bd; --line:#26334a; --accent:#5a9ff0;
+  --s0:#1a2a44; --s1:#1f3c6a; --s2:#25549a; --s3:#3274c9; --s4:#5a9ff0; --s5:#a9cdf8;
+  --neg:#e0804f; --pos:#3fb987; --mid:#2a3446; color-scheme:dark;}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--body)}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 20px 60px;display:grid;gap:28px}
+h1,h2,h3{font-family:var(--display);font-weight:600;letter-spacing:.01em;text-wrap:balance;margin:0}
+h1{font-size:44px;line-height:1.05}
+h2{font-size:28px}
+h3{font-size:20px}
+.lede{max-width:68ch;color:var(--muted);margin:8px 0 0}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.kpi b{display:block;font-family:var(--display);font-size:30px;font-weight:600;font-variant-numeric:tabular-nums}
+.kpi span{color:var(--muted);font-size:13px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px}
+.grid2{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:20px}
+@media (max-width:860px){.grid2{grid-template-columns:1fr}}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 12px}
+.tabs button{font:inherit;font-size:13px;border:1px solid var(--line);background:transparent;color:var(--ink);padding:5px 11px;border-radius:999px;cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#map{width:100%;height:auto;display:block}
+#map path{stroke:var(--surface);stroke-width:.6;cursor:pointer;transition:opacity .15s}
+#map path:hover,#map path.on{stroke:var(--ink);stroke-width:1.4}
+.legend{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);flex-wrap:wrap}
+.legend i{display:inline-block;width:26px;height:10px;border-radius:2px}
+.tip{position:fixed;pointer-events:none;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:13px;box-shadow:0 4px 16px rgba(0,0,0,.12);display:none;z-index:5;max-width:240px}
+.search{display:flex;gap:8px;position:relative}
+.search input{flex:1;font:inherit;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+.sugg{position:absolute;top:44px;left:0;right:0;background:var(--surface);border:1px solid var(--line);border-radius:8px;z-index:4;max-height:260px;overflow:auto;display:none}
+.sugg button{display:block;width:100%;text-align:left;font:inherit;padding:7px 10px;border:0;background:transparent;color:var(--ink);cursor:pointer}
+.sugg button:hover,.sugg button:focus{background:var(--s0)}
+.fiche{margin-top:14px;display:grid;gap:12px}
+.fiche .head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.stat{border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+.stat b{font-family:var(--display);font-size:24px;font-weight:600;font-variant-numeric:tabular-nums;display:block}
+.stat small{color:var(--muted);font-size:12px}
+.chip{display:inline-block;font-size:12px;padding:2px 8px;border-radius:999px;background:var(--s0);color:var(--ink);border:1px solid var(--line)}
+.bars{display:grid;gap:6px}
+.bar{display:grid;grid-template-columns:minmax(0,1fr) 70px;gap:8px;align-items:center;font-size:13px}
+.bar .t{position:relative;height:22px;border-radius:4px;background:var(--mid);overflow:hidden}
+.bar .t i{position:absolute;inset:0 auto 0 0;background:var(--s3);border-radius:4px}
+.bar .t span{position:absolute;left:8px;top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;right:6px}
+.bar em{font-style:normal;text-align:right;font-variant-numeric:tabular-nums;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:13.5px;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line)}
+th{font-weight:600;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+td.n,th.n{text-align:right}
+.tw{overflow-x:auto}
+.pos{color:var(--pos)} .neg{color:var(--neg)}
+.note{font-size:13px;color:var(--muted);max-width:80ch}
+.note li{margin:4px 0}
+a{color:var(--accent)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media (max-width:760px){.split{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <p><a class="chip" href="/" style="text-decoration:none;color:inherit">HoloSport Ranking · Lab</a></p>
+  <h1>La France sportive, commune par commune</h1>
+  <p class="lede">Licences sportives des fédérations unisport, clubs et équipements de chaque commune, d'après le recensement officiel des licences (INJEP, saison 2023) et l'inventaire national des équipements (Data ES). Toutes les données sont publiques et sous licence ouverte.</p>
+</header>
+<section class="kpis" id="kpis" aria-label="Chiffres clés"></section>
+<section class="grid2">
+  <div class="panel">
+    <h2>Carte des départements</h2>
+    <div class="tabs" role="group" aria-label="Indicateur de la carte" id="tabs"></div>
+    <svg id="map" viewBox="0 0 600 600" role="img" aria-label="Carte de France métropolitaine par département"></svg>
+    <div class="legend" id="legend"></div>
+    <p class="note" id="drom"></p>
+  </div>
+  <div class="panel">
+    <h2>Ma commune</h2>
+    <div class="search">
+      <label for="q" class="sr" style="position:absolute;left:-9999px">Rechercher une commune</label>
+      <input id="q" type="search" placeholder="Nom ou code postal partiel, ex. Annecy" autocomplete="off">
+      <div class="sugg" id="sugg" role="listbox"></div>
+    </div>
+    <div class="fiche" id="fiche"></div>
+  </div>
+</section>
+<section class="split">
+  <div class="panel">
+    <h3>Les communes de plus de 5 000 habitants les plus licenciées</h3>
+    <div class="tw"><table id="topc"></table></div>
+  </div>
+  <div class="panel">
+    <h3>Les grandes villes (plus de 100 000 habitants)</h3>
+    <div class="tw"><table id="villes"></table></div>
+  </div>
+</section>
+<section class="panel">
+  <h3>Les fédérations : qui gagne des licenciés, qui en perd ?</h3>
+  <p class="note">Les 25 premières fédérations unisport. Évolution entre 2019 et 2023.</p>
+  <div class="tw"><table id="feds"></table></div>
+</section>
+<section class="panel" id="multisports">
+  <h2>Les fédérations multisports</h2>
+  <p class="note" style="max-width:80ch">Ces fédérations sont écartées des taux ci-dessus, comme dans les études régionales de l'Insee. Elles pèsent pourtant lourd : <b id="mpart"></b>. On les présente ici à part, en trois familles.</p>
+  <div class="kpis" id="mfam"></div>
+  <div class="split">
+    <div>
+      <h3>Par fédération</h3>
+      <div class="tw"><table id="mfed"></table></div>
+    </div>
+    <div>
+      <h3>Fédérations affinitaires, par département</h3>
+      <p class="note">Licences des fédérations affinitaires pour 100 habitants. Elles sont plus présentes dans les départements ruraux.</p>
+      <div class="bars" id="mdep"></div>
+    </div>
+  </div>
+  <div class="note" style="margin-top:18px">
+    <h3>Remarques de méthode</h3>
+    <ul>
+      <li>Chiffres du recensement complet 2023 de l'INJEP, toutes licences comprises, y compris celles hors champ du géocodage ou non réparties. Ils ne sont donc pas directement additionnables aux taux par commune présentés plus haut.</li>
+      <li>On compte des licences, pas des personnes : selon l'INJEP, une même personne peut détenir plusieurs licences, dans une fédération ou dans plusieurs. Un élève licencié à l'UNSS et dans un club de football compte deux fois. C'est pourquoi les deux périmètres ne doivent pas être additionnés pour mesurer un nombre de sportifs.</li>
+      <li>Les fédérations scolaires du premier degré et du second degré (USEP et UNSS) sont géocodées à l'adresse de l'école ou du club, pas à celle du licencié. Leurs chiffres par commune ou par département décrivent donc les lieux de pratique, pas les lieux de résidence : on ne les cartographie pas.</li>
+      <li>La Fédération des clubs de la défense, la Fédération sportive de la Police nationale et la FF Maccabi ne sont réparties qu'au niveau du département.</li>
+      <li>Évolution 2019-2023 : les fédérations agréées après 2019 (clubs omnisports, UCPA) sont comptées en 2023 mais pas en 2019. Le recul des fédérations affinitaires reste net même sans elles.</li>
+      <li>La part de jeunes correspond aux licences de 5 à 19 ans.</li>
+    </ul>
+  </div>
+</section>
+<section class="panel note">
+  <h3>Méthode et sources</h3>
+  <ul>
+    <li>Licences : <a href="https://www.data.gouv.fr/datasets/donnees-geocodees-issues-du-recensement-des-licences-et-clubs-aupres-des-federations-sportives-agreees-par-le-ministere-charge-des-sports">recensement des licences et clubs, INJEP</a>, millésime 2023, Licence Ouverte. Chaque licence est rattachée à la commune de l'adresse géocodée par l'Insee. Une personne peut avoir plusieurs licences : on compte des licences, pas des pratiquants.</li>
+    <li>Périmètre : comme les études régionales de l'Insee, on ne retient que les fédérations unisport, olympiques et non olympiques. Sont écartées les fédérations multisports : affinitaires (UFOLEP, gymnastique volontaire, FSGT, Sports pour tous…), scolaires et universitaires (UNSS, UGSEL, USEP…) et handisport ou sport adapté. Cela limite les doubles licences, mais retire aussi des pratiquants qui ne sont licenciés que dans ces fédérations.</li><li>Sont aussi écartées les licences hors champ du géocodage ou non réparties. Mayotte est hors champ du recensement. Le nombre de clubs et établissements couvre toutes les fédérations.</li>
+    <li>Paris, Lyon et Marseille regroupent leurs arrondissements.</li>
+    <li>Équipements : <a href="https://www.data.gouv.fr/datasets/recensement-des-equipements-sportifs-espaces-et-sites-de-pratiques">Data ES, ministère chargé des Sports</a>, Licence Ouverte 2.0, extraction du 18/11/2026.</li>
+    <li>Population : populations légales Insee via l'API Géo. Contours : IGN Admin Express, Licence Ouverte. Les rangs portent sur les <span id="nbig"></span> communes de 5 000 habitants et plus.</li>
+  </ul>
+</section>
+</div>
+<div class="tip" id="tip" role="tooltip"></div>
+<script>
+(async function(){
+const fmt=n=>n==null?"–":Math.round(n).toLocaleString("fr-FR");
+const f1=n=>n==null?"–":n.toLocaleString("fr-FR",{minimumFractionDigits:1,maximumFractionDigits:1});
+const [S,C,G]=await Promise.all(["synthese.json","communes.json","departements.json"].map(u=>fetch(u).then(r=>r.json())));
+const N=S.nat, FED=C.f;
+// KPI
+const k=[[fmt(N.lic),"licences dans les fédérations unisport"],[f1(N.lic100),"licences pour 100 habitants"],[f1(N.partF)+" %","de licences féminines"],[fmt(N.clubs),"clubs et établissements (toutes fédérations)"],[fmt(N.eq),"équipements sportifs recensés"]];
+document.getElementById("kpis").innerHTML=k.map(([b,s])=>`<div class="kpi"><b>${b}</b><span>${s}</span></div>`).join("");
+document.getElementById("nbig").textContent=fmt(N.nbig);
+// départements
+const D={};S.dep.forEach(r=>D[r[0]]={code:r[0],nom:r[1],pop:r[2],lic:r[3],lic100:r[4],partF:r[5],eq1000:r[6],evol:r[7],eq:r[8],clubs:r[9]});
+const IND=[["lic100","Licences / 100 hab.",v=>f1(v)],["partF","Part de femmes",v=>f1(v)+" %"],["eq1000","Équipements / 1 000 hab.",v=>f1(v)],["evol","Évolution 2019-2023",v=>(v>0?"+":"")+f1(v)+" %"]];
+let cur="lic100";
+const tabs=document.getElementById("tabs");
+tabs.innerHTML=IND.map(([k,l])=>`<button type="button" data-k="${k}" aria-pressed="${k===cur}">${l}</button>`).join("");
+tabs.onclick=e=>{const b=e.target.closest("button");if(!b)return;cur=b.dataset.k;tabs.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x.dataset.k===cur));paint();};
+// projection
+const lat0=46.5*Math.PI/180,cx=Math.cos(lat0);
+let mnx=1e9,mxx=-1e9,mny=1e9,mxy=-1e9;
+const P=([lo,la])=>[lo*cx,-la];
+G.features.forEach(f=>{const g=f.geometry,polys=g.type==="Polygon"?[g.coordinates]:g.coordinates;polys.forEach(p=>p.forEach(r=>r.forEach(c=>{const[x,y]=P(c);mnx=Math.min(mnx,x);mxx=Math.max(mxx,x);mny=Math.min(mny,y);mxy=Math.max(mxy,y);})))});
+const sc=580/Math.max(mxx-mnx,mxy-mny),ox=(600-(mxx-mnx)*sc)/2,oy=(600-(mxy-mny)*sc)/2;
+const pt=c=>{const[x,y]=P(c);return((x-mnx)*sc+ox).toFixed(1)+","+((y-mny)*sc+oy).toFixed(1)};
+const svg=document.getElementById("map");
+svg.innerHTML=G.features.map(f=>{const g=f.geometry,polys=g.type==="Polygon"?[g.coordinates]:g.coordinates;
+ const d=polys.map(p=>p.map(r=>"M"+r.map(pt).join("L")+"Z").join("")).join("");
+ return `<path d="${d}" data-c="${f.properties.code}" tabindex="0" aria-label="${f.properties.nom}"></path>`}).join("");
+const seq=["--s0","--s1","--s2","--s3","--s4","--s5"].map(v=>getComputedStyle(document.documentElement).getPropertyValue(v));
+function color(k,v,br){
+ if(v==null)return "var(--mid)";
+ if(k==="evol"){ if(v<=-5)return "var(--neg)"; if(v<0)return "color-mix(in srgb,var(--neg) 45%,var(--mid))"; if(v<5)return "color-mix(in srgb,var(--pos) 40%,var(--mid))"; return "var(--pos)";}
+ let i=br.findIndex(b=>v<b); if(i<0)i=br.length; return `var(--s${Math.min(i,5)})`;
+}
+function breaks(k){const vals=Object.values(D).filter(d=>!d.code.startsWith("97")).map(d=>d[k]).filter(v=>v!=null).sort((a,b)=>a-b);return [1,2,3,4,5].map(i=>vals[Math.floor(vals.length*i/6)]);}
+function paint(){
+ const br=breaks(cur),fx=IND.find(x=>x[0]===cur)[2];
+ svg.querySelectorAll("path").forEach(p=>{const d=D[p.dataset.c];p.setAttribute("fill",color(cur,d?d[cur]:null,br));});
+ const L=document.getElementById("legend");
+ if(cur==="evol") L.innerHTML=[["var(--neg)","−5 % ou moins"],["color-mix(in srgb,var(--neg) 45%,var(--mid))","−5 à 0 %"],["color-mix(in srgb,var(--pos) 40%,var(--mid))","0 à +5 %"],["var(--pos)","+5 % ou plus"]].map(([c,l])=>`<span><i style="background:${c}"></i> ${l}</span>`).join("");
+ else{const lab=["< "+fx(br[0])];for(let i=0;i<4;i++)lab.push(fx(br[i])+" – "+fx(br[i+1]));lab.push("≥ "+fx(br[4]));L.innerHTML=lab.map((l,i)=>`<span><i style="background:var(--s${i})"></i> ${l}</span>`).join("")+`<span>(sextiles des départements)</span>`;}
+ const drom=["971","972","973","974","976"].map(c=>D[c]).filter(Boolean);
+ document.getElementById("drom").textContent="Outre-mer : "+drom.map(d=>`${d.nom} ${d[cur]==null?"hors champ":fx(d[cur])}`).join(" · ");
+}
+paint();
+const tip=document.getElementById("tip");
+function showTip(e,p){const d=D[p.dataset.c];if(!d)return;tip.innerHTML=`<b>${d.nom}</b> (${d.code})<br>${f1(d.lic100)} licences / 100 hab.<br>${f1(d.partF)} % de femmes<br>${f1(d.eq1000)} équipements / 1 000 hab.<br>Évolution 2019-2023 : ${d.evol>0?"+":""}${f1(d.evol)} %`;tip.style.display="block";const x=Math.min(e.clientX+14,innerWidth-250);tip.style.left=x+"px";tip.style.top=(e.clientY+14)+"px";}
+svg.addEventListener("mousemove",e=>{const p=e.target.closest("path");if(p)showTip(e,p);else tip.style.display="none"});
+svg.addEventListener("mouseleave",()=>tip.style.display="none");
+// communes
+const CO=C.c.map(r=>({code:r[0],nom:r[1],dep:r[2],pop:r[3],lic:r[4],F:r[5],J:r[6],clubs:r[7],eq:r[8],top:r[9],rL:r[10],rF:r[11],rE:r[12]}));
+const byCode={};CO.forEach(c=>byCode[c.code]=c);
+const norm=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[-'’]/g," ");
+CO.forEach(c=>c.k=norm(c.nom));
+const q=document.getElementById("q"),sg=document.getElementById("sugg");
+q.addEventListener("input",()=>{const v=norm(q.value.trim());if(v.length<2){sg.style.display="none";return;}
+ const res=CO.filter(c=>c.k.startsWith(v)||c.code===v).sort((a,b)=>b.pop-a.pop).slice(0,8);
+ sg.innerHTML=res.map(c=>`<button type="button" data-c="${c.code}">${c.nom} <span style="color:var(--muted)">(${D[c.dep]?D[c.dep].nom:c.dep}, ${fmt(c.pop)} hab.)</span></button>`).join("")||`<div style="padding:8px 10px;color:var(--muted)">Aucune commune trouvée</div>`;sg.style.display="block";});
+sg.onclick=e=>{const b=e.target.closest("button");if(!b)return;sg.style.display="none";q.value=byCode[b.dataset.c].nom;fiche(byCode[b.dataset.c]);};
+document.addEventListener("click",e=>{if(!e.target.closest(".search"))sg.style.display="none"});
+function rk(r){return r?`${fmt(r)}<sup>e</sup> sur ${fmt(N.nbig)}`:"rang réservé aux communes de 5 000 hab. et plus"}
+function fiche(c){
+ const d=D[c.dep],l100=c.lic/c.pop*100,pf=c.lic?c.F/c.lic*100:null,e1=c.eq/c.pop*1000;
+ const mx=c.top.length?c.top[0][1]:1;
+ document.getElementById("fiche").innerHTML=`
+ <div class="head"><h3>${c.nom}</h3><span class="chip">${d?d.nom:c.dep} · ${fmt(c.pop)} habitants</span></div>
+ <div class="stats">
+  <div class="stat"><b>${f1(l100)}</b><small>licences pour 100 habitants · département ${f1(d&&d.lic100)} · France ${f1(N.lic100)}<br>${rk(c.rL)}</small></div>
+  <div class="stat"><b>${pf==null?"–":f1(pf)+" %"}</b><small>de licences féminines · France ${f1(N.partF)} %<br>${rk(c.rF)}</small></div>
+  <div class="stat"><b>${fmt(c.lic)}</b><small>licences en club, dont ${fmt(c.J)} de 5 à 19 ans</small></div>
+  <div class="stat"><b>${f1(e1)}</b><small>équipements pour 1 000 hab. (${fmt(c.eq)} au total) · ${fmt(c.clubs)} clubs<br>${rk(c.rE)}</small></div>
+ </div>
+ <div><small style="color:var(--muted)">Fédérations les plus représentées</small>
+ <div class="bars">${c.top.map(([i,v])=>`<div class="bar"><div class="t"><i style="width:${(v/mx*100).toFixed(1)}%"></i><span>${FED[i]}</span></div><em>${fmt(v)}</em></div>`).join("")||"<p class='note'>Aucune licence recensée.</p>"}</div></div>`;
+ svg.querySelectorAll("path").forEach(p=>p.classList.toggle("on",p.dataset.c===c.dep));
+}
+fiche(byCode["74010"]||CO[0]);
+// tableaux
+const big=CO.filter(c=>c.rL).sort((a,b)=>a.rL-b.rL).slice(0,15);
+document.getElementById("topc").innerHTML=`<tr><th>#</th><th>Commune</th><th class="n">Habitants</th><th class="n">Lic./100 hab.</th></tr>`+big.map(c=>`<tr><td>${c.rL}</td><td>${c.nom} <span style="color:var(--muted)">(${c.dep})</span></td><td class="n">${fmt(c.pop)}</td><td class="n">${f1(c.lic/c.pop*100)}</td></tr>`).join("");
+const vil=CO.filter(c=>c.pop>=100000).map(c=>({...c,v:c.lic/c.pop*100})).sort((a,b)=>b.v-a.v);
+document.getElementById("villes").innerHTML=`<tr><th>Ville</th><th class="n">Lic./100 hab.</th><th class="n">Femmes</th><th class="n">Équip./1 000</th></tr>`+vil.map(c=>`<tr><td>${c.nom} <span style="color:var(--muted)">(${c.dep})</span></td><td class="n">${f1(c.v)}</td><td class="n">${f1(c.F/c.lic*100)} %</td><td class="n">${f1(c.eq/c.pop*1000)}</td></tr>`).join("");
+document.getElementById("feds").innerHTML=`<tr><th>Fédération</th><th class="n">Licences 2023</th><th class="n">Femmes</th><th class="n">2019 → 2023</th></tr>`+S.fed.slice(0,25).map(([n,F,H,T,e])=>`<tr><td>${n}</td><td class="n">${fmt(T)}</td><td class="n">${f1(F/T*100)} %</td><td class="n ${e>0?"pos":"neg"}">${e==null?"–":(e>0?"+":"")+f1(e)+" %"}</td></tr>`).join("");
+
+// fédérations multisports
+const MU=S.multi;
+document.getElementById("mpart").textContent=fmt(MU.tout-MU.uni)+" licences sur "+fmt(MU.tout)+", soit "+f1((MU.tout-MU.uni)/MU.tout*100)+" % du total recensé";
+document.getElementById("mfam").innerHTML=MU.fam.map(([n,F,H,J,T,e])=>`<div class="kpi"><b>${fmt(T)}</b><span>${n} · ${f1(F/T*100)} % de femmes · ${f1(J/T*100)} % de 5-19 ans · ${e>0?"+":""}${f1(e)} % depuis 2019</span></div>`).join("");
+document.getElementById("mfed").innerHTML=`<tr><th>Fédération</th><th>Famille</th><th class="n">Licences</th><th class="n">Femmes</th><th class="n">2019 → 2023</th></tr>`+MU.fed.map(([c,n,fa,F,H,J,T,e])=>`<tr><td>${n}</td><td>${fa}</td><td class="n">${fmt(T)}</td><td class="n">${f1(F/T*100)} %</td><td class="n ${e==null?"":e>0?"pos":"neg"}">${e==null?"nouvelle":(e>0?"+":"")+f1(e)+" %"}</td></tr>`).join("");
+const md=MU.dep.slice().sort((a,b)=>b[3]-a[3]),mx2=md[0][3],showd=[...md.slice(0,8),null,...md.slice(-5)];
+document.getElementById("mdep").innerHTML=showd.map(r=>r?`<div class="bar"><div class="t"><i style="width:${(r[3]/mx2*100).toFixed(1)}%"></i><span>${r[1]}</span></div><em>${f1(r[3])}</em></div>`:`<div class="note" style="text-align:center">…</div>`).join("");
+})();
+</script>
+</body>
+</html>
