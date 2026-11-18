@@ -679,7 +679,11 @@ footer{border-top:1px solid var(--line)}
   .mainlinks{display:none}
   .nav2{justify-content:space-between}
   .morewrap{margin-left:auto}
-  .morepanel{right:-46px;width:min(92vw,340px)}
+  .morepanel{position:fixed;left:10px;right:10px;width:auto;top:var(--mtop,64px);max-height:calc(100dvh - var(--mtop,64px) - 10px);overflow-y:auto;overscroll-behavior:contain;grid-template-columns:1fr 1fr;gap:4px 12px}
+  .morepanel .mobonly{grid-column:1/-1;display:grid!important;grid-template-columns:1fr 1fr;gap:0 12px;padding-bottom:8px;border-bottom:1px solid var(--line);margin-bottom:6px}.morepanel .mobonly .gl,.morepanel .mobonly input{grid-column:1/-1}
+  .morepanel .mobonly input{box-sizing:border-box;width:auto;margin:6px 0 2px!important}.morepanel a{padding:7px 8px!important;font-size:14px!important;white-space:normal!important}
+  header.hero .brand .logo,header.hero .facts{display:none}
+  #v-accueil:not([hidden]){display:flex;flex-direction:column}#v-accueil>#semteaser,#v-accueil>#lateaser{order:-1;margin:0 0 12px}
   .mobonly{display:flex!important}
   .mobonly input{margin:6px 8px 4px;font:inherit;font-size:14px;padding:8px 10px;border-radius:9px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
   td.rk{width:38px;font-size:16px}
@@ -4311,7 +4315,7 @@ function placeMap(v){const slot=document.querySelector('#v-'+v+' .mapslot');if(!
 // navigation : menu Plus, recherche globale, thème
 (function(){
   const mb=$('#morebtn'),mp=$('#morepanel');
-  mb.addEventListener('click',e=>{e.stopPropagation();const o=mp.hidden;mp.hidden=!o;mb.setAttribute('aria-expanded',o)});
+  mb.addEventListener('click',e=>{e.stopPropagation();const o=mp.hidden;if(o&&innerWidth<=700){const nv=document.querySelector('nav.tabs'),hh=document.querySelector('header.hero').offsetHeight;if(scrollY<hh)window.scrollTo(0,hh);mp.style.setProperty('--mtop',(nv.getBoundingClientRect().bottom+6)+'px')}mp.hidden=!o;mb.setAttribute('aria-expanded',o)});
   document.addEventListener('click',e=>{if(!e.target.closest('.morewrap')){mp.hidden=true;mb.setAttribute('aria-expanded','false')}});
   const sports=F.filter(f=>f.st==='Attribuée').map(f=>({lab:(sportOf(f.s)||f.s)+' ('+f.s+')',s:f.s}));
   $('#gslist').innerHTML=natNames.map(n=>`<option value="${esc(DN(n))}">`).join('')+sports.map(x=>`<option value="${esc(DN(x.lab))}">`).join('');
