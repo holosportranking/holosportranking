@@ -371,10 +371,10 @@ footer a{color:var(--hero-ink)}
 main .wrap{padding-block:20px 48px}
 
 /* ===== Highlights du mois ===== */
-.hlteaser{display:flex;align-items:center;gap:14px;margin:14px 0 4px;padding:12px 16px;border-radius:12px;background:linear-gradient(100deg,#0f1f45,#1d3b8a);color:#fff;text-decoration:none;box-shadow:0 6px 18px -10px rgba(15,31,69,.6)}
-.hlteaser .k{font:700 11px/1 var(--f-body,inherit);letter-spacing:.14em;text-transform:uppercase;background:#f5c542;color:#1a1a1a;padding:5px 8px;border-radius:6px;white-space:nowrap}
-.hlteaser .t{flex:1;min-width:0;font-size:14.5px}.hlteaser .t b{font-family:var(--f-display);font-size:19px;letter-spacing:.01em;margin-right:6px}
-.hlteaser .go{white-space:nowrap;font-weight:600;font-size:13.5px;opacity:.9}.hlteaser:hover .go{text-decoration:underline}
+.hlband{display:flex;align-items:center;gap:14px;margin:14px 0 4px;padding:12px 16px;border-radius:12px;background:linear-gradient(100deg,#0f1f45,#1d3b8a);color:#fff;text-decoration:none;box-shadow:0 6px 18px -10px rgba(15,31,69,.6)}
+.hlband .k{font:700 11px/1 var(--f-body,inherit);letter-spacing:.14em;text-transform:uppercase;background:#f5c542;color:#1a1a1a;padding:5px 8px;border-radius:6px;white-space:nowrap}
+.hlband .t{flex:1;min-width:0;font-size:14.5px}.hlband .t b{font-family:var(--f-display);font-size:19px;letter-spacing:.01em;margin-right:6px}
+.hlband .go{white-space:nowrap;font-weight:600;font-size:13.5px;opacity:.9}.hlband:hover .go{text-decoration:underline}
 .hlintro{background:var(--surface);border:1px solid var(--line);border-left:4px solid #f5c542;border-radius:10px;padding:12px 16px;margin:0 0 18px;font-size:15px;line-height:1.55}
 .hlsec{margin:26px 0 10px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
 .hlsec h3{margin:0;font-family:var(--f-display);font-size:28px;text-transform:uppercase;letter-spacing:.01em}
@@ -417,7 +417,7 @@ main .wrap{padding-block:20px 48px}
 .hlmore{font-size:12.5px;color:var(--muted)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .dch .dn{background:#3a1d1b;color:#ff9c8f} :root:not([data-theme="light"]) .hlc .flag{background:#3b3115;color:#f5d27a}}
 :root[data-theme="dark"] .dch .dn{background:#3a1d1b;color:#ff9c8f} :root[data-theme="dark"] .hlc .flag{background:#3b3115;color:#f5d27a}
-@media (max-width:620px){.hlmov{grid-template-columns:1fr}.hlteaser{display:grid;grid-template-columns:1fr auto;gap:8px 10px;align-items:center}.hlteaser .k{justify-self:start}.hlteaser .go{grid-column:2;grid-row:1}.hlteaser .t{grid-column:1/-1;grid-row:2}.hlsec h3{font-size:23px}}
+@media (max-width:620px){.hlmov{grid-template-columns:1fr}.hlband{display:grid;grid-template-columns:1fr auto;gap:8px 10px;align-items:center}.hlband .k{justify-self:start}.hlband .go{grid-column:2;grid-row:1}.hlband .t{grid-column:1/-1;grid-row:2}.hlsec h3{font-size:23px}}
 /* ===== Animations (désactivées si l'utilisateur réduit les mouvements) et embellissements ===== */
 .spot{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
 .spotc{font:inherit;text-align:left;cursor:pointer;border:0;border-radius:14px;padding:14px 16px 16px;display:flex;flex-direction:column;gap:2px;min-width:0;color:#0b1a33;position:relative;overflow:hidden;box-shadow:var(--shadow);transition:transform .25s ease,box-shadow .25s ease}
@@ -577,7 +577,7 @@ td.rk{font-family:var(--f-display);font-size:19px;font-weight:700;color:var(--mu
 .spotc .ss{font-size:12.5px;color:var(--muted)!important}
 .spotc:hover{transform:translateY(-3px);border-color:var(--c)}
 @media (max-width:860px){.spot{grid-template-columns:1fr!important}}
-.hlteaser[data-off]{display:none!important}
+.hlband[data-off]{display:none!important}
 .homelink{color:inherit;text-decoration:none}.hero h1 .homelink:hover{opacity:.9}
 .homecols{display:grid;grid-template-columns:1.1fr 1fr;gap:16px;margin-top:18px}.homecols .srcgroup{display:flex;flex-direction:column;gap:10px;align-items:flex-start}
 .hh{font-family:var(--f-display);font-size:22px;text-transform:uppercase;letter-spacing:.02em;margin:0}
@@ -588,8 +588,8 @@ td.rk{font-family:var(--f-display);font-size:19px;font-weight:700;color:var(--mu
 .hcard{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:inherit;text-decoration:none;transition:border-color .15s,transform .15s}
 .hcard:hover,.hcard:focus-visible{border-color:var(--accent);transform:translateY(-1px)}.hcard b{font-family:var(--f-display);font-size:18px;letter-spacing:.01em}.hcard span{font-size:13px;color:var(--muted)}
 @media (max-width:760px){.homecols{grid-template-columns:1fr}.hometop{columns:1}}
-.lateaser{background:linear-gradient(100deg,#3b1d0a,#c2410c)}.lateaser .k{background:#fb923c;color:#1a1a1a}
-.semteaser{background:linear-gradient(100deg,#3f0d1c,#be123c)}.semteaser .k{background:#fb7185;color:#1a1a1a}.semteaser .t b{font-size:24px}
+.laband{background:linear-gradient(100deg,#3b1d0a,#c2410c)}.laband .k{background:#fb923c;color:#1a1a1a}
+.semband{background:linear-gradient(100deg,#3f0d1c,#be123c)}.semband .k{background:#fb7185;color:#1a1a1a}.semband .t b{font-size:24px}
 .semcard{display:grid;grid-template-columns:auto 1fr;gap:6px 26px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin:6px 0 22px;border-top:4px solid var(--sec)}
 .semcard .big{font-family:var(--f-display);font-weight:800;font-size:clamp(72px,11vw,128px);line-height:.85;color:var(--sec);letter-spacing:-.02em;grid-row:span 3}
 .semcard h3{margin:2px 0 0;font-family:var(--f-display);font-size:26px;text-transform:uppercase;letter-spacing:.01em;line-height:1.1}
@@ -683,7 +683,7 @@ footer{border-top:1px solid var(--line)}
   .morepanel .mobonly{grid-column:1/-1;display:grid!important;grid-template-columns:1fr 1fr;gap:0 12px;padding-bottom:8px;border-bottom:1px solid var(--line);margin-bottom:6px}.morepanel .mobonly .gl,.morepanel .mobonly input{grid-column:1/-1}
   .morepanel .mobonly input{box-sizing:border-box;width:auto;margin:6px 0 2px!important}.morepanel a{padding:7px 8px!important;font-size:14px!important;white-space:normal!important}
   header.hero .brand .logo,header.hero .facts{display:none}
-  #v-accueil:not([hidden]){display:flex;flex-direction:column}#v-accueil>#semteaser,#v-accueil>#lateaser{order:-1;margin:0 0 12px}
+  #v-accueil:not([hidden]){display:flex;flex-direction:column}#v-accueil>#semband,#v-accueil>#laband{order:-1;margin:0 0 12px}
   .mobonly{display:flex!important}
   .mobonly input{margin:6px 8px 4px;font:inherit;font-size:14px;padding:8px 10px;border-radius:9px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
   td.rk{width:38px;font-size:16px}
@@ -872,10 +872,10 @@ main:focus{outline:none!important}
 <main id="main" tabindex="-1"><div class="wrap">
 <section class="view" id="v-accueil">
   <div class="view-head"><div><div class="vgrp">HoloSport Ranking</div><h2>Bienvenue</h2><p>HSR classe chaque mois les nations du monde selon leurs résultats dans plus de 120 sports, puis compare ces résultats à la richesse et à la population de chaque pays. Voici l'essentiel de l'édition de November 2026.</p></div></div>
-  <a class="hlteaser semteaser" id="semteaser" href="#semaine" data-noi18n data-off="1"></a>
+  <a class="hlband semband" id="semband" href="#semaine" data-noi18n><span class="k">This week</span><span class="t"><b>11</b>sports led by China alone · To watch: Davis Cup Finals</span><span class="go">Read →</span></a>
   <div class="spot" id="spot"></div>
-  <a class="hlteaser" id="hlteaser" href="#highlights" hidden data-off="1"></a>
-  <a class="hlteaser lateaser" id="lateaser" href="#la2028"></a>
+  <a class="hlband" id="hlband" href="#highlights" hidden data-off="1"></a>
+  <a class="hlband laband" id="laband" href="#la2028"></a>
   <div class="homecols">
     <div class="srcgroup"><h3 class="hh">Top 10 de la performance réelle</h3><ol class="hometop" id="home-top"></ol><a class="btn pri" href="#performance">Voir le classement complet</a></div>
     <div class="srcgroup"><h3 class="hh">Comment ça marche</h3><ol class="homesteps">
@@ -3891,7 +3891,7 @@ renderGen();renderSports();
     if(!maj.length&&!aut.length)h+=q?'<p class="muted">Aucun highlight ne correspond.</p>':'<p class="muted">Aucun changement de résultat ce mois-ci.</p>';
     $('#hl').innerHTML=h}
   $('#q-hl').addEventListener('input',render);render();
-  const tz=$('#hlteaser'),top=HL.maj[0];
+  const tz=$('#hlband'),top=HL.maj[0];
   if(top){tz.hidden=false;tz.innerHTML=`<span class="k">Highlights</span><span class="t"><b>${diff?'Ce qui a bougé ce mois-ci':'Les temps forts de '+HL.yr}</b>${HL.nev} compétition${HL.nev>1?'s':''} · ${HL.maj.slice(0,3).map(s=>esc(sportOf(s.f)||s.f)).join(', ')}…</span><span class="go">Voir les highlights →</span>`}
 })();
 // comparateur de deux nations
@@ -4023,7 +4023,7 @@ function renderLA(){const q=$('#q-la').value.trim().toLowerCase();const rows=LA.
   $('#la-meth').innerHTML=LANG==='en'?`A nation's projected medals = sum, over the ${LA.feds.length-LA.miss.length} sports on the programme, of the sport's medals × the nation's share of the HSR points in that sport (points earned ÷ points attributed). Projected gold: same calculation with the number of events. Whole numbers: in each sport the medals (and the titles) are rounded by the largest remainder method, so that each sport hands out exactly its medals; the totals therefore add up exactly. Three medals per event, four in boxing, judo, taekwondo and wrestling (two bronzes). Limits, deliberately accepted: proportional sharing spreads the medals (a dominant nation gets fewer than in reality, and many nations get one or two); quotas per nation, home advantage and how athletes evolve by 2028 are not taken into account; a sport's HSR points include its non-Olympic disciplines and its world ranking. ${LA.miss.length?'Sports without attributed points, excluded: '+LA.miss.map(s=>DN(sportOf(s)||s)).join(', ')+'. ':''}Programme: <a href="${esc(L.src)}" target="_blank" rel="noopener">“2028 Summer Olympics” article (Wikipedia)</a>, 351 events approved by the IOC.`:`Médailles projetées d'une nation = somme, sur les ${LA.feds.length-LA.miss.length} sports du programme, des médailles du sport × part de la nation dans les points HSR de ce sport (points obtenus ÷ points attribués). Or projeté : même calcul avec le nombre d'épreuves. Nombres entiers : dans chaque sport, les médailles (et les titres) sont arrondies par la méthode des plus forts restes, pour que chaque sport distribue exactement ses médailles ; les totaux tombent donc juste. Trois médailles par épreuve, quatre en boxe, judo, taekwondo et lutte (deux bronzes). Limites, volontairement assumées : la répartition proportionnelle étale les médailles (une nation dominante en reçoit moins qu'en réalité, et beaucoup de nations en reçoivent une ou deux) ; les quotas par nation, l'avantage du pays hôte et l'évolution des athlètes d'ici 2028 ne sont pas pris en compte ; les points HSR d'un sport incluent ses disciplines non olympiques et son classement mondial. ${LA.miss.length?'Sports sans points attribués, exclus : '+LA.miss.map(s=>sportOf(s)||s).join(', ')+'. ':''}Programme : <a href="${esc(L.src)}" target="_blank" rel="noopener">article « 2028 Summer Olympics » (Wikipédia)</a>, 351 épreuves validées par le CIO.`;
   $('#la-tot').textContent=LANG==='en'?`Check: ${fmt(LA.rows.reduce((a,r)=>a+r.m,0))} medals and ${fmt(LA.rows.reduce((a,r)=>a+r.g,0))} titles shared among ${LA.rows.length} nations, i.e. exactly the ${fmt(LA.tm)} medals and ${fmt(LA.tg)} events of the programme.`:`Contrôle : ${fmt(LA.rows.reduce((a,r)=>a+r.m,0))} médailles et ${fmt(LA.rows.reduce((a,r)=>a+r.g,0))} titres répartis entre ${LA.rows.length} nations, soit exactement les ${fmt(LA.tm)} médailles et ${fmt(LA.tg)} épreuves du programme.`;
   const t3=LA.rows.slice(0,3).map(r=>`${esc(DN(r.n))} ${fmt(r.m,0)}`).join(' · ');
-  $('#lateaser').innerHTML=LANG==='en'?`<span class="k">Exercise</span><span class="t"><b>Los Angeles 2028</b>If the medals followed today's balance of power: ${t3}…</span><span class="go">See the exercise →</span>`:`<span class="k">Exercice</span><span class="t"><b>Los Angeles 2028</b>Si les médailles suivaient les rapports de force d'aujourd'hui : ${t3}…</span><span class="go">Voir l'exercice →</span>`;
+  $('#laband').innerHTML=LANG==='en'?`<span class="k">Exercise</span><span class="t"><b>Los Angeles 2028</b>If the medals followed today's balance of power: ${t3}…</span><span class="go">See the exercise →</span>`:`<span class="k">Exercice</span><span class="t"><b>Los Angeles 2028</b>Si les médailles suivaient les rapports de force d'aujourd'hui : ${t3}…</span><span class="go">Voir l'exercice →</span>`;
   $('#q-la').addEventListener('input',renderLA);$('#more-la').addEventListener('click',()=>{laAll=true;renderLA()});renderLA()})();
 (function(){if(!SEM.length)return;const W=SEM[0],EN=LANG==='en',L=EN?'en':'fr';
   const dt=d=>new Date(d+'T12:00:00').toLocaleDateString(EN?'en-GB':'en-GB',{day:'numeric',month:'long'});
@@ -4066,7 +4066,7 @@ function renderLA(){const q=$('#q-la').value.trim().toLowerCase();const rows=LA.
   $('#sem').innerHTML=h;
   const cb=$('#sem-cmp');if(cb)cb.addEventListener('click',()=>{$('#cmp-a').value=W.duel.a;$('#cmp-b').value=W.duel.b;renderCmp();location.hash='comparer';window.scrollTo(0,0)});
   $('#sem-share').addEventListener('click',ev=>{const u=location.origin+share;(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(()=>{ev.target.textContent=EN?'Link copied':'Lien copié'},()=>{prompt(EN?'Link to share':'Lien à partager',u)})});
-  const tz=$('#semteaser');const nx0=ag[0];tz.innerHTML=`<span class="k">${EN?'This week':'Cette semaine'}</span><span class="t"><b>${esc(c.v)}</b>${esc(c[L].t)}${nx0?` · ${EN?'To watch':'À suivre'}${C} ${esc(nx0[L].nom)}`:''}</span><span class="go">${EN?'Read →':'Lire →'}</span>`;tz.removeAttribute('data-off')})();
+  const tz=$('#semband');const nx0=ag[0];tz.innerHTML=`<span class="k">${EN?'This week':'Cette semaine'}</span><span class="t"><b>${esc(c.v)}</b>${esc(c[L].t)}${nx0?` · ${EN?'To watch':'À suivre'}${C} ${esc(nx0[L].nom)}`:''}</span><span class="go">${EN?'Read →':'Lire →'}</span>`;tz.removeAttribute('data-off')})();
 function natExtra(n){const c=contOf(n),cr=c&&SOUSALL['c:'+c].rows.find(r=>r.n===n),e=EQ.by[n],l=LA.by[n],sm=POPN[n]&&POPN[n]<1e7&&SOUSALL['p:10'].rows.find(r=>r.n===n);
   const it=[];if(cr)it.push(`<div class="kpi"><b class="num">${ORD(cr.rk)}</b><span>${{EU:'en Europe',AF:'en Afrique',AM:'dans les Amériques',AS:'en Asie',OC:'en Océanie'}[c]}</span></div>`);
   if(sm)it.push(`<div class="kpi"><b class="num">${ORD(sm.rk)}</b><span>des nations de moins de 10 M d'hab.</span></div>`);
