@@ -596,7 +596,7 @@ td.rk{font-family:var(--f-display);font-size:19px;font-weight:700;color:var(--mu
 .semcard h3{margin:2px 0 0;font-family:var(--f-display);font-size:26px;text-transform:uppercase;letter-spacing:.01em;line-height:1.1}
 .semcard p{margin:0;line-height:1.6;max-width:72ch}.semcard .acts{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:6px}.semcard .acts a.btn{text-decoration:none}
 .semcard .semsrc{grid-column:2}@media (max-width:620px){.semcard .semsrc{grid-column:auto}}
-.jourband{background:linear-gradient(100deg,#3a2c05,#a16207)}.jourband .k{background:#facc15;color:#1a1a1a}
+.jourband{background:linear-gradient(100deg,#3a2c05,#a16207)}.cjband{background:linear-gradient(100deg,#082f49,#0369a1)}.cjband .k{background:#38bdf8;color:#0b1220}.cjband .t i.fl{margin:0 6px 0 2px;vertical-align:-2px}.jourband .k{background:#facc15;color:#1a1a1a}
 .jcard{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin:6px 0 22px;border-top:4px solid var(--sec)}
 .jcard .when{font:700 12px/1 var(--f-body);letter-spacing:.12em;text-transform:uppercase;color:var(--sec)}
 .jcard h3{font-family:var(--f-display);font-size:clamp(24px,3.4vw,34px);line-height:1.12;margin:8px 0 16px;letter-spacing:.005em}
@@ -697,7 +697,7 @@ footer{border-top:1px solid var(--line)}
   .morepanel .mobonly{grid-column:1/-1;display:grid!important;grid-template-columns:1fr 1fr;gap:0 12px;padding-bottom:8px;border-bottom:1px solid var(--line);margin-bottom:6px}.morepanel .mobonly .gl,.morepanel .mobonly input{grid-column:1/-1}
   .morepanel .mobonly input{box-sizing:border-box;width:auto;margin:6px 0 2px!important}.morepanel a{padding:7px 8px!important;font-size:14px!important;white-space:normal!important}
   header.hero .brand .logo,header.hero .facts{display:none}
-  #v-accueil:not([hidden]){display:flex;flex-direction:column}#v-accueil>#jourband,#v-accueil>#semband{order:-1;margin:0 0 12px}
+  #v-accueil:not([hidden]){display:flex;flex-direction:column}#v-accueil>#cjband,#v-accueil>#jourband,#v-accueil>#semband{order:-1;margin:0 0 12px}
   .mobonly{display:flex!important}
   .mobonly input{margin:6px 8px 4px;font:inherit;font-size:14px;padding:8px 10px;border-radius:9px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
   td.rk{width:38px;font-size:16px}
@@ -886,6 +886,7 @@ main:focus{outline:none!important}
 <main id="main" tabindex="-1"><div class="wrap">
 <section class="view" id="v-accueil">
   <div class="view-head"><div><div class="vgrp">HoloSport Ranking</div><h2>Bienvenue</h2><p>HSR classe chaque mois les nations du monde selon leurs résultats dans plus de 120 sports, puis compare ces résultats à la richesse et à la population de chaque pays. Voici l'essentiel de l'édition de novembre 2026.</p></div></div>
+  <a class="hlband cjband" id="cjband" href="#jour" data-noi18n data-off="1"></a>
   <a class="hlband jourband" id="jourband" href="#jour" data-noi18n data-off="1"></a>
   <a class="hlband semband" id="semband" href="#semaine" data-noi18n><span class="k">Cette semaine</span><span class="t"><b>11</b>sports où la Chine est seule en tête · À suivre : Coupe Davis, phase finale</span><span class="go">Lire →</span></a>
   <div class="spot" id="spot"></div>
@@ -909,7 +910,7 @@ main:focus{outline:none!important}
     <a class="hcard" href="#sous"><b>Sous-classements</b><span>Par continent, par famille de sports, petites nations.</span></a>
     <a class="hcard" href="#sports"><b>Par sport</b><span>Qui domine chaque sport, et le détail de chaque calcul.</span></a>
     <a class="hcard" href="#comparer"><b>Comparer deux nations</b><span>Rang par rang, sport par sport.</span></a>
-    <a class="hcard" href="#jour"><b>Aujourd'hui</b><span>Le défi du jour et « Ce jour-là » : un rendez-vous quotidien à partager.</span></a>
+    <a class="hcard" href="#jour"><b>Aujourd'hui</b><span>« Ce jour-là » et le défi du jour : un rendez-vous quotidien à partager.</span></a>
     <a class="hcard" href="#semaine"><b>Cette semaine</b><span>Le chiffre de la semaine et les compétitions qui vont faire bouger le classement.</span></a>
     <a class="hcard" href="#lab"><b>Le Lab</b><span>Études ponctuelles : Los Angeles 2028, mois de naissance des olympiens, France sportive.</span></a>
     <a class="hcard" href="#highlights"><b>Highlights du mois</b><span>Ce qui a fait bouger les classements.</span></a>
@@ -6787,22 +6788,23 @@ function renderLA(){const q=$('#q-la').value.trim().toLowerCase();const rows=LA.
   const LI='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg>';
   const share=k=>{const s=J.share&&J.share[k+'_'+L];if(!s)return'';return `<div class="jshare"><a class="btn" href="https://bsky.app/intent/compose?text=${encodeURIComponent(s.bsky)}" target="_blank" rel="noopener">${BS}Bluesky</a><a class="btn" href="https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(s.u)}" target="_blank" rel="noopener">${LI}LinkedIn</a><button type="button" class="btn" data-copy="${esc(s.u)}">${EN?'Copy link':'Copier le lien'}</button></div>`};
   $('#jr-grp').textContent=EN?'Today':"Aujourd'hui";$('#jr-h').textContent=EN?'Today in HSR':"Aujourd'hui dans HSR";
-  $('#jr-p').textContent=(EN?'Every day, a challenge on the ranking and a date in sporting history. ':"Chaque jour, un défi sur le classement et une date de l'histoire du sport. ");
-  const x=J.defi;let h=`<h3 class="hh">${EN?'Daily challenge':'Le défi du jour'}</h3><div class="jcard" id="jdefi"><div class="when">${dl(J.d)}</div><h3>${esc(x[L].q)}</h3>
+  $('#jr-p').textContent=(EN?'Every day, a date in sporting history and a challenge on the ranking.':"Chaque jour, une date de l'histoire du sport et un défi sur le classement.");
+  const x=J.defi;let hd=`<h3 class="hh">${EN?'Daily challenge':'Le défi du jour'}</h3><div class="jcard" id="jdefi"><div class="when">${dl(J.d)}</div><h3>${esc(x[L].q)}</h3>
    <div class="jopts">${x.opts.map((o,i)=>`<button type="button" data-i="${i}"><b>${'ABCD'[i]}</b>${o.n?fl(o.n):''}<span>${esc(o[L])}</span></button>`).join('')}</div>
    <div class="jres" id="jres" hidden></div>${share('defi')}</div>`;
-  const c=J.cejour;if(c){h+=`<h3 class="hh">${EN?'On this day':'Ce jour-là'}</h3><div class="jcard"><div class="when">${esc(c[L].date)}${c[L].sport?' · '+esc(c[L].sport):''}</div><h3>${esc(c[L].t)}</h3>
+  let h='';const c=J.cejour;if(c){h+=`<h3 class="hh">${EN?'On this day':'Ce jour-là'}</h3><div class="jcard"><div class="when">${esc(c[L].date)}${c[L].sport?' · '+esc(c[L].sport):''}</div><h3>${esc(c[L].t)}</h3>
    <div class="jwin">${fl(c.n)}<div>${esc(c[L].w)}<span>${EN?'Winner':'Vainqueur'}</span></div></div><p style="margin:0 0 10px;line-height:1.6">${esc(c[L].x)}</p>
    <div style="display:flex;gap:8px;flex-wrap:wrap"><a class="btn pri" href="${esc(c.lien)}">${EN?'See the HSR ranking':'Voir le classement HSR'}</a></div>${share('cejour')}
    <div class="semsrc">Source${C} <a href="${esc(c.src)}" target="_blank" rel="noopener">Wikidata (CC0)</a></div></div>`}
-  const arch=JOUR.filter(y=>y.d<J.d).slice(-7).reverse();if(arch.length)h+=`<h3 class="hh">${EN?'Previous challenges':'Les défis précédents'}</h3><div class="jarch">`+arch.map(y=>`<div><span class="d">${dl(y.d)}</span><span>${esc(y.defi[L].q)} <b>${esc(y.defi.opts[y.defi.ok][L])}</b></span></div>`).join('')+'</div>';
+  h+=hd;const arch=JOUR.filter(y=>y.d<J.d).slice(-7).reverse();if(arch.length)h+=`<h3 class="hh">${EN?'Previous challenges':'Les défis précédents'}</h3><div class="jarch">`+arch.map(y=>`<div><span class="d">${dl(y.d)}</span><span>${esc(y.defi[L].q)} <b>${esc(y.defi.opts[y.defi.ok][L])}</b></span></div>`).join('')+'</div>';
   h+=`<p class="small muted" style="margin-top:16px">${EN?`Challenges are computed from the ${esc(x.edition||'current')} edition of the ranking. A new challenge every day.`:`Les défis sont calculés sur l'édition de ${esc(x.edition||'ce mois')} du classement. Un nouveau défi chaque jour.`}</p>`;
   $('#jr').innerHTML=h;
   $('#jr').addEventListener('click',ev=>{const b=ev.target.closest('.jopts button');if(b&&!b.disabled){const i=+b.dataset.i,ok=i===x.ok;
      document.querySelectorAll('#jdefi .jopts button').forEach((e,k)=>{e.disabled=true;if(k===x.ok)e.classList.add('ok');else if(k===i)e.classList.add('ko')});
      const r=$('#jres');r.hidden=false;r.innerHTML=`<strong>${ok?(EN?'Correct!':'Bonne réponse !'):(EN?'Not quite.':'Raté.')}</strong> ${EN?'Answer':'Réponse'}${C} ${esc(x.opts[x.ok][L])}. ${esc(x[L].x)} <a href="${esc(x.lien)}">${EN?'See the ranking':'Voir le classement'} →</a>`;return}
    const cp=ev.target.closest('[data-copy]');if(cp){const u=cp.dataset.copy;(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(()=>{cp.textContent=EN?'Link copied':'Lien copié'},()=>prompt(EN?'Link':'Lien',u))}});
-  const jb=$('#jourband');jb.innerHTML=`<span class="k">${EN?'Daily challenge':'Le défi du jour'}</span><span class="t">${esc(x[L].q)}</span><span class="go">${EN?'Play →':'Jouer →'}</span>`;jb.removeAttribute('data-off')})();
+  const jb=$('#jourband');jb.innerHTML=`<span class="k">${EN?'Daily challenge':'Le défi du jour'}</span><span class="t">${esc(x[L].q)}</span><span class="go">${EN?'Play →':'Jouer →'}</span>`;jb.removeAttribute('data-off');
+  if(c){const cb=$('#cjband');cb.innerHTML=`<span class="k">${EN?'On this day':'Ce jour-là'}</span><span class="t"><b>${esc(c[L].date)}</b>${esc(c[L].t)} · ${fl(c.n)}${esc(c[L].w)}</span><span class="go">${EN?'Read →':'Lire →'}</span>`;cb.href='#jour';cb.removeAttribute('data-off')}})();
 function natExtra(n){const c=contOf(n),cr=c&&SOUSALL['c:'+c].rows.find(r=>r.n===n),e=EQ.by[n],l=LA.by[n],sm=POPN[n]&&POPN[n]<1e7&&SOUSALL['p:10'].rows.find(r=>r.n===n);
   const it=[];if(cr)it.push(`<div class="kpi"><b class="num">${ORD(cr.rk)}</b><span>${{EU:'en Europe',AF:'en Afrique',AM:'dans les Amériques',AS:'en Asie',OC:'en Océanie'}[c]}</span></div>`);
   if(sm)it.push(`<div class="kpi"><b class="num">${ORD(sm.rk)}</b><span>des nations de moins de 10 M d'hab.</span></div>`);
