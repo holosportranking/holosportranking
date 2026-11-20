@@ -1,0 +1,40 @@
+name: Bluesky – publication automatique
+# Heures en UTC (Paris = UTC+1 en hiver, UTC+2 en été).
+# Chaque créneau a une seconde tentative : le script ne publie jamais deux fois le même lien.
+on:
+  schedule:
+    - cron: '47 6 * * *'    # Ce jour-là (7 h 47 à Paris en hiver)
+    - cron: '47 8 * * *'    # Ce jour-là, seconde tentative
+    - cron: '17 11 * * *'   # Défi du jour (12 h 17 à Paris en hiver)
+    - cron: '17 13 * * *'   # Défi du jour, seconde tentative
+    - cron: '37 16 * * 1'   # Cette semaine, le lundi (17 h 37 à Paris en hiver)
+    - cron: '37 18 * * 1'   # Cette semaine, seconde tentative
+  workflow_dispatch:
+    inputs:
+      quoi:
+        description: 'cejour, defi, semaine ou connexion (vérifie les identifiants sans publier)'
+        required: true
+        default: 'cejour'
+permissions:
+  contents: read
+concurrency: bluesky
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with: {python-version: '3.12'}
+      - name: Publier
+        env:
+          BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then Q="${{ github.event.inputs.quoi }}"
+          else case "${{ github.event.schedule }}" in
+            '47 6 * * *'|'47 8 * * *') Q=cejour;;
+            '17 11 * * *'|'17 13 * * *') Q=defi;;
+            *) Q=semaine;;
+          esac; fi
+          HSR_DONNEES=automatisation python3 automatisation/publier.py "$Q"

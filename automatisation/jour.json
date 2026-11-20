@@ -1,0 +1,2792 @@
+[
+ {
+  "d": "2026-11-19",
+  "defi": {
+   "type": "q_leader",
+   "opts": [
+    {
+     "fr": "Chine",
+     "en": "China",
+     "n": "Chine"
+    },
+    {
+     "fr": "Japon",
+     "en": "Japan",
+     "n": "Japon"
+    },
+    {
+     "fr": "Roumanie",
+     "en": "Romania",
+     "n": "Roumanie"
+    },
+    {
+     "fr": "France",
+     "en": "France",
+     "n": "France"
+    }
+   ],
+   "ok": 0,
+   "fr": {
+    "q": "Quelle nation est 1re mondiale en tennis de table dans le classement HSR ?",
+    "x": "Classement HSR en tennis de table : 1re Chine (305,7 points sur 1000), 2e Japon (226,6), 3e France (91,5)."
+   },
+   "en": {
+    "q": "Which nation is world number one in table tennis in the HSR ranking?",
+    "x": "HSR table tennis ranking: 1st China (305.7 points out of 1,000), 2nd Japan (226.6), 3rd France (91.5)."
+   },
+   "lien": "#sport/tennis-de-table",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q900108",
+   "wq": "Q194387",
+   "annee": 1989,
+   "n": "Costa Rica",
+   "iso": "cr",
+   "fr": {
+    "t": "Championnat de la CONCACAF 1989",
+    "w": "Équipe du Costa Rica de football",
+    "date": "19 novembre 1989",
+    "x": "Classement HSR actuel en football : Costa Rica, 66e (0,5 points sur 1000).",
+    "sport": "Football"
+   },
+   "en": {
+    "t": "1989 CONCACAF Championship",
+    "w": "Costa Rica men's national football team",
+    "date": "19 November 1989",
+    "x": "Current HSR football ranking: Costa Rica, 66th (0.5 points out of 1,000).",
+    "sport": "Association football"
+   },
+   "lien": "#sport/football",
+   "src": "https://www.wikidata.org/wiki/Q900108"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-11-19/defi/",
+    "bsky": "Le défi du jour HSR : Quelle nation est 1re mondiale en tennis de table dans le classement HSR ?\nA) Chine B) Japon C) Roumanie D) France\nRéponse : https://holosportranking.com/jour/2026-11-19/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-11-19/defi/",
+    "bsky": "HSR daily challenge: Which nation is world number one in table tennis in the HSR ranking?\nA) China B) Japan C) Romania D) France\nAnswer: https://holosportranking.com/en/jour/2026-11-19/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-11-19/cejour/",
+    "bsky": "Ce jour-là, le 19 novembre 1989 : Championnat de la CONCACAF 1989. Vainqueur : Équipe du Costa Rica de football.\nhttps://holosportranking.com/jour/2026-11-19/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-11-19/cejour/",
+    "bsky": "On this day, 19 November 1989: 1989 CONCACAF Championship. Winner: Costa Rica men's national football team.\nhttps://holosportranking.com/en/jour/2026-11-19/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-11-20",
+  "defi": {
+   "type": "q_count",
+   "opts": [
+    {
+     "fr": "28",
+     "en": "28",
+     "n": null
+    },
+    {
+     "fr": "32",
+     "en": "32",
+     "n": null
+    },
+    {
+     "fr": "13",
+     "en": "13",
+     "n": null
+    },
+    {
+     "fr": "22",
+     "en": "22",
+     "n": null
+    }
+   ],
+   "ok": 3,
+   "fr": {
+    "q": "Belgique : dans combien de fédérations sportives cette nation marque-t-elle des points ?",
+    "x": "22 fédérations sur les 80 dont HSR répartit les points. Rang au classement sportif : 21e."
+   },
+   "en": {
+    "q": "Belgium: in how many sports federations does this nation score points?",
+    "x": "22 federations out of the 80 whose points HSR distributes. Rank in the sporting ranking: 21st."
+   },
+   "lien": "#nation/belgique",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q69146",
+   "wq": "Q2125",
+   "annee": 1960,
+   "n": "Australie",
+   "iso": "au",
+   "fr": {
+    "t": "Championnat du monde de Formule 1 1960",
+    "w": "Jack Brabham (Australie)",
+    "date": "20 novembre 1960",
+    "x": "Classement sportif HSR actuel : Australie, 8e.",
+    "sport": "Course automobile"
+   },
+   "en": {
+    "t": "1960 Formula One season",
+    "w": "Jack Brabham (Australia)",
+    "date": "20 November 1960",
+    "x": "Current HSR sporting ranking: Australia, 8th.",
+    "sport": "Auto racing"
+   },
+   "lien": "#nation/australie",
+   "src": "https://www.wikidata.org/wiki/Q69146"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-11-20/defi/",
+    "bsky": "Le défi du jour HSR : Belgique : dans combien de fédérations sportives cette nation marque-t-elle des points ?\nA) 28 B) 32 C) 13 D) 22\nRéponse : https://holosportranking.com/jour/2026-11-20/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-11-20/defi/",
+    "bsky": "HSR daily challenge: Belgium: in how many sports federations does this nation score points?\nA) 28 B) 32 C) 13 D) 22\nAnswer: https://holosportranking.com/en/jour/2026-11-20/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-11-20/cejour/",
+    "bsky": "Ce jour-là, le 20 novembre 1960 : Championnat du monde de Formule 1 1960. Vainqueur : Jack Brabham (Australie).\nhttps://holosportranking.com/jour/2026-11-20/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-11-20/cejour/",
+    "bsky": "On this day, 20 November 1960: 1960 Formula One season. Winner: Jack Brabham (Australia).\nhttps://holosportranking.com/en/jour/2026-11-20/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-11-21",
+  "defi": {
+   "type": "q_fem",
+   "opts": [
+    {
+     "fr": "États-Unis",
+     "en": "United States",
+     "n": "États-Unis"
+    },
+    {
+     "fr": "Nouvelle-Zélande",
+     "en": "New Zealand",
+     "n": "Nouvelle-Zélande"
+    },
+    {
+     "fr": "Corée du Sud",
+     "en": "South Korea",
+     "n": "Corée du Sud"
+    },
+    {
+     "fr": "Espagne",
+     "en": "Spain",
+     "n": "Espagne"
+    }
+   ],
+   "ok": 0,
+   "fr": {
+    "q": "Laquelle de ces nations est la mieux classée dans le classement féminin HSR ?",
+    "x": "Classement féminin : États-Unis 2e, Corée du Sud 8e, Espagne 12e, Nouvelle-Zélande 15e."
+   },
+   "en": {
+    "q": "Which of these nations ranks highest in the HSR women's ranking?",
+    "x": "Women's ranking: United States 2nd, South Korea 8th, Spain 12th, New Zealand 15th."
+   },
+   "lien": "#genre",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q542631",
+   "wq": "Q172014",
+   "annee": 1965,
+   "n": "Ghana",
+   "iso": "gh",
+   "fr": {
+    "t": "Coupe d'Afrique des nations de football 1965",
+    "w": "Équipe du Ghana de football",
+    "date": "21 novembre 1965",
+    "x": "Classement HSR actuel en football : Ghana, 47e (1,9 points sur 1000).",
+    "sport": "Football"
+   },
+   "en": {
+    "t": "1965 African Cup of Nations",
+    "w": "Ghana men's national football team",
+    "date": "21 November 1965",
+    "x": "Current HSR football ranking: Ghana, 47th (1.9 points out of 1,000).",
+    "sport": "Association football"
+   },
+   "lien": "#sport/football",
+   "src": "https://www.wikidata.org/wiki/Q542631"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-11-21/defi/",
+    "bsky": "Le défi du jour HSR : Laquelle de ces nations est la mieux classée dans le classement féminin HSR ?\nA) États-Unis B) Nouvelle-Zélande C) Corée du Sud D) Espagne\nRéponse : https://holosportranking.com/jour/2026-11-21/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-11-21/defi/",
+    "bsky": "HSR daily challenge: Which of these nations ranks highest in the HSR women's ranking?\nA) United States B) New Zealand C) South Korea D) Spain\nAnswer: https://holosportranking.com/en/jour/2026-11-21/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-11-21/cejour/",
+    "bsky": "Ce jour-là, le 21 novembre 1965 : Coupe d'Afrique des nations de football 1965. Vainqueur : Équipe du Ghana de football.\nhttps://holosportranking.com/jour/2026-11-21/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-11-21/cejour/",
+    "bsky": "On this day, 21 November 1965: 1965 African Cup of Nations. Winner: Ghana men's national football team.\nhttps://holosportranking.com/en/jour/2026-11-21/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-11-22",
+  "defi": {
+   "type": "q_leader",
+   "opts": [
+    {
+     "fr": "Italie",
+     "en": "Italy",
+     "n": "Italie"
+    },
+    {
+     "fr": "Égypte",
+     "en": "Egypt",
+     "n": "Égypte"
+    },
+    {
+     "fr": "Tchéquie",
+     "en": "Czechia",
+     "n": "Tchéquie"
+    },
+    {
+     "fr": "Japon",
+     "en": "Japan",
+     "n": "Japon"
+    }
+   ],
+   "ok": 1,
+   "fr": {
+    "q": "Quelle nation est 1re mondiale en pentathlon moderne dans le classement HSR ?",
+    "x": "Classement HSR en pentathlon moderne : 1re Égypte (328,9 points sur 1000), 2e Hongrie (188,6), 3e France (157,9)."
+   },
+   "en": {
+    "q": "Which nation is world number one in modern pentathlon in the HSR ranking?",
+    "x": "HSR modern pentathlon ranking: 1st Egypt (328.9 points out of 1,000), 2nd Hungary (188.6), 3rd France (157.9)."
+   },
+   "lien": "#sport/pentathlon-moderne",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q278060",
+   "wq": "Q180187",
+   "annee": 1981,
+   "n": "Honduras",
+   "iso": "hn",
+   "fr": {
+    "t": "Championnat de la CONCACAF 1981",
+    "w": "Équipe du Honduras de football",
+    "date": "22 novembre 1981",
+    "x": "Classement HSR actuel en football : Honduras, 53e (1,1 points sur 1000).",
+    "sport": "Football"
+   },
+   "en": {
+    "t": "1981 CONCACAF Championship",
+    "w": "Honduras men's national football team",
+    "date": "22 November 1981",
+    "x": "Current HSR football ranking: Honduras, 53rd (1.1 points out of 1,000).",
+    "sport": "Association football"
+   },
+   "lien": "#sport/football",
+   "src": "https://www.wikidata.org/wiki/Q278060"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-11-22/defi/",
+    "bsky": "Le défi du jour HSR : Quelle nation est 1re mondiale en pentathlon moderne dans le classement HSR ?\nA) Italie B) Égypte C) Tchéquie D) Japon\nRéponse : https://holosportranking.com/jour/2026-11-22/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-11-22/defi/",
+    "bsky": "HSR daily challenge: Which nation is world number one in modern pentathlon in the HSR ranking?\nA) Italy B) Egypt C) Czechia D) Japan\nAnswer: https://holosportranking.com/en/jour/2026-11-22/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-11-22/cejour/",
+    "bsky": "Ce jour-là, le 22 novembre 1981 : Championnat de la CONCACAF 1981. Vainqueur : Équipe du Honduras de football.\nhttps://holosportranking.com/jour/2026-11-22/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-11-22/cejour/",
+    "bsky": "On this day, 22 November 1981: 1981 CONCACAF Championship. Winner: Honduras men's national football team.\nhttps://holosportranking.com/en/jour/2026-11-22/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-11-23",
+  "defi": {
+   "type": "q_perf",
+   "opts": [
+    {
+     "fr": "Viêt Nam",
+     "en": "Vietnam",
+     "n": "Viêt Nam"
+    },
+    {
+     "fr": "Roumanie",
+     "en": "Romania",
+     "n": "Roumanie"
+    },
+    {
+     "fr": "Russie",
+     "en": "Russia",
+     "n": "Russie"
+    },
+    {
+     "fr": "Inde",
+     "en": "India",
+     "n": "Inde"
+    }
+   ],
+   "ok": 2,
+   "fr": {
+    "q": "Laquelle de ces nations est la mieux classée en performance réelle ?",
+    "x": "Performance réelle (50 % résultats sportifs, 25 % efficience économique, 25 % efficience démographique) : Russie 25e, Inde 28e, Viêt Nam 51e, Roumanie 55e."
+   },
+   "en": {
+    "q": "Which of these nations ranks highest in overall performance?",
+    "x": "Overall performance (50% sporting results, 25% economic efficiency, 25% demographic efficiency): Russia 25th, India 28th, Vietnam 51st, Romania 55th."
+   },
+   "lien": "#performance",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q1772065",
+   "wq": "Q1450563",
+   "annee": 2003,
+   "n": "France",
+   "iso": "fr",
+   "fr": {
+    "t": "Fed Cup 2003",
+    "w": "Équipe de France de Fed Cup",
+    "date": "23 novembre 2003",
+    "x": "Classement HSR actuel en tennis : France, 18e (10,4 points sur 1000).",
+    "sport": "Tennis"
+   },
+   "en": {
+    "t": "2003 Fed Cup",
+    "w": "Französische Billie-Jean-King-Cup-Mannschaft",
+    "date": "23 November 2003",
+    "x": "Current HSR tennis ranking: France, 18th (10.4 points out of 1,000).",
+    "sport": "Tennis"
+   },
+   "lien": "#sport/tennis",
+   "src": "https://www.wikidata.org/wiki/Q1772065"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-11-23/defi/",
+    "bsky": "Le défi du jour HSR : Laquelle de ces nations est la mieux classée en performance réelle ?\nA) Viêt Nam B) Roumanie C) Russie D) Inde\nRéponse : https://holosportranking.com/jour/2026-11-23/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-11-23/defi/",
+    "bsky": "HSR daily challenge: Which of these nations ranks highest in overall performance?\nA) Vietnam B) Romania C) Russia D) India\nAnswer: https://holosportranking.com/en/jour/2026-11-23/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-11-23/cejour/",
+    "bsky": "Ce jour-là, le 23 novembre 2003 : Fed Cup 2003. Vainqueur : Équipe de France de Fed Cup.\nhttps://holosportranking.com/jour/2026-11-23/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-11-23/cejour/",
+    "bsky": "On this day, 23 November 2003: 2003 Fed Cup. Winner: Französische Billie-Jean-King-Cup-Mannschaft.\nhttps://holosportranking.com/en/jour/2026-11-23/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-11-24",
+  "defi": {
+   "type": "q_best_sport",
+   "opts": [
+    {
+     "fr": "Xiangqi",
+     "en": "Xiangqi",
+     "n": null
+    },
+    {
+     "fr": "Pencak silat",
+     "en": "Pencak silat",
+     "n": null
+    },
+    {
+     "fr": "Football",
+     "en": "Football",
+     "n": null
+    },
+    {
+     "fr": "Go",
+     "en": "Go",
+     "n": null
+    }
+   ],
+   "ok": 1,
+   "fr": {
+    "q": "Viêt Nam : quel sport rapporte le plus de points au score de cette nation ?",
+    "x": "Pencak silat : 71 points de score, devant wushu (67) et vovinam (66)."
+   },
+   "en": {
+    "q": "Vietnam: which sport brings the most points to this nation's score?",
+    "x": "Pencak silat: 71 score points, ahead of wushu (67) and vovinam (66)."
+   },
+   "lien": "#nation/viet-nam",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q2539426",
+   "wq": "Q899281",
+   "annee": 1997,
+   "n": "Brésil",
+   "iso": "br",
+   "fr": {
+    "t": "World Grand Champions Cup masculine 1997",
+    "w": "Équipe du Brésil de volley-ball",
+    "date": "24 novembre 1997",
+    "x": "Classement sportif HSR actuel : Brésil, 13e.",
+    "sport": "Volley-ball"
+   },
+   "en": {
+    "t": "1997 FIVB Men's World Grand Champions Cup",
+    "w": "Brazil men's national volleyball team",
+    "date": "24 November 1997",
+    "x": "Current HSR sporting ranking: Brazil, 13th.",
+    "sport": "Volleyball"
+   },
+   "lien": "#nation/bresil",
+   "src": "https://www.wikidata.org/wiki/Q2539426"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-11-24/defi/",
+    "bsky": "Le défi du jour HSR : Viêt Nam : quel sport rapporte le plus de points au score de cette nation ?\nA) Xiangqi B) Pencak silat C) Football D) Go\nRéponse : https://holosportranking.com/jour/2026-11-24/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-11-24/defi/",
+    "bsky": "HSR daily challenge: Vietnam: which sport brings the most points to this nation's score?\nA) Xiangqi B) Pencak silat C) Football D) Go\nAnswer: https://holosportranking.com/en/jour/2026-11-24/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-11-24/cejour/",
+    "bsky": "Ce jour-là, le 24 novembre 1997 : World Grand Champions Cup masculine 1997. Vainqueur : Équipe du Brésil de volley-ball.\nhttps://holosportranking.com/jour/2026-11-24/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-11-24/cejour/",
+    "bsky": "On this day, 24 November 1997: 1997 FIVB Men's World Grand Champions Cup. Winner: Brazil men's national volleyball team.\nhttps://holosportranking.com/en/jour/2026-11-24/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-11-25",
+  "defi": {
+   "type": "q_demo",
+   "opts": [
+    {
+     "fr": "Croatie",
+     "en": "Croatia",
+     "n": "Croatie"
+    },
+    {
+     "fr": "Cuba",
+     "en": "Cuba",
+     "n": "Cuba"
+    },
+    {
+     "fr": "Colombie",
+     "en": "Colombia",
+     "n": "Colombie"
+    },
+    {
+     "fr": "Taipei chinois",
+     "en": "Chinese Taipei",
+     "n": "Taipei chinois"
+    }
+   ],
+   "ok": 3,
+   "fr": {
+    "q": "Laquelle de ces nations obtient le plus de résultats par rapport à sa population ?",
+    "x": "Efficience démographique : Taipei chinois 26e, Croatie 31e, Cuba 63e, Colombie 69e. Indice de Taipei chinois : 217 (100 = ce qu'on attend d'un pays de cette population)."
+   },
+   "en": {
+    "q": "Which of these nations achieves the most relative to its population?",
+    "x": "Demographic efficiency: Chinese Taipei 26th, Croatia 31st, Cuba 63rd, Colombia 69th. Index of Chinese Taipei: 217 (100 = what is expected from a country of this population)."
+   },
+   "lien": "#demographie",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q30680609",
+   "wq": "Q17319645",
+   "annee": 2018,
+   "n": "Royaume-Uni",
+   "iso": "gb",
+   "fr": {
+    "t": "Championnat de Formule 2 2018",
+    "w": "George Russell (Royaume-Uni)",
+    "date": "25 novembre 2018",
+    "x": "Classement sportif HSR actuel : Royaume-Uni, 4e.",
+    "sport": "Course automobile"
+   },
+   "en": {
+    "t": "2018 FIA Formula 2 Championship",
+    "w": "George Russell (United Kingdom)",
+    "date": "25 November 2018",
+    "x": "Current HSR sporting ranking: United Kingdom, 4th.",
+    "sport": "Auto racing"
+   },
+   "lien": "#nation/royaume-uni",
+   "src": "https://www.wikidata.org/wiki/Q30680609"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-11-25/defi/",
+    "bsky": "Le défi du jour HSR : Laquelle de ces nations obtient le plus de résultats par rapport à sa population ?\nA) Croatie B) Cuba C) Colombie D) Taipei chinois\nRéponse : https://holosportranking.com/jour/2026-11-25/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-11-25/defi/",
+    "bsky": "HSR daily challenge: Which of these nations achieves the most relative to its population?\nA) Croatia B) Cuba C) Colombia D) Chinese Taipei\nAnswer: https://holosportranking.com/en/jour/2026-11-25/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-11-25/cejour/",
+    "bsky": "Ce jour-là, le 25 novembre 2018 : Championnat de Formule 2 2018. Vainqueur : George Russell (Royaume-Uni).\nhttps://holosportranking.com/jour/2026-11-25/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-11-25/cejour/",
+    "bsky": "On this day, 25 November 2018: 2018 FIA Formula 2 Championship. Winner: George Russell (United Kingdom).\nhttps://holosportranking.com/en/jour/2026-11-25/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-11-26",
+  "defi": {
+   "type": "q_leader",
+   "opts": [
+    {
+     "fr": "Canada",
+     "en": "Canada",
+     "n": "Canada"
+    },
+    {
+     "fr": "Japon",
+     "en": "Japan",
+     "n": "Japon"
+    },
+    {
+     "fr": "États-Unis",
+     "en": "United States",
+     "n": "États-Unis"
+    },
+    {
+     "fr": "Jamaïque",
+     "en": "Jamaica",
+     "n": "Jamaïque"
+    }
+   ],
+   "ok": 2,
+   "fr": {
+    "q": "Quelle nation est 1re mondiale en lacrosse dans le classement HSR ?",
+    "x": "Classement HSR en lacrosse : 1re États-Unis (241,6 points sur 1000), 2e Canada (173,9), 3e Israël (105,9)."
+   },
+   "en": {
+    "q": "Which nation is world number one in lacrosse in the HSR ranking?",
+    "x": "HSR lacrosse ranking: 1st United States (241.6 points out of 1,000), 2nd Canada (173.9), 3rd Israel (105.9)."
+   },
+   "lien": "#sport/lacrosse",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q16057443",
+   "wq": "Q142555",
+   "annee": 2023,
+   "n": "Australie",
+   "iso": "au",
+   "fr": {
+    "t": "Coupe du monde de cricket de 2023",
+    "w": "Équipe d'Australie de cricket",
+    "date": "26 novembre 2023",
+    "x": "Classement HSR actuel en cricket : Australie, 3e (150,9 points sur 1000).",
+    "sport": "Cricket"
+   },
+   "en": {
+    "t": "2023 Men's Cricket World Cup",
+    "w": "Australia national cricket team",
+    "date": "26 November 2023",
+    "x": "Current HSR cricket ranking: Australia, 3rd (150.9 points out of 1,000).",
+    "sport": "Cricket"
+   },
+   "lien": "#sport/cricket",
+   "src": "https://www.wikidata.org/wiki/Q16057443"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-11-26/defi/",
+    "bsky": "Le défi du jour HSR : Quelle nation est 1re mondiale en lacrosse dans le classement HSR ?\nA) Canada B) Japon C) États-Unis D) Jamaïque\nRéponse : https://holosportranking.com/jour/2026-11-26/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-11-26/defi/",
+    "bsky": "HSR daily challenge: Which nation is world number one in lacrosse in the HSR ranking?\nA) Canada B) Japan C) United States D) Jamaica\nAnswer: https://holosportranking.com/en/jour/2026-11-26/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-11-26/cejour/",
+    "bsky": "Ce jour-là, le 26 novembre 2023 : Coupe du monde de cricket de 2023. Vainqueur : Équipe d'Australie de cricket.\nhttps://holosportranking.com/jour/2026-11-26/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-11-26/cejour/",
+    "bsky": "On this day, 26 November 2023: 2023 Men's Cricket World Cup. Winner: Australia national cricket team.\nhttps://holosportranking.com/en/jour/2026-11-26/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-11-27",
+  "defi": {
+   "type": "q_count",
+   "opts": [
+    {
+     "fr": "29",
+     "en": "29",
+     "n": null
+    },
+    {
+     "fr": "20",
+     "en": "20",
+     "n": null
+    },
+    {
+     "fr": "14",
+     "en": "14",
+     "n": null
+    },
+    {
+     "fr": "24",
+     "en": "24",
+     "n": null
+    }
+   ],
+   "ok": 2,
+   "fr": {
+    "q": "Ouzbékistan : dans combien de fédérations sportives cette nation marque-t-elle des points ?",
+    "x": "14 fédérations sur les 80 dont HSR répartit les points. Rang au classement sportif : 29e."
+   },
+   "en": {
+    "q": "Uzbekistan: in how many sports federations does this nation score points?",
+    "x": "14 federations out of the 80 whose points HSR distributes. Rank in the sporting ranking: 29th."
+   },
+   "lien": "#nation/ouzbekistan",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q1092547",
+   "wq": "Q154408",
+   "annee": 2004,
+   "n": "Allemagne",
+   "iso": "de",
+   "fr": {
+    "t": "Coupe du monde de football féminin des moins de 19 ans 2004",
+    "w": "Équipe d'Allemagne féminine de football",
+    "date": "27 novembre 2004",
+    "x": "Classement HSR actuel en football : Allemagne, 9e (31,7 points sur 1000).",
+    "sport": "Football"
+   },
+   "en": {
+    "t": "2004 FIFA U-19 Women's World Championship",
+    "w": "Germany women's national football team",
+    "date": "27 November 2004",
+    "x": "Current HSR football ranking: Germany, 9th (31.7 points out of 1,000).",
+    "sport": "Association football"
+   },
+   "lien": "#sport/football",
+   "src": "https://www.wikidata.org/wiki/Q1092547"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-11-27/defi/",
+    "bsky": "Le défi du jour HSR : Ouzbékistan : dans combien de fédérations sportives cette nation marque-t-elle des points ?\nA) 29 B) 20 C) 14 D) 24\nRéponse : https://holosportranking.com/jour/2026-11-27/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-11-27/defi/",
+    "bsky": "HSR daily challenge: Uzbekistan: in how many sports federations does this nation score points?\nA) 29 B) 20 C) 14 D) 24\nAnswer: https://holosportranking.com/en/jour/2026-11-27/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-11-27/cejour/",
+    "bsky": "Ce jour-là, le 27 novembre 2004 : Coupe du monde de football féminin des moins de 19 ans 2004. Vainqueur : Équipe d'Allemagne féminine de football.\nhttps://holosportranking.com/jour/2026-11-27/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-11-27/cejour/",
+    "bsky": "On this day, 27 November 2004: 2004 FIFA U-19 Women's World Championship. Winner: Germany women's national football team.\nhttps://holosportranking.com/en/jour/2026-11-27/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-11-28",
+  "defi": {
+   "type": "q_fem",
+   "opts": [
+    {
+     "fr": "Chine",
+     "en": "China",
+     "n": "Chine"
+    },
+    {
+     "fr": "Indonésie",
+     "en": "Indonesia",
+     "n": "Indonésie"
+    },
+    {
+     "fr": "Suède",
+     "en": "Sweden",
+     "n": "Suède"
+    },
+    {
+     "fr": "Corée du Sud",
+     "en": "South Korea",
+     "n": "Corée du Sud"
+    }
+   ],
+   "ok": 0,
+   "fr": {
+    "q": "Laquelle de ces nations est la mieux classée dans le classement féminin HSR ?",
+    "x": "Classement féminin : Chine 1re, Corée du Sud 8e, Suède 21e, Indonésie 37e."
+   },
+   "en": {
+    "q": "Which of these nations ranks highest in the HSR women's ranking?",
+    "x": "Women's ranking: China 1st, South Korea 8th, Sweden 21st, Indonesia 37th."
+   },
+   "lien": "#genre",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q917629",
+   "wq": "Q106807",
+   "annee": 2013,
+   "n": "Norvège",
+   "iso": "no",
+   "fr": {
+    "t": "Championnat du monde d'échecs 2013",
+    "w": "Magnus Carlsen (Norvège)",
+    "date": "28 novembre 2013",
+    "x": "Classement HSR actuel en échecs : Norvège, 19e (2,2 points sur 1000).",
+    "sport": "Échecs"
+   },
+   "en": {
+    "t": "World Chess Championship 2013",
+    "w": "Magnus Carlsen (Norway)",
+    "date": "28 November 2013",
+    "x": "Current HSR chess ranking: Norway, 19th (2.2 points out of 1,000).",
+    "sport": "Chess"
+   },
+   "lien": "#sport/echecs",
+   "src": "https://www.wikidata.org/wiki/Q917629"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-11-28/defi/",
+    "bsky": "Le défi du jour HSR : Laquelle de ces nations est la mieux classée dans le classement féminin HSR ?\nA) Chine B) Indonésie C) Suède D) Corée du Sud\nRéponse : https://holosportranking.com/jour/2026-11-28/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-11-28/defi/",
+    "bsky": "HSR daily challenge: Which of these nations ranks highest in the HSR women's ranking?\nA) China B) Indonesia C) Sweden D) South Korea\nAnswer: https://holosportranking.com/en/jour/2026-11-28/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-11-28/cejour/",
+    "bsky": "Ce jour-là, le 28 novembre 2013 : Championnat du monde d'échecs 2013. Vainqueur : Magnus Carlsen (Norvège).\nhttps://holosportranking.com/jour/2026-11-28/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-11-28/cejour/",
+    "bsky": "On this day, 28 November 2013: World Chess Championship 2013. Winner: Magnus Carlsen (Norway).\nhttps://holosportranking.com/en/jour/2026-11-28/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-11-29",
+  "defi": {
+   "type": "q_leader",
+   "opts": [
+    {
+     "fr": "Ukraine",
+     "en": "Ukraine",
+     "n": "Ukraine"
+    },
+    {
+     "fr": "Espagne",
+     "en": "Spain",
+     "n": "Espagne"
+    },
+    {
+     "fr": "Indonésie",
+     "en": "Indonesia",
+     "n": "Indonésie"
+    },
+    {
+     "fr": "Chine",
+     "en": "China",
+     "n": "Chine"
+    }
+   ],
+   "ok": 2,
+   "fr": {
+    "q": "Quelle nation est 1re mondiale en bateau-dragon dans le classement HSR ?",
+    "x": "Classement HSR en bateau-dragon : 1re Indonésie (324,6 points sur 1000), 2e Ukraine (239,8), 3e Thaïlande (207,6)."
+   },
+   "en": {
+    "q": "Which nation is world number one in dragon boat in the HSR ranking?",
+    "x": "HSR dragon boat ranking: 1st Indonesia (324.6 points out of 1,000), 2nd Ukraine (239.8), 3rd Thailand (207.6)."
+   },
+   "lien": "#sport/bateau-dragon",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q241046",
+   "wq": "Q1467139",
+   "annee": 1998,
+   "n": "Italie",
+   "iso": "it",
+   "fr": {
+    "t": "Championnat du monde masculin de volley-ball 1998",
+    "w": "Équipe d'Italie de volley-ball",
+    "date": "29 novembre 1998",
+    "x": "Classement sportif HSR actuel : Italie, 7e.",
+    "sport": "Volley-ball"
+   },
+   "en": {
+    "t": "1998 FIVB Men's Volleyball World Championship",
+    "w": "Italy men's national volleyball team",
+    "date": "29 November 1998",
+    "x": "Current HSR sporting ranking: Italy, 7th.",
+    "sport": "Volleyball"
+   },
+   "lien": "#nation/italie",
+   "src": "https://www.wikidata.org/wiki/Q241046"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-11-29/defi/",
+    "bsky": "Le défi du jour HSR : Quelle nation est 1re mondiale en bateau-dragon dans le classement HSR ?\nA) Ukraine B) Espagne C) Indonésie D) Chine\nRéponse : https://holosportranking.com/jour/2026-11-29/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-11-29/defi/",
+    "bsky": "HSR daily challenge: Which nation is world number one in dragon boat in the HSR ranking?\nA) Ukraine B) Spain C) Indonesia D) China\nAnswer: https://holosportranking.com/en/jour/2026-11-29/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-11-29/cejour/",
+    "bsky": "Ce jour-là, le 29 novembre 1998 : Championnat du monde masculin de volley-ball 1998. Vainqueur : Équipe d'Italie de volley-ball.\nhttps://holosportranking.com/jour/2026-11-29/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-11-29/cejour/",
+    "bsky": "On this day, 29 November 1998: 1998 FIVB Men's Volleyball World Championship. Winner: Italy men's national volleyball team.\nhttps://holosportranking.com/en/jour/2026-11-29/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-11-30",
+  "defi": {
+   "type": "q_perf",
+   "opts": [
+    {
+     "fr": "Lettonie",
+     "en": "Latvia",
+     "n": "Lettonie"
+    },
+    {
+     "fr": "Pays-Bas",
+     "en": "Netherlands",
+     "n": "Pays-Bas"
+    },
+    {
+     "fr": "Corée du Sud",
+     "en": "South Korea",
+     "n": "Corée du Sud"
+    },
+    {
+     "fr": "Moldavie",
+     "en": "Moldova",
+     "n": "Moldavie"
+    }
+   ],
+   "ok": 1,
+   "fr": {
+    "q": "Laquelle de ces nations est la mieux classée en performance réelle ?",
+    "x": "Performance réelle (50 % résultats sportifs, 25 % efficience économique, 25 % efficience démographique) : Pays-Bas 8e, Corée du Sud 11e, Lettonie 48e, Moldavie 59e."
+   },
+   "en": {
+    "q": "Which of these nations ranks highest in overall performance?",
+    "x": "Overall performance (50% sporting results, 25% economic efficiency, 25% demographic efficiency): Netherlands 8th, South Korea 11th, Latvia 48th, Moldova 59th."
+   },
+   "lien": "#performance",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q18342495",
+   "wq": "Q106807",
+   "annee": 2016,
+   "n": "Norvège",
+   "iso": "no",
+   "fr": {
+    "t": "Championnat du monde d'échecs 2016",
+    "w": "Magnus Carlsen (Norvège)",
+    "date": "30 novembre 2016",
+    "x": "Classement HSR actuel en échecs : Norvège, 19e (2,2 points sur 1000).",
+    "sport": "Échecs"
+   },
+   "en": {
+    "t": "World Chess Championship 2016",
+    "w": "Magnus Carlsen (Norway)",
+    "date": "30 November 2016",
+    "x": "Current HSR chess ranking: Norway, 19th (2.2 points out of 1,000).",
+    "sport": "Chess"
+   },
+   "lien": "#sport/echecs",
+   "src": "https://www.wikidata.org/wiki/Q18342495"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-11-30/defi/",
+    "bsky": "Le défi du jour HSR : Laquelle de ces nations est la mieux classée en performance réelle ?\nA) Lettonie B) Pays-Bas C) Corée du Sud D) Moldavie\nRéponse : https://holosportranking.com/jour/2026-11-30/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-11-30/defi/",
+    "bsky": "HSR daily challenge: Which of these nations ranks highest in overall performance?\nA) Latvia B) Netherlands C) South Korea D) Moldova\nAnswer: https://holosportranking.com/en/jour/2026-11-30/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-11-30/cejour/",
+    "bsky": "Ce jour-là, le 30 novembre 2016 : Championnat du monde d'échecs 2016. Vainqueur : Magnus Carlsen (Norvège).\nhttps://holosportranking.com/jour/2026-11-30/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-11-30/cejour/",
+    "bsky": "On this day, 30 November 2016: World Chess Championship 2016. Winner: Magnus Carlsen (Norway).\nhttps://holosportranking.com/en/jour/2026-11-30/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-12-01",
+  "defi": {
+   "type": "q_best_sport",
+   "opts": [
+    {
+     "fr": "Nage avec palmes",
+     "en": "Finswimming",
+     "n": null
+    },
+    {
+     "fr": "Football",
+     "en": "Football",
+     "n": null
+    },
+    {
+     "fr": "Escrime",
+     "en": "Fencing",
+     "n": null
+    },
+    {
+     "fr": "Volleyball",
+     "en": "Volleyball",
+     "n": null
+    }
+   ],
+   "ok": 0,
+   "fr": {
+    "q": "Ukraine : quel sport rapporte le plus de points au score de cette nation ?",
+    "x": "Nage avec palmes : 169 points de score, devant bateau-dragon (118) et kickboxing (92)."
+   },
+   "en": {
+    "q": "Ukraine: which sport brings the most points to this nation's score?",
+    "x": "Finswimming: 169 score points, ahead of dragon boat (118) and kickboxing (92)."
+   },
+   "lien": "#nation/ukraine",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q16839223",
+   "wq": "Q847623",
+   "annee": 2018,
+   "n": "Espagne",
+   "iso": "es",
+   "fr": {
+    "t": "Coupe du monde féminine de football des moins de 17 ans 2018",
+    "w": "Équipe d'Espagne féminine de football",
+    "date": "1er décembre 2018",
+    "x": "Classement HSR actuel en football : Espagne, 1re (120,3 points sur 1000).",
+    "sport": "Football"
+   },
+   "en": {
+    "t": "2018 FIFA U-17 Women's World Cup",
+    "w": "Spain women's national association football team",
+    "date": "1 December 2018",
+    "x": "Current HSR football ranking: Spain, 1st (120.3 points out of 1,000).",
+    "sport": "Association football"
+   },
+   "lien": "#sport/football",
+   "src": "https://www.wikidata.org/wiki/Q16839223"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-01/defi/",
+    "bsky": "Le défi du jour HSR : Ukraine : quel sport rapporte le plus de points au score de cette nation ?\nA) Nage avec palmes B) Football C) Escrime D) Volleyball\nRéponse : https://holosportranking.com/jour/2026-12-01/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-01/defi/",
+    "bsky": "HSR daily challenge: Ukraine: which sport brings the most points to this nation's score?\nA) Finswimming B) Football C) Fencing D) Volleyball\nAnswer: https://holosportranking.com/en/jour/2026-12-01/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-01/cejour/",
+    "bsky": "Ce jour-là, le 1er décembre 2018 : Coupe du monde féminine de football des moins de 17 ans 2018. Vainqueur : Équipe d'Espagne féminine de football.\nhttps://holosportranking.com/jour/2026-12-01/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-01/cejour/",
+    "bsky": "On this day, 1 December 2018: 2018 FIFA U-17 Women's World Cup. Winner: Spain women's national association football team.\nhttps://holosportranking.com/en/jour/2026-12-01/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-12-02",
+  "defi": {
+   "type": "q_demo",
+   "opts": [
+    {
+     "fr": "Turquie",
+     "en": "Türkiye",
+     "n": "Turquie"
+    },
+    {
+     "fr": "Canada",
+     "en": "Canada",
+     "n": "Canada"
+    },
+    {
+     "fr": "Norvège",
+     "en": "Norway",
+     "n": "Norvège"
+    },
+    {
+     "fr": "Hongrie",
+     "en": "Hungary",
+     "n": "Hongrie"
+    }
+   ],
+   "ok": 2,
+   "fr": {
+    "q": "Laquelle de ces nations obtient le plus de résultats par rapport à sa population ?",
+    "x": "Efficience démographique : Norvège 6e, Hongrie 11e, Canada 20e, Turquie 62e. Indice de Norvège : 538 (100 = ce qu'on attend d'un pays de cette population)."
+   },
+   "en": {
+    "q": "Which of these nations achieves the most relative to its population?",
+    "x": "Demographic efficiency: Norway 6th, Hungary 11th, Canada 20th, Türkiye 62nd. Index of Norway: 538 (100 = what is expected from a country of this population)."
+   },
+   "lien": "#demographie",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q1573830",
+   "wq": "Q899281",
+   "annee": 2007,
+   "n": "Brésil",
+   "iso": "br",
+   "fr": {
+    "t": "Coupe du monde de volley-ball masculin 2007",
+    "w": "Équipe du Brésil de volley-ball",
+    "date": "2 décembre 2007",
+    "x": "Classement sportif HSR actuel : Brésil, 13e.",
+    "sport": "Volley-ball"
+   },
+   "en": {
+    "t": "2007 FIVB Men's World Cup",
+    "w": "Brazil men's national volleyball team",
+    "date": "2 December 2007",
+    "x": "Current HSR sporting ranking: Brazil, 13th.",
+    "sport": "Volleyball"
+   },
+   "lien": "#nation/bresil",
+   "src": "https://www.wikidata.org/wiki/Q1573830"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-02/defi/",
+    "bsky": "Le défi du jour HSR : Laquelle de ces nations obtient le plus de résultats par rapport à sa population ?\nA) Turquie B) Canada C) Norvège D) Hongrie\nRéponse : https://holosportranking.com/jour/2026-12-02/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-02/defi/",
+    "bsky": "HSR daily challenge: Which of these nations achieves the most relative to its population?\nA) Türkiye B) Canada C) Norway D) Hungary\nAnswer: https://holosportranking.com/en/jour/2026-12-02/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-02/cejour/",
+    "bsky": "Ce jour-là, le 2 décembre 2007 : Coupe du monde de volley-ball masculin 2007. Vainqueur : Équipe du Brésil de volley-ball.\nhttps://holosportranking.com/jour/2026-12-02/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-02/cejour/",
+    "bsky": "On this day, 2 December 2007: 2007 FIVB Men's World Cup. Winner: Brazil men's national volleyball team.\nhttps://holosportranking.com/en/jour/2026-12-02/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-12-03",
+  "defi": {
+   "type": "q_leader",
+   "opts": [
+    {
+     "fr": "Nouvelle-Zélande",
+     "en": "New Zealand",
+     "n": "Nouvelle-Zélande"
+    },
+    {
+     "fr": "Australie",
+     "en": "Australia",
+     "n": "Australie"
+    },
+    {
+     "fr": "Afrique du Sud",
+     "en": "South Africa",
+     "n": "Afrique du Sud"
+    },
+    {
+     "fr": "Royaume-Uni",
+     "en": "United Kingdom",
+     "n": "Royaume-Uni"
+    }
+   ],
+   "ok": 3,
+   "fr": {
+    "q": "Quelle nation est 1re mondiale en netball dans le classement HSR ?",
+    "x": "Classement HSR en netball : 1re Royaume-Uni (206,5 points sur 1000), 2e Australie (150,0), 3e Jamaïque (111,2)."
+   },
+   "en": {
+    "q": "Which nation is world number one in netball in the HSR ranking?",
+    "x": "HSR netball ranking: 1st United Kingdom (206.5 points out of 1,000), 2nd Australia (150.0), 3rd Jamaica (111.2)."
+   },
+   "lien": "#sport/netball",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q13446425",
+   "wq": "Q839723",
+   "annee": 2016,
+   "n": "Corée du Nord",
+   "iso": "kp",
+   "fr": {
+    "t": "Coupe du monde féminine de football des moins de 20 ans 2016",
+    "w": "Équipe de Corée du Nord de football féminin",
+    "date": "3 décembre 2016",
+    "x": "Classement HSR actuel en football : Corée du Nord, 30e (7,3 points sur 1000).",
+    "sport": "Football"
+   },
+   "en": {
+    "t": "2016 FIFA U-20 Women's World Cup",
+    "w": "North Korea women's national football team",
+    "date": "3 December 2016",
+    "x": "Current HSR football ranking: North Korea, 30th (7.3 points out of 1,000).",
+    "sport": "Association football"
+   },
+   "lien": "#sport/football",
+   "src": "https://www.wikidata.org/wiki/Q13446425"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-03/defi/",
+    "bsky": "Le défi du jour HSR : Quelle nation est 1re mondiale en netball dans le classement HSR ?\nA) Nouvelle-Zélande B) Australie C) Afrique du Sud D) Royaume-Uni\nRéponse : https://holosportranking.com/jour/2026-12-03/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-03/defi/",
+    "bsky": "HSR daily challenge: Which nation is world number one in netball in the HSR ranking?\nA) New Zealand B) Australia C) South Africa D) United Kingdom\nAnswer: https://holosportranking.com/en/jour/2026-12-03/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-03/cejour/",
+    "bsky": "Ce jour-là, le 3 décembre 2016 : Coupe du monde féminine de football des moins de 20 ans 2016. Vainqueur : Équipe de Corée du Nord de football féminin.\nhttps://holosportranking.com/jour/2026-12-03/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-03/cejour/",
+    "bsky": "On this day, 3 December 2016: 2016 FIFA U-20 Women's World Cup. Winner: North Korea women's national football team.\nhttps://holosportranking.com/en/jour/2026-12-03/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-12-04",
+  "defi": {
+   "type": "q_count",
+   "opts": [
+    {
+     "fr": "7",
+     "en": "7",
+     "n": null
+    },
+    {
+     "fr": "27",
+     "en": "27",
+     "n": null
+    },
+    {
+     "fr": "12",
+     "en": "12",
+     "n": null
+    },
+    {
+     "fr": "3",
+     "en": "3",
+     "n": null
+    }
+   ],
+   "ok": 2,
+   "fr": {
+    "q": "Afrique du Sud : dans combien de fédérations sportives cette nation marque-t-elle des points ?",
+    "x": "12 fédérations sur les 80 dont HSR répartit les points. Rang au classement sportif : 35e."
+   },
+   "en": {
+    "q": "South Africa: in how many sports federations does this nation score points?",
+    "x": "12 federations out of the 80 whose points HSR distributes. Rank in the sporting ranking: 35th."
+   },
+   "lien": "#nation/afrique-du-sud",
+   "edition": "novembre 2026"
+  },
+  "cejour": null,
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-04/defi/",
+    "bsky": "Le défi du jour HSR : Afrique du Sud : dans combien de fédérations sportives cette nation marque-t-elle des points ?\nA) 7 B) 27 C) 12 D) 3\nRéponse : https://holosportranking.com/jour/2026-12-04/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-04/defi/",
+    "bsky": "HSR daily challenge: South Africa: in how many sports federations does this nation score points?\nA) 7 B) 27 C) 12 D) 3\nAnswer: https://holosportranking.com/en/jour/2026-12-04/defi/"
+   }
+  }
+ },
+ {
+  "d": "2026-12-05",
+  "defi": {
+   "type": "q_fem",
+   "opts": [
+    {
+     "fr": "Autriche",
+     "en": "Austria",
+     "n": "Autriche"
+    },
+    {
+     "fr": "Corée du Sud",
+     "en": "South Korea",
+     "n": "Corée du Sud"
+    },
+    {
+     "fr": "Espagne",
+     "en": "Spain",
+     "n": "Espagne"
+    },
+    {
+     "fr": "Kazakhstan",
+     "en": "Kazakhstan",
+     "n": "Kazakhstan"
+    }
+   ],
+   "ok": 1,
+   "fr": {
+    "q": "Laquelle de ces nations est la mieux classée dans le classement féminin HSR ?",
+    "x": "Classement féminin : Corée du Sud 8e, Espagne 12e, Kazakhstan 27e, Autriche 31e."
+   },
+   "en": {
+    "q": "Which of these nations ranks highest in the HSR women's ranking?",
+    "x": "Women's ranking: South Korea 8th, Spain 12th, Kazakhstan 27th, Austria 31st."
+   },
+   "lien": "#genre",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q900815",
+   "wq": "Q707420",
+   "annee": 1993,
+   "n": "Allemagne",
+   "iso": "de",
+   "fr": {
+    "t": "Championnat du monde féminin de handball 1993",
+    "w": "Équipe d'Allemagne féminine de handball",
+    "date": "5 décembre 1993",
+    "x": "Classement HSR actuel en handball : Allemagne, 4e (130,0 points sur 1000).",
+    "sport": "Handball"
+   },
+   "en": {
+    "t": "1993 World Women's Handball Championship",
+    "w": "Germany women's national handball team",
+    "date": "5 December 1993",
+    "x": "Current HSR handball ranking: Germany, 4th (130.0 points out of 1,000).",
+    "sport": "Handball"
+   },
+   "lien": "#sport/handball",
+   "src": "https://www.wikidata.org/wiki/Q900815"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-05/defi/",
+    "bsky": "Le défi du jour HSR : Laquelle de ces nations est la mieux classée dans le classement féminin HSR ?\nA) Autriche B) Corée du Sud C) Espagne D) Kazakhstan\nRéponse : https://holosportranking.com/jour/2026-12-05/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-05/defi/",
+    "bsky": "HSR daily challenge: Which of these nations ranks highest in the HSR women's ranking?\nA) Austria B) South Korea C) Spain D) Kazakhstan\nAnswer: https://holosportranking.com/en/jour/2026-12-05/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-05/cejour/",
+    "bsky": "Ce jour-là, le 5 décembre 1993 : Championnat du monde féminin de handball 1993. Vainqueur : Équipe d'Allemagne féminine de handball.\nhttps://holosportranking.com/jour/2026-12-05/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-05/cejour/",
+    "bsky": "On this day, 5 December 1993: 1993 World Women's Handball Championship. Winner: Germany women's national handball team.\nhttps://holosportranking.com/en/jour/2026-12-05/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-12-06",
+  "defi": {
+   "type": "q_leader",
+   "opts": [
+    {
+     "fr": "Corée du Sud",
+     "en": "South Korea",
+     "n": "Corée du Sud"
+    },
+    {
+     "fr": "France",
+     "en": "France",
+     "n": "France"
+    },
+    {
+     "fr": "États-Unis",
+     "en": "United States",
+     "n": "États-Unis"
+    },
+    {
+     "fr": "Japon",
+     "en": "Japan",
+     "n": "Japon"
+    }
+   ],
+   "ok": 1,
+   "fr": {
+    "q": "Quelle nation est 1re mondiale en escrime dans le classement HSR ?",
+    "x": "Classement HSR en escrime : 1re France (168,2 points sur 1000), 2e Italie (137,0), 3e Japon (111,8)."
+   },
+   "en": {
+    "q": "Which nation is world number one in fencing in the HSR ranking?",
+    "x": "HSR fencing ranking: 1st France (168.2 points out of 1,000), 2nd Italy (137.0), 3rd Japan (111.8)."
+   },
+   "lien": "#sport/escrime",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q66823704",
+   "wq": "Q18119599",
+   "annee": 2020,
+   "n": "Allemagne",
+   "iso": "de",
+   "fr": {
+    "t": "Championnat de Formule 2 2020",
+    "w": "Mick Schumacher (Allemagne)",
+    "date": "6 décembre 2020",
+    "x": "Classement sportif HSR actuel : Allemagne, 6e.",
+    "sport": "Formule 2"
+   },
+   "en": {
+    "t": "2020 FIA Formula 2 Championship",
+    "w": "Mick Schumacher (Germany)",
+    "date": "6 December 2020",
+    "x": "Current HSR sporting ranking: Germany, 6th.",
+    "sport": "Formula Two"
+   },
+   "lien": "#nation/allemagne",
+   "src": "https://www.wikidata.org/wiki/Q66823704"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-06/defi/",
+    "bsky": "Le défi du jour HSR : Quelle nation est 1re mondiale en escrime dans le classement HSR ?\nA) Corée du Sud B) France C) États-Unis D) Japon\nRéponse : https://holosportranking.com/jour/2026-12-06/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-06/defi/",
+    "bsky": "HSR daily challenge: Which nation is world number one in fencing in the HSR ranking?\nA) South Korea B) France C) United States D) Japan\nAnswer: https://holosportranking.com/en/jour/2026-12-06/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-06/cejour/",
+    "bsky": "Ce jour-là, le 6 décembre 2020 : Championnat de Formule 2 2020. Vainqueur : Mick Schumacher (Allemagne).\nhttps://holosportranking.com/jour/2026-12-06/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-06/cejour/",
+    "bsky": "On this day, 6 December 2020: 2020 FIA Formula 2 Championship. Winner: Mick Schumacher (Germany).\nhttps://holosportranking.com/en/jour/2026-12-06/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-12-07",
+  "defi": {
+   "type": "q_perf",
+   "opts": [
+    {
+     "fr": "Corée du Nord",
+     "en": "North Korea",
+     "n": "Corée du Nord"
+    },
+    {
+     "fr": "Ukraine",
+     "en": "Ukraine",
+     "n": "Ukraine"
+    },
+    {
+     "fr": "Russie",
+     "en": "Russia",
+     "n": "Russie"
+    },
+    {
+     "fr": "Norvège",
+     "en": "Norway",
+     "n": "Norvège"
+    }
+   ],
+   "ok": 1,
+   "fr": {
+    "q": "Laquelle de ces nations est la mieux classée en performance réelle ?",
+    "x": "Performance réelle (50 % résultats sportifs, 25 % efficience économique, 25 % efficience démographique) : Ukraine 17e, Norvège 20e, Russie 25e, Corée du Nord 58e."
+   },
+   "en": {
+    "q": "Which of these nations ranks highest in overall performance?",
+    "x": "Overall performance (50% sporting results, 25% economic efficiency, 25% demographic efficiency): Ukraine 17th, Norway 20th, Russia 25th, North Korea 58th."
+   },
+   "lien": "#performance",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q41737689",
+   "wq": "Q11571",
+   "annee": 2017,
+   "n": "Portugal",
+   "iso": "pt",
+   "fr": {
+    "t": "Ballon d'or 2017",
+    "w": "Cristiano Ronaldo (Portugal)",
+    "date": "7 décembre 2017",
+    "x": "Classement HSR actuel en football : Portugal, 6e (48,2 points sur 1000).",
+    "sport": "Football"
+   },
+   "en": {
+    "t": "2017 Ballon d'Or",
+    "w": "Cristiano Ronaldo (Portugal)",
+    "date": "7 December 2017",
+    "x": "Current HSR football ranking: Portugal, 6th (48.2 points out of 1,000).",
+    "sport": "Association football"
+   },
+   "lien": "#sport/football",
+   "src": "https://www.wikidata.org/wiki/Q41737689"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-07/defi/",
+    "bsky": "Le défi du jour HSR : Laquelle de ces nations est la mieux classée en performance réelle ?\nA) Corée du Nord B) Ukraine C) Russie D) Norvège\nRéponse : https://holosportranking.com/jour/2026-12-07/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-07/defi/",
+    "bsky": "HSR daily challenge: Which of these nations ranks highest in overall performance?\nA) North Korea B) Ukraine C) Russia D) Norway\nAnswer: https://holosportranking.com/en/jour/2026-12-07/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-07/cejour/",
+    "bsky": "Ce jour-là, le 7 décembre 2017 : Ballon d'or 2017. Vainqueur : Cristiano Ronaldo (Portugal).\nhttps://holosportranking.com/jour/2026-12-07/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-07/cejour/",
+    "bsky": "On this day, 7 December 2017: 2017 Ballon d'Or. Winner: Cristiano Ronaldo (Portugal).\nhttps://holosportranking.com/en/jour/2026-12-07/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-12-08",
+  "defi": {
+   "type": "q_best_sport",
+   "opts": [
+    {
+     "fr": "Lutte",
+     "en": "Wrestling",
+     "n": null
+    },
+    {
+     "fr": "Échecs",
+     "en": "Chess",
+     "n": null
+    },
+    {
+     "fr": "Basketball",
+     "en": "Basketball",
+     "n": null
+    },
+    {
+     "fr": "Kabaddi",
+     "en": "Kabaddi",
+     "n": null
+    }
+   ],
+   "ok": 0,
+   "fr": {
+    "q": "Iran : quel sport rapporte le plus de points au score de cette nation ?",
+    "x": "Lutte : 170 points de score, devant taekwondo (154) et wushu (110)."
+   },
+   "en": {
+    "q": "Iran: which sport brings the most points to this nation's score?",
+    "x": "Wrestling: 170 score points, ahead of taekwondo (154) and wushu (110)."
+   },
+   "lien": "#nation/iran",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q123118447",
+   "wq": "Q107209779",
+   "annee": 2024,
+   "n": "Royaume-Uni",
+   "iso": "gb",
+   "fr": {
+    "t": "F1 Academy 2024",
+    "w": "Abbi Pulling (Royaume-Uni)",
+    "date": "8 décembre 2024",
+    "x": "Classement sportif HSR actuel : Royaume-Uni, 4e.",
+    "sport": "Course automobile"
+   },
+   "en": {
+    "t": "2024 F1 Academy season",
+    "w": "Abbi Pulling (United Kingdom)",
+    "date": "8 December 2024",
+    "x": "Current HSR sporting ranking: United Kingdom, 4th.",
+    "sport": "Auto racing"
+   },
+   "lien": "#nation/royaume-uni",
+   "src": "https://www.wikidata.org/wiki/Q123118447"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-08/defi/",
+    "bsky": "Le défi du jour HSR : Iran : quel sport rapporte le plus de points au score de cette nation ?\nA) Lutte B) Échecs C) Basketball D) Kabaddi\nRéponse : https://holosportranking.com/jour/2026-12-08/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-08/defi/",
+    "bsky": "HSR daily challenge: Iran: which sport brings the most points to this nation's score?\nA) Wrestling B) Chess C) Basketball D) Kabaddi\nAnswer: https://holosportranking.com/en/jour/2026-12-08/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-08/cejour/",
+    "bsky": "Ce jour-là, le 8 décembre 2024 : F1 Academy 2024. Vainqueur : Abbi Pulling (Royaume-Uni).\nhttps://holosportranking.com/jour/2026-12-08/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-08/cejour/",
+    "bsky": "On this day, 8 December 2024: 2024 F1 Academy season. Winner: Abbi Pulling (United Kingdom).\nhttps://holosportranking.com/en/jour/2026-12-08/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-12-09",
+  "defi": {
+   "type": "q_demo",
+   "opts": [
+    {
+     "fr": "Suède",
+     "en": "Sweden",
+     "n": "Suède"
+    },
+    {
+     "fr": "Colombie",
+     "en": "Colombia",
+     "n": "Colombie"
+    },
+    {
+     "fr": "Slovénie",
+     "en": "Slovenia",
+     "n": "Slovénie"
+    },
+    {
+     "fr": "Tunisie",
+     "en": "Tunisia",
+     "n": "Tunisie"
+    }
+   ],
+   "ok": 2,
+   "fr": {
+    "q": "Laquelle de ces nations obtient le plus de résultats par rapport à sa population ?",
+    "x": "Efficience démographique : Slovénie 3e, Suède 12e, Tunisie 55e, Colombie 69e. Indice de Slovénie : 596 (100 = ce qu'on attend d'un pays de cette population)."
+   },
+   "en": {
+    "q": "Which of these nations achieves the most relative to its population?",
+    "x": "Demographic efficiency: Slovenia 3rd, Sweden 12th, Tunisia 55th, Colombia 69th. Index of Slovenia: 596 (100 = what is expected from a country of this population)."
+   },
+   "lien": "#demographie",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q115475738",
+   "wq": "Q79800",
+   "annee": 2022,
+   "n": "Argentine",
+   "iso": "ar",
+   "fr": {
+    "t": "Match 57 de la coupe du Monde de football 2022",
+    "w": "Équipe d'Argentine de football",
+    "date": "9 décembre 2022",
+    "x": "Classement HSR actuel en football : Argentine, 3e (71,2 points sur 1000).",
+    "sport": "Football"
+   },
+   "en": {
+    "t": "2022 FIFA World Cup Match 57, Netherlands v Argentina",
+    "w": "Argentina national football team",
+    "date": "9 December 2022",
+    "x": "Current HSR football ranking: Argentina, 3rd (71.2 points out of 1,000).",
+    "sport": "Association football"
+   },
+   "lien": "#sport/football",
+   "src": "https://www.wikidata.org/wiki/Q115475738"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-09/defi/",
+    "bsky": "Le défi du jour HSR : Laquelle de ces nations obtient le plus de résultats par rapport à sa population ?\nA) Suède B) Colombie C) Slovénie D) Tunisie\nRéponse : https://holosportranking.com/jour/2026-12-09/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-09/defi/",
+    "bsky": "HSR daily challenge: Which of these nations achieves the most relative to its population?\nA) Sweden B) Colombia C) Slovenia D) Tunisia\nAnswer: https://holosportranking.com/en/jour/2026-12-09/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-09/cejour/",
+    "bsky": "Ce jour-là, le 9 décembre 2022 : Match 57 de la coupe du Monde de football 2022. Vainqueur : Équipe d'Argentine de football.\nhttps://holosportranking.com/jour/2026-12-09/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-09/cejour/",
+    "bsky": "On this day, 9 December 2022: 2022 FIFA World Cup Match 57, Netherlands v Argentina. Winner: Argentina national football team.\nhttps://holosportranking.com/en/jour/2026-12-09/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-12-10",
+  "defi": {
+   "type": "q_leader",
+   "opts": [
+    {
+     "fr": "Australie",
+     "en": "Australia",
+     "n": "Australie"
+    },
+    {
+     "fr": "Allemagne",
+     "en": "Germany",
+     "n": "Allemagne"
+    },
+    {
+     "fr": "Belgique",
+     "en": "Belgium",
+     "n": "Belgique"
+    },
+    {
+     "fr": "Danemark",
+     "en": "Denmark",
+     "n": "Danemark"
+    }
+   ],
+   "ok": 1,
+   "fr": {
+    "q": "Quelle nation est 1re mondiale en équitation dans le classement HSR ?",
+    "x": "Classement HSR en équitation : 1re Allemagne (329,5 points sur 1000), 2e Royaume-Uni (245,2), 3e France (96,0)."
+   },
+   "en": {
+    "q": "Which nation is world number one in equestrian in the HSR ranking?",
+    "x": "HSR equestrian ranking: 1st Germany (329.5 points out of 1,000), 2nd United Kingdom (245.2), 3rd France (96.0)."
+   },
+   "lien": "#sport/equitation",
+   "edition": "novembre 2026"
+  },
+  "cejour": null,
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-10/defi/",
+    "bsky": "Le défi du jour HSR : Quelle nation est 1re mondiale en équitation dans le classement HSR ?\nA) Australie B) Allemagne C) Belgique D) Danemark\nRéponse : https://holosportranking.com/jour/2026-12-10/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-10/defi/",
+    "bsky": "HSR daily challenge: Which nation is world number one in equestrian in the HSR ranking?\nA) Australia B) Germany C) Belgium D) Denmark\nAnswer: https://holosportranking.com/en/jour/2026-12-10/defi/"
+   }
+  }
+ },
+ {
+  "d": "2026-12-11",
+  "defi": {
+   "type": "q_count",
+   "opts": [
+    {
+     "fr": "17",
+     "en": "17",
+     "n": null
+    },
+    {
+     "fr": "37",
+     "en": "37",
+     "n": null
+    },
+    {
+     "fr": "22",
+     "en": "22",
+     "n": null
+    },
+    {
+     "fr": "32",
+     "en": "32",
+     "n": null
+    }
+   ],
+   "ok": 2,
+   "fr": {
+    "q": "Danemark : dans combien de fédérations sportives cette nation marque-t-elle des points ?",
+    "x": "22 fédérations sur les 80 dont HSR répartit les points. Rang au classement sportif : 26e."
+   },
+   "en": {
+    "q": "Denmark: in how many sports federations does this nation score points?",
+    "x": "22 federations out of the 80 whose points HSR distributes. Rank in the sporting ranking: 26th."
+   },
+   "lien": "#nation/danemark",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q25485430",
+   "wq": "Q270689",
+   "annee": 2018,
+   "n": "Viêt Nam",
+   "iso": "vn",
+   "fr": {
+    "t": "Championnat de l'ASEAN de football 2018",
+    "w": "Équipe du Viêt Nam de football",
+    "date": "11 décembre 2018",
+    "x": "Classement HSR actuel en football : Viêt Nam, 57e (0,9 points sur 1000).",
+    "sport": "Football"
+   },
+   "en": {
+    "t": "2018 AFF Championship",
+    "w": "Vietnam men's national football team",
+    "date": "11 December 2018",
+    "x": "Current HSR football ranking: Vietnam, 57th (0.9 points out of 1,000).",
+    "sport": "Association football"
+   },
+   "lien": "#sport/football",
+   "src": "https://www.wikidata.org/wiki/Q25485430"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-11/defi/",
+    "bsky": "Le défi du jour HSR : Danemark : dans combien de fédérations sportives cette nation marque-t-elle des points ?\nA) 17 B) 37 C) 22 D) 32\nRéponse : https://holosportranking.com/jour/2026-12-11/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-11/defi/",
+    "bsky": "HSR daily challenge: Denmark: in how many sports federations does this nation score points?\nA) 17 B) 37 C) 22 D) 32\nAnswer: https://holosportranking.com/en/jour/2026-12-11/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-11/cejour/",
+    "bsky": "Ce jour-là, le 11 décembre 2018 : Championnat de l'ASEAN de football 2018. Vainqueur : Équipe du Viêt Nam de football.\nhttps://holosportranking.com/jour/2026-12-11/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-11/cejour/",
+    "bsky": "On this day, 11 December 2018: 2018 AFF Championship. Winner: Vietnam men's national football team.\nhttps://holosportranking.com/en/jour/2026-12-11/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-12-12",
+  "defi": {
+   "type": "q_fem",
+   "opts": [
+    {
+     "fr": "Iran",
+     "en": "Iran",
+     "n": "Iran"
+    },
+    {
+     "fr": "Suède",
+     "en": "Sweden",
+     "n": "Suède"
+    },
+    {
+     "fr": "Taipei chinois",
+     "en": "Chinese Taipei",
+     "n": "Taipei chinois"
+    },
+    {
+     "fr": "Russie",
+     "en": "Russia",
+     "n": "Russie"
+    }
+   ],
+   "ok": 3,
+   "fr": {
+    "q": "Laquelle de ces nations est la mieux classée dans le classement féminin HSR ?",
+    "x": "Classement féminin : Russie 17e, Suède 21e, Taipei chinois 28e, Iran 40e."
+   },
+   "en": {
+    "q": "Which of these nations ranks highest in the HSR women's ranking?",
+    "x": "Women's ranking: Russia 17th, Sweden 21st, Chinese Taipei 28th, Iran 40th."
+   },
+   "lien": "#genre",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q573148",
+   "wq": "Q172020",
+   "annee": 1979,
+   "n": "Paraguay",
+   "iso": "py",
+   "fr": {
+    "t": "Copa América 1979",
+    "w": "Équipe du Paraguay de football",
+    "date": "12 décembre 1979",
+    "x": "Classement HSR actuel en football : Paraguay, 35e (4,6 points sur 1000).",
+    "sport": "Football"
+   },
+   "en": {
+    "t": "1979 Copa América",
+    "w": "Paraguay men's national football team",
+    "date": "12 December 1979",
+    "x": "Current HSR football ranking: Paraguay, 35th (4.6 points out of 1,000).",
+    "sport": "Association football"
+   },
+   "lien": "#sport/football",
+   "src": "https://www.wikidata.org/wiki/Q573148"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-12/defi/",
+    "bsky": "Le défi du jour HSR : Laquelle de ces nations est la mieux classée dans le classement féminin HSR ?\nA) Iran B) Suède C) Taipei chinois D) Russie\nRéponse : https://holosportranking.com/jour/2026-12-12/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-12/defi/",
+    "bsky": "HSR daily challenge: Which of these nations ranks highest in the HSR women's ranking?\nA) Iran B) Sweden C) Chinese Taipei D) Russia\nAnswer: https://holosportranking.com/en/jour/2026-12-12/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-12/cejour/",
+    "bsky": "Ce jour-là, le 12 décembre 1979 : Copa América 1979. Vainqueur : Équipe du Paraguay de football.\nhttps://holosportranking.com/jour/2026-12-12/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-12/cejour/",
+    "bsky": "On this day, 12 December 1979: 1979 Copa América. Winner: Paraguay men's national football team.\nhttps://holosportranking.com/en/jour/2026-12-12/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-12-13",
+  "defi": {
+   "type": "q_leader",
+   "opts": [
+    {
+     "fr": "Japon",
+     "en": "Japan",
+     "n": "Japon"
+    },
+    {
+     "fr": "Colombie",
+     "en": "Colombia",
+     "n": "Colombie"
+    },
+    {
+     "fr": "Égypte",
+     "en": "Egypt",
+     "n": "Égypte"
+    },
+    {
+     "fr": "Malaisie",
+     "en": "Malaysia",
+     "n": "Malaisie"
+    }
+   ],
+   "ok": 2,
+   "fr": {
+    "q": "Quelle nation est 1re mondiale en squash dans le classement HSR ?",
+    "x": "Classement HSR en squash : 1re Égypte (347,0 points sur 1000), 2e France (122,5), 3e Royaume-Uni (94,4)."
+   },
+   "en": {
+    "q": "Which nation is world number one in squash in the HSR ranking?",
+    "x": "HSR squash ranking: 1st Egypt (347.0 points out of 1,000), 2nd France (122.5), 3rd United Kingdom (94.4)."
+   },
+   "lien": "#sport/squash",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q18622933",
+   "wq": "Q171310",
+   "annee": 2014,
+   "n": "Suisse",
+   "iso": "ch",
+   "fr": {
+    "t": "EPrix de Punta del Este 2014",
+    "w": "Sébastien Buemi (Suisse)",
+    "date": "13 décembre 2014",
+    "x": "Classement sportif HSR actuel : Suisse, 14e.",
+    "sport": "Sport mécanique"
+   },
+   "en": {
+    "t": "2014 Punta del Este ePrix",
+    "w": "Sébastien Buemi (Switzerland)",
+    "date": "13 December 2014",
+    "x": "Current HSR sporting ranking: Switzerland, 14th.",
+    "sport": "Motorsport"
+   },
+   "lien": "#nation/suisse",
+   "src": "https://www.wikidata.org/wiki/Q18622933"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-13/defi/",
+    "bsky": "Le défi du jour HSR : Quelle nation est 1re mondiale en squash dans le classement HSR ?\nA) Japon B) Colombie C) Égypte D) Malaisie\nRéponse : https://holosportranking.com/jour/2026-12-13/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-13/defi/",
+    "bsky": "HSR daily challenge: Which nation is world number one in squash in the HSR ranking?\nA) Japan B) Colombia C) Egypt D) Malaysia\nAnswer: https://holosportranking.com/en/jour/2026-12-13/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-13/cejour/",
+    "bsky": "Ce jour-là, le 13 décembre 2014 : EPrix de Punta del Este 2014. Vainqueur : Sébastien Buemi (Suisse).\nhttps://holosportranking.com/jour/2026-12-13/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-13/cejour/",
+    "bsky": "On this day, 13 December 2014: 2014 Punta del Este ePrix. Winner: Sébastien Buemi (Switzerland).\nhttps://holosportranking.com/en/jour/2026-12-13/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-12-14",
+  "defi": {
+   "type": "q_perf",
+   "opts": [
+    {
+     "fr": "Cuba",
+     "en": "Cuba",
+     "n": "Cuba"
+    },
+    {
+     "fr": "Mexique",
+     "en": "Mexico",
+     "n": "Mexique"
+    },
+    {
+     "fr": "Brésil",
+     "en": "Brazil",
+     "n": "Brésil"
+    },
+    {
+     "fr": "Japon",
+     "en": "Japan",
+     "n": "Japon"
+    }
+   ],
+   "ok": 3,
+   "fr": {
+    "q": "Laquelle de ces nations est la mieux classée en performance réelle ?",
+    "x": "Performance réelle (50 % résultats sportifs, 25 % efficience économique, 25 % efficience démographique) : Japon 5e, Brésil 18e, Mexique 39e, Cuba 57e."
+   },
+   "en": {
+    "q": "Which of these nations ranks highest in overall performance?",
+    "x": "Overall performance (50% sporting results, 25% economic efficiency, 25% demographic efficiency): Japan 5th, Brazil 18th, Mexico 39th, Cuba 57th."
+   },
+   "lien": "#performance",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q482563",
+   "wq": "Q831911",
+   "annee": 2008,
+   "n": "Norvège",
+   "iso": "no",
+   "fr": {
+    "t": "Championnat d'Europe féminin de handball 2008",
+    "w": "Équipe de Norvège féminine de handball",
+    "date": "14 décembre 2008",
+    "x": "Classement HSR actuel en handball : Norvège, 2e (145,0 points sur 1000).",
+    "sport": "Handball"
+   },
+   "en": {
+    "t": "2008 European Women's Handball Championship",
+    "w": "Norway women's national handball team",
+    "date": "14 December 2008",
+    "x": "Current HSR handball ranking: Norway, 2nd (145.0 points out of 1,000).",
+    "sport": "Handball"
+   },
+   "lien": "#sport/handball",
+   "src": "https://www.wikidata.org/wiki/Q482563"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-14/defi/",
+    "bsky": "Le défi du jour HSR : Laquelle de ces nations est la mieux classée en performance réelle ?\nA) Cuba B) Mexique C) Brésil D) Japon\nRéponse : https://holosportranking.com/jour/2026-12-14/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-14/defi/",
+    "bsky": "HSR daily challenge: Which of these nations ranks highest in overall performance?\nA) Cuba B) Mexico C) Brazil D) Japan\nAnswer: https://holosportranking.com/en/jour/2026-12-14/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-14/cejour/",
+    "bsky": "Ce jour-là, le 14 décembre 2008 : Championnat d'Europe féminin de handball 2008. Vainqueur : Équipe de Norvège féminine de handball.\nhttps://holosportranking.com/jour/2026-12-14/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-14/cejour/",
+    "bsky": "On this day, 14 December 2008: 2008 European Women's Handball Championship. Winner: Norway women's national handball team.\nhttps://holosportranking.com/en/jour/2026-12-14/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-12-15",
+  "defi": {
+   "type": "q_best_sport",
+   "opts": [
+    {
+     "fr": "Tir sportif",
+     "en": "Shooting",
+     "n": null
+    },
+    {
+     "fr": "Nage avec palmes",
+     "en": "Finswimming",
+     "n": null
+    },
+    {
+     "fr": "Karaté",
+     "en": "Karaté",
+     "n": null
+    },
+    {
+     "fr": "Volleyball",
+     "en": "Volleyball",
+     "n": null
+    }
+   ],
+   "ok": 1,
+   "fr": {
+    "q": "Ukraine : quel sport rapporte le plus de points au score de cette nation ?",
+    "x": "Nage avec palmes : 169 points de score, devant bateau-dragon (118) et kickboxing (92)."
+   },
+   "en": {
+    "q": "Ukraine: which sport brings the most points to this nation's score?",
+    "x": "Finswimming: 169 score points, ahead of dragon boat (118) and kickboxing (92)."
+   },
+   "lien": "#nation/ukraine",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q401117",
+   "wq": "Q661049",
+   "annee": 1996,
+   "n": "Danemark",
+   "iso": "dk",
+   "fr": {
+    "t": "Championnat d'Europe féminin de handball 1996",
+    "w": "Équipe du Danemark féminine de handball",
+    "date": "15 décembre 1996",
+    "x": "Classement HSR actuel en handball : Danemark, 1re (180,0 points sur 1000).",
+    "sport": "Handball"
+   },
+   "en": {
+    "t": "1996 European Women's Handball Championship",
+    "w": "Denmark women's national handball team",
+    "date": "15 December 1996",
+    "x": "Current HSR handball ranking: Denmark, 1st (180.0 points out of 1,000).",
+    "sport": "Handball"
+   },
+   "lien": "#sport/handball",
+   "src": "https://www.wikidata.org/wiki/Q401117"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-15/defi/",
+    "bsky": "Le défi du jour HSR : Ukraine : quel sport rapporte le plus de points au score de cette nation ?\nA) Tir sportif B) Nage avec palmes C) Karaté D) Volleyball\nRéponse : https://holosportranking.com/jour/2026-12-15/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-15/defi/",
+    "bsky": "HSR daily challenge: Ukraine: which sport brings the most points to this nation's score?\nA) Shooting B) Finswimming C) Karaté D) Volleyball\nAnswer: https://holosportranking.com/en/jour/2026-12-15/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-15/cejour/",
+    "bsky": "Ce jour-là, le 15 décembre 1996 : Championnat d'Europe féminin de handball 1996. Vainqueur : Équipe du Danemark féminine de handball.\nhttps://holosportranking.com/jour/2026-12-15/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-15/cejour/",
+    "bsky": "On this day, 15 December 1996: 1996 European Women's Handball Championship. Winner: Denmark women's national handball team.\nhttps://holosportranking.com/en/jour/2026-12-15/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-12-16",
+  "defi": {
+   "type": "q_demo",
+   "opts": [
+    {
+     "fr": "Norvège",
+     "en": "Norway",
+     "n": "Norvège"
+    },
+    {
+     "fr": "Azerbaïdjan",
+     "en": "Azerbaijan",
+     "n": "Azerbaïdjan"
+    },
+    {
+     "fr": "Islande",
+     "en": "Iceland",
+     "n": "Islande"
+    },
+    {
+     "fr": "Porto Rico",
+     "en": "Puerto Rico",
+     "n": "Porto Rico"
+    }
+   ],
+   "ok": 0,
+   "fr": {
+    "q": "Laquelle de ces nations obtient le plus de résultats par rapport à sa population ?",
+    "x": "Efficience démographique : Norvège 6e, Porto Rico 32e, Azerbaïdjan 40e, Islande 67e. Indice de Norvège : 538 (100 = ce qu'on attend d'un pays de cette population)."
+   },
+   "en": {
+    "q": "Which of these nations achieves the most relative to its population?",
+    "x": "Demographic efficiency: Norway 6th, Puerto Rico 32nd, Azerbaijan 40th, Iceland 67th. Index of Norway: 538 (100 = what is expected from a country of this population)."
+   },
+   "lien": "#demographie",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q832162",
+   "wq": "Q189723",
+   "annee": 1984,
+   "n": "Arabie saoudite",
+   "iso": "sa",
+   "fr": {
+    "t": "Coupe d'Asie des nations de football 1984",
+    "w": "Équipe d'Arabie saoudite de football",
+    "date": "16 décembre 1984",
+    "x": "Classement HSR actuel en football : Arabie saoudite, 72e (0,1 points sur 1000).",
+    "sport": "Football"
+   },
+   "en": {
+    "t": "1984 AFC Asian Cup",
+    "w": "Saudi Arabia men's national football team",
+    "date": "16 December 1984",
+    "x": "Current HSR football ranking: Saudi Arabia, 72nd (0.1 points out of 1,000).",
+    "sport": "Association football"
+   },
+   "lien": "#sport/football",
+   "src": "https://www.wikidata.org/wiki/Q832162"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-16/defi/",
+    "bsky": "Le défi du jour HSR : Laquelle de ces nations obtient le plus de résultats par rapport à sa population ?\nA) Norvège B) Azerbaïdjan C) Islande D) Porto Rico\nRéponse : https://holosportranking.com/jour/2026-12-16/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-16/defi/",
+    "bsky": "HSR daily challenge: Which of these nations achieves the most relative to its population?\nA) Norway B) Azerbaijan C) Iceland D) Puerto Rico\nAnswer: https://holosportranking.com/en/jour/2026-12-16/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-16/cejour/",
+    "bsky": "Ce jour-là, le 16 décembre 1984 : Coupe d'Asie des nations de football 1984. Vainqueur : Équipe d'Arabie saoudite de football.\nhttps://holosportranking.com/jour/2026-12-16/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-16/cejour/",
+    "bsky": "On this day, 16 December 1984: 1984 AFC Asian Cup. Winner: Saudi Arabia men's national football team.\nhttps://holosportranking.com/en/jour/2026-12-16/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-12-17",
+  "defi": {
+   "type": "q_leader",
+   "opts": [
+    {
+     "fr": "Corée du Sud",
+     "en": "South Korea",
+     "n": "Corée du Sud"
+    },
+    {
+     "fr": "France",
+     "en": "France",
+     "n": "France"
+    },
+    {
+     "fr": "Espagne",
+     "en": "Spain",
+     "n": "Espagne"
+    },
+    {
+     "fr": "Japon",
+     "en": "Japan",
+     "n": "Japon"
+    }
+   ],
+   "ok": 3,
+   "fr": {
+    "q": "Quelle nation est 1re mondiale en judo dans le classement HSR ?",
+    "x": "Classement HSR en judo : 1re Japon (202,3 points sur 1000), 2e France (109,9), 3e Azerbaïdjan (78,4)."
+   },
+   "en": {
+    "q": "Which nation is world number one in judo in the HSR ranking?",
+    "x": "HSR judo ranking: 1st Japan (202.3 points out of 1,000), 2nd France (109.9), 3rd Azerbaijan (78.4)."
+   },
+   "lien": "#sport/judo",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q660434",
+   "wq": "Q154586",
+   "annee": 2005,
+   "n": "Arménie",
+   "iso": "am",
+   "fr": {
+    "t": "Coupe du monde FIDE 2005",
+    "w": "Levon Aronian (Arménie)",
+    "date": "17 décembre 2005",
+    "x": "Classement HSR actuel en échecs : Arménie, 9e (32,4 points sur 1000).",
+    "sport": "Échecs"
+   },
+   "en": {
+    "t": "Chess World Cup 2005",
+    "w": "Levon Aronian (Armenia)",
+    "date": "17 December 2005",
+    "x": "Current HSR chess ranking: Armenia, 9th (32.4 points out of 1,000).",
+    "sport": "Chess"
+   },
+   "lien": "#sport/echecs",
+   "src": "https://www.wikidata.org/wiki/Q660434"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-17/defi/",
+    "bsky": "Le défi du jour HSR : Quelle nation est 1re mondiale en judo dans le classement HSR ?\nA) Corée du Sud B) France C) Espagne D) Japon\nRéponse : https://holosportranking.com/jour/2026-12-17/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-17/defi/",
+    "bsky": "HSR daily challenge: Which nation is world number one in judo in the HSR ranking?\nA) South Korea B) France C) Spain D) Japan\nAnswer: https://holosportranking.com/en/jour/2026-12-17/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-17/cejour/",
+    "bsky": "Ce jour-là, le 17 décembre 2005 : Coupe du monde FIDE 2005. Vainqueur : Levon Aronian (Arménie).\nhttps://holosportranking.com/jour/2026-12-17/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-17/cejour/",
+    "bsky": "On this day, 17 December 2005: Chess World Cup 2005. Winner: Levon Aronian (Armenia).\nhttps://holosportranking.com/en/jour/2026-12-17/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-12-18",
+  "defi": {
+   "type": "q_count",
+   "opts": [
+    {
+     "fr": "37",
+     "en": "37",
+     "n": null
+    },
+    {
+     "fr": "32",
+     "en": "32",
+     "n": null
+    },
+    {
+     "fr": "22",
+     "en": "22",
+     "n": null
+    },
+    {
+     "fr": "28",
+     "en": "28",
+     "n": null
+    }
+   ],
+   "ok": 2,
+   "fr": {
+    "q": "Belgique : dans combien de fédérations sportives cette nation marque-t-elle des points ?",
+    "x": "22 fédérations sur les 80 dont HSR répartit les points. Rang au classement sportif : 21e."
+   },
+   "en": {
+    "q": "Belgium: in how many sports federations does this nation score points?",
+    "x": "22 federations out of the 80 whose points HSR distributes. Rank in the sporting ranking: 21st."
+   },
+   "lien": "#nation/belgique",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q594254",
+   "wq": "Q236006",
+   "annee": 1973,
+   "n": "Haïti",
+   "iso": "ht",
+   "fr": {
+    "t": "Championnat de la CONCACAF 1973",
+    "w": "Équipe d'Haïti de football",
+    "date": "18 décembre 1973",
+    "x": "Classement HSR actuel en football : Haïti, 75e (0,0 points sur 1000).",
+    "sport": "Football"
+   },
+   "en": {
+    "t": "1973 CONCACAF Championship",
+    "w": "Haiti men's national football team",
+    "date": "18 December 1973",
+    "x": "Current HSR football ranking: Haiti, 75th (0.0 points out of 1,000).",
+    "sport": "Association football"
+   },
+   "lien": "#sport/football",
+   "src": "https://www.wikidata.org/wiki/Q594254"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-18/defi/",
+    "bsky": "Le défi du jour HSR : Belgique : dans combien de fédérations sportives cette nation marque-t-elle des points ?\nA) 37 B) 32 C) 22 D) 28\nRéponse : https://holosportranking.com/jour/2026-12-18/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-18/defi/",
+    "bsky": "HSR daily challenge: Belgium: in how many sports federations does this nation score points?\nA) 37 B) 32 C) 22 D) 28\nAnswer: https://holosportranking.com/en/jour/2026-12-18/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-18/cejour/",
+    "bsky": "Ce jour-là, le 18 décembre 1973 : Championnat de la CONCACAF 1973. Vainqueur : Équipe d'Haïti de football.\nhttps://holosportranking.com/jour/2026-12-18/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-18/cejour/",
+    "bsky": "On this day, 18 December 1973: 1973 CONCACAF Championship. Winner: Haiti men's national football team.\nhttps://holosportranking.com/en/jour/2026-12-18/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-12-19",
+  "defi": {
+   "type": "q_fem",
+   "opts": [
+    {
+     "fr": "Inde",
+     "en": "India",
+     "n": "Inde"
+    },
+    {
+     "fr": "Taipei chinois",
+     "en": "Chinese Taipei",
+     "n": "Taipei chinois"
+    },
+    {
+     "fr": "Israël",
+     "en": "Israel",
+     "n": "Israël"
+    },
+    {
+     "fr": "Brésil",
+     "en": "Brazil",
+     "n": "Brésil"
+    }
+   ],
+   "ok": 3,
+   "fr": {
+    "q": "Laquelle de ces nations est la mieux classée dans le classement féminin HSR ?",
+    "x": "Classement féminin : Brésil 13e, Inde 20e, Taipei chinois 28e, Israël 39e."
+   },
+   "en": {
+    "q": "Which of these nations ranks highest in the HSR women's ranking?",
+    "x": "Women's ranking: Brazil 13th, India 20th, Chinese Taipei 28th, Israel 39th."
+   },
+   "lien": "#genre",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q680376",
+   "wq": "Q2308235",
+   "annee": 2003,
+   "n": "Brésil",
+   "iso": "br",
+   "fr": {
+    "t": "Coupe du monde de football des moins de 20 ans 2003",
+    "w": "Équipe du Brésil de football des moins de 20 ans",
+    "date": "19 décembre 2003",
+    "x": "Classement HSR actuel en football : Brésil, 2e (104,3 points sur 1000).",
+    "sport": "Football"
+   },
+   "en": {
+    "t": "2003 FIFA World Youth Championship",
+    "w": "Brazil national under-20 football team",
+    "date": "19 December 2003",
+    "x": "Current HSR football ranking: Brazil, 2nd (104.3 points out of 1,000).",
+    "sport": "Association football"
+   },
+   "lien": "#sport/football",
+   "src": "https://www.wikidata.org/wiki/Q680376"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-19/defi/",
+    "bsky": "Le défi du jour HSR : Laquelle de ces nations est la mieux classée dans le classement féminin HSR ?\nA) Inde B) Taipei chinois C) Israël D) Brésil\nRéponse : https://holosportranking.com/jour/2026-12-19/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-19/defi/",
+    "bsky": "HSR daily challenge: Which of these nations ranks highest in the HSR women's ranking?\nA) India B) Chinese Taipei C) Israel D) Brazil\nAnswer: https://holosportranking.com/en/jour/2026-12-19/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-19/cejour/",
+    "bsky": "Ce jour-là, le 19 décembre 2003 : Coupe du monde de football des moins de 20 ans 2003. Vainqueur : Équipe du Brésil de football des moins de 20 ans.\nhttps://holosportranking.com/jour/2026-12-19/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-19/cejour/",
+    "bsky": "On this day, 19 December 2003: 2003 FIFA World Youth Championship. Winner: Brazil national under-20 football team.\nhttps://holosportranking.com/en/jour/2026-12-19/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-12-20",
+  "defi": {
+   "type": "q_leader",
+   "opts": [
+    {
+     "fr": "Pays-Bas",
+     "en": "Netherlands",
+     "n": "Pays-Bas"
+    },
+    {
+     "fr": "France",
+     "en": "France",
+     "n": "France"
+    },
+    {
+     "fr": "Belgique",
+     "en": "Belgium",
+     "n": "Belgique"
+    },
+    {
+     "fr": "Italie",
+     "en": "Italy",
+     "n": "Italie"
+    }
+   ],
+   "ok": 0,
+   "fr": {
+    "q": "Quelle nation est 1re mondiale en cyclisme dans le classement HSR ?",
+    "x": "Classement HSR en cyclisme : 1re Pays-Bas (162,6 points sur 1000), 2e France (129,4), 3e Italie (114,8)."
+   },
+   "en": {
+    "q": "Which nation is world number one in cycling in the HSR ranking?",
+    "x": "HSR cycling ranking: 1st Netherlands (162.6 points out of 1,000), 2nd France (129.4), 3rd Italy (114.8)."
+   },
+   "lien": "#sport/cyclisme",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q1475846",
+   "wq": "Q606853",
+   "annee": 2002,
+   "n": "Nigeria",
+   "iso": "ng",
+   "fr": {
+    "t": "Championnat d'Afrique féminin de football 2002",
+    "w": "Équipe du Nigeria féminine de football",
+    "date": "20 décembre 2002",
+    "x": "Classement HSR actuel en football : Nigeria, 28e (7,7 points sur 1000).",
+    "sport": "Football"
+   },
+   "en": {
+    "t": "2002 African Women's Championship",
+    "w": "Nigeria women's national football team",
+    "date": "20 December 2002",
+    "x": "Current HSR football ranking: Nigeria, 28th (7.7 points out of 1,000).",
+    "sport": "Association football"
+   },
+   "lien": "#sport/football",
+   "src": "https://www.wikidata.org/wiki/Q1475846"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-20/defi/",
+    "bsky": "Le défi du jour HSR : Quelle nation est 1re mondiale en cyclisme dans le classement HSR ?\nA) Pays-Bas B) France C) Belgique D) Italie\nRéponse : https://holosportranking.com/jour/2026-12-20/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-20/defi/",
+    "bsky": "HSR daily challenge: Which nation is world number one in cycling in the HSR ranking?\nA) Netherlands B) France C) Belgium D) Italy\nAnswer: https://holosportranking.com/en/jour/2026-12-20/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-20/cejour/",
+    "bsky": "Ce jour-là, le 20 décembre 2002 : Championnat d'Afrique féminin de football 2002. Vainqueur : Équipe du Nigeria féminine de football.\nhttps://holosportranking.com/jour/2026-12-20/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-20/cejour/",
+    "bsky": "On this day, 20 December 2002: 2002 African Women's Championship. Winner: Nigeria women's national football team.\nhttps://holosportranking.com/en/jour/2026-12-20/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-12-21",
+  "defi": {
+   "type": "q_perf",
+   "opts": [
+    {
+     "fr": "Espagne",
+     "en": "Spain",
+     "n": "Espagne"
+    },
+    {
+     "fr": "Italie",
+     "en": "Italy",
+     "n": "Italie"
+    },
+    {
+     "fr": "Porto Rico",
+     "en": "Puerto Rico",
+     "n": "Porto Rico"
+    },
+    {
+     "fr": "Norvège",
+     "en": "Norway",
+     "n": "Norvège"
+    }
+   ],
+   "ok": 1,
+   "fr": {
+    "q": "Laquelle de ces nations est la mieux classée en performance réelle ?",
+    "x": "Performance réelle (50 % résultats sportifs, 25 % efficience économique, 25 % efficience démographique) : Italie 6e, Espagne 9e, Norvège 20e, Porto Rico 56e."
+   },
+   "en": {
+    "q": "Which of these nations ranks highest in overall performance?",
+    "x": "Overall performance (50% sporting results, 25% economic efficiency, 25% demographic efficiency): Italy 6th, Spain 9th, Norway 20th, Puerto Rico 56th."
+   },
+   "lien": "#performance",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q770676",
+   "wq": "Q42267",
+   "annee": 1983,
+   "n": "Espagne",
+   "iso": "es",
+   "fr": {
+    "t": "Espagne - Malte",
+    "w": "Équipe d'Espagne de football",
+    "date": "21 décembre 1983",
+    "x": "Classement HSR actuel en football : Espagne, 1re (120,3 points sur 1000).",
+    "sport": "Football"
+   },
+   "en": {
+    "t": "Spain 12–1 Malta",
+    "w": "Spain men's national football team",
+    "date": "21 December 1983",
+    "x": "Current HSR football ranking: Spain, 1st (120.3 points out of 1,000).",
+    "sport": "Association football"
+   },
+   "lien": "#sport/football",
+   "src": "https://www.wikidata.org/wiki/Q770676"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-21/defi/",
+    "bsky": "Le défi du jour HSR : Laquelle de ces nations est la mieux classée en performance réelle ?\nA) Espagne B) Italie C) Porto Rico D) Norvège\nRéponse : https://holosportranking.com/jour/2026-12-21/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-21/defi/",
+    "bsky": "HSR daily challenge: Which of these nations ranks highest in overall performance?\nA) Spain B) Italy C) Puerto Rico D) Norway\nAnswer: https://holosportranking.com/en/jour/2026-12-21/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-21/cejour/",
+    "bsky": "Ce jour-là, le 21 décembre 1983 : Espagne - Malte. Vainqueur : Équipe d'Espagne de football.\nhttps://holosportranking.com/jour/2026-12-21/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-21/cejour/",
+    "bsky": "On this day, 21 December 1983: Spain 12–1 Malta. Winner: Spain men's national football team.\nhttps://holosportranking.com/en/jour/2026-12-21/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-12-22",
+  "defi": {
+   "type": "q_best_sport",
+   "opts": [
+    {
+     "fr": "Haltérophilie",
+     "en": "Weightlifting",
+     "n": null
+    },
+    {
+     "fr": "Badminton",
+     "en": "Badminton",
+     "n": null
+    },
+    {
+     "fr": "Escalade",
+     "en": "Sport climbing",
+     "n": null
+    },
+    {
+     "fr": "Basketball",
+     "en": "Basketball",
+     "n": null
+    }
+   ],
+   "ok": 1,
+   "fr": {
+    "q": "Indonésie : quel sport rapporte le plus de points au score de cette nation ?",
+    "x": "Badminton : 167 points de score, devant bateau-dragon (160) et pencak silat (97)."
+   },
+   "en": {
+    "q": "Indonesia: which sport brings the most points to this nation's score?",
+    "x": "Badminton: 167 score points, ahead of dragon boat (160) and pencak silat (97)."
+   },
+   "lien": "#nation/indonesie",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q127949",
+   "wq": "Q239528",
+   "annee": 2012,
+   "n": "Singapour",
+   "iso": "sg",
+   "fr": {
+    "t": "Championnat d'Asie du Sud-Est de football 2012",
+    "w": "Équipe de Singapour de football",
+    "date": "22 décembre 2012",
+    "x": "Classement sportif HSR actuel : Singapour, 61e.",
+    "sport": "Football"
+   },
+   "en": {
+    "t": "2012 AFF Suzuki Cup",
+    "w": "Singapore men's national football team",
+    "date": "22 December 2012",
+    "x": "Current HSR sporting ranking: Singapore, 61st.",
+    "sport": "Association football"
+   },
+   "lien": "#sport/football",
+   "src": "https://www.wikidata.org/wiki/Q127949"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-22/defi/",
+    "bsky": "Le défi du jour HSR : Indonésie : quel sport rapporte le plus de points au score de cette nation ?\nA) Haltérophilie B) Badminton C) Escalade D) Basketball\nRéponse : https://holosportranking.com/jour/2026-12-22/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-22/defi/",
+    "bsky": "HSR daily challenge: Indonesia: which sport brings the most points to this nation's score?\nA) Weightlifting B) Badminton C) Sport climbing D) Basketball\nAnswer: https://holosportranking.com/en/jour/2026-12-22/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-22/cejour/",
+    "bsky": "Ce jour-là, le 22 décembre 2012 : Championnat d'Asie du Sud-Est de football 2012. Vainqueur : Équipe de Singapour de football.\nhttps://holosportranking.com/jour/2026-12-22/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-22/cejour/",
+    "bsky": "On this day, 22 December 2012: 2012 AFF Suzuki Cup. Winner: Singapore men's national football team.\nhttps://holosportranking.com/en/jour/2026-12-22/cejour/"
+   }
+  }
+ },
+ {
+  "d": "2026-12-23",
+  "defi": {
+   "type": "q_demo",
+   "opts": [
+    {
+     "fr": "Colombie",
+     "en": "Colombia",
+     "n": "Colombie"
+    },
+    {
+     "fr": "Afrique du Sud",
+     "en": "South Africa",
+     "n": "Afrique du Sud"
+    },
+    {
+     "fr": "Porto Rico",
+     "en": "Puerto Rico",
+     "n": "Porto Rico"
+    },
+    {
+     "fr": "Arménie",
+     "en": "Armenia",
+     "n": "Arménie"
+    }
+   ],
+   "ok": 3,
+   "fr": {
+    "q": "Laquelle de ces nations obtient le plus de résultats par rapport à sa population ?",
+    "x": "Efficience démographique : Arménie 28e, Porto Rico 32e, Afrique du Sud 59e, Colombie 69e. Indice de Arménie : 201 (100 = ce qu'on attend d'un pays de cette population)."
+   },
+   "en": {
+    "q": "Which of these nations achieves the most relative to its population?",
+    "x": "Demographic efficiency: Armenia 28th, Puerto Rico 32nd, South Africa 59th, Colombia 69th. Index of Armenia: 201 (100 = what is expected from a country of this population)."
+   },
+   "lien": "#demographie",
+   "edition": "novembre 2026"
+  },
+  "cejour": null,
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-23/defi/",
+    "bsky": "Le défi du jour HSR : Laquelle de ces nations obtient le plus de résultats par rapport à sa population ?\nA) Colombie B) Afrique du Sud C) Porto Rico D) Arménie\nRéponse : https://holosportranking.com/jour/2026-12-23/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-23/defi/",
+    "bsky": "HSR daily challenge: Which of these nations achieves the most relative to its population?\nA) Colombia B) South Africa C) Puerto Rico D) Armenia\nAnswer: https://holosportranking.com/en/jour/2026-12-23/defi/"
+   }
+  }
+ },
+ {
+  "d": "2026-12-24",
+  "defi": {
+   "type": "q_leader",
+   "opts": [
+    {
+     "fr": "Corée du Sud",
+     "en": "South Korea",
+     "n": "Corée du Sud"
+    },
+    {
+     "fr": "Chine",
+     "en": "China",
+     "n": "Chine"
+    },
+    {
+     "fr": "Iran",
+     "en": "Iran",
+     "n": "Iran"
+    },
+    {
+     "fr": "Brésil",
+     "en": "Brazil",
+     "n": "Brésil"
+    }
+   ],
+   "ok": 0,
+   "fr": {
+    "q": "Quelle nation est 1re mondiale en taekwondo dans le classement HSR ?",
+    "x": "Classement HSR en taekwondo : 1re Corée du Sud (106,5 points sur 1000), 2e Iran (91,1), 3e Chine (85,4)."
+   },
+   "en": {
+    "q": "Which nation is world number one in taekwondo in the HSR ranking?",
+    "x": "HSR taekwondo ranking: 1st South Korea (106.5 points out of 1,000), 2nd Iran (91.1), 3rd China (85.4)."
+   },
+   "lien": "#sport/taekwondo",
+   "edition": "novembre 2026"
+  },
+  "cejour": {
+   "q": "Q540849",
+   "wq": "Q45747",
+   "annee": 2000,
+   "n": "Inde",
+   "iso": "in",
+   "fr": {
+    "t": "Championnat du monde de la Fédération internationale des échecs 2000",
+    "w": "Viswanathan Anand (Inde)",
+    "date": "24 décembre 2000",
+    "x": "Classement HSR actuel en échecs : Inde, 2e (159,2 points sur 1000).",
+    "sport": "Échecs"
+   },
+   "en": {
+    "t": "FIDE World Chess Championship 2000",
+    "w": "Viswanathan Anand (India)",
+    "date": "24 December 2000",
+    "x": "Current HSR chess ranking: India, 2nd (159.2 points out of 1,000).",
+    "sport": "Chess"
+   },
+   "lien": "#sport/echecs",
+   "src": "https://www.wikidata.org/wiki/Q540849"
+  },
+  "share": {
+   "defi_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-24/defi/",
+    "bsky": "Le défi du jour HSR : Quelle nation est 1re mondiale en taekwondo dans le classement HSR ?\nA) Corée du Sud B) Chine C) Iran D) Brésil\nRéponse : https://holosportranking.com/jour/2026-12-24/defi/"
+   },
+   "defi_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-24/defi/",
+    "bsky": "HSR daily challenge: Which nation is world number one in taekwondo in the HSR ranking?\nA) South Korea B) China C) Iran D) Brazil\nAnswer: https://holosportranking.com/en/jour/2026-12-24/defi/"
+   },
+   "cejour_fr": {
+    "u": "https://holosportranking.com/jour/2026-12-24/cejour/",
+    "bsky": "Ce jour-là, le 24 décembre 2000 : Championnat du monde de la Fédération internationale des échecs 2000. Vainqueur : Viswanathan Anand (Inde).\nhttps://holosportranking.com/jour/2026-12-24/cejour/"
+   },
+   "cejour_en": {
+    "u": "https://holosportranking.com/en/jour/2026-12-24/cejour/",
+    "bsky": "On this day, 24 December 2000: FIDE World Chess Championship 2000. Winner: Viswanathan Anand (India).\nhttps://holosportranking.com/en/jour/2026-12-24/cejour/"
+   }
+  }
+ }
+]

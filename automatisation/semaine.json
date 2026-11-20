@@ -1,0 +1,370 @@
+[
+ {
+  "id": "2026-11-18",
+  "publie": "2026-11-18",
+  "du": "2026-11-19",
+  "au": "2026-11-29",
+  "chiffre": {
+   "v": "11",
+   "fr": {
+    "t": "sports où la Chine est seule en tête",
+    "x": "Sur les 80 fédérations sportives dont HSR répartit les points, la Chine est seule en tête de 11 : tennis de table, échecs, badminton, gymnastique, haltérophilie, tir sportif, sports de boules, escalade, wushu, muay-thaï et danse sportive. Elle partage aussi la première place au go et au xiangqi. Les États-Unis, pourtant 1ers du classement sportif, ne sont en tête que de 9 sports : basket, athlétisme, tennis, sports aquatiques, golf, hockey sur glace, football américain, lacrosse et disque volant. Leur avance vient de leur présence partout : ils marquent des points dans 53 fédérations, la Chine dans 41. Au total, 28 nations sont en tête d'au moins un sport."
+   },
+   "en": {
+    "t": "sports led by China alone",
+    "x": "Of the 80 sports federations whose points HSR distributes, China alone leads 11: table tennis, chess, badminton, gymnastics, weightlifting, shooting, boules sports, climbing, wushu, muaythai and dancesport. It also shares first place in go and xiangqi. The United States, although first in the sporting ranking, lead only 9 sports: basketball, athletics, tennis, aquatics, golf, ice hockey, American football, lacrosse and flying disc. Their lead comes from being everywhere: they score points in 53 federations, China in 41. In all, 28 nations lead at least one sport."
+   },
+   "lien": "#sports",
+   "lien_fr": "Voir le classement de chaque sport",
+   "lien_en": "See the ranking of each sport",
+   "sources": [
+    {
+     "fr": "HSR, édition de novembre 2026 : points par fédération (classement_nations.csv)",
+     "en": "HSR, November 2026 edition: points per federation (classement_nations.csv)",
+     "u": "https://holosportranking.com/#donnees"
+    }
+   ]
+  },
+  "agenda": [
+   {
+    "debut": "2026-11-24",
+    "fin": "2026-11-29",
+    "c": "TNEH-WC",
+    "nations": [
+     "Italie",
+     "Autriche",
+     "Canada",
+     "Tchéquie",
+     "Allemagne",
+     "Royaume-Uni",
+     "Corée du Sud",
+     "Espagne"
+    ],
+    "fr": {
+     "nom": "Coupe Davis, phase finale",
+     "sport": "Tennis",
+     "lieu": "Bologne (Italie)",
+     "x": "Huit nations se disputent le titre : l'Italie (tenante et pays hôte), l'Autriche, le Canada, la Tchéquie, l'Allemagne, le Royaume-Uni, la Corée du Sud et l'Espagne. Quarts de finale du 24 au 26 novembre, demi-finales les 27 et 28, finale le dimanche 29. Dans HSR, la Coupe Davis répartit 90 des 1000 points de la Fédération internationale de tennis : le titre en vaut 33,1, soit 73,5 points de score, presque autant que la Thomas Cup de badminton (73,8) et plus qu'un titre de champion du monde de basket (63,3). L'édition 2026 devrait remplacer celle de 2025 dans l'édition de décembre. La Belgique, demi-finaliste en 2025, n'est pas qualifiée : elle perdra ses 16,5 points, sans changer de rang (21e du classement sportif)."
+    },
+    "en": {
+     "nom": "Davis Cup Finals",
+     "sport": "Tennis",
+     "lieu": "Bologna (Italy)",
+     "x": "Eight nations compete for the title: Italy (holders and hosts), Austria, Canada, Czechia, Germany, the United Kingdom, South Korea and Spain. Quarter-finals from 24 to 26 November, semi-finals on the 27th and 28th, final on Sunday 29th. In HSR, the Davis Cup distributes 90 of the International Tennis Federation's 1,000 points: the title is worth 33.1, i.e. 73.5 score points, almost as much as badminton's Thomas Cup (73.8) and more than a basketball world title (63.3). The 2026 edition should replace the 2025 one in the December edition. Belgium, semi-finalists in 2025, did not qualify: they will lose their 16.5 points, without changing rank (21st in the sporting ranking)."
+    },
+    "sources": [
+     {
+      "fr": "Calendrier et tableau : Wikipédia, 2026 Davis Cup",
+      "en": "Schedule and draw: Wikipedia, 2026 Davis Cup",
+      "u": "https://en.wikipedia.org/wiki/2026_Davis_Cup"
+     },
+     {
+      "fr": "Programme officiel : LTA",
+      "en": "Official schedule: LTA",
+      "u": "https://www.lta.org.uk/fan-zone/davis-cup/news/beginners-guide-to-the-tournament"
+     }
+    ],
+    "enjeux": {
+     "c": "TNEH-WC",
+     "comp": "Coupe Davis 2025",
+     "f": "ITF",
+     "pts": 90,
+     "p1": 33.1,
+     "val": 73.5,
+     "w": 2.22,
+     "nations": [
+      {
+       "n": "Italie",
+       "engage": true,
+       "pts": 33.1,
+       "s0": 7,
+       "p0": 6,
+       "s_win": 7,
+       "p_win": 6,
+       "s_zero": 7,
+       "p_zero": 6,
+       "ds_win": 0.0,
+       "ds_zero": -73.5
+      },
+      {
+       "n": "Autriche",
+       "engage": true,
+       "pts": 0.0,
+       "s0": 34,
+       "p0": 36,
+       "s_win": 32,
+       "p_win": 33,
+       "s_zero": 34,
+       "p_zero": 36,
+       "ds_win": 73.5,
+       "ds_zero": -0.0
+      },
+      {
+       "n": "Canada",
+       "engage": true,
+       "pts": 0.0,
+       "s0": 12,
+       "p0": 13,
+       "s_win": 12,
+       "p_win": 13,
+       "s_zero": 12,
+       "p_zero": 13,
+       "ds_win": 73.5,
+       "ds_zero": -0.0
+      },
+      {
+       "n": "Tchéquie",
+       "engage": true,
+       "pts": 0.0,
+       "s0": 27,
+       "p0": 21,
+       "s_win": 24,
+       "p_win": 20,
+       "s_zero": 27,
+       "p_zero": 21,
+       "ds_win": 73.5,
+       "ds_zero": -0.0
+      },
+      {
+       "n": "Allemagne",
+       "engage": true,
+       "pts": 16.5,
+       "s0": 6,
+       "p0": 7,
+       "s_win": 6,
+       "p_win": 7,
+       "s_zero": 6,
+       "p_zero": 7,
+       "ds_win": 36.9,
+       "ds_zero": -36.6
+      },
+      {
+       "n": "Royaume-Uni",
+       "engage": true,
+       "pts": 0.0,
+       "s0": 4,
+       "p0": 2,
+       "s_win": 4,
+       "p_win": 2,
+       "s_zero": 4,
+       "p_zero": 2,
+       "ds_win": 73.5,
+       "ds_zero": -0.0
+      },
+      {
+       "n": "Corée du Sud",
+       "engage": true,
+       "pts": 0.0,
+       "s0": 10,
+       "p0": 11,
+       "s_win": 10,
+       "p_win": 11,
+       "s_zero": 10,
+       "p_zero": 11,
+       "ds_win": 73.5,
+       "ds_zero": -0.0
+      },
+      {
+       "n": "Espagne",
+       "engage": true,
+       "pts": 23.8,
+       "s0": 9,
+       "p0": 9,
+       "s_win": 9,
+       "p_win": 8,
+       "s_zero": 9,
+       "p_zero": 9,
+       "ds_win": 20.6,
+       "ds_zero": -52.8
+      },
+      {
+       "n": "Belgique",
+       "engage": false,
+       "pts": 16.5,
+       "s0": 21,
+       "p0": 19,
+       "s_zero": 21,
+       "p_zero": 19,
+       "ds_zero": -36.6
+      }
+     ]
+    },
+    "fed": "ITF",
+    "pts": 90.0,
+    "tenant": [
+     "Italie"
+    ]
+   }
+  ],
+  "ensuite": [
+   {
+    "debut": "2026-12-11",
+    "fin": "2027-01-03",
+    "c": "DARH-WC",
+    "fr": {
+     "nom": "Championnat du monde PDC de fléchettes",
+     "sport": "Fléchettes",
+     "lieu": "Londres (Royaume-Uni)"
+    },
+    "en": {
+     "nom": "PDC World Darts Championship",
+     "sport": "Darts",
+     "lieu": "London (United Kingdom)"
+    },
+    "sources": [
+     {
+      "fr": "Alexandra Palace",
+      "en": "Alexandra Palace",
+      "u": "https://www.alexandrapalace.com/whats-on/world-darts-championship-2026-2027/"
+     }
+    ],
+    "fed": "WDF",
+    "pts": 250.0,
+    "tenant": [
+     "Royaume-Uni"
+    ]
+   },
+   {
+    "debut": "2026-12-14",
+    "fin": "2026-12-19",
+    "c": "SQH-WT",
+    "c2": "SQF-WT",
+    "fr": {
+     "nom": "Championnats du monde de squash par équipes",
+     "sport": "Squash",
+     "lieu": "Cheongju (Corée du Sud)"
+    },
+    "en": {
+     "nom": "World Team Squash Championships",
+     "sport": "Squash",
+     "lieu": "Cheongju (South Korea)"
+    },
+    "sources": [
+     {
+      "fr": "Eyewitness News",
+      "en": "Eyewitness News",
+      "u": "https://www.ewn.co.za/sa-squash-stars-ready-to-take-on-the-world-in-south-korea/"
+     }
+    ],
+    "fed": "World Squash",
+    "pts": 400.0,
+    "tenant": [
+     "Égypte"
+    ]
+   }
+  ],
+  "duel": {
+   "a": "Royaume-Uni",
+   "b": "Allemagne",
+   "fr": {
+    "x": "Jeudi 26 novembre, les deux nations s'affrontent en quart de finale de la Coupe Davis, à Bologne. Dans HSR, le Royaume-Uni (2e de la performance réelle) devance nettement l'Allemagne (7e) : 4 358 points de score contre 3 779, et il marque plus qu'elle dans 33 sports, contre 25. Son avance vient de sports où l'Allemagne ne pèse presque rien : snooker, fléchettes, Formule 1, rugby et cricket. L'Allemagne reprend l'avantage en basket, en bobsleigh, en handball, en sauvetage sportif et en luge, et elle devance le Royaume-Uni au classement féminin (5e contre 7e)."
+   },
+   "en": {
+    "x": "On Thursday 26 November, the two nations meet in the Davis Cup quarter-finals in Bologna. In HSR, the United Kingdom (2nd in overall performance) is well ahead of Germany (7th): 4,358 score points against 3,779, and it scores more than Germany in 33 sports, against 25. Its lead comes from sports where Germany barely counts: snooker, darts, Formula 1, rugby and cricket. Germany takes the upper hand in basketball, bobsleigh, handball, lifesaving and luge, and it is ahead of the United Kingdom in the women's ranking (5th against 7th)."
+   },
+   "sources": [
+    {
+     "fr": "Programme de la Coupe Davis : LTA",
+     "en": "Davis Cup schedule: LTA",
+     "u": "https://www.lta.org.uk/fan-zone/davis-cup/news/beginners-guide-to-the-tournament"
+    },
+    {
+     "fr": "HSR, édition de novembre 2026 (performance_reelle.csv, classement_nations.csv, classement_femmes_hommes.csv)",
+     "en": "HSR, November 2026 edition (performance_reelle.csv, classement_nations.csv, classement_femmes_hommes.csv)",
+     "u": "https://holosportranking.com/#donnees"
+    }
+   ],
+   "ia": {
+    "pr": 2,
+    "pri": 96.92,
+    "s": 4,
+    "sc": 4358,
+    "ee": 6,
+    "ed": 8,
+    "rf": 7,
+    "rh": 3,
+    "nf": 46,
+    "lead": 6
+   },
+   "ib": {
+    "pr": 7,
+    "pri": 94.87,
+    "s": 6,
+    "sc": 3779.1,
+    "ee": 9,
+    "ed": 13,
+    "rf": 5,
+    "rh": 5,
+    "nf": 45,
+    "lead": 5
+   },
+   "wa": 33,
+   "wb": 25,
+   "eq": 0,
+   "fa": [
+    {
+     "f": "WCBS",
+     "pa": 490.3,
+     "pb": 0,
+     "ds": 625.3
+    },
+    {
+     "f": "WDF",
+     "pa": 561.1,
+     "pb": 21.2,
+     "ds": 287.9
+    },
+    {
+     "f": "FIA",
+     "pa": 263.1,
+     "pb": 31.7,
+     "ds": 247.3
+    },
+    {
+     "f": "World Rugby",
+     "pa": 160.8,
+     "pb": 0.1,
+     "ds": 201.4
+    },
+    {
+     "f": "ICC",
+     "pa": 97,
+     "pb": 0,
+     "ds": 178.6
+    }
+   ],
+   "fb": [
+    {
+     "f": "FIBA",
+     "pa": 3.4,
+     "pb": 95.2,
+     "ds": 331.7
+    },
+    {
+     "f": "IBSF",
+     "pa": 125.3,
+     "pb": 644.1,
+     "ds": 269.8
+    },
+    {
+     "f": "IHF",
+     "pa": 0,
+     "pb": 130,
+     "ds": 209.0
+    },
+    {
+     "f": "ILSF",
+     "pa": 0,
+     "pb": 204.4,
+     "ds": 170.8
+    },
+    {
+     "f": "FIL",
+     "pa": 0,
+     "pb": 375.4,
+     "ds": 161.7
+    }
+   ]
+  }
+ }
+]
