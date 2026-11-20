@@ -1,0 +1,23 @@
+name: Wikidata – libellés multilingues
+# Collecte ponctuelle de données ouvertes (Wikidata, CC0) pour les versions es/de/pt/it du site.
+on:
+  workflow_dispatch:
+  push:
+    paths: ['automatisation/wikidata_*.py']
+permissions:
+  contents: write
+concurrency: wikidata
+jobs:
+  collecter:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with: {python-version: '3.12'}
+      - run: pip install requests
+      - run: python3 automatisation/wikidata_cejour_langues.py
+      - name: Enregistrer
+        run: |
+          git config user.name "HSR Wikidata"; git config user.email "noreply@anthropic.com"
+          git add automatisation/wikidata/ && git commit -m "Wikidata : libellés multilingues [skip ci]" && git pull --rebase && git push || echo "rien à enregistrer"
