@@ -21,9 +21,33 @@
     {
      "fr": "HSR, édition de novembre 2026 : points par fédération (classement_nations.csv)",
      "en": "HSR, November 2026 edition: points per federation (classement_nations.csv)",
-     "u": "https://holosportranking.com/#donnees"
+     "u": "https://holosportranking.com/#donnees",
+     "es": "HSR, edición de noviembre de 2026: puntos por federación (classement_nations.csv)",
+     "de": "HSR, Ausgabe November 2026: Punkte nach Verband (classement_nations.csv)",
+     "pt": "HSR, edição de novembro de 2026: pontos por federação (classement_nations.csv)",
+     "it": "HSR, edizione di novembre 2026: punti per federazione (classement_nations.csv)"
     }
-   ]
+   ],
+   "es": {
+    "t": "deportes en los que China está sola en cabeza",
+    "x": "De las 80 federaciones deportivas cuyos puntos reparte HSR, China está sola en cabeza de 11: tenis de mesa, ajedrez, bádminton, gimnasia, halterofilia, tiro, deportes de bolas, escalada, wushu, muay thai y baile deportivo. También comparte el primer puesto en go y xiangqi. Estados Unidos, aunque es primero en la clasificación deportiva, solo lidera 9 deportes: baloncesto, atletismo, tenis, deportes acuáticos, golf, hockey sobre hielo, fútbol americano, lacrosse y disco volador. Su ventaja viene de estar en todas partes: puntúa en 53 federaciones, China en 41. En total, 28 naciones lideran al menos un deporte."
+   },
+   "de": {
+    "t": "Sportarten, in denen China allein führt",
+    "x": "Von den 80 Sportverbänden, deren Punkte HSR verteilt, führt China in 11 allein: Tischtennis, Schach, Badminton, Turnen, Gewichtheben, Schießsport, Kugelsport, Klettern, Wushu, Muay Thai und Tanzsport. Beim Go und beim Xiangqi teilt es sich zudem den ersten Platz. Die USA, obwohl Erste der Sportrangliste, führen nur in 9 Sportarten: Basketball, Leichtathletik, Tennis, Wassersport, Golf, Eishockey, American Football, Lacrosse und Flying Disc. Ihr Vorsprung kommt von ihrer Präsenz überall: Sie punkten in 53 Verbänden, China in 41. Insgesamt führen 28 Nationen in mindestens einer Sportart."
+   },
+   "pt": {
+    "t": "esportes em que a China lidera sozinha",
+    "x": "Das 80 federações esportivas cujos pontos a HSR distribui, a China lidera sozinha 11: tênis de mesa, xadrez, badminton, ginástica, levantamento de peso, tiro esportivo, esportes de bocha, escalada, wushu, muay thai e dança esportiva. Também divide o primeiro lugar no go e no xiangqi. Os Estados Unidos, embora primeiros na classificação esportiva, lideram só 9 esportes: basquete, atletismo, tênis, esportes aquáticos, golfe, hóquei no gelo, futebol americano, lacrosse e disco. Sua vantagem vem de estarem em toda parte: pontuam em 53 federações, a China em 41. No total, 28 nações lideram pelo menos um esporte."
+   },
+   "it": {
+    "t": "sport in cui la Cina è da sola in testa",
+    "x": "Delle 80 federazioni sportive di cui HSR ripartisce i punti, la Cina è da sola in testa in 11: tennistavolo, scacchi, badminton, ginnastica, sollevamento pesi, tiro, bocce, arrampicata, wushu, muay thai e danza sportiva. Condivide inoltre il primo posto nel go e nello xiangqi. Gli Stati Uniti, pur primi nella classifica sportiva, sono in testa solo in 9 sport: pallacanestro, atletica, tennis, sport acquatici, golf, hockey su ghiaccio, football americano, lacrosse e disco volante. Il loro vantaggio viene dall'essere ovunque: fanno punti in 53 federazioni, la Cina in 41. In totale, 28 nazioni sono in testa in almeno uno sport."
+   },
+   "lien_es": "Ver la clasificación de cada deporte",
+   "lien_de": "Rangliste jeder Sportart ansehen",
+   "lien_pt": "Ver a classificação de cada esporte",
+   "lien_it": "Vedi la classifica di ogni sport"
   },
   "agenda": [
    {
@@ -56,14 +80,46 @@
      {
       "fr": "Calendrier et tableau : Wikipédia, 2026 Davis Cup",
       "en": "Schedule and draw: Wikipedia, 2026 Davis Cup",
-      "u": "https://en.wikipedia.org/wiki/2026_Davis_Cup"
+      "u": "https://en.wikipedia.org/wiki/2026_Davis_Cup",
+      "es": "Calendario y cuadro: Wikipedia, 2026 Davis Cup",
+      "de": "Spielplan und Tableau: Wikipedia, 2026 Davis Cup",
+      "pt": "Calendário e chave: Wikipedia, 2026 Davis Cup",
+      "it": "Calendario e tabellone: Wikipedia, 2026 Davis Cup"
      },
      {
       "fr": "Programme officiel : LTA",
       "en": "Official schedule: LTA",
-      "u": "https://www.lta.org.uk/fan-zone/davis-cup/news/beginners-guide-to-the-tournament"
+      "u": "https://www.lta.org.uk/fan-zone/davis-cup/news/beginners-guide-to-the-tournament",
+      "es": "Programa oficial: LTA",
+      "de": "Offizieller Spielplan: LTA",
+      "pt": "Programação oficial: LTA",
+      "it": "Programma ufficiale: LTA"
      }
     ],
+    "es": {
+     "nom": "Copa Davis, fase final",
+     "sport": "Tenis",
+     "lieu": "Bolonia (Italia)",
+     "x": "Ocho naciones se disputan el título: Italia (vigente campeona y anfitriona), Austria, Canadá, Chequia, Alemania, Reino Unido, Corea del Sur y España. Cuartos de final del 24 al 26 de noviembre, semifinales el 27 y el 28, final el domingo 29. En HSR, la Copa Davis reparte 90 de los 1000 puntos de la Federación Internacional de Tenis: el título vale 33,1, es decir, 73,5 puntos de puntuación, casi tanto como la Thomas Cup de bádminton (73,8) y más que un título mundial de baloncesto (63,3). La edición 2026 debería sustituir a la de 2025 en la edición de diciembre. Bélgica, semifinalista en 2025, no se ha clasificado: perderá sus 16,5 puntos, sin cambiar de puesto (21.ª de la clasificación deportiva)."
+    },
+    "de": {
+     "nom": "Davis Cup, Finalrunde",
+     "sport": "Tennis",
+     "lieu": "Bologna (Italien)",
+     "x": "Acht Nationen kämpfen um den Titel: Italien (Titelverteidiger und Gastgeber), Österreich, Kanada, Tschechien, Deutschland, das Vereinigte Königreich, Südkorea und Spanien. Viertelfinale vom 24. bis 26. November, Halbfinale am 27. und 28., Finale am Sonntag, dem 29. In HSR verteilt der Davis Cup 90 der 1000 Punkte des Internationalen Tennisverbands: Der Titel ist 33,1 wert, also 73,5 Punkte, fast so viel wie der Thomas Cup im Badminton (73,8) und mehr als ein Basketball-WM-Titel (63,3). Die Ausgabe 2026 dürfte in der Dezember-Ausgabe die von 2025 ersetzen. Belgien, Halbfinalist 2025, ist nicht qualifiziert: Es verliert seine 16,5 Punkte, ohne den Rang zu ändern (21. der Sportrangliste)."
+    },
+    "pt": {
+     "nom": "Copa Davis, fase final",
+     "sport": "Tênis",
+     "lieu": "Bolonha (Itália)",
+     "x": "Oito nações disputam o título: Itália (atual campeã e país-sede), Áustria, Canadá, Chéquia, Alemanha, Reino Unido, Coreia do Sul e Espanha. Quartas de final de 24 a 26 de novembro, semifinais nos dias 27 e 28, final no domingo, 29. Na HSR, a Copa Davis distribui 90 dos 1000 pontos da Federação Internacional de Tênis: o título vale 33,1, ou seja, 73,5 pontos de pontuação, quase tanto quanto a Thomas Cup de badminton (73,8) e mais do que um título mundial de basquete (63,3). A edição de 2026 deve substituir a de 2025 na edição de dezembro. A Bélgica, semifinalista em 2025, não se classificou: perderá seus 16,5 pontos, sem mudar de posição (21.ª da classificação esportiva)."
+    },
+    "it": {
+     "nom": "Coppa Davis, fase finale",
+     "sport": "Tennis",
+     "lieu": "Bologna (Italia)",
+     "x": "Otto nazioni si contendono il titolo: l'Italia (detentrice e paese ospitante), l'Austria, il Canada, la Cechia, la Germania, il Regno Unito, la Corea del Sud e la Spagna. Quarti di finale dal 24 al 26 novembre, semifinali il 27 e il 28, finale domenica 29. In HSR la Coppa Davis ripartisce 90 dei 1000 punti della Federazione internazionale di tennis: il titolo vale 33,1, cioè 73,5 punti di punteggio, quasi quanto la Thomas Cup di badminton (73,8) e più di un titolo mondiale di pallacanestro (63,3). L'edizione 2026 dovrebbe sostituire quella del 2025 nell'edizione di dicembre. Il Belgio, semifinalista nel 2025, non è qualificato: perderà i suoi 16,5 punti, senza cambiare posizione (21º della classifica sportiva)."
+    },
     "enjeux": {
      "c": "TNEH-WC",
      "comp": "Coupe Davis 2025",
@@ -215,9 +271,33 @@
      {
       "fr": "Alexandra Palace",
       "en": "Alexandra Palace",
-      "u": "https://www.alexandrapalace.com/whats-on/world-darts-championship-2026-2027/"
+      "u": "https://www.alexandrapalace.com/whats-on/world-darts-championship-2026-2027/",
+      "es": "Alexandra Palace",
+      "de": "Alexandra Palace",
+      "pt": "Alexandra Palace",
+      "it": "Alexandra Palace"
      }
     ],
+    "es": {
+     "nom": "Campeonato del Mundo PDC de dardos",
+     "sport": "Dardos",
+     "lieu": "Londres (Reino Unido)"
+    },
+    "de": {
+     "nom": "PDC-Darts-Weltmeisterschaft",
+     "sport": "Darts",
+     "lieu": "London (Vereinigtes Königreich)"
+    },
+    "pt": {
+     "nom": "Campeonato Mundial PDC de dardos",
+     "sport": "Dardos",
+     "lieu": "Londres (Reino Unido)"
+    },
+    "it": {
+     "nom": "Campionato del mondo PDC di freccette",
+     "sport": "Freccette",
+     "lieu": "Londra (Regno Unito)"
+    },
     "fed": "WDF",
     "pts": 250.0,
     "tenant": [
@@ -243,9 +323,33 @@
      {
       "fr": "Eyewitness News",
       "en": "Eyewitness News",
-      "u": "https://www.ewn.co.za/sa-squash-stars-ready-to-take-on-the-world-in-south-korea/"
+      "u": "https://www.ewn.co.za/sa-squash-stars-ready-to-take-on-the-world-in-south-korea/",
+      "es": "Eyewitness News",
+      "de": "Eyewitness News",
+      "pt": "Eyewitness News",
+      "it": "Eyewitness News"
      }
     ],
+    "es": {
+     "nom": "Campeonatos del Mundo de squash por equipos",
+     "sport": "Squash",
+     "lieu": "Cheongju (Corea del Sur)"
+    },
+    "de": {
+     "nom": "Squash-Mannschaftsweltmeisterschaften",
+     "sport": "Squash",
+     "lieu": "Cheongju (Südkorea)"
+    },
+    "pt": {
+     "nom": "Campeonatos Mundiais de squash por equipes",
+     "sport": "Squash",
+     "lieu": "Cheongju (Coreia do Sul)"
+    },
+    "it": {
+     "nom": "Campionati del mondo di squash a squadre",
+     "sport": "Squash",
+     "lieu": "Cheongju (Corea del Sud)"
+    },
     "fed": "World Squash",
     "pts": 400.0,
     "tenant": [
@@ -266,14 +370,34 @@
     {
      "fr": "Programme de la Coupe Davis : LTA",
      "en": "Davis Cup schedule: LTA",
-     "u": "https://www.lta.org.uk/fan-zone/davis-cup/news/beginners-guide-to-the-tournament"
+     "u": "https://www.lta.org.uk/fan-zone/davis-cup/news/beginners-guide-to-the-tournament",
+     "es": "Programa de la Copa Davis: LTA",
+     "de": "Spielplan des Davis Cup: LTA",
+     "pt": "Programação da Copa Davis: LTA",
+     "it": "Programma della Coppa Davis: LTA"
     },
     {
      "fr": "HSR, édition de novembre 2026 (performance_reelle.csv, classement_nations.csv, classement_femmes_hommes.csv)",
      "en": "HSR, November 2026 edition (performance_reelle.csv, classement_nations.csv, classement_femmes_hommes.csv)",
-     "u": "https://holosportranking.com/#donnees"
+     "u": "https://holosportranking.com/#donnees",
+     "es": "HSR, edición de noviembre de 2026 (performance_reelle.csv, classement_nations.csv, classement_femmes_hommes.csv)",
+     "de": "HSR, Ausgabe November 2026 (performance_reelle.csv, classement_nations.csv, classement_femmes_hommes.csv)",
+     "pt": "HSR, edição de novembro de 2026 (performance_reelle.csv, classement_nations.csv, classement_femmes_hommes.csv)",
+     "it": "HSR, edizione di novembre 2026 (performance_reelle.csv, classement_nations.csv, classement_femmes_hommes.csv)"
     }
    ],
+   "es": {
+    "x": "El jueves 26 de noviembre, las dos naciones se enfrentan en cuartos de final de la Copa Davis, en Bolonia. En HSR, el Reino Unido (2.º del rendimiento real) supera claramente a Alemania (7.ª): 4.358 puntos de puntuación frente a 3.779, y suma más que ella en 33 deportes, frente a 25. Su ventaja viene de deportes en los que Alemania apenas pesa: snooker, dardos, Fórmula 1, rugby y críquet. Alemania toma la delantera en baloncesto, bobsleigh, balonmano, salvamento y luge, y supera al Reino Unido en la clasificación femenina (5.ª frente a 7.º)."
+   },
+   "de": {
+    "x": "Am Donnerstag, dem 26. November, treffen die beiden Nationen im Viertelfinale des Davis Cup in Bologna aufeinander. In HSR liegt das Vereinigte Königreich (2. der tatsächlichen Leistung) klar vor Deutschland (7.): 4.358 Punkte gegenüber 3.779, und es punktet in 33 Sportarten stärker, gegenüber 25. Sein Vorsprung kommt aus Sportarten, in denen Deutschland kaum eine Rolle spielt: Snooker, Darts, Formel 1, Rugby und Cricket. Deutschland liegt im Basketball, Bob, Handball, Rettungsschwimmen und Rennrodeln vorn und steht in der Frauenrangliste vor dem Vereinigten Königreich (5. gegenüber 7.)."
+   },
+   "pt": {
+    "x": "Na quinta-feira, 26 de novembro, as duas nações se enfrentam nas quartas de final da Copa Davis, em Bolonha. Na HSR, o Reino Unido (2.º no desempenho real) está bem à frente da Alemanha (7.ª): 4.358 pontos de pontuação contra 3.779, e pontua mais do que ela em 33 esportes, contra 25. Sua vantagem vem de esportes em que a Alemanha quase não pesa: snooker, dardos, Fórmula 1, rugby e críquete. A Alemanha leva vantagem no basquete, no bobsled, no handebol, no salvamento e no luge, e fica à frente do Reino Unido na classificação feminina (5.ª contra 7.º)."
+   },
+   "it": {
+    "x": "Giovedì 26 novembre le due nazioni si affrontano nei quarti di finale della Coppa Davis, a Bologna. In HSR il Regno Unito (2º nella prestazione reale) precede nettamente la Germania (7ª): 4.358 punti di punteggio contro 3.779, e fa più punti di lei in 33 sport, contro 25. Il suo vantaggio viene da sport in cui la Germania quasi non conta: snooker, freccette, Formula 1, rugby e cricket. La Germania si prende il vantaggio in pallacanestro, bob, pallamano, salvamento e slittino, e precede il Regno Unito nella classifica femminile (5ª contro 7º)."
+   },
    "ia": {
     "pr": 2,
     "pri": 96.92,
