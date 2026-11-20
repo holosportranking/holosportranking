@@ -2,5 +2,9 @@ User-agent: *
 Allow: /
 Disallow: /widget/
 Disallow: /en/widget/
+Disallow: /es/widget/
+Disallow: /de/widget/
+Disallow: /pt/widget/
+Disallow: /it/widget/
 Sitemap: https://holosportranking.com/sitemap.xml
 Sitemap: https://holosportranking.com/sitemap-contenus.xml
